@@ -1,0 +1,85 @@
+﻿WHAT IS IT?
+Lattice Land - Explore is one of several models in the Lattice Land software suite. Lattice Land is an interactive MathLand, a microworld in which students can uncover advanced mathematical thinking through play, conjecture, and experimentation. It provides another entryway into geometry, investigating the geometry of a discrete lattice of points. In Lattice Land, there is no one right answer and no pre-determined pathway you must travel. However, even seemingly trivial exercises can quickly become rich explorations.
+
+A lattice is an array of dots on a plane such that there is one dot at each coordinate (x,y), where x and y are integers. Thus each dot on the lattice is one unit away from each of its four closest neighbors (one above, one below, one to the left, and one to the right). A lattice polygon is a polygon whose vertices fall on dots of the lattice.
+
+In this exploratory model, you can draw multiple polygons and segments, change the size of the world, change the magnitude of the unit of distance between dots, and check areas and perimeters of polygons. You can use this model to learn about the features of Lattice Land, define the properties of polygons, or to make lattice artwork.
+
+HOW IT WORKS
+Using Lattice Land, students can draw any lattice polygon in addition to drawing simple line segments. Polygons do not need to be limited to just rectangles or triangles.
+
+We've implemented a lattice in NetLogo by using agents called DOTS sprouted at the center of each patch. The segments between the dots are simply edges or links. The environment then responds to mouse clicks inside of the world and performs the specified action (either draw a side of a polygon or draw a single line segment).
+
+In order to analyze the polygons in question, we use an algorithmic method of calculating the perimeter and area of the polygon based on iterating over the edges of the polygon. However, students are also expected to calculate these different properties by hand and then compare them to the algorithmic results. For instance, students should apply the distance formula to calculate perimeter, or apply the idea of dissection to calculate area. Students should also be encouraged to come up with new ways of calculating these properties.
+
+HOW TO USE IT
+The SETUP button creates a world with the given dimensions and size set by the sliders.
+
+Select an ACTION.
+
+DRAW POLYGON traces a path from the first dot clicked to the next dot clicked. It continues to wait for clicks until the user clicks back on the first dot. (When using this action, Lattice Land will track the perimeter of each active polygon, and will calculate its area when it is complete)
+
+DRAW SEGMENT allows you to join any two dots clicked consecutively by a line segment.
+
+DELETE SEGMENT allows you to delete any line segment you have drawn by selecting either endpoint of the segment. Note that this will delete ALL segments that share the selected endpoint. (This action only works on line segments, not edges of polygons.)
+
+SEGMENT-COLOR allows you to select different colors for your segments.
+
+Press the GO button to run an ACTION.
+
+Press CHECK-AREA to verify the area of the last polygon you've just drawn. (Note that check-area will not work on apparent polygons created with segments, only explicit polygons).
+
+Look at the PERIMETER monitor to see the perimeter of the polygon you've drawn.
+
+THINGS TO NOTICE
+Polygons will always be white. This is meant to help distinguish them from segments as you dissect polygons in various ways. When using Lattice Land, it helps to use segment colors other than black and white.
+
+You can draw some shapes using DRAW POLYGON that are not polygons. This will generate an error message. What types of lattice shapes are not lattice polygons?
+
+THINGS TO TRY
+Create as many different shapes as you can that have only 1 square unit area.
+Create as many different shapes as you can that have 1.5 square unit area.
+Create as many different shapes as you can that have 2 square units area.
+Keep going until you've generated a number of interesting shapes with 8 square units area.
+For each polygon, count and record the number of dots that are strictly inside the polygon. Also count and record the number of dots that fall on an edge of the polygon. Do you see a pattern?
+If not, just look at polygons which have no dots on the inside. Do you see a pattern now? Can you write a formula to describe it?
+Try to generalize an area formula for a lattice polygon using only the number of dots on its Boundary (B) and the number of dots on the Inside (I).
+Make sure to try dissecting a polygon in different ways. For example:
+
+Slice out rectangles until you can no longer do so.
+Triangulate the polygon
+Enclose the polygon in a figure whose area you know and slice away pieces
+EXTENDING THE MODEL
+Notice that the DRAW-POLYGON procedure deletes closed figures that aren't polygons. But what if you change the definition of what it means to be a polygon? Change the code to reflect this new definition. How does this alter or break the rules we currently use to understand polygons (e.g., area formulas)?
+
+NETLOGO FEATURES
+The DRAW-SEGMENT and DRAW-POLYGON actions are programmed similarly and each call on two anonymous procedures two actually draw on the screen. However, DRAW-POLYGON has to keep a list of past vertices drawn.
+
+The INTERSECTION reporter checks for intersections between links by converting the links into slope-intercept form and then checking for line intersections.
+
+This model uses continuous updates, rather than tick-based updates. This means that the model does not update at regular time intervals (ticks) dictated by the code. Instead, this model updates when the user performs an action. Thus, the depth of inquiry into the mathematics of Lattice Land is dictated by the user: nothing (other than the lattice) is generated until the user draws something.
+
+RELATED MODELS
+Intersecting Links
+CREDITS AND REFERENCES
+The area formula used for this model comes from the following site: http://mathworld.wolfram.com/PolygonArea.html
+
+Area = 1/2 * (the determinant of the matrices formed by each consecutive pair of coordinates)
+
+HOW TO CITE
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+Pei, C. and Wilensky, U. (2017). NetLogo Lattice Land - Explore model. http://ccl.northwestern.edu/netlogo/models/LatticeLand-Explore. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+Please cite the NetLogo software as:
+
+Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+COPYRIGHT AND LICENSE
+Copyright 2017 Uri Wilensky.
+
+CC BY-NC-SA 3.0
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
