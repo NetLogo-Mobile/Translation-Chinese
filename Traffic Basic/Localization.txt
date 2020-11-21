@@ -1,0 +1,143 @@
+﻿## Plots
+### Source
+red car
+### Chinese = 2
+red car
+
+
+### Source
+min speed
+### Chinese = 2
+min speed
+
+
+### Source
+max speed
+### Chinese = 2
+max speed
+
+
+### Source
+Car speeds
+### Chinese = 2
+Car speeds
+
+
+## Tutorial
+### Source
+Welcome to the Basic Traffic Model! 
+### Chinese = 2
+Welcome to the Basic Traffic Model! 
+
+
+### Source
+This model models the movement of <color=blue>cars</color> on a highway. Each <color=blue>cars</color> follows a simple set of rules: it slows down (<trigger=deceleration,#c1b90fff>decelerates</trigger>) if it sees a <color=blue>cars</color> close ahead, and <trigger=speed>speeds</trigger> up (<trigger=acceleration,green>accelerates</trigger>) if it doesn't see a <color=blue>cars</color> ahead.
+### Chinese = 2
+This model models the movement of <color=blue>cars</color> on a highway. Each <color=blue>cars</color> follows a simple set of rules: it slows down (<trigger=deceleration,#c1b90fff>decelerates</trigger>) if it sees a <color=blue>cars</color> close ahead, and <trigger=speed>speeds</trigger> up (<trigger=acceleration,green>accelerates</trigger>) if it doesn't see a <color=blue>cars</color> ahead.
+
+
+### Source
+Let me try it first!
+### Chinese = 2
+Let me try it first!
+
+
+### Source
+Next
+### Chinese = 2
+Next
+
+
+### Source
+Welcome to the Community!
+### Chinese = 2
+Welcome to the Community!
+
+
+### Source
+Suppose you are in charge of a local community in the early stage of the <b>pandemic</b>. 
+
+There are <color=red>rumors</color> that a few people here have strange symptoms similar to the highly infectious disease which leads to the pandemic, but the situation is <b>still unclear</b>. Your policy belief will decide how the community reacts to it, with consequences in many aspects, and moreover, in people's life and death. 
+
+Are you prepared for the responsibility?
+### Chinese = 2
+Suppose you are in charge of a local community in the early stage of the <b>pandemic</b>. 
+
+There are <color=red>rumors</color> that a few people here have strange symptoms similar to the highly infectious disease which leads to the pandemic, but the situation is <b>still unclear</b>. Your policy belief will decide how the community reacts to it, with consequences in many aspects, and moreover, in people's life and death. 
+
+Are you prepared for the responsibility?
+
+
+### Source
+Can I ask some questions?
+### Chinese = 2
+Can I ask some questions?
+
+
+### Source
+Sure, I am ready!
+### Chinese = 2
+Sure, I am ready!
+
+
+### Source
+Any questions?
+### Chinese = 2
+Any questions?
+
+
+### Source
+Dealing with a pandemic is never easy. Let's see if you can get any help!
+### Chinese = 2
+Dealing with a pandemic is never easy. Let's see if you can get any help!
+
+
+### Source
+Are the rumors about the disease true?
+### Chinese = 2
+Are the rumors about the disease true?
+
+
+### Source
+How deadly is the disease?
+### Chinese = 2
+How deadly is the disease?
+
+
+### Source
+How does the disease spread among people?
+### Chinese = 2
+How does the disease spread among people?
+
+
+### Source
+Is there any cure for the disease?
+### Chinese = 2
+Is there any cure for the disease?
+
+
+### Source
+Enough for now. Back to my community!
+### Chinese = 2
+Enough for now. Back to my community!
+
+
+### Source
+Welcome to the Basic Traffic Model! 
+### Chinese = 2
+Welcome to the Basic Traffic Model! 
+
+
+### Source
+Imagine you are driving to your <color=green>local supermarket</color> to get some groceries for the week. You look farther down the road and there's a <color=red>traffic jam</color> forming. Oh no! How will you ever get home in time for supper? As you wait for the <color=blue>car</color> in front of you to move forward, you wonder: <i>why do <color=red>traffic jams</color> form even though no accidents have occurred?</i> Click <b>next</b> to explore how <color=red>traffic jams</color> form.
+### Chinese = 2
+Imagine you are driving to your <color=green>local supermarket</color> to get some groceries for the week. You look farther down the road and there's a <color=red>traffic jam</color> forming. Oh no! How will you ever get home in time for supper? As you wait for the <color=blue>car</color> in front of you to move forward, you wonder: <i>why do <color=red>traffic jams</color> form even though no accidents have occurred?</i> Click <b>next</b> to explore how <color=red>traffic jams</color> form.
+
+
+## General
+### Source
+Traffic Basic
+### Chinese = 2
+Traffic Basic
+
+

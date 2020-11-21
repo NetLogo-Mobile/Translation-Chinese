@@ -1,0 +1,45 @@
+﻿## Plots
+### Source
+default
+### Chinese = 2
+default
+
+
+### Source
+Average Wait Time of Cars
+### Chinese = 2
+Average Wait Time of Cars
+
+
+### Source
+Average Speed of Cars
+### Chinese = 2
+Average Speed of Cars
+
+
+### Source
+Stopped Cars
+### Chinese = 2
+Stopped Cars
+
+
+## General
+### Source
+Average Wait Time of Cars
+### Chinese = 2
+Average Wait Time of Cars
+
+
+### Source
+Traffic Grid
+### Chinese = 2
+Traffic Grid
+
+
+## Labels
+### Source
+current
+### Chinese = 2
+current
+
+

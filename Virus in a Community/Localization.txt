@@ -1,0 +1,252 @@
+﻿## Messages
+### Source
+Your community is ready! 
+Currently, we only have one mode: please choose your policy belief, apply it, and click GO to see how your strategy impacts the community.
+### Chinese = 2
+Your community is ready! 
+Currently, we only have one mode: please choose your policy belief, apply it, and click GO to see how your strategy impacts the community.
+
+## Plots
+### Source
+Symptoms
+### Chinese = 2
+Symptoms
+
+### Source
+Not Infected
+### Chinese = 2
+Not Infected
+
+### Source
+Detected
+### Chinese = 2
+Detected
+
+### Source
+Infected
+### Chinese = 2
+Infected
+
+### Source
+Quarantined
+### Chinese = 2
+Quarantined
+
+### Source
+Situation Overview
+### Chinese = 2
+Situation Overview
+
+### Source
+Daily Statistics
+### Chinese = 2
+Daily Statistics
+
+## Labels
+### Source
+home
+### Chinese = 2
+home
+
+### Source
+go-work
+### Chinese = 2
+go-work
+
+### Source
+wander
+### Chinese = 2
+wander
+
+### Source
+go-bar
+### Chinese = 2
+go-bar
+
+### Source
+go-grocery
+### Chinese = 2
+go-grocery
+
+### Source
+go-park
+### Chinese = 2
+go-park
+
+## General
+### Source
+Virus in a Community
+### Chinese = 2
+Virus in a Community
+
+### Source
+控制社区疫情
+### Chinese = 2
+控制社区疫情
+
+## Tutorial
+### Source
+Feel confused by the buttons around the screen?
+Master the basics of Turtle Universe in a few steps!
+### Chinese = 2
+Feel confused by the buttons around the screen?
+Master the basics of Turtle Universe in a few steps!
+
+### Source
+No, thanks
+### Chinese = 2
+No, thanks
+
+### Source
+Explore
+### Chinese = 2
+Explore
+
+### Source
+Welcome to the Community!
+### Chinese = 2
+Welcome to the Community!
+
+### Source
+Your community is ready! 
+
+Suppose you are in charge of a local community in the early stage of the pandemic. There are rumors that a few people here have strange symptoms similar to the highly infectious disease, but the situation is very unclear. Your policy belief will decide how the community reacts to it, with consequences in many aspects, and moreover, in people's life and death. 
+
+Are you prepared for the responsibility? Now, please choose your belief.
+### Chinese = 2
+Your community is ready! 
+
+Suppose you are in charge of a local community in the early stage of the pandemic. There are rumors that a few people here have strange symptoms similar to the highly infectious disease, but the situation is very unclear. Your policy belief will decide how the community reacts to it, with consequences in many aspects, and moreover, in people's life and death. 
+
+Are you prepared for the responsibility? Now, please choose your belief.
+
+## Widgets
+### Source
+Is lockdown necessary?
+### Chinese = 2
+Is lockdown necessary?
+
+### Source
+A-Early and rigid lockdown policies are needed
+### Chinese = 2
+A-Early and rigid lockdown policies are needed
+
+### Source
+Are masks needed to protect us?
+### Chinese = 2
+Are masks needed to protect us?
+
+### Source
+B-Wearing masks should be promoted
+### Chinese = 2
+B-Wearing masks should be promoted
+
+### Source
+Do we need more testing?
+### Chinese = 2
+Do we need more testing?
+
+### Source
+B-We should deliver tests as much as possible
+### Chinese = 2
+B-We should deliver tests as much as possible
+
+### Source
+Should we quarantine contacts of confirmed cases?
+### Chinese = 2
+Should we quarantine contacts of confirmed cases?
+
+### Source
+B-Quarantining is useful, but not top priority
+### Chinese = 2
+B-Quarantining is useful, but not top priority
+
+### Source
+Actions
+### Chinese = 2
+Actions
+
+### Source
+Apply your policy belief
+### Chinese = 2
+Apply your policy belief
+
+### Source
+Monitors
+### Chinese = 2
+Monitors
+
+### Source
+Original Residents
+### Chinese = 2
+Original Residents
+
+### Source
+Current residents
+### Chinese = 2
+Current residents
+
+### Source
+Acc. Recovered %
+### Chinese = 2
+Acc. Recovered %
+
+### Source
+Acc. Death %
+### Chinese = 2
+Acc. Death %
+
+### Source
+Acc. Symptoms %
+### Chinese = 2
+Acc. Symptoms %
+
+### Source
+Acc. Infected %
+### Chinese = 2
+Acc. Infected %
+
+### Source
+Acc. Detected %
+### Chinese = 2
+Acc. Detected %
+
+### Source
+% Hospital Capacity
+### Chinese = 2
+% Hospital Capacity
+
+### Source
+Acc. Hospitalized %
+### Chinese = 2
+Acc. Hospitalized %
+
+### Source
+% Masked
+### Chinese = 2
+% Masked
+
+### Source
+Configurations
+### Chinese = 2
+Configurations
+
+
+### Source
+lockdown?
+### Chinese = 2
+lockdown?
+
+
+### Source
+Select yourself
+### Chinese = 2
+Select yourself
+
+
+### Source
+tutorial?
+### Chinese = 2
+tutorial?
+
+

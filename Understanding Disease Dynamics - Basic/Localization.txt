@@ -1,0 +1,38 @@
+﻿## Plots
+### Source
+Infected
+### Chinese = 2
+Infected
+
+
+### Source
+Not Infected
+### Chinese = 2
+Not Infected
+
+
+### Source
+Populations
+### Chinese = 2
+Populations
+
+
+### Source
+Infection and Recovery Rates
+### Chinese = 2
+Infection and Recovery Rates
+
+
+### Source
+Cumulative Infected and Recovered
+### Chinese = 2
+Cumulative Infected and Recovered
+
+
+## General
+### Source
+Understanding Disease Dynamics - Basic
+### Chinese = 2
+Understanding Disease Dynamics - Basic
+
+

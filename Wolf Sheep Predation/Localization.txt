@@ -1,0 +1,127 @@
+﻿## Plots
+### Source
+sheep
+### Chinese = 0
+羊
+
+### Source
+wolves
+### Chinese = 0
+狼
+
+### Source
+grass / 4
+### Chinese = 0
+草 (/4)
+
+### Source
+populations
+### Chinese = 0
+种群数量
+
+### Source
+time
+### Chinese = 0
+时间
+
+### Source
+pop.
+### Chinese = 0
+人口
+
+## General
+### Source
+Wolf Sheep Predation
+### Chinese = 0
+生态系统：狼吃羊
+
+### Source
+小绵羊和大灰狼
+### Chinese = 2
+小绵羊和大灰狼
+
+## Widgets
+### Source
+model-version
+### Chinese = 0
+生态系统中有哪些元素？
+
+### Source
+sheep-wolves
+### Chinese = 0
+狼和羊
+
+### Source
+sheep-wolves-grass
+### Chinese = 0
+狼、羊和草
+
+### Source
+Configurations
+### Chinese = 0
+模型配置
+
+### Source
+show-energy?
+### Chinese = 0
+是否显示能量？
+
+### Source
+Settings
+### Chinese = 0
+模型设置
+
+### Source
+initial-number-sheep
+### Chinese = 0
+初始羊的数量
+
+### Source
+sheep-gain-from-food
+### Chinese = 0
+羊每次吃草的能量收益
+
+### Source
+sheep-reproduce
+### Chinese = 0
+羊的繁殖率
+
+### Source
+initial-number-wolves
+### Chinese = 0
+初始狼的数量
+
+### Source
+wolf-gain-from-food
+### Chinese = 0
+狼每次吃羊的能量收益
+
+### Source
+wolf-reproduce
+### Chinese = 0
+狼的繁殖率
+
+### Source
+grass-regrowth-time
+### Chinese = 0
+草的生长周期
+
+### Source
+Monitors
+### Chinese = 0
+运行数据
+
+### Source
+sheep
+### Chinese = 0
+羊
+
+### Source
+wolves
+### Chinese = 0
+狼
+
+### Source
+grass
+### Chinese = 0
+草

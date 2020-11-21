@@ -1,0 +1,32 @@
+﻿## Plots
+### Source
+percent
+### Chinese = 2
+percent
+
+
+### Source
+Percent Similar
+### Chinese = 2
+Percent Similar
+
+
+### Source
+Number-unhappy
+### Chinese = 2
+Number-unhappy
+
+
+## General
+### Source
+Percent Similar
+### Chinese = 2
+Percent Similar
+
+
+### Source
+Segregation
+### Chinese = 2
+Segregation
+
+

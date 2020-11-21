@@ -1,0 +1,68 @@
+﻿## NetTango
+### Source
+slime actions
+### Chinese = 0
+每个史莱姆
+
+### Source
+if chemical strength
+### Chinese = 0
+如果化学信号的浓度大于
+
+### Source
+turn toward chemical
+### Chinese = 0
+转向化学信号
+
+### Source
+sniff-angle
+### Chinese = 0
+最大角度
+
+### Source
+forward
+### Chinese = 0
+前进
+
+### Source
+wiggle
+### Chinese = 0
+随机转向
+
+### Source
+drop chemical
+### Chinese = 0
+分泌信号
+
+### Source
+Else
+### Chinese = 0
+否则
+
+## General
+### Source
+Slime
+### Chinese = 0
+史莱姆
+
+### Source
+Slime (NetTango)
+### Chinese = 2
+Slime (NetTango)
+
+### Source
+史莱姆（可视化编程）
+### Chinese = 2
+史莱姆（可视化编程）
+
+## Widgets
+### Source
+Settings
+### Chinese = 0
+设置
+
+### Source
+population
+### Chinese = 0
+人口
+
