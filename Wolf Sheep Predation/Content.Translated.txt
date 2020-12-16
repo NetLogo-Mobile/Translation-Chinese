@@ -1,64 +1,69 @@
-﻿WHAT IS IT?
-This model explores the stability of predator-prey ecosystems. Such a system is called unstable if it tends to result in extinction for one or more species involved. In contrast, a system is stable if it tends to maintain itself over time, despite fluctuations in population sizes.
+﻿## 这个模型是什么？
+这个模型探讨了捕食者——被捕食者生态系统的稳定性。如果一个系统会逐渐导致系统内一个或多个物种的灭绝，那就叫它“不稳定的系统”。相反，如果在一段时间内一个系统中虽然物种数量有上下波动，但总体来说物种的种类保持不变，那么就叫它“稳定的系统”。
 
-HOW IT WORKS
-There are two main variations to this model.
+## 这个模型是怎么运行的？
+这一模型主要有两个不同的版本。
 
-In the first variation, the "sheep-wolves" version, wolves and sheep wander randomly around the landscape, while the wolves look for sheep to prey on. Each step costs the wolves energy, and they must eat sheep in order to replenish their energy - when they run out of energy they die. To allow the population to continue, each wolf or sheep has a fixed probability of reproducing at each time step. In this variation, we model the grass as "infinite" so that sheep always have enough to eat, and we don't explicitly model the eating or growing of grass. As such, sheep don't either gain or lose energy by eating or moving. This variation produces interesting population dynamics, but is ultimately unstable. This variation of the model is particularly well-suited to interacting species in a rich nutrient environment, such as two strains of bacteria in a petri dish (Gause, 1934).
+在第一个“羊-狼”的版本中，狼和羊在环境中随机游荡，狼寻找羊来捕食。每一步都会消耗狼的体力，它们必须吃羊来补充体力——当它们体力耗尽时，它们就会消失。为了让种群继续繁殖下去，在每个单位时间内，每只狼或羊都有一个固定的生育率。在这个版本中，我们假设草的数量是“无限的”，因此羊总是有足够的食物。同时，我们并没有明确地模拟草被羊吃掉或者生长的过程。因此，羊不会因为吃草获得体力，也不会因为移动而消耗体力。这个模型产生了有趣的种群动态，但最后我们发现它并不稳定。这个版本的模型特别适用于模拟营养丰富的环境中互相影响的物种，比如培养皿中的两种细菌（Gause，1934）。
 
-The second variation, the "sheep-wolves-grass" version explictly models grass (green) in addition to wolves and sheep. The behavior of the wolves is identical to the first variation, however this time the sheep must eat grass in order to maintain their energy - when they run out of energy they die. Once grass is eaten it will only regrow after a fixed amount of time. This variation is more complex than the first, but it is generally stable. It is a closer match to the classic Lotka Volterra population oscillation models. The classic LV models though assume the populations can take on real values, but in small populations these models underestimate extinctions and agent-based models such as the ones here, provide more realistic results. (See Wilensky & Rand, 2015; chapter 4).
+第二种是“羊-狼-草”版本，除了狼和羊以外，还模拟了绿色的草。狼的行为与第一个模型相同，但是这一次，羊必须吃草才能维持体力，当它们体力耗尽时也会消失。草一旦被羊吃掉，它们在一段时间后才会重新生长。这种模型比第一种模型更复杂，但通常是稳定的。它与经典的掠食者—猎物方程（Lotka-Volterra equation）更吻合。经典模型假定种群大小可以有小数点，但是在较小的种群中，由于动物的数量总是整数，基于公式的模型低估了灭绝的风险。而类似本模型的多主体模型（Agent-based Model）提供了更接近现实的结果。（参见 Wilensky & Rand 2015 年的教科书，第4章）。
 
-The construction of this model is described in two papers by Wilensky & Reisman (1998; 2006) referenced below.
+Wilensky & Reisman（1998；2006）在附录两篇论文中描述了这种模型的构造。
 
-HOW TO USE IT
-Set the model-version chooser to "sheep-wolves-grass" to include grass eating and growth in the model, or to "sheep-wolves" to only include wolves (black) and sheep (white).
-Adjust the slider parameters (see below), or use the default settings.
-Press the SETUP button.
-Press the GO button to begin the simulation.
-Look at the monitors to see the current population sizes
-Look at the POPULATIONS plot to watch the populations fluctuate over time
-Parameters: MODEL-VERSION: Whether we model sheep wolves and grass or just sheep and wolves INITIAL-NUMBER-SHEEP: The initial size of sheep population INITIAL-NUMBER-WOLVES: The initial size of wolf population SHEEP-GAIN-FROM-FOOD: The amount of energy sheep get for every grass patch eaten (Note this is not used in the sheep-wolves model version) WOLF-GAIN-FROM-FOOD: The amount of energy wolves get for every sheep eaten SHEEP-REPRODUCE: The probability of a sheep reproducing at each time step WOLF-REPRODUCE: The probability of a wolf reproducing at each time step GRASS-REGROWTH-TIME: How long it takes for grass to regrow once it is eaten (Note this is not used in the sheep-wolves model version) SHOW-ENERGY?: Whether or not to show the energy of each animal as a number
+## 这个模型怎么用？
+将“模型版本”（model-version）设置中选择“羊-狼-草”模型，这样模型就能包括草生长和被羊吃掉的过程，或者选择 “羊-狼”模型，这样模型中就只包括黑色的狼和白色的羊。
 
-Notes: - one unit of energy is deducted for every step a wolf takes - when running the sheep-wolves-grass model version, one unit of energy is deducted for every step a sheep takes
+从“种群人口”曲线图中，观察种群随时间的变化。
 
-There are three monitors to show the populations of the wolves, sheep and grass and a populations plot to display the population values over time.
+如何调整滑块参数：
+MODEL-VERSION：模型版本。决定我们建立“羊-狼-草”模型还是“羊-狼”模型
+INITIAL-NUMBER-SHEEP：羊的初始数量
+INITIAL-NUMBER-WOLVES：狼的初始数量
+SHEEP-GAIN-FROM-FOOD：羊吃草获得的体力（注： “羊-狼”模型中没有这个参数）
+WOLF-GAIN-FROM-FOOD：狼吃羊获得的体力
+SHEEP-REPRODUCE：羊的繁殖概率（注：在每一时间周期中）
+WOLF-REPRODUCE：狼的繁殖概率（注：在每一时间周期中）
+GRASS-REGROWTH-TIME：草的再生时间（注： “羊-狼”模型中没有这个参数）
+SHOW-ENERGY?：是否标出动物体力值
 
-If there are no wolves left and too many sheep, the model run stops.
+注：狼每走一步就扣除一点的体力值——当运行“羊-狼-草”模型时，羊每走一步也扣除一点的体力值。有三个监视器来显示狼、羊和草的数量，还有一个“种群人口”曲线图来显示种群数量随时间变化的情况。如果没有狼或者羊太多了，模型会停止运行。
 
-THINGS TO NOTICE
-When running the sheep-wolves model variation, watch as the sheep and wolf populations fluctuate. Notice that increases and decreases in the sizes of each population are related. In what way are they related? What eventually happens?
+## 看一看：
+当运行“羊-狼-草”模型时，看一看羊和狼的数量波动。你会发现每个种群数量的增加或减少是相关的。它们之间有什么联系？最终会发生什么？
+ 
+在“羊-狼-草”模型中，你会发现添加到“种群人口”曲线图中的绿线表示草的数量的变化。在这种情况下，这三个种群数量大小又是怎么相互联系的？对此有什么解释？
+ 
+你可以猜想一下为什么有些模型是稳定的，而另一些却不稳定？
 
-In the sheep-wolves-grass model variation, notice the green line added to the population plot representing fluctuations in the amount of grass. How do the sizes of the three populations appear to relate now? What is the explanation for this?
+## 试一试：
+尝试调整参数到各种数值。改变这些参数对模型是否稳定影响是大还是小？
+ 
+你能在“羊-狼-草”模型中找到可以产生稳定的生态系统的参数吗？
+ 
+尝试运行“羊-狼-草”模型，将一开始狼的数量设置为0，这样就形成了一个只有羊和草的稳定的生态系统。为什么这个生态系统是稳定的，但是只有羊和狼的生态系统却不稳定？
+ 
+你会发现，在稳定的环境下，种群数量往往以可预测的速度变化。你能找到任何可以加速或减速的参数吗？
 
-Why do you suppose that some variations of the model might be stable while others are not?
+## 改一改：
+有很多方法可以改变模型，使生态系统在只有狼和羊（没有草）的情况下保持稳定。比如说有些方法需要加入新元素或者改变现有的行为。你能制作出这样的版本吗？
+ 
+试着改变繁殖的规则——比如，如果繁殖依赖于体力而不是由固定的概率决定，会发生什么？
+ 
+你能修改一下模型，让羊群成群结队吗？
+ 
+你能修改一下这个模型，让狼主动追逐羊吗？
 
-THINGS TO TRY
-Try adjusting the parameters under various settings. How sensitive is the stability of the model to the particular parameters?
+## NetLogo 语言特性
+首先，我们用了不同种类（Breeds）来建模两种不同的“海龟”主体：狼和羊。
 
-Can you find any parameters that generate a stable ecosystem in the sheep-wolves model variation?
+其次，我们用了“格子”来建模草地。
 
-Try running the sheep-wolves-grass model variation, but setting INITIAL-NUMBER-WOLVES to 0. This gives a stable ecosystem with only sheep and grass. Why might this be stable while the variation with only sheep and wolves is not?
+最后，我们采用主体集合的报告指令“one-of”来选择随机一只被羊吃掉的狼。
 
-Notice that under stable settings, the populations tend to fluctuate at a predictable pace. Can you find any parameters that will speed this up or slow it down?
-
-EXTENDING THE MODEL
-There are a number ways to alter the model so that it will be stable with only wolves and sheep (no grass). Some will require new elements to be coded in or existing behaviors to be changed. Can you develop such a version?
-
-Try changing the reproduction rules -- for example, what would happen if reproduction depended on energy rather than being determined by a fixed probability?
-
-Can you modify the model so the sheep will flock?
-
-Can you modify the model so that wolves actively chase sheep?
-
-NETLOGO FEATURES
-Note the use of breeds to model two different kinds of "turtles": wolves and sheep. Note the use of patches to model grass.
-
-Note use of the ONE-OF agentset reporter to select a random sheep to be eaten by a wolf.
-
-RELATED MODELS
+## 相关模型
 Look at Rabbits Grass Weeds for another model of interacting populations with different rules.
 
-CREDITS AND REFERENCES
+## 引用和致谢
 Wilensky, U. & Reisman, K. (1998). Connected Science: Learning Biology through Constructing and Testing Computational Theories -- an Embodied Modeling Approach. International Journal of Complex Systems, M. 234, pp. 1 - 12. (The Wolf-Sheep-Predation model is a slightly extended version of the model described in the paper.)
 
 Wilensky, U. & Reisman, K. (2006). Thinking like a Wolf, a Sheep or a Firefly: Learning Biology through Constructing and Testing Computational Theories -- an Embodied Modeling Approach. Cognition & Instruction, 24(2), pp. 171-209. http://ccl.northwestern.edu/papers/wolfsheep.pdf .
@@ -71,14 +76,48 @@ Volterra, V. (1926, October 16). Fluctuations in the abundance of a species cons
 
 Gause, G. F. (1934). The struggle for existence. Baltimore: Williams & Wilkins.
 
-HOW TO CITE
-If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+## NetLogo 语言特性
+Note the use of breeds to model two different kinds of "turtles": wolves and sheep. Note the use of patches to model grass.
 
-For the model itself:
+Note use of the ONE-OF agentset reporter to select a random sheep to be eaten by a wolf.
+
+## 相关模型
+Look at Rabbits Grass Weeds for another model of interacting populations with different rules.
+
+## 引用和致谢
+Wilensky, U. & Reisman, K. (1998). Connected Science: Learning Biology through Constructing and Testing Computational Theories -- an Embodied Modeling Approach. International Journal of Complex Systems, M. 234, pp. 1 - 12. (The Wolf-Sheep-Predation model is a slightly extended version of the model described in the paper.)
+
+Wilensky, U. & Reisman, K. (2006). Thinking like a Wolf, a Sheep or a Firefly: Learning Biology through Constructing and Testing Computational Theories -- an Embodied Modeling Approach. Cognition & Instruction, 24(2), pp. 171-209. http://ccl.northwestern.edu/papers/wolfsheep.pdf .
+
+Wilensky, U., & Rand, W. (2015). An introduction to agent-based modeling: Modeling natural, social and engineered complex systems with NetLogo. Cambridge, MA: MIT Press.
+
+Lotka, A. J. (1925). Elements of physical biology. New York: Dover.
+
+Volterra, V. (1926, October 16). Fluctuations in the abundance of a species considered mathematically. Nature, 118, 558–560.
+
+Gause, G. F. (1934). The struggle for existence. Baltimore: Williams & Wilkins.
+
+## 如何引用本模型
+如果你在公开出版物中提到了 NetLogo 软件或本模型，我们要求你加入下列引用。
+
+对于模型本身：
 
 Wilensky, U. (1997). NetLogo Wolf Sheep Predation model. http://ccl.northwestern.edu/netlogo/models/WolfSheepPredation. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-Please cite the NetLogo software as:
+
+对于建模软件：
 
 Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-COPYRIGHT AND LICENSE
-Copyright 1997 Uri Wilensky.
+
+## 版权和授权
+
+版权所有 1997 Uri Wilensky。
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+商业许可请联系 Uri Wilensky：uri@northwestern.edu
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2000.
