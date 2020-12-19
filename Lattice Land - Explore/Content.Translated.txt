@@ -1,85 +1,104 @@
-﻿WHAT IS IT?
-Lattice Land - Explore is one of several models in the Lattice Land software suite. Lattice Land is an interactive MathLand, a microworld in which students can uncover advanced mathematical thinking through play, conjecture, and experimentation. It provides another entryway into geometry, investigating the geometry of a discrete lattice of points. In Lattice Land, there is no one right answer and no pre-determined pathway you must travel. However, even seemingly trivial exercises can quickly become rich explorations.
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## 这个模型是什么？
 
-A lattice is an array of dots on a plane such that there is one dot at each coordinate (x,y), where x and y are integers. Thus each dot on the lattice is one unit away from each of its four closest neighbors (one above, one below, one to the left, and one to the right). A lattice polygon is a polygon whose vertices fall on dots of the lattice.
+_Lattice Land-Explore_是Lattice Land软件套件中的几种模型之一。 Lattice Land是一个互动的MathLand，一个微型世界，学生可以在其中通过玩耍，推测和实验来发现高级数学思维。它提供了另一种进入几何的入口，可以研究离散点阵的几何。在莱迪思土地，没有一个正确的答案，也没有您必须经过的预定途径。但是，即使是看似微不足道的练习也可以迅速成为丰富的探索。
 
-In this exploratory model, you can draw multiple polygons and segments, change the size of the world, change the magnitude of the unit of distance between dots, and check areas and perimeters of polygons. You can use this model to learn about the features of Lattice Land, define the properties of polygons, or to make lattice artwork.
+晶格是平面上的点阵列，因此每个坐标（x，y）上都有一个点，其中x和y是整数。因此，晶格上的每个点与其四个最接近的邻居（一个在上，一个在下，一个在左边，一个在右边）相距一个单位。格子多边形是其顶点落在格子的点上的多边形。
 
-HOW IT WORKS
-Using Lattice Land, students can draw any lattice polygon in addition to drawing simple line segments. Polygons do not need to be limited to just rectangles or triangles.
+在此探索性模型中，您可以绘制多个多边形和线段，更改世界的大小，更改点之间距离单位的大小以及检查多边形的面积和周长。您可以使用该模型来了解Lattice Land的功能，定义多边形的属性或制作晶格艺术品。
 
-We've implemented a lattice in NetLogo by using agents called DOTS sprouted at the center of each patch. The segments between the dots are simply edges or links. The environment then responds to mouse clicks inside of the world and performs the specified action (either draw a side of a polygon or draw a single line segment).
+## 这个模型是怎么运行的
 
-In order to analyze the polygons in question, we use an algorithmic method of calculating the perimeter and area of the polygon based on iterating over the edges of the polygon. However, students are also expected to calculate these different properties by hand and then compare them to the algorithmic results. For instance, students should apply the distance formula to calculate perimeter, or apply the idea of dissection to calculate area. Students should also be encouraged to come up with new ways of calculating these properties.
+使用“ Lattice Land”，学生除了可以画图简单的线段外，还可以绘制任何晶格多边形。多边形不必仅限于矩形或三角形。
 
-HOW TO USE IT
-The SETUP button creates a world with the given dimensions and size set by the sliders.
+我们在NetLogo中使用出现在每个格子中心的DOTS代理实现了一个网格。点之间的线段只是边缘或链接。然后，环境响应世界内部的鼠标单击并执行指定的操作（绘制多边形的一侧或绘制单个线段）。
 
-Select an ACTION.
+为了分析所讨论的多边形，我们使用一种算法，该算法基于对多边形的边缘进行迭代来计算多边形的周长和面积。但是，还希望学生手动计算这些不同的属性，然后将它们与算法结果进行比较。例如，学生应该应用距离公式来计算周长，或者应用解剖的思想来计算面积。还应该鼓励学生想出计算这些特性的新方法。
 
-DRAW POLYGON traces a path from the first dot clicked to the next dot clicked. It continues to wait for clicks until the user clicks back on the first dot. (When using this action, Lattice Land will track the perimeter of each active polygon, and will calculate its area when it is complete)
+## 如何这个模型怎么用
 
-DRAW SEGMENT allows you to join any two dots clicked consecutively by a line segment.
+“设置”按钮创建一个具有给定尺寸和大小的世界，这些尺寸和大小由滑块设置。
 
-DELETE SEGMENT allows you to delete any line segment you have drawn by selecting either endpoint of the segment. Note that this will delete ALL segments that share the selected endpoint. (This action only works on line segments, not edges of polygons.)
+选择一个动作。
 
-SEGMENT-COLOR allows you to select different colors for your segments.
+* DRAW POLYGON跟踪从单击的第一个点到单击的下一个点的路径。它继续等待单击，直到用户单击第一个点。 （使用此动作时，Lattice Land会跟踪每个活动多边形的周长，并在完成后计算其面积）
 
-Press the GO button to run an ACTION.
+* DRAW SEGMENT允许您连接由线段连续单击的任何两个点。
 
-Press CHECK-AREA to verify the area of the last polygon you've just drawn. (Note that check-area will not work on apparent polygons created with segments, only explicit polygons).
+* DELETE SEGMENT允许您通过选择线段的任一端点来删除绘制的任何线段。请注意，这将删除共享所选端点的所有段。 （此操作仅适用于线段，不适用于多边形的边缘。）
 
-Look at the PERIMETER monitor to see the perimeter of the polygon you've drawn.
+SEGMENT-COLOR允许您为细分选择不同的颜色。
 
-THINGS TO NOTICE
-Polygons will always be white. This is meant to help distinguish them from segments as you dissect polygons in various ways. When using Lattice Land, it helps to use segment colors other than black and white.
+按下执行按钮以运行ACTION。
 
-You can draw some shapes using DRAW POLYGON that are not polygons. This will generate an error message. What types of lattice shapes are not lattice polygons?
+按CHECK-AREA来检查刚刚绘制的最后一个多边形的区域。 （请注意，检查区域将不适用于使用线段创建的外观多边形，而仅适用于显式多边形）。
 
-THINGS TO TRY
-Create as many different shapes as you can that have only 1 square unit area.
-Create as many different shapes as you can that have 1.5 square unit area.
-Create as many different shapes as you can that have 2 square units area.
-Keep going until you've generated a number of interesting shapes with 8 square units area.
-For each polygon, count and record the number of dots that are strictly inside the polygon. Also count and record the number of dots that fall on an edge of the polygon. Do you see a pattern?
-If not, just look at polygons which have no dots on the inside. Do you see a pattern now? Can you write a formula to describe it?
-Try to generalize an area formula for a lattice polygon using only the number of dots on its Boundary (B) and the number of dots on the Inside (I).
-Make sure to try dissecting a polygon in different ways. For example:
+查看PERIMETER监视器，查看绘制的多边形的周长。
 
-Slice out rectangles until you can no longer do so.
-Triangulate the polygon
-Enclose the polygon in a figure whose area you know and slice away pieces
-EXTENDING THE MODEL
-Notice that the DRAW-POLYGON procedure deletes closed figures that aren't polygons. But what if you change the definition of what it means to be a polygon? Change the code to reflect this new definition. How does this alter or break the rules we currently use to understand polygons (e.g., area formulas)?
+## 看一看
 
-NETLOGO FEATURES
-The DRAW-SEGMENT and DRAW-POLYGON actions are programmed similarly and each call on two anonymous procedures two actually draw on the screen. However, DRAW-POLYGON has to keep a list of past vertices drawn.
+多边形将始终为白色。当您以各种方式解剖多边形时，这旨在帮助将它们与线段区分开。使用莱迪思Land时，有助于使用除黑色和白色以外的其他颜色。
 
-The INTERSECTION reporter checks for intersections between links by converting the links into slope-intercept form and then checking for line intersections.
+您可以使用DRAW POLYGON绘制一些非多边形的形状。这将生成一条错误消息。哪些类型的晶格形状不是晶格多边形？
 
-This model uses continuous updates, rather than tick-based updates. This means that the model does not update at regular time intervals (ticks) dictated by the code. Instead, this model updates when the user performs an action. Thus, the depth of inquiry into the mathematics of Lattice Land is dictated by the user: nothing (other than the lattice) is generated until the user draws something.
+## 试一试
 
-RELATED MODELS
-Intersecting Links
-CREDITS AND REFERENCES
-The area formula used for this model comes from the following site: http://mathworld.wolfram.com/PolygonArea.html
+*创建尽可能多的具有1平方单位面积的不同形状。
+*创建尽可能多的具有1.5平方单位面积的形状。
+*创建尽可能多的具有2平方单位面积的不同形状。
+*继续操作，直到您生成了8平方单位面积的许多有趣形状。
+*对于每个多边形，计算并记录严格位于多边形内部的点数。还计算并记录落在多边形边缘上的点数。你看到图案了吗？
+*如果不是，则仅查看内部没有点的多边形。您现在看到图案了吗？你能写一个描述它的公式吗？
+*尝试仅使用其边界（B）上的点数和内部（I）上的点数来概括晶格多边形的面积公式。
+
+
+确保尝试以其他方式解剖多边形。例如：
+
+*切出矩形，直到不再能这样做为止。
+*三角剖分
+*将多边形封装在您知道其面积的图形中并切成碎片
+
+## 改一改
+
+请注意，DRAW-POLYGON过程删除不是多边形的封闭图形。但是，如果您更改多边形的定义该怎么办？更改代码以反映此新定义。这如何改变或破坏我们目前用于理解多边形的规则（例如，面积公式）？
+
+##  NetLogo 语言特性
+
+DRAW-SEGMENT和DRAW-POLYGON动作的编程方式类似，每个在两个匿名过程上的调用实际上在屏幕上绘制了两个。但是，DRAW-POLYGON必须保留绘制的过去顶点的列表。
+
+INTERSECTION报告指令通过将链接转换为斜率截距形式然后检查直线相交来检查链接之间的相交。
+
+该模型使用连续更新，而不是基于刻度的更新。这意味着模型不会按代码规定的规则时间间隔（滴答声）进行更新。相反，该模型在用户执行操作时更新。因此，对晶格地带的数学研究的深度由用户决定：在用户画东西之前，不会生成任何东西（除晶格外）。
+
+## 相关模型
+
+* Intersecting Links
+
+## 引用和致谢
+
+The area formula used for this model comes from the following site:
+http://mathworld.wolfram.com/PolygonArea.html
 
 Area = 1/2 * (the determinant of the matrices formed by each consecutive pair of coordinates)
 
-HOW TO CITE
+## 如何引用本模型
+
 If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
 For the model itself:
 
-Pei, C. and Wilensky, U. (2017). NetLogo Lattice Land - Explore model. http://ccl.northwestern.edu/netlogo/models/LatticeLand-Explore. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Pei, C. and Wilensky, U. (2017).  NetLogo Lattice Land - Explore model.  http://ccl.northwestern.edu/netlogo/models/LatticeLand-Explore.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
 Please cite the NetLogo software as:
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-COPYRIGHT AND LICENSE
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
 Copyright 2017 Uri Wilensky.
 
-CC BY-NC-SA 3.0
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
 Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.

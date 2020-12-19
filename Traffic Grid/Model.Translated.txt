@@ -1,0 +1,104 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Plots
+### Source
+Average Speed
+### Chinese ***
+平均速度
+
+### Source
+Average Speed of Cars
+### Chinese ***
+汽车平均速度
+
+### Source
+Average Wait
+### Chinese ***
+平均等待
+
+### Source
+Average Wait Time of Cars
+### Chinese ***
+汽车平均等待时间
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Stopped Cars
+### Chinese ***
+停止的汽车
+
+### Source
+Time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+Change light
+### Chinese ***
+换灯
+
+### Source
+Current Phase
+### Chinese ***
+当前阶段
+
+### Source
+current-auto?
+### Chinese ***
+当前自动吗？
+
+### Source
+current-phase
+### Chinese ***
+当前阶段
+
+### Source
+Go
+### Chinese ***
+走
+
+### Source
+grid-size-x
+### Chinese ***
+网格大小x
+
+### Source
+grid-size-y
+### Chinese ***
+网格大小
+
+### Source
+num-cars
+### Chinese ***
+num-cars
+
+### Source
+power?
+### Chinese ***
+功率？
+
+### Source
+Select intersection
+### Chinese ***
+选择路口
+
+### Source
+Setup
+### Chinese ***
+设定
+
+### Source
+speed-limit
+### Chinese ***
+速度极限
+
+### Source
+ticks-per-cycle
+### Chinese ***
+每周期滴答
+

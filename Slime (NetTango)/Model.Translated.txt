@@ -1,0 +1,18 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese ***
+走
+
+### Source
+population
+### Chinese ***
+人口
+
+### Source
+setup
+### Chinese ***
+设定
+

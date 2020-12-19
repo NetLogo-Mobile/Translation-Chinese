@@ -1,72 +1,84 @@
-﻿WHAT IS IT?
-This project models the behavior of two types of agents in a neighborhood. The orange agents and blue agents get along with one another. But each agent wants to make sure that it lives near some of "its own." That is, each orange agent wants to live near at least some orange agents, and each blue agent wants to live near at least some blue agents. The simulation shows how these individual preferences ripple through the neighborhood, leading to large-scale patterns.
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## 这个模型是什么？
 
-This project was inspired by Thomas Schelling's writings about social systems (such as housing patterns in cities).
+该项目对社区中两种类型的代理的行为进行建模。橙色特工和蓝色特工彼此相处。但是每个主体都希望确保自己生活在一些“自己的”附近。也就是说，每个橙色主体都希望住在至少一些橙色特工附近，并且每个蓝色主体都希望住在至少一些蓝色特工附近。仿真显示了这些个人偏好如何在邻居中波动，从而导致大规模模式。
 
-HOW TO USE IT
-Click the SETUP button to set up the agents. There are approximately equal numbers of orange and blue agents. The agents are set up so no patch has more than one agent. Click GO to start the simulation. If agents don't have enough same-color neighbors, they move to a nearby patch. (The topology is wrapping, so that patches on the bottom edge are neighbors with patches on the top and similar for left and right).
+该项目的灵感来自托马斯·谢林（Thomas Schelling）关于社会系统（例如城市的住房模式）的著作。
 
-The DENSITY slider controls the occupancy density of the neighborhood (and thus the total number of agents). (It takes effect the next time you click SETUP.) The %-SIMILAR-WANTED slider controls the percentage of same-color agents that each agent wants among its neighbors. For example, if the slider is set at 30, each blue agent wants at least 30% of its neighbors to be blue agents.
+## 如何这个模型怎么用
 
-The % SIMILAR monitor shows the average percentage of same-color neighbors for each agent. It starts at about 50%, since each agent starts (on average) with an equal number of orange and blue agents as neighbors. The NUM-UNHAPPY monitor shows the number of unhappy agents, and the % UNHAPPY monitor shows the percent of agents that have fewer same-color neighbors than they want (and thus want to move). The % SIMILAR and the NUM-UNHAPPY monitors are also plotted.
+单击设置按钮以设置代理。橙色和蓝色代理的数量大致相等。设置了代理，因此格子中没有一个以上的主体。单击执行开始仿真。如果代理商没有足够多的同色邻居，他们会搬到附近的格子。 （拓扑结构是环绕式的，因此底部边缘的修补程序是顶部修补程序的邻居，而左侧和右侧相似）。
 
-The VISUALIZATION chooser gives two options for visualizing the agents. The OLD option uses the visualization that was used by the segregation model in the past. The SQUARE-X option visualizes the agents as squares. Unhappy agents are visualized as Xs.
+DENSITY滑块控制邻域的占用密度（从而控制代理的总数）。 （下一次单击SETUP时，它会生效。）％-SIMILAR-WANTED滑块控制每个主体希望在其邻居的同色代理的百分比。例如，如果将滑块设置为30，则每个蓝色主体都希望至少有30％的邻居是蓝色代理。
 
-THINGS TO NOTICE
-When you execute SETUP, the orange and blue agents are randomly distributed throughout the neighborhood. But many agents are "unhappy" since they don't have enough same-color neighbors. The unhappy agents move to new locations in the vicinity. But in the new locations, they might tip the balance of the local population, prompting other agents to leave. If a few agents move into an area, the local blue agents might leave. But when the blue agents move to a new area, they might prompt orange agents to leave that area.
+％SIMILAR监视器显示每个主体的同色邻居的平均百分比。它开始于大约50％，因为每个主体（平均）以相等数量的橙色和蓝色代理作为邻居。 NUM-UNHAPPY监视器显示不满意的业务代表数量，％UNHAPPY监视器显示的同色邻居数量少于所需（并因此希望移动）的业务代表百分比。还绘制了％SIMILAR和NUM-UNHAPPY监视器。
 
-Over time, the number of unhappy agents decreases. But the neighborhood becomes more segregated, with clusters of orange agents and clusters of blue agents.
+“可视化”选择器提供了两个用于可视化代理的选项。 OLD选项使用隔离模型过去使用的可视化效果。 SQUARE-X选项将代理可视化为正方形。不满意的特工可视为X。
 
-In the case where each agent wants at least 30% same-color neighbors, the agents end up with (on average) 70% same-color neighbors. So relatively small individual preferences can lead to significant overall segregation.
+## 看一看
 
-THINGS TO TRY
-Try different values for %-SIMILAR-WANTED. How does the overall degree of segregation change?
+当您执行SETUP时，橙色和蓝色代理会随机分布在整个社区中。但是许多代理人“不高兴”，因为他们没有足够多的同色邻居。不幸的特工们搬到附近的新地方。但是在新的地点，他们可能会破坏当地人口的平衡，促使其他特工离开。如果一些特工进入某个区域，则本地蓝色特工可能会离开。但是，当蓝色特工移动到新区域时，它们可能会提示橙色特工离开该区域。
 
-If each agent wants at least 40% same-color neighbors, what percentage (on average) do they end up with?
+随着时间的流逝，不满意的代理人数会减少。但是，邻居变得更加隔离，出现了橙色特工和蓝色特工。
 
-Try different values of DENSITY. How does the initial occupancy density affect the percentage of unhappy agents? How does it affect the time it takes for the model to finish?
+在每个业务主体想要至少30％的同色邻居，这些代理最终（平均）以70％的同色邻居。因此，相对较小的个人偏好会导致明显的整体隔离。
 
-Can you set sliders so that the model never finishes running, and agents keep looking for new locations?
+## 试一试
 
-EXTENDING THE MODEL
-The find-new-spot procedure has the agents move locally till they find a spot. Can you rewrite this procedure so the agents move directly to an appropriate new spot?
+为％-SIMILAR-WANTED尝试其他值。总体隔离程度如何变化？
 
-Incorporate social networks into this model. For instance, have unhappy agents decide on a new location based on information about what a neighborhood is like from other agents in their network.
+如果每个主体都希望至少有40％的同色邻居，他们最终将获得多少百分比（平均）？
 
-Change the rules for agent happiness. One idea: suppose that the agents need some minimum threshold of "good neighbors" to be happy with their location. Suppose further that they don't always know if someone makes a good neighbor. When they do, they use that information. When they don't, they use color as a proxy -- i.e., they assume that agents of the same color make good neighbors.
+尝试不同的DENSITY值。初始占用密度如何影响不满意代理的百分比？它如何影响模型完成所需的时间？
 
-The two different visualizations emphasize different aspects of the model. The SQUARE-X visualization shows whether an agent is happy or not. Can you design a different visualization that emphasizes different aspects?
+您是否可以设置滑块，以使模型永远无法完成运行，并且代理不断寻找新的位置？
 
-NETLOGO FEATURES
-sprout is used to create agents while ensuring no patch has more than one agent on it.
+## 改一改
 
-When an agent moves, move-to is used to move the agent to the center of the patch it eventually finds.
+“发现新地点”过程使代理在本地移动，直到找到地点为止。您是否可以重写此过程，以便代理直接移至适当的新位置？
 
-Note two different methods that can be used for find-new-spot, one of them (the one we use) is recursive.
+将社交网络纳入此模型。例如，让不满意的代理根据其网络中其他代理提供的有关邻居状况的信息来决定新位置。
 
-CREDITS AND REFERENCES
+更改主体幸福感的规则。一个想法：假设代理人需要一些“好邻居”的最低限度的门槛，以使其位置满意。进一步假设他们并不总是知道某人是否是好邻居。当他们这样做时，他们将使用该信息。如果不这样做，他们将使用颜色作为代理-即，他们假定相同颜色的代理可以成为好邻居。
+
+两种不同的可视化强调了模型的不同方面。 SQUARE-X可视化显示主体是否满意。您是否可以设计强调不同方面的其他可视化？
+
+##  NetLogo 语言特性
+
+`sprout`用于创建代理，同时确保没有格子包含多个主体。
+
+当主体移动时，将使用“移动到”将主体移动到最终找到的格子的中心。
+
+请注意，可以使用两种不同的方法来查找新地点，其中一种（我们使用的一种）是递归的。
+
+## 引用和致谢
+
 Schelling, T. (1978). Micromotives and Macrobehavior. New York: Norton.
 
 See also: Rauch, J. (2002). Seeing Around Corners; The Atlantic Monthly; April 2002;Volume 289, No. 4; 35-48. https://www.theatlantic.com/magazine/archive/2002/04/seeing-around-corners/302471/
 
-HOW TO CITE
+## 如何引用本模型
+
 If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
 For the model itself:
 
-Wilensky, U. (1997). NetLogo Segregation model. http://ccl.northwestern.edu/netlogo/models/Segregation. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Wilensky, U. (1997).  NetLogo Segregation model.  http://ccl.northwestern.edu/netlogo/models/Segregation.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
 Please cite the NetLogo software as:
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-COPYRIGHT AND LICENSE
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
 Copyright 1997 Uri Wilensky.
 
-CC BY-NC-SA 3.0
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
 Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
 
-This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML). The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
 
 This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.

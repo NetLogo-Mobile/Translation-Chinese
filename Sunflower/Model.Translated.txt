@@ -1,0 +1,295 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Tutorial
+### Source
+"Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>."
+### Chinese ***
+“要查看社区对此模型所提出问题的答案或您对这些问题的答案？请单击“<b>转到问题与</b>解答面板”。”
+
+### Source
+A mathematical ratio commonly found in nature, and when used in a design, fosters organic and natural-looking compositions that are aesthetically pleasing to the eye
+### Chinese ***
+自然界中普遍存在的数学比率，在设计中使用时，可以培育出外观美观的有机和自然组合物
+
+### Source
+An process that is observed to have properties its parts  do not have on their own (such properties or behaviors emerge only when the parts  interact in a wider whole)
+### Chinese ***
+被观察到具有其部分properties本身不具有的特性的过程（只有当部分wider在更广泛的整体中相互作用时，这种特性或行为才会出现）
+
+### Source
+Appropriate position
+### Chinese ***
+适当的位置
+
+### Source
+Clock-tick
+### Chinese ***
+时钟滴答
+
+### Source
+Clockwise
+### Chinese ***
+顺时针
+
+### Source
+Congratulations! 
+### Chinese ***
+恭喜你！ 
+
+### Source
+Counterclockwise
+### Chinese ***
+逆时针方向
+
+### Source
+Death Beyond the Edge 
+### Chinese ***
+死亡超越边缘
+
+### Source
+Emergent process
+### Chinese ***
+紧急过程
+
+### Source
+Fibonacci series
+### Chinese ***
+斐波那契系列
+
+### Source
+For each <trigger=clock-tick>clock-tick </trigger>, a new <color=green>turtle</color> (which can be seen as a <color=maroon>seed</color> or a <color=red>petal </color>) is created. As in nature, the <color=green>turtle</color> finds the <trigger=appropriateposition>appropriate position</trigger> and begins growing. All of the other existing <color=green>turtle</color> move forward and grow slightly, with each clock-tick .
+### Chinese ***
+对于每个<trigger=clock-tick>时钟周期t</trigger> ，一个新的<color=green>海龟</color>（可以看作是<color=maroon>种子</color>或一个<color=red>花瓣</color> ） 被建造。在自然界<color=green>海龟</color>找到<trigger=appropriateposition>合适的位置</trigger>并开始成长。所有其他现有的<color=green>海龟</color>向前移动并略微增长，每按一个时钟周期。
+
+### Source
+Formation of Spiral Pattern 
+### Chinese ***
+螺旋纹的形成
+
+### Source
+Goals 
+### Chinese ***
+目标
+
+### Source
+Golden ratio
+### Chinese ***
+黄金比例
+
+### Source
+Here's a challenge! In nature, real plantsdon't have the <trigger=goldenratio,olive>golden ratio</trigger> "programmed" into them. Rather, the spirals form as the result of an <trigger=emergentprocess>emergent process</trigger>, described in Conway and Guy's book  and other sources. Can you extend this model to capture this emergent process?
+### Chinese ***
+这是一个挑战！在自然界中，真正的植物没有<trigger=goldenratio,olive>黄金比例</trigger>“编程”到他们。相反，螺旋形是由于<trigger=emergentprocess>涌现</trigger>，在Conway和Guy的书和其他资料中进行了介绍。您可以扩展此模型以捕获此涌现吗？
+
+### Source
+How does adding <color=red>c</color><color=orange>o</color><color=navy>l</color><color=magenta>o</color><color=teal>r</color><color=cyan>s</color>  change the spirals you see ? Does this change the phenomena, or only what you see ?
+### Chinese ***
+如何添加<color=red>C</color><color=orange> Ø</color><color=navy>升</color><color=magenta>Ø</color><color=teal> [R</color><color=cyan> s</color> 改变你看到的螺旋形？这会改变现象，还是只改变您所看到的现象？
+
+### Source
+How It Works
+### Chinese ***
+这个怎么运作
+
+### Source
+If a <color=green>turtle</color> gets too close to the edge of the world  and too far from the center of the world, it dies . That is the reason they form a circular pattern .
+### Chinese ***
+如果一个<color=green>海龟</color>它离世界的边缘太近而离世界的中心太远而死。这就是它们形成圆形图案reason的原因。
+
+### Source
+Imagine you are walking in a <color=green>green</color> pasture, knees high in a bed of <color=purple>purple</color> and <color=red>red</color> Chrysanthemums . You bend down to pluck a <color=#ce9c00ff>flower </color> from its <color=maroon>earthly roots</color> and closely examine it. Why do these patterns form in the <color=#ce9c00ff>petals of flowers </color> and how do these patterns vary across different species? Click <b>next</b> to explore this natural phenomenon.
+### Chinese ***
+想象一下，你正走在<color=green>绿色</color>牧场，膝盖高躺在床上<color=purple>紫色</color>和<color=red>红</color>菊花。你弯腰采摘<color=#ce9c00ff>花</color>从其<color=maroon>尘世的根</color>并仔细检查。为什么这些模式会在<color=#ce9c00ff>花的花瓣</color>这些模式在不同物种之间如何变化？单击<b>下一步</b>以探索这种自然现象。
+
+### Source
+In the direction to the typical forward movement of the hands of a clock
+### Chinese ***
+朝着典型的时钟指针前进的方向
+
+### Source
+In the opposite direction to the typical forward movement of the hands of a clock
+### Chinese ***
+与典型的钟针向前运动方向相反
+
+### Source
+Introduction
+### Chinese ***
+介绍
+
+### Source
+Limit
+### Chinese ***
+限制
+
+### Source
+num-colors 
+### Chinese ***
+num-colors
+
+### Source
+Questions?
+### Chinese ***
+有什么问题吗
+
+### Source
+Series of numbers where a number is the addition of the last two numbers, starting with 0, and 1
+### Chinese ***
+一连串数字，其中一个数字是后两个数字的加法，以0和1开头
+
+### Source
+set turn-increment 
+### Chinese ***
+设置转增量
+
+### Source
+step-size 
+### Chinese ***
+步长
+
+### Source
+The <i>num-colors</i> slider controls how many <color=red>c</color><color=orange>o</color><color=navy>l</color><color=magenta>o</color><color=teal>r</color><color=cyan>s</color>  the <color=green>turtles</color> can be. (Using this will make some of the spirals  stand out more, other stand out less.)
+### Chinese ***
+<i>num-colors</i>滑块控制多少<color=red>C</color><color=orange> Ø</color><color=navy>升</color><color=magenta>Ø</color><color=teal> [R</color><color=cyan> s</color> <color=green>海龟</color>可。 （使用此方法将使某些螺旋线more突出更多，而其他螺旋突出较少。）
+
+### Source
+The <i>set turn-increment</i> buttons help to set the <i>turn-increment</i> slider to specific values at and around the <trigger=goldenratio,olive>golden ratio</trigger>. They are simply there to help achieve precision  that can be difficult with the slider.
+### Chinese ***
+<i>设置旋转增量</i>按钮有助于将<i>旋转增量</i>滑块为特定的值。<trigger=goldenratio,olive>黄金比例</trigger>。它们只是在那里，以帮助实现精度，而这是使用滑块可能很难做到的。
+
+### Source
+The <i>step-size</i> slider controls how far away  the <color=green>turtle</color> moves from the center, for each <trigger=clock-tick>clock-tick</trigger>.
+### Chinese ***
+<i>步长</i>滑块控制<color=green>海龟</color>从中心移动，每个<trigger=clock-tick>时钟周期</trigger>。
+
+### Source
+The <i>turn-increment</i> slider dictates the degree  that each new <color=green>turtle</color> will turn to set its position in the spiral .
+### Chinese ***
+<i>旋转增量</i>滑块指示每个新的角度<color=green>海龟</color>将旋转以设置其在螺旋中的位置。
+
+### Source
+The amount of seconds  that have passed since the command 'reset-timer' was last run
+### Chinese ***
+自上次运行命令“ reset-timer”以来经过的秒数
+
+### Source
+The angle  made by this turn is a multiple of the <trigger=goldenratio,olive>golden ratio</trigger> (1.618). The <color=olive>golden ratio</color>, based on the <trigger=fibonacci>Fibonacci series</trigger> (1, 1, 2, 3, 5, 8, 13...), equals the <trigger=limit>limit</trigger> of F(n)/F(n-1). Thus, these spirals  can be mathematically  generated, using the <color=olive>golden ratio</color>.
+### Chinese ***
+此转弯所成的角度是<trigger=goldenratio,olive>黄金比例</trigger>（1.618）。的<color=olive>黄金比例</color>，基于<trigger=fibonacci>斐波那契系列</trigger>（1、2、3、5、8、13 ...）等于<trigger=limit>限制</trigger>F（n）/ F（n-1）的因此，可以使用<color=olive>黄金比例</color>。
+
+### Source
+The Golden Ratio 
+### Chinese ***
+黄金比例
+
+### Source
+The interlocking spirals found in the <color=maroon>seeds</color>, <color=red>petals </color> and even <color=maroon>branches </color> of many <color=green>plants </color> occur naturally through the growth of the flower . This model attempts to demonstrate the growth of these naturally occurring spirals .
+### Chinese ***
+互锁的螺旋线在<color=maroon>种子</color>，<color=red>花瓣</color>乃至<color=maroon>分支</color>许多的<color=green>植物</color>通过花的生长自然发生。该模型试图证明这些自然发生的螺旋的增长。
+
+### Source
+The number of clock-ticks times the turn 'increment'
+### Chinese ***
+时钟点数乘以转弯“增量”
+
+### Source
+Think about the spirals  that you see. How many <b>different</b> ways can you make a pattern of spirals ?
+### Chinese ***
+考虑一下您看到的螺旋the。<b>您可以用几种不同的</b>方式制作螺旋pattern的图案？
+
+### Source
+Try making the model draw your favorite flower's <color=red>petal </color> or <color=maroon>seed</color> pattern . For example, a buttercup or columbine could be made by creating 5 large petals of the appropriate <color=red>c</color><color=orange>o</color><color=navy>l</color><color=magenta>o</color><color=teal>r</color><color=cyan>s</color> .
+### Chinese ***
+尝试使模型绘制您喜欢的花朵<color=red>花瓣</color>要么<color=maroon>种子</color>模式。例如，可以通过制作5个合适的大花瓣来制作毛cup或哥伦拜恩<color=red>C</color><color=orange> Ø</color><color=navy>升</color><color=magenta>Ø</color><color=teal> [R</color><color=cyan> s</color> 。
+
+### Source
+Try making the spirals  go <trigger=counterclockwise>counterclockwise</trigger>.
+### Chinese ***
+试着使螺旋<trigger=counterclockwise>逆时针方向</trigger>。
+
+### Source
+turn-increment 
+### Chinese ***
+旋转增量
+
+### Source
+Value that a function (or sequence) approaches as the input approaches some value
+### Chinese ***
+函数（或序列）随着输入接近某个值而接近的值
+
+### Source
+Want to know more? Click here for higher level reading!
+### Chinese ***
+想知道更多？单击此处获得更高级别的阅读！
+
+### Source
+Welcome to the Sunflower Model! 
+### Chinese ***
+欢迎使用向日葵模型！ 
+
+### Source
+Well done! You have completed the Sunflower model tutorial! Time to play with the model!
+### Chinese ***
+做得好！您已经完成了Sunflower模型教程！是时候玩模型了！
+
+### Source
+When a new <color=maroon>seeds</color> emerges, the older ones grow slightly and move further from the center--the source--and the youngest <color=maroon>seeds</color> finds the largest gap between existing <color=maroon>seeds</color>, in which it can grow. This gap can be found by turning <trigger=counterclockwise>counterclockwise</trigger>.
+### Chinese ***
+当一个新的<color=maroon>种子</color>出现后，年龄较大的人会略有增长，并从中心（来源）和更年轻的地方移开<color=maroon>种子</color>发现现有产品之间的最大差距<color=maroon>种子</color>，可以在其中生长。这个差距可以通过以下方式找到<trigger=counterclockwise>逆时针方向</trigger>。
+
+### Source
+Why do the <color=green>turtles</color> form a circle?
+### Chinese ***
+为什么要<color=green>海龟</color>围成一个圈？
+
+### Source
+ Understand how spiral patterns  form
+ Observe the <trigger=goldenratio,olive>golden ratio</trigger> within natural phenomena 
+ Examine factors that when changed, result in spiral  variations 
+ Explore how manipulating these factors change our perception of spirals 
+### Chinese ***
+了解螺旋图案how的形成方式
+serve观察<trigger=goldenratio,olive>黄金比例</trigger>在自然现象中
+检查变化时会导致螺旋形变化的因素
+探索操纵这些因素如何改变我们对螺旋的认识perception
+
+## Widgets
+### Source
+go
+### Chinese ***
+走
+
+### Source
+num-colors
+### Chinese ***
+num-colors
+
+### Source
+set turn-increment 0.617
+### Chinese ***
+设定转弯增量0.617
+
+### Source
+set turn-increment 0.618034
+### Chinese ***
+设定转弯增量0.618034
+
+### Source
+set turn-increment 0.619
+### Chinese ***
+设定转弯增量0.619
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+step-size
+### Chinese ***
+一步的大小
+
+### Source
+turn-increment
+### Chinese ***
+转身增量
+

@@ -1,0 +1,144 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Plots
+### Source
+# people
+### Chinese ***
+＃个人
+
+### Source
+% infected
+### Chinese ***
+％ 已感染
+
+### Source
+% recovered
+### Chinese ***
+回收百分比
+
+### Source
+% total pop.
+### Chinese ***
+总流行百分比。
+
+### Source
+Cumulative Infected and Recovered
+### Chinese ***
+累积感染和恢复
+
+### Source
+hours
+### Chinese ***
+小时
+
+### Source
+Infected
+### Chinese ***
+已感染
+
+### Source
+Infection and Recovery Rates
+### Chinese ***
+感染和恢复率
+
+### Source
+Infection Rate
+### Chinese ***
+感染率
+
+### Source
+Not Infected
+### Chinese ***
+未感染
+
+### Source
+Populations
+### Chinese ***
+人口
+
+### Source
+rate
+### Chinese ***
+率
+
+### Source
+Recovery Rate
+### Chinese ***
+恢复率
+
+## Widgets
+### Source
+average-hospital-going-tendency
+### Chinese ***
+医院平均往来趋势
+
+### Source
+average-isolation-tendency
+### Chinese ***
+平均隔离倾向
+
+### Source
+average-recovery-time
+### Chinese ***
+平均恢复时间
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+infection-chance
+### Chinese ***
+感染机会
+
+### Source
+initial-ambulance
+### Chinese ***
+最初的救护车
+
+### Source
+initial-people
+### Chinese ***
+最初的人
+
+### Source
+inoculation-chance
+### Chinese ***
+接种机会
+
+### Source
+intra-mobility
+### Chinese ***
+流动性
+
+### Source
+links?
+### Chinese ***
+链接？
+
+### Source
+R0
+### Chinese ***
+00
+
+### Source
+recovery-chance
+### Chinese ***
+恢复机会
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+travel?
+### Chinese ***
+旅行？
+
+### Source
+travel-tendency
+### Chinese ***
+旅行倾向
+

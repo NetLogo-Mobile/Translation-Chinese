@@ -1,0 +1,331 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Plots
+### Source
+Car speeds
+### Chinese ***
+车速
+
+### Source
+max speed
+### Chinese ***
+最大速度
+
+### Source
+min speed
+### Chinese ***
+最低速度
+
+### Source
+red car
+### Chinese ***
+红车
+
+### Source
+speed
+### Chinese ***
+速度
+
+### Source
+time
+### Chinese ***
+时间
+
+## Tutorial
+### Source
+"Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>."
+### Chinese ***
+“要查看社区对此模型所提出问题的答案或您对这些问题的答案？请单击“<b>转到问题与</b>解答面板”。”
+
+### Source
+<color=red>red car</color> speed 
+### Chinese ***
+<color=red>红车</color>速度
+
+### Source
+acceleration 
+### Chinese ***
+加速度
+
+### Source
+Acceleration 
+### Chinese ***
+加速
+
+### Source
+Accuracy of Driving Rules
+### Chinese ***
+驾驶规则的准确性
+
+### Source
+Congratulations! 
+### Chinese ***
+恭喜你！ 
+
+### Source
+Deceleration 
+### Chinese ***
+减速
+
+### Source
+deceleration 
+### Chinese ***
+减速
+
+### Source
+Different Vehicles, Different Rules
+### Chinese ***
+不同的车辆，不同的规则
+
+### Source
+Driving Habits and Response Times
+### Chinese ***
+驾驶习惯和响应时间
+
+### Source
+Even though all of the <color=blue>cars </color> are moving forward , the <color=red>traffic jams</color> tend to move backwards .
+### Chinese ***
+即使所有<color=blue>汽车</color>正在前进，<color=red>交通堵塞</color>倾向于向后移动。
+
+### Source
+Goals 
+### Chinese ***
+目标
+
+### Source
+Imagine you are driving to your <color=green>local supermarket</color> to get some groceries  for the week. You look farther down the road  and there's a <color=red>traffic jam</color> forming. Oh no! How will you ever get home  in time for supper? As you wait for the <color=blue>car </color> in front of you to move forward , you wonder: <i>why do <color=red>traffic jams</color> form even though no accidents have occurred?</i> Click <b>next</b> to explore how <color=red>traffic jams</color> form.
+### Chinese ***
+想象你要开车去<color=green>当地超市</color>来买一些杂货。你往远处看，那里有一个<color=red>交通阻塞</color>成型。不好了！你怎么会及时回家吃晚饭？当你等待<color=blue>车</color>在你面前前进forward，你想知道：<i>为什么</i><color=red><i>交通堵塞</i></color><i>即使没有发生意外的表格？</i>单击<b>下一步</b>以探索<color=red>交通堵塞</color>形成。
+
+### Source
+In <i>Monitors</i>, you can view the real-time <trigger=speed>speed </trigger> of the <color=red>red car </color>. Watch how the value increases when the <color=red>car </color> is <trigger=acceleration,green>accelerating </trigger> and decreases when the <color=red>car </color> is <trigger=deceleration,#c1b90fff>decelerating </trigger>.
+### Chinese ***
+在<i>Monitors中</i>，您可以查看实时<trigger=speed>速度</trigger>的<color=red>红车</color> 。观察当<color=red>车</color>是<trigger=acceleration,green>加速</trigger>并在<color=red>车</color>是<trigger=deceleration,#c1b90fff>减速</trigger> 。
+
+### Source
+In reality, different <color=blue>vehicles </color> may follow different rules. Try giving different rules or <trigger=acceleration,green>acceleration</trigger>/<trigger=deceleration,#c1b90fff>deceleration</trigger> values to some of the <color=blue>cars </color>. Can one bad driver  mess things up?
+### Chinese ***
+实际上，不同<color=blue>车辆</color>可能跟随不同的规则。尝试给出不同的规则或<trigger=acceleration,green>加速</trigger>/<trigger=deceleration,#c1b90fff>减速</trigger>一些价值观<color=blue>汽车</color> 。一个坏司机会把事情搞砸吗？
+
+### Source
+Introduction
+### Chinese ***
+介绍
+
+### Source
+Look for patterns in how these settings affect the traffic flow. Which variable has the greatest effect? Do the patterns make sense? Do they seem to be consistent with your driving experiences?
+### Chinese ***
+寻找这些设置如何影响流量的模式。哪个变量影响最大？这些模式有意义吗？它们似乎与您的驾驶体验一致吗？
+
+### Source
+Minimizing Traffic Jams
+### Chinese ***
+减少交通拥堵
+
+### Source
+Moving Traffic Jams Forward
+### Chinese ***
+前进交通拥堵
+
+### Source
+Notice not only the maximum and minimum, but also the variability -- the "jerkiness" of one <color=blue>vehicle </color>.
+### Chinese ***
+不仅要注意最大值和最小值，还要注意其可变性-一个<color=blue>车辆</color> 。
+
+### Source
+number-of-cars 
+### Chinese ***
+车数
+
+### Source
+Plot 
+### Chinese ***
+
+
+### Source
+Questions?
+### Chinese ***
+有什么问题吗
+
+### Source
+Set <trigger=deceleratrion,#c1b90fff>deceleration</trigger> to zero. What happens to the flow? Gradually increase <color=#c1b90fff>deceleration</color> while the model runs. At what point does the flow "break down"?
+### Chinese ***
+组<trigger=deceleratrion,#c1b90fff>减速</trigger>归零。流程发生了什么？逐渐增加<color=#c1b90fff>减速</color>在模型运行时。在什么时候流“分解”？
+
+### Source
+Set the <i>number-of-cars</i> slider to change the number of <color=blue>cars </color> on the <color=grey>road </color>.
+### Chinese ***
+设置<i>车数</i>滑块以更改<color=blue>汽车</color>在<color=grey>路</color> 。
+
+### Source
+Speed 
+### Chinese ***
+速度
+
+### Source
+The <color=green>positive</color> rate of change of the velocity of an object with respect to time ; they are vector quantities (in that they have magnitude and direction)
+### Chinese ***
+的<color=green>正</color>物体速度相对于时间的变化率；它们是向量（因为它们具有大小和方向）
+
+### Source
+The <color=red>negative</color> rate of change of the velocity of an object with respect to time ; they are vector quantities (in that they have magnitude and direction)
+### Chinese ***
+的<color=red>负</color>物体速度相对于时间的变化率；它们是向量（因为它们具有大小和方向）
+
+### Source
+The <trigger=acceleration,green>acceleration</trigger> slider controls the rate at which <color=blue>cars </color> <color=green>accelerate </color> (<trigger=speed>speed</trigger> up) when there are no <color=blue>cars </color> ahead. Even though both <color=green>acceleration</color> and <trigger=deceleration,#c1b90fff>deceleration</trigger> are very small, the cars  can achieve high speeds  as these values are added or subtracted at each <trigger=tick>tick</trigger>.
+### Chinese ***
+的<trigger=acceleration,green>加速</trigger>滑块控制的速率<color=blue>汽车</color><color=green>加速</color> （<trigger=speed>速度</trigger>上）当没有<color=blue>汽车</color>先。即使两者<color=green>加速</color>和<trigger=deceleration,#c1b90fff>减速</trigger>很小，汽车可以达到高速，因为这些值在每次加或减时<trigger=tick>周期</trigger>。
+
+### Source
+The amount of seconds  that have passed since the command 'reset-timer' was last run
+### Chinese ***
+自上次运行命令“ reset-timer”以来经过的秒数
+
+### Source
+The asymmetry between <trigger=acceleration,green>acceleration</trigger> and <trigger=deceleration,#c1b90fff>deceleration</trigger> is a simplified representation of different driving habits and response times. Can you explicitly encode these into the model?
+### Chinese ***
+之间的不对称<trigger=acceleration,green>加速</trigger>和<trigger=deceleration,#c1b90fff>减速</trigger>是不同驾驶习惯和响应时间的简化表示。您可以将它们明确编码到模型中吗？
+
+### Source
+The behavior of the group  is often very different from the behavior of the individuals  that make up the group
+### Chinese ***
+群体的行为通常与构成该群体的个体behavior的行为非常不同
+
+### Source
+The distance  travelled by the object divided by the duration of a interval of time 
+### Chinese ***
+物体行进的距离by除以时间间隔duration的持续时间
+
+### Source
+The model demonstrates how <color=red>traffic jams</color> can form even without any accidents, broken bridges, or overturned trucks. No "centralized cause" is needed for a <color=red>traffic jams</color> to form.
+### Chinese ***
+该模型演示了如何<color=red>交通堵塞</color>即使没有任何事故，断桥或卡车倾翻也可以形成。不需要“集中的原因”<color=red>交通堵塞</color>来形成。
+
+### Source
+The plot shows three values as the model runs: the fastest <trigger=speed>speed </trigger> of any <color=blue>car </color> (this doesn't exceed the speed limit!), the slowest speed  of any <color=blue>car </color>, and the speed  of a <color=red>single car </color> (turtle 0), painted <color=red>red</color> so it can be watched.
+### Chinese ***
+该绘图在模型运行时显示三个值：最快<trigger=speed>速度</trigger>任何<color=blue>车</color> （这不超过速度限制！），是所有速度中最慢的速度<color=blue>车</color> ，以及<color=red>单车</color> （海龟0），涂<color=red>红</color>因此可以观看。
+
+### Source
+Things To Try
+### Chinese ***
+尝试的事情
+
+### Source
+This behavior is common in <trigger=wavephenomena>wave phenomena</trigger>: the behavior of the group  is often very different from the behavior of the individuals  that make up the group.
+### Chinese ***
+此行为常见于<trigger=wavephenomena>波浪现象</trigger>：the群体的行为通常与组成该群体的个体very行为非常不同。
+
+### Source
+This model models the movement of <color=blue>cars </color> on a highway. Each <color=blue>cars </color> follows a simple set of rules: it slows  down (<trigger=deceleration,#c1b90fff>decelerates</trigger>) if it sees a <color=blue>cars </color> close ahead, and <trigger=speed>speeds </trigger> up (<trigger=acceleration,green>accelerates</trigger>) if it doesn't see a <color=blue>cars </color> ahead.
+### Chinese ***
+该模型模拟了<color=blue>汽车</color>在高速公路上。每<color=blue>汽车</color>遵循一组简单的规则：减慢（<trigger=deceleration,#c1b90fff>减速</trigger>），如果看到<color=blue>汽车</color>靠近前方<trigger=speed>速度</trigger>上（<trigger=acceleration,green>加速</trigger>），如果没有看到<color=blue>汽车</color>先。
+
+### Source
+Tick 
+### Chinese ***
+勾
+
+### Source
+To further explore the model, click on any of the following topics.
+### Chinese ***
+要进一步探索模型，请单击以下任一主题。
+
+### Source
+Traffic Jams 
+### Chinese ***
+交通堵塞
+
+### Source
+Try making a model of two-lane traffic.
+### Chinese ***
+尝试建立两车道交通模型。
+
+### Source
+Try other rules for <trigger=speed>speeding </trigger> up and slowing  down. Is the rule presented here realistic? Are there other rules that are more accurate or represent better driving strategies?
+### Chinese ***
+尝试其他规则<trigger=speed>超速</trigger>加快减速。这里提出的规则是否现实？还有其他更准确的规则或代表更好的驾驶策略的规则吗？
+
+### Source
+Wave phenomena
+### Chinese ***
+波浪现象
+
+### Source
+Welcome to the Basic Traffic Model! 
+### Chinese ***
+欢迎使用基本流量模型！ 
+
+### Source
+Well done! You have completed the Traffic-Basic model tutorial! Time to play with the model!
+### Chinese ***
+做得好！您已经完成了流量基础模型教程！是时候玩模型了！
+
+### Source
+What could you change to make <color=red>traffic jams</color> move forward  rather than backward ?
+### Chinese ***
+你能改变些什么<color=red>交通堵塞</color>是向前移动而不是向后移动？
+
+### Source
+What could you change to minimize the chances of <color=red>traffic jams</color> forming?
+### Chinese ***
+您可以改变什么以最大程度地减少<color=red>交通堵塞</color>成型？
+
+### Source
+When a <color=blue>cars </color> sees another <color=blue>cars </color> right in front, it matches that car's <trigger=speed>speed </trigger> and then slows down  a bit more. How much slower it goes than the <color=blue>cars </color> in front of it is controlled by the <trigger=deceleration,#c1b90fff>deceleration</trigger> slider. Notice that the default settings have cars   decelerating  much faster than they accelerate . This is typical of traffic flow models.
+### Chinese ***
+当一个<color=blue>汽车</color>看到另一个<color=blue>汽车</color>就在前面，它与那辆车的<trigger=speed>速度</trigger>然后放慢多一点。比它慢了多少<color=blue>汽车</color>在它前面是由<trigger=deceleration,#c1b90fff>减速</trigger>滑块。请注意，默认设置使汽车减速faster比其加速faster快得多。这是典型的交通流模型。
+
+### Source
+Why do <color=red>traffic jams</color> tend to move backwards?
+### Chinese ***
+为什么<color=red>交通堵塞</color>倾向于后退？
+
+### Source
+Why do traffic jams tend to move backwards?
+### Chinese ***
+为什么交通拥堵倾向于倒退？
+
+### Source
+ Understand why <color=red>traffic jams</color> form 
+ Observe the motions of one <color=blue>vehicle </color> versus the collective
+ Examine factors that cause <color=red>traffic jams</color> to form
+ Explore how different driving habits affect others who share the <color=grey>road </color>
+### Chinese ***
+why了解原因<color=red>交通堵塞</color>形成
+观察一个人的动作<color=blue>车辆</color>与集体
+检查导致因素<color=red>交通堵塞</color>来形成
+探索不同的驾驶习惯如何影响与他人分享<color=grey>路</color>
+
+## Widgets
+### Source
+acceleration
+### Chinese ***
+加速
+
+### Source
+deceleration
+### Chinese ***
+减速
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+number-of-cars
+### Chinese ***
+汽车数量
+
+### Source
+red car speed
+### Chinese ***
+红车速度
+
+### Source
+setup
+### Chinese ***
+设定
+

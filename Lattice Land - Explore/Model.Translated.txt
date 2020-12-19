@@ -1,0 +1,53 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Widgets
+### Source
+action
+### Chinese ***
+行动
+
+### Source
+check-area
+### Chinese ***
+检查区
+
+### Source
+clear-polygons
+### Chinese ***
+透明多边形
+
+### Source
+clear-segments
+### Chinese ***
+清晰段
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+height
+### Chinese ***
+高度
+
+### Source
+perimeter
+### Chinese ***
+周长
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+unit-size
+### Chinese ***
+单位大小
+
+### Source
+width
+### Chinese ***
+宽度
+

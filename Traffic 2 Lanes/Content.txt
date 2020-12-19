@@ -1,9 +1,11 @@
-﻿WHAT IS IT?
-This model is a more sophisticated two-lane version of the "Traffic Basic" model. Much like the simpler model, this model demonstrates how traffic jams can form. In the two-lane version, drivers have a new option; they can react by changing lanes, although this often does little to solve their problem.
+﻿## WHAT IS IT?
+
+This model is a more sophisticated two-lane version of the "Traffic Basic" model.  Much like the simpler model, this model demonstrates how traffic jams can form. In the two-lane version, drivers have a new option; they can react by changing lanes, although this often does little to solve their problem.
 
 As in the Traffic Basic model, traffic may slow down and jam without any centralized cause.
 
-HOW TO USE IT
+## HOW TO USE IT
+
 Click on the SETUP button to set up the cars. Click on GO to start the cars moving. The GO ONCE button drives the cars for just one tick of the clock.
 
 The NUMBER-OF-CARS slider controls the number of cars on the road. If you change the value of this slider while the model is running, cars will be added or removed "on the fly", so you can see the impact on traffic right away.
@@ -18,7 +20,7 @@ You may wish to slow down the model with the speed slider to watch the behavior 
 
 The SELECT CAR button allows you to highlight a particular car. It turns that car red, so that it is easier to keep track of it. SELECT CAR is easier to use while GO is turned off. If the user does not select a car manually, a car is chosen at random to be the "selected car".
 
-You can either watch or follow the selected car using the WATCH SELECTED CAR and FOLLOW SELECTED CAR buttons. The RESET PERSPECTIVE button brings the view back to its normal state.
+You can either [`watch`](http://ccl.northwestern.edu/netlogo/docs/dictionary.html#watch) or [`follow`](http://ccl.northwestern.edu/netlogo/docs/dictionary.html#follow) the selected car using the WATCH SELECTED CAR and FOLLOW SELECTED CAR buttons. The RESET PERSPECTIVE button brings the view back to its normal state.
 
 The SELECTED CAR SPEED monitor displays the speed of the selected car. The MEAN-SPEED monitor displays the average speed of all the cars.
 
@@ -26,13 +28,15 @@ The YCOR OF CARS plot shows a histogram of how many cars are in each lane, as de
 
 The CAR SPEEDS plot displays four quantities over time:
 
-the maximum speed of any car - CYAN
-the minimum speed of any car - BLUE
-the average speed of all cars - GREEN
-the speed of the selected car - RED
+- the maximum speed of any car - CYAN
+- the minimum speed of any car - BLUE
+- the average speed of all cars - GREEN
+- the speed of the selected car - RED
+
 The DRIVER PATIENCE plot shows four quantities for the current patience of drivers: the max, the min, the average and the current patience of the driver of the selected car.
 
-THINGS TO NOTICE
+## THINGS TO NOTICE
+
 Traffic jams can start from small "seeds." Cars start with random positions. If some cars are clustered together, they will move slowly, causing cars behind them to slow down, and a traffic jam forms.
 
 Even though all of the cars are moving forward, the traffic jams tend to move backwards. This behavior is common in wave phenomena: the behavior of the group is often very different from the behavior of the individuals that make up the group.
@@ -47,64 +51,72 @@ Look at the two plots. Can you detect discernible patterns in the plots?
 
 The grass patches on each side of the road are all a slightly different shade of green. The road patches, to a lesser extent, are different shades of grey. This is not just about making the model look nice: it also helps create an impression of movement when using the FOLLOW SELECTED CAR button.
 
-THINGS TO TRY
+## THINGS TO TRY
+
 What could you change to minimize the chances of traffic jams forming, besides just the number of cars? What is the relationship between number of cars, number of lanes, and (in this case) the length of each lane?
 
 Explore changes to the sliders SLOW-DOWN and SPEED-UP. How do these affect the flow of traffic? Can you set them so as to create maximal snaking?
 
 Change the code so that all cars always start on the same lane. Does the proportion of cars on each lane eventually balance out? How long does it take?
 
-Try using the "default" turtle shape instead of the car shape, either by changing the code or by typing ask turtles [ set shape "default" ] in the command center after clicking SETUP. This will allow you to quickly spot the cars trying to change lanes. What happens to them when there is a lot of traffic?
+Try using the `"default"` turtle shape instead of the car shape, either by changing the code or by typing `ask turtles [ set shape "default" ]` in the command center after clicking SETUP. This will allow you to quickly spot the cars trying to change lanes. What happens to them when there is a lot of traffic?
 
-EXTENDING THE MODEL
-The way this model is written makes it easy to add more lanes. Look for the number-of-lanes reporter in the code and play around with it.
+## EXTENDING THE MODEL
+
+The way this model is written makes it easy to add more lanes. Look for the `number-of-lanes` reporter in the code and play around with it.
 
 Try to create a "Traffic Crossroads" (where two sets of cars might meet at a traffic light), or "Traffic Bottleneck" model (where two lanes might merge to form one lane).
 
 Note that the cars never crash into each other: a car will never enter a patch or pass through a patch containing another car. Remove this feature, and have the turtles that collide die upon collision. What will happen to such a model over time?
 
-NETLOGO FEATURES
-Note the use of mouse-down? and mouse-xcor/mouse-ycor to enable selecting a car for special attention.
+## NETLOGO FEATURES
 
-Each turtle has a shape, unlike in some other models. NetLogo uses set shape to alter the shapes of turtles. You can, using the shapes editor in the Tools menu, create your own turtle shapes or modify existing ones. Then you can modify the code to use your own shapes.
+Note the use of `mouse-down?` and `mouse-xcor`/`mouse-ycor` to enable selecting a car for special attention.
 
-RELATED MODELS
-"Traffic Basic": a simple model of the movement of cars on a highway.
+Each turtle has a shape, unlike in some other models. NetLogo uses `set shape` to alter the shapes of turtles. You can, using the shapes editor in the Tools menu, create your own turtle shapes or modify existing ones. Then you can modify the code to use your own shapes.
 
-"Traffic Basic Utility": a version of "Traffic Basic" including a utility function for the cars.
+## RELATED MODELS
 
-"Traffic Basic Adaptive": a version of "Traffic Basic" where cars adapt their acceleration to try and maintain a smooth flow of traffic.
+- "Traffic Basic": a simple model of the movement of cars on a highway.
 
-"Traffic Basic Adaptive Individuals": a version of "Traffic Basic Adaptive" where each car adapts individually, instead of all cars adapting in unison.
+- "Traffic Basic Utility": a version of "Traffic Basic" including a utility function for the cars.
 
-"Traffic Intersection": a model of cars traveling through a single intersection.
+- "Traffic Basic Adaptive": a version of "Traffic Basic" where cars adapt their acceleration to try and maintain a smooth flow of traffic.
 
-"Traffic Grid": a model of traffic moving in a city grid, with stoplights at the intersections.
+- "Traffic Basic Adaptive Individuals": a version of "Traffic Basic Adaptive" where each car adapts individually, instead of all cars adapting in unison.
 
-"Traffic Grid Goal": a version of "Traffic Grid" where the cars have goals, namely to drive to and from work.
+- "Traffic Intersection": a model of cars traveling through a single intersection.
 
-"Gridlock HubNet": a version of "Traffic Grid" where students control traffic lights in real-time.
+- "Traffic Grid": a model of traffic moving in a city grid, with stoplights at the intersections.
 
-"Gridlock Alternate HubNet": a version of "Gridlock HubNet" where students can enter NetLogo code to plot custom metrics.
+- "Traffic Grid Goal": a version of "Traffic Grid" where the cars have goals, namely to drive to and from work.
 
-HOW TO CITE
+- "Gridlock HubNet": a version of "Traffic Grid" where students control traffic lights in real-time.
+
+- "Gridlock Alternate HubNet": a version of "Gridlock HubNet" where students can enter NetLogo code to plot custom metrics.
+
+## HOW TO CITE
+
 If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
 For the model itself:
 
-Wilensky, U. & Payette, N. (1998). NetLogo Traffic 2 Lanes model. http://ccl.northwestern.edu/netlogo/models/Traffic2Lanes. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Wilensky, U. & Payette, N. (1998).  NetLogo Traffic 2 Lanes model.  http://ccl.northwestern.edu/netlogo/models/Traffic2Lanes.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
 Please cite the NetLogo software as:
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-COPYRIGHT AND LICENSE
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
 Copyright 1998 Uri Wilensky.
 
-CC BY-NC-SA 3.0
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
 Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
 
-This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML). The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
 
 This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.

@@ -1,77 +1,113 @@
-﻿WHAT IS IT?
-This model simulates the spread of an infectious disease in a closed population. It is an introductory model in the curricular unit called epiDEM (Epidemiology: Understanding Disease Dynamics and Emergence through Modeling). This particular model is formulated based on a mathematical model that describes the systemic dynamics of a phenomenon that emerges when one infected person is introduced in a wholly susceptible population. This basic model, in mathematical epidemiology, is known as the Kermack-McKendrick model.
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## 这个模型是什么？
 
-The Kermack-McKendrick model assumes a closed population, meaning there are no births, deaths, or travel into or out of the population. It also assumes that there is homogeneous mixing, in that each person in the world has the same chance of interacting with any other person within the world. In terms of the virus, the model assumes that there are no latent or dormant periods, nor a chance of viral mutation.
+此模型是epiDEM（代表流行病学的课程单元：通过建模了解疾病动态和突发事件）的基本模型的扩展。它模拟传染病在半封闭人群中的传播，但具有旅行，隔离，隔离，隔离，接种以及个体之间联系的附加功能。但是，我们仍然假定该病毒不会突变，并且一旦恢复，一个人将具有完全的免疫力。
 
-Because this model is so simplistic in nature, it facilitates mathematical analyses and also the calculation of the threshold at which an epidemic is expected to occur. We call this the reproduction number, and denote it as R0. Simply, R0 stands for the number of secondary infections that arise as a result of introducing one infected person in a wholly susceptible population, over the course of the infected person's contagious period (i.e. while the person is infective, which, in this model, is from the beginning of infection until recovery).
+总体而言，此模型可帮助用户：
+1）了解与控制措施，旅行和流动性变化有关的突发疾病传播动态
+2）了解繁殖数R_0如何代表流行病的阈值
+3）了解导数和积分之间的关系，简单地表示为比率和案例总数，并且
+4）提供扩展或更改模型以包含用户最感兴趣的某些疾病的机会。
 
-This model incorporates all of the above assumptions, but each individual has a 5% chance of being initialized as infected. This model shows the disease spread as a phenomenon with an element of stochasticity. Small perturbations in the parameters included here can in fact lead to different final outcomes.
+## 这个模型是怎么运行的
 
-Overall, this model helps users 1) engage in a new way of viewing/modeling epidemics that is more personable and relatable 2) understand how the reproduction number, R0, represents the threshold for an epidemic 3) think about different ways to calculate R0, and the strengths and weaknesses in each approach 4) understand the relationship between derivatives and integrals, represented simply as rates and cumulative number of cases, and 5) provide opportunities to extend or change the model to include some properties of a disease that interest users the most.
+个人以随机动作在世界徘徊。有两组个人，分别用正方形或圆形表示，并且在地理上被黄色边框划分。与感染者接触后，他或她就有机会染上这种疾病。根据用户设置的趋势，患病的人会在“家”中孤立自己，去医院，被卫生官员强行隔离到医院，或者只是四处走动。在指定的恢复时间过去之后，受感染的个体就有机会恢复。
 
-HOW IT WORKS
-Individuals wander around the world in random motion. Upon coming into contact with an infected person, by being in any of the eight surrounding neighbors of the infected person or in the same location, an uninfected individual has a chance of contracting the illness. The user sets the number of people in the world, as well as the probability of contracting the disease.
+病毒在人群中的存在以个体的颜色表示。使用四种颜色：白色个体未被感染，红色个体被感染，绿色个体被恢复，蓝色个体被接种。一旦恢复，该个体将对该病毒永久免疫。黄色的人象征着卫生官员或救护车，他们在世界巡逻以寻找生病的人。一旦与感染者接触，救护车立即将感染者运送到居住区域内的医院。
 
-An infected person has a probability of recovering after reaching their recovery time period, which is also set by the user. The recovery time of each individual is determined by pulling from an approximately normal distribution with a mean of the average recovery time set by the user.
+感染率和恢复率图显示了人群中累积感染和恢复的变化率。它跟踪每周期的平均继发感染和恢复数。由于我们允许种群中不止一个感染个体，并采用上述变量，因此在与KM模型不同的假设下计算了繁殖数量。
 
-The colors of the individuals indicate the state of their health. Three colors are used: white individuals are uninfected, red individuals are infected, green individuals are recovered. Once recovered, the individual is permanently immune to the virus.
+在模拟结束时，R_0反映了对繁殖次数的估计，即最终的大小关系，该关系表明是否（或在模型的意义上）流行。这又紧跟着数学推导，即R_0 = beta * S（0）/ gamma = N * ln（S（0）/ S（t））/（N-S（t）），其中N是总人口， S（0）是敏感对象的初始数量，S（t）是在时间t处的敏感对象总数。在该模型中，R_0估算值是在受感染者的整个过程中，普通受感染者发生的继发感染数。
 
-The graph INFECTION AND RECOVERY RATES shows the rate of change of the cumulative infected and recovered in the population. It tracks the average number of secondary infections and recoveries per tick. The reproduction number is calculated under different assumptions than those of the Kermack McKendrick model, as we allow for more than one infected individual in the population, and introduce aforementioned variables.
+## 如何这个模型怎么用
 
-At the end of the simulation, the R0 reflects the estimate of the reproduction number, the final size relation that indicates whether there will be (or there was, in the model sense) an epidemic. This again closely follows the mathematical derivation that R0 = betaS(0)/ gamma = Nln(S(0) / S(t)) / (N - S(t)), where N is the total population, S(0) is the initial number of susceptibles, and S(t) is the total number of susceptibles at time t. In this model, the R_0 estimate is the number of secondary infections that arise for an average infected individual over the course of the person's infected period.
+“设置”按钮根据用户选择的参数值创建个人。每个人都有5％的机会被感染。设置好仿真后，按GO按钮运行模型。 GO开始模拟并连续运行，直到再次按下GO。
 
-HOW TO USE IT
-The SETUP button creates individuals according to the parameter values chosen by the user. Each individual has a 5% chance of being initialized as infected. Once the model has been setup, push the GO button to run the model. GO starts the model and runs it continuously until GO is pushed again.
+每个时间步长都可以视为以小时为单位，尽管可以使用任何合适的时间单位。
 
-Note that in this model each time-step can be considered to be in hours, although any suitable time unit will do.
+以下是模型中滑块的摘要。
 
-What follows is a summary of the sliders in the model.
+INITIAL-PEOPLE（初始值在50到400之间变化）：模拟开始的个体总数。
+感染几率（10-50）：疾病从一个人传播到另一个人的可能性。
+恢复机会（10-100）：感染持续时间超过该人的恢复时间后，该人恢复的可能性。
+平均恢复时间（50-300）：一个人平均恢复的时间。实际个人的恢复时间是从以平均值-恢复时间为中心的正态分布中取平均值的，标准偏差为平均值-恢复时间的四分之一。每个时间步长都可以视为以小时为单位，尽管可以使用任何合适的时间单位。
+平均隔离趋势（0-50）：个体自我隔离且不会传播疾病的平均趋势。一旦被感染的人被识别为“隔离者”，该人将把自己隔离在当前位置（如灰色格子），并将停留在那里直到完全康复。
+平均医院往来率（0-50）：生病时个人去医院的平均倾向。如果被感染的人被确定为“医院病患”，那么他或她将去医院，由于药物治疗和休息更好，将在平均康复时间的一半时间内康复。
+初始救护车（0-4）：随机移动的卫生官员或救护车的数量，并在接触后强制隔离患病的个人。卫生官员对这种疾病具有免疫力，他们本身并不亲自陪同患者去医院。它们的移动速度是世界其他个体的5倍，并且不受地理区域的限制。
+接种几率（0-50）：一个人接种疫苗的概率，因此对病毒免疫。
+移动性（0-1）：这表明个人的移动程度。通常，一个人在每个时间步长移动的距离为1。在此模型中，该人将在每个时间步长以移动性指示的距离移动。因此，运动内水平越低，个体的运动越少。个人按照此分配值随机移动；救护车的移动速度总是比此分配值快5倍。
 
-INITIAL-PEOPLE (initialized to vary between 50 - 400): The total number of individuals in the simulation, determined by the user. INFECTION-CHANCE (10 - 100): Probability of disease transmission from one individual to another. RECOVERY-CHANCE (10 - 100): Probability of an infected individual to recover once the infection has lasted longer than the person's recovery time. AVERAGE-RECOVERY-TIME (50 - 300): The time it takes for an individual to recover on average. The actual individual's recovery time is pulled from a normal distribution centered around the AVERAGE-RECOVERY-TIME at its mean, with a standard deviation of a quarter of the AVERAGE-RECOVERY-TIME. Each time-step can be considered to be in hours, although any suitable time unit will do.
+另外，有两个开关和一个相关的滑块：
 
-A number of graphs are also plotted in this model.
+链接？ ：打开时，将在人与人之间随机分配链接，该疾病的传播速度将是被感染者与他人感染者的两倍。如果关闭，则该疾病的传播机会与感染者周围的人相等。
+旅行？ ：启用此选项后，两个地区（中间用黄色边框隔开）的人员可以迁移和混血。禁用时，人们将停留在他们居住的区域。
+旅行倾向（0-1）：什么时候旅行？为ON时，此滑块指示每个周期某人旅行的概率。 1表示每周期的旅行几率为1％。
 
-CUMULATIVE INFECTED AND RECOVERED: This plots the total percentage of infected and recovered individuals over the course of the disease spread. POPULATIONS: This plots the total number of people with or without the flu over time. INFECTION AND RECOVERY RATES: This plots the estimated rates at which the disease is spreading. BetaN is the rate at which the cumulative infected changes, and Gamma rate at which the cumulative recovered changes. R_0: This is an estimate of the reproduction number, only comparable to the Kermack McKendrick's definition if the initial number of infected were 1.
+在该模型中还绘制了许多图形。
 
-THINGS TO NOTICE
-As with many epidemiological models, the number of people becoming infected over time, in the event of an epidemic, traces out an "S-curve." It is called an S-curve because it is shaped like a sideways S. By changing the values of the parameters using the slider, try to see what kinds of changes make the S curve stretch or shrink.
+累计感染和恢复：这绘制了曾经被感染或恢复的个体的总百分比。
+人口：此图显示患有或不患有这种疾病的人数。
+感染率和恢复率：该图绘制了疾病传播的估计率。 BetaN是累积感染变化的速率，是累积恢复变化的Gamma速率。
+R_0：这是再现次数的估计。
 
-Whenever there's a spread of the disease that reaches most of the population, we say that there was an epidemic. As mentioned before, the reproduction number indicates the number of secondary infections that arise as a result of introducing one infected person in a totally susceptible population, over the course of the infected person's contagious period (i.e. while the person is infected). If it is greater than 1, an epidemic occurs. If it is less than 1, then it is likely that the disease spread will stop short, and we call this an endemic.
+## 看一看
 
-THINGS TO TRY
-Try running the model by varying one slider at a time. For example: How does increasing the number of initial people affect the disease spread? How does increasing the recovery chance the shape of the graphs? What about changes to average recovery time? Or the infection rate?
+与许多流行病学模型一样，如果发生流行病，随着时间的流逝感染的人数会找出“ S曲线”。之所以称其为S曲线，是因为它的形状像是侧面S。通过使用滑块更改参数的值，请尝试查看哪些类型的更改会使S曲线拉伸或收缩。
 
-What happens to the shape of the graphs as you increase the recovery chance and decrease the recovery time? Vice versa?
+只要有这种疾病蔓延到大多数人，我们就说有一种流行病。繁殖数大于1时，可作为流行病发生可能性的指标。如果小于1，则疾病传播可能会很快停止，因此我们称之为流行病。
 
-Notice the graph Cumulative Infected and Recovered, and Infection and Recovery Rates. What are the relationships between the two? Why is the latter graph jagged?
+请注意，引入各种人类行为（例如旅行，接种，隔离和隔离）如何帮助限制疾病的传播，以及在疾病传播的速度和时间以及人口传播方面给人口水平带来了哪些变化？受影响的人口。
 
-EXTENDING THE MODEL
-Try to change the behavior of the people once they are infected. For example, once infected, the individual might move slower, have fewer contacts, isolate him or herself etc. Try to think about how you would introduce such a variable.
+## 试一试
 
-In this model, we also assume that the population is closed. Can you think of ways to include demographic variables such as births, deaths, and travel to mirror more of the complexities that surround the nature of epidemic research?
+将此模型与epiDEM基本模型进行比较。增加的复杂性是否会显着改变疾病的传播？哪些变化带来有趣的结果？
 
-NETLOGO FEATURES
-Notice that each agent pulls from a truncated normal distribution, centered around the AVERAGE-RECOVERY-TIME set by the user. This is to account for the variation in genetic differences and the immune system functions of individuals.
+请注意，旅行选择器打开和关闭时的动力差异。在这两种情况下，人口情况如何，疾病传播？
 
-Notice that R0 calculated in this model is a numerical estimate to the analytic R0. In the special case of one infective introduced to a wholly susceptible population (i.e., the Kermack-McKendrick assumptions), the numerical estimations of R0 are very close to the analytic values.
+当链选择器打开时，疾病传播会改变吗？当您增加救护车数量时该怎么办？感染人数有什么变化？
 
-RELATED MODELS
-HIV, Virus and Virus on a Network are related models.
+在此模型的基础上，您认为在疾病爆发时采取哪些重要的策略或预防措施是重要的？有一些比其他更有效的吗？为什么会这样呢？哪些组合运作良好？有一些似乎多余的措施吗？
 
-HOW TO CITE
+## 改一改
+
+一旦人们被感染，还有其他方法可以改变人们的行为吗？尝试考虑如何引入这样的变量。
+
+在此模型中，我们引入了旅行选项，以便在两个原本封闭的人群之间实现混合。当您向每个地区或仅一个地区介绍出生和死亡时，会发生什么？
+
+病毒突变会怎样？这将如何改变人口动态和疾病传播？
+
+如果人口中有健康人群和较不健康人群，并且易感程度不同，会发生什么？
+
+##  NetLogo 语言特性
+
+请注意，每个主体从以用户设置的AVERAGE-RECOVERY-TIME为中心的截断正态分布中拉出以确定其恢复时间。这是为了解释个体的遗传差异和免疫系统功能的变化。同样，一个人的隔离倾向和去医院倾向也分别从以平均隔离倾向和平均医院前往倾向为中心的截断正态分布中提取。
+
+请注意，在此模型中计算出的R_0是对解析R_0的数值估计。在将一种传染病引入一个完全易感人群的特殊情况下（即Kermack-McKendrick假设），R_0的数值估计非常接近分析值。由于模型增加了复杂性，例如引入了行程和控制措施，因此解析R_0变得更难推导。因此，数值估计是实际R_0可能是什么的粗略度量。
+
+除了旅行和控制措施外，请注意，该模型还引入了个人之间的联系以及个人的流动性，这也影响了疾病传播的动态。
+
+## 相关模型
+
+epiDEM basic, HIV, Virus and Virus on a Network are related models.
+
+## 如何引用本模型
+
 If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
 For the model itself:
 
-Yang, C. and Wilensky, U. (2011). NetLogo epiDEM Basic model. http://ccl.northwestern.edu/netlogo/models/epiDEMBasic. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Yang, C. and Wilensky, U. (2011).  NetLogo epiDEM Travel and Control model.  http://ccl.northwestern.edu/netlogo/models/epiDEMTravelandControl.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
 Please cite the NetLogo software as:
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-COPYRIGHT AND LICENSE
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
 Copyright 2011 Uri Wilensky.
 
-CC BY-NC-SA 3.0
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
 Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.

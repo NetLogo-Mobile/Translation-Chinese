@@ -1,0 +1,84 @@
+﻿*** 6367e2eef641f54e3ee891c0562c8486
+## Language = Chinese
+## Plots
+### Source
+%
+### Chinese ***
+％
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Number-unhappy
+### Chinese ***
+数字不开心
+
+### Source
+percent
+### Chinese ***
+百分
+
+### Source
+Percent Similar
+### Chinese ***
+相似百分比
+
+### Source
+time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+# agents
+### Chinese ***
+＃个代理商
+
+### Source
+% similar
+### Chinese ***
+相似百分比
+
+### Source
+% unhappy
+### Chinese ***
+不满意百分比
+
+### Source
+%-similar-wanted
+### Chinese ***
+相似需求百分比
+
+### Source
+density
+### Chinese ***
+密度
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+go once
+### Chinese ***
+去一次
+
+### Source
+num-unhappy
+### Chinese ***
+不开心
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+visualization
+### Chinese ***
+可视化
+

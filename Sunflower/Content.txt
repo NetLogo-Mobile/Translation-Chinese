@@ -1,54 +1,66 @@
-﻿WHAT IS IT?
-The interlocking spirals found in the seeds, petals and even branches of many plants occur naturally through the growth of the flower. This model attempts to demonstrate the growth of these naturally occurring spirals.
+﻿## WHAT IS IT?
 
-When a new seed emerges, the older ones grow slightly and move further from the center--the source--and the youngest seed finds the largest gap between existing seeds, in which it can grow. This gap can be found by turning counter clockwise. The angle made by this turn is a multiple of the golden ratio (1.618). The golden ratio, based on the Fibonacci series (1, 1, 2, 3, 5, 8, 13...), equals the limit of F(n)/F(n-1). Thus, these spirals can be mathematically generated, using the golden ratio.
+The interlocking spirals found in the seeds, petals and even branches of many plants occur naturally through the growth of the flower.  This model attempts to demonstrate the growth of these naturally occurring spirals.
 
-HOW IT WORKS
-For each clock-tick, a new turtle (can be seen as a seed or a petal) is created. As in nature, the turtle finds the appropriate position and begins growing. The 'appropriate position' is defined as the number of clock-ticks times the 'turn increment'. All of the other existing turtles move forward and grow slightly, with each clock-tick. If a turtle gets too close to the edge of the world, it dies.
+When a new seed emerges, the older ones grow slightly and move further from the center--the source--and the youngest seed finds the largest gap between existing seeds, in which it can grow.  This gap can be found by turning counter clockwise.  The angle made by this turn is a multiple of the golden ratio (1.618).  The golden ratio, based on the Fibonacci series (1, 1, 2, 3, 5, 8, 13...), equals the limit of F(n)/F(n-1).  Thus, these spirals can be mathematically generated, using the golden ratio.
 
-HOW TO USE IT
-The NUM-COLORS slider controls how many colors the turtles can be. (Using this will make some of the spirals stand out more, other stand out less.)
+## HOW IT WORKS
+
+For each clock-tick, a new turtle (can be seen as a seed or a petal) is created.  As in nature, the turtle finds the appropriate position and begins growing.  The 'appropriate position' is defined as the number of clock-ticks times the 'turn increment'.  All of the other existing turtles move forward and grow slightly, with each clock-tick.  If a turtle gets too close to the edge of the world, it dies.
+
+## HOW TO USE IT
+
+The NUM-COLORS slider controls how many colors the turtles can be.  (Using this will make some of the spirals stand out more, other stand out less.)
 
 The STEP-SIZE slider controls how far away the turtle moves from the center, for each clock-tick.
 
 The TURN-INCREMENT slider dictates the degree that each new turtle will turn to set its position in the spiral.
 
-The SET TURN-INCREMENT buttons help to set the TURN-INCREMENT slider to specific values at and around the golden ratio. They are simply there to help achieve precision that can be difficult with the slider.
+The SET TURN-INCREMENT buttons help to set the TURN-INCREMENT slider to specific values at and around the golden ratio.  They are simply there to help achieve precision that can be difficult with the slider.
 
-THINGS TO NOTICE
-Think about the spirals that you see. How many different ways can you make a pattern of spirals?
+## THINGS TO NOTICE
 
-THINGS TO TRY
-How does adding colors change the spirals you see? Does this change the phenomena, or only what you see?
+Think about the spirals that you see.  How many different ways can you make a pattern of spirals?
 
-EXTENDING THE MODEL
+## THINGS TO TRY
+
+How does adding colors change the spirals you see?  Does this change the phenomena, or only what you see?
+
+## EXTENDING THE MODEL
+
 Make the spirals go counter-clockwise.
 
-Make the model draw your favorite flower's petal or seed pattern. For example, a buttercup or columbine could be made by creating 5 large petals of the appropriate colors.
+Make the model draw your favorite flower's petal or seed pattern.  For example, a buttercup or columbine could be made by creating 5 large petals of the appropriate colors.
 
-In nature, real plants don't have the golden ratio "programmed" into them. Rather, the spirals form as the result of an emergent process, described in Conway and Guy's book (see below) and other sources. Can you extend this model to capture this emergent process?
+In nature, real plants don't have the golden ratio "programmed" into them.  Rather, the spirals form as the result of an emergent process, described in Conway and Guy's book (see below) and other sources.  Can you extend this model to capture this emergent process?
 
-NETLOGO FEATURES
+## NETLOGO FEATURES
+
 Note in the code that the turtles "die" when they get too far from the center of the world, so they make a circular pattern.
 
-CREDITS AND REFERENCES
+## CREDITS AND REFERENCES
+
 This is based on pp. 113-24 of John H. Conway and Richard K. Guy's "The Book of Numbers".
 
-HOW TO CITE
+## HOW TO CITE
+
 If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
 For the model itself:
 
-Wilensky, U. (2003). NetLogo Sunflower model. http://ccl.northwestern.edu/netlogo/models/Sunflower. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Wilensky, U. (2003).  NetLogo Sunflower model.  http://ccl.northwestern.edu/netlogo/models/Sunflower.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
 Please cite the NetLogo software as:
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-COPYRIGHT AND LICENSE
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
 Copyright 2003 Uri Wilensky.
 
-CC BY-NC-SA 3.0
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
 Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
 
