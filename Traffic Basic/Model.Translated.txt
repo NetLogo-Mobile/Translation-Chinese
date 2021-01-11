@@ -1,4 +1,4 @@
-﻿*** 6367e2eef641f54e3ee891c0562c8486
+﻿*** ea019251e9a1e995aee56207db61702e
 ## Language = Chinese
 ## Plots
 ### Source
@@ -35,7 +35,7 @@ time
 ### Source
 "Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>."
 ### Chinese ***
-“要查看社区对此模型所提出问题的答案或您对这些问题的答案？请单击“<b>转到问题与</b>解答面板”。”
+“要查看社区对此模型所提出问题的答案或您对这些问题的答案？单击“<b>转到问答面板”</b> 。”
 
 ### Source
 <color=red>red car</color> speed 
@@ -165,12 +165,12 @@ Speed 
 ### Source
 The <color=green>positive</color> rate of change of the velocity of an object with respect to time ; they are vector quantities (in that they have magnitude and direction)
 ### Chinese ***
-的<color=green>正</color>物体速度相对于时间的变化率；它们是向量（因为它们具有大小和方向）
+的<color=green>正</color>物体速度相对于时间time的变化率；它们是向量（因为它们具有大小和方向）
 
 ### Source
 The <color=red>negative</color> rate of change of the velocity of an object with respect to time ; they are vector quantities (in that they have magnitude and direction)
 ### Chinese ***
-的<color=red>负</color>物体速度相对于时间的变化率；它们是向量（因为它们具有大小和方向）
+的<color=red>负</color>物体速度相对于时间time的变化率；它们是向量（因为它们具有大小和方向）
 
 ### Source
 The <trigger=acceleration,green>acceleration</trigger> slider controls the rate at which <color=blue>cars </color> <color=green>accelerate </color> (<trigger=speed>speed</trigger> up) when there are no <color=blue>cars </color> ahead. Even though both <color=green>acceleration</color> and <trigger=deceleration,#c1b90fff>deceleration</trigger> are very small, the cars  can achieve high speeds  as these values are added or subtracted at each <trigger=tick>tick</trigger>.
@@ -265,7 +265,7 @@ Well done! You have completed the Traffic-Basic model tutorial! Time to play wit
 ### Source
 What could you change to make <color=red>traffic jams</color> move forward  rather than backward ?
 ### Chinese ***
-你能改变些什么<color=red>交通堵塞</color>是向前移动而不是向后移动？
+你能改变些什么<color=red>交通堵塞</color>向前移动而不向后移动？
 
 ### Source
 What could you change to minimize the chances of <color=red>traffic jams</color> forming?

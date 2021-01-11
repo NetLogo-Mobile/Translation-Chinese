@@ -1,10 +1,10 @@
-﻿*** 6367e2eef641f54e3ee891c0562c8486
+﻿*** ea019251e9a1e995aee56207db61702e
 ## Language = Chinese
 ## Tutorial
 ### Source
 "Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>."
 ### Chinese ***
-“要查看社区对此模型所提出问题的答案或您对这些问题的答案？请单击“<b>转到问题与</b>解答面板”。”
+“要查看社区对此模型所提出问题的答案或您对这些问题的答案？单击“<b>转到问答面板”</b> 。”
 
 ### Source
 A mathematical ratio commonly found in nature, and when used in a design, fosters organic and natural-looking compositions that are aesthetically pleasing to the eye

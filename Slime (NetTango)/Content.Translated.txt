@@ -1,18 +1,20 @@
-﻿*** 6367e2eef641f54e3ee891c0562c8486
-这个模型是什么？
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
 该模型的灵感来自粘液模腔细胞的聚集行为。粘液模具的寿命大部分时间是成千上万个单独的单单元单元，每个单元都单独移动。在适当的条件下，这些许多细胞将合并成一个更大的有机体。当环境不太好客时，粘液霉菌会作为单一生物体起作用；当天气转凉并且霉菌获得大量食物时，“它”就变成了“它们”。粘液霉菌在一个生物和一群动物之间振荡。
 
 该模型显示了生物如何在没有“领导者”或“起搏器”细胞控制的情况下聚集成簇。这项发现最早由Evelyn Fox Keller和Lee Segel在1970年的一篇论文中描述。
 
 在凯勒（Keller）开始调查之前，传统的看法是粘液菌群是在“起搏器”细胞的指挥下形成的，命令其他细胞开始聚集。 1962年，谢弗（Shafer）展示了起搏器如何使用循环AMP作为集结部队的一种信号。粘液霉菌将在适当的时机释放化合物，从而触发循环AMP的波，这些波在整个社区中被冲刷，因为每个孤立的细胞都将信号传递给邻居。实际上，粘液霉菌聚集是电话的巨大游戏，但只有少数精英单元发出了原始呼叫。
 
-在谢弗（Shafer）的原始论文发表后的二十年里，真菌学家一直认为缺失的起搏器细胞是数据不足或实验设计不佳的迹象。但是凯勒（Keller）和塞格尔（Segel）采取了另一种更为激进的方法。他们表明Shafer错了-粘液模子细胞的社区正在自我组织，不需要起搏器。这是生物学中出现和自我组织的第一个例子。
+在谢弗（Shafer）的原始论文发表后的二十年里，真菌学家一直认为缺失的起搏器细胞是数据不足或实验设计不佳的迹象。但是凯勒（Keller）和塞格尔（Segel）采取了另一种更为激进的方法。他们表明Shafer错了-粘液模子细胞的社区正在组织自己，不需要起搏器。这是生物学中出现和自我组织的第一个例子。
 
 最初，生物学家不接受这种解释。的确，起搏器假说将继续作为统治模型，持续十年。现在，粘液霉菌凝集被认为是自下而上的自组织行为的经典案例研究。
 
 在此模型中，每只海龟滴入化学信息素（以绿色显示）。乌龟还向前方“嗅”，试图跟随其他乌龟化学物质的梯度。同时，斑块扩散并蒸发信息素。遵循这些简单的，分散的规则，海龟聚集在一起。
 
-如何这个模型怎么用
+## 如何这个模型怎么用
+
 单击设置按钮以设置粘液模腔的集合。单击“执行”按钮开始仿真。
 
 POPULATION滑块控制模拟中的粘液模腔数量。直到下一个SETUP命令，“ POPULATION”滑块中的更改才会生效。
@@ -29,17 +31,20 @@ WIGGLE-BIAS-乌龟平均摆动的偏向当WIGGLE-BIAS = 0时，乌龟的平均�
 
 模型中还有一些其他关键参数无法通过滑块访问。可以通过在过程窗口中修改代码来更改它们。它们是：-化学品的蒸发速率-设置为0.9-化学品的扩散速率-设置为1-每步沉积的化学品量-设置为2
 
-看一看
+## 看一看
+
 拥有100只海龟时，发生的情况并不多。乌龟在滴落的化学物质周围徘徊，但是化学物质蒸发并扩散得太快，以至于海龟无法聚集。
 
 对于400只海龟，结果是完全不同的。当几只乌龟（偶然地）彼此游荡时，它们会产生一种小的“水坑”化学品，可以吸引附近的任何其他乌龟。然后，随着更多的乌龟进入水坑并沉积自己的化学物质，水坑变得更大且更具吸引力。这个过程是一个积极反馈的好例子：海龟越多，水坑越大；反之亦然。水坑越大，吸引更多乌龟的可能性就越大。
 
-试一试
+## 试一试
+
 尝试为SNIFF-THRESHOLD，SNIFF-ANGLE，WIGGLE-ANGLE和WIGGLE-BIAS滑块使用不同的值。它们如何影响海龟的运动和结块的形成？
 
 在形成一些团块之后，请更改SNIFF-ANGLE和WIGGLE-ANGLE滑块。团块怎么办？尝试使用SNIFF-THRESHOLD和WIGGLE-BIAS。
 
-改一改
+## 改一改
+
 修改程序，使海龟聚合为一个大型群集。
 
 如果乌龟运动的随机性更大（或更小），结果如何变化？
@@ -50,43 +55,49 @@ WIGGLE-BIAS-乌龟平均摆动的偏向当WIGGLE-BIAS = 0时，乌龟的平均�
 
 您能找到一种算法，让您绘图一段时间内不同簇的数量吗？
 
-NetLogo 语言特性
+##  NetLogo 语言特性
+
 请注意使用提前补丁，提前补丁和前后补丁原语来进行“嗅探”。
 
-相关模型
-蚂蚁使用类似的想法，即生物既会掉落化学物质，跟随化学物质的梯度。
+## 相关模型
+Ants uses a similar idea of creatures that both drop chemical and follow the gradient of the chemical.
 
-引用和致谢
-Keller，E＆Segel，L。（1970）。粘液霉菌聚集的开始被认为是不稳定的。 《理论生物学杂志》，第26卷，第3期，1970年3月，第399-415页。
+## 引用和致谢
 
-Wilensky，U。和Resnick，M。（1999）。分层次思考：一种动态系统的方法来理解世界。科学教育与技术学报，8（1），3-19。
+Keller, E & Segel, L. (1970). Initiation of slime mold aggregation viewed as an instability. Journal of Theoretical Biology, Volume 26, Issue 3, March 1970, Pages 399–415.
 
-Johnson，S。（2001）。出现：蚂蚁，大脑，城市和软件的互联生活。纽约：斯克里布纳。
+Wilensky, U., & Resnick, M. (1999). Thinking in levels: A dynamic systems approach to making sense of the world. Journal of Science Education and Technology, 8(1), 3-19.
 
-Resnick，M。（1996）。超越集中式思维。学习科学杂志，5（1），1-22。
+Johnson, S. (2001). Emergence: The Connected Lives of Ants, Brains, Cities, and Software. New York: Scribner.
 
-另请参阅http://www.creepinggarden.com，以获取粘液霉菌的视频。
+Resnick, M. (1996). Beyond the centralized mindset. Journal of the Learning Sciences, 5(1), 1-22.
 
-如何引用本模型
-如果您在出版物中提到此模型或NetLogo软件，我们要求您在下面提供引用。
+See also http://www.creepinggarden.com for video of slime mold.
 
-对于模型本身：
+## 如何引用本模型
 
-Wilensky，U。（1997）。 NetLogo Slime模型。 http://ccl.northwestern.edu/netlogo/models/Slime。西北大学连接学习和计算机建模中心，伊利诺伊州埃文斯顿。
-请将NetLogo软件引用为：
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
-威伦斯基，U。（1999）。 NetLogo。 http://ccl.northwestern.edu/netlogo/。西北大学连接学习和计算机建模中心，伊利诺伊州埃文斯顿。
-版权和授权
-版权所有1997 Uri Wilensky。
+For the model itself:
+
+Wilensky, U. (1997). NetLogo Slime model. http://ccl.northwestern.edu/netlogo/models/Slime. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
 
 CC BY-NC-SA 3.0
 
-该作品已根据知识共享署名-非商业性-相同方式共享3.0许可进行了许可。要查看此许可证的副本，请访问https://creativecommons.org/licenses/by-nc-sa/3.0/或致函Creative Commons，地址：559 Nathan Abbott Way，斯坦福，加利福尼亚州94305，美国。
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
-也可以使用商业许可证。要查询商业许可证，请通过uri@northwestern.edu与Uri Wilensky联系。
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
 
-该模型是作为项目的一部分创建的：连通数学：通过基于对象的并行模型（OBPML）来感知复杂的现象。该项目非常感激美国国家科学基金会（先进技术应用计划）的支持-授予编号RED＃9552950和REC＃9632612。
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML). The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
 
-该模型是使用CM StarLogo在MIT媒体实验室开发的。参见Resnick，M.（1994）“海龟，白蚁和交通拥堵：大规模平行微世界的探索”。马萨诸塞州剑桥市：麻省理工学院出版社。作为Connected Mathematics Project的一部分，于1997年改编为StarLogoT。
+This model was developed at the MIT Media Lab using CM StarLogo. See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds." Cambridge, MA: MIT Press. Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
 
-该模型已作为以下项目的一部分转换为NetLogo：参与仿真：基于网络的课堂学习系统设计和/或集成仿真和建模环境。该项目非常感谢国家科学基金会（REPP＆ROLE计划）的支持-批准号REC＃9814682和REC-0126227。从StarLogoT转换为NetLogo，2000年。
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2000.
