@@ -32,6 +32,11 @@ time
 时间
 
 ## Tutorial
+### Excessive
+This model models the movement of <color=blue>cars </color> on a highway. Each <color=blue>car </color> follows a simple set of rules: it slows  down (<trigger=deceleration,#c1b90fff>decelerates</trigger>) if it sees a <color=blue>car </color> close ahead, and <trigger=speed>speeds </trigger> up (<trigger=acceleration,green>accelerates</trigger>) if it doesn't see a <color=blue>car </color> ahead.
+### Chinese
+该模型模拟了<color=blue>汽车</color>在高速公路上。每<color=blue>车</color>遵循一组简单的规则：减慢（<trigger=deceleration,#c1b90fff>减速</trigger>），如果看到<color=blue>车</color>靠近前方<trigger=speed>速度</trigger>上（<trigger=acceleration,green>加速</trigger>），如果没有看到<color=blue>车</color>先。
+
 ### Source
 "Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>."
 ### Chinese ***

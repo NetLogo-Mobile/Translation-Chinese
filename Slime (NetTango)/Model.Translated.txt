@@ -16,3 +16,64 @@ setup
 ### Chinese ***
 设定
 
+## NetTango
+### Source
+°
+### Chinese ***
+°
+
+### Source
+amount
+### Chinese ***
+量
+
+### Source
+angle
+### Chinese ***
+角度
+
+### Source
+bias
+### Chinese ***
+偏压
+
+### Source
+drop chemical
+### Chinese ***
+掉药
+
+### Source
+forward
+### Chinese ***
+前锋
+
+### Source
+if chemical strength
+### Chinese ***
+如果化学强度
+
+### Source
+slime actions
+### Chinese ***
+煤泥动作
+
+### Source
+sniff-angle
+### Chinese ***
+嗅角
+
+### Source
+steps
+### Chinese ***
+脚步
+
+### Source
+turn toward chemical
+### Chinese ***
+转向化学
+
+### Source
+wiggle
+### Chinese ***
+摆动
+
