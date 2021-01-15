@@ -1,80 +1,82 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## 这个模型是什么？
+﻿## 这个模型是什么？
 
-该模型是“交通基本”模型的更为复杂的两车道版本。与更简单的模型非常相似，此模型演示了如何形成交通拥堵。在两车道版本中，驱动程序有一个新选项。他们可以通过改变车道做出反应，尽管这通常无法解决他们的问题。
+这是一个和交通堵塞（单车道）相比稍稍复杂的双车道模型。和单车道一样，这个模型试图模拟交通堵塞的形成过程。 不同的是，在一个双车道的模型当中，司机可以通过变道来避开交通拥堵。不过您可能很快会发现，这并不是一个很好的选择。 
 
-与“流量基本”模型中的情况一样，流量可能会减慢和阻塞，而没有任何集中的原因。
+和交通堵塞（单车道）一样，形成交通堵塞并不一定需要一个“中心事件”（例如交通事故）。
 
-## 如何这个模型怎么用
+## 这个模型怎么用？
 
-单击设置按钮设置汽车。单击GO开始汽车行驶。 GO ONCE按钮可以使汽车仅按一个时钟周期。
+运行一次（go once）按钮可以模拟一个时间周期中汽车移动的情况。
 
-“汽车数量”滑块控制道路上的汽车数量。如果在模型运行时更改此滑块的值，则会“动态”添加或移除汽车，因此您可以立即看到对交通的影响。
+汽车数量（number-of-cars）滑块可以控制道路上汽车的总量。您可以在模型运行时调动滑块的数值，道路上的汽车数量会随之增加或减少，因此，您可以立即看到汽车数量变化给交通状况带来的变化。
 
-SPEED-UP滑块控制前方无汽车时汽车的加速速度。
+您可以用加速（SPEED-UP）滑块来调整汽车在没有前车时的加速率。
 
-SLOW-DOWN滑块控制当前方有汽车驶近时汽车减速的速度。
+而减速（SLOW-DOWN）滑块可以调整汽车在靠近前车时的减速率。 
 
-MAX-PATIENCE滑块控制汽车在失去耐心并尝试更改车道之前可以减速多少次。
+最大耐心指数（MAX-PATIENCE）滑块可以控制司机的耐心：在经历过多少次减速后，会失去耐心而选择变道。
 
-您可能希望使用速度滑块放慢模型的速度，以更仔细地观察某些汽车的行为。
+您也可以调慢整个模型的运行速度，来更仔细的观察某些车辆的移动情况。
 
-选择汽车按钮可让您突出显示特定汽车。它使那辆车变成红色，以便更轻松地跟踪它。在GO关闭时，SELECT CAR更易于使用。如果用户没有手动选择汽车，则随机选择汽车作为“选定汽车”。
+您可以用选定车辆（SELECT CAR）按钮来标注一辆您想要关注的车。当您标注之后这辆车会变红，方便您持续锁定这辆车的移动。此时建议您暂停模型来仔细观察。如果您没有手工锁定某一辆车，那么系统将会任意指定一辆车作为锁定目标。
 
-您可以[`watch`]（http://ccl.northwestern.edu/netlogo/docs/dictionary.html#watch）或[`跟随`]（http://ccl.northwestern.edu/netlogo/docs/ dictionary.html＃ 跟随），使用WATCH SELECTED CAR和FOLLOW SELECTED CAR按钮来选择汽车。 RESET PERSPECTIVE按钮将视图恢复到其正常状态。
+您可以点击“关注选定车辆”或者“追踪选定车辆”按钮来关注和追踪某辆车。点击“重置属性”按钮，系统将取消高亮，回到常规状态。 
 
-SELECTED CAR SPEED监视器显示所选汽车的速度。 MEAN-SPEED监视器显示所有汽车的平均速度。
+选中车辆车速显示框中显示的是选中车辆的车速。平均车速显示框中显示的是道路上所有车辆的平均车速。
 
-YCOR OF CARS绘图显示了每个车道上有多少辆汽车的直方图，由其y坐标确定。直方图还显示了试图更改车道时在车道之间的汽车数量。
+每条车道上的车辆数随时间变化的图表：展示了每条车道上的车辆数量随时间变化的曲线。同时，这张图表中显示了失去耐心而选择变道的司机数量。
 
-CAR SPEEDS绘图随时间显示四个数量：
+车速变化图表：追踪了图中的四个关键车速：
+* 青兰 - 所有车辆中的最快车速
+* 蓝色 - 所有车辆中的最慢车速
+* 绿色 - 所有车辆的平均车速
+* 红色 - 被选中锁定车辆的实时车速 
 
--任何汽车的最高速度-青色
--任何汽车的最低速度-蓝色
--所有汽车的平均速度-绿色
--所选汽车的速度-红色
+司机耐心指数变化图表：追踪了四个关键的司机耐心指数：
+* 青兰 - 所有司机中最高的耐心指数
+* 蓝色 - 所有司机中最低的耐心指数
+* 绿色 - 所有司机的平均耐心指数
+* 红色 - 被选中锁定车辆的司机耐心指数 
 
-驾驶员耐心绘图显示了驾驶员当前耐心的四个数量：所选汽车驾驶员的最大，最小，平均值和当前耐心。
+## 看一看：
 
-## 看一看
+交通堵塞可以从小的“因素”开始。当完成模型设置后，模型会自动将选定数量的汽车放置在任意位置开始运行。如果某些汽车恰巧聚集在一起，它们不得不降低速度，进一步导致后面的汽车减速，最终形成交通拥堵。
 
-交通堵塞可以从小的“种子”开始。汽车从随机位置开始。如果将某些汽车聚集在一起，它们将缓慢移动，从而导致后面的汽车减速，并形成交通拥堵。
+即使所有汽车都向前行驶，交通堵塞的位置也倾向于向后移动。这种现象在波动现象中很常见：群体的行为通常与组成群体的个人的行为非常不同。
 
-即使所有汽车都向前行驶，交通拥堵也倾向于向后移动。这种现象在波动现象中很常见：群体的行为通常与组成群体的个人的行为非常不同。
+就像每辆汽车都具有当前速度一样，每个驾驶员也都具有耐心指数。每当驾驶员需要踩刹车来避免碰撞前车时，就会失去一点耐心。当驾驶员的耐心用尽时，驾驶员会尝试变道。然后，驾驶员的耐心将重置为最大值。
 
-就像每辆汽车都具有当前速度一样，每个驾驶员也都具有当前的耐心。每次驾驶员为了避免撞到前面的汽车而不得不踩刹车时，他们都会失去一点耐心。当驾驶员的耐心到期时，驾驶员会尝试更改车道。驾驶员的耐心将重置为最大耐心。
+当道路上的总车辆数很多时，驾驶员会更容易失去耐心，开始反复变道加塞。这种现象称为“蛇形”，在拥挤的高速公路中很常见。如果汽车的数量足够多，那么几乎每辆汽车最终都会试图改变车道，堵车形成长龙。这使情况变得更糟，汽车因无法变道而不得不暂时卡在车道之间。这像是您在现实生活中遇到过的情况吗？
 
-当模型中的汽车数量很高时，驾驶员会很快失去耐心，开始驶入和驶出车道。这种现象称为“蛇行”，在拥挤的高速公路中很常见。如果汽车的数量足够多，那么几乎每辆汽车最终都会试图改变车道，并且交通缓慢地爬行，这使情况变得更糟，汽车因无法改变而暂时卡在车道之间。对您来说，这看起来像现实生活中的情况吗？
+关注显示所有车辆的“平均车速”显示框。您能描述出平均车速随时间的变化情况吗？平均车速和有无交通堵塞有什么关系呢？
 
-观看MEAN-SPEED监视器，该监视器将计算汽车的平均速度。随着时间的流逝，速度会如何？车速和交通拥堵之间的关系是什么？
+您能发现这些图表中有什么规律吗？ 
 
-看两个情节。您能检测出图中的明显图案吗？
+如果您仔细观察您会发现这个模型的背景是由绿色的草格子和灰色的道路格子组成。每一块绿色的草格子颜色深浅略有不同，每一块灰色的道路格子，尽管没有草格子的颜色变化那么明显，也略有不同。这么做不仅仅是为了让模型看起来更真实，它帮助我们在追踪锁定车辆时，实现移动的视觉效果。 
 
-道路两旁的草地都是略微不同的绿色阴影。道路补丁在较小程度上是不同的灰色阴影。这不仅是要使模型看起来更好：还可以在使用“跟随所选车”按钮时给人以运动感。
+除了改变车辆的数量您还能想到别的什么方法尽可能的降低交通阻塞的产生？车量的总数，有多少条车道以及每条车道的长度之间有什么关系呢？
 
 ## 试一试
 
-除了汽车数量之外，您还可以进行哪些更改以最大程度地减少交通拥堵的发生率？汽车数量，车道数量和（在这种情况下）每个车道长度之间的关系是什么？
+你可以试着滑动减速和加速滑块，他们对交通状况有什么改变呢？如果要使得“蛇形”现象最严重，你能找到设置这两个滑块的方法吗？
 
-探索对滑块SLOW-DOWN和SPEED-UP的更改。这些如何影响交通流量？您可以设置它们以便创建最大的蛇行吗？
+你也可以试着改动代码，将所有的车辆都的初始状态调整到同一条车道上。想一想：经过一段时间以后，这些在初始时在同一条车道上的车辆会逐渐平均分配到两条车道上吗？如果会，大概需要多久呢？
 
-更改代码，以使所有汽车始终在同一车道上启动。每个车道上的汽车比例最终是否平衡？多久时间？
-
-尝试通过更改代码或在单击“设置”后在命令中心中键入“询问乌龟[将图形设为默认”]来使用“默认”海龟图形而非汽车图形。这将使您能够快速发现试图更改车道的汽车。当流量很大时，他们会发生什么？
+你可以试着把海龟从现在的车辆的形状改成默认的形状（箭头），这样可以更快速的识别哪些试图变道的车辆。你可以通过修改代码，或者在重启模型后在命令栏中输入 ask turtles [ set shape "default" ] 来改动海龟的形状。当交通拥堵时，这些箭头会发生怎么样的变化呢？
 
 ## 改一改
 
-该模型的编写方式使添加更多通道变得容易。在代码中查找“车道数”报告指令程序，然后使用它。
+你可以在代码中改变 to-report number-of-lanes 的设置，用它来增加车道的数量，目前最多可以有8条车道。
 
-尝试创建“交通十字路口”（两组交通信号灯可在其中相遇）或“交通瓶颈”模型（两条车道可合并为一条车道）。
+你也可以改动代码来实现“交叉路口（两组车辆在红绿灯路口相遇）”或者“交通瓶颈（两条车道合流成一条车道）”的模型。
 
-请注意，汽车永远不会碰撞到彼此：汽车永远不会进入格子或经过包含另一辆汽车的格子。删除此功能，使碰撞的海龟在碰撞时死亡。随着时间的流逝，这样的模型会发生什么？
+你可能也已经注意到，现有的模型中车辆并不会相撞，即如果一个格子中已经有一辆车，那么周围的车一定不会再同一时间闯入这个格子。如果我们去除这个特性，允许模型中的车辆相撞并且在碰撞后消失，那么模型会发生怎样的变化呢？
 
-##  NetLogo 语言特性
+##  NetLogo 编程小贴士：
 
-请注意使用“ mouse-down？”和“ mouse-xcor` /`mouse-ycor”来选择要特别注意的汽车。
+你注意到了代码中 mouse-down? 和 mouse-xcor/mouse-ycor 吗？他们是（利用鼠标的坐标）来锁定关键车辆的。
 
-与其他某些模型不同，每只海龟都有自己的图形。 NetLogo使用“设置图形”来更改乌龟的形状。您可以使用“工具”菜单中的形状编辑器来创建自己的乌龟形状或修改现有的海龟形状。然后，您可以修改代码以使用自己的形状。
+这个模型中，海龟呈现出车辆的图形，这个属性在其他很多模型是没有的。NetLogo 语言中，你可以用 set shape 来改变海龟的形状。你也可以用工具栏中的图形编辑器来创建新的图形或者修改已有的图形，然后你就可以在代码中调用你设计的新图形了。
 
 ## 相关模型
 
@@ -98,26 +100,29 @@ CAR SPEEDS绘图随时间显示四个数量：
 
 ## 如何引用本模型
 
-If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+如果你在公开出版物中提到了 NetLogo 软件或本模型，我们要求你加入下列引用。
 
-For the model itself:
+对于模型本身：
 
 * Wilensky, U. & Payette, N. (1998).  NetLogo Traffic 2 Lanes model.  http://ccl.northwestern.edu/netlogo/models/Traffic2Lanes.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
-Please cite the NetLogo software as:
+对于建模软件：
 
 * Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
 ## 版权和授权
 
-Copyright 1998 Uri Wilensky.
+版权所有 1998 Uri Wilensky.
 
 ![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
-Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+商业许可请联系 Uri Wilensky：uri@northwestern.edu
 
 This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
 
 This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+翻译者：Ichi Yuan
+校对者：John Chen

@@ -1,69 +1,66 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## 这个模型是什么？
+﻿## 这个模型是什么？
 
-该模型对高速公路上的汽车运动进行建模。每辆汽车遵循一套简单的规则：如果看到前方有汽车，则减速（减速）；如果看不到前方汽车，则加速（加速）。该模型演示了即使没有发生任何事故，断桥或卡车倾翻，交通堵塞也会如何形成。形成交通拥堵不需要“集中原因”。
+这个模型是基于高速公路上汽车的运动来模拟交通堵塞。每辆汽车遵循两条简单的规则：如果前方有汽车，则减速；如果前方没有汽车，则加速。该模型向我们演示了在没有交通事故的情况下（断桥或卡车倾翻），堵车是怎么形成的。形成交通拥堵并不需要“中心事件（centralized cause）”。
 
-## 如何这个模型怎么用
+## 这个模型怎么用？
 
-单击设置按钮设置汽车。
+汽车数量（number-of-cars）滑块控制道路上的汽车数。
 
-设置“汽车数量”滑块以更改道路上的汽车数量。
+需要注意，车子移动时环绕整个显示区域运动，所以这条路在屏幕上就像一个无限延伸的纸带。
 
-单击GO开始汽车行驶。请注意，它们在移动时回绕着世界，所以道路就像一条连续的环路。
+加速（acceleration）滑块控制前方没有车时汽车的加速率。
 
-ACCELERATION滑块控制前方没有汽车时汽车加速（加速）的速度。
+当一辆汽车发现前方另一辆汽车时，会调整车速来匹配前方汽车的速度，然后再放慢一点。减速（deceleration）滑块控制这辆车相比前车的减速率。
 
-当一辆汽车在前方看到另一辆汽车时，它会匹配该汽车的速度，然后再放慢一点。它比前面的汽车慢多少，由DECELERATION滑块控制。
+## 看一看：
 
-## 看一看
-
-交通堵塞可以从小的“种子”开始。这些汽车以随机的位置和随机的速度开始。如果将某些汽车聚集在一起，它们将缓慢移动，从而导致后面的汽车减速，并形成交通拥堵。
+交通堵塞可以从小的“因素”开始。这些汽车以随机的位置和随机的速度开始。如果某些汽车恰巧聚集在一起，它们不得不降低速度，进一步导致后面的汽车减速，最终形成交通拥堵。
 
 即使所有汽车都向前行驶，交通拥堵也倾向于向后移动。这种现象在波动现象中很常见：群体的行为通常与组成群体的个人的行为非常不同。
 
-在模型运行时，该绘图显示了三个值：
+在模型运行时，图表中显示了三个值：
 
-*最快的速度（不超过速度限制！）
+* 所有汽车中最快的速度（不超过速度限制的情况下）
 
-*任何汽车中最慢的速度
+* 所有汽车中最慢的速度
 
-*单车的速度（海龟0），涂成红色，因此可以观看。
+* 单个汽车的速度（如编号为 0 的海龟），被涂成红色，方便查看。
 
-不仅要注意最大值和最小值，还要注意可变性，即一辆车的“颠簸性”。
+观察图表时，不仅要注意最大值和最小值，还要注意变化的情况，即车速的的“颠簸性”。
 
-请注意，默认设置使汽车的减速比其加速快得多。这是典型的交通流模型。
+请注意，默认设置中使汽车的减速比其加速快得多。这符合典型的交通模型。
 
-即使“加速”和“减速”都非常小，在每次周期中增加或减少这些值时，汽车仍可以实现高速行驶。
+即使“加速”和“减速”值都非常小，由于每轮时间周期中都会进行加减速，汽车仍可能实现高速行驶。
 
-## 试一试
+## 试一试：
 
-在此模型中，三个滑块可能会影响交通拥堵的趋势：初始的NUMBER-OF-CARS，ACCELERATION和DECELERATION。
+在此模型中，这三个滑块可能会影响堵车的趋势：汽车数量（NUMBER-OF-CARS），加速（ACCELERATION）和减速（DECELERATION）。
 
-寻找这些设置如何影响流量的模式。哪个变量影响最大？这些模式有意义吗？它们似乎与您的驾驶体验一致吗？
+你可以尝试探索车流变化的模式，以及这些滑块的设置是如何影响堵车的车流的。哪个变量影响最大？这些参数有意义吗？它们与你在生活中的堵车体验一致吗？
 
-将DECELERATION设置为零。流程发生了什么？模型运行时，逐渐增加DEELERATION。在什么时候流“分解”？
+将减速滑块设置为零。车流发生了什么变化？模型运行时，逐渐增加“减速”率。在什么情况下，堵车的情况会完全消失？
 
 ## 改一改
 
-尝试其他规则以加快和降低速度。这里提出的规则是否现实？还有其他更准确的规则或代表更好的驾驶策略的规则吗？
+你可以尝试其他加快和降低速度的行驶规则。这些规则是否具有可行性？你还能想到其他更准确的或更能体现驾驶策略的规则吗？
 
-实际上，不同的车辆可能跟随不同的规则。尝试为某些汽车提供不同的规则或加速度/减速度值。一个坏司机能把事情搞砸吗？
+在现实中，不同的车辆是按不同的规则行驶的。你可以尝试为某些汽车提供不同的行驶规则或加速度/减速度值。想一想，一个驾驶习惯不好的司机会造成交通混乱吗？
 
-加速和减速之间的不对称性是不同驾驶习惯和响应时间的简化表示。您可以将它们明确编码到模型中吗？
+行驶中加速和减速之间的不对称性是每个人不同驾驶习惯和反应时间的一种简化表达。你可以将它们准确地编码到模型中吗？
 
-您可以进行哪些更改以最大程度地减少交通堵塞的可能性？
+你可以进行哪些改动来最大程度地减少堵车的可能性？
 
-您能改变什么以使交通拥堵向前而不向后移动？
+你可以进行那些改动使交通拥堵向前传导而不向后传导？
 
-建立两车道交通模型。
+尝试构建一个两车道的交通模型。
 
-##  NetLogo 语言特性
+##  NetLogo 编程小贴士：
 
-该绘图显示了全局值和单个汽车的值，这有助于一个人同时观察整体模式和个人行为。
+图表同时显示了全局和某俩汽车的数据，有助于你同时观察整体模式和个体行为。
 
-使用“ watch”命令可以使您更轻松地专注于红色汽车。
+使用 watch 命令可以使您更简单地集中观察标为红色的汽车。
 
-“ speed-limit”和“ speed-min”变量设置为恒定值。由于每辆汽车它们都是相同的，因此这些变量可以被定义为全局变量，而不是海龟变量。我们将它们指定为“海龟”变量，因为对该模型的修改或扩展可能会使每辆汽车都有自己的限速值。
+speed-limit 和 speed-min 变量设置为恒定值。由于这个模型中我们假设每辆汽车的性能是一致的，因此这些海龟变量也可以被定义为全局变量。由于对该模型的修改或扩展可能使每辆汽车都有自己的性能参数，我们还是将它们指定为海龟变量。
 
 ## 相关模型
 
@@ -87,25 +84,25 @@ ACCELERATION滑块控制前方没有汽车时汽车加速（加速）的速度�
 
 ## 如何引用本模型
 
-If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+如果你在公开出版物中提到了 NetLogo 软件或本模型，我们要求你加入下列引用。
 
-For the model itself:
+对于模型本身：
 
 * Wilensky, U. (1997).  NetLogo Traffic Basic model.  http://ccl.northwestern.edu/netlogo/models/TrafficBasic.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
-Please cite the NetLogo software as:
+对于建模软件：
 
 * Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
 ## 版权和授权
 
-Copyright 1997 Uri Wilensky.
+版权所有 1997 Uri Wilensky.
 
 ![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
-Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+商业许可请联系 Uri Wilensky：uri@northwestern.edu
 
 This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
 

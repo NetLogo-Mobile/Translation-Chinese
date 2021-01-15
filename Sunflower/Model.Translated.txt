@@ -1,4 +1,5 @@
-﻿## Language = Chinese
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
 ## Tutorial
 ### Source
 A mathematical ratio commonly found in nature, and when used in a design, fosters organic and natural-looking compositions that are aesthetically pleasing to the eye
@@ -175,7 +176,7 @@ The <i>turn-increment</i> slider dictates the degree  that each new <color=gr
 ### Chinese
 <b>转角增量</b>滑块控制每只新<color=green>海龟</color>的旋转度数 ，来确定它在整个螺旋形状  中的位置。
 
-### Source ***
+### Source
 The amount of ticks  that have passed since the command 'reset-timer' was last run
 ### Chinese
 自上次运行命令“reset-timer”以来经过的时间周期 
@@ -193,7 +194,7 @@ The Golden Ratio 
 ### Source
 The interlocking spirals found in the <color=maroon>seeds</color>, <color=red>petals </color> and even <color=maroon>branches </color> of many <color=green>plants </color> occur naturally through the growth of the flower . This model attempts to demonstrate the growth of these naturally occurring spirals .
 ### Chinese
-在许多植物的<color=maroon>种子</color>、<color=red>花瓣 </color>甚至<color=maroon>枝干 </color>中都存在交错的螺旋形状 。这一现象是在植物的生长中自然形成的。所以在这里，我们可以尝试探索这些天然螺旋  是如何增长及变化的。 
+在许多植物的<color=maroon>种子</color>、<color=red>花瓣 </color>甚至<color=maroon>枝干 </color>中都存在交错的螺旋形状 。这一现象是在植物的生长中自然形成的。所以在这里，我们可以尝试探索这些天然螺旋  是如何增长及变化的。
 
 ### Source
 The number of clock-ticks times the turn 'increment'
