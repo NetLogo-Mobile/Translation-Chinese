@@ -1,0 +1,111 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型演示了一个非常简单的混沌系统，该系统由一个在带有圆形障碍物的矩形室内反弹的球组成。该系统可以表现出周期性的行为（其中球以重复的模式弹跳），但是主要表现出混沌的行为。
+
+混乱的行为意味着初始条件中的任何细微变化（在这种情况下，即球的位置和方向）都会导致行为随时间发生显着变化。混沌行为使系统很难精确预测：为了准确预测混沌系统，必须对系统的初始条件进行精确测量。但是，通常无法以这种精确度测量系统。
+
+## 这个模型是怎么运行的
+
+球从墙壁和障碍物反弹。碰撞都是完全弹性的，障碍物保持静止。最后，没有摩擦。这意味着球永远不会改变速度，只能改变方向。请注意，这些球不会互相弹开。多个球只是为了显示当初始位置差异很小时会发生什么。
+
+当球与障碍物或世界边缘重叠时，就会检测到碰撞。然后纠正位置（有关详细讨论，请参见下面的NetLogo功能部分）。最终，由于碰撞是完全弹性的，因此球的新角度是其方向在与之碰撞的表面周围的反射角。
+
+## 如何这个模型怎么用
+
+使用SETUP-RANDOM时，请使用NUM-OBSTACLES滑块调整障碍物的数量。障碍物为0时，系统将*总是*是周期性的。你能弄清楚为什么吗？
+
+如果是两个球？处于启用状态时，设置按钮将创建一个附加球，该球的位置几乎与第一个球相同，但不完全相同。用两个球运行系统将显示出在混沌系统中初始条件下的轻微变化会产生多大的效果。
+
+使用SETUP-RANDOM按钮将系统初始化为最有可能混乱的配置。任意大小的NUM-OBSTACLES个障碍物将放置在任意位置。
+
+使用SETUP-PERIODIC-X按钮查看系统可以表现出的周期性行为的示例。
+
+使用SETUP-PERIODIC-QUILT按钮可以查看周期非常长的周期性行为的另一个示例。
+
+GO按钮运行模拟。
+
+如果是TRACE-PATH？开关打开时，将跟踪球的路径。 CLEAR-DRAWING清除路径。
+
+DRAG可用于在周围移动球和障碍物，以及更改障碍物的大小和球的方向。一旦按下，在球和障碍物的中心附近单击并拖动将使它们移动。在球的边缘附近单击并拖动将改变其方向。单击并拖动障碍物边缘附近将更改其大小。
+
+## 看一看
+
+请注意，在球碰到圆圈之前，球的弹跳是相当可预测的。你为什么这么认为呢？
+
+如果您无障碍运行模型，则该行为始终是周期性的，尽管该时间段可能很长。为什么会这样呢？
+
+如果是两个球？处于启用状态时，设置按钮将创建一个附加球，该球的位置几乎与第一个球相同，但不完全相同。用两个球和一个障碍物来运行系统将显示出在混沌系统中初始条件下的轻微变化会产生多大的效果。这是混沌系统的特征。
+
+球与障碍物碰撞的随机配置不太可能是周期性的。
+
+## 试一试
+
+尝试将SETUP-PERIODIC-X与两个球一起使用吗？上。红色和蓝色的球如何表现不同？
+
+尝试使用两个球进行SETUP-PERIODIC-QUILT吗？上。红色和蓝色的球什么时候开始发散？
+
+您能找到导致周期性行为的其他配置吗？
+
+## 改一改
+
+添加不同形状的障碍物。什么形状会产生混乱的行为？
+
+添加一个滑块来控制球的数量，以便可以有两个以上。
+
+添加一个滑块来控制球从红色球开始的距离。减小或增大距离会改变模型的行为吗？
+
+尝试更改盒子的图形。
+
+当前，球不相互碰撞。你能做到，他们这样做吗？您能找到一个周期性的配置，使这些球相互碰撞吗？
+
+##  NetLogo 语言特性
+
+该模型使用了许多高级技术：
+
+首先，使用匿名过程使SETUP过程在球和障碍物的放置方面非常灵活。例如，SETUP-PERIODIC-QUILT使用以下代码：
+
+```
+设置[-&gt; setxy 0 8设置大小1] [-&gt; setxy 0 7 facexy -8 -6]
+```
+
+第一个匿名过程配置障碍物，第二个匿名过程配置球。
+
+FOREACH-AGENT过程说明如何使用匿名过程在NetLogo中创建自己的控件结构。 FOREACH-AGENT的工作方式与FOREACH相似，但是对代理集而不是列表进行操作。
+
+其次，由于该系统的混乱性质，必须非常精确地处理对象之间的碰撞。由于每个周期球的移动步伐都为SPEED，因此，当球撞击另一个物体时，它所处的位置就好像球一直在连续移动一样。例如，此错误可能会使应该为周期性配置的内容变得混乱。为了对此进行更正，该模型使用了一种称为[二进制搜索]（https://en.wikipedia.org/wiki/Binary_search_algorithm）的技术，可以非常迅速地接近碰撞的确切位置。虽然二进制搜索是一种通用算法，而不是NetLogo功能，但是此模型显示了如何在NetLogo中实现空间二进制搜索。此外，由于ATAN报告指令可以引入较小的误差，因此该模型在与障碍物碰撞后将球的方向舍入到最接近的100,000度。
+
+最后，用于拖动障碍物和球的代码显示了如何使用鼠标对代理进行相当复杂的操纵。
+
+## 相关模型
+
+- The GasLab models
+- Kicked Rotator is another example of a chaotic system
+
+## 引用和致谢
+
+This model was inspired by a conversation with Dirk Brockmann who discusses this phenomenon in his Complex Systems in Biology course at the Humboldt University of Berlin.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Head, B. and Wilensky, U. (2017).  NetLogo Chaos in a Box model.  http://ccl.northwestern.edu/netlogo/models/ChaosinaBox.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2017 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2017 Cite: Head, B. -->

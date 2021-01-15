@@ -1,0 +1,88 @@
+﻿## WHAT IS IT?
+
+In Follower, turtles attempt to "connect" with other turtles, forming long chains according to a small set of simple rules.
+
+## HOW IT WORKS
+
+A turtle can follow only one other turtle, and similarly it can only be followed by one other turtle. This means there are four turtle states, each represented by a different color:
+
+- Magenta: Unattached
+- Green: Following another turtle (a "tail")
+- Yellow: Being followed by another turtle (a "head")
+- Blue: Following and being followed by other turtles (a "body" segment)
+
+Turtles are created in the magenta (unattached) state. At each turn, each turtle checks a random patch in a square donut shape around itself. If it finds a turtle there who is not already being followed, it will "latch on" and start following the movements of that turtle. An unattached turtle (one that has not yet "latched on" to another turtle) will move randomly.
+
+## HOW TO USE IT
+
+SETUP: Clears the world and creates the number of turtles specified in the POPULATION slider. All the turtles are created in an unattached state (magenta).
+
+GO: Runs the simulation.
+
+POPULATION: Specifies the number of turtles created in SETUP.
+
+NEAR-RADIUS: The inner radius of the square donut turtles search in.
+
+FAR-RADIUS: The outer radius of the square donut turtles search in.
+
+WAVER: The amount of randomness in the movement of non-following turtles.
+
+There is also a plot called "Turtle Count" that displays, over time, the number of turtles in each state.
+
+## THINGS TO NOTICE
+
+Each of the sliders has a different effect on the simulation.
+
+Notice that the when the number of turtles is high, chains tend to form very quickly. This is because there are more turtles and therefore more chances for each turtle to attach on each turn.
+
+Varying the size of the donut tends to affect how the turtles start to attach, but in the long run doesn't have a big effect on the simulation outcome. Donut size is most interesting at very small values, which causes the turtles to attach into very small loops. Also, very large thick donuts (big FAR-RADIUS, small NEAR-RADIUS) looks interesting with a large number of turtles.
+
+The amount of movement randomness (set by WAVER) can also change the simulation outcome. Very high values for WAVER result in small loops being formed because the turtles are continuously moving over themselves, increasing the chances of connecting the head of the chain to its tail.
+
+The simulation, under any parameters, moves towards forming loops. Loops may be formed by wrapping around the world, but in almost all cases if the simulation is left running long enough you will get many small loops or one big loop. It is possible that a chain will never connect to itself if the WAVER slider is set to zero, but otherwise the simulation should proceed towards loops.
+
+## THINGS TO TRY
+
+Try making the waver setting very high. Notice how the turtles clump up into little clusters. This is because they are moving over themselves frequently, which increases the chances of attaching to their tail. This makes sense if the donut allows the turtles to check close to themselves, but if it does not (NEAR-RADIUS is big) then the same thing still happens. Why is this the case?
+
+Notice that we are plotting all four possible turtle states, but only three appear on the plot. Do you know why?
+
+## EXTENDING THE MODEL
+
+Try implementing different rules for how turtles follow each other. For instance, interesting results can be seen if you turn off world wrapping. Or, what if two turtles are allowed to have the same leader?
+
+You might also try giving the turtles a certain probability of breaking apart again. See how this affects the patterns they make.
+
+## NETLOGO FEATURES
+
+Note the use of the `towards` primitive to make the turtles follow each other.
+
+Note also that we are careful to ensure that we never have two turtles following the same leader.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Follower model.  http://ccl.northwestern.edu/netlogo/models/Follower.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

@@ -1,0 +1,70 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+在一个有23个人的房间中，他们中的两个有相同生日的机会是多少？
+
+做出最佳猜测，然后运行模型并查看其发生频率。
+
+## 这个模型是怎么运行的
+
+每只海龟被随机分配一个生日。如果一只海龟的生日与房间里另一只海龟的生日相同，它将变成绿色。
+
+该模型未考虑leap年（没有2月29日生日）。
+
+## 如何这个模型怎么用
+
+按SETUP初始化模型。
+
+按一次即可生成一个满是人的房间。
+
+按GO可以重复生成许多人满为患的房间。成功率监视器将显示那些房间中至少有一个匹配生日的百分比。
+
+## 看一看
+
+成功率是高于还是低于预期？
+
+## 试一试
+
+要尝试容纳更多人的房间，请编辑视图并增加max-pycor。
+
+在匹配的生日机会至少为90％之前，需要多少人进入房间？ （这是高于还是低于您的预期？）
+
+您能数学算出几率吗？ （提示：当人数较少时，首先要考虑赔率。）
+
+## 改一改
+
+在可能性列表中包括leap年生日。
+
+##  NetLogo 语言特性
+
+这个模型使用了很多列表，包括列表原语，例如map，foreach， 项，position，sentence和sort-on。列表主要用于使模型显示实际的日期名称，而不仅仅是0到364之间的数字。列表还用于按生日对海龟进行排序。
+
+## 相关模型
+
+The ProbLab suite of models, in the Mathematics/Probability section, contains many explorations of basic questions about probability and statistics.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2004).  NetLogo Birthdays model.  http://ccl.northwestern.edu/netlogo/models/Birthdays.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2004 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2004 -->

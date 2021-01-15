@@ -1,0 +1,74 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该项目的灵感来自于白蚁将木屑收集成堆的行为。白蚁跟随一系列简单的规则。每只白蚁开始随机游荡。如果碰到木屑，它将捡起木屑，并继续随机游荡。当撞到另一个木片时，它会找到附近的空白空间并将其放下。有了这些简单的规则，木屑最终就会变成一堆。
+
+## 如何这个模型怎么用
+
+单击“设置”按钮设置白蚁（白色）和木片（黄色）。单击“执行”按钮开始仿真。白蚁携带木屑时会变成橙色。
+
+NUMBER滑块控制白蚁的数量。 （注意：NUMBER滑块中的更改要等到下一次设置才会生效。）DENSITY滑块控制木屑的初始密度。
+
+## 看一看
+
+随着成堆的木屑开始形成，无论如何都不会对其进行“保护”。也就是说，白蚁有时会从现有的堆垛中取走切屑。该策略似乎适得其反。但是，如果桩是“受保护的”，您最终会得到很多小桩，而不是大桩。
+
+最后一堆大约是圆形的。为什么是这样？还有哪些其他物理情况也会产生圆形物体？
+
+通常，桩的数量随时间减少。为什么？当白蚁带走所有木屑时，一些堆积消失了。由于白蚁总是将木片放在其他木片附近，因此没有办法从头开始。因此，桩的数量必须随时间减少。 （“新”堆开始的唯一方法是将现有堆分成两部分。）
+
+该项目是“分散式”战略的一个很好的例子。没有白蚁负责，也没有专门指定的堆放地点。每个白蚁都遵循一套简单的规则，但整个殖民地却完成了相当复杂的任务。
+
+## 试一试
+
+如果只使用一个白蚁，结果会改变吗？如果您使用数千只白蚁怎么办？
+
+当只剩下两堆时，哪一个最有可能作为唯一的最后一堆“获胜”？两堆中的较大者多久赢一次？如果一个桩只有一个木屑，而另一个桩则有其余的木屑，那么第一桩获胜的机会是什么？
+
+## 改一改
+
+您可以扩展模型使白蚁对几种颜色的木材进行分类吗？
+
+在模型运行时，绘制桩的数量，桩的平均大小或携带木屑的白蚁的数量。
+
+##  NetLogo 语言特性
+
+请注意，木片不作为对象存在。它们仅以补丁中的颜色表示。白蚁拾起并放下木片时会更新格子的颜色。实际上，补丁已被用作数据结构。此策略在许多NetLogo程序中很有用。
+
+请注意，当您停止永远使用GO按钮时，白蚁会继续移动一会儿。这是因为他们每个人都在完成GO过程的命令。为此，他们必须完成当前的查找切屑，查找堆垛，然后在堆垛附近找到空白点的循环。在大多数模型中，GO功能只会使模型向前移动一步，但在此模型中，编写GO功能是为了使海龟前进整个活动周期。有关永远的海龟按钮的更多信息，请参见用户手册中编程指南的“按钮”部分。
+
+## 相关模型
+
+* Painted Desert Challenge
+* Shepherds
+* State Machine Example
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Termites model.  http://ccl.northwestern.edu/netlogo/models/Termites.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds."  Cambridge, MA: MIT Press.  Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 MIT -->

@@ -1,0 +1,136 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型是GasLab模型套件中最简单的气体模型。粒子在没有外部约束（例如重力或容器）的情况下移动并相互碰撞。在此模型中，粒子被建模为完全弹性的粒子，除了动能以外，其他任何能量都没有，这是由于它们的运动。粒子之间的碰撞是有弹性的。粒子根据其速度着色-蓝色代表慢速，绿色代表中速，红色代表高速。
+
+此模型是GasLab模型系列中的一个。他们使用相同的基本规则来模拟气体的行为。每个模型都集成了不同的功能，以突出显示气体行为的不同方面。
+
+该模型的基本原理是，假定气体颗粒具有两个基本作用：它们移动并与其他颗粒或与任何其他物体（如墙壁）碰撞。
+
+## 这个模型是怎么运行的
+
+所有GasLab模型的基本原理是以下算法（有关更多详细信息，请参见模型“盒子中的GasLab气体”）：
+
+1）除非粒子与另一个粒子碰撞或从墙壁弹回，否则粒子将沿直线移动而不改变其速度。
+2）如果两个粒子发现自己在同一格子上，则它们将“碰撞”（NetLogo的“视图”由称为补丁的小正方形网格组成）。在此模型中，瞄准了两个粒子，以便它们在原点碰撞。
+3）选择粒子的碰撞角度，就好像它们是两个击中的实心球一样，该角度描述了连接它们中心的线的方向。
+4）粒子仅沿此线交换动量和能量，符合弹性碰撞的动量和能量守恒。
+5）为每个粒子分配新的速度，方向和能量。
+
+## 如何这个模型怎么用
+
+初始设置：
+-粒子数：气体粒子的数量。
+-TRACE ?：绘制单个粒子的路径。
+-COLLIDE ?：打开和关闭粒子之间的碰撞。
+-INIT-PARTICLE-SPEED：每个粒子的初始速度-它们都以相同的速度开始。
+-粒子质量：每个粒子的质量-它们都具有相同的质量。
+
+与大多数NetLogo型号一样，第一步是按SETUP。它会放入您使用滑块设置的初始条件。请务必等到SETUP按钮停止后再按GO。
+GO按钮一次又一次运行模型。这是一个“永远”的按钮。
+
+显示器：
+-“快速百分比”，“中等百分比”，“慢速百分比”监视器：具有不同速度的粒子百分比：“快”（红色），“中”（绿色）和“慢”（蓝色）。
+-平均速度：粒子的平均速度。
+-平均能量：颗粒的平均动能。
+
+情节：
+-速度计数：绘制每个速度范围（快，中或慢）中的粒子数。
+-速度直方图：所有粒子的速度分布。灰线是平均值，黑线是初始平均值。显示的速度值是实际值的十倍。
+-能量直方图：所有粒子的能量分布，计算为（m * v ^ 2）/ 2。灰线是平均值，黑线是初始平均值。
+
+最初，所有粒子的速度相同，但方向随机。因此，速度和能量的第一个直方图应仅显示一列。当粒子反复碰撞时，它们交换能量并朝新的方向前进，并且速度分散了-一些粒子变得更快，一些粒子变得更慢，并且该绘图将显示出这种变化。
+
+## 看一看
+
+不同颜色的粒子数量发生了什么？为什么蓝色的粒子比红色的粒子多？
+
+您能观察到碰撞和颜色变化吗？例如，当红色粒子撞击绿色粒子时，它们分别变成什么颜色？
+
+为什么平均速度（平均速度）下降？这违反能量守恒吗？
+
+这种气体在“无尽的空间”中-没有边界，没有障碍物，但大小仍然有限！有这样的身体状况吗？
+
+注意在画图跟踪其路径的粒子。注意这条路径是如何“缠绕”世界的。轨迹类似于布朗运动吗？您能识别出何时发生碰撞吗？哪些因素会影响碰撞的频率？路径的“角度”如何？您能否留在“本地”或环游世界？
+
+该模型以什么方式成为现实世界的“理想化”？
+
+## 试一试
+
+将所有粒子设置在世界的一部分中，或使用相同的方向-发生什么？这是否符合物理可能性？
+
+尝试不同的设置，尤其是极端情况。直方图是否不同？跟踪模式是否会改变？
+
+还有其他有趣的数量需要跟踪吗？
+
+查找或计算典型气体中颗粒的“真实”数量，大小，质量和速度。当您将这些数字与模型中的数字进行比较时，您是否会惊讶于该模型的工作原理和效果？如果在我们周围的空间中确实存在少量大颗粒，会观察到什么物理现象？
+
+我们常说外层空间是真空。是真的吗这个计算机大小的空间中将有多少个粒子？
+
+## 改一改
+
+您能找到一种方法来测量或表达这种假想气体的“温度”吗？尝试构造温度计。
+
+如果存在质量不同的粒子会怎样？ （请参阅“ GasLab两种气体”模型。）
+
+您将如何定义和计算“无边”空间中的压力？
+
+如果气体在容器内而不是无边无际的空间内，会发生什么？ （请参阅“盒子中的气体”模型。）
+
+如果碰撞是非弹性的，会发生什么？
+
+此2-D模型与3-D模型有何不同？
+
+仅设置两个粒子以正面碰撞。这可能有助于显示冲突规则的工作原理。请记住，每次都会随机选择碰撞轴。
+
+如果某些粒子具有“漂移”趋势-朝一个方向拉动粒子的力该怎么办？您能建立一个离心机或电场中带电粒子的模型吗？
+
+找到一种方法来监视粒子碰撞的频率以及两次碰撞之间的平均距离。后者称为“平均自由路径”。哪些因素会影响其价值？
+
+这种理想化与用于导出麦克斯韦-玻尔兹曼分布的理想化有何不同？具体来说，还有什么其他代码可以用来表示粒子的两体碰撞？
+
+如果*超过两个粒子*到达同一格子，则当前代码表示它们不会碰撞。这是一个错误吗？它如何影响结果？
+
+该模型在任何方面都适用于流体吗？如何使它像流体一样？
+
+##  NetLogo 语言特性
+
+注意使用“直方图”基元。
+
+注意海龟如何检测到碰撞，并且代码如何保证相同的两个粒子不会碰撞两次。如果我们让补丁检测到它们会怎样？
+
+## 引用和致谢
+
+This model was developed as part of the GasLab curriculum (http://ccl.northwestern.edu/curriculum/gaslab/) and has also been incorporated into the Connected Chemistry curriculum (http://ccl.northwestern.edu/curriculum/ConnectedChemistry/)
+
+This was one of the original Connection Machine StarLogo applications (under the name GPCEE) and is now ported to NetLogo as part of the Participatory Simulations project.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo GasLab Free Gas model.  http://ccl.northwestern.edu/netlogo/models/GasLabFreeGas.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Wilensky, U. (1993). Thesis - Connected Mathematics: Building Concrete Relationships with Mathematical Knowledge. Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.  Adapted to NetLogo, 2002, as part of the Participatory Simulations Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1997 2002 Wilensky -->

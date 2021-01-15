@@ -1,0 +1,63 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+DOWN
+### Chinese ***
+下
+
+### Source
+Frog Jumps
+### Chinese ***
+青蛙跳
+
+### Source
+Frogs Left
+### Chinese ***
+青蛙走了
+
+### Source
+LEFT
+### Chinese ***
+剩下
+
+### Source
+Level
+### Chinese ***
+水平
+
+### Source
+New Game
+### Chinese ***
+新游戏
+
+### Source
+RIGHT
+### Chinese ***
+对
+
+### Source
+start-level
+### Chinese ***
+起始级别
+
+### Source
+start-lives
+### Chinese ***
+开始生活
+
+### Source
+start-time
+### Chinese ***
+开始时间
+
+### Source
+Time Left
+### Chinese ***
+剩下的时间
+
+### Source
+UP
+### Chinese ***
+向上
+

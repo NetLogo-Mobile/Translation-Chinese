@@ -1,0 +1,83 @@
+﻿## WHAT IS IT?
+
+This is game of strategy.  There are land mines hidden beneath the green landscape.  Your job is to locate all of the mines without exploding any of them.
+
+## HOW IT WORKS
+
+If you click on a patch of grass without a mine, a number appears. The number tells you how many adjacent mines there are.
+
+If you click on a mine, the mine explodes, and you lose the game.
+
+You win the game by uncovering every square that doesn't have a mine.
+
+If you lose, the land turns red.  If you win, it turns blue.
+
+## HOW TO USE IT
+
+Press SETUP to set up the board, then press GO to play the game.
+
+While GO is pressed, click on green squares to check them for mines.
+
+To help you remember where where you think the mines are, you can mark a square by pointing at it and pressing the M key.  (Note the M in the corner of the MARK/UNMARK button.  If the M is grayed out, hide the command center.)
+
+You can make the game easier or harder by adjusting the MINE-COUNT slider before pressing SETUP.
+
+## THINGS TO NOTICE
+
+Use the numbers to deduce where it is safe to click and where it isn't.
+
+Can you always know where it is safe to click, or do you have to guess sometimes?
+
+Note that when you click in an empty region, the model saves you time by automatically clearing all the surrounding empty cells for you.  This keeps the game from being tedious.
+
+## THINGS TO TRY
+
+Try to win the game as fast as possible.  Your time appears in the CLOCK monitor.
+
+Try playing with a bigger or smaller board by editing the view and adjusting min-p(x/y)cor and max-p(x/y)cor.
+
+## EXTENDING THE MODEL
+
+Write out a file to disk containing the best times players have achieved so far for a given board size.  Update the file when someone beats a previous time.
+
+Write a computer player that can play the game automatically.  What strategy should it use?
+
+Modify the game to use a hexagonal grid instead of a square one.  (See Hex Cells Example, in Code Examples, to see how to make a hexagonal grid.)
+
+## NETLOGO FEATURES
+
+The `neighbors` primitive is used to find neighboring squares.
+
+## RELATED MODELS
+
+Some of the models in Cellular Automata section, under Computer Science, also have rules based on how many neighboring cells are occupied.
+
+## CREDITS AND REFERENCES
+
+According to https://en.wikipedia.org/wiki/Minesweeper_%28computer_game%29, Minesweeper was invented by Robert Donner in 1989.  A version of the game is included with the Windows operating system.
+
+Landmines are a real problem that kills people every day. To learn more about the campaign to ban landmines, see http://www.icbl.org/en-gb/home.aspx
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Minesweeper model.  http://ccl.northwestern.edu/netlogo/models/Minesweeper.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

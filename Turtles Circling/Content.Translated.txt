@@ -1,0 +1,82 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这是一种新型的数学研究-我们正在研究由许多以简单方式独立移动的海龟的运动所产生的浮现图形。每只海龟都在移动，以创建一个固定半径的圆（由RADIUS滑块设置）。如果他们在中间动作时都在盘旋的半径发生变化，会发生什么？在尝试之前先猜一下。
+
+## 这个模型是怎么运行的
+
+乌龟向前移动一点并向右转一点，以最终到达指定半径的圆，从而创建圆。我们将所有海龟都放在该半径的圆上，以便它们绕圆移动。
+
+## 如何这个模型怎么用
+
+NUMBER滑块确定圈出的海龟数量。
+
+RADIUS滑块确定每只海龟在其上移动的圆圈的大小。
+
+SPEED滑块确定每个海龟在每个时钟周期处走了多大的步幅-它确定了盘旋的速度。
+
+SETUP（设置）按钮在以点（0 0）为中心的半径RADIUS圆上创建NUMBER只海龟。乌龟都朝着圆圈移动。
+
+ALL-CIRCLE按钮开始海龟盘旋。他们每个人都画图自己的半径RADIUS圆。
+
+乌龟盘旋时，请更改RADIUS滑块的值。 *在进行*之前*，您对更改RADIUS时会发生什么情况有何猜测？
+
+## 看一看
+
+海龟描述的图形发生了什么？
+
+海龟走了多远？
+
+他们有多远？
+
+## 试一试
+
+尝试使用不同的起始半径和更改的半径值。
+
+您还可以使用以下控件进行进一步调查：
+
+ZERO-CIRCLE按钮可让您仅专注于零海龟的移动-其余所有停止。
+
+DRAW-CIRCLE按钮可让您在小块上绘制半径等于DRAW-RAD的圆。这样，您可以跟踪海龟的运动。
+
+如果是PLOT？开关接通时，该绘图将显示海龟零的距离的绘图从原点作为海龟圈。
+
+当乌龟盘旋时，请尝试使用“ lt 50”命令。这与您更改半径时观察到的行为相同吗？
+
+在命令中心中，使用“ pen-down”（pd）命令让一只（或几只）乌龟追踪其路径。这可能有助于显示单个海龟的圆和它们一起移动时所看到的圆之间的关系。
+
+## 改一改
+
+您可以构建哪些工具来帮助可视化正在发生的事情？
+
+##  NetLogo 语言特性
+
+display命令用于平滑动画。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Turtles Circling model.  http://ccl.northwestern.edu/netlogo/models/TurtlesCircling.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 -->

@@ -1,0 +1,94 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型探讨了“盖亚假说”，该假说将地球视为包括生命和非生命部分在内的单个自我调节系统。尤其是，该模型探索了生物体如何变化以及如何被无生命的气候所改变。示例生物是雏菊，考虑的气候因素是温度。
+
+Daisyworld是一个充满两种不同类型的雏菊的世界：黑色雏菊和白色雏菊。它们的反照率不同，这就是它们从阳光中吸收多少能量。白色雏菊的反照率很高，因此反射光和热量，从而冷却了它们周围的区域。黑色雏菊的表面反照率低，因此吸收了光和热，从而加热了其周围的区域。但是，雏菊只能在特定的温度范围内繁殖。如果雏菊周围的温度超出此范围，则该雏菊将不会产生后代，并最终衰老。
+
+当气候太冷时，有必要繁殖黑色雏菊以提高温度，反之亦然-当气候太热时，有必要生产更多的白雏菊以降低温度。 。对于各种参数设置，温度和雏菊数量最终将稳定下来。但是，Daisyworld可能会变得太热或太冷，在这种情况下，雏菊无法将温度重新控制，并且所有雏菊最终将死亡。
+
+## 这个模型是怎么运行的
+
+白色雏菊，黑色雏菊和开阔的地面（空的补丁）各自具有反照率或它们从阳光中吸收的能量百分比。可以使用SOLAR-LUMINOSITY滑块更改太阳光的能量（值1.0模拟我们太阳的平均太阳光度）。
+
+每个时间步长，每个格子都会基于（1）雏菊在该格子处吸收的能量和（2）邻居之间该格子处温度值的50％的扩散来计算该点的温度。基于取决于局部温度的抛物线概率函数，与雏菊相邻的空地补丁有可能发芽与相邻雏菊相同颜色的雏菊（其中最佳温度22.5产生最大概率为100％发芽出新的雏菊）。雏菊会在模拟的每个步骤中进行老化，直到达到最大寿命为止，此时它们会死亡，并且所处的格子会张开。
+
+## 如何这个模型怎么用
+
+START-％-WHITES和START-％-BLACKS设置按SETUP后（每种颜色的雏菊）将占用的色块的起始百分比。
+
+选择PAINT-DAISIES-AS并按PAINT-DAISIES允许用户通过在色块上单击鼠标左键来绘制或擦除雏菊。
+
+ALBEDO-OF-WHITES和ALBEDO-OF-BLACKS设置这些雏菊颜色中的每一种吸收的热量。 ALBEDO-OF-SURFACE设置由空格子吸收的热量。
+
+SOLAR-LUMINOSITY（太阳光度）设置太阳光在每个格子上的入射能量。但是，如果将SCENARIO选择器设置为“保持当前亮度”，则该值将仅保持固定于用户设置值。该选择器的其他值将更改反照率值。例如，“ ramp-up-ramp-down”将以较低的值开始太阳光度，然后开始将其增加到较高的值，然后在模型运行过程中将其再次降低。
+
+显示温度图？显示每个格子的温度色图。浅红色表示温度较高，而深红色表示温度较低。
+
+## 看一看
+
+运行模拟。雏菊怎么办？人口是否保持稳定？有没有人口的繁荣与萧条？如果是这样，是什么原因引起的？ （提示：雏菊如何影响气候？气候如何影响雏菊？）
+
+如果繁荣和萧条的周期越来越大，会发生什么？秋千不能永远变大。
+
+这个星球是否曾经变得完全充满生命，或者完全没有生命？
+
+尝试在没有雏菊的情况下运行仿真。行星的温度会怎样？与雏菊的情况有何不同？
+
+可以说Daisyworld系统表现出“滞后”吗？磁滞是系统的属性，这些系统不会立即跟随施加在其上的力，但是会缓慢反应，或者无法完全返回其原始状态。此类系统的状态取决于其近期历史。
+
+## 试一试
+
+尝试使用SHOW-DAISIES运行模型吗？和SHOW-TEMP-MAP？上。在这种模式下，您也许能够轻松地看到温度集中出现的有趣空间模式以及温度区域的周期性重新划分。
+
+尝试按以下步骤调整固定温度扩散设置（将其更改为0.5）。如果温度从不扩散（设置为0.0），Daisyworld的行为会怎样？
+
+## 改一改
+
+黑白雏菊代表了世界可能存在的两种极端雏菊。实施第三种雏菊。您将需要选择雏菊的功能以及它与黑白雏菊的区别。您的新雏菊如何影响此模型的结果？
+
+阳光只是控制雏菊和其他生活方式的增长的一个方面。更改模型，使世界不同地区的土壤质量有所不同。这将如何影响结果？
+
+许多人认为盖亚假说可能会受到人为因素的干扰。在模型中实施污染。这会导致雏菊更快或更频繁地死亡吗？
+
+您能想到生物以其他方式改变环境的其他方式吗？
+
+##  NetLogo 语言特性
+
+使用`扩散原语在补丁之间分配热量。
+
+## 相关模型
+
+An alternate Daisyworld model is listed on the [User Community Models](http://ccl.northwestern.edu/netlogo/models/community/) page. It uses patches only, no turtles.
+
+## 引用和致谢
+
+The Daisyworld model was first proposed and implemented by Lovelock and Andrew Watson. The original Gaia hypothesis is due to Lovelock.
+
+Watson, A.J., and J.E. Lovelock, 1983, "Biological homeostasis of the global environment: the parable of Daisyworld", Tellus 35B, 286-289. (The original paper by Watson and Lovelock introducing the Daisyworld model.)
+
+Wikipedia also has a high-level description of the Daisyworld model: https://en.wikipedia.org/wiki/Daisyworld.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Novak, M. and Wilensky, U. (2006).  NetLogo Daisyworld model.  http://ccl.northwestern.edu/netlogo/models/Daisyworld.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2006 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2006 Cite: Novak, M. -->

@@ -1,0 +1,69 @@
+﻿## WHAT IS IT?
+
+In a room of 23 people, what are the chances that some two of them will have the same birthday?
+
+Make your best guess, then run the model and see how often it happens.
+
+## HOW IT WORKS
+
+Each turtle is randomly assigned a birthday.  If a turtle has the same birthday as another turtle in the room, it turns green.
+
+The model doesn't take leap years into account (there are no February 29th birthdays).
+
+## HOW TO USE IT
+
+Press SETUP to initialize the model.
+
+Press GO ONCE to generate a single room full of people.
+
+Press GO to repeatedly generate many rooms full of people.  The SUCCESS RATE monitor will show what percentage of those rooms had at least one matching birthday.
+
+## THINGS TO NOTICE
+
+Is the success rate higher or lower than you expected?
+
+## THINGS TO TRY
+
+To try a room with more people in it, edit the view and increase max-pycor.
+
+How many people need to be in the room before the chance of a matching birthday is at least 90%?  (Is this higher or lower than you expected?)
+
+Can you work out mathematically what the odds should be?  (Hint: start by considering the odds when the number of people is small.)
+
+## EXTENDING THE MODEL
+
+Include leap year birthdays in the list of possibilities.
+
+## NETLOGO FEATURES
+
+This model uses lists a lot, including list primitives such as `map`, `foreach`, `item`, `position`, `sentence`, and `sort-on`.  Lists are used mostly to make the model display actual day names, instead of just numbers from 0 to 364.  Lists are also used when sorting the turtles by birthday.
+
+## RELATED MODELS
+
+The ProbLab suite of models, in the Mathematics/Probability section, contains many explorations of basic questions about probability and statistics.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2004).  NetLogo Birthdays model.  http://ccl.northwestern.edu/netlogo/models/Birthdays.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2004 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2004 -->

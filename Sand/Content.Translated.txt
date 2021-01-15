@@ -1,0 +1,77 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这是沙粒如何相互作用的模型。在这种环境下，如果满足以下四个规则之一，则所有沙粒都将尝试向下移动。四个规则是：
+
+1.如果您的下方没有东西，请向下移动。
+2.如果您下方有东西，并且在右下角，请向下和向左移动。
+3.如果您下方和左下方有东西，请向下和向右移动。
+4.如果仅在您正下方，则随意向下或向左或向右移动。
+
+## 如何这个模型怎么用
+
+GO：开始和停止模拟。
+
+设置：设置模型。
+
+释放机会：确定每转一圈沙子颗粒从喷嘴掉落的机会百分比（默认值为100％）。
+
+间距：确定喷嘴释放下一个沙粒之前要等待多长时间。
+
+DUMP SAND：根据密度等级将沙子倾倒在所有模型上。仅在按SETUP后才能使用此功能。
+
+DENSITY：设置倾倒在DUMP SAND中的沙子颗粒的密度（默认值为25％）。例如，将密度设置为40，将随机填充40％的斑块。
+
+## 看一看
+
+观察沙子如何从沙子颗粒的“山”上滚下来。考虑规则如何支持这种现象。请注意，两个“山”沙相互长成时形成的图案。
+
+## 试一试
+
+观察喷嘴如何形成均匀的沙子金字塔。一旦金字塔图形比较大，请尝试以低密度制成的DUMP SAND。这如何影响金字塔的图形？金字塔是否会恢复其原始图形？
+
+尝试减少释放机会。这对沙子“山”的增长率有什么影响？
+
+将SPACING设置为1。（您必须编辑滑块，因为通常的最小值是2。）会发生什么？这仅仅是对模型规则的限制，还是有一些合理的物理解释？
+
+## 改一改
+
+在“代码”选项卡中，注意变量“ spout-space”。尝试通过更改“ spout-space”来更改视图顶部的喷嘴数量。
+
+该模型是否准确反映了沙子的行为？如果不是，您可以制定哪些规则来更精确地模拟沙子的行为？如何将它们纳入模型？
+
+重量对沙粒有什么影响？上面有很多粒子的粒子的行为是否应该有所不同？如果是这样，这将如何改变规则？
+
+尝试使用此模型模拟侵蚀。你怎么能模拟风？这会对桩的图形产生什么影响？你怎么能模拟雨？这会对桩的图形产生什么影响？
+
+##  NetLogo 语言特性
+
+注意模型如何将主体集合存储在变量“ spout-patches”中。使用喷口所在的补丁程序的主体集合进行初始化。随后，该变量可以在“问”命令中使用，就像“龟”和“补丁”的默认代理集一样。由于提前建立了一次主体集合，因此模型的运行速度比在每一步都重建主体集合的速度要快。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1996).  NetLogo Sand model.  http://ccl.northwestern.edu/netlogo/models/Sand.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1996 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1996 2001 -->

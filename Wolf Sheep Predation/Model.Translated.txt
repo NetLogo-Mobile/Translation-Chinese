@@ -52,6 +52,11 @@ An ecosystem  or biome describes a single environment and every <color=green>
 一个生态系统  或生物群系指的是一处地理环境和其中所有<color=green>生命体 </color>及<color=#555555ff>无生命</color>因素的总和，或可以代表其特征的性状。一个生态系统  涵盖了一个生物栖息处的一切，包括其中不同元素的一切相互作用。
 
 ### Source
+Authors: Charles Cheng, John Chen. Based on NetLogo Wolf Sheep Predation model by Uri Wilensky.
+### Chinese
+作者：Charles Cheng, John Chen。基于 NetLogo 的狼-羊狩猎模型，作者 Uri Wilensky。
+
+### Source
 Can you find any parameters that generate a <color=blue>stable </color> <trigger=ecosystem>ecosystem</trigger>  in the <color=grey>sheep </color>-<color=#a07348ff>wolves </color> model variation?
 ### Chinese
 你能在“羊-狼-草”模型中找到可以产生<color=blue>稳定  </color>的<trigger=ecosystem>生态系统</trigger>的参数吗？

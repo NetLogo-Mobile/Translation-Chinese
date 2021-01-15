@@ -1,0 +1,101 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+颜色分数将分数的小数形式显示为颜色模式。这使您可以研究结果模式与原始分数的关系。
+
+## 这个模型是怎么运行的
+
+该程序以与在纸上进行长除法相同的方式来计算小数位。
+
+它使用分子并将其除以分母。结果是一个数字。除法的其余部分，我们乘以10并取为新的分子，然后重复。
+
+例如，这些将是计算1/7的步骤：
+
+* 7变成1 0次； 10乘以10
+* 7变成10 1次; 10的余数是30
+* 7变成30 4次； 10乘以20
+* 7变成20 2次； 10余数是60
+* 7变成60 8倍； 10倍的余数是40
+
+以此类推。因此结果是0.1428 ...
+
+为了制作颜色图案，每个数字（0到9）以自己的颜色显示。例如0是灰色，1是浅红色，2是橙色，依此类推。
+
+## 如何这个模型怎么用
+
+按SETUP按钮，然后按GO。
+
+现在，调整分子和分母滑块以产生任何分数。
+
+您也可以使用WIDTH滑块更改每行的总位数。更改宽度可以使图案更容易或更难以看到。
+
+## 看一看
+
+相同的分数始终给出相同的模式。
+
+一些模式会在几位数后停止，而其他模式会永远重复。 （所有分数重复吗？）
+
+是否有两个分数给出相同的模式？
+
+## 试一试
+
+您可以使用分数生成哪种模式？您可以创建一个棋盘格吗？你能做竖条纹吗？
+
+如果您尝试使用相同分母的不同分子怎么办？您得到的模式有什么共同点？尝试使用几种不同的分母进行此实验。
+
+小数的“句号”是重复形成位数的位数。例如，1/3是0.33333 ...，它一次又一次地重复相同的数字，因此周期为1。周期是6。依此类推。
+
+小数1 / n的周期与n有什么关系？分数族1 / 7、2 / 7，...的周期如何关联？
+
+您可以找到多少个重复数字相同的分数？
+
+哪个分数最接近pi（3.141592 ...）？
+
+## 改一改
+
+更改颜色，使奇数均为一种颜色，偶数为另一种颜色。
+
+更改颜色，以便仅使用一种颜色，但更改明暗度。
+
+修改程序，以便可以可视化平方根和pi。
+
+##  NetLogo 语言特性
+
+补丁标签用于显示数字。
+
+您可以使用`sort`原语创建从左到右，从上到下排序的补丁列表。这是因为我们需要的补丁在每个周期以相同的顺序来执行，而不是每一个周期，好像我们刚才说的`向patches`会发生不同的随机顺序是在这个模型中必要的。
+
+## 相关模型
+
+Division
+
+## 引用和致谢
+
+This model is adapted from a few resources that are no longer available: [Color Calculator Information for teachers and Color Calculator](http://tapor.ca/home).
+
+This model implements activities originally published in:
+Nathalie Sinclair, Rina Zazkis and Peter Liljedahl.  Number Worlds: Visual and Experimental Access to Elementary Number Theory Concepts.  International Journal of Computers for Mathematical Learning, Volume 8, Number 3, pages 235 - 263, January 2003.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Color Fractions model.  http://ccl.northwestern.edu/netlogo/models/ColorFractions.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

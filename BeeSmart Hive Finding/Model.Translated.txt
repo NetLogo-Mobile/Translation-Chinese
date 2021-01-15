@@ -1,0 +1,79 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+committed
+### Chinese ***
+承诺的
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+on-site
+### Chinese ***
+现场
+
+### Source
+piping-scouts
+### Chinese ***
+管道侦察兵
+
+### Source
+watching bees
+### Chinese ***
+看蜜蜂
+
+### Source
+watching v.s. working
+### Chinese ***
+看与工作
+
+### Source
+working bees
+### Chinese ***
+工作的蜜蜂
+
+## Widgets
+### Source
+Go
+### Chinese ***
+走
+
+### Source
+hive-number
+### Chinese ***
+蜂巢数
+
+### Source
+initial-explore-time
+### Chinese ***
+初始探索时间
+
+### Source
+initial-percentage
+### Chinese ***
+初始百分比
+
+### Source
+quorum
+### Chinese ***
+法定人数
+
+### Source
+Setup
+### Chinese ***
+设定
+
+### Source
+Show/Hide Dance Path
+### Chinese ***
+显示/隐藏舞蹈路径
+
+### Source
+Show/Hide Scouts
+### Chinese ***
+显示/隐藏侦察员
+

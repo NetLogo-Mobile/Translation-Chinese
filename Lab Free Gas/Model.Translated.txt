@@ -1,0 +1,144 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+avg-energy
+### Chinese ***
+平均能量
+
+### Source
+avg-speed
+### Chinese ***
+平均速度
+
+### Source
+count (%)
+### Chinese ***
+数（％）
+
+### Source
+Energy
+### Chinese ***
+能源
+
+### Source
+Energy Histogram
+### Chinese ***
+能量直方图
+
+### Source
+fast
+### Chinese ***
+快速
+
+### Source
+init-avg-energy
+### Chinese ***
+初始平均能量
+
+### Source
+init-avg-speed
+### Chinese ***
+初始平均速度
+
+### Source
+medium
+### Chinese ***
+中
+
+### Source
+Number
+### Chinese ***
+数
+
+### Source
+slow
+### Chinese ***
+慢
+
+### Source
+Speed
+### Chinese ***
+速度
+
+### Source
+Speed Counts
+### Chinese ***
+速度计数
+
+### Source
+Speed Histogram
+### Chinese ***
+速度直方图
+
+### Source
+time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+average energy
+### Chinese ***
+平均能量
+
+### Source
+average speed
+### Chinese ***
+平均速度
+
+### Source
+clear trace
+### Chinese ***
+清除痕迹
+
+### Source
+collide?
+### Chinese ***
+碰撞？
+
+### Source
+go/stop
+### Chinese ***
+去/停
+
+### Source
+init-particle-speed
+### Chinese ***
+初始粒子速度
+
+### Source
+number-of-particles
+### Chinese ***
+粒子数
+
+### Source
+particle-mass
+### Chinese ***
+粒子质量
+
+### Source
+percent fast
+### Chinese ***
+快速百分比
+
+### Source
+percent medium
+### Chinese ***
+中等百分比
+
+### Source
+percent slow
+### Chinese ***
+慢百分比
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+trace?
+### Chinese ***
+跟踪？
+

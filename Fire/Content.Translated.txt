@@ -1,0 +1,91 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该项目模拟了森林中火势的蔓延。它表明，大火到达森林右边缘的机会主要取决于树木的密度。这是复杂系统的一个共同特征的示例，即非线性阈值或关键参数的存在。
+
+## 这个模型是怎么运行的
+
+火从森林的左边缘开始，并蔓延到附近的树木。火势向四个方向蔓延：北，东，南和西。
+
+模型假定没有风。因此，大火必须在其路径上有树木才能前进。也就是说，火势不能越过未遮蔽的区域（格子），因此此类格子阻止火势朝该方向移动。
+
+## 如何这个模型怎么用
+
+单击“设置”按钮设置树木（绿色）和火（左侧为红色）。
+
+单击“执行”按钮开始仿真。
+
+DENSITY滑块控制森林中树木的密度。 （注意：“密度”滑块中的更改在下一次设置之前不会生效。）
+
+## 看一看
+
+运行模型时，会燃烧多少森林。如果使用相同的设置再次运行它，是否会燃烧相同的树？一次又一次的烧伤有多相似？
+
+代表火势的每只海龟都会出生，然后死亡，而且永远不会动弹。如果火是由乌龟制成的，但没有乌龟在移动，那么说火在移动意味着什么？这是系统中不同级别的示例：在单个海龟的级别上，没有运动，但是随着时间的推移，在集体的海龟级别上，火势在移动。
+
+## 试一试
+
+将树木的密度设置为55％。在这种情况下，大火几乎不可能到达森林的右边缘。将树木的密度设置为70％。在此设置下，几乎可以肯定，火势将到达右侧。在59％的密度附近有一个急剧的转变。密度为59％时，火有50/50的几率到达右边缘。
+
+尝试设置并运行BehaviorSpace实验（请参阅“工具”菜单），以分析在不同树密度级别下的燃烧百分比。根据密度绘制燃烧百分比。你会得到什么样的曲线？
+
+尝试更改晶格的大小（“模型设置”中的“ max-pxcor”和“ max-pycor”）。它会改变火的燃烧行为吗？
+
+## 改一改
+
+如果火势可以在八个方向（包括对角线）蔓延怎么办？为此，请使用“邻居”而不是“ neighbors4”。那将如何改变火势到达右边缘的机会？在此模型中，火传播所需的树木“临界密度”是多少？
+
+向模型添加风，以便火可以在某些方向“跳”更大的距离。
+
+添加在所需位置种植树木的功能。树木的哪些配置可以使火势穿越森林？哪个不？为什么密度超过59％的树可能会起作用？为什么以59％的密度如此迅速地增加这种配置的可能性？
+
+物理学家珀·巴克（Per Bak）问我们为什么经常看到系统发生重大变化。他通过提出[自组织临界性]（https://en.wikipedia.org/wiki/Self-organized_criticality）（SOC）的概念来回答这一问题。您可以创建展示SOC的火灾模型版本吗？
+
+##  NetLogo 语言特性
+
+未燃烧的树木以绿色斑块表示。乌龟代表着燃烧的树木。使用了两种龟，“火”和“灰烬”。当树木着火时，会创建新的火海龟。下回火将火变成余烬。请注意，程序如何逐渐使余烬的颜色变暗，以达到燃尽的视觉效果。
+
+`neighbors4`原语用于传播火势。
+
+您还可以通过让补丁散布火焰来编写没有乌龟的模型，这样做可以使代码更简单。这样写的话，该模型的运行速度会慢得多，因为所有补丁都将始终处于活动状态。通过使用海龟，将模型的活动限制在火势前沿附近的区域要容易得多。
+
+有关带有和不带有海龟的模型的示例，请参见“ CA 1D Rule 30”和“ CA 1D Rule 30 Turtle”。
+
+## 相关模型
+
+* Percolation
+* Rumor Mill
+
+## 引用和致谢
+
+https://en.wikipedia.org/wiki/Forest-fire_model
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Fire model.  http://ccl.northwestern.edu/netlogo/models/Fire.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds."  Cambridge, MA: MIT Press.  Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 MIT -->

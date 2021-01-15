@@ -1,0 +1,109 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这是经典的益智游戏，俄罗斯方块。游戏涉及由四个不同形状的方块组成的下落碎片。游戏的目的是完成井中水平区块的行。
+
+每当一行完成时，它就会消失，并且其上方的块会掉落。单件放置时清除的行越多，获得的积分就越多。如果您清除了足够的行，则进入下一个级别。级别越高，您获得的所有积分越多，但积分下降得也更快，从而增加了挑战。
+
+## 如何这个模型怎么用
+
+显示器：
+-SCORE显示您的当前分数。
+-LINES显示您已清除的行数。
+-LEVEL显示您当前的水平。
+
+滑杆：
+-STARTING-LEVEL选择游戏的开始级别。选择较高的级别开始可以更快地获得更多的积分并提高初始下降速度。在行数为10 *（level + 1）之前，您的级别不会增加。 （即起始级别= 3，级别将保持为3，直到清除40行为止。）
+-DEBRIS-LEVEL设置游戏开始时在井的底部将创建多少行随机块。
+
+纽扣：
+-NEW使用初始设置来建立新游戏。
+-PLAY开始游戏。
+
+控制项：
+-ROTLEFT将当前片段向左旋转90度。
+-ROTRIGHT将当前片段向右旋转90度。
+-向左将当前乐曲向左移动一格。
+-DROP使当前块立即下降到井底。
+-右移当前片段一格。
+-向下将当前片段向下移动一格。
+
+选项（开关）
+-显示下一个片段吗？切换选项，该选项将导致在您将当前部分放置在井右边的小框中显示之后将出现在井中的片段。
+
+## 看一看
+
+有七种类型的棋子。这些都是可以由四个块粘贴在一起制成的形状。
+
+文字
+[] []方块-在平坦区域填充良好，
+[] []难以放置在锯齿状区域
+
+[] [] [] L块-非常适合深孔
+[]
+
+[] [] S块-锯齿状区域的填充物，
+[] []难以放置在平坦区域
+
+[] [] []丁字裤-均码好，可以穿
+[]几乎任何地方都很好
+
+[] []反向S块（或Z块）-很好
+[] []锯齿状区域的填充物，很难
+放置在平坦区域
+
+[] [] []反向L块-非常适合
+[深洞]
+
+[] [] [] [] I-Bar-唯一可以让您
+一次清除4行（又称俄罗斯方块）
+```
+
+评分系统：
+注意：得分是使用等级+ 1评分的，因此得分仍然是等级0的评分。
+-1行= 50 *（等级+1）点
+-2行= 150 *（等级+1）点
+-3行= 350 *（等级+1）点
+-4行= 1000 *（等级+1）点（又名俄罗斯方块）
+-清除木板= 2000 *（等级+1）
+-每张= 10 *（等级+1）分
+
+## 试一试
+
+击败最高分。
+
+## 改一改
+
+添加用于更改孔的宽度和深度的选项。
+
+添加包括由四个以上或更少的块组成的块的选项。
+
+##  NetLogo 语言特性
+
+该模型利用了海龟品种。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2001).  NetLogo Tetris model.  http://ccl.northwestern.edu/netlogo/models/Tetris.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 -->

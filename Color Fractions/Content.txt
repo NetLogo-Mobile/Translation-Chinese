@@ -1,0 +1,100 @@
+﻿## WHAT IS IT?
+
+Color Fractions displays the decimal form of a fraction as a pattern of colors.  This lets you investigate how the resulting patterns relate to the original fraction.
+
+## HOW IT WORKS
+
+The program computes the digits of the decimal the same way you would do it using long division on paper.
+
+It takes the numerator and divides it by the denominator; the result is a digit.  The remainder of the division, we multiply by 10 and take as the new numerator, then repeat.
+
+For example these would be the steps for computing 1/7:
+
+* 7 goes into 1  0 times; 10 times remainder is 10
+* 7 goes into 10 1 time ; 10 times remainder is 30
+* 7 goes into 30 4 times; 10 times remainder is 20
+* 7 goes into 20 2 times; 10 times remainder is 60
+* 7 goes into 60 8 times; 10 times remainder is 40
+
+And so on forever.  Thus the result is 0.1428...
+
+To make the pattern of colors, each digit, 0 through 9, is shown in its own color.  For example 0 is gray, 1 is light red, 2 is orange, etc.
+
+## HOW TO USE IT
+
+Press the SETUP button, then press GO.
+
+Now adjust the numerator and denominator sliders to make any fraction.
+
+You can also use the WIDTH slider to change the total number of digits per row.  Changing the width can make patterns easier or harder to see.
+
+## THINGS TO NOTICE
+
+The same fraction always gives the same pattern.
+
+Some patterns stop after a few digits, while others repeat forever.  (Do all fractions repeat?)
+
+Do two fractions ever give the same pattern?
+
+## THINGS TO TRY
+
+What kinds of patterns can you generate with fractions? Can you create a checkerboard?  Can you make vertical stripes?
+
+What happens if you try different numerators with the same denominator?  What do the patterns you get have in common?  Try this experiment with several different denominators.
+
+The "period" of a fraction is how many digits repeat to make the pattern.  For example, 1/3 is 0.33333... which repeats the same single digit over and over again, so the period is 1.  Look at the pattern for the fraction 1/7; the period is 6.  And so on.
+
+How is the period of a fraction 1/n related to n?  How are the periods of the fractions family 1/7, 2/7, ... related?
+
+How many fractions can you find that have the same number of repeating digits?
+
+What fraction best approximates pi (3.141592...)?
+
+## EXTENDING THE MODEL
+
+Change the colors so odd numbers are all one color and even numbers are another color.
+
+Change the colors so you only use one color, but vary the lightness/darkness.
+
+Modify the program so you can visualize square roots and pi.
+
+## NETLOGO FEATURES
+
+Patch labels are used to show the digits.
+
+You can use the `sort` primitive to created a list of patches sorted left-to-right, top-to-bottom.  That is necessary in this model because we need the patches to execute in the same order at every tick, rather than a different random order every tick as would happen if we just said `ask patches`.
+
+## RELATED MODELS
+
+Division
+
+## CREDITS AND REFERENCES
+
+This model is adapted from a few resources that are no longer available: [Color Calculator Information for teachers and Color Calculator](http://tapor.ca/home).
+
+This model implements activities originally published in:
+Nathalie Sinclair, Rina Zazkis and Peter Liljedahl.  Number Worlds: Visual and Experimental Access to Elementary Number Theory Concepts.  International Journal of Computers for Mathematical Learning, Volume 8, Number 3, pages 235 - 263, January 2003.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Color Fractions model.  http://ccl.northwestern.edu/netlogo/models/ColorFractions.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

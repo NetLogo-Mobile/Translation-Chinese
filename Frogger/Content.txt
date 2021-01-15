@@ -1,0 +1,109 @@
+﻿## WHAT IS IT?
+
+This model is based on the classic arcade game, Frogger.  The object of the game is to get the frog, found at the bottom of the view, across the traffic and river to a safe lily pad on the other side.
+
+## HOW IT WORKS
+
+There are two main obstacles to overcome, the road and the river.  The road has cars and trucks moving at various speeds that are liable to run over the frog.  Once you have crossed the road safely, you must overcome the danger lurking in the river.  Unfortunately, you will die if you jump in the river, so you must keep moving towards the lily pads by jumping on the logs or sets of turtles moving back and forth in the river's current.
+
+You must also avoid getting pushed off the edge by a log or turtle.  In addition, in the later levels, some of the turtles will dive under water -- if you happen to be standing on them you will drown!  Finally, you must also get across the board before the allotted amount of time runs out.
+
+## HOW TO USE IT
+
+Buttons
+
+- NEW-GAME resets the game
+- START starts the game
+- The direction buttons (UP, DOWN, LEFT, RIGHT) will move your frog in that direction
+
+Monitors
+
+- FROGS LEFT tells you how many remaining lives you have
+- LEVEL monitors the current level you are playing
+- TIME LEFT shows you how much time remains
+- FROG JUMPS tells you how many jumps you has taken
+
+Sliders
+
+- START-LIVES will determine how many lives you will start with
+- START-TIME sets how much time you start out with
+- START-LEVEL is used to determine which level you will start on
+
+Cast of characters:
+
+- Green frog: This is you.
+- Truck: Avoid at all costs.  They are usually pretty slow.
+- Car: Avoid at all costs.  They are usually fast.
+- Brown squares: This is a log.  You need to jump onto these to get across the river.
+- Turtle: You need to jump onto these.  Avoid ones that dive.
+- Green circles: These are lily pads.  You want to get on these to win the level.
+- Blue squares: This is the river.  You can't land on this.
+- Gray squares: This is the road.  You can jump on this, but watch out for vehicles.
+
+- Green Patches:   This is grass.  You are pretty safe here.
+
+## THINGS TO TRY
+
+See if you can get through all of the levels.
+
+Try to beat your previous time.
+
+Try to make as few jumps as possible in the time allotted.
+
+Try to use as few lives as possible.
+
+## THINGS TO NOTICE
+
+Determine how many jumps it would take to get across the board without obstacles.
+
+Determine how many jumps it would take to get across the board with obstacles.
+
+How does each of the two questions above relate to the time it takes you to complete a level?
+
+If you take just as many jumps with obstacles as without, why does it take different durations of time to get across?
+
+## EXTENDING THE MODEL
+
+Write your own levels by altering the code in the Code tab.
+
+Add some bonuses or additional hazards.
+
+Implement a scoring system.
+
+Write a robot script that will move your frog automatically.
+
+## NETLOGO FEATURES
+
+This model uses breeds to implement the different moving game pieces.
+
+The `every` command is used to control the speed of the game.
+
+The `user-message` command presents messages to the user.
+
+`mouse-down?`, `mouse-xcor`, and `mouse-ycor` are used to detect and handle mouse clicks.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2002).  NetLogo Frogger model.  http://ccl.northwestern.edu/netlogo/models/Frogger.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2002 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2002 -->

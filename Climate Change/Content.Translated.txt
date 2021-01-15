@@ -1,0 +1,87 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这是地球上能量流，特别是热能的模型。它显示地球为玫瑰色，并且行星表面由黑色条纹表示。条带上方是蓝色的气氛，顶部是黑色的空间。可以将云和二氧化碳（CO2）分子添加到大气中。 CO2分子代表温室气体，可阻挡地球发出的红外光。云会阻挡进出的太阳光线，影响地球的升温或降温。
+
+## 这个模型是怎么运行的
+
+黄色箭头向下流代表阳光能量。一些阳光可以从云层反射，而更多的阳光可以从地球表面反射。
+
+如果阳光被地球吸收，它会变成一个红点，代表热能。每个点代表一个黄色阳光箭头的能量。红点在地球周围随机移动，其温度与红点的总数有关。
+
+有时，红点将自身转换为红外光，这些光通向太空并带走能量。红点变成红外光的可能性取决于地球的温度。当地球寒冷时，很少有红点产生红外光；天气热的时候，大多数都会这样做。红外能量由洋红色箭头表示。每个箭头都带有与黄色箭头和红色点相同的能量。红外光穿过云层，但可以反射出二氧化碳分子。
+
+地球上红点的数量与地球温度之间存在关系。这是因为随着总热能的增加，地球温度上升。到达地球的太阳光以及向下反射到地球的红外（IR）光会增加热能。地球发出的红外光将热能去除。这些的平衡决定了地球上的能量，它与温度成正比。
+
+当然，此模型有很多简化。地球不是单一温度，没有单一反照率，也没有单一热容。可见光在某种程度上被二氧化碳吸收，一些红外光确实从云层反射回来。没有模型是完全准确的。重要的是，模型以某种方式做出反应，例如应该建模的系统。该模型可以做到这一点，显示了二氧化碳和吸收红外线的其他气体如何引起温室效应。
+
+## 如何这个模型怎么用
+
+SUN-BRIGHTNESS滑块控制有多少太阳能量进入地球的大气层。值1.0对应于我们的太阳。较高的值可以让您了解如果地球离太阳更近或太阳变亮会发生什么。
+
+ALBEDO滑块控制吸收撞击地球的太阳能量的多少。
+如果反照率是1.0，则地球反射所有阳光。如果地球冻结，则可能会发生这种情况，并且以白色表面表示。如果反照率为零，则地球吸收所有阳光。这表示为黑色表面。地球的反照率约为0.6。
+
+您可以使用按钮添加和删除云。乌云阻挡阳光，但不阻挡红外线。
+
+您可以添加和删除以CO2分子表示的温室气体。二氧化碳可阻挡红外线，但不能阻挡阳光。这些按钮按25个组（最多150个）添加和减去分子。
+
+地球的温度与地球的热量有关。您看到的红点越多，它的温度就越高。
+
+## 看一看
+
+注意一个阳光箭头。如果使用模型顶部的滑块来降低模型速度，则会更容易。您也可以使用WATCH A RAY按钮。
+
+箭头撞到地球时会发生什么？描述其以后的路径。它会逃离地球吗？那会发生什么呢？是否所有箭头都跟随类似的路径？
+
+## 试一试
+
+1.玩模型。更改反照率并运行模型。向模型中添加云和二氧化碳，然后观察单个阳光箭头。您可以产生的最高地球温度是多少？
+
+2.在阳光明媚但无云无二氧化碳的情况下运行模型。温度会怎样？它应该迅速上升，然后在37度左右稳定下来。为什么它停止上升？为什么温度继续回升？请记住，温度反映了地球上红点的数量。当温度恒定时，传入的黄色箭头的数量与传出的红外箭头的数量差不多。为什么？
+
+3.探索反照率保持其他所有常数不变的影响。增加反照率会增加还是降低地球温度？实验时，请确保模型运行足够长时间，以使温度稳定下来。
+
+4.探索云使其他所有内容保持不变的影响。
+
+5.探索添加100个CO2分子的效果。您观察到变化的原因是什么？立即跟随一个阳光箭头。
+
+## 改一改
+
+尝试添加其他一些影响地球温度的因素。例如，您可以添加一小块植被，然后查看它们被人类占用时会发生什么。另外，您可以尝试将可变反照率添加到模型中，而不是对整个星球使用一个值。您可能有反照率高的冰川和反照率低的海洋，然后评估当冰川融化入海时会发生什么。
+
+##  NetLogo 语言特性
+
+请注意，云实际上是由许多圆形小乌龟组成的。
+
+## 相关模型
+
+Daisyworld
+
+## 引用和致谢
+
+This model is based on an earlier version created in 2005 by Robert Tinker for the TELS project.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Tinker, R. and Wilensky, U. (2007).  NetLogo Climate Change model.  http://ccl.northwestern.edu/netlogo/models/ClimateChange.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2007 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2007 Cite: Tinker, R. -->

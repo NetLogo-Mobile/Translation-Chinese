@@ -1,0 +1,89 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+healthy
+### Chinese ***
+健康
+
+### Source
+immune
+### Chinese ***
+免疫的
+
+### Source
+people
+### Chinese ***
+人
+
+### Source
+Populations
+### Chinese ***
+人口
+
+### Source
+sick
+### Chinese ***
+生病
+
+### Source
+total
+### Chinese ***
+总
+
+### Source
+weeks
+### Chinese ***
+周
+
+## Widgets
+### Source
+%immune
+### Chinese ***
+免疫百分比
+
+### Source
+%infected
+### Chinese ***
+％已感染
+
+### Source
+chance-recover
+### Chinese ***
+机会恢复
+
+### Source
+duration
+### Chinese ***
+持续时间
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+infectiousness
+### Chinese ***
+传染性
+
+### Source
+number-people
+### Chinese ***
+人数
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+turtle-shape
+### Chinese ***
+龟形
+
+### Source
+years
+### Chinese ***
+年份
+

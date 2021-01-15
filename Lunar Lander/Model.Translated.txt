@@ -1,0 +1,43 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese ***
+走
+
+### Source
+left
+### Chinese ***
+剩下
+
+### Source
+platform-width
+### Chinese ***
+平台宽度
+
+### Source
+right
+### Chinese ***
+对
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+terrain-bumpiness
+### Chinese ***
+地形凹凸
+
+### Source
+thrust
+### Chinese ***
+推力
+
+### Source
+thrust-amount
+### Chinese ***
+推力
+

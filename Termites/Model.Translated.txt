@@ -1,0 +1,23 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+density
+### Chinese ***
+密度
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+number
+### Chinese ***
+数
+
+### Source
+setup
+### Chinese ***
+设定
+

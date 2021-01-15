@@ -1,0 +1,72 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型在直角坐标和球形3维坐标之间映射海龟。为了创建3D曲面的外观，该程序将生成具有随机x坐标和z坐标的乌龟，然后根据x和z以及时间来计算每只乌龟的y坐标。公式中使用余弦函数来生成曲面。根据时间改变y坐标会产生运动。
+
+## 这个模型是怎么运行的
+
+为了在NetLogo视图中渲染表面，它按如下所示从3D坐标映射到2D坐标：
+
+&gt;视图x =海龟x +（海龟z）/ 2
+&gt;视图y =海龟y +（海龟z）/ 2
+
+换句话说，增加z会导致乌龟的视在位置向上和向右移动。
+
+## 如何这个模型怎么用
+
+单击设置按钮以生成海龟并将其放置在表面上。单击“ GO”（永远）按钮以运行模型，该模型会连续改变海龟的y坐标以生成波浪状运动。
+
+NUM-TURTLES滑块确定构成曲面的海龟的数量。
+
+## 看一看
+
+请注意，随着乌龟向下移动（y坐标减小），它们的颜色会变深，而当它们向上移动（y坐标增加）时，它们的颜色会变浅。
+
+## 试一试
+
+使用NUM-TURTLES滑块实验。需要多少只乌龟才能产生逼真的效果？当您添加更多乌龟时，为什么它不会无限地变得更好看？
+
+在“移动”过程，在余弦函数前面和内部尝试除5以外的其他数字。解释新行为！
+
+## 改一改
+
+尝试更改用于计算y坐标的公式以生成形状不同的曲面。
+
+看看是否不仅可以绘制表面，还可以绘制三维图形，例如圆锥或球体。
+
+##  NetLogo 语言特性
+
+注意，使用“ scale-color”可以根据乌龟的y坐标更改乌龟的颜色。另请参见模型“ Wave Machine”，了解使用补丁而不是用乌龟制作3-D膜的版本。
+
+## 相关模型
+
+3D Solids
+Wave Machine
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo 3D Surface model.  http://ccl.northwestern.edu/netlogo/models/3DSurface.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

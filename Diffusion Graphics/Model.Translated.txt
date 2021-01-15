@@ -1,0 +1,38 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+diffusion-rate
+### Chinese ***
+扩散率
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+num-turtles
+### Chinese ***
+乌龟
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+turtle-heat
+### Chinese ***
+乌龟热
+
+### Source
+turtle-speed
+### Chinese ***
+乌龟速度
+
+### Source
+wander?
+### Chinese ***
+漫步？
+

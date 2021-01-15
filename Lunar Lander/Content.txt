@@ -1,0 +1,73 @@
+﻿## WHAT IS IT?
+
+This model is based on the arcade game, Lunar Lander.  The object of the game is to land the red lunar module on the blue landing pad on the surface of the moon without crashing or breaking the module.
+
+The lunar module is fragile, so you have to be moving extremely slowly to prevent damage when you touch down. You have one thruster that exerts a force depending on the tilt of the module.  You have the ability to tilt right and left.
+
+## HOW TO USE IT
+
+Buttons:
+SETUP starts the game over by creating a new surface for you to navigate and poising your module above that surface, ready for descent.
+GO starts the game.  Be ready; the module will start descending fairly quickly.
+LEFT and RIGHT tilt the module back and forth
+THRUST fires your rockets according to your current tilt.
+
+Sliders:
+PLATFORM-WIDTH controls the width of the blue landing pad created at setup, a wider landing pad makes an easier target.
+TERRAIN-BUMPINESS controls the variation in the elevation of the lunar surface.  More bumpiness may mean you will have large obstacles to maneuver around.
+THRUST-AMOUNT controls the magnitude of the force of your rockets.
+
+## THINGS TO NOTICE
+
+When terrain-bumpiness is very high some of the randomly generated surfaces are not navigable.
+
+## THINGS TO TRY
+
+Try to land the module with the fewest adjustments.
+
+Increase the THRUST-AMOUNT to make the game harder.
+
+## EXTENDING THE MODEL
+
+Add one or more plots to the model. For example, you might plot the position, velocity, and/or acceleration of the module, in the plane or just on the Y axis.
+
+Currently, collisions with the edges of the module are not detected, so you can graze the side of a peak with the edge of the module without crashing.  It would be more realistic if these crashes were detected.
+
+Add levels to the game by continually making the terrain bumpier, the platform smaller, or by some other method of making the game more difficult, perhaps alien spaceships.
+
+Try to write a robot pilot that will automatically land the module safely.
+
+## NETLOGO FEATURES
+
+This model uses the `random-poisson` reporter to create the terrain.  See its entry in the NetLogo Dictionary, and also http://mathworld.wolfram.com/PoissonDistribution.html.
+
+The frame rate setting is used to control the speed of the game.
+
+## RELATED MODELS
+
+* Projectile Attack
+* Gravitation
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Lunar Lander model.  http://ccl.northwestern.edu/netlogo/models/LunarLander.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

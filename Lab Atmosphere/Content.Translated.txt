@@ -1,0 +1,125 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+在该模型中，气态大气被放置在“行星”的表面上方，由世界底部的黄线表示。
+
+此模型是GasLab模型系列中的一个。他们使用相同的基本规则来模拟气体的行为。每个模型都集成了不同的功能，以突出显示气体行为的不同方面。
+
+该模型的基本原理是，假定气体颗粒具有两个基本作用：它们移动并与其他颗粒或与任何其他物体（如墙壁）碰撞。
+
+## 这个模型是怎么运行的
+
+所有GasLab模型的基本原理是以下算法（有关更多详细信息，请参见模型“盒子中的GasLab气体”）：
+
+1）除非粒子与另一个粒子碰撞或从墙壁弹回，否则粒子将沿直线移动而不改变其速度。
+2）如果两个粒子发现自己在同一格子上，则它们将“碰撞”（NetLogo的“视图”由称为补丁的小正方形网格组成）。在此模型中，瞄准了两个粒子，以便它们在原点碰撞。
+3）选择粒子的碰撞角度，就好像它们是两个击中的实心球一样，该角度描述了连接它们中心的线的方向。
+4）粒子仅沿此线交换动量和能量，符合弹性碰撞的动量和能量守恒。
+5）为每个粒子分配新的速度，方向和能量。
+6）如果粒子发现自己在行星表面上或非常靠近行星表面，则它会“反弹” ---即反映其方向并保持其相同速度。
+
+在此模型中，重力的影响计算如下：每个粒子在每个时钟周期中都被赋予额外的向下速度，因为它会进入重力场。粒子从“地面”反弹。如果到达世界之巅，它们就消失了，就好像他们逃脱了地球的引力场一样。丢失颗粒的百分比显示在“丢失的颗粒百分比”监视器中。
+
+## 如何这个模型怎么用
+
+初始设置：
+-粒子数：气体粒子数
+-INIT-PARTICLE-SPEED：每个粒子的初始速度
+-粒子质量：每个粒子的质量
+-重力加速度：重力加速度的值
+
+SETUP按钮将设置初始条件。 GO按钮将运行模拟。
+
+其他设定：
+-COLLIDE ?：打开和关闭粒子之间的碰撞。
+-TRACE ?：追踪粒子之一的路径。
+
+显示器：
+-平均速度：粒子的平均速度。
+-快速百分比，中等百分比，慢速百分比：具有不同速度的粒子百分比-快速（红色），中等（绿色）和慢速（蓝色）。
+-丢失的微粒百分比：在世界顶端消失的微粒百分比。
+-时钟（在视图内）：已运行的刻度线数。
+
+情节：
+-速度计数：绘制每个速度范围内的粒子数。
+-速度直方图：所有粒子的速度分布。灰线是平均值，黑线是初始平均值。
+-能量直方图：所有粒子的能量分布，使用m *（v ^ 2）/ 2。
+-密度直方图：显示大气的每个“层”上的粒子数，即其局部密度。
+-能源与高度：显示大气的每个“层”上粒子的平均能量。
+
+## 看一看
+
+尝试预测一段时间后视图的外观以及原因。
+
+观察一个粒子的灰色路径。您能说一下它的动作吗？转到COLLIDE？看看是否有任何差异。
+
+观察模型运行时密度分布的变化。
+
+当模型运行时，粒子的平均速度和动能发生了什么？如果他们获得能量，能量从何而来？速度和能量分布会怎样？
+
+## 试一试
+
+当重力增加或减小时会发生什么？
+
+更改初始编号，速度和质量。密度分布会怎样？
+
+哪些因素影响这个星球上逃脱了多少粒子？
+
+这个模型会达到某种平衡吗？您如何知道何时到达？
+
+尝试找出该模型中粒子的分布是否与常规物理定律所预测的相同。例如，这与高海拔场所的压力较低（因此空气密度较低）是否一致？他们为什么变冷？
+
+尝试使重力为负。
+
+## 改一改
+
+找到一种方法来绘图气体相对“温度”随距行星距离的函数。
+
+尝试对不同质量的粒子使用此模型。您可以为每个块着色不同的颜色，以便查看它们的去向。它们的分布不同吗？哪一个最容易逃脱？这对大气的成分有什么暗示？
+
+当粒子达到一定高度时逃逸的事实并不完全现实，尤其是当粒子将要转回行星时。通过使“逃逸”的粒子在重力将其拉回后重新进入大气层来改进模型。这如何改变模型的行为？跟踪实际损失（达到行星逃逸速度的粒子）将很有趣。在什么条件下粒子将完全达到逃逸速度？
+
+使“行星”成为中心点而不是平面。
+
+该基本模型可用于探索自由移动的粒子对其施加力的其他情况-例如，离心机或电场中的带电粒子（离子）。
+
+##  NetLogo 语言特性
+
+由于重力的影响，粒子跟随弯曲的路径。由于NetLogo以离散步长对时间进行建模，因此这些弯曲路径必须使用一系列短直线来近似。这是造成轻微误差的原因，如果模型长时间运行，粒子会逐渐失去能量。效果似乎是与地面的碰撞略微无弹性。可以通过增加`vsplit`来减少不准确性，但是模型将运行得更慢。
+
+## 相关模型
+
+This model is part of the GasLab suite and curriculum.
+See, in particular, the models "Gas in a Box" and "Gravity Box", which is a modified version of the "Atmosphere" model, with a ceiling on the atmosphere.
+
+## 引用和致谢
+
+This model was developed as part of the GasLab curriculum (http://ccl.northwestern.edu/curriculum/gaslab/) and has also been incorporated into the Connected Chemistry curriculum (http://ccl.northwestern.edu/curriculum/ConnectedChemistry/)
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo GasLab Atmosphere model.  http://ccl.northwestern.edu/netlogo/models/GasLabAtmosphere.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1997 2002 -->

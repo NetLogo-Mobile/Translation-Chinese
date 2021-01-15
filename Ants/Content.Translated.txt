@@ -1,0 +1,70 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+在这个项目中，一群蚂蚁觅食。尽管每个蚂蚁都遵循一套简单的规则，但整个殖民地的行为方式却十分复杂。
+
+## 这个模型是怎么运行的
+
+当蚂蚁找到一块食物时，它会将食物带回巢中，并在其移动时掉落化学物质。当其他蚂蚁“嗅”化学物质时，它们会跟随化学物质进入食物。随着越来越多的蚂蚁将食物带入巢穴，它们增强了化学痕迹。
+
+## 如何这个模型怎么用
+
+单击“设置”按钮以设置蚂蚁窝（在中间为紫色）和三堆食物。单击“执行”按钮开始仿真。化学物质以绿色至白色的渐变显示。
+
+蒸发速率滑块控制化学药品的蒸发速率。 DIFFUSION-RATE滑块控制化学药品的扩散速率。
+
+如果要更改蚂蚁数，请在按SETUP之前移动POPULATION滑块。
+
+## 看一看
+
+蚁群通常从最靠近巢穴的食物开始，到最远离巢穴的食物开始按顺序开发食物来源。由于化学痕迹在被强化之前有更多的时间蒸发和扩散，因此蚂蚁很难在距离较远的食物上形成稳定的痕迹。
+
+殖民地收集完最接近的食物后，到该食物的化学痕迹自然消失，从而释放了蚂蚁来帮助收集其他食物。距离较远的食物来源需要较大数量的“蚂蚁”才能形成稳定的踪迹。
+
+食物的消耗量显示在绘图。在绘图中的线条颜色搭配食物桩的颜色。
+
+## 改一改
+
+尝试不同的食物来源。如果两个食物来源与巢之间的距离相等，会发生什么？当这种情况在现实世界中发生时，蚂蚁殖民地通常会先利用一种来源，然后再利用另一种来源（而不是同时利用）。
+
+在该项目中，蚂蚁使用“技巧”找到返回巢穴的方式：它们跟随“巢状气味”。真正的蚂蚁使用各种不同的方法找到返回巢穴的方式。尝试实施一些替代策略。
+
+蚂蚁仅对0.05到2之间的化学含量有反应。使用了下限，因此蚂蚁不是无限敏感的。尝试删除上限。怎么了？为什么？
+
+在“上坡化学药品”过程，蚂蚁“遵循化学药品的梯度”。即，它在三个方向上“嗅”，然后在化学物质最强的方向上转向。您可能想尝试“上山化学制品”过程的变体，更改“蚂蚁嗅”的数量和位置。
+
+##  NetLogo 语言特性
+
+内置的`扩散原语使我们能够轻松扩散化学物质，而无需复杂的代码。
+
+原始的“ patch-right-and-ahead”用于使蚂蚁闻到不同方向的气味而无需实际转动。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Ants model.  http://ccl.northwestern.edu/netlogo/models/Ants.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds."  Cambridge, MA: MIT Press.  Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 1998.
+
+<!-- 1997 1998 MIT -->

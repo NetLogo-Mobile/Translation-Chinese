@@ -1,0 +1,76 @@
+﻿## WHAT IS IT?
+
+This is a model of how sand particles interact with each other.  In this environment, all sand particles try to move down if any of the following four rules apply.  The four rules are:
+
+1. If there is nothing directly beneath you, move down.
+2. If there is something beneath you and to the lower right, move down and to the left.
+3. if there is something beneath you and to your lower left, move down and to the right.
+4. If there is only something directly beneath you, move down and either left or right at random.
+
+## HOW TO USE IT
+
+GO: Starts and stops the simulation.
+
+SETUP: Sets up the model.
+
+RELEASE-CHANCE: Determines the percent chance that a particle of sand will fall from a spout each turn (default value of 100%).
+
+SPACING: Determines how long a spout waits before releasing the next particle of sand.
+
+DUMP SAND: Dumps sand on all of the model according to the density leve.  Use this only after you have pressed SETUP.
+
+DENSITY: Sets the density of sand particles dumped in DUMP SAND (default value of 25%).  For example setting the density to 40 will, at random fill 40 percent of the patches with sand.
+
+## THINGS TO NOTICE
+
+Observe how sand will roll down a "mountain" of sand particles.  Consider how this phenomenon is supported by the rules.  Notice the patterns that form when two "mountains" of sand grow into each other.
+
+## THINGS TO TRY
+
+Observe how the spouts will form uniform pyramids of sand.  Try DUMP SAND at a low density once you have a relatively large pyramid shape.  How does this effect the shape of the pyramid?  Does the pyramid ever return to its original shape?
+
+Try decreasing RELEASE-CHANCE.  What effect does this have on the growth rate of sand "mountains"?
+
+Set the SPACING to 1.  (You'll have to edit the slider, since the normal minimum is 2.)  What happens?  Is this just a limitation of the model rules, or does it have some plausible physical interpretation?
+
+## EXTENDING THE MODEL
+
+In the Code tab, notice the variable `spout-space`.  Try changing the number of spouts at the top of the view by changing `spout-space`.
+
+Does this model accurately reflect how sand behaves?  If not what rules could you devise to more accurately model sand's behavior?  How could they be incorporated into the model?
+
+What effect does weight have on sand particles?  Should particles with lots of particles above them behave differently?  If so, how would this change the rules?
+
+Try simulating erosion with this model.  How could you simulate wind?  What effect would this have on the shape of the piles?  How could you simulate rain?  What effect would this have on the shape of the piles?
+
+## NETLOGO FEATURES
+
+Notice how the model stores an agentset in a variable, `spout-patches`.  It is initialized with the agentset of the patches where the spouts are located.  Subsequently this variable can be used in an `ask` command just like the default agentsets of `turtles` and `patches`.  Since the agentset is built once, ahead of time, the models runs faster than if the agentset were rebuilt at every step.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1996).  NetLogo Sand model.  http://ccl.northwestern.edu/netlogo/models/Sand.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1996 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1996 2001 -->

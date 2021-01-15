@@ -1,0 +1,73 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+debris-level
+### Chinese ***
+碎片水平
+
+### Source
+Down
+### Chinese ***
+下
+
+### Source
+Drop
+### Chinese ***
+下降
+
+### Source
+Left
+### Chinese ***
+剩下
+
+### Source
+Level
+### Chinese ***
+水平
+
+### Source
+Lines
+### Chinese ***
+线数
+
+### Source
+New
+### Chinese ***
+新
+
+### Source
+Play
+### Chinese ***
+玩
+
+### Source
+Right
+### Chinese ***
+对
+
+### Source
+RotLeft
+### Chinese ***
+腐烂
+
+### Source
+RotRight
+### Chinese ***
+向右转
+
+### Source
+Score
+### Chinese ***
+得分
+
+### Source
+show-next?
+### Chinese ***
+显示下一个？
+
+### Source
+starting-level
+### Chinese ***
+起始水平
+

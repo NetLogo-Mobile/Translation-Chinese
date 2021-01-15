@@ -1,0 +1,38 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+ants-released
+### Chinese ***
+蚂蚁释放
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+leader-heading
+### Chinese ***
+领导者
+
+### Source
+leader-wiggle-angle
+### Chinese ***
+前导摆动角度
+
+### Source
+num-ants
+### Chinese ***
+数量
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+start-delay
+### Chinese ***
+开始延迟
+

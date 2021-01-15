@@ -1,0 +1,81 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型演示了病毒通过网络的传播。尽管该模型有些抽象，但一种解释是每个节点都代表一台计算机，我们正在通过该网络对计算机病毒（或蠕虫）的进程进行建模。每个节点可能处于以下三种状态之一：易感染，已感染或已抵抗。在学术文献中，这种模型有时被称为流行病的SIR模型。
+
+## 这个模型是怎么运行的
+
+每经过一个时间步（周期），每个受感染的节点（红色）都会尝试感染其所有邻居。容易感染的邻居（绿色）将被VIRUS-SPREAD-CHANCE滑块指定的概率感染。这可能与易受感染的系统上的某人实际执行受感染的电子邮件附件的可能性相对应。
+抵抗节点（灰色）不能被感染。这可能对应于最新的防病毒软件和安全补丁，这些补丁和安全补丁使计算机可以抵抗此特定病毒。
+
+被感染的节点不会立即意识到自己已被感染。只有每隔一段时间（由VIRUS-CHECK-FREQUENCY滑块），节点才会检查它们是否被病毒感染。这可能对应于定期计划的病毒扫描过程，或者仅是一个人注意到计算机的行为令人反感。检测到病毒后，就有可能将病毒删除（由RECOVERY-CHANCE滑块确定）。
+
+如果某个节点确实恢复了，则很有可能在将来对该病毒产生抗药性（由“ GAIN-RESISTANCE-CHANCE”滑块）。
+
+当一个节点变得有抵抗力时，它与它的邻居之间的链接就会变暗，因为它们不再是传播病毒的媒介。
+
+## 如何这个模型怎么用
+
+使用滑块，选择NUMBER-OF-NODES和AVERAGE-NODE-DEGREE（来自每个节点的平均链接数）。
+
+创建的网络基于节点之间的接近度（欧几里得距离）。随机选择一个节点并将其连接到尚未连接的最近节点。重复此过程，直到网络具有正确数量的链接以给出指定的平均节点程度为止。
+
+INITIAL-OUTBREAK-SIZE滑块确定有多少个节点将启动被病毒感染的模拟。
+
+然后按SETUP创建网络。按GO运行模型。一旦病毒完全消失，该模型将停止运行。
+
+可以在按GO之前或在模型运行时调整“病毒传播机会”，“病毒检查频率”，“恢复机会”和“增益抵抗机会”滑块（在上面的“如何工作”中进行了讨论）。
+
+网络状态绘图显示了每个状态（S，I，R）中随时间变化的节点数。
+
+## 看一看
+
+运行结束时，病毒消灭后，某些节点仍然易受感染，而其他节点则变得免疫。免疫结点数目与易感结点数目之比是多少？更改网络的AVERAGE-NODE-DEGREE对这有何影响？
+
+## 试一试
+
+将GAIN-RESISTANCE-CHANCE设置为0％。在什么情况下病毒仍会消亡？多久时间？病毒生存需要什么条件？如果RECOVERY-CHANCE大于0，即使VIRUS-SPREAD-CHANCE很高，您是否认为如果可以永久运行该模型，则病毒可以存活吗？
+
+## 改一改
+
+病毒在其上传播的真实计算机网络通常不基于空间邻近性，例如该模型中发现的网络。实际的计算机网络通常会表现出“无标度”的链接度分布，与使用“优先附件”模型创建的网络有些相似。尝试尝试各种其他网络结构，并查看病毒行为的不同之处。
+
+假设该病毒通过将自身通过电子邮件发送给计算机通讯簿中的每个人而传播。由于在某人的地址簿中不是对称关系，因此请将此模型更改为使用有向链接而不是无向链接。
+
+您可以同时模拟多种病毒吗？他们将如何互动？有时，如果计算机安装了恶意软件，则更容易受到更多恶意软件的感染。
+
+尝试建立一个与此模型类似的模型，但是该病毒具有自我变异的能力。由于传统的病毒签名识别方法可能不利于它们，因此这种自我修改的病毒对计算机安全性构成了巨大威胁。在您的模型中，如果病毒突变为与最初感染该节点的变体明显不同，则可以重新免疫变得免疫的节点。
+
+## 相关模型
+
+Virus, Disease, Preferential Attachment, Diffusion on a Directed Network
+
+##  NetLogo 语言特性
+
+Links are used for modeling the network.  The `layout-spring` primitive is used to position the nodes and links such that the structure of the network is visually clear.
+
+Though it is not used in this model, there exists a network extension for NetLogo that you can download at: https://github.com/NetLogo/NW-Extension.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stonedahl, F. and Wilensky, U. (2008).  NetLogo Virus on a Network model.  http://ccl.northwestern.edu/netlogo/models/VirusonaNetwork.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2008 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2008 Cite: Stonedahl, F. -->

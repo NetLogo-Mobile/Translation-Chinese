@@ -1,0 +1,104 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+black
+### Chinese ***
+黑色
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Global Temperature
+### Chinese ***
+全球温度
+
+### Source
+Luminosity
+### Chinese ***
+亮度
+
+### Source
+Population
+### Chinese ***
+人口
+
+### Source
+white
+### Chinese ***
+白色
+
+## Widgets
+### Source
+albedo-of-blacks
+### Chinese ***
+黑人反照率
+
+### Source
+albedo-of-surface
+### Chinese ***
+表面反照率
+
+### Source
+albedo-of-whites
+### Chinese ***
+白人反照率
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+paint daisies
+### Chinese ***
+油漆雏菊
+
+### Source
+paint-daisies-as
+### Chinese ***
+像雏菊一样绘画
+
+### Source
+remove all daisies
+### Chinese ***
+删除所有雏菊
+
+### Source
+scenario
+### Chinese ***
+情景
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+show-daisies?
+### Chinese ***
+表演雏菊？
+
+### Source
+show-temp-map?
+### Chinese ***
+show-temp-map？
+
+### Source
+solar-luminosity
+### Chinese ***
+太阳光
+
+### Source
+start-%-blacks
+### Chinese ***
+开始％黑人
+
+### Source
+start-%-whites
+### Chinese ***
+开始％白人
+

@@ -1,0 +1,110 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型基于经典的街机游戏Frogger。游戏的目的是使青蛙位于视图的底部，穿过交通和河流到达另一侧的安全睡莲。
+
+## 这个模型是怎么运行的
+
+有两个主要障碍需要克服，即道路和河流。道路上的汽车和卡车以各种速度行驶，容易越过青蛙。安全过马路后，您必须克服潜伏在河中的危险。不幸的是，如果您跳入河中，您将会丧生，因此您必须通过跳入在河水中来回移动的原木或海龟来保持朝着睡莲的方向前进。
+
+您还必须避免被圆木或海龟推离边缘。此外，在以后的关卡中，一些海龟会在水下潜水-如果您碰巧站在它们的上面，将会淹死！最后，在分配的时间用完之前，您还必须全面掌握。
+
+## 如何这个模型怎么用
+
+纽扣
+
+-NEW-GAME重设游戏
+-START开始游戏
+-方向按钮（上，下，左，右）将使青蛙向该方向移动
+
+监控器
+
+-FROGS LEFT告诉您您还有多少剩余生命
+-LEVEL监视您正在播放的当前级别
+-TIME LEFT向您显示剩余时间
+-FROG JUMPS告诉您进行了几次跳跃
+
+滑杆
+
+-START-LIVES将决定您将从多少生命开始
+-START-TIME设定您开始的时间
+-START-LEVEL用于确定您将从哪个级别开始
+
+角色转换：
+
+-青蛙：这就是你。
+-卡车：不惜一切代价避免。它们通常很慢。
+-汽车：不惜一切代价避免。他们通常很快。
+-棕色方块：这是对数。您需要跳上这些河。
+-乌龟：您需要跳上这些。避免潜水的人。
+-绿色圆圈：这些是睡莲。您想获得这些来赢得关卡。
+-蓝色方块：这是河。你不能落在这个。
+-灰色方块：这是路。您可以跳上此行，但要注意车辆。
+
+-绿色补丁：这是草。您在这里很安全。
+
+## 试一试
+
+查看您是否可以通过所有级别。
+
+尝试击败你以前的时间。
+
+尝试在分配的时间内进行尽可能少的跳跃。
+
+尽量减少生命。
+
+## 看一看
+
+确定在没有障碍的情况下越过障碍需要多少跳跃。
+
+确定跨越障碍物要跨越多少步。
+
+以上两个问题中的每一个与您完成一个关卡所花费的时间有什么关系？
+
+如果您在没有障碍的情况下进行同样多的跳跃，那么为什么要花不同的时间才能穿越？
+
+## 改一改
+
+通过更改“代码”选项卡中的代码来编写自己的级别。
+
+添加一些奖金或其他危害。
+
+实施评分系统。
+
+编写一个机器人脚本，该脚本将自动移动青蛙。
+
+##  NetLogo 语言特性
+
+该模型使用品种来实现不同的移动游戏作品。
+
+“ every”命令用于控制游戏的速度。
+
+`user-message`命令向用户显示消息。
+
+“ mouse-down？”，“ mouse-xcor”和“ mouse-ycor”用于检测和处理鼠标单击。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2002).  NetLogo Frogger model.  http://ccl.northwestern.edu/netlogo/models/Frogger.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2002 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2002 -->

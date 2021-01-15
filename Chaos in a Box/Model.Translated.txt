@@ -1,0 +1,48 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+clear-drawing
+### Chinese ***
+清图
+
+### Source
+drag
+### Chinese ***
+拖动
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+num-obstacles
+### Chinese ***
+数个障碍
+
+### Source
+setup-periodic-quilt
+### Chinese ***
+定期被套
+
+### Source
+setup-periodic-x
+### Chinese ***
+setup-periodic-x
+
+### Source
+setup-random
+### Chinese ***
+设置随机
+
+### Source
+trace-path?
+### Chinese ***
+跟踪路径？
+
+### Source
+two-balls?
+### Chinese ***
+两球？
+

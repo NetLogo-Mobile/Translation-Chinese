@@ -1,0 +1,74 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型基于街机游戏Lunar Lander。游戏的目的是将红色登月舱模块降落在月球表面的蓝色着陆垫上，而不会使该模块坠落或破裂。
+
+月球模块很脆弱，因此您必须非常缓慢地移动，以防止着陆时损坏。您有一台推进器，该推进器根据模块的倾斜度施加力。您可以左右倾斜。
+
+## 如何这个模型怎么用
+
+纽扣：
+SETUP通过创建一个新的曲面来开始游戏，供您导航并在该曲面上方放置模块，以准备下降。
+GO开始游戏。准备好该模块将开始相当快地下降。
+向左和向右倾斜模块
+推力会根据您当前的倾斜度来发射您的火箭。
+
+滑杆：
+PLATFORM-WIDTH控制设置时创建的蓝色着陆垫的宽度，更宽的着陆垫使目标更容易。
+TERRAIN-BUMPINESS控制月球表面高度的变化。更多的颠簸可能意味着您将有很大的障碍来回旋。
+THRUST-AMOUNT控制着您火箭的力量大小。
+
+## 看一看
+
+当地形凹凸不平非常高时，某些随机生成的曲面将无法导航。
+
+## 试一试
+
+尝试以最少的调整降落模块。
+
+增加“推力”值，使游戏更难。
+
+## 改一改
+
+在模型中添加一个或多个图。例如，您可以在平面上或仅在Y轴上绘图的位置，速度和/或加速度。
+
+当前，未检测到与模块边缘的碰撞，因此您可以用模块边缘擦拭峰的一侧而不会发生碰撞。如果检测到这些崩溃，将更加现实。
+
+通过不断使地形变得更加崎bump，平台变小或通过其他使游戏变得更加困难的方法（可能是外星飞船）来增加游戏的关卡。
+
+尝试编写一个可以自动安全降落模块的机械手飞行员。
+
+##  NetLogo 语言特性
+
+该模型使用“随机泊松”报告指令程序创建地形。请参见《 NetLogo词典》中的条目，以及http://mathworld.wolfram.com/PoissonDistribution.html。
+
+帧频设置用于控制游戏速度。
+
+## 相关模型
+
+* Projectile Attack
+* Gravitation
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Lunar Lander model.  http://ccl.northwestern.edu/netlogo/models/LunarLander.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

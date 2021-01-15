@@ -1,0 +1,89 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+在Follower中，乌龟试图与其他乌龟“连接”，并根据一小套简单规则形成长链。
+
+## 这个模型是怎么运行的
+
+一只海龟只能跟随另一只海龟，类似地，它也只能跟随另一只海龟。这意味着有四种海龟状态，每种状态用不同的颜色表示：
+
+-洋红色：未附加
+-绿色：跟随另一只海龟（一个“尾巴”）
+-黄色：被另一只海龟跟随（一个“头”）
+-蓝色：跟随其他乌龟并被其跟随（“身体”部分）
+
+乌龟以品红色（未附加）状态创建。每回合，每只海龟在其周围检查一个方形甜甜圈图形的随机格子。如果发现那里尚未被追随的海龟，它将“闩锁”并开始跟随该海龟的移动。一个独立的海龟（尚未“锁住”另一只海龟）将随机移动。
+
+## 如何这个模型怎么用
+
+设置：清除世界并创建在POPULATION滑块指定的海龟数量。所有海龟都以独立状态（洋红色）创建。
+
+GO：运行模拟。
+
+人口：指定在设置中创建的海龟数量。
+
+NEAR-RADIUS：搜寻方形甜甜圈龟的内半径。
+
+FAR-RADIUS：搜索方形甜甜圈龟的外半径。
+
+WAVER：不跟随海龟运动的随机性。
+
+还有一种叫“龟伯爵”的绘图，其中显示，随着时间的推移，在每个州的海龟的数量。
+
+## 看一看
+
+每个滑块对模拟都有不同的影响。
+
+请注意，当海龟数量很多时，锁链往往会很快形成。这是因为有更多的海龟，因此每回合都有更多的机会附着在每只海龟上。
+
+改变甜甜圈的大小往往会影响乌龟的附着方式，但从长远来看，不会对模拟结果产生太大影响。甜甜圈的大小非常有趣，其值非常小，这导致海龟附着在很小的圈中。而且，非常大的厚甜甜圈（大FAR-RADIUS，小NEAR-RADIUS）看起来对许多海龟都很有趣。
+
+运动随机性的数量（由WAVER设置）也可以更改模拟结果。 WAVER的非常高的值会导致形成小的循环，因为海龟不断在自身上方移动，从而增加了将链的头部连接到其尾部的机会。
+
+在任何参数下，模拟都朝着形成回路的方向发展。循环可能是通过环绕世界而形成的，但是在几乎所有情况下，如果模拟运行了足够长时间，您将得到许多小循环或一个大循环。如果将WAVER滑块设置为零，则链可能永远不会连接到其自身，但是仿真应该朝着循环进行。
+
+## 试一试
+
+尝试使Waver设置很高。请注意，海龟如何丛生成小群。这是因为它们经常在自己上方移动，这增加了附着在其尾巴上的机会。如果甜甜圈允许海龟靠近自己检查，这是有道理的，但是如果不允许（NEAR-RADIUS大），则仍然会发生相同的情况。为什么会这样呢？
+
+请注意，我们正在策划四个可能的海龟状态，但只有三个出现的绘图。你知道为什么吗？
+
+## 改一改
+
+尝试对海龟如何相互跟随实施不同的规则。例如，如果关闭世界包装，可以看到有趣的结果。或者，如果允许两只乌龟拥有相同的首领怎么办？
+
+您也可以尝试给乌龟一定的再次分裂的可能性。看看这如何影响他们制作的图案。
+
+##  NetLogo 语言特性
+
+注意使用“ towards”原语使海龟彼此跟随。
+
+还要注意，我们要确保不要有两只乌龟跟随同一个领导者。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Follower model.  http://ccl.northwestern.edu/netlogo/models/Follower.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

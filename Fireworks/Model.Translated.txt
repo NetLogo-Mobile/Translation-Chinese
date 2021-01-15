@@ -1,0 +1,48 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+fade-amount
+### Chinese ***
+淡入量
+
+### Source
+fragments
+### Chinese ***
+碎片
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+gravity
+### Chinese ***
+重力
+
+### Source
+initial-x-vel
+### Chinese ***
+初始xvel
+
+### Source
+initial-y-vel
+### Chinese ***
+最初的旅行
+
+### Source
+max-fireworks
+### Chinese ***
+最大烟花
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+trails?
+### Chinese ***
+踪迹？
+

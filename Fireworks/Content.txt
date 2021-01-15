@@ -1,0 +1,77 @@
+﻿## WHAT IS IT?
+
+This program models the action of fireworks.  Rockets begin at the bottom of the view, shoot upwards into the sky and then explode, emitting showers of falling sparks.
+
+## HOW IT WORKS
+
+Each rocket, represented by a turtle, is launched upward with an initial x and y velocity.  At a certain point in the sky, an explosion occurs, which is represented by a series of turtle hatches.  Each hatched turtle inherits the velocity from the original rocket in addition to velocity from the explosion itself.  The result is a simulation of a fireworks display.
+
+## HOW TO USE IT
+
+SETUP sets up the model according to the values indicated by all the sliders and the switch. GO is a forever button that executes the model continually.
+
+FIREWORKS creates a random number of fireworks between 0 and the number indicated on the slider.
+
+FRAGMENTS determines how many particle fragments will emerge after the explosion of a single firework.
+
+GRAVITY determines the gravitational strength in the environment.  A larger value will give a greater gravitational acceleration, meaning that particles will be forced to the ground at a faster rate.  The inverse is true for smaller values.
+
+INIT-X-VEL sets the initial x-velocity of each rocket to a random number between the negative and positive value of the number indicated on the slider.
+
+INIT-Y-VEL sets the initial y-velocity of each rocket to a random number between 0 and the number indicated on the slider plus ten.  This is to ensure that there is a range of difference in the initial y-velocities of the fireworks.
+
+FADE-AMOUNT determines the rate at which the explosion particles fade after the explosion.
+
+TRAILS allows the user to turn the trails left by the explosion particles on or off.  In other words, if the TRAILS switch is ON, then the turtles will leave trails.  If it is OFF, then they will not leave trails.
+
+This model has been constructed so that all changes in the sliders and switches will take effect in the model during execution.  So, while the GO button is still down, you can change the values of the sliders and the switch, and you can see these changes immediately in the view.
+
+## THINGS TO NOTICE
+
+Experiment with the INIT-X-VEL and INIT-Y-VEL sliders.  Observe that at an initial x-velocity of zero, the rockets launch straight upwards.  When the initial x-velocity is increased, notice that some rockets make an arc to the left or right in the sky depending on whether the initial x-velocity is negative or positive.
+
+With the initial y-velocity, observe that, on a fixed GRAVITY value, the heights of the fireworks are lower on smaller initial y-velocities and higher on larger ones.  Also observe that each rocket explodes at a height equal to or a little less than its apex.
+
+## THINGS TO TRY
+
+Observe what happens to the model when the GRAVITY slider is set to different values.  Watch what happens to the model when GRAVITY is set to zero.  Can you explain what happens to the fireworks in the model?  Can you explain why this phenomenon occurs?  What does this say about the importance of gravity?  Now set the GRAVITY slider to its highest value.  What is different about the behavior of the fireworks at this setting?  What can you conclude about the relationship between gravity and how objects move in space?
+
+## EXTENDING THE MODEL
+
+The fireworks represented in this model are only of one basic type.  A good way of extending this model would be to create other more complex kinds of fireworks.  Some could have multiple explosions, multiple colors, or a specific shape engineered into their design.
+
+Notice that this model portrays fireworks in a two-dimensional viewpoint.  When we see real fireworks, however, they appear to take a three-dimensional form.  Try extending this model by converting its viewpoint from 2D to 3D.
+
+## NETLOGO FEATURES
+
+An important aspect of this model is the fact that each particle from an explosion inherits the properties of the original firework.  This informational inheritance allows the model to adequately represent the projectile motion of the firework particles since their initial x and y velocities are relative to their parent firework.
+
+To visually represent the fading property of the firework particles, this model made use of the reporter `scale-color`.  As the turtle particles fall to the ground, they hold their pens down and gradually scale their color to black.  As mentioned above, the rate of fade can be controlled using the FADE-AMOUNT slider.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Fireworks model.  http://ccl.northwestern.edu/netlogo/models/Fireworks.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

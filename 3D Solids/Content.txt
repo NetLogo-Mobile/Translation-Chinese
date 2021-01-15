@@ -1,0 +1,87 @@
+﻿## WHAT IS IT?
+
+This model creates 3D shapes out of 2D turtles by mapping turtles between cartesian and spherical three-dimensional coordinates.
+
+## HOW IT WORKS
+
+To create the 3D shapes the program randomly generates turtles about the shell of the shape in either cartesian (x, y, z) or spherical (theta, phi, z) coordinates, depending on which is easier to accomplish but always stores the information converting when necessary in spherical coordinates.  To render the sphere in the NetLogo view, it translates the turtles from spherical to cartesian coordinates using color to simulate depth. The positions of the turtles are always stored as spherical coordinates because they are rotated on the z-axis, and the simplest way to do so is to increase theta in spherical coordinates.
+
+Converting from cartesian to spherical coordinates:
+
+>x = r * cos(theta) = p * sin(phi) * cos(theta)
+>y = r * sin(theta) = p * sin(phi) * sin(theta)
+>z = p * cos(theta)
+
+theta:  angle of the turtle's projection on the x-y plane.
+phi:  turtles angle of incidence to the z axis.
+p: distance of the turtle from the origin.
+
+## HOW TO USE IT
+
+Click the different setup-SHAPE buttons to generate different 3D shapes. The turtles are randomly distributed about the surface of the shape. Click the go (forever) button to run the model.
+
+GO starts rotating the model.
+
+COLOR determines the color that is used to simulate depth in generating the various shapes (uses predefined NetLogo color constants).
+
+NUM-TURTLES determines the number of turtles that are used to generate the various shapes.
+
+SHAPE-SIZE determines the overall size of the shape.  Most often it is radius or edge length.
+
+THETA-VELOCITY determines the speed at which the turtles are rotated.
+
+(Rotating turtles in the rotate-turtles procedure is implemented simply by increasing each turtle's theta variable by theta-velocity!  *Rotating* turtles (around the z-axis) is easy in spherical coordinates.  However it's far easier to *transpose* turtles in cartesian coordinates.)
+
+## THINGS TO NOTICE
+
+Notice that turtles closer (positive) on the y-axis appear lighter in shade and turtles further away (negative) appear darker in shade.
+
+## THINGS TO TRY
+
+Try adjusting the theta-vel or render-color slider as the model is running.  This will provide real time feedback to your adjustments.
+
+## EXTENDING THE MODEL
+
+[EASY] Adjust the `setup-square` procedure to generate a rectangle.
+
+Create a procedure to transpose turtle coordinates.  Remember that it is easier to transpose in cartesian coordinates.
+
+Create a procedure to generate new 3D geometries.
+
+Try animating the phi variable.  Conceptually why does this not make sense?
+
+Create a procedure to rotate the geometries on a different axis.
+
+[VERY DIFFICULT] Create a procedure to view the geometries at ANY angle instead of the present three.
+
+## NETLOGO FEATURES
+
+Notice the use of `scale-color` to show the depth of turtles and thereby simulate 3D.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo 3D Solids model.  http://ccl.northwestern.edu/netlogo/models/3DSolids.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

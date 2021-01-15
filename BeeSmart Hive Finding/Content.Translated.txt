@@ -1,0 +1,98 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+BeeSmart Master模型显示了蜜蜂在蜂巢发现过程中的群智能。数以万计的蜜蜂可以通过自组织行为，在数十种潜在选择中准确地选择最佳的新蜂巢站点。
+
+此模型中的机制基于蜜蜂民主（Seeley，2010年），并进行了一些修改和简化。一种简化是，此模型仅显示侦察蜂，即整个决策群体积极参与的整个种群的3-5％。其他蜜蜂被排除在外了，因为它们只在做出决定时跟随侦察兵来到新的蜂巢。排除非侦察兵可以减少计算量并使该模型在视觉上更清晰。
+
+该模型也是基于计算建模的科学探究课程单元“ BeeSmart”中一系列模型的第一个模型，旨在帮助高中和大学生学习复杂的系统原理，作为科学学习中的交叉概念。随后的型号即将推出。
+
+## 这个模型是怎么运行的
+
+在每个设置中，将100只侦察蜂放置在视图中心。同时，在蜂群周围随机放置了一定数量（由“蜂巢数量”滑块）的潜在蜂巢位置。
+
+单击“ GO”后，初始侦察兵（其比例由“ initial-percentage”滑块）沿不同方向飞离种群，以探索周围的空间。他们将在最大“初始探索时间”内探索空间。如果一个侦察员偶然发现一个潜在的蜂巢站点，她会对其进行检查。否则，她将回到群中并保持空闲状态。
+
+当侦察员发现潜在的蜂巢站点时，她会对其进行检查以了解其位置，颜色和质量。然后，她飞回群居，通过摇摆舞来做广告。蜂巢的质量越好，侦察员跳的时间越长，蜂群中的闲散蜜蜂越容易看到这些舞步，而闲散的蜜蜂越有可能跟随舞步检查广告中的蜂巢位置。在新加入的蜜蜂对广告站点进行检查之后，新蜜蜂飞回了蜂群，并通过摇摆舞表达了自己对站点的看法。蜜蜂重新访问了他们提倡的站点，但是每次重新访问后，它们对站点的兴趣都下降了。为不同的网站做广告的同时，蜂拥而至，但是高质量的网站吸引了越来越多的蜜蜂，而劣质的网站却逐渐被人们所忽视。
+
+当某个蜂房站点上的蜜蜂在同一站点上观察到一定数量的蜜蜂时，或者换句话说，当达到“定额”时，它们飞回蜂群并开始“移液”以宣布已做出决定被制成。任何听到管道声音的蜜蜂也将进行管道传输，这会导致管道快速扩散到整个蜂群中。当所有蜜蜂都在管道上时，整个蜂群起飞并移到获胜的蜂巢位置，模型停止。
+
+通常，最初的侦察员会经历“发现”-&gt;“检查蜂巢”-&gt;“回家”-&gt;“舞蹈”-&gt;“重新访问”-&gt;“烟斗”的状态；与非初始侦察员跟随的状态顺序略有不同：“观看舞蹈”-&gt;“重新访问”-&gt;“检查蜂巢”-&gt;“回家”-&gt;“舞蹈”-&gt;“重新访问” ”-&gt;“管道”。
+
+## 如何这个模型怎么用
+
+使用滑块定义模型的初始条件。默认值通常可以确保成功找到配置单元，但是建议用户更改这些设置并查看每个参数如何影响过程。
+
+通过滑块设置参数后，单击“设置”。然后单击“执行”，观察现象如何发展。切换“显示/隐藏舞蹈路径”按钮以显示或隐藏摆动的舞蹈路径。如果蜜蜂阻挡了您对舞蹈路径的观看，请使用“显示/隐藏侦察器”按钮将其隐藏。
+
+## 看一看
+
+注意模型右侧的三个图：
+
+“承诺”绘图显示了致力于检查和倡导每个蜂巢站点的侦察员数量； “现场”绘图显示了每个现场的蜜蜂数量； “观察与工作”绘图显示了空闲和工作蜂数量的变化。
+
+观察如何将有关多个站点的信息带到视图中心的群体，以及群体的偏好如何随时间变化。
+
+请注意，发现最佳配置单元站点的时间是否会影响群体的决策。
+
+放大并比较高品质场所与低品质场所的舞蹈“热情”。蜜蜂不仅跳舞时间更长，而且在更高质量的地点跳舞时更热情（在这种模式下，当他们转弯时更快）。
+
+## 试一试
+
+右键单击任何侦查员，然后从右键单击菜单中选择“监视”。侦察员周围会出现一个光环，以帮助您跟踪其运动。
+
+将滑块设置为不同的值，并观察这些参数如何影响过程的动态。
+
+使用模型顶部的速度滑块降低模型速度并观察摇摆的舞步。
+
+使用“ Control +”或“ Command +”放大并查看蜜蜂的颜色。
+
+## 改一改
+
+该模型显示了蜜蜂的蜂巢发现现象是一个连续的过程。但是，实际上，此过程可能会持续几天。蜜蜂整夜休息。天气条件也可能影响此过程。将这些因素添加到模型中可以使其更准确地表示现实世界的现象。
+
+当前，无法从界面控制站点质量。可以添加一些输入界面元素，以使用户能够指定每个配置单元的质量。
+
+##  NetLogo 语言特性
+
+该模型本质上是一个状态机。蜜蜂在不同状态下的行为不同。此模型中大量使用命令任务来简化状态之间的转换并增强模型的性能。
+
+地块中的笔是动态生成的临时绘图笔，与用户确定的配置单元位置数量匹配。
+
+舞蹈模式是动态生成的，显示了所宣传的蜂巢的方向，距离和质量。
+
+## 相关模型
+
+Wilensky, U. (1997). NetLogo Ants model. http://ccl.northwestern.edu/netlogo/models/Ants. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Wilensky, U. (2003). NetLogo Honeycomb model. http://ccl.northwestern.edu/netlogo/models/Honeycomb. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 引用和致谢
+
+Seeley, T. D. (2010). Honeybee democracy. Princeton, NJ: Princeton University Press.
+
+Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Guo, Y. and Wilensky, U. (2014).  NetLogo BeeSmart Hive Finding model.  http://ccl.northwestern.edu/netlogo/models/BeeSmartHiveFinding.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2014 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2014 Cite: Guo, Y. -->

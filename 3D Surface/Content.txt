@@ -1,0 +1,71 @@
+﻿## WHAT IS IT?
+
+This model maps turtles between Cartesian and spherical 3-dimensional coordinates.  To create the appearance of a curved 3D surface, the program generates turtles with random x- and z-coordinates, then computes each turtle's y-coordinate based on x and z, and time.  The cosine function is used in the formula to produce a curved surface.  Varying the y coordinate based on time produces motion.
+
+## HOW IT WORKS
+
+To render the surface in the NetLogo view, it maps from 3D to 2D coordinates as follows:
+
+>view x = turtle x + (turtle z) / 2
+>view y = turtle y + (turtle z) / 2
+
+In other words, increasing z causes the turtle's apparent position to move both up and to the right.
+
+## HOW TO USE IT
+
+Click the SETUP button to generate the turtles and place them on the surface.  Click the GO (forever) button to run the model, which continuously varies the turtles' y-coordinates to generate a wavelike motion.
+
+The NUM-TURTLES slider determines the number of turtles that make up the surface.
+
+## THINGS TO NOTICE
+
+Notice that as the turtles move down (y-coordinate decreases) they become darker in color, and when they move up (y-coordinate increases) they become lighter.
+
+## THINGS TO TRY
+
+Experiment with the NUM-TURTLES slider.  How many turtles are needed to produce a realistic effect?  Why doesn't it keep getting better-looking indefinitely as you add more turtles?
+
+In the `move` procedure, try other numbers besides 5 in front of and inside the cosine function.  Explain the new behavior!
+
+## EXTENDING THE MODEL
+
+Try changing the formula used to compute the y-coordinate to produce differently shaped surfaces.
+
+See if you can draw not just a surface, but a three dimensional shape such as a cone or a sphere.
+
+## NETLOGO FEATURES
+
+Notice the use of `scale-color` to change a turtle's color based on its y-coordinate. Also see the model "Wave Machine" for a version that uses patches rather than turtles to make a 3-D membrane.
+
+## RELATED MODELS
+
+3D Solids
+Wave Machine
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo 3D Surface model.  http://ccl.northwestern.edu/netlogo/models/3DSurface.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

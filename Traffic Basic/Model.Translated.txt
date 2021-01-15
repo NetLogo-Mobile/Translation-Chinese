@@ -63,6 +63,11 @@ Accuracy of Driving Rules
 驾驶规则的准确性
 
 ### Source
+Authors: Charles Cheng, John Chen. Based on NetLogo Traffic Basic model by Uri Wilensky.
+### Chinese ***
+作者：郑志刚，陈翰。基于Uri Wilensky的NetLogo Traffic Basic模型。
+
+### Source
 Congratulations! 
 ### Chinese ***
 恭喜你！ 

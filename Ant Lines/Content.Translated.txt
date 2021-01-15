@@ -1,0 +1,78 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该项目模拟了领导者寻找食物来源后蚂蚁的行为。领队蚂蚁沿着随机的路径移向食物。一个小的延迟之后，在该行的第二蚂蚁通过直接向其中前导位于方向如下的佼佼者。每个后续蚂蚁都以相同的方式跟随其前面的蚂蚁。
+
+即使领导者可能走非常circuit回的路，但令人惊讶的是，蚂蚁步道却采用了光滑的图形。虽然尚不清楚该模型是否是生物学上准确的蚂蚁行为模型，但它是对一系列彼此连续跟随的代理的出现行为的有趣的数学探索。
+
+## 如何这个模型怎么用
+
+SETUP按钮将初始化模型。棕色的蚂蚁巢被放置在世界的左侧。内部有一些由NUM-ANTS滑块确定的蚂蚁（黄色）。在世界的右边是橙色的食物来源。
+
+GO按钮启动蚂蚁移动。引导蚂蚁（海龟0）大致沿食物方向运动。它在移动时摆动。也就是说，它不会直接朝向食物，而是会在执行每一步之前将其方向随机改变为左或右。
+
+领导蚂蚁在每个步骤中可摆动的最大数量（因此，领导蚂蚁的路径参差不齐）由LEADER-WIGGLE-ANGLE滑块。当领队蚂蚁离食物足够近以“闻”起来时，它会停止摆动并直接向食物前进。领导蚂蚁在移动时留下红色痕迹。
+
+后续的每个蚂蚁都会跟随它前面的蚂蚁，方向直接迈向它的每一步。追随者蚂蚁没有留下痕迹。但是，蚂蚁的黄线画图的曲线。最后一只蚂蚁留下蓝色的痕迹。
+
+蚂蚁离开巢之间的时间由“开始延迟”滑块（加上一些随机因素）。
+
+“释放蚂蚁”监视器显示了离开巢穴的蚂蚁数量。另一个监视器显示您的主要蚂蚁的方向。
+
+## 看一看
+
+蚂蚁线的图形如何随时间变化？
+
+初始蚂蚁的路径与最终蚂蚁的路径相比如何？
+
+## 试一试
+
+尝试改变最大摆动角度（LEADER-WIGGLE-ANGLE）。这如何影响初始和最终蚂蚁线的图形？
+
+尝试更改延迟。这如何影响初始和最终蚂蚁线的图形？
+
+您如何放慢对蚂蚁线的展平？您可以使路径无法收敛到一条直线吗？
+
+如何加快蚂蚁线的扁平化？
+
+## 改一改
+
+您如何跟踪，测量或绘图平过程？
+
+如果您按照规则放宽了蚂蚁怎么办---也许在行为上加些“摇摆”？
+
+##  NetLogo 语言特性
+
+注意到在TIME-TO-START中使用了基于海龟ID的延迟吗？报告指令让海龟一次离开巢穴。
+
+## 引用和致谢
+
+The model was inspired by the work of Alfred Bruckstein (see Bruckstein 1993: "Why the ant trails look so straight and nice", The Mathematical Intelligencer, Vol. 15, No. 2).
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Ant Lines model.  http://ccl.northwestern.edu/netlogo/models/AntLines.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 -->

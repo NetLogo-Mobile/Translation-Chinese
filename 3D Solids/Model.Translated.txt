@@ -1,0 +1,68 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+display-color
+### Chinese ***
+显示颜色
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+num-turtles
+### Chinese ***
+乌龟
+
+### Source
+setup-cone
+### Chinese ***
+设置锥
+
+### Source
+setup-cube-filled
+### Chinese ***
+设置多维数据集填充
+
+### Source
+setup-cube-surface
+### Chinese ***
+设置立方体表面
+
+### Source
+setup-cylinder-h
+### Chinese ***
+设置缸h
+
+### Source
+setup-cylinder-v
+### Chinese ***
+设置缸v
+
+### Source
+setup-pyramid
+### Chinese ***
+安装金字塔
+
+### Source
+setup-sphere
+### Chinese ***
+建立领域
+
+### Source
+shape-size
+### Chinese ***
+形状大小
+
+### Source
+theta-velocity
+### Chinese ***
+速度
+
+### Source
+view
+### Chinese ***
+视图
+

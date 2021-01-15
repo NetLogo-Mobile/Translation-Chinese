@@ -1,0 +1,84 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这是战略游戏。绿色景观下隐藏着一些地雷。您的工作是在不爆炸任何地雷的情况下找到所有地雷。
+
+## 这个模型是怎么运行的
+
+如果你在格子草地单击无矿，出现了许多。该数字告诉您附近有多少座地雷。
+
+如果单击地雷，地雷会爆炸，并且您会输掉游戏。
+
+通过发现没有地雷的每个方块，您将赢得比赛。
+
+如果输了，土地会变成红色。如果您赢了，它将变成蓝色。
+
+## 如何这个模型怎么用
+
+按SETUP设置棋盘，然后按GO玩游戏。
+
+按下GO时，单击绿色方块以检查是否有地雷。
+
+为了帮助您记住您认为地雷的位置，可以通过指向一个方块并按M键来标记一个方块。 （请注意MARK / UNMARK按钮角落的M。如果M变灰，则隐藏命令中心。）
+
+您可以通过在按SETUP之前调整MINE-COUNT滑块来使游戏更轻松或更难。
+
+## 看一看
+
+使用数字可以推断出可以安全单击的地方和不安全单击的地方。
+
+您是否总是知道可以安全单击的位置，还是有时不得不猜测？
+
+请注意，当您单击空白区域时，该模型通过自动为您清除所有周围的空白单元格来节省您的时间。这样可以避免游戏变得乏味。
+
+## 试一试
+
+尝试尽快赢得比赛。您的时间出现在“时钟”监视器中。
+
+尝试通过编辑视图并调整min-p（x / y）cor和max-p（x / y）cor来使用更大或更小的木板。
+
+## 改一改
+
+在磁盘上写出一个文件，其中包含给定板大小下玩家迄今为止所能达到的最佳时间。有人击败前一次更新文件。
+
+编写一个可以自动玩游戏的计算机播放器。应该使用什么策略？
+
+修改游戏以使用六角形网格而不是正方形网格。 （请参见“代码示例”中的“六边形单元示例”，以了解如何制作六边形网格。）
+
+##  NetLogo 语言特性
+
+“邻居”基元用于查找相邻的正方形。
+
+## 相关模型
+
+Some of the models in Cellular Automata section, under Computer Science, also have rules based on how many neighboring cells are occupied.
+
+## 引用和致谢
+
+According to https://en.wikipedia.org/wiki/Minesweeper_%28computer_game%29, Minesweeper was invented by Robert Donner in 1989.  A version of the game is included with the Windows operating system.
+
+Landmines are a real problem that kills people every day. To learn more about the campaign to ban landmines, see http://www.icbl.org/en-gb/home.aspx
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Minesweeper model.  http://ccl.northwestern.edu/netlogo/models/Minesweeper.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

@@ -1,0 +1,88 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型通过在直角坐标和球形三维坐标之间映射海龟，从2D海龟中创建3D形状。
+
+## 这个模型是怎么运行的
+
+要创建3D形状，该程序会以笛卡尔坐标（x，y，z）或球形坐标（theta，phi，z）随机生成围绕图形外壳的海龟，具体取决于哪个更容易实现，但始终存储信息转换必要时在球坐标系中。为了在NetLogo视图中渲染球体，它使用颜色模拟深度将海龟从球体坐标转换为笛卡尔坐标。由于乌龟的位置在z轴上旋转，因此它们的位置始终存储为球坐标，而最简单的方法是增加球坐标中的theta。
+
+从笛卡尔坐标转换为球坐标：
+
+&gt; x = r * cos（theta）= p * sin（phi）* cos（theta）
+&gt; y = r * sin（theta）= p * sin（phi）* sin（theta）
+&gt; z = p * cos（θ）
+
+θ：乌龟在xy平面上的投影角度。
+phi：海龟相对于z轴的入射角。
+p：海龟离原点的距离。
+
+## 如何这个模型怎么用
+
+单击不同的setup-SHAPE按钮以生成不同的3D形状。乌龟随机分布在图形表面上。单击执行（永久）按钮以运行模型。
+
+GO开始旋转模型。
+
+COLOR确定用于生成各种形状时模拟深度的颜色（使用预定义的NetLogo颜色常量）。
+
+NUM-TURTLES确定用于生成各种形状的海龟数量。
+
+形状尺寸决定的图形的整体尺寸。最常见的是半径或边长。
+
+THETA-VELOCITY确定海龟旋转的速度。
+
+（在rotate-turtles程序中旋转turtle的过程很简单，只需通过theta速度增加每个turtle的theta变量即可。*在球坐标系中旋转* turtle（绕z轴）很容易。但是，* transition * turtles却更容易笛卡尔坐标。）
+
+## 看一看
+
+请注意，在y轴上靠近（正）的乌龟在阴影中显得更亮，而远离（负）的乌龟在阴影中显得更暗。
+
+## 试一试
+
+在模型运行时，尝试调整theta-vel或render-color滑块。这将为您的调整提供实时反馈。
+
+## 改一改
+
+[简易]调整“设置正方形”过程以生成矩形。
+
+创建一个过程来转置海龟坐标。请记住，以笛卡尔坐标进行转置会更容易。
+
+创建一个过程以生成新的3D几何形状。
+
+尝试给phi变量设置动画。从概念上讲，为什么这没有意义？
+
+创建一个过程以在另一个轴上旋转几何。
+
+[非常困难]创建一个过程以任何角度而不是当前三个角度查看几何。
+
+##  NetLogo 语言特性
+
+注意使用“ scale-color”显示海龟的深度，从而模拟3D。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo 3D Solids model.  http://ccl.northwestern.edu/netlogo/models/3DSolids.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

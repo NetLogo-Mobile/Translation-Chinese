@@ -1,0 +1,69 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+#
+### Chinese ***
+＃
+
+### Source
+bodies
+### Chinese ***
+身体
+
+### Source
+heads
+### Chinese ***
+头
+
+### Source
+tails
+### Chinese ***
+尾巴
+
+### Source
+time
+### Chinese ***
+时间
+
+### Source
+Turtle Count
+### Chinese ***
+龟数
+
+### Source
+unattached
+### Chinese ***
+独立的
+
+## Widgets
+### Source
+far-radius
+### Chinese ***
+半径
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+near-radius
+### Chinese ***
+近半径
+
+### Source
+population
+### Chinese ***
+人口
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+waver
+### Chinese ***
+动摇
+

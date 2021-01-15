@@ -1,0 +1,94 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+dist
+### Chinese ***
+dist
+
+### Source
+distance
+### Chinese ***
+距离
+
+### Source
+Distance from the origin
+### Chinese ***
+距原点的距离
+
+### Source
+time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+all-circle
+### Chinese ***
+全圆
+
+### Source
+clear-drawing
+### Chinese ***
+清图
+
+### Source
+draw-circle
+### Chinese ***
+画圆
+
+### Source
+draw-radius
+### Chinese ***
+绘制半径
+
+### Source
+number
+### Chinese ***
+数
+
+### Source
+pen-down
+### Chinese ***
+下笔
+
+### Source
+pen-up
+### Chinese ***
+笔式
+
+### Source
+plot?
+### Chinese ***
+绘图？
+
+### Source
+radius
+### Chinese ***
+半径
+
+### Source
+set shape "circle"
+### Chinese ***
+设置图形“圆形”
+
+### Source
+set shape "turtle"
+### Chinese ***
+设置图形“海龟”
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+speed
+### Chinese ***
+速度
+
+### Source
+zero-circle
+### Chinese ***
+零圆
+

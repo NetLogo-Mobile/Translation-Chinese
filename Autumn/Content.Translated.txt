@@ -1,0 +1,111 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+如果您生活在夏季温暖，冬季寒冷的气候中，那么您可能熟悉秋天的美丽现象，在这种现象中，树叶变色之前会死掉并从树上掉下来。该模型模拟树叶改变颜色和下落的方式，从而有可能探索和了解这种美丽的一年生奇观。
+
+## 这个模型是怎么运行的
+
+叶子为何变色以及如何变色和掉落令人惊讶地复杂，并且与阳光，热和雨的结合有关。 （即使叶子尚未变色，也可能被强风吹走，所以风也有作用。）
+
+我们在每片叶子中看到的颜色源于在每片叶子中产生和存储的天然物质的存在。三种颜色有助于叶片的颜色：
+
+-绿色来自叶绿素（或称为叶绿素的一组相关物质），可将阳光和水转化为糖。当叶绿素分子暴露于过度的阳光下和低温时，它们会被破坏且无法补充。因此，寒冷的晴天秋天的日子会使叶绿素的总浓度降低。在阳光下（只要没有太多！）和有水时，总叶绿素浓度会再次升高。
+
+-黄色来自称为胡萝卜素的物质。胡萝卜素分子有助于使胡萝卜和地瓜变色。整个叶的生命中胡萝卜素的浓度保持恒定。但是，黄色通常被叶绿素的绿色所掩盖。叶绿素含量较高（通常在夏季）的叶子将完全是绿色的，尽管在绿色后面遮盖着强烈的黄色。然而，随着叶绿素的死亡，胡萝卜素的存在变得明显，导致黄叶。
+
+-红色来自称为花色苷的物质。花青素分子是在叶片中存在高糖浓度和水浓度的情况下产生的。 （糖的浓度越高，产生的花青素就越多。）当寒冷的天气使树木停止通向树木其余部分的水循环时，糖的浓度会增加。叶片中夹带的水分和糖分都会转化为花青素。
+
+模型中时钟的每个周期都包括两个阶段：（1）天气（雨，风，日光）会影响叶子，并根据需要添加或去除糖，水或叶绿素，以及（2）叶子对周围环境有反应，酌情添加花青素，并更改颜色以反映修改后的环境。
+
+水不是直接进入每片叶子，而是被树的根吸收，然后从树的根被吸收到树干和树枝和树叶中。在此模型中，假定整个地面都包含树根，因此所有雨滴一旦到达地面，就会流向树干。同样，所有的雨滴都沿着树的树干行进，然后沿着树枝（模型中未显示）行进到树叶。叶子从附近的雨滴收集水。当雨滴中没有更多的水时，雨滴就会消失。
+
+模型中的叶子具有“附着”属性，该模型用于指示叶子紧贴树的强度。依恋随着水而上升，而随风和雨而下降。 （在大风天，即使树叶完全是绿色的，叶子也可能会脱落。）
+
+由于NetLogo颜色空间并未包括所有可能的颜色，因此该模型使用阈值算法来确定叶子的颜色，作为真实颜色的近似值。每当叶绿素高于50％时，叶子都是绿色的。在此之下，根据叶中是否含有大量的胡萝卜素，花色苷或两者，将叶子赋予黄色，红色或橙色。
+
+请注意，叶子颜色的强度随叶绿素，胡萝卜素和/或花青素的含量而变化。因此，富含叶绿素的树将具有深绿色的叶子，而只有一点点的树将具有浅绿色的叶子。
+
+## 如何这个模型怎么用
+
+要使用模型，请按SETUP。这将创建树干和分支，还将创建树的叶子，它们是此模型中的主要代理。按GO设置系统。
+
+现在出现有趣和/或棘手的部分，即调整视图下的滑块，以便天气产生您想要探索或研究的条件。如果叶子由于缺水而似乎失去了叶绿素（可以在“平均叶数”绘图监视），则可以通过调节RAIN-INTENSITY滑块使其下雨。要吹起风，请调整WIND-FACTOR滑块。
+
+使用SUN-INTENSITY滑块设置太阳的强度（根据太阳光的强度）。如上所述，叶子需要阳光才能产生叶绿素和糖-但是过多的阳光可能会开始破坏这些化学物质。
+
+最后，您可以更改TEMPERATURE滑块。如果温度太冷，叶绿素分子将被破坏，从而推动花青素的生成。
+
+掌握了模型的基本知识后，您可能需要考虑在左上角设置两个滑块，即START-SUGAR-MEAN和START-SUGAR-STDDEV，它们会影响糖之间初始分布的均值和分布叶子。例如，枫树叶开始时往往含有很多糖，这意味着在类似条件下它们会比其他树叶变红。
+
+右下角的LEAF-DISPLAY-MODE更改了叶子的显示方式。通常，每片叶子都被绘制为NetLogo“默认”海龟楔形实体。当LEAF-DISPLAY-MODE设置为默认值“ solid”时，就是这种情况。为LEAF-DISPLAY-MODE选择一个不同的值，然后根据选择的变量将每个叶子更改为显示为空，半满或完整图形。因此，如果将LEAF-DISPLAY-MODE设置为“水”，则每片叶子将显示为空（如果水位低），半满（如果有些水）或满（如果相对水）。
+
+## 看一看
+
+叶子被雨滴撞击时会吸收水分-这意味着在小雨和很多叶子的情况下，“内部”叶子将无法获得足够的雨水。
+
+风越强，每片叶子摇得越多。
+
+您可以通过将风和雨量调至最大值来模拟小飓风。看着树叶一下子掉下来！
+
+## 试一试
+
+您能让所有的叶子在掉下前变红吗？跌倒前如何变成橙色？黄色呢？现在，尝试将它们混合在一起，以便同一棵树将具有许多不同颜色的叶子。 （提示：您可能需要多次调整阳光，雨水和温度滑块，才能使组合看起来正确。）
+
+尝试让叶子变黄，然后再变绿。
+
+在某些气候下，树木不会失去叶子。您可以调整气候条件，以便使树上保留一些叶子吗？
+
+## 改一改
+
+在现实生活中，面对太阳的叶子往往比不面对太阳的叶子更黄。更改模型，以便可以定位（和移动）太阳，并且使面对太阳的叶子比不面对太阳的叶子更敏感。
+
+该模型对水和糖的处理方式非常简单-即所有水都来自雨水，雨滴可能会影响多片叶子，并且雨滴落在地面上时会消失。一个更现实的模型将使雨滴一碰到叶子就消失，但也允许水通过树干和树枝从地面流到叶子。另外，更现实的模型将模拟叶片之间糖的运输以及根中多余糖的存储。
+
+除了成熟叶片的死亡之外，还允许新叶片的出芽和生长。
+
+添加昼夜循环，其中温度下降并且太阳落下几个时钟。在黑暗中，树会消耗糖分并通过呼吸产生水。
+
+##  NetLogo 语言特性
+
+由于NetLogo的色彩空间不完整，因此我们需要伪造一些颜色融合现象。注意我们如何通过阈值来设置颜色。这意味着，如果天气条件有些极端，可能会突然出现令人讨厌的颜色变化。
+
+还要注意，NetLogo配色方案和“ scale-color”基元产生的颜色范围从白色到黑色。因为在此模型中，我们希望在不接近黑色或白色的情况下改变色调，所以我们使用了“ scale-color”基元，但是使用的是-50至150的比例，而不是通常的0至100。
+
+当一片叶子死亡时，其种类变为“死叶”。这样可以将其保留在系统中，但是允许我们仅向那些还活着的叶子发出指令。
+
+注意太阳的颜色如何随SUN-INTENSITY的变化而变化。当太阳变黑又变小时，标签会发生什么？
+
+## 相关模型
+
+Plant Growth is in some ways a model of the opposite process, namely how do leaves grow, as opposed to how do leaves die.
+
+## 引用和致谢
+
+- www.scifun.org/CHEMWEEK/AutumnColors2017.pdf
+- https://www.the-scientist.com/news/why-leaves-turn-color-in-the-fall-53929
+
+Thanks to Reuven Lerner for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Autumn model.  http://ccl.northwestern.edu/netlogo/models/Autumn.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

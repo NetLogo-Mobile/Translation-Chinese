@@ -1,0 +1,28 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+denominator
+### Chinese ***
+分母
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+numerator
+### Chinese ***
+分子
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+width
+### Chinese ***
+宽度
+

@@ -1,0 +1,110 @@
+﻿## WHAT IS IT?
+
+This model demonstrates a very simple chaotic system consisting of a ball bouncing inside a rectangular room with circular obstacles in it. The system can exhibit periodic behavior (in which the ball bounces in a repeating pattern), but primarily exhibits chaotic behavior.
+
+Chaotic behavior means that any tiny change in the initial conditions (in this case, the position and heading of the ball) results in dramatically different behavior over time. Chaotic behavior makes systems very difficult to predict precisely: in order to accurately predict a chaotic system, one must have exact measurements of the system's initial conditions. However, measuring a system to that degree of accuracy is, in general, impossible.
+
+## HOW IT WORKS
+
+The ball bounces off the walls and obstacles. The collisions are all perfectly elastic and the obstacles remain stationary. Finally, there is no friction. This means that the balls never change speed, only direction. Note that the balls do not bounce off each other; multiple balls are just to show what happens when there are very small differences in initial position.
+
+Collisions are detected when the ball overlaps an obstacle or the edge of the world. The position is then corrected (see the NetLogo Features section below for a more detailed discussion). Finally, because the collisions are perfectly elastic, the ball's new angle is the angle of reflection of its heading around the surface it's colliding with.
+
+## HOW TO USE IT
+
+Use the NUM-OBSTACLES slider to adjust the number of obstacles when using SETUP-RANDOM. With 0 obstacles, the system will *always* be periodic. Can you figure out why?
+
+If TWO-BALLS? is on, the setup buttons will create an additional ball that will be in almost, but not quite, the same position as the first ball. Running the system with two balls will show how dramatic of an effect slight changes in initial conditions can have in chaotic systems.
+
+Use the SETUP-RANDOM button to initialize the system in a configuration that will most likely be chaotic. NUM-OBSTACLES obstacles of random sizes will be placed at random positions.
+
+Use the SETUP-PERIODIC-X button to see an example of the kind of periodic behavior the system can exhibit.
+
+Use the SETUP-PERIODIC-QUILT button to see another example of periodic behavior that has a very long period.
+
+The GO button runs the simulation.
+
+If the TRACE-PATH? switch is on, the paths of the balls will be traced. CLEAR-DRAWING clears the paths.
+
+DRAG can be used to move the balls and obstacles around, as well as change the size of the obstacles and direction of the balls. Once pressed, clicking and dragging near the center of balls and obstacles will move them around. Clicking and dragging near the edge of balls will change their direction. Clicking and dragging near the edge of obstacles will change their size.
+
+## THINGS TO NOTICE
+
+Notice how the bouncing of the balls is fairly predictable until they hit the circle. Why do you think that is?
+
+If you run the model without an obstacle, the behavior is always periodic, though that period might be very long. Why might that be?
+
+If TWO-BALLS? is on, the setup buttons will create an additional ball that will be in almost, but not quite, the same position as the first ball. Running the system with two balls and an obstacle will show how dramatic of an effect slight changes in initial conditions can have in chaotic systems. This is the signature feature of a chaotic system.
+
+It's very unlikely that a random configuration in which the ball collides with an obstacle will be periodic.
+
+## THINGS TO TRY
+
+Try SETUP-PERIODIC-X with TWO-BALLS? on. How do the red and blue balls behave differently?
+
+Try SETUP-PERIODIC-QUILT with TWO-BALLS? on. When do the red and blue balls begin to diverge?
+
+Can you find other configurations that result in periodic behavior?
+
+## EXTENDING THE MODEL
+
+Add obstacles of different shapes. What shapes produce chaotic behavior?
+
+Add a slider to control the number of balls, so that you can have more than two.
+
+Add a slider to control how far the balls start from the red ball. Does making the distance smaller or bigger change the behavior of the model?
+
+Try to change the shape of the box.
+
+Currently, balls do not collide against each other. Can you make it so they do? Can you find a periodic configuration in which the balls collide against each other?
+
+## NETLOGO FEATURES
+
+This model uses a number of advanced techniques:
+
+First, anonymous procedures are used to make the SETUP procedure very flexible with respect to the placement of the balls and obstacles. For example, SETUP-PERIODIC-QUILT uses the following code:
+
+```
+setup [-> setxy 0 8 set size 1 ] [-> setxy 0 7 facexy -8 -6 ]
+```
+
+The first anonymous procedure configures the obstacle and the second configures the ball.
+
+The FOREACH-AGENT procedure shows how you can use anonymous procedures to create your own control structures in NetLogo. FOREACH-AGENT works like FOREACH, but operates on agentsets instead of lists.
+
+Second, because of the chaotic nature of this system, the collisions between objects must be handled very precisely. Because the balls move by taking steps of size SPEED each tick, the location the ball is in when it hits another object won't be the same as if the ball had been moving continuously. This error can, for instance, make what should be periodic configurations chaotic. To correct for this, the model uses a technique called [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) to get very close to the exact location of collision very quickly. While binary search is a general algorithm, not a NetLogo feature, this model shows how you can implement a spatial binary search in NetLogo. In addition, because the ATAN reporter can introduce small imprecisions, this model rounds the heading of the ball after collisions with obstacles to the nearest 100,000th of a degree.
+
+Finally, the code for dragging the obstacles and balls around shows how fairly sophisticated manipulation of agents can be done with the mouse.
+
+## RELATED MODELS
+
+- The GasLab models
+- Kicked Rotator is another example of a chaotic system
+
+## CREDITS AND REFERENCES
+
+This model was inspired by a conversation with Dirk Brockmann who discusses this phenomenon in his Complex Systems in Biology course at the Humboldt University of Berlin.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Head, B. and Wilensky, U. (2017).  NetLogo Chaos in a Box model.  http://ccl.northwestern.edu/netlogo/models/ChaosinaBox.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2017 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2017 Cite: Head, B. -->

@@ -1,0 +1,81 @@
+﻿## WHAT IS IT?
+
+This is a new kind of mathematical investigation — we are investigating the emergent shape created by the movement of many turtles moving independently in simple ways. Each turtle is moving so as to create a circle of a fixed radius (set by the RADIUS slider).  What happens if the radius they are all circling at is changed in mid-action? Guess before you try it.
+
+## HOW IT WORKS
+
+The turtles create their circles by moving forward a little and turning right a little so as to end up with a circle of the specified radius. We start all the turtles on a circle of that radius so they move around the circle.
+
+## HOW TO USE IT
+
+The NUMBER slider determines the number of turtles circling.
+
+The RADIUS slider determines the size of the circle each turtle moves on.
+
+The SPEED slider determines how large a step each turtle take at each clock tick -- it determines the speed of circling.
+
+The SETUP button creates NUMBER turtles on a circle of radius RADIUS centered at the point (0 0). The turtles are all headed so as to move around the circle.
+
+The ALL-CIRCLE button starts the turtles circling. They are each drawing their own circle of radius RADIUS.
+
+Change the value of the RADIUS slider while the turtles are circling.  *Before* you do it, what is your guess as to what will happen when you change the RADIUS?
+
+## THINGS TO NOTICE
+
+What is happening to the shape described by the turtles?
+
+How far out do the turtles go?
+
+How far in do they come?
+
+## THINGS TO TRY
+
+Try different values of both starting radius and changed radius.
+
+You can also do further investigations with the following controls:
+
+The ZERO-CIRCLE button lets you just focus on turtle zero's movement -- all the rest are stopped.
+
+The DRAW-CIRCLE button lets you draw a circle on the patches with a radius equal to DRAW-RAD. This way you can track the movement of the turtles.
+
+If the PLOT? switch is on, the plot will show a plot of turtle zero's distance from the origin as the turtles circle.
+
+Try the command `lt 50` while the turtles are circling. Is this the same behavior as you observed when changing the radius?
+
+In the Command Center, get a single (or several) turtles to trace their path using the command `pen-down` (`pd`).  This may help to show the relationship between the circles of individual turtles and the circle you see as they all move together.
+
+## EXTENDING THE MODEL
+
+What tools can you build to help visualize what is going on?
+
+## NETLOGO FEATURES
+
+The `display` command is used for smooth animation.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Turtles Circling model.  http://ccl.northwestern.edu/netlogo/models/TurtlesCircling.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 -->

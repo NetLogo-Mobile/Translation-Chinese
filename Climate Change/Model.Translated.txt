@@ -1,0 +1,69 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Global Temperature
+### Chinese ***
+全球温度
+
+## Widgets
+### Source
+add cloud
+### Chinese ***
+添加云
+
+### Source
+add CO2
+### Chinese ***
+添加二氧化碳
+
+### Source
+albedo
+### Chinese ***
+反照率
+
+### Source
+CO2 amount
+### Chinese ***
+二氧化碳量
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+remove cloud
+### Chinese ***
+去除云
+
+### Source
+remove CO2
+### Chinese ***
+去除二氧化碳
+
+### Source
+setup
+### Chinese ***
+设定
+
+### Source
+sun-brightness
+### Chinese ***
+阳光灿烂
+
+### Source
+temperature
+### Chinese ***
+温度
+
+### Source
+watch a ray
+### Chinese ***
+看射线
+

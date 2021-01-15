@@ -1,0 +1,110 @@
+﻿## WHAT IS IT?
+
+If you live in a climate that is warm during the summer and cold in the winter, then you are probably familiar with the beautiful autumn phenomenon in which leaves turn color before dying and falling off of the tree.  This model simulates the ways in which leaves change their colors and fall, making it possible to explore and understand this beautiful annual spectacle.
+
+## HOW IT WORKS
+
+Why and how leaves change colors and fall is surprisingly complicated, and has to do with a combination of sunlight, heat, and rain.  (Leaves can be blown off by strong winds even if they have not yet changed color, so wind has a role too.)
+
+The colors that we see in each leaf stem from the presence of natural substances that are produced and stored in each leaf. Three substances contribute to a leaf's color:
+
+- Green comes from chlorophyll (or a set of related substances known as chlorophylls), which converts sunlight and water into sugar.  Chlorophyll molecules are destroyed and not replenished when they are exposed to excessive sunlight and when temperatures are low.  Thus, cold sunny fall days make the overall concentration of chlorophyll decrease.  Overall chlorophyll concentration rises again in the sunlight (as long as there is not too much!) and when there is water.
+
+- Yellow comes from a substance called carotene.  Carotene molecules help give color to carrots and sweet potatoes.  The concentration of carotene remains constant throughout a leaf's life.  However, the yellow color is often masked by the chlorophyll's green color.  A leaf with lots more chlorophyll (typical in the summer) will be exclusively green, albeit with strong yellow tints masked behind the green.  As the chlorophyll dies, however, the presence of carotene becomes apparent, resulting in a yellow leaf.
+
+- Red comes from a substance called anthocyanins.  Anthocyanin molecules are created in the presence of high sugar concentrations and water concentrations in the leaf.  (The higher the concentration of sugar, the more anthocyanins are produced.)  Sugar concentration increases when cold weather causes the tree to shut down its water circulation to the rest of the tree; whatever water and sugar are trapped in the leaf are then converted into anthocyanins.
+
+Each tick of the clock in the model consists of two stages: (1) Weather (rain, wind, sun) affects the leaves, adding or removing sugar, water, or chlorophyll as appropriate, and (2) the leaf reacts to its environment, adding anthocyanins as appropriate, and changing color to reflect the modified environment.
+
+Water does not enter each leaf directly, but is absorbed by the tree's roots, from which it is pulled up the trunk and into the branches and leaves.  In this model, the entire ground is assumed to contain tree roots, and thus all raindrops flow toward the trunk once they reach the ground.  Similarly, all of the raindrops travel up the trunk of the tree, and then along the branches (which are not represented in the model), out to the leaves.  Leaves collect water from nearby raindrops. Raindrops disappear when they have no more water left in them.
+
+Leaves in the model have an "attachedness" attribute, which the model uses to indicate how strongly the leaf is clinging to the tree.  Attachedness rises with water, and declines in wind and rain.  (On a very windy day, leaves may blow off even if they're completely green.)
+
+Because the NetLogo color space does not include all possible colors, this model uses a threshold algorithm to determine the color of the leaf, as an approximation of the real color.  Whenever chlorophyll is above 50%, the leaf is green.  Below that, the leaf is given a yellow, red, or orange color, depending on if there is a majority of carotene, anthocyanins, or both, respectively.
+
+Note that the intensity of the leaf colors varies with the level of chlorophyll, carotene, and/or anthocyanins.  So a chlorophyll-laden tree will have dark-green leaves, whereas one with only a little bit will have light-green leaves.
+
+## HOW TO USE IT
+
+To use the model, press SETUP.  This will create the tree trunk and branches, and will also create the leaves of the tree, which are the main agents in this model.  Press GO to set the system in motion.
+
+Now comes the interesting and/or tricky part, namely adjusting the sliders under the view so that the weather produces conditions you want to explore or study.  If the leaves appear to be losing chlorophyll due to a lack of water (which you can monitor in the "Leaf averages" plot), you can make it rain by adjusting the RAIN-INTENSITY slider. To make the wind blow, adjust the WIND-FACTOR slider.
+
+The sun's strength (in terms of intensity of sunlight) is set with the SUN-INTENSITY slider.  As noted above, leaves need sunlight to produce chlorophyll and sugar -- but too much sunlight may begin to destroy these chemicals.
+
+Finally, you can change the TEMPERATURE slider.  If the temperature is too cold, the chlorophyll molecules will be destroyed, setting in motion the creation of anthocyanins.
+
+Once you have mastered the basics of the model, you might want to consider setting the two sliders in the top left corner, START-SUGAR-MEAN and START-SUGAR-STDDEV, which influence the mean and spread of the initial distribution of sugar among the leaves.  Maple leaves, for example, tend to have a lot of sugar in them to begin with, which means that they'll turn redder than other leaves under similar conditions.
+
+The LEAF-DISPLAY-MODE in the lower right corner changes the way in which leaves are depicted.  Normally, each leaf is painted as a solid NetLogo "default" turtle wedge.  This is the case when LEAF-DISPLAY-MODE is set to "solid," the default.  Selecting a different value for LEAF-DISPLAY-MODE then changes each leaf to show an empty, half-full, or full shape, according to the variable that was chosen.  Thus if LEAF-DISPLAY-MODE is set to "water", each leaf will be shown as empty (if low on water), half-full (if somewhat stocked with water), or full (if relatively full of water).
+
+## THINGS TO NOTICE
+
+Leaves absorb water when they are hit by raindrops -- which means that with light rain and many leaves, the "inside" leaves will fail to get enough rain.
+
+The stronger the wind, the more each leaf shakes.
+
+You can simulate a minor hurricane by turning the wind and rain up to their maximum values.  Watch the leaves all fall off at once!
+
+## THINGS TO TRY
+
+Can you get all of the leaves to turn red before falling?  How about to turn orange before falling?  How about yellow?  Now try to mix things up, such that the same tree will have leaves of many different colors.  (Hint: You will probably need to adjust the sun, rain, and temperature sliders several times to get the combination to look right.)
+
+Try to get the leaves to turn yellow and then green again.
+
+In some climates trees do not lose their leaves.  Can you adjust the climate conditions so that you can make the tree keep some of its leaves?
+
+## EXTENDING THE MODEL
+
+In real life, leaves that face the sun tend to be yellower than those that don't.  Change the model such that the sun can be positioned (and moved), and such that leaves facing the sun are more sensitive to sunlight than those that don't.
+
+The model is very simplistic in its approach to water and sugar -- namely, that all water comes from rain, that raindrops can affect multiple leaves, and that raindrops disappear as they hit the ground.  A more realistic model would have raindrops disappear as soon as they hit a leaf, but would also allow for water to travel from the ground to the leaves, via the trunk and branches.  Also a more realistic model would model the transport of sugars between leaves and the storage of excess sugar in the roots.
+
+Allow for the budding and growth of new leaves, in addition to the death of mature ones.
+
+Add day-night cycles, in which the temperature drops and the sun goes down for several ticks of the clock.  In the dark, the tree would then consume sugars and produce water through respiration.
+
+## NETLOGO FEATURES
+
+Because NetLogo's color space is incomplete, we needed to fake color pigmentation blending a bit.  Notice how we handle setting colors by means of thresholds.  This means that there can be sudden, jarring color changes if the weather conditions are a bit extreme.
+
+Also note that the NetLogo color scheme, and the `scale-color` primitive, produce colors that range from white to black.  Because in this model we wants to vary hues without getting too close to either black or white, we used the `scale-color` primitive but on a -50 to 150 scale, rather than the usual 0 to 100.
+
+When a leaf dies, its breed changes to `dead-leaves`.  This keeps it in the system, but allows us to issue instructions to only those leaves that are alive.
+
+Notice how the sun's color changes as SUN-INTENSITY changes.  What happens to the label when the sun becomes dark and small?
+
+## RELATED MODELS
+
+Plant Growth is in some ways a model of the opposite process, namely how do leaves grow, as opposed to how do leaves die.
+
+## CREDITS AND REFERENCES
+
+- www.scifun.org/CHEMWEEK/AutumnColors2017.pdf
+- https://www.the-scientist.com/news/why-leaves-turn-color-in-the-fall-53929
+
+Thanks to Reuven Lerner for his work on this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Autumn model.  http://ccl.northwestern.edu/netlogo/models/Autumn.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

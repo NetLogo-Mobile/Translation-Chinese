@@ -2,7 +2,7 @@
   "ID": "5ec6c87a9f303f00016e4c33",
   "SubjectTranslated": true,
   "ContentTranslated": true,
-  "ContentMachineTranslated": true,
+  "ContentMachineTranslated": false,
   "ModelTranslated": true,
   "ModelMachineTranslated": true
 }

@@ -1,0 +1,108 @@
+﻿## WHAT IS IT?
+
+This is the classic puzzle game, Tetris.  The game involves falling pieces composed of four blocks in different configurations.  The object of the game is to complete horizontal rows of blocks in the well.
+
+Any time a row is completed it disappears and the blocks above it fall down.  The more rows you clear with the placement of a single piece, the more points you receive.  If you clear enough rows, you move on to the next level.  The higher the level, the more points you receive for everything, but the pieces fall faster as well, increasing the challenge.
+
+## HOW TO USE IT
+
+Monitors:
+-- SCORE shows your current score.
+-- LINES shows the number of lines you have cleared.
+-- LEVEL shows your current level.
+
+Sliders:
+-- STARTING-LEVEL selects the beginning level for the game.  Choosing a higher level to begin allows you to get more points faster and increase the initial falling speed.  Your level will not increase until your number of lines is 10*(level+1). (i.e. starting-level=3, level will stay 3 until 40 lines are cleared.)
+-- DEBRIS-LEVEL sets how many lines of random blocks will be created at the bottom of the well at the beginning of the game.
+
+Buttons:
+-- NEW sets up a new game with the initial settings.
+-- PLAY begins the game.
+
+Controls:
+-- ROTLEFT rotates the current piece 90 degrees to the left.
+-- ROTRIGHT rotates the current piece 90 degrees the right.
+-- LEFT moves the current piece one space left.
+-- DROP causes the current piece to drop to the bottom of the well immediately.
+-- RIGHT moves the current piece one space right.
+-- DOWN moves the current piece one space down.
+
+Options (Switches)
+-- SHOW-NEXT-PIECE? toggles the option which causes the piece which will appear in the well after you place the current one to be shown in a small box to the right of the well.
+
+## THINGS TO NOTICE
+
+There are seven types of pieces.  These are all the shapes that can be made by four blocks stuck together.
+
+```text
+[][]      Square-Block - good filler in flat areas,
+[][]         hard to place in jagged areas
+
+[][][]    L-Block - fits well into deep holes
+[]
+
+[][]    S-Block - good filler in jagged areas,
+[][]         hard to place in flat areas
+
+[][][]    T-Block - good average piece, can fit
+[]         almost anywhere well
+
+[][]      Reverse S-Block (Or Z-Block) - good
+[][]       filler in jagged areas, hard to
+place in flat areas
+
+[][][]    Reverse L-Block - fits well into
+[]       deep holes
+
+[][][][]  I-Bar - Only piece that allows you to
+clear 4 lines at once (aka a Tetris)
+```
+
+Scoring System:
+Note: Points are scored using level + 1 so that points are still scored at level 0.
+-- 1 Line  = 50*(level + 1) points
+-- 2 Lines = 150*(level + 1) points
+-- 3 Lines = 350*(level + 1) points
+-- 4 Lines = 1000*(level + 1) points (aka a Tetris)
+-- Clear the board = 2000*(level + 1)
+-- Every piece = 10*(level + 1) points
+
+## THINGS TO TRY
+
+Beat your highest score.
+
+## EXTENDING THE MODEL
+
+Add options for changing the width and depth of the well.
+
+Add the option of including pieces composed of more than four blocks, or fewer.
+
+## NETLOGO FEATURES
+
+This model makes use of turtle breeds.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2001).  NetLogo Tetris model.  http://ccl.northwestern.edu/netlogo/models/Tetris.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 -->
