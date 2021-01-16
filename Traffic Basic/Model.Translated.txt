@@ -38,11 +38,6 @@ This model models the movement of <color=blue>cars </color> on a highway. Eac
 该模型模拟了<color=blue>汽车</color>在高速公路上。每<color=blue>车</color>遵循一组简单的规则：减慢（<trigger=deceleration,#c1b90fff>减速</trigger>），如果看到<color=blue>车</color>靠近前方<trigger=speed>速度</trigger>上（<trigger=acceleration,green>加速</trigger>），如果没有看到<color=blue>车</color>先。
 
 ### Source
-"Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>."
-### Chinese ***
-“要查看社区对此模型所提出问题的答案或您对这些问题的答案？单击“<b>转到问答面板”</b> 。”
-
-### Source
 <color=red>red car</color> speed 
 ### Chinese ***
 <color=red>红车</color>速度
@@ -256,6 +251,11 @@ Try making a model of two-lane traffic.
 Try other rules for <trigger=speed>speeding </trigger> up and slowing  down. Is the rule presented here realistic? Are there other rules that are more accurate or represent better driving strategies?
 ### Chinese ***
 尝试其他规则<trigger=speed>超速</trigger>加快减速。这里提出的规则是否现实？还有其他更准确的规则或代表更好的驾驶策略的规则吗？
+
+### Source
+Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
+### Chinese ***
+是否希望查看社区或您对此模型中提出的问题的答案？点击<b>进入问与答面板</b>。
 
 ### Source
 Wave phenomena
