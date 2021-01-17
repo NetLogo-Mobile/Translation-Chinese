@@ -2,16 +2,16 @@
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 number
-### Chinese ***
+### Chinese
 海龟数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

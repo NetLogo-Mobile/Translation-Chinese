@@ -2,82 +2,82 @@
 ## Plots
 ### Source
 %
-### Chinese ***
+### Chinese
 %
 
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ### Source
 Number-unhappy
-### Chinese ***
+### Chinese
 不满意的人数
 
 ### Source
 percent
-### Chinese ***
+### Chinese
 百分比
 
 ### Source
 Percent Similar
-### Chinese ***
+### Chinese
 邻居相似的百分比
 
 ### Source
 time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 # agents
-### Chinese ***
+### Chinese
 人数
 
 ### Source
 % similar
-### Chinese ***
+### Chinese
 邻居相似百分比
 
 ### Source
 % unhappy
-### Chinese ***
+### Chinese
 不满意的百分比
 
 ### Source
 %-similar-wanted
-### Chinese ***
+### Chinese
 希望邻居相似程度 %
 
 ### Source
 density
-### Chinese ***
+### Chinese
 人口密度
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 go once
-### Chinese ***
+### Chinese
 运行一次
 
 ### Source
 num-unhappy
-### Chinese ***
+### Chinese
 不开心的人数
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 visualization
-### Chinese ***
+### Chinese
 可视化模式
 

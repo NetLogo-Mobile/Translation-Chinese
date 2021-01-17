@@ -2,61 +2,61 @@
 ## Widgets
 ### Source
 DOWN
-### Chinese ***
+### Chinese
 向下
 
 ### Source
 Frog Jumps
-### Chinese ***
+### Chinese
 青蛙跳跃次数
 
 ### Source
 Frogs Left
-### Chinese ***
+### Chinese
 剩余青蛙
 
 ### Source
 LEFT
-### Chinese ***
+### Chinese
 向左
 
 ### Source
 Level
-### Chinese ***
+### Chinese
 难度
 
 ### Source
 New Game
-### Chinese ***
+### Chinese
 新游戏
 
 ### Source
 RIGHT
-### Chinese ***
+### Chinese
 向右
 
 ### Source
 start-level
-### Chinese ***
+### Chinese
 开始难度
 
 ### Source
 start-lives
-### Chinese ***
+### Chinese
 开始有几条命
 
 ### Source
 start-time
-### Chinese ***
+### Chinese
 过关时间
 
 ### Source
 Time Left
-### Chinese ***
+### Chinese
 剩余时间
 
 ### Source
 UP
-### Chinese ***
+### Chinese
 向上
 

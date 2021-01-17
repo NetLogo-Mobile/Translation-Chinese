@@ -1,138 +1,139 @@
-﻿## Language = Chinese
-## Widgets
-### Source
-acceleration
-### Chinese ***
-加速
-
-### Source
-deceleration
-### Chinese ***
-减速
-
-### Source
-follow selected car
-### Chinese ***
-跟随选定的汽车
-
-### Source
-go
-### Chinese ***
-运行
-
-### Source
-go once
-### Chinese ***
-运行一次
-
-### Source
-max-patience
-### Chinese ***
-最大耐心
-
-### Source
-mean speed
-### Chinese ***
-平均速度
-
-### Source
-number-of-cars
-### Chinese ***
-汽车数量
-
-### Source
-reset perspective
-### Chinese ***
-重设视角
-
-### Source
-select car
-### Chinese ***
-选择一辆车
-
-### Source
-selected car speed
-### Chinese ***
-所选车速
-
-### Source
-setup
-### Chinese ***
-设置
-
-### Source
-watch selected car
-### Chinese ***
-观察选定车辆
-
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
 ## Plots
 ### Source
 1
-### Chinese ***
+### Chinese
 1
 
 ### Source
 2
-### Chinese ***
+### Chinese
 2
 
 ### Source
 average
-### Chinese ***
+### Chinese
 平均
 
 ### Source
 Car Speeds
-### Chinese ***
+### Chinese
 车速
 
 ### Source
 Cars
-### Chinese ***
+### Chinese
 汽车
 
 ### Source
 Cars Per Lane
-### Chinese ***
+### Chinese
 每车道车数
 
 ### Source
 Driver Patience
-### Chinese ***
+### Chinese
 驾驶员耐心
 
 ### Source
 max
-### Chinese ***
+### Chinese
 最高
 
 ### Source
 min
-### Chinese ***
+### Chinese
 最低
 
 ### Source
 Patience
-### Chinese ***
+### Chinese
 耐心
 
 ### Source
 selected car
-### Chinese ***
+### Chinese
 选定车辆
 
 ### Source
 selected-car
-### Chinese ***
+### Chinese
 选定车辆
 
 ### Source
 Speed
-### Chinese ***
+### Chinese
 速度
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
+
+## Widgets
+### Source
+acceleration
+### Chinese
+加速
+
+### Source
+deceleration
+### Chinese
+减速
+
+### Source
+follow selected car
+### Chinese
+跟随选定的汽车
+
+### Source
+go
+### Chinese
+运行
+
+### Source
+go once
+### Chinese
+运行一次
+
+### Source
+max-patience
+### Chinese
+最大耐心
+
+### Source
+mean speed
+### Chinese
+平均速度
+
+### Source
+number-of-cars
+### Chinese
+汽车数量
+
+### Source
+reset perspective
+### Chinese
+重设视角
+
+### Source
+select car
+### Chinese
+选择一辆车
+
+### Source
+selected car speed
+### Chinese
+所选车速
+
+### Source
+setup
+### Chinese
+设置
+
+### Source
+watch selected car
+### Chinese
+观察选定车辆
 

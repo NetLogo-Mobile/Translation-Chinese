@@ -2,31 +2,31 @@
 ## Widgets
 ### Source
 density
-### Chinese ***
+### Chinese
 密度
 
 ### Source
 dump-sand
-### Chinese ***
+### Chinese
 放下一堆沙子
 
 ### Source
 go
-### Chinese ***
+### Chinese
 进行
 
 ### Source
 release-chance
-### Chinese ***
+### Chinese
 落沙几率
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 spacing
-### Chinese ***
+### Chinese
 落沙间距
 

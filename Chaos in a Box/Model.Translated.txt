@@ -2,46 +2,46 @@
 ## Widgets
 ### Source
 clear-drawing
-### Chinese ***
+### Chinese
 清除图案
 
 ### Source
 drag
-### Chinese ***
+### Chinese
 拖动模式
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 num-obstacles
-### Chinese ***
+### Chinese
 障碍数量
 
 ### Source
 setup-periodic-quilt
-### Chinese ***
+### Chinese
 预设：长期规律轨迹
 
 ### Source
 setup-periodic-x
-### Chinese ***
+### Chinese
 预设：规律轨迹
 
 ### Source
 setup-random
-### Chinese ***
+### Chinese
 随机设置
 
 ### Source
 trace-path?
-### Chinese ***
+### Chinese
 跟踪路径？
 
 ### Source
 two-balls?
-### Chinese ***
+### Chinese
 两颗小球？
 

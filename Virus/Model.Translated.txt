@@ -2,87 +2,87 @@
 ## Plots
 ### Source
 healthy
-### Chinese ***
+### Chinese
 健康
 
 ### Source
 immune
-### Chinese ***
+### Chinese
 已免疫
 
 ### Source
 people
-### Chinese ***
+### Chinese
 人数
 
 ### Source
 Populations
-### Chinese ***
+### Chinese
 人口
 
 ### Source
 sick
-### Chinese ***
+### Chinese
 病人
 
 ### Source
 total
-### Chinese ***
+### Chinese
 所有人
 
 ### Source
 weeks
-### Chinese ***
+### Chinese
 周
 
 ## Widgets
 ### Source
 %immune
-### Chinese ***
+### Chinese
 免疫百分比
 
 ### Source
 %infected
-### Chinese ***
+### Chinese
 感染百分比
 
 ### Source
 chance-recover
-### Chinese ***
+### Chinese
 康复几率
 
 ### Source
 duration
-### Chinese ***
+### Chinese
 持续时间
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 infectiousness
-### Chinese ***
+### Chinese
 传染性
 
 ### Source
 number-people
-### Chinese ***
+### Chinese
 人数
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 turtle-shape
-### Chinese ***
+### Chinese
 海龟形状
 
 ### Source
 years
-### Chinese ***
+### Chinese
 经过时间（年）
 

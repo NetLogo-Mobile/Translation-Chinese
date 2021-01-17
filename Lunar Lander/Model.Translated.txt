@@ -2,41 +2,41 @@
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 进行
 
 ### Source
 left
-### Chinese ***
+### Chinese
 左转
 
 ### Source
 platform-width
-### Chinese ***
+### Chinese
 登陆平台宽度
 
 ### Source
 right
-### Chinese ***
+### Chinese
 右转
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 terrain-bumpiness
-### Chinese ***
+### Chinese
 地形凹凸
 
 ### Source
 thrust
-### Chinese ***
+### Chinese
 施加推力
 
 ### Source
 thrust-amount
-### Chinese ***
+### Chinese
 每次推力
 

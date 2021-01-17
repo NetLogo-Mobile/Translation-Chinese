@@ -1,103 +1,103 @@
 ﻿## Language = Chinese
-## Widgets
-### Source
-albedo-of-blacks
-### Chinese ***
-黑色雏菊的反射率
-
-### Source
-albedo-of-surface
-### Chinese ***
-表面反射率
-
-### Source
-albedo-of-whites
-### Chinese ***
-黑色雏菊的反照率
-
-### Source
-go
-### Chinese ***
-运行
-
-### Source
-paint daisies
-### Chinese ***
-开启绘画模式
-
-### Source
-paint-daisies-as
-### Chinese ***
-笔刷模式
-
-### Source
-remove all daisies
-### Chinese ***
-删除所有雏菊
-
-### Source
-scenario
-### Chinese ***
-情景模式
-
-### Source
-setup
-### Chinese ***
-设置
-
-### Source
-show-daisies?
-### Chinese ***
-显示雏菊？
-
-### Source
-show-temp-map?
-### Chinese ***
-显示温度图？
-
-### Source
-solar-luminosity
-### Chinese ***
-太阳亮度
-
-### Source
-start-%-blacks
-### Chinese ***
-起始黑色雏菊比例
-
-### Source
-start-%-whites
-### Chinese ***
-起始白色雏菊比例
-
 ## Plots
 ### Source
 black
-### Chinese ***
+### Chinese
 黑色
 
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ### Source
 Global Temperature
-### Chinese ***
+### Chinese
 全局温度
 
 ### Source
 Luminosity
-### Chinese ***
+### Chinese
 亮度
 
 ### Source
 Population
-### Chinese ***
+### Chinese
 种群数量
 
 ### Source
 white
-### Chinese ***
+### Chinese
 白色
+
+## Widgets
+### Source
+albedo-of-blacks
+### Chinese
+黑色雏菊的反射率
+
+### Source
+albedo-of-surface
+### Chinese
+表面反射率
+
+### Source
+albedo-of-whites
+### Chinese
+黑色雏菊的反照率
+
+### Source
+go
+### Chinese
+运行
+
+### Source
+paint daisies
+### Chinese
+开启绘画模式
+
+### Source
+paint-daisies-as
+### Chinese
+笔刷模式
+
+### Source
+remove all daisies
+### Chinese
+删除所有雏菊
+
+### Source
+scenario
+### Chinese
+情景模式
+
+### Source
+setup
+### Chinese
+设置
+
+### Source
+show-daisies?
+### Chinese
+显示雏菊？
+
+### Source
+show-temp-map?
+### Chinese
+显示温度图？
+
+### Source
+solar-luminosity
+### Chinese
+太阳亮度
+
+### Source
+start-%-blacks
+### Chinese
+起始黑色雏菊比例
+
+### Source
+start-%-whites
+### Chinese
+起始白色雏菊比例
 

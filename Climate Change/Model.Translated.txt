@@ -2,67 +2,67 @@
 ## Plots
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ### Source
 Global Temperature
-### Chinese ***
+### Chinese
 全球温度
 
 ## Widgets
 ### Source
 add cloud
-### Chinese ***
+### Chinese
 添加云彩
 
 ### Source
 add CO2
-### Chinese ***
+### Chinese
 添加二氧化碳
 
 ### Source
 albedo
-### Chinese ***
+### Chinese
 反射率
 
 ### Source
 CO2 amount
-### Chinese ***
+### Chinese
 二氧化碳数量
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 remove cloud
-### Chinese ***
+### Chinese
 去除云彩
 
 ### Source
 remove CO2
-### Chinese ***
+### Chinese
 去除二氧化碳
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 sun-brightness
-### Chinese ***
+### Chinese
 阳光亮度
 
 ### Source
 temperature
-### Chinese ***
+### Chinese
 温度
 
 ### Source
 watch a ray
-### Chinese ***
+### Chinese
 观察一条入射光
 

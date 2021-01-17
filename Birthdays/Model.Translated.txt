@@ -2,21 +2,21 @@
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 进行
 
 ### Source
 go once
-### Chinese ***
+### Chinese
 进行一次
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 success rate
-### Chinese ***
+### Chinese
 成功率
 

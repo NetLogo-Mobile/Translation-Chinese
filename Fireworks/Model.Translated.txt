@@ -2,46 +2,46 @@
 ## Widgets
 ### Source
 fade-amount
-### Chinese ***
+### Chinese
 淡出幅度
 
 ### Source
 fragments
-### Chinese ***
+### Chinese
 碎片数量
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 gravity
-### Chinese ***
+### Chinese
 重力
 
 ### Source
 initial-x-vel
-### Chinese ***
+### Chinese
 初始横向速度
 
 ### Source
 initial-y-vel
-### Chinese ***
+### Chinese
 初始纵向速度
 
 ### Source
 max-fireworks
-### Chinese ***
+### Chinese
 最大烟花数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 trails?
-### Chinese ***
+### Chinese
 显示踪迹？
 

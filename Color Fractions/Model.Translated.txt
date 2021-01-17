@@ -2,26 +2,26 @@
 ## Widgets
 ### Source
 denominator
-### Chinese ***
+### Chinese
 分母
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 numerator
-### Chinese ***
+### Chinese
 分子
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 width
-### Chinese ***
+### Chinese
 表格宽度
 

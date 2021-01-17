@@ -2,142 +2,142 @@
 ## Plots
 ### Source
 avg-energy
-### Chinese ***
+### Chinese
 平均能量
 
 ### Source
 avg-speed
-### Chinese ***
+### Chinese
 平均速度
 
 ### Source
 count (%)
-### Chinese ***
+### Chinese
 数量 (%)
 
 ### Source
 Energy
-### Chinese ***
+### Chinese
 能量
 
 ### Source
 Energy Histogram
-### Chinese ***
+### Chinese
 能量直方图
 
 ### Source
 fast
-### Chinese ***
+### Chinese
 快速
 
 ### Source
 init-avg-energy
-### Chinese ***
+### Chinese
 初始平均能量
 
 ### Source
 init-avg-speed
-### Chinese ***
+### Chinese
 初始平均速度
 
 ### Source
 medium
-### Chinese ***
+### Chinese
 中速
 
 ### Source
 Number
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 slow
-### Chinese ***
+### Chinese
 慢速
 
 ### Source
 Speed
-### Chinese ***
+### Chinese
 速度
 
 ### Source
 Speed Counts
-### Chinese ***
+### Chinese
 速度计数
 
 ### Source
 Speed Histogram
-### Chinese ***
+### Chinese
 速度直方图
 
 ### Source
 time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 average energy
-### Chinese ***
+### Chinese
 平均能量
 
 ### Source
 average speed
-### Chinese ***
+### Chinese
 平均速度
 
 ### Source
 clear trace
-### Chinese ***
+### Chinese
 清除轨迹
 
 ### Source
 collide?
-### Chinese ***
+### Chinese
 碰撞？
 
 ### Source
 go/stop
-### Chinese ***
+### Chinese
 进行/停下
 
 ### Source
 init-particle-speed
-### Chinese ***
+### Chinese
 初始粒子速度
 
 ### Source
 number-of-particles
-### Chinese ***
+### Chinese
 粒子数量
 
 ### Source
 particle-mass
-### Chinese ***
+### Chinese
 粒子质量
 
 ### Source
 percent fast
-### Chinese ***
+### Chinese
 快速百分比
 
 ### Source
 percent medium
-### Chinese ***
+### Chinese
 中速百分比
 
 ### Source
 percent slow
-### Chinese ***
+### Chinese
 慢速百分比
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 trace?
-### Chinese ***
+### Chinese
 显示轨迹？
 

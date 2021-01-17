@@ -2,21 +2,21 @@
 ## Widgets
 ### Source
 density
-### Chinese ***
+### Chinese
 木屑密度
 
 ### Source
 go
-### Chinese ***
+### Chinese
 开始
 
 ### Source
 number
-### Chinese ***
+### Chinese
 白蚁数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

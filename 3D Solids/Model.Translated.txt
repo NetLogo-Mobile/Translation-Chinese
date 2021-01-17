@@ -2,66 +2,66 @@
 ## Widgets
 ### Source
 display-color
-### Chinese ***
+### Chinese
 显示颜色
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 num-turtles
-### Chinese ***
+### Chinese
 海龟数量
 
 ### Source
 setup-cone
-### Chinese ***
+### Chinese
 设置为圆锥体
 
 ### Source
 setup-cube-filled
-### Chinese ***
+### Chinese
 设置为实心方块
 
 ### Source
 setup-cube-surface
-### Chinese ***
+### Chinese
 设置为空心方块
 
 ### Source
 setup-cylinder-h
-### Chinese ***
+### Chinese
 设置为放倒的圆柱体
 
 ### Source
 setup-cylinder-v
-### Chinese ***
+### Chinese
 设置为直立的圆柱体
 
 ### Source
 setup-pyramid
-### Chinese ***
+### Chinese
 设置为金字塔形
 
 ### Source
 setup-sphere
-### Chinese ***
+### Chinese
 设置为球形
 
 ### Source
 shape-size
-### Chinese ***
+### Chinese
 形状大小
 
 ### Source
 theta-velocity
-### Chinese ***
+### Chinese
 视角旋转速度
 
 ### Source
 view
-### Chinese ***
+### Chinese
 视图
 

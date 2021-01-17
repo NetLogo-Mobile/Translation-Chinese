@@ -2,36 +2,36 @@
 ## Widgets
 ### Source
 ants-released
-### Chinese ***
+### Chinese
 已放出的蚂蚁
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 leader-heading
-### Chinese ***
+### Chinese
 领行者的角度
 
 ### Source
 leader-wiggle-angle
-### Chinese ***
+### Chinese
 领行者的摆动角度
 
 ### Source
 num-ants
-### Chinese ***
+### Chinese
 蚂蚁数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 start-delay
-### Chinese ***
+### Chinese
 蚂蚁间隔时间
 

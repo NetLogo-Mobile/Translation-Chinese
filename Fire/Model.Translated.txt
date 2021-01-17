@@ -2,21 +2,21 @@
 ## Widgets
 ### Source
 density
-### Chinese ***
+### Chinese
 森林密度
 
 ### Source
 go
-### Chinese ***
+### Chinese
 进行
 
 ### Source
 percent burned
-### Chinese ***
+### Chinese
 过火百分比
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

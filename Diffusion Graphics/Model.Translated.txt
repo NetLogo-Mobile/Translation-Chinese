@@ -2,36 +2,36 @@
 ## Widgets
 ### Source
 diffusion-rate
-### Chinese ***
+### Chinese
 扩散速率
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 num-turtles
-### Chinese ***
+### Chinese
 海龟数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 turtle-heat
-### Chinese ***
+### Chinese
 海龟散热幅度
 
 ### Source
 turtle-speed
-### Chinese ***
+### Chinese
 海龟速度
 
 ### Source
 wander?
-### Chinese ***
+### Chinese
 随机漫步？
 

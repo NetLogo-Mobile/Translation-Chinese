@@ -2,31 +2,31 @@
 ## Widgets
 ### Source
 clock
-### Chinese ***
+### Chinese
 时钟
 
 ### Source
 go
-### Chinese ***
+### Chinese
 进行
 
 ### Source
 mark/unmark
-### Chinese ***
+### Chinese
 标记/未标记
 
 ### Source
 mine-count
-### Chinese ***
+### Chinese
 地雷计数
 
 ### Source
 mines marked
-### Chinese ***
+### Chinese
 标记的地雷
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

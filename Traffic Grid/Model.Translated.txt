@@ -2,102 +2,102 @@
 ## Plots
 ### Source
 Average Speed
-### Chinese ***
+### Chinese
 平均速度
 
 ### Source
 Average Speed of Cars
-### Chinese ***
+### Chinese
 汽车平均速度
 
 ### Source
 Average Wait
-### Chinese ***
+### Chinese
 平均等待
 
 ### Source
 Average Wait Time of Cars
-### Chinese ***
+### Chinese
 汽车平均等待时间
 
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ### Source
 Stopped Cars
-### Chinese ***
+### Chinese
 停止的汽车
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 Change light
-### Chinese ***
+### Chinese
 切换交通灯
 
 ### Source
 Current Phase
-### Chinese ***
+### Chinese
 当前阶段
 
 ### Source
 current-auto?
-### Chinese ***
+### Chinese
 自动控制当前交通灯？
 
 ### Source
 current-phase
-### Chinese ***
+### Chinese
 当前阶段
 
 ### Source
 Go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 grid-size-x
-### Chinese ***
+### Chinese
 横向网格大小
 
 ### Source
 grid-size-y
-### Chinese ***
+### Chinese
 纵向网格大小
 
 ### Source
 num-cars
-### Chinese ***
+### Chinese
 车辆数目
 
 ### Source
 power?
-### Chinese ***
+### Chinese
 启用交通灯？
 
 ### Source
 Select intersection
-### Chinese ***
+### Chinese
 选择路口
 
 ### Source
 Setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 speed-limit
-### Chinese ***
+### Chinese
 最大车速
 
 ### Source
 ticks-per-cycle
-### Chinese ***
+### Chinese
 交通灯周期（Ticks）
 

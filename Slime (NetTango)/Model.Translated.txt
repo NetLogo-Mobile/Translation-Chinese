@@ -1,78 +1,78 @@
 ﻿## Language = Chinese
-## Widgets
-### Source
-go
-### Chinese ***
-运行
-
-### Source
-population
-### Chinese ***
-人口
-
-### Source
-setup
-### Chinese ***
-设置
-
 ## NetTango
 ### Source
 °
-### Chinese ***
+### Chinese
 °
 
 ### Source
 amount
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 angle
-### Chinese ***
+### Chinese
 最大转向角度
 
 ### Source
 bias
-### Chinese ***
+### Chinese
 恒定转向值
 
 ### Source
 drop chemical
-### Chinese ***
+### Chinese
 放置化学信号
 
 ### Source
 forward
-### Chinese ***
+### Chinese
 前进
 
 ### Source
 if chemical strength
-### Chinese ***
+### Chinese
 如果化学信号的强度大于
 
 ### Source
 slime actions
-### Chinese ***
+### Chinese
 史莱姆的行为
 
 ### Source
 sniff-angle
-### Chinese ***
+### Chinese
 识别区域的角度
 
 ### Source
 steps
-### Chinese ***
+### Chinese
 前进距离
 
 ### Source
 turn toward chemical
-### Chinese ***
+### Chinese
 转向化学信号
 
 ### Source
 wiggle
-### Chinese ***
+### Chinese
 随机摆动
+
+## Widgets
+### Source
+go
+### Chinese
+运行
+
+### Source
+population
+### Chinese
+人口
+
+### Source
+setup
+### Chinese
+设置
 

@@ -2,132 +2,132 @@
 ## Plots
 ### Source
 anthocyanin
-### Chinese ***
+### Chinese
 花青素
 
 ### Source
 attachedness
-### Chinese ***
+### Chinese
 附着程度
 
 ### Source
 carotene
-### Chinese ***
+### Chinese
 胡萝卜素
 
 ### Source
 chlorophyll
-### Chinese ***
+### Chinese
 叶绿素
 
 ### Source
 dead leaves
-### Chinese ***
+### Chinese
 枯叶
 
 ### Source
 Leaf averages
-### Chinese ***
+### Chinese
 叶片平均情况
 
 ### Source
 leaves
-### Chinese ***
+### Chinese
 叶片
 
 ### Source
 Leaves
-### Chinese ***
+### Chinese
 叶片
 
 ### Source
 rain
-### Chinese ***
+### Chinese
 下雨
 
 ### Source
 sugar
-### Chinese ***
+### Chinese
 糖分
 
 ### Source
 sunlight
-### Chinese ***
+### Chinese
 阳光
 
 ### Source
 temperature
-### Chinese ***
+### Chinese
 温度
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ### Source
 water
-### Chinese ***
+### Chinese
 水分
 
 ### Source
 Weather conditions
-### Chinese ***
+### Chinese
 天气状况
 
 ### Source
 wind
-### Chinese ***
+### Chinese
 刮风
 
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 leaf-display-mode
-### Chinese ***
+### Chinese
 叶片显示模式
 
 ### Source
 number-of-leaves
-### Chinese ***
+### Chinese
 叶片数量
 
 ### Source
 rain-intensity
-### Chinese ***
+### Chinese
 降雨强度
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 start-sugar-mean
-### Chinese ***
+### Chinese
 起始平均糖分
 
 ### Source
 start-sugar-stddev
-### Chinese ***
+### Chinese
 起始糖分标准差
 
 ### Source
 sun-intensity
-### Chinese ***
+### Chinese
 日照强度
 
 ### Source
 temperature
-### Chinese ***
+### Chinese
 温度
 
 ### Source
 wind-factor
-### Chinese ***
+### Chinese
 风的因素
 

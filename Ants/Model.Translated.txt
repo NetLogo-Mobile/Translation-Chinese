@@ -2,57 +2,57 @@
 ## Plots
 ### Source
 food
-### Chinese ***
+### Chinese
 食物
 
 ### Source
 Food in each pile
-### Chinese ***
+### Chinese
 每堆中的食物
 
 ### Source
 food-in-pile1
-### Chinese ***
+### Chinese
 堆中食物 1
 
 ### Source
 food-in-pile2
-### Chinese ***
+### Chinese
 堆中食物 2
 
 ### Source
 food-in-pile3
-### Chinese ***
+### Chinese
 堆中食物 3
 
 ### Source
 time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 diffusion-rate
-### Chinese ***
+### Chinese
 化学信号扩散率
 
 ### Source
 evaporation-rate
-### Chinese ***
+### Chinese
 化学信号蒸发率
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 population
-### Chinese ***
+### Chinese
 种群数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
