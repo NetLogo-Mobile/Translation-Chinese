@@ -1,10 +1,9 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 % of nodes
 ### Chinese ***
-节点数
+节点数量
 
 ### Source
 infected
@@ -19,7 +18,7 @@ Network Status
 ### Source
 resistant
 ### Chinese ***
-抵抗的
+产生抗性
 
 ### Source
 susceptible
@@ -35,37 +34,37 @@ time
 ### Source
 average-node-degree
 ### Chinese ***
-平均节点度
+平均节点的连接度
 
 ### Source
 gain-resistance-chance
 ### Chinese ***
-增益电阻机会
+获得抗性几率
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 initial-outbreak-size
 ### Chinese ***
-初次爆发规模
+首次爆发规模
 
 ### Source
 number-of-nodes
 ### Chinese ***
-节点数
+节点数量
 
 ### Source
 recovery-chance
 ### Chinese ***
-恢复机会
+恢复几率
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 virus-check-frequency
@@ -75,5 +74,5 @@ virus-check-frequency
 ### Source
 virus-spread-chance
 ### Chinese ***
-病毒传播机会
+病毒传播几率
 

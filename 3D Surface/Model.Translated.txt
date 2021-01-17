@@ -1,18 +1,17 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 number
 ### Chinese ***
-数
+海龟数量
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 

@@ -4,22 +4,22 @@
 ### Source
 #
 ### Chinese ***
-＃
+数量
 
 ### Source
 bodies
 ### Chinese ***
-身体
+中部
 
 ### Source
 heads
 ### Chinese ***
-头
+头部
 
 ### Source
 tails
 ### Chinese ***
-尾巴
+尾部
 
 ### Source
 time
@@ -29,41 +29,41 @@ time
 ### Source
 Turtle Count
 ### Chinese ***
-龟数
+海龟数量
 
 ### Source
 unattached
 ### Chinese ***
-独立的
+尚未连接
 
 ## Widgets
 ### Source
 far-radius
 ### Chinese ***
-半径
+寻找半径（外侧）
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 near-radius
 ### Chinese ***
-近半径
+寻找半径（内侧）
 
 ### Source
 population
 ### Chinese ***
-人口
+海龟数量
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 waver
 ### Chinese ***
-动摇
+随机摆动的幅度
 

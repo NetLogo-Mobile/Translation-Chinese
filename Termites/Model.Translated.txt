@@ -1,23 +1,22 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 density
 ### Chinese ***
-密度
+木屑密度
 
 ### Source
 go
 ### Chinese ***
-走
+开始
 
 ### Source
 number
 ### Chinese ***
-数
+白蚁数量
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 

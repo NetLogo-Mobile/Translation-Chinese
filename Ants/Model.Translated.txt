@@ -1,30 +1,29 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 food
 ### Chinese ***
-餐饮
+食物
 
 ### Source
 Food in each pile
 ### Chinese ***
-每堆食物
+每堆中的食物
 
 ### Source
 food-in-pile1
 ### Chinese ***
-堆中食物1
+堆中食物 1
 
 ### Source
 food-in-pile2
 ### Chinese ***
-堆中食物2
+堆中食物 2
 
 ### Source
 food-in-pile3
 ### Chinese ***
-堆中食物3
+堆中食物 3
 
 ### Source
 time
@@ -35,25 +34,25 @@ time
 ### Source
 diffusion-rate
 ### Chinese ***
-扩散率
+化学信号扩散率
 
 ### Source
 evaporation-rate
 ### Chinese ***
-蒸发率
+化学信号蒸发率
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 population
 ### Chinese ***
-人口
+种群数量
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 

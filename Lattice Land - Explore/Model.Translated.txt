@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 action
@@ -9,22 +8,22 @@ action
 ### Source
 check-area
 ### Chinese ***
-检查区
+检查区域
 
 ### Source
 clear-polygons
 ### Chinese ***
-透明多边形
+清除多边形
 
 ### Source
 clear-segments
 ### Chinese ***
-清晰段
+清除线段
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 height
@@ -39,7 +38,7 @@ perimeter
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 unit-size

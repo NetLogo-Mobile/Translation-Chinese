@@ -19,12 +19,12 @@ count
 ### Source
 count (%)
 ### Chinese ***
-数（％）
+数量 (%)
 
 ### Source
 energy
 ### Chinese ***
-能源
+能量
 
 ### Source
 Energy Histogram
@@ -49,12 +49,12 @@ init-avg-speed
 ### Source
 medium
 ### Chinese ***
-中
+中速
 
 ### Source
 slow
 ### Chinese ***
-慢
+慢速
 
 ### Source
 speed
@@ -74,7 +74,7 @@ Speed Histogram
 ### Source
 ticks
 ### Chinese ***
-滴答声
+时钟周期
 
 ## Widgets
 ### Source
@@ -105,7 +105,7 @@ collide?
 ### Source
 go/stop
 ### Chinese ***
-去/停
+运行/停下
 
 ### Source
 init-particle-speed
@@ -115,7 +115,7 @@ init-particle-speed
 ### Source
 number-of-particles
 ### Chinese ***
-粒子数
+粒子数量
 
 ### Source
 particle-mass
@@ -130,20 +130,20 @@ percent fast
 ### Source
 percent medium
 ### Chinese ***
-中等百分比
+中速百分比
 
 ### Source
 percent slow
 ### Chinese ***
-慢百分比
+慢速百分比
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 trace?
 ### Chinese ***
-跟踪？
+跟踪轨迹？
 

@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 # of people
@@ -9,7 +8,7 @@
 ### Source
 % infected
 ### Chinese ***
-％ 已感染
+感染百分比
 
 ### Source
 % recovered
@@ -19,12 +18,12 @@
 ### Source
 % total pop
 ### Chinese ***
-总流行百分比
+占人口的比例
 
 ### Source
 Cumulative Infected and Recovered
 ### Chinese ***
-累积感染和恢复
+累计感染和康复
 
 ### Source
 hours
@@ -39,7 +38,7 @@ Infected
 ### Source
 Infection and Recovery Rates
 ### Chinese ***
-感染和恢复率
+感染和康复率
 
 ### Source
 Infection Rate
@@ -64,23 +63,23 @@ rate
 ### Source
 Recovery Rate
 ### Chinese ***
-恢复率
+康复率
 
 ## Widgets
 ### Source
 average-recovery-time
 ### Chinese ***
-平均恢复时间
+平均康复时间
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 infection-chance
 ### Chinese ***
-感染机会
+感染几率
 
 ### Source
 initial-people
@@ -90,15 +89,15 @@ initial-people
 ### Source
 R0
 ### Chinese ***
-00
+R0
 
 ### Source
 recovery-chance
 ### Chinese ***
-恢复机会
+康复几率
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 

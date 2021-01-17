@@ -19,7 +19,7 @@ min speed
 ### Source
 red car
 ### Chinese ***
-红车
+红车速度
 
 ### Source
 speed
@@ -60,7 +60,7 @@ Accuracy of Driving Rules
 ### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo Traffic Basic model by Uri Wilensky.
 ### Chinese ***
-作者：郑志刚，陈翰。基于Uri Wilensky的NetLogo Traffic Basic模型。
+作者：Charles Cheng, John Chen。基于 Uri Wilensky 的 NetLogo 基础交通模型。
 
 ### Source
 Congratulations! 
@@ -70,12 +70,12 @@ Congratulations! 
 ### Source
 Deceleration 
 ### Chinese ***
-减速
+减速 
 
 ### Source
 deceleration 
 ### Chinese ***
-减速
+减速 
 
 ### Source
 Different Vehicles, Different Rules
@@ -85,7 +85,7 @@ Different Vehicles, Different Rules
 ### Source
 Driving Habits and Response Times
 ### Chinese ***
-驾驶习惯和响应时间
+驾驶习惯和反应时间
 
 ### Source
 Even though all of the <color=blue>cars </color> are moving forward , the <color=red>traffic jams</color> tend to move backwards .
@@ -95,7 +95,7 @@ Even though all of the <color=blue>cars </color> are moving forward , the 
 ### Source
 Goals 
 ### Chinese ***
-目标
+目标 
 
 ### Source
 Imagine you are driving to your <color=green>local supermarket</color> to get some groceries  for the week. You look farther down the road  and there's a <color=red>traffic jam</color> forming. Oh no! How will you ever get home  in time for supper? As you wait for the <color=blue>car </color> in front of you to move forward , you wonder: <i>why do <color=red>traffic jams</color> form even though no accidents have occurred?</i> Click <b>next</b> to explore how <color=red>traffic jams</color> form.
@@ -265,7 +265,7 @@ Wave phenomena
 ### Source
 Welcome to the Basic Traffic Model! 
 ### Chinese ***
-欢迎使用基本流量模型！ 
+欢迎使用交通堵塞：单车道模型！ 
 
 ### Source
 Well done! You have completed the Traffic-Basic model tutorial! Time to play with the model!
@@ -303,10 +303,10 @@ Why do traffic jams tend to move backwards?
  Examine factors that cause <color=red>traffic jams</color> to form
  Explore how different driving habits affect others who share the <color=grey>road </color>
 ### Chinese ***
-why了解原因<color=red>交通堵塞</color>形成
-观察一个人的动作<color=blue>车辆</color>与集体
-检查导致因素<color=red>交通堵塞</color>来形成
-探索不同的驾驶习惯如何影响与他人分享<color=grey>路</color>
+ 理解<color=red>交通堵塞</color>形成的原因
+ 观察一个人的动作<color=blue>车辆</color>与集体
+ 检查导致因素<color=red>交通堵塞</color>来形成
+ 探索不同的驾驶习惯如何影响与他人分享<color=grey>路</color>
 
 ## Widgets
 ### Source
@@ -322,7 +322,7 @@ deceleration
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 number-of-cars
@@ -337,5 +337,5 @@ red car speed
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 

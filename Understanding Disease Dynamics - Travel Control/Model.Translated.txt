@@ -4,27 +4,27 @@
 ### Source
 # people
 ### Chinese ***
-＃个人
+人数
 
 ### Source
 % infected
 ### Chinese ***
-％ 已感染
+感染百分比
 
 ### Source
 % recovered
 ### Chinese ***
-回收百分比
+康复百分比
 
 ### Source
 % total pop.
 ### Chinese ***
-总流行百分比。
+占人口的比例
 
 ### Source
 Cumulative Infected and Recovered
 ### Chinese ***
-累积感染和恢复
+累计感染和康复
 
 ### Source
 hours
@@ -39,7 +39,7 @@ Infected
 ### Source
 Infection and Recovery Rates
 ### Chinese ***
-感染和恢复率
+感染和康复率
 
 ### Source
 Infection Rate
@@ -64,81 +64,81 @@ rate
 ### Source
 Recovery Rate
 ### Chinese ***
-恢复率
+康复率
 
 ## Widgets
 ### Source
 average-hospital-going-tendency
 ### Chinese ***
-医院平均往来趋势
+平均前往医院几率
 
 ### Source
 average-isolation-tendency
 ### Chinese ***
-平均隔离倾向
+平均接受隔离几率
 
 ### Source
 average-recovery-time
 ### Chinese ***
-平均恢复时间
+平均康复时间
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 infection-chance
 ### Chinese ***
-感染机会
+感染几率
 
 ### Source
 initial-ambulance
 ### Chinese ***
-最初的救护车
+救护车数量
 
 ### Source
 initial-people
 ### Chinese ***
-最初的人
+人口数量
 
 ### Source
 inoculation-chance
 ### Chinese ***
-接种机会
+接种疫苗几率
 
 ### Source
 intra-mobility
 ### Chinese ***
-流动性
+人口两侧流动性
 
 ### Source
 links?
 ### Chinese ***
-链接？
+显示链接？
 
 ### Source
 R0
 ### Chinese ***
-00
+R0
 
 ### Source
 recovery-chance
 ### Chinese ***
-恢复机会
+康复机会
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 travel?
 ### Chinese ***
-旅行？
+两侧之间存在旅行？
 
 ### Source
 travel-tendency
 ### Chinese ***
-旅行倾向
+旅行几率
 

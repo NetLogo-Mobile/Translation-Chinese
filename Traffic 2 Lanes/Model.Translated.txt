@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 acceleration
@@ -19,12 +18,12 @@ follow selected car
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 go once
 ### Chinese ***
-去一次
+运行一次
 
 ### Source
 max-patience
@@ -49,7 +48,7 @@ reset perspective
 ### Source
 select car
 ### Chinese ***
-选择车
+选择一辆车
 
 ### Source
 selected car speed
@@ -59,18 +58,18 @@ selected car speed
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 watch selected car
 ### Chinese ***
-看选车
+观察选定车辆
 
 ## Plots
 ### Source
 1
 ### Chinese ***
-1个
+1
 
 ### Source
 2
@@ -110,22 +109,22 @@ max
 ### Source
 min
 ### Chinese ***
-分
+最低
 
 ### Source
 Patience
 ### Chinese ***
-忍耐
+耐心
 
 ### Source
 selected car
 ### Chinese ***
-选车
+选定车辆
 
 ### Source
 selected-car
 ### Chinese ***
-选车
+选定车辆
 
 ### Source
 Speed

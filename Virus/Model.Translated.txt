@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 healthy
@@ -9,12 +8,12 @@ healthy
 ### Source
 immune
 ### Chinese ***
-免疫的
+已免疫
 
 ### Source
 people
 ### Chinese ***
-人
+人数
 
 ### Source
 Populations
@@ -24,12 +23,12 @@ Populations
 ### Source
 sick
 ### Chinese ***
-生病
+病人
 
 ### Source
 total
 ### Chinese ***
-总
+所有人
 
 ### Source
 weeks
@@ -45,12 +44,12 @@ weeks
 ### Source
 %infected
 ### Chinese ***
-％已感染
+感染百分比
 
 ### Source
 chance-recover
 ### Chinese ***
-机会恢复
+康复几率
 
 ### Source
 duration
@@ -60,7 +59,7 @@ duration
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 infectiousness
@@ -75,15 +74,15 @@ number-people
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 turtle-shape
 ### Chinese ***
-龟形
+海龟形状
 
 ### Source
 years
 ### Chinese ***
-年份
+经过时间（年）
 

@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 default
@@ -15,7 +14,7 @@ Global Temperature
 ### Source
 add cloud
 ### Chinese ***
-添加云
+添加云彩
 
 ### Source
 add CO2
@@ -25,22 +24,22 @@ add CO2
 ### Source
 albedo
 ### Chinese ***
-反照率
+反射率
 
 ### Source
 CO2 amount
 ### Chinese ***
-二氧化碳量
+二氧化碳数量
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 remove cloud
 ### Chinese ***
-去除云
+去除云彩
 
 ### Source
 remove CO2
@@ -50,12 +49,12 @@ remove CO2
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 sun-brightness
 ### Chinese ***
-阳光灿烂
+阳光亮度
 
 ### Source
 temperature
@@ -65,5 +64,5 @@ temperature
 ### Source
 watch a ray
 ### Chinese ***
-看射线
+观察一条入射光
 

@@ -1,26 +1,5 @@
 ﻿*** ea019251e9a1e995aee56207db61702e
 ## Language = Chinese
-## Plots
-### Source
-dist
-### Chinese ***
-dist
-
-### Source
-distance
-### Chinese ***
-距离
-
-### Source
-Distance from the origin
-### Chinese ***
-距原点的距离
-
-### Source
-time
-### Chinese ***
-时间
-
 ## Widgets
 ### Source
 all-circle
@@ -91,4 +70,25 @@ speed
 zero-circle
 ### Chinese ***
 零圆
+
+## Plots
+### Source
+dist
+### Chinese ***
+dist
+
+### Source
+distance
+### Chinese ***
+距离
+
+### Source
+Distance from the origin
+### Chinese ***
+距原点的距离
+
+### Source
+time
+### Chinese ***
+时间
 

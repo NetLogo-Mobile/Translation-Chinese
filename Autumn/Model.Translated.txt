@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 anthocyanin
@@ -9,7 +8,7 @@ anthocyanin
 ### Source
 attachedness
 ### Chinese ***
-依恋
+附着程度
 
 ### Source
 carotene
@@ -29,27 +28,27 @@ dead leaves
 ### Source
 Leaf averages
 ### Chinese ***
-叶平均值
+叶片平均情况
 
 ### Source
 leaves
 ### Chinese ***
-树叶
+叶片
 
 ### Source
 Leaves
 ### Chinese ***
-树叶
+叶片
 
 ### Source
 rain
 ### Chinese ***
-雨
+下雨
 
 ### Source
 sugar
 ### Chinese ***
-糖
+糖分
 
 ### Source
 sunlight
@@ -69,7 +68,7 @@ Time
 ### Source
 water
 ### Chinese ***
-水
+水分
 
 ### Source
 Weather conditions
@@ -79,43 +78,43 @@ Weather conditions
 ### Source
 wind
 ### Chinese ***
-风
+刮风
 
 ## Widgets
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 leaf-display-mode
 ### Chinese ***
-叶子显示模式
+叶片显示模式
 
 ### Source
 number-of-leaves
 ### Chinese ***
-叶数
+叶片数量
 
 ### Source
 rain-intensity
 ### Chinese ***
-雨强度
+降雨强度
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 start-sugar-mean
 ### Chinese ***
-糖平均含量
+起始平均糖分
 
 ### Source
 start-sugar-stddev
 ### Chinese ***
-开始糖stddev
+起始糖分标准差
 
 ### Source
 sun-intensity
@@ -130,5 +129,5 @@ temperature
 ### Source
 wind-factor
 ### Chinese ***
-风因子
+风的因素
 

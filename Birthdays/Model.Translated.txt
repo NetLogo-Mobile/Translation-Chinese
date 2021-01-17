@@ -1,20 +1,19 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 go
 ### Chinese ***
-走
+进行
 
 ### Source
 go once
 ### Chinese ***
-去一次
+进行一次
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 success rate

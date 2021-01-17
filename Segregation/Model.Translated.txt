@@ -1,10 +1,9 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 %
 ### Chinese ***
-％
+%
 
 ### Source
 default
@@ -14,17 +13,17 @@ default
 ### Source
 Number-unhappy
 ### Chinese ***
-数字不开心
+不满意的人数
 
 ### Source
 percent
 ### Chinese ***
-百分
+百分比
 
 ### Source
 Percent Similar
 ### Chinese ***
-相似百分比
+邻居相似的百分比
 
 ### Source
 time
@@ -35,50 +34,50 @@ time
 ### Source
 # agents
 ### Chinese ***
-＃个代理商
+人数
 
 ### Source
 % similar
 ### Chinese ***
-相似百分比
+邻居相似百分比
 
 ### Source
 % unhappy
 ### Chinese ***
-不满意百分比
+不满意的百分比
 
 ### Source
 %-similar-wanted
 ### Chinese ***
-相似需求百分比
+希望邻居相似程度 %
 
 ### Source
 density
 ### Chinese ***
-密度
+人口密度
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 go once
 ### Chinese ***
-去一次
+运行一次
 
 ### Source
 num-unhappy
 ### Chinese ***
-不开心
+不开心的人数
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 visualization
 ### Chinese ***
-可视化
+可视化模式
 

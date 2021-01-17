@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 avg-energy
@@ -14,12 +13,12 @@ avg-speed
 ### Source
 count
 ### Chinese ***
-计数
+数量
 
 ### Source
 count (%)
 ### Chinese ***
-数（％）
+数量 (%)
 
 ### Source
 default
@@ -34,7 +33,7 @@ Density Histogram
 ### Source
 energy
 ### Chinese ***
-能源
+能量
 
 ### Source
 Energy Histogram
@@ -44,7 +43,7 @@ Energy Histogram
 ### Source
 Energy vs. Height
 ### Chinese ***
-能量与高度
+能量 vs. 高度
 
 ### Source
 fast
@@ -69,12 +68,12 @@ init-avg-speed
 ### Source
 medium
 ### Chinese ***
-中
+中速
 
 ### Source
 slow
 ### Chinese ***
-慢
+慢速
 
 ### Source
 speed
@@ -115,12 +114,12 @@ clear trace
 ### Source
 collide?
 ### Chinese ***
-碰撞？
+开启碰撞？
 
 ### Source
 go/stop
 ### Chinese ***
-去/停
+运行/停下
 
 ### Source
 gravity-acceleration
@@ -135,7 +134,7 @@ init-particle-speed
 ### Source
 number-of-particles
 ### Chinese ***
-粒子数
+粒子数量
 
 ### Source
 particle-mass
@@ -150,25 +149,25 @@ percent fast
 ### Source
 percent lost particles
 ### Chinese ***
-颗粒损失百分比
+逃逸粒子百分比
 
 ### Source
 percent medium
 ### Chinese ***
-中等百分比
+中速百分比
 
 ### Source
 percent slow
 ### Chinese ***
-慢百分比
+慢速百分比
 
 ### Source
 setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 trace?
 ### Chinese ***
-跟踪？
+跟踪轨迹？
 

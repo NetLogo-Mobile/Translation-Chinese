@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 display-color
@@ -9,47 +8,47 @@ display-color
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 num-turtles
 ### Chinese ***
-乌龟
+海龟数量
 
 ### Source
 setup-cone
 ### Chinese ***
-设置锥
+设置为圆锥体
 
 ### Source
 setup-cube-filled
 ### Chinese ***
-设置多维数据集填充
+设置为实心方块
 
 ### Source
 setup-cube-surface
 ### Chinese ***
-设置立方体表面
+设置为空心方块
 
 ### Source
 setup-cylinder-h
 ### Chinese ***
-设置缸h
+设置为放倒的圆柱体
 
 ### Source
 setup-cylinder-v
 ### Chinese ***
-设置缸v
+设置为直立的圆柱体
 
 ### Source
 setup-pyramid
 ### Chinese ***
-安装金字塔
+设置为金字塔形
 
 ### Source
 setup-sphere
 ### Chinese ***
-建立领域
+设置为球形
 
 ### Source
 shape-size
@@ -59,7 +58,7 @@ shape-size
 ### Source
 theta-velocity
 ### Chinese ***
-速度
+视角旋转速度
 
 ### Source
 view

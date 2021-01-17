@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 Average Speed
@@ -40,7 +39,7 @@ Time
 ### Source
 Change light
 ### Chinese ***
-换灯
+切换交通灯
 
 ### Source
 Current Phase
@@ -50,7 +49,7 @@ Current Phase
 ### Source
 current-auto?
 ### Chinese ***
-当前自动吗？
+自动控制当前交通灯？
 
 ### Source
 current-phase
@@ -60,27 +59,27 @@ current-phase
 ### Source
 Go
 ### Chinese ***
-走
+运行
 
 ### Source
 grid-size-x
 ### Chinese ***
-网格大小x
+横向网格大小
 
 ### Source
 grid-size-y
 ### Chinese ***
-网格大小
+纵向网格大小
 
 ### Source
 num-cars
 ### Chinese ***
-num-cars
+车辆数目
 
 ### Source
 power?
 ### Chinese ***
-功率？
+启用交通灯？
 
 ### Source
 Select intersection
@@ -90,15 +89,15 @@ Select intersection
 ### Source
 Setup
 ### Chinese ***
-设定
+设置
 
 ### Source
 speed-limit
 ### Chinese ***
-速度极限
+最大车速
 
 ### Source
 ticks-per-cycle
 ### Chinese ***
-每周期滴答
+交通灯周期（Ticks）
 

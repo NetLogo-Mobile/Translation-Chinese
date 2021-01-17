@@ -1,36 +1,5 @@
 ﻿*** ea019251e9a1e995aee56207db61702e
 ## Language = Chinese
-## Plots
-### Source
-apl
-### Chinese ***
-杀伤人员地雷
-
-### Source
-cc
-### Chinese ***
-抄送
-
-### Source
-fraction of edges rewired
-### Chinese ***
-边缘重新布线的比例
-
-### Source
-Network Properties Rewire-All
-### Chinese ***
-网络属性全部重新布线
-
-### Source
-Network Properties Rewire-One
-### Chinese ***
-网络属性重新布线一
-
-### Source
-rewiring probability
-### Chinese ***
-重新布线的可能性
-
 ## Widgets
 ### Source
 average-path-length (apl)
@@ -76,4 +45,35 @@ rewiring-probability
 setup
 ### Chinese ***
 设定
+
+## Plots
+### Source
+apl
+### Chinese ***
+杀伤人员地雷
+
+### Source
+cc
+### Chinese ***
+抄送
+
+### Source
+fraction of edges rewired
+### Chinese ***
+边缘重新布线的比例
+
+### Source
+Network Properties Rewire-All
+### Chinese ***
+网络属性全部重新布线
+
+### Source
+Network Properties Rewire-One
+### Chinese ***
+网络属性重新布线一
+
+### Source
+rewiring probability
+### Chinese ***
+重新布线的可能性
 
