@@ -44,7 +44,7 @@ albedo-of-surface
 ### Source
 albedo-of-whites
 ### Chinese
-黑色雏菊的反照率
+白色雏菊的反射率
 
 ### Source
 go

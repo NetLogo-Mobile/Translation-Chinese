@@ -100,7 +100,7 @@ clear trace
 ### Source
 collide?
 ### Chinese ***
-碰撞？
+开启碰撞？
 
 ### Source
 go/stop

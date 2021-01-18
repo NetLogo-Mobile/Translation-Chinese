@@ -3,7 +3,7 @@
 ### Source
 go
 ### Chinese
-进行
+运行
 
 ### Source
 left

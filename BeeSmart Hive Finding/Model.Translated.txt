@@ -44,7 +44,7 @@ Go
 ### Source
 hive-number
 ### Chinese
-蜂巢位置数量
+可能的蜂巢数
 
 ### Source
 initial-explore-time

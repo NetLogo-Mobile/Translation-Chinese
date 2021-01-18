@@ -3,12 +3,12 @@
 ### Source
 go
 ### Chinese
-进行
+运行
 
 ### Source
 go once
 ### Chinese
-进行一次
+运行一次
 
 ### Source
 setup
