@@ -84,7 +84,7 @@ infection-chance
 ### Source
 initial-people
 ### Chinese
-最初的人
+初始人数
 
 ### Source
 R0

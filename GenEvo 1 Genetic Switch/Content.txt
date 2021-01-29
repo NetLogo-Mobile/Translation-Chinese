@@ -1,0 +1,157 @@
+﻿## WHAT IS IT?
+
+This model simulates a complex phenomenon in molecular biology: the “switching” (on and off) of genes depending on environmental conditions. Through molecular interactions between specific regulatory proteins and specific DNA sequences, each regulated gene is turn on or off in response to environmental stimuli.
+
+Specifically, it is a model of the [lac-operon](https://en.wikipedia.org/wiki/Lac_operon) of a bacterium (E. coli.), which is responsible for the uptake and digestion of lactose, when lactose is the preferred energy source in the environment. It simulates the regulation of synthesis of the enzymes [permease (LacY)](https://en.wikipedia.org/wiki/Lactose_permease) and [beta-galactosidase (LacZ)](https://en.wikipedia.org/wiki/Beta-galactosidase).
+
+## HOW IT WORKS
+
+This genetic switch is in essence, a positive feedback loop. It is responsible for regulating the synthesis of proteins (LacZ and LacY in this model) required to conduct the uptake and digestion of lactose.
+
+In this model, there are in fact two sugars: glucose and lactose. Glucose is "preferred" as an energy source over lactose. When there is glucose and/or no lactose in the surrounding environment, the genetic switch is at an _off steady-state_. This is because the repressor protein [LacI](https://en.wikipedia.org/wiki/Lac_repressor) prevents (mostly) the bacteria from producing the proteins, by binding to the [operator site](https://en.wikipedia.org/wiki/Operon#General_structure) of the DNA. In this steady state, relatively little permease (LacY) and beta-galactosidase (LacZ) are produced.
+
+When lactose is introduced to the outside environment, the lactose molecules enter into the bacterial cell through permease proteins (LacYs). Some lactose molecules that enter the cell bind to LacIs, preventing LacIs from binding to the operator site of the DNA. This, in turn, causes more LacYs to be produced. The LacYs get inserted into the cell-wall, which causes more lactose to enter the cell, thus creating a positive feedback loop. The LacZs, meanwhile digest lactose molecules inside the cell to produce energy.
+
+The genetic switch is turned on, when there is lactose and no glucose in the environment. Turning on of the switch is represented by changing the color of the cell to shades of blue color.
+
+The effect of glucose (through [cAMP](https://en.wikipedia.org/wiki/Cyclic_adenosine_monophosphate)) is only implicitly modelled. The rate at which LacZ and LacI are produced reduces significantly when glucose is present.
+
+### Important Proteins
+1. *RNAP* – These are RNA polymerases that synthesize mRNA from DNA. These are represented by brown blobs in the model. This model does not include mRNAs.
+2. *LacI* – The purple-colored shapes in the model represent a repressor (LacI proteins). They bind to the operator region (see below) of the DNA and do not let RNAP to pass along the gene, thus stopping protein synthesis. When lactose binds to LacI, they form LacI-lactose complexes (shown by a purple shape with a grey dot attached to it). These complexes cannot bind to the operator region of the DNA.
+3. *LacY* – These are shown in the model as light red rectangles. They are produced when an RNAP passes along the gene. When they hit the cell-wall, they get installed on the cell-wall (shown by light patches). Lactose (grey pentagons) from the outside environment is transported inside the cell through these light red patches.
+4. *LacZ* – These are shown as light red colored proteins. They are present inside the cell. When they collide with a lactose molecule, the lactose molecule is digested and energy is produced.
+
+### DNA Regions
+There are four important DNA regions in this model:
+
+1. *Promoter* – This region is indicated by the color green. As an RNAP binds to the promoter region and if the operator is free, it moves along DNA to start transcription.
+2. *Operator* – This region is indicated by the color orange. The repressor protein, LacI, binds to this region and prevents RNAP from moving along the DNA.
+3. *Operon* – This is indicated by the color blue. This is where lacY and lacZ genes are. This model includes only these two genes of the operon.
+4. *Terminator* – This is indicated by the color grey. RNAP separates from the DNA when it reaches this region.
+
+As RNAP moves along the gene, LacY and LacZ proteins are produced (five molecules per transcription). We do not show translation by ribosomes in this model.
+
+### Energy of the cell
+Producing and maintaining the protein machinery for a cell takes energy. So as a cell produces proteins and maintains those proteins (RNAPs, LacIs and LacZs), its energy decreases.
+
+Energy of the cell increases when lactose inside the cell is digested.
+
+### Cell division
+When the energy of the cell doubles from its initial value, it splits into two daughter cells. Each of these cells has half of the energy of the original cell as well as half the number of each type of protein in the original cell.
+
+## HOW TO USE IT
+
+### To setup
+
+Each slider controls a certain aspect of this genetic regulation circuit. Refer to the Sliders Section for more information on the function of each variable.
+
+Once all the sliders are set to the desired levels, the user should click SETUP to initialize the cell.
+
+### To run
+
+To observe the switching behavior of the genetic switch, set GLUCOSE? to ON and LACTOSE? to OFF. Let the simulation run for a few hundred ticks. Observe the changes in the energy of the cell as time progresses and cell divides. The energy drops to half when a cell divides.
+
+To run the simulation faster, uncheck the 'view updates' box for several thousand ticks. Observe the LacZ production in the graph. It varies because of the stochastic nature of the molecular interactions in the cell. This variability even when the switch "is off" is why genetic switches are referred to as "leaky".
+
+Set GLUCOSE? to OFF and LACTOSE? to ON to see the behavior of the genetic switch by observing change in the LacZ production.
+
+While molecular interactions (micro) are best observed through running the simulation with 'view updates' checked, to observe cellular behavior (macro), 'view updates' should be unchecked and the simulation should be run for several thousand ticks.
+
+### Buttons
+
+The SETUP button initializes the model.
+
+The GO button runs the simulation until the cell dies.
+
+### Switches
+
+LACTOSE?  - If ON, lactose is added to the external medium (outside of the cell)
+
+GLUCOSE?  - If ON, glucose is added to the external medium. Glucose is implicitly modelled meaning that when GLUCOSE? is ON, energy of a cell increases at a constant rate (10 units/tick). In addition, since glucose is a "preferred energy source", the lac promoter is less active when GLUCOSE? is ON.
+
+### Sliders
+
+LACI-NUMBER - Sets the number of LacIs
+
+RNAP-NUMBER - Sets the number of RNAPs
+
+LACI-BOND-LEAKAGE - This is the chance a LacI molecule bonded to the operator detaches from the operator
+
+LACI-LACTOSE-BINDING-CHANCE - Sets the chance that a lactose and a LacI come together to form a LacI-lactose complex
+
+LACI-LACTOSE-SEPARATION-CHANCE - Sets the chance that a LacI-lactose complex separates
+
+LACY-DEGRADATION-CHANCE - Sets the chance of degradation of a LacY that is installed on the cell-wall
+
+LACZ-DEGRADATION-CHANCE - Sets the chance of degradation of a LacZ molecules in the cell
+
+### Plots
+
+Energy – Plots the amount of energy in the cell over time
+
+lacZ Number – Plots the number of LacZ molecules inside a cell
+
+Cell Division Time – Plots the number of ticks between two cell division events. It can be used as a growth rate indicator. Shorter cell division time indicates higher growth rate.
+
+## THINGS TO NOTICE
+
+Notice the three parts of the molecular mechanism involved in the control of the genetic switch:
+1. Uptake of lactose from outside to inside through LacY
+2. Repression by LacI in absence of lactose
+3. Formation of LacI-lactose complex in presence of lactose and removal of repression
+
+Notice the changes in energy of the cells when lactose is added (that is, when LACTOSE? is ON and when LACTOSE? is OFF).
+
+Notice the energy changes when a cell divides.
+
+Notice the changes in the Average Cell Division Time as time progresses.
+
+Notice the effect of changes in the environmental conditions (ON/OFF of GLUCOSE? and LACTOSE? on the Average Cell Division Time and the LacZ Number.
+
+## THINGS TO TRY
+
+Try to make the genetic switch more sensitive to the environmental conditions. It should be "on" only when lactose is present and "off" otherwise. You can do this be changing the slider parameters.
+
+If the cell starts to uptake lactose and produce energy faster, does the Average Cell Division Time also decrease?
+
+## EXTENDING THE MODEL
+
+In real life, cells aren't flat! See if you can extend the model into three-dimensions with NetLogo 3D.
+
+## NETLOGO FEATURES
+
+This model uses NetLogo's `with` primitive extensively. This is because, although the different proteins are represented by different `breeds`, the proteins also exist in various states.
+
+## RELATED MODELS
+
+* GenEvo Curricular Models
+* GenDrift Sample Models
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Dabholkar, S., Bain, C. and Wilensky, U. (2016).  NetLogo GenEvo 1 Genetic Switch model.  http://ccl.northwestern.edu/netlogo/models/GenEvo1GeneticSwitch.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+To cite the GenEvo Systems Biology curriculum as a whole, please use:
+
+* Dabholkar, S. & Wilensky, U. (2016). GenEvo Systems Biology curriculum. http://ccl.northwestern.edu/curriculum/genevo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2016 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2016 GenEvo Cite: Dabholkar, S., Bain, C. -->
