@@ -3,7 +3,7 @@
     "identity": "and",
     "display_name": "and",
     "short_original": "checks if both of two conditions are true",
-    "short_description": "检查两个条件是否都为真。",
+    "short_description": "檢查兩個條件是否都為真。",
     "search_terms": [
       "if",
       "or",
@@ -28,7 +28,7 @@
     "identity": "any",
     "display_name": "any?",
     "short_original": "checks if there are any agents in an agentset",
-    "short_description": "检查主体集合中是否有任何主体。",
+    "short_description": "檢查主體集合中是否有任何主體。",
     "search_terms": [
       "all?",
       "count",
@@ -54,7 +54,7 @@
     "identity": "breed",
     "display_name": "breed",
     "short_original": "defines a breed or variant of turtle",
-    "short_description": "定义一种海龟（定义一个类型）。",
+    "short_description": "定義一種海龜（定義一個類型）。",
     "search_terms": [
       "create-turtles",
       "turtles-own",
@@ -80,7 +80,7 @@
     "identity": "create-links-with",
     "display_name": "create-links-with",
     "short_original": "creates links with every agent in an agentset",
-    "short_description": "与主体集合中的每个主体创建链接。",
+    "short_description": "與主體集合中的每個主體創建鏈接。",
     "search_terms": [
       "link-neighbors",
       "layout-circle",
@@ -105,7 +105,7 @@
     "identity": "diffuse",
     "display_name": "diffuse",
     "short_original": "speads a patch variable around to its neighbors",
-    "short_description": "向目前格子相邻的格子散布变量。",
+    "short_description": "向目前格子相鄰的格子散布變量。",
     "search_terms": [
       "patches-own",
       "patches",
@@ -131,7 +131,7 @@
     "identity": "globals",
     "display_name": "globals",
     "short_original": "defines variables that can be used throughout the whole model",
-    "short_description": "定义可以在整个模型中使用的变量。",
+    "short_description": "定義可以在整個模型中使用的變量。",
     "search_terms": [
       "turtles-own",
       "patches-own",
@@ -156,7 +156,7 @@
     "identity": "ifelse",
     "display_name": "ifelse",
     "short_original": "execute specific code if a condition is true, otherwise, execute other code",
-    "short_description": "如果条件为真，则执行特定的代码，否则，执行其他代码。",
+    "short_description": "如果條件為真，則執行特定的代碼，否則，執行其他代碼。",
     "search_terms": [
       "if",
       "ifelse-value",
@@ -181,7 +181,7 @@
     "identity": "ifelse-value",
     "display_name": "ifelse-value",
     "short_original": "execute different code for a number of different conditions",
-    "short_description": "根据不同的条件，返回不同的值。",
+    "short_description": "根據不同的條件，返回不同的值。",
     "search_terms": [
       "if",
       "ifelse",
@@ -206,7 +206,7 @@
     "identity": "in-cone",
     "display_name": "in-cone",
     "short_original": "reports members of an agentset within a \"cone-of-vision\" for a turtle",
-    "short_description": "返回主体集合中位于海龟“视锥”区域内的成员。",
+    "short_description": "返回主體集合中位于海龜“視錐”區域內的成員。",
     "search_terms": [
       "in-radius",
       "other",
@@ -231,7 +231,7 @@
     "identity": "in-radius",
     "display_name": "in-radius",
     "short_original": "reports members of an agentset within a certain distance of an agent",
-    "short_description": "返回在某个主体一定距离内的一个主体集合的成员。",
+    "short_description": "返回在某個主體一定距離內的一個主體集合的成員。",
     "search_terms": [
       "in-cone",
       "other",
@@ -257,7 +257,7 @@
     "identity": "layout-circle",
     "display_name": "layout-circle",
     "short_original": "equally space turtles in a circle around the center of the world",
-    "short_description": "在世界中心周围将海龟均匀地围成一圈。",
+    "short_description": "在世界中心周圍將海龜均勻地圍成一圈。",
     "search_terms": [
       "links",
       "link-neighbors",
@@ -281,7 +281,7 @@
     "identity": "link-neighbors",
     "display_name": "link-neighbors",
     "short_original": "report all agents connected by links",
-    "short_description": "返回链接连接的所有主体。",
+    "short_description": "返回鏈接連接的所有主體。",
     "search_terms": [
       "neighbors",
       "create-links-with",
@@ -305,7 +305,7 @@
     "identity": "links",
     "display_name": "links",
     "short_original": "reports the agentset of all links in the model",
-    "short_description": "返回模型中所有链接的集合。",
+    "short_description": "返回模型中所有鏈接的集合。",
     "search_terms": [
       "link-neighbors",
       "layout-circle",
@@ -329,7 +329,7 @@
     "identity": "n-of",
     "display_name": "n-of",
     "short_original": "randomly report \"n\" agents from an agentset",
-    "short_description": "从一个主体集合中随机返回n个主体。",
+    "short_description": "從一個主體集合中隨機返回n個主體。",
     "search_terms": [
       "one-of",
       "count",
@@ -354,7 +354,7 @@
     "identity": "of",
     "display_name": "of",
     "short_original": "report the value of an agent-owned variable from another context",
-    "short_description": "返回另一主体某个变量的值。",
+    "short_description": "返回另一主體某個變量的值。",
     "search_terms": [
       "with",
       "to-report",
@@ -376,7 +376,7 @@
     "identity": "or",
     "display_name": "or",
     "short_original": "checks if either of two conditions is true",
-    "short_description": "检查两个条件是否至少一个为真。",
+    "short_description": "檢查兩個條件是否至少一個為真。",
     "search_terms": [
       "if",
       "ifelse",
@@ -400,7 +400,7 @@
     "identity": "random",
     "display_name": "random",
     "short_original": "generate a random whole number within a specified range",
-    "short_description": "生成指定范围内的随机整数。",
+    "short_description": "生成指定范圍內的隨機整數。",
     "search_terms": [
       "random-float",
       "random-normal",
@@ -425,7 +425,7 @@
     "identity": "random-float",
     "display_name": "random-float",
     "short_original": "generate a random real (non-whole) number within a specified range",
-    "short_description": "生成指定范围内的随机实数（非整数）。",
+    "short_description": "生成指定范圍內的隨機實數（非整數）。",
     "search_terms": [
       "random",
       "random-normal",
@@ -450,7 +450,7 @@
     "identity": "scale-color",
     "display_name": "scale-color",
     "short_original": "generate a shade of a base hue (color) based on a given value",
-    "short_description": "根据给定的值、取值范围和原始色调，返回不同亮度的色彩值。",
+    "short_description": "根據給定的值、取值范圍和原始色調，返回不同亮度的色彩值。",
     "search_terms": [
       "color",
       "pcolor",
@@ -475,7 +475,7 @@
     "identity": "setxy",
     "display_name": "setxy",
     "short_original": "set the position of a turtle (in terms of X and Y coordinates)",
-    "short_description": "通过X和Y坐标设置海龟的位置。",
+    "short_description": "通過X和Y坐標設置海龜的位置。",
     "search_terms": [
       "move-to",
       "min-pxcor",
@@ -500,7 +500,7 @@
     "identity": "sort-by",
     "display_name": "sort-by",
     "short_original": "sort a list based on a user-defined comparison reporter",
-    "short_description": "根据用户定义的比较函数对列表进行排序。",
+    "short_description": "根據用戶定義的比較函數對列表進行排序。",
     "search_terms": [
       "sort-on",
       "sort",
@@ -524,7 +524,7 @@
     "identity": "sort-on",
     "display_name": "sort-on",
     "short_original": "sort an agentset into a list ordered by the value of a given reporter",
-    "short_description": "将主体集合按指定函数排序，并返回列表。",
+    "short_description": "將主體集合按指定函數排序，并返回列表。",
     "search_terms": [
       "sort-by",
       "sort",
@@ -548,7 +548,7 @@
     "identity": "tie",
     "display_name": "tie",
     "short_original": "make a link into a solid connection that can move turtles in the world",
-    "short_description": "将两只海龟绑定起来，创建一个使其共同移动的链接。",
+    "short_description": "將兩只海龜綁定起來，創建一個使其共同移動的鏈接。",
     "search_terms": [
       "links",
       "create-links-with",
@@ -572,7 +572,7 @@
     "identity": "all",
     "display_name": "all?",
     "short_original": "Check if a reporter is true for all agents in an agentset.",
-    "short_description": "检查函数是否对主体集合中的所有主体都是正确的。",
+    "short_description": "檢查函數是否對主體集合中的所有主體都是正確的。",
     "search_terms": [
       "any?",
       "nobody",
@@ -597,7 +597,7 @@
     "identity": "ceiling",
     "display_name": "ceiling",
     "short_original": "Round a number up to the nearest integer.",
-    "short_description": "将数字向上取整。",
+    "short_description": "將數字向上取整。",
     "search_terms": [
       "floor",
       "round",
@@ -622,7 +622,7 @@
     "identity": "count",
     "display_name": "count",
     "short_original": "Count the number of agents in an agentset.",
-    "short_description": "计算主体集合中的主体数量。",
+    "short_description": "計算主體集合中的主體數量。",
     "search_terms": [
       "mean",
       "mod",
@@ -646,7 +646,7 @@
     "identity": "die",
     "display_name": "die",
     "short_original": "Remove a turtle or link from the world.",
-    "short_description": "从世界上移除一只海龟或一个链接。",
+    "short_description": "從世界上移除一只海龜或一個鏈接。",
     "search_terms": [
       "hatch",
       "sprout",
@@ -673,7 +673,7 @@
     "identity": "distance",
     "display_name": "distance",
     "short_original": "Find the distance from the caller to an agent.",
-    "short_description": "返回从来源到主体的距离。",
+    "short_description": "返回從來源到主體的距離。",
     "search_terms": [
       "face",
       "move-to",
@@ -701,7 +701,7 @@
     "identity": "end",
     "display_name": "end",
     "short_original": "Conclude a procedure.",
-    "short_description": "结束一个自定义函数或过程。",
+    "short_description": "結束一個自定義函數或過程。",
     "search_terms": [
       "to",
       "to-report",
@@ -727,7 +727,7 @@
     "identity": "face",
     "display_name": "face",
     "short_original": "Turn to face a specific agent.",
-    "short_description": "转身面对特定的主体。",
+    "short_description": "轉身面對特定的主體。",
     "search_terms": [
       "towards",
       "facexy",
@@ -753,7 +753,7 @@
     "identity": "floor",
     "display_name": "floor",
     "short_original": "Round a number down to the nearest integer.",
-    "short_description": "将数字向下取整。",
+    "short_description": "將數字向下取整。",
     "search_terms": [
       "ceiling",
       "round",
@@ -778,7 +778,7 @@
     "identity": "hatch",
     "display_name": "hatch",
     "short_original": "Creates turtles from an existing turtle.",
-    "short_description": "从已有的海龟创建新的海龟。",
+    "short_description": "從已有的海龜創建新的海龜。",
     "search_terms": [
       "sprout",
       "create-turtles",
@@ -804,7 +804,7 @@
     "identity": "if",
     "display_name": "if",
     "short_original": "Conditionally run a command. ",
-    "short_description": "根据条件运行命令。",
+    "short_description": "根據條件運行命令。",
     "search_terms": [
       "ifelse",
       "ifelse-value",
@@ -829,7 +829,7 @@
     "identity": "left",
     "display_name": "left",
     "short_original": "Turn a certain amount of degrees to the left.",
-    "short_description": "向左旋转一定角度。",
+    "short_description": "向左旋轉一定角度。",
     "search_terms": [
       "right",
       "heading",
@@ -855,7 +855,7 @@
     "identity": "let",
     "display_name": "let",
     "short_original": "Create a local variable.",
-    "short_description": "创建一个局部变量。",
+    "short_description": "創建一個局部變量。",
     "search_terms": [
       "turtles-own",
       "patches-own",
@@ -880,7 +880,7 @@
     "identity": "max-pxcor",
     "display_name": "max-pxcor",
     "short_original": "Find patches' largest x-coordinate.",
-    "short_description": "返回格子的最大x坐标。",
+    "short_description": "返回格子的最大x坐標。",
     "search_terms": [
       "min-pxcor",
       "min-pycor",
@@ -905,7 +905,7 @@
     "identity": "max-pycor",
     "display_name": "max-pycor",
     "short_original": "Find patches' largest y-coordinate.",
-    "short_description": "返回格子的最大y坐标。",
+    "short_description": "返回格子的最大y坐標。",
     "search_terms": [
       "min-pxcor",
       "min-pycor",
@@ -930,7 +930,7 @@
     "identity": "max-n-of",
     "display_name": "max-n-of",
     "short_original": "Gives a list of top values of a list.",
-    "short_description": "从列表中取出最大的几个值，作为列表返回。",
+    "short_description": "從列表中取出最大的幾個值，作為列表返回。",
     "search_terms": [],
     "agents": [
       "utilities"
@@ -1001,7 +1001,7 @@
     "identity": "member",
     "display_name": "member?",
     "short_original": "Check if a value is within a list, or if an agent is in an agentset.",
-    "short_description": "检查值是否在列表中，或者主体是否在主体集中。",
+    "short_description": "檢查值是否在列表中，或者主體是否在主體集中。",
     "search_terms": [
       "any?",
       "all?",
@@ -1026,7 +1026,7 @@
     "identity": "min-pxcor",
     "display_name": "min-pxcor",
     "short_original": "Find patches' smallest x-coordinate.",
-    "short_description": "返回格子的最小x坐标。",
+    "short_description": "返回格子的最小x坐標。",
     "search_terms": [
       "max-pxcor",
       "max-pycor",
@@ -1051,7 +1051,7 @@
     "identity": "min-pycor",
     "display_name": "min-pycor",
     "short_original": "Find patches' smallest y-coordinate.",
-    "short_description": "返回格子的最小y坐标。",
+    "short_description": "返回格子的最小y坐標。",
     "search_terms": [
       "max-pxcor",
       "max-pycor",
@@ -1076,7 +1076,7 @@
     "identity": "mod",
     "display_name": "mod",
     "short_original": "Perform the modulo operation, returning the remainder of two numbers.",
-    "short_description": "执行取模运算，返回两个数字的余数。",
+    "short_description": "執行取模運算，返回兩個數字的余數。",
     "search_terms": [
       "mean",
       "count",
@@ -1102,7 +1102,7 @@
     "identity": "myself",
     "display_name": "myself",
     "short_original": "Helps with interactions between an agent and the caller.",
-    "short_description": "指代正在运行程序的主体。",
+    "short_description": "指代正在運行程序的主體。",
     "search_terms": [
       "nobody",
       "ask",
@@ -1129,7 +1129,7 @@
     "identity": "nobody",
     "display_name": "nobody",
     "short_original": "Indicates that an agent does not exist.",
-    "short_description": "指代不存在的主体。",
+    "short_description": "指代不存在的主體。",
     "search_terms": [
       "all?",
       "any?",
@@ -1155,7 +1155,7 @@
     "identity": "one-of",
     "display_name": "one-of",
     "short_original": "Randomly select one agent out of an agentset.",
-    "short_description": "从一个主体集中随机选择一个主体。",
+    "short_description": "從一個主體集中隨機選擇一個主體。",
     "search_terms": [
       "n-of",
       "random",
@@ -1205,7 +1205,7 @@
     "identity": "patches-own",
     "display_name": "patches-own",
     "short_original": "Declare a variable that belongs to patches.",
-    "short_description": "声明一个属于格子的变量。",
+    "short_description": "聲明一個屬于格子的變量。",
     "search_terms": [
       "turtles-own",
       "set",
@@ -1257,7 +1257,7 @@
     "identity": "pen-down",
     "display_name": "pen-down",
     "short_original": "Starts tracing the movement of the turtle.",
-    "short_description": "开始绘制海龟的运动。",
+    "short_description": "開始繪制海龜的運動。",
     "search_terms": [
       "pen-up",
       "pen-erase",
@@ -1283,7 +1283,7 @@
     "identity": "pen-up",
     "display_name": "pen-up",
     "short_original": "Stops tracing a turtle's movement.",
-    "short_description": "停止绘制海龟的运动。",
+    "short_description": "停止繪制海龜的運動。",
     "search_terms": [
       "pen-down",
       "pen-erase",
@@ -1309,7 +1309,7 @@
     "identity": "pen-erase",
     "display_name": "pen-erase",
     "short_original": "Erases the paths left by turtles.",
-    "short_description": "清除海龟留下的路径。",
+    "short_description": "清除海龜留下的路徑。",
     "search_terms": [
       "pen-up",
       "pen-down",
@@ -1331,7 +1331,7 @@
     "identity": "random-normal",
     "display_name": "random-normal",
     "short_original": "Randomly produces a number according to a normal distribution.",
-    "short_description": "根据正态分布随机产生一个数字。",
+    "short_description": "根據正態分布隨機產生一個數字。",
     "search_terms": [
       "random",
       "mean",
@@ -1357,7 +1357,7 @@
     "identity": "reset-ticks",
     "display_name": "reset-ticks",
     "short_original": "Sets the tick counter to 0.",
-    "short_description": "将时钟周期计数器设置为0。",
+    "short_description": "將時鐘周期計數器設置為0。",
     "search_terms": [
       "tick",
       "to",
@@ -1383,7 +1383,7 @@
     "identity": "right",
     "display_name": "right",
     "short_original": "Turn a certain amount of degrees to the right.",
-    "short_description": "向右旋转一定角度。",
+    "short_description": "向右旋轉一定角度。",
     "search_terms": [
       "left",
       "heading",
@@ -1408,7 +1408,7 @@
     "identity": "set",
     "display_name": "set",
     "short_original": "Set the value of a variable.",
-    "short_description": "设置变量的值。",
+    "short_description": "設置變量的值。",
     "search_terms": [
       "let",
       "globals",
@@ -1433,7 +1433,7 @@
     "identity": "sprout",
     "display_name": "sprout",
     "short_original": "Create new turtles from a patch.",
-    "short_description": "在格子中创建新的海龟。",
+    "short_description": "在格子中創建新的海龜。",
     "search_terms": [
       "hatch",
       "create-turtles",
@@ -1459,7 +1459,7 @@
     "identity": "tick",
     "display_name": "tick",
     "short_original": "Advance the tick counter by 1.",
-    "short_description": "增加时间周期计数器（默认为1）。",
+    "short_description": "增加時間周期計數器（默認為1）。",
     "search_terms": [
       "reset-ticks",
       "to",
@@ -1485,7 +1485,7 @@
     "identity": "to-report",
     "display_name": "to-report",
     "short_original": "Begin a procedure to create a custom reporter.",
-    "short_description": "开始一个自定义函数。",
+    "short_description": "開始一個自定義函數。",
     "search_terms": [
       "to",
       "end",
@@ -1511,7 +1511,7 @@
     "identity": "towards",
     "display_name": "towards",
     "short_original": "Reports the angle of the caller towards an agent.",
-    "short_description": "返回来源与指定主体的夹角。",
+    "short_description": "返回來源與指定主體的夾角。",
     "search_terms": [
       "face",
       "right",
@@ -1537,7 +1537,7 @@
     "identity": "turtles-here",
     "display_name": "turtles-here",
     "short_original": "Reports the agentset of all the turtles on a caller's patch.",
-    "short_description": "返回来源格子上所有海龟的主体集合。",
+    "short_description": "返回來源格子上所有海龜的主體集合。",
     "search_terms": [
       "count",
       "neighbors",
@@ -1564,7 +1564,7 @@
     "identity": "turtles-own",
     "display_name": "turtles-own",
     "short_original": "Declare a variable that belongs to turtles.",
-    "short_description": "声明一个属于海龟的变量。",
+    "short_description": "聲明一個屬于海龜的變量。",
     "search_terms": [
       "set",
       "of",
@@ -1590,7 +1590,7 @@
     "identity": "while",
     "display_name": "while",
     "short_original": "Begins a loop that runs as long as the reporter returns true. ",
-    "short_description": "开始一个循环，直到函数返回 true 时结束。",
+    "short_description": "開始一個循環，直到函數返回 true 時結束。",
     "search_terms": [
       "if",
       "ifelse",
@@ -1616,7 +1616,7 @@
     "identity": "with",
     "display_name": "with",
     "short_original": "Narrows down an agentset.",
-    "short_description": "根据一定条件，缩小主体集合的范围。",
+    "short_description": "根據一定條件，縮小主體集合的范圍。",
     "search_terms": [
       "turtles",
       "if",
@@ -1634,7 +1634,7 @@
     "identity": "ask",
     "display_name": "ask",
     "short_original": "a reporter that is used to make the agents in the agentset do something.",
-    "short_description": "让主体或主体集合执行一些命令。",
+    "short_description": "讓主體或主體集合執行一些命令。",
     "search_terms": [
       "with",
       "neighbors",
@@ -1658,7 +1658,7 @@
     "identity": "clear-all",
     "display_name": "clear-all",
     "short_original": "clears all the drawings, turtles, plots, etc., leaving a blank slate.",
-    "short_description": "清除所有绘图，海龟，图表等等，返回到初始状态。",
+    "short_description": "清除所有繪圖，海龜，圖表等等，返回到初始狀態。",
     "search_terms": [
       "clear-patches",
       "clear-turtles",
@@ -1680,7 +1680,7 @@
     "identity": "clear-patches",
     "display_name": "clear-patches",
     "short_original": "clears the patches by resetting all patch variables to their default initial values",
-    "short_description": "重置所有格子的状态。",
+    "short_description": "重置所有格子的狀態。",
     "search_terms": [
       "clear-all",
       "clear-turtles",
@@ -1702,7 +1702,7 @@
     "identity": "clear-turtles",
     "display_name": "clear-turtles",
     "short_original": "removes all the turtles as well as resets the numbering of turtles",
-    "short_description": "移除所有海龟。",
+    "short_description": "移除所有海龜。",
     "search_terms": [
       "die",
       "clear-all",
@@ -1724,7 +1724,7 @@
     "identity": "color",
     "display_name": "color",
     "short_original": "built-in turtle characteristic that changes the color of the turtle",
-    "short_description": "海龟和链接的内置变量，保存了海龟的颜色。",
+    "short_description": "海龜和鏈接的內置變量，保存了海龜的顏色。",
     "search_terms": [
       "pcolor",
       "scale-color",
@@ -1747,7 +1747,7 @@
     "identity": "create-turtles",
     "display_name": "create-turtles",
     "short_original": "creates turtles with random colors and headings in the default shape of a triangle",
-    "short_description": "创建具有随机颜色和方向的一组海龟。",
+    "short_description": "創建具有隨機顏色和方向的一組海龜。",
     "search_terms": [
       "hatch",
       "sprout",
@@ -1773,7 +1773,7 @@
     "identity": "facexy",
     "display_name": "facexy",
     "short_original": "sets the turtle’s heading towards the patch (x,y)",
-    "short_description": "使海龟面向特定坐标（x，y）。",
+    "short_description": "使海龜面向特定坐標（x，y）。",
     "search_terms": [
       "face",
       "setxy",
@@ -1795,7 +1795,7 @@
     "identity": "forward",
     "display_name": "forward",
     "short_original": "allows turtles to move in any number of units that the programmer desires",
-    "short_description": "使海龟在目前的方向上前进一定距离。",
+    "short_description": "使海龜在目前的方向上前進一定距離。",
     "search_terms": [
       "right",
       "heading",
@@ -1819,7 +1819,7 @@
     "identity": "import-pcolors",
     "display_name": "import-pcolors",
     "short_original": "allows the user to import an image in NetLogo as the colors of the patches",
-    "short_description": "允许用户导入图片来初始化格子的颜色。",
+    "short_description": "允許用戶導入圖片來初始化格子的顏色。",
     "search_terms": [
       "pcolor",
       "patches",
@@ -1841,7 +1841,7 @@
     "identity": "move-to",
     "display_name": "move-to",
     "short_original": "allows a turtle to set its x and y coordinates to be the same as another turtle or patch",
-    "short_description": "允许海龟移动到另一只海龟或格子处。",
+    "short_description": "允許海龜移動到另一只海龜或格子處。",
     "search_terms": [
       "setxy",
       "face",
@@ -1865,7 +1865,7 @@
     "identity": "neighbors",
     "display_name": "neighbors",
     "short_original": "reports an agentset containing eight neighboring patches",
-    "short_description": "返回包含八个（含对角线）相邻格子的主体集合。",
+    "short_description": "返回包含八個（含對角線）相鄰格子的主體集合。",
     "search_terms": [
       "neighbors4",
       "patch-ahead",
@@ -1891,7 +1891,7 @@
     "identity": "neighbors4",
     "display_name": "neighbors4",
     "short_original": "reports an agentset containing four neighboring patches",
-    "short_description": "返回包含四个（不含对角线）相邻格子的主体集合。",
+    "short_description": "返回包含四個（不含對角線）相鄰格子的主體集合。",
     "search_terms": [
       "neighbors",
       "patch-ahead",
@@ -1916,7 +1916,7 @@
     "identity": "other",
     "display_name": "other",
     "short_original": "reports an agentset which is the same as the input agentset but omits the agent who is asking for the report",
-    "short_description": "输入一个主体集合，返回除了来源之外的其他主体。",
+    "short_description": "輸入一個主體集合，返回除了來源之外的其他主體。",
     "search_terms": [
       "all?",
       "any?",
@@ -1940,7 +1940,7 @@
     "identity": "patch-ahead",
     "display_name": "patch-ahead",
     "short_original": "reports the single patch that is the given distance “ahead” of this turtle",
-    "short_description": "返回海龟“前面”一段距离的格子。",
+    "short_description": "返回海龜“前面”一段距離的格子。",
     "search_terms": [
       "neighbors",
       "neighbors4",
@@ -1964,7 +1964,7 @@
     "identity": "pcolor",
     "display_name": "pcolor",
     "short_original": "built-in patch variable that holds the color of the patch",
-    "short_description": "格子的内置变量，保存了格子的颜色。",
+    "short_description": "格子的內置變量，保存了格子的顏色。",
     "search_terms": [
       "color",
       "set",
@@ -1986,7 +1986,7 @@
     "identity": "repeat",
     "display_name": "repeat",
     "short_original": "allows you to execute any set of commands n amount of times",
-    "short_description": "将一段代码重复执行n次。",
+    "short_description": "將一段代碼重復執行n次。",
     "search_terms": [
       "pen-down",
       "pen-up",
@@ -2008,7 +2008,7 @@
     "identity": "round",
     "display_name": "round",
     "short_original": "reports the integer to the nearest whole number.",
-    "short_description": "将数字四舍五入到最接近的整数。",
+    "short_description": "將數字四舍五入到最接近的整數。",
     "search_terms": [
       "count",
       "floor",
@@ -2030,7 +2030,7 @@
     "identity": "semicolon",
     "display_name": "semicolon",
     "short_original": "used for making helpful comments or notes on a line of code",
-    "short_description": "分号（;）开始代码注释或笔记。",
+    "short_description": "分號（;）開始代碼注釋或筆記。",
     "search_terms": [
       "to",
       "to-report",
@@ -2052,7 +2052,7 @@
     "identity": "shape",
     "display_name": "shape",
     "short_original": "represents the shape of each agent",
-    "short_description": "海龟和链接的内置变量，保存了它的外观。",
+    "short_description": "海龜和鏈接的內置變量，保存了它的外觀。",
     "search_terms": [
       "color",
       "turtles",
@@ -2075,7 +2075,7 @@
     "identity": "to",
     "display_name": "to",
     "short_original": "used to begin a command procedure",
-    "short_description": "开始一个自定义过程。",
+    "short_description": "開始一個自定義過程。",
     "search_terms": [
       "to-report",
       "end",
@@ -2101,7 +2101,7 @@
     "identity": "turtles",
     "display_name": "turtles",
     "short_original": "used to complete actions in NetLogo",
-    "short_description": "返回模型中所有海龟的集合。",
+    "short_description": "返回模型中所有海龜的集合。",
     "search_terms": [
       "ask",
       "turtles-own",
