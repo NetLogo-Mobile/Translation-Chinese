@@ -1,79 +1,78 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 apl
-### Chinese ***
-杀伤人员地雷
+### Chinese
+apl
 
 ### Source
 cc
-### Chinese ***
-抄送
+### Chinese
+cc
 
 ### Source
 fraction of edges rewired
-### Chinese ***
+### Chinese
 边缘重新布线的比例
 
 ### Source
 Network Properties Rewire-All
-### Chinese ***
-网络属性全部重新布线
+### Chinese
+网络属性 重新连线全部
 
 ### Source
 Network Properties Rewire-One
-### Chinese ***
-网络属性重新布线一
+### Chinese
+网络属性 重新连线一次
 
 ### Source
 rewiring probability
-### Chinese ***
-重新布线的可能性
+### Chinese
+重新连线几率
 
 ## Widgets
 ### Source
 average-path-length (apl)
-### Chinese ***
+### Chinese
 平均路径长度（apl）
 
 ### Source
 clustering-coefficient (cc)
-### Chinese ***
+### Chinese
 聚类系数（cc）
 
 ### Source
 highlight
-### Chinese ***
-突出
+### Chinese
+高亮
 
 ### Source
 highlighted node properties
-### Chinese ***
-突出显示的节点属性
+### Chinese
+高亮节点属性
 
 ### Source
 num-nodes
-### Chinese ***
+### Chinese
 数量节点
 
 ### Source
 rewire-all
-### Chinese ***
+### Chinese
 重新连线
 
 ### Source
 rewire-one
-### Chinese ***
-重新连线一
+### Chinese
+重新连线一次
 
 ### Source
 rewiring-probability
-### Chinese ***
-重布线概率
+### Chinese
+重新连接概率
 
 ### Source
 setup
-### Chinese ***
-设定
+### Chinese
+设置
 

@@ -14,7 +14,7 @@ default
 ### Source
 Energy
 ### Chinese ***
-能量
+能源
 
 ### Source
 Frequency
@@ -24,12 +24,12 @@ Frequency
 ### Source
 LacZ Number
 ### Chinese ***
-LacZ 数量
+LacZ编号
 
 ### Source
 Number of Ticks
 ### Chinese ***
-时钟周期数
+Ti数
 
 ### Source
 Time
@@ -45,62 +45,62 @@ average-cell-division-time
 ### Source
 glucose?
 ### Chinese ***
-提供葡萄糖？
+葡萄糖？
 
 ### Source
 go
 ### Chinese ***
-运行
+走
 
 ### Source
 LacI-bond-leakage
 ### Chinese ***
-LacI 键断裂几率
+lacI键泄漏
 
 ### Source
 LacI-lactose-binding-chance
 ### Chinese ***
-LacI 与乳糖结合几率
+lacI-乳糖结合机会
 
 ### Source
 LacI-lactose-separation-chance
 ### Chinese ***
-LacI 与乳糖分离几率
+乳糖-乳糖分离的机会
 
 ### Source
 LacI-number
 ### Chinese ***
-LacI 数量
+LacI数
 
 ### Source
 lactose?
 ### Chinese ***
-提供乳糖？
+乳糖？
 
 ### Source
 LacY-degradation-chance
 ### Chinese ***
-LacY 降解几率
+LacY降解的机会
 
 ### Source
 LacZ-degradation-chance
 ### Chinese ***
-LacZ 降解几率
+LacZ降解机会
 
 ### Source
 LevelSpace?
 ### Chinese ***
-LevelSpace?
+LevelSpace？
 
 ### Source
 reset
 ### Chinese ***
-重置
+重启
 
 ### Source
 RNAP-number
 ### Chinese ***
-RNAP 数量
+RNAP编号
 
 ### Source
 save screenshot
@@ -110,5 +110,5 @@ save screenshot
 ### Source
 setup
 ### Chinese ***
-设置
+建立
 

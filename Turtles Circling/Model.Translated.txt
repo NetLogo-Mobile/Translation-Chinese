@@ -1,94 +1,93 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 dist
-### Chinese ***
-dist
+### Chinese
+距离
 
 ### Source
 distance
-### Chinese ***
+### Chinese
 距离
 
 ### Source
 Distance from the origin
-### Chinese ***
+### Chinese
 距原点的距离
 
 ### Source
 time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 all-circle
-### Chinese ***
-全圆
+### Chinese
+动画所有圆
 
 ### Source
 clear-drawing
-### Chinese ***
-清图
+### Chinese
+清空图案
 
 ### Source
 draw-circle
-### Chinese ***
-画圆
+### Chinese
+画一个圆
 
 ### Source
 draw-radius
-### Chinese ***
+### Chinese
 绘制半径
 
 ### Source
 number
-### Chinese ***
-数
+### Chinese
+数量
 
 ### Source
 pen-down
-### Chinese ***
+### Chinese
 下笔
 
 ### Source
 pen-up
-### Chinese ***
-笔式
+### Chinese
+提笔
 
 ### Source
 plot?
-### Chinese ***
-绘图？
+### Chinese
+绘制图表？
 
 ### Source
 radius
-### Chinese ***
+### Chinese
 半径
 
 ### Source
 set shape "circle"
-### Chinese ***
-设置图形“圆形”
+### Chinese
+设置形状为“圆形”
 
 ### Source
 set shape "turtle"
-### Chinese ***
-设置图形“海龟”
+### Chinese
+设置形状为“海龟”
 
 ### Source
 setup
-### Chinese ***
-设定
+### Chinese
+设置
 
 ### Source
 speed
-### Chinese ***
+### Chinese
 速度
 
 ### Source
 zero-circle
-### Chinese ***
-零圆
+### Chinese
+动画 0 号圆
 

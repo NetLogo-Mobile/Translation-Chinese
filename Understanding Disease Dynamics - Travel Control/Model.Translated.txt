@@ -1,144 +1,143 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 # people
-### Chinese ***
+### Chinese
 人数
 
 ### Source
 % infected
-### Chinese ***
+### Chinese
 感染百分比
 
 ### Source
 % recovered
-### Chinese ***
+### Chinese
 康复百分比
 
 ### Source
 % total pop.
-### Chinese ***
+### Chinese
 占人口的比例
 
 ### Source
 Cumulative Infected and Recovered
-### Chinese ***
+### Chinese
 累计感染和康复
 
 ### Source
 hours
-### Chinese ***
+### Chinese
 小时
 
 ### Source
 Infected
-### Chinese ***
+### Chinese
 已感染
 
 ### Source
 Infection and Recovery Rates
-### Chinese ***
+### Chinese
 感染和康复率
 
 ### Source
 Infection Rate
-### Chinese ***
+### Chinese
 感染率
 
 ### Source
 Not Infected
-### Chinese ***
+### Chinese
 未感染
 
 ### Source
 Populations
-### Chinese ***
+### Chinese
 人口
 
 ### Source
 rate
-### Chinese ***
+### Chinese
 率
 
 ### Source
 Recovery Rate
-### Chinese ***
+### Chinese
 康复率
 
 ## Widgets
 ### Source
 average-hospital-going-tendency
-### Chinese ***
+### Chinese
 平均前往医院几率
 
 ### Source
 average-isolation-tendency
-### Chinese ***
+### Chinese
 平均接受隔离几率
 
 ### Source
 average-recovery-time
-### Chinese ***
+### Chinese
 平均康复时间
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 infection-chance
-### Chinese ***
+### Chinese
 感染几率
 
 ### Source
 initial-ambulance
-### Chinese ***
+### Chinese
 救护车数量
 
 ### Source
 initial-people
-### Chinese ***
+### Chinese
 人口数量
 
 ### Source
 inoculation-chance
-### Chinese ***
+### Chinese
 接种疫苗几率
 
 ### Source
 intra-mobility
-### Chinese ***
+### Chinese
 人口两侧流动性
 
 ### Source
 links?
-### Chinese ***
+### Chinese
 显示链接？
 
 ### Source
 R0
-### Chinese ***
+### Chinese
 R0
 
 ### Source
 recovery-chance
-### Chinese ***
+### Chinese
 康复机会
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 travel?
-### Chinese ***
+### Chinese
 两侧之间存在旅行？
 
 ### Source
 travel-tendency
-### Chinese ***
+### Chinese
 旅行几率
 
