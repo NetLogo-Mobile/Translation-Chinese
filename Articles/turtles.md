@@ -1,0 +1,2 @@
+﻿*** Machine Translated
+`turtles`返回模型中所有海龟的主体集合集，而`turtle`返回特定的海龟。它们通常用于命令海龟在`ask turtles [ ... ]`上下文中做某事。要返回特定的海龟，请使用`turtle x` ，例如，`ask turtle 2 [ set color green ]`设置为`ask turtle 2 [ set color green ]`会将海龟编号2设置为绿色，而`ask turtles [ set color green ]`会将模型中的所有海龟更改为绿色。

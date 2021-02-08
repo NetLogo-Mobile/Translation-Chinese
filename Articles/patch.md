@@ -1,0 +1,2 @@
+﻿*** Machine Translated
+`Patches`返回模型中所有修补`Patches`的主体集合集，而`patch`返回特定的格子。它们通常用于命令修补程序在`ask patches [ ... ]`上下文中执行某些操作。要返回特定格子，请使用`patch xy` ，例如，`ask patch 2 -3 [set pcolor green]`会将格子的x坐标设置为2，将y坐标-3设置为绿色，而`ask patches [ set pcolor green ]`会将模型中的所有面片更改为绿色。
