@@ -3,7 +3,7 @@
 ### Source
 grass / 4
 ### Chinese
-草 / 4
+1/4 草
 
 ### Source
 pop.
@@ -451,7 +451,7 @@ go
 ### Source
 grass
 ### Chinese
-草
+1/4 草
 
 ### Source
 grass-regrowth-time
