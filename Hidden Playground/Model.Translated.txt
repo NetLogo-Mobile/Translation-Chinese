@@ -326,6 +326,21 @@ Yes or no?
  设置颜色
 
 ## Tutorial
+### Excessive
+Maybe we should start with asking each <trigger=Glossary-Turtle,green>turtle </trigger>, or cell, to leave a chemical signal and follow nearby signals.
+### Chinese
+也许我们可以先让每只 <trigger=Glossary-Turtle,green>海龟 </trigger>（或细胞）开始留下化学信号，并跟随附近的其他化学信号。
+
+### Excessive
+When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is moving closer to the goal or moving further from it. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help> and <help=observer>patch-ahead</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查：如果已经抵达目标，海龟将应用第一组规则。否则，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>patch-ahead</help> NetLogo 命令做出的。
+
+### Excessive
+You may notice that every <trigger=Glossary-Turtle,green>turtle </trigger> is simply wandering around. Imagine that people are asked to move together. There is usually a signal - so, I suggest we start fixing this by asking each <color=green>turtle </color> to leave a signal and follow the signals in the world. What do you think, Curious One?
+### Chinese
+你可能注意到<trigger=Glossary-Turtle,green>海龟 </trigger> 只是四处游荡。试想现实生活中，人们（或动物们）的聚集通常依赖某种信号。因此，也许我们可以首先让<color=green>海龟 </color> 留下信号并跟随其他信号来试着解决。好奇者，你觉得呢？
+
 ### Source
 * PLEASE. WAIT. YOU. CURIOUS. ONE. *
 A voice interrupted your move. The mechanical voice. After a second of silence, the voice began to speak much more clearly. Even a bit passionately.
@@ -862,7 +877,7 @@ Maybe we should start with arranging heading of turtles with time.
 也许我们可以开始按时间排列海龟的方向。
 
 ### Source
-Maybe we should start with asking each <trigger=Glossary-Turtle,green>turtle </trigger>, or cell, to leave a chemical signal and follow nearby signals.
+Maybe we should start with asking each <trigger=Glossary-Turtle,green>turtle </trigger>, or cell, to leave a signal and follow the signals in the world.
 ### Chinese
 也许我们可以先让每只 <trigger=Glossary-Turtle,green>海龟 </trigger>（或细胞）开始留下化学信号，并跟随附近的其他化学信号。
 
@@ -1361,14 +1376,14 @@ When you apply this block to a <trigger=Glossary-Patch,brown>patch </trigger>
 规则模块执行时，每个<trigger=Glossary-Patch,brown>格子 </trigger> 或每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查同一格子上的海龟数量是否小于你指定的值。如果是这样，则这个规则模块将应用第一组规则。否则，它将应用第二组。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help>，<help=observer>count</help> 和<help=observer>turtles-here</help> NetLogo 命令做出的。
 
 ### Source
-When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is moving closer to the goal or moving further from it. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help> and <help=observer>patch-ahead</help> primitives of NetLogo.
-### Chinese
-规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查：如果已经抵达目标，海龟将应用第一组规则。否则，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>patch-ahead</help> NetLogo 命令做出的。
-
-### Source
 When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is moving closer to the goal or moving further from it. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>, <help=observer>patch-ahead</help>, and <help=observer>distance</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查：如果正在接近目标，海龟将应用第一组规则。如果正在远离目标，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help>，<help=observer>patch-ahead</help> 和<help=observer>distance</help> NetLogo 命令做出的。
+
+### Source
+When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is reaching the goal or not. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help> and <help=observer>patch-here</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查：如果已经抵达目标，海龟将应用第一组规则。否则，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>patch-ahead</help> NetLogo 命令做出的。
 
 ### Source
 When you apply this block to a turtle, this rule block will check whether it is near the edge of the world. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>, <help=observer>distancexy</help>, and <help=observer>max-pxcor</help> primitives of NetLogo.
@@ -1436,9 +1451,9 @@ You did perfectly! It is now time to start your own microworld, Curious One! Are
 完美！现在是时候开始创造属于你的袖珍世界了！准备好迎接我们旅程的新篇章了吗？你也可以在这里多停留一会儿。
 
 ### Source
-You may notice that every <trigger=Glossary-Turtle,green>turtle </trigger> is simply wandering around. Imagine that people are asked to move together. There is usually a signal - so, I suggest we start fixing this by asking each <color=green>turtle </color> to leave a signal and follow the signals in the world. What do you think, Curious One?
+You may notice that every <trigger=Glossary-Turtle,green>turtle </trigger> is simply wandering around. Imagine that people are asked to move together. There is usually a signal - so, I suggest we start fixing this by asking each <color=green>turtle </color> to leave a chemical signal and follow nearby signals. What do you think, Curious One?
 ### Chinese
-你可能注意到<trigger=Glossary-Turtle,green>海龟 </trigger> 只是四处游荡。试想现实生活中，人们（或动物们）的聚集通常依赖某种信号。因此，也许我们可以首先让<color=green>海龟 </color> 留下信号并跟随其他信号来试着解决。好奇者，你觉得呢？
+你可能注意到<trigger=Glossary-Turtle,green>海龟 </trigger> 只是四处游荡。试想现实生活中，人们（或动物们）的聚集通常依赖某种信号。因此，也许我们可以首先让<color=green>海龟 </color> 留下化学信号，并跟随附近的其他信号。你觉得呢？
 
 ### Source
 You might already formed some assumptions about why <trigger=Glossary-Turtle,green>turtles </trigger> form such patterns. Let's solider on! As the rule maker, you can always find a way or two to manipulate them and sort it out. What is in your mind, Curious One?
