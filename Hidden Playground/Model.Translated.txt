@@ -734,7 +734,7 @@ I just found the two blocks for you: <b>Start Tracking</b> and <b>Stop Tracking<
 
 ### Source
 I just marked <b>When Reaching the Goal</b> block for you to know! Then, when a <color=green>turtle </color> reaches its goal, you can decide whether to <b>Find a Goal</b> for it, or to remove it by <b>Die</b> block.
-### Chinese ***
+### Chinese
 我刚刚标记了“<b>达到目标”</b>框，让你知道！然后，当<color=green>海龟 </color>达到其目标，你可以决定是否要为其<b>找到目标</b>，或通过<b>Die</b>块将其删除。
 
 ### Source
@@ -1042,7 +1042,7 @@ This rule block will check whether the signal on the <trigger=Glossary-Patch,bro
 这个规则模块将检查某个 <trigger=Glossary-Patch,brown>格子 </trigger>，或在海龟身下的格子 ，是否有一定强度的信号。强度由你指定。如果强度超过限度，这个规则模块将应用第一组规则。否则，将应用第二组。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help> NetLogo 命令做出的。
 
 ### Source
-This rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its heading according to time. For each time <trigger=Glossary-Tick>tick </trigger>, the heading will be increased by a portion of rounds you specified. This block is achieved by <help=observer>set</help>，<help=observer>heading</help>, and <help=observer>ticks</help> primitives of NetLogo.
+This rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its heading according to time. For each time <trigger=Glossary-Tick>tick </trigger>, the heading will be increased by a portion of rounds you specified. This block is achieved by <help=observer>set</help>, <help=observer>heading</help>, and <help=observer>ticks</help> primitives of NetLogo.
 ### Chinese
 这个规则模块将让每只<trigger=Glossary-Turtle,green>海龟 </trigger> 根据时间设置其方向。每次<trigger=Glossary-Tick>时间周期 </trigger>，得到的方向将增加你指定的轮数。这个规则模块是根据 <help=observer>set</help>，<help=observer>heading</help> 和 <help=observer>ticks</help> NetLogo 命令做出的。
 
@@ -1182,7 +1182,7 @@ What's the meaning of "Setup" and "Go"?
 
 ### Source
 When applied, this rule block will <trigger=Glossary-Random>roll a dice </trigger> to decide whether to apply the rules you placed within this block. The chance of success is specified by you. This block is achieved by <help=observer>if</help> and <help=observer>random-float</help> primitives of NetLogo.
-### Chinese 
+### Chinese
 执行时，这个规则模块将<trigger=Glossary-Random>掷骰子 </trigger> 决定是否执行模块中的规则。成功的几率由你决定。这个规则模块是根据 <help=observer>if</help> 和 <help=observer>random-float</help> NetLogo 命令做出的。
 
 ### Source
@@ -1281,7 +1281,7 @@ When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtl
 规则模块执行时，将使每只<trigger=Glossary-Turtle,green>海龟 </trigger>调整朝向来<b>面对目标</b>。随后，当你要求它前进时，它将径直朝着目标走去。这个规则模块是根据 <help=observer>face</help> NetLogo 命令做出的。
 
 ### Source
-When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its heading to a <trigger=Glossary-Random>random </trigger> direction. You will specify the minimum and maximum degrees of the direction. 0 means up, 90 means right, and so on. This block is achieved by <help=observer>set</help>，<help=observer>heading</help>, and <help=observer>random-float</help> primitives of NetLogo.
+When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its heading to a <trigger=Glossary-Random>random </trigger> direction. You will specify the minimum and maximum degrees of the direction. 0 means up, 90 means right, and so on. This block is achieved by <help=observer>set</help>, <help=observer>heading</help>, and <help=observer>random-float</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将调整到一个<trigger=Glossary-Random>随机 </trigger> 方向。你将指定方向的最小和最大角度。0 表示向上，90 表示向右，依此类推。这个规则模块是根据 <help=observer>set</help>，<help=observer>heading</help>， 和<help=observer>random-float</help> NetLogo 命令做出的。
 
@@ -1306,7 +1306,7 @@ When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtl
 规则模块执行时，将使每只<trigger=Glossary-Turtle,green>海龟 </trigger> 停止画出路径。现有路径将不会被删除。这个规则模块是根据 <help=observer>pen-up</help> NetLogo 命令做出的。
 
 ### Source
-When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to teleport to a <trigger=Glossary-Random>random </trigger> position in the world. This block is achieved by <help=observer>setxy</help>，<help=observer>random-xcor</help>, and <help=observer>random-ycor</help> primitives of NetLogo.
+When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to teleport to a <trigger=Glossary-Random>random </trigger> position in the world. This block is achieved by <help=observer>setxy</help>, <help=observer>random-xcor</help>, and <help=observer>random-ycor</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，将使每只<trigger=Glossary-Turtle,green>海龟 </trigger> 传送到世界上的<trigger=Glossary-Random>随机 </trigger> 位置。这个规则模块是根据 <help=observer>setxy</help>，<help=observer>random-xcor</help> 和 <help=observer>random-ycor</help> NetLogo 命令做出的。
 
@@ -1356,22 +1356,22 @@ When we start the microworld, we create 400 <color=green>turtles </color> and
 当袖珍世界启动时，我们创造了 400 只<color=green>海龟 </color> 并将它们传送到世界的<trigger=Glossary-Random>随机 </trigger> 位置上。我们让每只海龟都随机寻找一个目标，并且转到面朝目标的方向。当袖珍世界运行时，我们在每个<trigger=Glossary-Tick>时间周期 </trigger> 中都让每只<color=green>海龟 </color> 向前移动一步。不妨猜测一下：启动这个袖珍世界时，会发生些什么？
 
 ### Source
-When you apply this block to a <trigger=Glossary-Patch,brown>patch </trigger> or a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether the number of turtles on the patch is smaller than the value specified by you. If so, this block will apply the first set of rules. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>，<help=observer>count</help>, and <help=observer>turtles-here</help> primitives of NetLogo.
+When you apply this block to a <trigger=Glossary-Patch,brown>patch </trigger> or a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether the number of turtles on the patch is smaller than the value specified by you. If so, this block will apply the first set of rules. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>, <help=observer>count</help>, and <help=observer>turtles-here</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每个<trigger=Glossary-Patch,brown>格子 </trigger> 或每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查同一格子上的海龟数量是否小于你指定的值。如果是这样，则这个规则模块将应用第一组规则。否则，它将应用第二组。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help>，<help=observer>count</help> 和<help=observer>turtles-here</help> NetLogo 命令做出的。
 
 ### Source
-When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is reaching the goal or not. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help> and <help=observer>patch-here</help> primitives of NetLogo.
+When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is moving closer to the goal or moving further from it. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help> and <help=observer>patch-ahead</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查：如果已经抵达目标，海龟将应用第一组规则。否则，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>patch-ahead</help> NetLogo 命令做出的。
 
 ### Source
-When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is moving closer to the goal or moving further from it. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>，<help=observer>patch-ahead</help>, and <help=observer>distance</help> primitives of NetLogo.
+When you apply this block to a <trigger=Glossary-Turtle,green>turtle </trigger>, this rule block will check whether it is moving closer to the goal or moving further from it. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>, <help=observer>patch-ahead</help>, and <help=observer>distance</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查：如果正在接近目标，海龟将应用第一组规则。如果正在远离目标，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help>，<help=observer>patch-ahead</help> 和<help=observer>distance</help> NetLogo 命令做出的。
 
 ### Source
-When you apply this block to a turtle, this rule block will check whether it is near the edge of the world. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>，<help=observer>distancexy</help>, and <help=observer>max-pxcor</help> primitives of NetLogo.
+When you apply this block to a turtle, this rule block will check whether it is near the edge of the world. If so, this block will apply the first set of rules to the turtle. Otherwise, it will apply the second set. Either set of rules can be empty. This block is achieved by <help=observer>ifelse</help>, <help=observer>distancexy</help>, and <help=observer>max-pxcor</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将检查自己是否位于世界边缘附近。如果是这样，海龟将应用第一组规则。否则，将应用第二组规则。两组规则都可以为空。这个规则模块是根据 <help=observer>ifelse</help>，<help=observer>distancexy</help> 和 <help=observer>max-pxcor</help> NetLogo 命令做出的。
 
@@ -1457,202 +1457,202 @@ Your current progress will lose (unless you choose this goal again)!
 
 ### Source
  Die
-### Chinese ***
+### Chinese
  消失
 
 ### Source
  Find a Path to Goal
-### Chinese ***
+### Chinese
  寻找前往目标的路径
 
 ### Source
  Find a Random Goal
-### Chinese ***
+### Chinese
  寻找随机目标
 
 ### Source
  Forward
-### Chinese ***
+### Chinese
  前进
 
 ### Source
  Forward Randomly
-### Chinese ***
+### Chinese
  随机前进
 
 ### Source
  If Out of Sight
-### Chinese ***
+### Chinese
  靠近世界边缘时
 
 ### Source
  Increase Size
-### Chinese ***
+### Chinese
  增加大小
 
 ### Source
  Reproduce
-### Chinese ***
+### Chinese
  复制海龟
 
 ### Source
  Right
-### Chinese ***
+### Chinese
  右转
 
 ### Source
  Right Randomly
-### Chinese ***
+### Chinese
  随机右转
 
 ### Source
  Set Color
-### Chinese ***
+### Chinese
  设置颜色
 
 ### Source
  Set Heading
-### Chinese ***
+### Chinese
  设置方向
 
 ### Source
  Set Heading Randomly
-### Chinese ***
+### Chinese
  随机设置方向
 
 ### Source
  Set Heading With Time
-### Chinese ***
+### Chinese
  根据时间设置方向
 
 ### Source
  Set Size
-### Chinese ***
+### Chinese
  设置大小
 
 ### Source
  Start Tracking
-### Chinese ***
+### Chinese
  开始画出路径
 
 ### Source
  Stop Tracking
-### Chinese ***
+### Chinese
  停止画出路径
 
 ### Source
  Teleport
-### Chinese ***
+### Chinese
  传送
 
 ### Source
  Teleport Randomly
-### Chinese ***
+### Chinese
  传送到随机地点
 
 ### Source
  Turn to Signal
-### Chinese ***
+### Chinese
  转向信号
 
 ### Source
  Turn to the Goal
-### Chinese ***
+### Chinese
  转向目标
 
 ### Source
  Turtle
-### Chinese ***
+### Chinese
  海龟
 
 ### Source
  When Moving to Goal
-### Chinese ***
+### Chinese
  正在走向目标时
 
 ### Source
  When Reaching the Goal
-### Chinese ***
+### Chinese
  抵达目标时
 
 ### Source
  Add Signal
-### Chinese ***
+### Chinese
  添加信号
 
 ### Source
  Evaporate Signal
-### Chinese ***
+### Chinese
  减少信号强度
 
 ### Source
  If Signal More Than
-### Chinese ***
+### Chinese
  如果信号大于
 
 ### Source
  When Turtles Here
-### Chinese ***
+### Chinese
  当海龟的数量
 
 ### Source
  Emergence
-### Chinese ***
+### Chinese
  涌现
 
 ### Source
  Agent
-### Chinese ***
+### Chinese
  主体
 
 ### Source
  Tick
-### Chinese ***
+### Chinese
  时间周期
 
 ### Source
  Random
-### Chinese ***
+### Chinese
  随机
 
 ### Source
  Ask Patches 
-### Chinese ***
+### Chinese
  命令格子 
 
 ### Source
  Ask Turtles 
-### Chinese ***
+### Chinese
  命令海龟 
 
 ### Source
  Clear Everything
-### Chinese ***
+### Chinese
  清除所有内容
 
 ### Source
  Create Turtles 
-### Chinese ***
+### Chinese
  创造海龟 
 
 ### Source
  Diffuse All Signals
-### Chinese ***
+### Chinese
  扩散所有信号
 
 ### Source
  Wrapping the World?
-### Chinese ***
+### Chinese
  无缝世界？
 
 ### Source
  Chance
-### Chinese ***
+### Chinese
  有概率进行
 
 ### Source
  Repeat
-### Chinese ***
+### Chinese
  重复进行
 
 ### Source
@@ -1957,22 +1957,22 @@ Your current progress will lose (unless you choose this goal again)!
 
 ### Source
  Colorize with Signal
-### Chinese ***
+### Chinese
  根据信号上色
 
 ### Source
  Make signals disappear
-### Chinese ***
+### Chinese
  使信号消失
 
 ### Source
  Patch
-### Chinese ***
+### Chinese
  格子
 
 ### Source
  Set Color
-### Chinese ***
+### Chinese
  设置颜色
 
 ## Widgets
