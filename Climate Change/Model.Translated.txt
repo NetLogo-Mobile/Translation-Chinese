@@ -10,6 +10,125 @@ Global Temperature
 ### Chinese
 全球温度
 
+## Tutorial
+### Source ***
+Authors: Charles Cheng, John Chen. Based on NetLogo Climate Change model by Robert Tinker and Uri Wilensky.
+### Chinese
+
+
+### Source ***
+Congratulations! 
+### Chinese
+
+
+### Source ***
+Explore the effect of albedo holding everything else constant. Does increasing the albedo increase or decrease the earth temperature? When you experiment, be sure to run the model long enough for the temperature to settle down.
+### Chinese
+
+
+### Source ***
+Goals 
+### Chinese
+
+
+### Source ***
+Heat Energy from Sunlight
+### Chinese
+
+
+### Source ***
+Imagine you are sightseeing with your friends in the Himalayas. You had previously travelled there two decade ago, and now upon seeing some alpine glaciers, notice that they are much smaller than you remembered. You wonder: what is causing the glaciers to melt and how can you mitigate the harmful impacts that humans have on Earth's climate system?
+### Chinese
+
+
+### Source ***
+Infrared Light
+### Chinese
+
+
+### Source ***
+Introduction
+### Chinese
+
+
+### Source ***
+Play with the model. Change the albedo and run the model. Add clouds and CO2 to the model and then watch a single sunlight arrowhead. What is the highest earth temperature you can produce?
+### Chinese
+
+
+### Source ***
+Questions?
+### Chinese
+
+
+### Source ***
+Simplifications in the Model
+### Chinese
+
+
+### Source ***
+Sometimes the red dots transform themselves into infrared (IR) light that heads toward space, carrying off energy. The probability of a red dot becoming IR light depends on the earth's temperature. When the earth is cold, few red dots generate IR light; when it is hot, most do. The IR energy is represented by a magenta arrowhead. Each carries the same energy as a yellow arrowhead and as a red dot. The IR light goes through clouds but can bounce off CO2 molecules.
+### Chinese
+
+
+### Source ***
+Temperature of the Earth
+### Chinese
+
+
+### Source ***
+The relationship exists because the earth temperature goes up as the total thermal energy is increased. Thermal energy is added by sunlight that reaches the earth as well as from infrared (IR) light reflected down to the earth. Thermal energy is removed by IR emitted by the earth. The balance of these determines the energy in the earth, which is proportional to its temperature.
+### Chinese
+
+
+### Source ***
+There are, of course, many simplifications in this model. The earth is not a single temperature, does not have a single albedo, and does not have a single heat capacity. Visible light is somewhat absorbed by CO2 and some IR light does bounce off clouds. No model is completely accurate. What is important is that a model reacts in some ways like the system it is supposed to model. This model does that, showing how the greenhouse effect is caused by CO2 and other gases that absorb IR.
+### Chinese
+
+
+### Source ***
+This is a model of energy flow in the earth, particularly heat energy. It shows the earth as rose colored, and the surface of the planet is represented by a black strip. Above the strip there is a blue atmosphere and black space at the top. Clouds and carbon dioxide (CO2) molecules can be added to the atmosphere. The CO2 molecules represent greenhouse gases that block infrared light that is emitted by the earth. Clouds block incoming or outgoing sun rays, influencing the heating up or cooling down of the planet.
+### Chinese
+
+
+### Source ***
+Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
+### Chinese
+
+
+### Source ***
+Welcome to the Climate Change Model!
+### Chinese
+
+
+### Source ***
+Well done! You have completed the Climate Change model tutorial! Time to play with the model!
+### Chinese
+
+
+### Source ***
+What happens to the arrowhead when it hits the earth? Describe its later path. Does it escape the earth? What happens then? Do all arrowheads follow similar paths?
+### Chinese
+
+
+### Source ***
+What is the relation between the number of red dots and the temperature of the earth?
+### Chinese
+
+
+### Source ***
+Yellow arrowheads stream downward representing sunlight energy. Some of the sunlight reflects off clouds and more can reflect off the earth's surface. If sunlight is absorbed by the earth, it turns into a red dot, representing heat energy. Each dot represents the energy of one yellow sunlight arrowhead. The red dots randomly move around the earth, and its temperature is related to the total number of red dots.
+### Chinese
+
+
+### Source ***
+ Understand how greenhouse gases affect the climate 
+ Observe how carbon dioxide molecules and infrared light interact 
+ Examine factors that influence the heating up and cooling down of the Earth 
+ Explore concepts of thermal energy that affect the global temperature
+### Chinese
+
+
 ## Widgets
 ### Source
 add cloud

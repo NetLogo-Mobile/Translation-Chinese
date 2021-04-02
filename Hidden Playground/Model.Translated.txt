@@ -579,6 +579,11 @@ Can you tell me something about a block?
 你能告诉我关于规则模块的事吗？
 
 ### Source
+Can you tell me: how to create such a microworld?
+### Chinese
+怎么才能创建这样的袖珍世界呢？
+
+### Source
 Congratulations! You have made the first step in making rules for this microworld. Click the "restart" button to apply the rules in the "Setup" section.
 ### Chinese
 恭喜你！你已为制定这个袖珍世界的规则迈出了第一步。单击“重新启动”按钮以在“启动时”部分中应用规则。
@@ -854,7 +859,7 @@ Look at these rules. What will happen when we play the microworld?
 ### Source
 Look at those colorful <color=brown>patches </color> around the world! Actually, they are the same <color=brown>patches </color> as the black background you just saw. When we are creating your microworld, you will <help=observer>ask</help> them to do their jobs. For example, we can turn them back to black like <observer=ask patches [ set pcolor black ]>this</observer>!
 ### Chinese
-看看那些五彩斑斓的 <color=brown>格子 </color>！其实它们和你看到的黑色背景是同一些<color=brown>格子 </color>。当我们创建你的袖珍世界时，你将<help=observer>让（ask）</help>它们执行一定的规则。例如，我们可以将它们变回黑色。<observer=ask patches [ set pcolor black ]>点这里试试</observer>！
+看看那些五彩斑斓的<color=brown>格子 </color>！其实它们和你看到的黑色背景是同一些<color=brown>格子 </color>。当我们创建你的袖珍世界时，你将<help=observer>让（ask）</help>它们执行一定的规则。例如，我们可以将它们变回黑色。<observer=ask patches [ set pcolor black ]>点这里试试</observer>！
 
 ### Source
 Look at those colorful arrows around the world! Here, we call them <color=green>turtles </color>. Each turtle may have different shape, size, color, and so on. When we are creating your microworld, you will <help=observer>ask</help> them to do their duties. Actually, we can <observer=ask turtles [ set shape "turtle" ]>ask</observer> them to look like <color=green>turtles </color>!

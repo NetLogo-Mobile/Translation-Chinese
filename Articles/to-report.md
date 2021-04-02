@@ -3,7 +3,7 @@
 
 我们用于过滤主体集或处理列表的其他关键字（例如`of` ，`with` ，`sort-on`和`word`也是返回程序。
 
-许多海龟，格子和链属性（例如`color`或`label`都可以被视为我们可以通过`set`命令更改的变量，也可以被视为为我们提供这些变量值的返回器。请注意，在下面的示例中，前面的括号`[ ]` 
+许多海龟，格子和链接属性（例如`color`或`label`都可以被视为我们可以通过`set`命令更改的变量，也可以被视为为我们提供这些变量值的返回器。请注意，在下面的示例中，前面的括号`[ ]` 
 
 ```
 if xcor < 0 [ 
@@ -20,7 +20,7 @@ to-report big-green-people
 report turtles with [ shape = “person” and color = green and size > 5 ]
 end
 ```
- 然后为代码中的`big-green-people`替换每只`turtles with [ shape = “person” and color = green and size > 5 ]` ，例如`ask big-green-people [ do-things ]` 。计算完要从过程返回的值后，将原始`report`添加到该值的前面。
+ 然后为代码中的`big-green-people`替换每只`turtles with [ shape = “person” and color = green and size > 5 ]` ，例如`ask big-green-people [ do-things ]` 。计算完要从过程返回的值后，将关键字`report`添加到该值的前面。
 
 `to-report`通常用于计算。例如，如果您想在代码中多次计算圆的面积，则可以编写 
 

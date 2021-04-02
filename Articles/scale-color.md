@@ -1,5 +1,5 @@
 ﻿*** Machine Translated
-`scale-color`是一个原始`scale-color` ，它返回与给定数字的值成比例的颜色阴影。例如，在交通模型中，可能使用`scale-color`为满油箱比在空油箱中加油的汽车`scale-color` ，或者在成群的绵羊模型中，为更多茂盛的草块着色比已经吃过的更明亮。
+`scale-color`是一个关键字`scale-color` ，它返回与给定数字的值成比例的颜色阴影。例如，在交通模型中，可能使用`scale-color`为满油箱比在空油箱中加油的汽车`scale-color` ，或者在成群的绵羊模型中，为更多茂盛的草块着色比已经吃过的更明亮。
 
 实际上，您可以这样使用`scale-color` ：
 

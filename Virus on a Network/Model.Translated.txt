@@ -30,6 +30,255 @@ time
 ### Chinese
 时间
 
+## Tutorial
+### Source ***
+<trigger=infected,red>Infected</trigger> nodes are not immediately aware that they are <color=red>infected</color>. Only every so often do the nodes check whether they are <color=red>infected</color> by a <trigger=virus,green>virus</trigger>. When the <color=green>virus</color> has been detected, there is a probability that the <color=green>virus</color> will be removed. If a node does recover, there is some probability that it will become <trigger=resistant,grey>resistant</trigger> to this <color=green>virus</color> in the future. When a node becomes <color=grey>resistant</color>, the links between it and its neighbors are darkened, since they are no longer possible vectors for spreading the <color=green>virus</color>. The model will stop running once the <color=green>virus</color> has completely died out.
+### Chinese
+
+
+### Source ***
+A submicroscopic infectious agent that replicates only inside the living cells of an organism. When <trigger=infected,red>infected</trigger>, a host cell is forced to rapidly produce thousands of identical copies of the original virus. Likewise, a computer <color=green>virus</color> is a type of computer program that, when executed, replicates itself by modifying other computer programs and inserting its own code.
+### Chinese
+
+
+### Source ***
+After Being Infected
+### Chinese
+
+
+### Source ***
+An epidemic of an infectious disease/<trigger=virus,green>virus</trigger> that has spread across a large region, for instance multiple continents or worldwide, affecting a substantial number of people
+### Chinese
+
+
+### Source ***
+At the end of the run, after the <trigger=virus,green>virus</trigger> has died out, some nodes are still <trigger=susceptible,blue>susceptible</trigger>, while others have become <trigger=resistant,grey>immune</trigger>. What is the ratio of the number of <color=grey>immune</color> nodes to the number of <color=blue>susceptible</color> nodes? How is this affected by changing the average-node-degree of the network?
+### Chinese
+
+
+### Source ***
+Authors: Charles Cheng, John Chen. Based on NetLogo Virus on a Network model by Uri Wilensky.
+### Chinese
+
+
+### Source ***
+average-node-degree
+### Chinese
+
+
+### Source ***
+Congratulations! 
+### Chinese
+
+
+### Source ***
+Creation of the Network
+### Chinese
+
+
+### Source ***
+Each time step (tick), each <trigger=infected,red>infected</trigger> node (colored <color=red>red</color>) attempts to <color=red>infect</color> all of its neighbors. <trigger=susceptible,blue>Susceptible</trigger> neighbors (colored <color=blue>blue</color>) will be <color=red>infected</color> with a certain probability. <trigger=resistant,grey>Resistant</trigger> nodes (colored <color=grey>gray</color>) cannot be <color=red>infected</color>. This might correspond to up-to-date antivirus software and security patches that make a computer <color=grey>immune</color> to this particular <trigger=virus,green>virus</trigger>.
+### Chinese
+
+
+### Source ***
+Epidemic
+### Chinese
+
+
+### Source ***
+gain-resistance-chance
+### Chinese
+
+
+### Source ***
+Goals 
+### Chinese
+
+
+### Source ***
+How Infection Occurs
+### Chinese
+
+
+### Source ***
+How is the network created?
+### Chinese
+
+
+### Source ***
+If the recovery-chance is more than 0, even if the virus-spread-chance is high, do you think that if you ran the model forever, the <trigger=virus,green>virus</trigger> could stay alive?
+### Chinese
+
+
+### Source ***
+Imagine you turn on the television and switch to your local news channel.  An important announcement comes on, saying that there's a <trigger=pandemic>pandemic</trigger> rapidly spreading, and citizens need to quarantine themselves inside their homes. You wonder: how do medical officials know how fast a <trigger=virus,green>virus</trigger> is spreading and predict how many people will be <trigger=infected,red>infected</trigger> in the future?
+### Chinese
+
+
+### Source ***
+Infected
+### Chinese
+
+
+### Source ***
+initial-outbreak-size
+### Chinese
+
+
+### Source ***
+Introduction
+### Chinese
+
+
+### Source ***
+Lacking immunity or <trigger=resistant>resistance</trigger>, at the risk of <trigger=infected,red>infection</trigger> by a pathogen/<trigger=virus,green>virus</trigger>
+### Chinese
+
+
+### Source ***
+number-of-nodes
+### Chinese
+
+
+### Source ***
+Pandemic
+### Chinese
+
+
+### Source ***
+Plot 
+### Chinese
+
+
+### Source ***
+Questions?
+### Chinese
+
+
+### Source ***
+recovery-chance
+### Chinese
+
+
+### Source ***
+Resistant
+### Chinese
+
+
+### Source ***
+Set gain-resistance-chance to 0%. Under what conditions will the <trigger=virus,green>virus</trigger> die out? How long does it take? What conditions are required for the <color=green>virus</color> to live?
+### Chinese
+
+
+### Source ***
+Susceptible
+### Chinese
+
+
+### Source ***
+The average number of links coming out of each node
+### Chinese
+
+
+### Source ***
+The invasion and multiplication of microorganisms such as bacteria, <trigger=virus,green>viruses</trigger>, and parasites that are not normally present within the body
+### Chinese
+
+
+### Source ***
+The network status plot shows the percentage of nodes in each state (<trigger=susceptible,blue>susceptible</trigger>, <trigger=infected,red>infected</trigger>, <trigger=resistant,grey>resistant</trigger>) over time.
+### Chinese
+
+
+### Source ***
+The network that is created is based on proximity (Euclidean distance) between nodes. A node is randomly chosen and connected to the nearest node that it is not already connected to. This process is repeated until the network has the correct number of links to give the specified average node degree.
+### Chinese
+
+
+### Source ***
+The number of nodes that will start the simulation <trigger=infected,red>infected</trigger> with the <trigger=virus,green>virus</trigger>
+### Chinese
+
+
+### Source ***
+The probability that <trigger=susceptible,blue>susceptible</trigger> neighbors (colored <color=blue>blue</color>) will be <trigger=infected,red>infected</trigger>; this might correspond to the probability that someone on the <color=blue>susceptible</color> system actually executes the <color=red>infected</color> email attachment.
+### Chinese
+
+
+### Source ***
+The probability that a node that has recovered will become <trigger=resistant,grey>resistant</trigger> to this <trigger=virus,green>virus</trigger> in the future
+### Chinese
+
+
+### Source ***
+The probability that the <trigger=virus,green>virus</trigger> will be removed when the <color=green>virus</color> has been detected
+### Chinese
+
+
+### Source ***
+The rapid spread of disease/<trigger=virus,green>virus</trigger> to a large number of people in a given population within a short period of time
+### Chinese
+
+
+### Source ***
+The rate at which nodes check whether they are <trigger=infected,red>infected</trigger> by a <trigger=virus>virus</trigger>; this might correspond to a regularly scheduled virus-scan procedure, or simply a human noticing something fishy about how the computer is behaving
+### Chinese
+
+
+### Source ***
+The state of having a strong capacity to defend against a disease/<trigger=virus,green>virus</trigger>
+### Chinese
+
+
+### Source ***
+The total number of nodes in the network (or the population of a community)
+### Chinese
+
+
+### Source ***
+This model demonstrates the spread of a <trigger=virus,green>virus</trigger> through a network. Although the model is somewhat abstract, one interpretation is that each node represents a computer, and we are modeling the progress of a computer <color=green>virus</color> (or worm) through this network. Each node may be in one of three states: <trigger= susceptible,blue>susceptible</trigger>, <trigger=infected,red>infected</trigger>, or <trigger=resistant,grey>resistant</trigger>. In the academic literature such a model is sometimes referred to as an SIR model for <trigger=epidemic>epidemics</trigger>.
+### Chinese
+
+
+### Source ***
+Virus
+### Chinese
+
+
+### Source ***
+virus-check-frequency
+### Chinese
+
+
+### Source ***
+virus-spread-chance
+### Chinese
+
+
+### Source ***
+Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
+### Chinese
+
+
+### Source ***
+Welcome to the Virus on a Network Model!
+### Chinese
+
+
+### Source ***
+Well done! You have completed the Virus on a Network model tutorial! Time to play with the model!
+### Chinese
+
+
+### Source ***
+ Understand how a computer and a biological <trigger=virus,green>virus</trigger> spread
+ Recognize the assumptions/generalizations made by SIR models
+ Examine the factors that change how the <color=green>virus</color> spreads throughout the network 
+ Explore how manipulating these factors affect whether equilibrium or instability is reached over time
+### Chinese
+
+
 ## Widgets
 ### Source
 average-node-degree

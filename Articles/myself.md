@@ -8,7 +8,7 @@ ask person 1 [
 ```
 。`Myself`经常与`of`一起使用以返回或设置询问主体的变量（ `ask turtles with [pcolor = [pcolor] of myself]` `ask turtles with [size < [size] of myself ]`或`ask turtles with [size < [size] of myself ]` ）。有关更多**示例**，请参见模型库中的**我自己的**示例。
 
-当有一个单独的`ask`命令，并且海龟，链或格子试图引用自己时，使用`Self` 。例如，
+当有一个单独的`ask`命令，并且海龟，链接或格子试图引用自己时，使用`Self` 。例如，
 
 ```
 let my-turtle nobody 

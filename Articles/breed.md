@@ -1,7 +1,7 @@
 ﻿*** Machine Translated
 `breed`是一个特殊的关键字，只能放在netlogo代码选项卡的顶部。使用`breed` ，你可以自定义各种或龟的*品种*。当您有不同的海龟组，每个海龟组需要各自的行为，并且希望有一种简单的方法来引用代码中的每个组时，此功能非常有用。
 
-要创建一种新的海龟，请使用一个原始`breed`后跟一个开方括号`[` ，该种类的复数形式，一个空格，该种类的单数形式和一个闭方括号`]` 。例如，`breed [dogs dog]` ，`breed [buildings building]`和`breed [cars car]` 。
+要创建一种新的海龟，请使用一个关键字`breed`后跟一个开方括号`[` ，该种类的复数形式，一个空格，该种类的单数形式和一个闭方括号`]` 。例如，`breed [dogs dog]` ，`breed [buildings building]`和`breed [cars car]` 。
 
 NetLogo需要一个种类的复数形式和单数形式，因为：
 

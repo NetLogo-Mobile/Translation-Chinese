@@ -1,14 +1,22 @@
 ﻿*** Machine Translated
-`create-turtles`是一种原始图元，它以默认的三角形图形创建具有随机颜色和标题的海龟。`Crt`是create-turtles的简写版本。语法为：
+`create-turtles`是在模型中创建给定数量的新海龟的关键字。这些新的海龟都以相同的默认图形放置在模型的中心，但是具有随机的颜色和标题。该关键字的简写形式是`crt` 。例如， `create-turtles 100` 。
 
-`create-turtles number-of-turtles [ optional-commands ]`
+此外，您可以使用方括号`[ ]`立即为新海龟提供一些规则。例如，以下代码不仅会创建100只新的海龟，还将所有这些海龟变成绿色，并使每只海龟都变成一个随机格子。这样，您将无需使用单独的`ask`命令。
 
-通过使用方括号[]，您可以选择将命令传递给这些新的海龟。例如，你可以写
 
-`create-turtles 100 [`
 
-`set shape “person”`
+```
+create-turtles [
+	set color green
+	move-to one-of patches
+]
+```
 
-`forward 10 ]`
 
-它会以人的图形制造100只海龟，并将它们向前移动。只有观察者可以使用此命令！有关创建海龟的格子，请参见[*发芽*](http://ccl.northwestern.edu/netlogo/docs/dictionary.html#sprout)。要从现有的海龟中创建海龟，请参见[*阴影*](http://ccl.northwestern.edu/netlogo/docs/dictionary.html#hatch)。
+使用`create-turtles`时要记住的事情：
+
+- 您可以使用`create-<breed>`格式来创建特定自定义种类的新海龟，例如`create-dogs 100`或`create-buildings 5 [ set color gray ]` 。
+- 只有`observer`可以创建新的海龟。您不能在`ask`关键字中使用此关键字。例如， `ask chickens [create-eggs 1]`和`ask patches [ create-plants 1 ]`都将显示错误消息。如果您需要已经存在的海龟来创建新的海龟，则应使用`hatch`关键字。如果需要格子来创建新的海龟，则应使用`sprout`关键字。
+
+
+在下面的模型示例中，我们使用`create-turtles`格子创建带有房屋，一些植物，人，狗和云的景观。

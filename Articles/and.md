@@ -16,5 +16,5 @@ if my-hunger-level > 100 and food-here > 0 [
 
 使用`and`时要记住的事情：
 
-- 您可以在同一条件原始中使用多个`and`原始，例如，`if color = red and size > 3 and xcor < 0 [ ... ]`或`ask turtles with [hunger > 1 and food < 1 and money > 10 ]` 。
+- 您可以在同一条件关键字中使用多个`and`关键字，例如，`if color = red and size > 3 and xcor < 0 [ ... ]`或`ask turtles with [hunger > 1 and food < 1 and money > 10 ]` 。
 - `and`本身并不做任何事情;您应该在条件语句中使用它，例如`if`和`if-else`或其他需要true-false值的关键字，例如`while` 。

@@ -1,5 +1,5 @@
 ﻿*** Machine Translated
-`Patches-own`定义仅属于模型格子的变量。（有关定义海龟变量`turtles-own` ，请参见其对应的`turtles-own` 。）变量通常是斑块的特征或特征。例如，如果您的面片代表模型中的土壤，则可以使用面`patches-own [ nutrients ]` 。它具有以下形式：
+`Patches-own`定义仅属于模型格子的变量。（有关定义海龟变量`turtles-own` ，请参见其对应的`turtles-own` 。）变量通常是斑块的特征或特征。例如，如果您的格子代表模型中的土壤，则可以使用面`patches-own [ nutrients ]` 。它具有以下形式：
 
 `patches-own [ variable1 variable2 ... ]`
 
