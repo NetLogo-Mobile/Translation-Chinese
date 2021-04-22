@@ -1,4 +1,121 @@
-﻿## Language = Chinese
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Tutorial
+### Source
+A coordinate system that specifies a point by a triplet of numerical coordinates, which are the distances to the point from three perpendicularly oriented axes, x, y, and z
+### Chinese ***
+一个坐标系统，该坐标系统通过三元组的数字坐标指定一个点，该坐标是从三个垂直方向的轴x，y和z到该点的距离
+
+### Source
+A coordinate system where the position of a point is specified by three numbers: ρ (rho), the distance from the origin to the point, θ (theta), the angle between the positive x axis, and φ (phi), the angle between the positive z axis
+### Chinese ***
+一个坐标系统，其中点的位置由三个数字指定：ρ（rho），从原点到该点的距离，θ（theta），正x轴之间的角度和φ（phi），该角度在正Z轴之间
+
+### Source
+Authors: Charles Cheng, John Chen. Based on NetLogo 3D Surface model by Uri Wilensky.
+### Chinese ***
+作者：郑志刚，陈小春。基于Uri Wilensky的NetLogo 3D Surface模型。
+
+### Source
+Cartesian coordinates
+### Chinese ***
+直角坐标
+
+### Source
+Color Spectrum of the 3D Surface
+### Chinese ***
+3D表面的色谱
+
+### Source
+Congratulations! 
+### Chinese ***
+恭喜你！ 
+
+### Source
+Cosine
+### Chinese ***
+余弦
+
+### Source
+Creation of the Network
+### Chinese ***
+建立网络
+
+### Source
+Experiment with the num-turtles slider. How many <color=orange>turtles</color> are needed to produce a realistic effect? Why doesn't it keep getting better-looking indefinitely  as you add more <color=orange>turtles</color>?
+### Chinese ***
+尝试使用num-turtles滑块。多少<color=orange>海龟</color>需要产生逼真的效果？为什么随着添加更多内容，它不会无限地变得更好看？<color=orange>海龟</color>？
+
+### Source
+Introduction
+### Chinese ***
+介绍
+
+### Source
+Notice that as the <color=orange>turtles</color> move down (y-coordinate decreases ) they become <b>darker</b> in color , and when they move up (y-coordinate increases ) they become <color=grey>lighter</color>.
+### Chinese ***
+请注意，<color=orange>海龟</color>向下移动（y坐标减小  ），它们的<b>颜色dark变深</b>；当向上移动（y坐标增大  ）的颜色时，它们变成<color=grey>打火机</color>。
+
+### Source
+number
+### Chinese ***
+海龟数量
+
+### Source
+Questions?
+### Chinese ***
+问题？
+
+### Source
+Rendering the Surface
+### Chinese ***
+渲染表面
+
+### Source
+Spherical coordinates
+### Chinese ***
+球坐标
+
+### Source
+The network that is created is based on proximity (Euclidean distance ) between nodes. A node is randomly chosen and connected  to the nearest node that it is not already connected to. This process is repeated until the network has the correct number of links to give the specified average node degree.
+### Chinese ***
+创建的网络基于节点之间的邻近度（欧氏距离  ）。随机选择一个节点并将其连接到尚未连接的最近节点。重复此过程，直到网络具有正确数量的链接以给出指定的平均节点程度为止。
+
+### Source
+The number of <color=orange>turtles</color> that make up the surface
+### Chinese ***
+的数量<color=orange>海龟</color>组成表面
+
+### Source
+The trigonometric function that is equal to the ratio of the side adjacent to an acute angle  (in a right-angled  triangle) to the hypotenuse
+### Chinese ***
+三角函数等于与锐角adjacent（直角  三角形）相邻的边与斜边的比率
+
+### Source
+This model maps <color=orange>turtles</color> between <trigger=cartesian-coordinates>Cartesian</trigger> and <trigger=spherical-coordinates>spherical</trigger> 3-dimensional coordinates. To create the appearance of a curved 3D surface, the program generates <color=orange>turtles</color> with random x- and z-coordinates, then computes each <color=orange>turtle's</color> y-coordinate based on x and z, and time . The <trigger=cosine>cosine</trigger> function is used in the formula to produce a curved surface. Varying the y coordinate based on time  produces motion.
+### Chinese ***
+该模型图<color=orange>海龟</color>之间<trigger=cartesian-coordinates>直角坐标系</trigger>和<trigger=spherical-coordinates>球形</trigger>3维坐标。为了创建弯曲的3D曲面的外观，该程序将生成<color=orange>海龟</color>带有随机的x和z坐标，然后计算每个<color=orange>乌龟的</color>基于x和z以及时间  的y坐标。这<trigger=cosine>余弦</trigger>公式中使用了函数来生成曲面。根据时间改变y坐标会产生运动。
+
+### Source
+To render the surface in the NetLogo view, it maps from 3D to 2D coordinates as follows:
+### Chinese ***
+为了在NetLogo视图中渲染表面，它按如下所示从3D坐标映射到2D坐标：
+
+### Source
+Try changing the formula used to compute the y-coordinate to produce differently shaped surfaces. See if you can draw not just a surface, but a three dimensional shape such as a cone or a sphere. Record what surface/shape you produced and the corresponding formula.
+### Chinese ***
+尝试更改用于计算y坐标的公式，以生成形状不同的曲面。看您是否不仅可以绘制表面，还可以绘制三维图形，例如圆锥或球体。记录您生产的表面/图形以及相应的公式。
+
+### Source
+Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
+### Chinese ***
+是否希望查看社区或您对此模型中提出的问题的答案？点击<b>进入问与答面板</b>。
+
+### Source
+Well done! You have completed the 3D Surface model tutorial! Time to play with the model!
+### Chinese ***
+做得好！您已完成3D表面模型教程！是时候玩模型了！
+
 ## Widgets
 ### Source
 go

@@ -1,109 +1,16 @@
-﻿## Language = Chinese
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Language = Chinese
+### Source
+Nothing Yet
+### Chinese ***
+还没有
+
 ## Tutorial
-### Source ***
-A coordinate system that specifies a point by a triplet of numerical coordinates, which are the distances to the point from three perpendicularly oriented axes, x, y, and z
-### Chinese
-
-
-### Source ***
-A coordinate system where the position of a point is specified by three numbers: ρ (rho), the distance from the origin to the point, θ (theta), the angle between the positive x axis, and φ (phi), the angle between the positive z axis
-### Chinese
-
-
-### Source ***
-Authors: Charles Cheng, John Chen. Based on NetLogo 3D Surface model by Uri Wilensky.
-### Chinese
-
-
-### Source ***
-Cartesian coordinates
-### Chinese
-
-
-### Source ***
-Color Spectrum of the 3D Surface
-### Chinese
-
-
-### Source ***
-Congratulations! 
-### Chinese
-
-
-### Source ***
-Creation of the Network
-### Chinese
-
-
-### Source ***
-Experiment with the num-turtles slider. How many turtles are needed to produce a realistic effect? Why doesn't it keep getting better-looking indefinitely as you add more turtles?
-### Chinese
-
-
-### Source ***
-Introduction
-### Chinese
-
-
-### Source ***
-Notice that as the turtles move down (y-coordinate decreases) they become <b>darker</b> in color, and when they move up (y-coordinate increases) they become <color=grey>lighter</color>.
-### Chinese
-
-
-### Source ***
-number
-### Chinese
-
-
-### Source ***
-Questions?
-### Chinese
-
-
-### Source ***
-Rendering the Surface
-### Chinese
-
-
-### Source ***
-Spherical coordinates
-### Chinese
-
-
-### Source ***
-The network that is created is based on proximity (Euclidean distance) between nodes. A node is randomly chosen and connected to the nearest node that it is not already connected to. This process is repeated until the network has the correct number of links to give the specified average node degree.
-### Chinese
-
-
-### Source ***
-The number of turtles that make up the surface
-### Chinese
-
-
-### Source ***
-This model maps turtles between <trigger=cartesian-coordinates>Cartesian</trigger> and <trigger=spherical-coordinates>spherical</trigger> 3-dimensional coordinates. To create the appearance of a curved 3D surface, the program generates turtles with random x- and z-coordinates, then computes each turtle's y-coordinate based on x and z, and time. The cosine function is used in the formula to produce a curved surface. Varying the y coordinate based on time produces motion.
-### Chinese
-
-
-### Source ***
-To render the surface in the NetLogo view, it maps from 3D to 2D coordinates as follows:
-### Chinese
-
-
-### Source ***
-Try changing the formula used to compute the y-coordinate to produce differently shaped surfaces. See if you can draw not just a surface, but a three dimensional shape such as a cone or a sphere. Record what surface/shape you produced and the corresponding formula.
-### Chinese
-
-
-### Source ***
-Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
-### Chinese
-
-
-### Source ***
-Well done! You have completed the 3D Surface model tutorial! Time to play with the model!
-### Chinese
-
+### Source
+Nothing Yet
+### Chinese ***
+还没有
 
 ## Widgets
 ### Source

@@ -1,4 +1,5 @@
-﻿## Language = Chinese
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
 ## Plots
 ### Source
 avg-energy
@@ -76,182 +77,182 @@ ticks
 时钟周期
 
 ## Tutorial
-### Source ***
+### Source
 <trigger=velocity>Speed</trigger> distribution of all the particles. The gray line is the average value, and the black line is the initial average.
-### Chinese
+### Chinese ***
+<trigger=velocity>速度</trigger>所有粒子的分布。灰线是平均值，黑线是初始平均值。
 
-
-### Source ***
+### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo Lab: Gas in a Box model by Uri Wilensky.
-### Chinese
+### Chinese ***
+作者：郑志刚，陈小春。基于NetLogo Lab：Uri Wilensky的“盒子中的气体”模型。
 
-
-### Source ***
+### Source
 Average <trigger=energy>kinetic energy</trigger> of the particles
-### Chinese
+### Chinese ***
+平均<trigger=energy>动能</trigger>的粒子
 
-
-### Source ***
+### Source
 Average <trigger=velocity>speed</trigger> of the particles
-### Chinese
+### Chinese ***
+平均<trigger=velocity>速度</trigger>的粒子
 
-
-### Source ***
+### Source
 average energy
-### Chinese
+### Chinese ***
+平均能量
 
-
-### Source ***
+### Source
 average speed
-### Chinese
+### Chinese ***
+平均速度
 
-
-### Source ***
+### Source
 Basic Principles
-### Chinese
+### Chinese ***
+基本原则
 
-
-### Source ***
+### Source
 box-size
-### Chinese
+### Chinese ***
+盒子大小
 
-
-### Source ***
+### Source
 clear trace
-### Chinese
+### Chinese ***
+清除痕迹
 
-
-### Source ***
+### Source
 Clears the trace of all particles
-### Chinese
+### Chinese ***
+清除所有微粒的痕迹
 
-
-### Source ***
+### Source
 collide?
-### Chinese
+### Chinese ***
+开启碰撞？
 
-
-### Source ***
+### Source
 Congratulations! 
-### Chinese
+### Chinese ***
+恭喜你！ 
 
-
-### Source ***
+### Source
 Distribution of <trigger=energy>energies</trigger> of all the particles, calculated as m*(v^2)/2. The gray line is the average value, and the black line is the initial average.
-### Chinese
+### Chinese ***
+的分布<trigger=energy>能量</trigger>所有粒子的总和，计算为m *（v ^ 2）/ 2。灰线是平均值，黑线是初始平均值。
 
-
-### Source ***
+### Source
 Energy
-### Chinese
+### Chinese ***
+活力
 
-
-### Source ***
+### Source
 Gas Particles
-### Chinese
+### Chinese ***
+气体微粒
 
-
-### Source ***
+### Source
 Initial <trigger=velocity>speed</trigger> of the particles
-### Chinese
+### Chinese ***
+最初的<trigger=velocity>速度</trigger>的粒子
 
-
-### Source ***
+### Source
 Initially, all the particles have the same <trigger=velocity>speed</trigger> but random directions. Therefore the first histogram plots of speed and <trigger=energy>energy</trigger> should show only one column each. As the particles repeatedly collide, they exchange energy and head off in new directions, and the speeds are dispersed. Some particles get faster, some get slower. The histogram distribution changes accordingly.
-### Chinese
+### Chinese ***
+最初，所有粒子都具有相同的<trigger=velocity>速度</trigger>但随机的方向。因此，速度和速度的第一个直方图<trigger=energy>活力</trigger>每个应仅显示一列。随着粒子反复碰撞，它们交换能量并朝新的方向前进，并且速度分散。有些粒子变快，有些变慢。直方图分布会相应更改。
 
-
-### Source ***
+### Source
 init-particle-speed
-### Chinese
+### Chinese ***
+初始粒子速度
 
-
-### Source ***
+### Source
 Introduction
-### Chinese
+### Chinese ***
+介绍
 
-
-### Source ***
+### Source
 Mass of the particles
-### Chinese
+### Chinese ***
+粒子质量
 
-
-### Source ***
+### Source
 Momentum
-### Chinese
+### Chinese ***
+势头
 
-
-### Source ***
+### Source
 Number of gas particles
-### Chinese
+### Chinese ***
+气体颗粒数
 
-
-### Source ***
+### Source
 number-of-particles
-### Chinese
+### Chinese ***
+粒子数量
 
-
-### Source ***
+### Source
 Option to trace the path of one of the particles
-### Chinese
+### Chinese ***
+选择跟踪其中一个粒子的路径的选项
 
-
-### Source ***
+### Source
 particle-mass
-### Chinese
+### Chinese ***
+粒子质量
 
-
-### Source ***
+### Source
 percent fast
-### Chinese
+### Chinese ***
+快速百分比
 
-
-### Source ***
+### Source
 percent medium
-### Chinese
+### Chinese ***
+中速百分比
 
-
-### Source ***
+### Source
 percent slow
-### Chinese
+### Chinese ***
+慢速百分比
 
-
-### Source ***
+### Source
 Percentage of <color=blue>slow particles (blue)</color>
-### Chinese
+### Chinese ***
+的百分比<color=blue>慢颗粒（蓝色）</color>
 
-
-### Source ***
+### Source
 Percentage of <color=green>medium speed particles (green)</color>
-### Chinese
+### Chinese ***
+的百分比<color=green>中速粒子（绿色）</color>
 
-
-### Source ***
+### Source
 Percentage of <color=red>fast particles (red)</color>
-### Chinese
+### Chinese ***
+的百分比<color=red>快粒子（红色）</color>
 
-
-### Source ***
+### Source
 Plot 
-### Chinese
+### Chinese ***
+
 
-
-### Source ***
+### Source
 Plots the number of particles in each range of <trigger=velocity>speed</trigger>
-### Chinese
+### Chinese ***
+绘制每个范围内的粒子数<trigger=velocity>速度</trigger>
 
-
-### Source ***
+### Source
 Questions?
-### Chinese
+### Chinese ***
+问题？
 
-
-### Source ***
+### Source
 Size of the box (percentage of the world-width)
-### Chinese
+### Chinese ***
+盒子的大小（占世界宽度的百分比）
 
-
-### Source ***
+### Source
 The basic principle of all GasLab models, including this one, is the following algorithm:
 1.     A particle moves in a straight line without changing its <trigger=velocity>speed</trigger>, unless it collides with another particle or bounces off the wall.
 2.     Two particles "collide" if they find themselves on the same patch.
@@ -259,58 +260,64 @@ The basic principle of all GasLab models, including this one, is the following a
 4.     They exchange <trigger=momentum>momentum</trigger> and <trigger=energy>energy</trigger> along that axis, according to the conservation of momentum and energy. This calculation is done in the center of mass system.
 5.     Each particle is assigned its new velocity, energy, and heading.
 6.     If a particle finds itself on or very close to a wall of the container, it "bounces" (reflects its direction and keeps its same speed).
-### Chinese
+### Chinese ***
+所有GasLab模型（包括该模型）的基本原理是以下算法：
+1.粒子在不改变其直线的情况下沿直线移动<trigger=velocity>速度</trigger>，除非它与另一个粒子碰撞或从墙壁反弹。
+2.如果两个粒子发现自己在同格子上，则会“碰撞”。
+3.选择一个随机轴，就好像它们是两个互相撞击的球一样，该轴是连接它们中心的线。
+4.他们交流<trigger=momentum>势头</trigger>和<trigger=energy>活力</trigger>沿着该轴，根据动量和能量守恒。该计算是在质心系统中进行的。
+5.为每个粒子分配新的速度，能量和方向。
+6.如果粒子发现自己在容器壁上或非常靠近容器的壁，则它将“反弹”（反映其方向并保持其相同的速度）。
 
-
-### Source ***
+### Source
 The capacity for doing work
-### Chinese
+### Chinese ***
+工作能力
 
-
-### Source ***
+### Source
 The particles are modeled as hard balls with no internal <trigger=energy>energy</trigger> except that which is due to their motion. Collisions between particles are elastic. Particles are colored according to <trigger=velocity>speed</trigger> --- <color=blue>blue for slow</color> (speed less than 5), <color=green>green for medium</color> (above 5 and below 15), and <color=red>red for high speeds</color> (above 15).
-### Chinese
+### Chinese ***
+粒子被建模为没有内部的硬球<trigger=energy>活力</trigger>除了那是由于他们的运动。粒子之间的碰撞是有弹性的。颗粒根据<trigger=velocity>速度</trigger>---<color=blue>蓝色代表慢速</color>（速度小于5），<color=green>绿色代表中等</color>（5岁以上和15岁以下），以及<color=red>红色代表高速</color>（高于15）。
 
-
-### Source ***
+### Source
 The product of the mass of a particle and its velocity. Momentum is a vector quantity (it has both magnitude and direction)
-### Chinese
+### Chinese ***
+粒子质量与其速度的乘积。动量是一个向量（它既有大小又有方向）
 
-
-### Source ***
+### Source
 The rate of change of its position with respect to a frame of reference; the displacement over the time elapsed
-### Chinese
+### Chinese ***
+相对于参照系的位置变化率；经过一段时间的位移
 
-
-### Source ***
+### Source
 This model simulates the behavior of gas particles in a closed box, or a container with a fixed volume. The path of single particle is visualized by a <color=grey>gray colored trace</color> of the particle's most recent positions. The basic principle of the models is that gas particles are assumed to have two elementary actions: they move and they collide --- either with other particles or with any other objects such as walls.
-### Chinese
+### Chinese ***
+该模型模拟密闭盒或固定体积容器中气体颗粒的行为。单个粒子的路径通过以下方式可视化：<color=grey>灰色痕迹</color>粒子的最新位置。该模型的基本原理是，假定气体颗粒具有两个基本作用：它们移动并与其他颗粒或任何其他物体（例如墙）碰撞。
 
-
-### Source ***
+### Source
 trace?
-### Chinese
+### Chinese ***
+跟踪轨迹？
 
-
-### Source ***
+### Source
 Turns collisions between particles on and off
-### Chinese
+### Chinese ***
+打开和关闭粒子之间的碰撞
 
-
-### Source ***
+### Source
 Velocity, Speed
-### Chinese
+### Chinese ***
+速度，速度
 
-
-### Source ***
+### Source
 Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
-### Chinese
+### Chinese ***
+是否希望查看社区或您对此模型中提出的问题的答案？点击<b>进入问与答面板</b>。
 
-
-### Source ***
+### Source
 Well done! You have completed the Lab: Gas in a Box model tutorial! Time to play with the model!
-### Chinese
-
+### Chinese ***
+做得好！您已经完成了“实验：盒子中的气体”模型教程！是时候玩模型了！
 
 ## Widgets
 ### Source
