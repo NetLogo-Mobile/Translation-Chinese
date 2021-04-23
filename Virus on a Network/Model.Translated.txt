@@ -32,6 +32,89 @@ time
 时间
 
 ## Tutorial
+### Excessive
+<trigger=infected,red>Infected</trigger> nodes are not immediately aware that they are <color=red>infected</color>. Only every so often do the nodes check whether they are <color=red>infected</color> by a <trigger=virus,green>virus</trigger>. When the <color=green>virus</color> has been detected, there is a probability that the <color=green>virus</color> will be removed. If a node does recover, there is some probability that it will become <trigger=resistant,grey>resistant</trigger> to this <color=green>virus</color> in the future. When a node becomes <color=grey>resistant</color>, the links between it and its neighbors are darkened, since they are no longer possible vectors for spreading the <color=green>virus</color>. The model will stop running once the <color=green>virus</color> has completely died out.
+### Chinese
+<trigger=infected,red>已感染</trigger>节点不会立即意识到它们是<color=red>已感染</color>。只有每隔一段时间，节点才会检查它们是否<color=red>已感染</color>由一个<trigger=virus,green>病毒</trigger>。当。。。的时候<color=green>病毒</color>已检测到，则很可能<color=green>病毒</color>将被删除。如果节点确实恢复，则很有可能它将变为<trigger=resistant,grey>抵抗的</trigger>对此<color=green>病毒</color>将来。当一个节点成为<color=grey>抵抗的</color>，因此它与它的邻居之间的链接变暗了，因为它们不再是散布该链接的矢量<color=green>病毒</color>。一旦<color=green>病毒</color>已经完全消亡了。
+
+### Excessive
+A submicroscopic infectious agent that replicates only inside the living cells of an organism. When <trigger=infected,red>infected</trigger>, a host cell is forced to rapidly produce thousands of identical copies of the original virus. Likewise, a computer <color=green>virus</color> is a type of computer program that, when executed, replicates itself by modifying other computer programs and inserting its own code.
+### Chinese
+亚显微感染主体，仅在生物体的活细胞内复制。什么时候<trigger=infected,red>已感染</trigger>，宿主细胞被迫迅速产生数千个原始病毒的相同副本。同样，一台电脑<color=green>病毒</color>是一种计算机程序，在执行时会通过修改其他计算机程序并插入自己的代码来自我复制。
+
+### Excessive
+An epidemic of an infectious disease/<trigger=virus,green>virus</trigger> that has spread across a large region, for instance multiple continents or worldwide, affecting a substantial number of people
+### Chinese
+传染病的流行/<trigger=virus,green>病毒</trigger>遍布整个地区，例如多个大洲或世界各地，影响了很多人
+
+### Excessive
+At the end of the run, after the <trigger=virus,green>virus</trigger> has died out, some nodes are still <trigger=susceptible,blue>susceptible</trigger>, while others have become <trigger=resistant,grey>immune</trigger>. What is the ratio of the number of <color=grey>immune</color> nodes to the number of <color=blue>susceptible</color> nodes? How is this affected by changing the average-node-degree of the network?
+### Chinese
+在运行结束时，<trigger=virus,green>病毒</trigger>已经消亡，一些节点仍然<trigger=susceptible,blue>易受影响的</trigger>，而其他人已成为<trigger=resistant,grey>免疫的</trigger>。数量的比例是多少<color=grey>免疫的</color>节点数<color=blue>易受影响的</color>节点？更改网络的平均节点度对这有何影响？
+
+### Excessive
+Each time step (tick), each <trigger=infected,red>infected</trigger> node (colored <color=red>red</color>) attempts to <color=red>infect</color> all of its neighbors. <trigger=susceptible,blue>Susceptible</trigger> neighbors (colored <color=blue>blue</color>) will be <color=red>infected</color> with a certain probability. <trigger=resistant,grey>Resistant</trigger> nodes (colored <color=grey>gray</color>) cannot be <color=red>infected</color>. This might correspond to up-to-date antivirus software and security patches that make a computer <color=grey>immune</color> to this particular <trigger=virus,green>virus</trigger>.
+### Chinese
+每个时间步长（周期），每个<trigger=infected,red>已感染</trigger>节点（彩色<color=red>红色的</color>） 尝试去<color=red>感染</color>它的所有邻居。<trigger=susceptible,blue>易受影响的</trigger>邻居（有色<color=blue>蓝色</color>） 将会<color=red>已感染</color>有一定的可能性。<trigger=resistant,grey>抵抗的</trigger>节点（彩色<color=grey>灰色的</color>） 不可能是<color=red>已感染</color>。这可能与构成计算机的最新防病毒软件和安全补丁相对应。<color=grey>免疫的</color>对于这个特殊的<trigger=virus,green>病毒</trigger>。
+
+### Excessive
+If the recovery-chance is more than 0, even if the virus-spread-chance is high, do you think that if you ran the model forever, the <trigger=virus,green>virus</trigger> could stay alive?
+### Chinese
+如果恢复机会大于0，即使病毒传播机会很高，您是否认为如果永久运行模型，<trigger=virus,green>病毒</trigger>可以活着吗？
+
+### Excessive
+Imagine you turn on the television and switch to your local news channel.  An important announcement comes on, saying that there's a <trigger=pandemic>pandemic</trigger> rapidly spreading, and citizens need to quarantine themselves inside their homes. You wonder: how do medical officials know how fast a <trigger=virus,green>virus</trigger> is spreading and predict how many people will be <trigger=infected,red>infected</trigger> in the future?
+### Chinese
+假设您打开电视并切换到本地新闻频道。一个重要的公告出现了，说有一个<trigger=pandemic>大流行病</trigger>迅速蔓延，市民需要在家中隔离自己。您想知道：医务人员如何知道<trigger=virus,green>病毒</trigger>正在传播并预测会有多少人<trigger=infected,red>已感染</trigger>将来？
+
+### Excessive
+Set gain-resistance-chance to 0%. Under what conditions will the <trigger=virus,green>virus</trigger> die out? How long does it take? What conditions are required for the <color=green>virus</color> to live?
+### Chinese
+将增益电阻率设置为0％。在什么条件下<trigger=virus,green>病毒</trigger>消亡？多久时间？要求什么条件<color=green>病毒</color>为了活着？
+
+### Excessive
+The network status plot shows the percentage of nodes in each state (<trigger=susceptible,blue>susceptible</trigger>, <trigger=infected,red>infected</trigger>, <trigger=resistant,grey>resistant</trigger>) over time.
+### Chinese
+网络状态绘图显示了每种状态下节点的百分比（<trigger=susceptible,blue>易受影响的</trigger>，<trigger=infected,red>已感染</trigger>，<trigger=resistant,grey>抵抗的</trigger>） 随着时间的推移。
+
+### Excessive
+The network that is created is based on proximity (Euclidean distance) between nodes. A node is randomly chosen and connected to the nearest node that it is not already connected to. This process is repeated until the network has the correct number of links to give the specified average node degree.
+### Chinese
+创建的网络基于节点之间的接近度（欧几里得距离）。随机选择一个节点并将其连接到尚未连接的最近节点。重复此过程，直到网络具有正确数量的链接以给出指定的平均节点程度为止。
+
+### Excessive
+The probability that <trigger=susceptible,blue>susceptible</trigger> neighbors (colored <color=blue>blue</color>) will be <trigger=infected,red>infected</trigger>; this might correspond to the probability that someone on the <color=blue>susceptible</color> system actually executes the <color=red>infected</color> email attachment.
+### Chinese
+的概率<trigger=susceptible,blue>易受影响的</trigger>邻居（有色<color=blue>蓝色</color>） 将会<trigger=infected,red>已感染</trigger>;这可能对应于某人在<color=blue>易受影响的</color>系统实际上执行<color=red>已感染</color>邮件附件。
+
+### Excessive
+The rapid spread of disease/<trigger=virus,green>virus</trigger> to a large number of people in a given population within a short period of time
+### Chinese
+疾病的迅速传播/<trigger=virus,green>病毒</trigger>在短时间内覆盖给定人口中的大量人
+
+### Excessive
+The rate at which nodes check whether they are <trigger=infected,red>infected</trigger> by a <trigger=virus>virus</trigger>; this might correspond to a regularly scheduled virus-scan procedure, or simply a human noticing something fishy about how the computer is behaving
+### Chinese
+节点检查它们是否存在的速率<trigger=infected,red>已感染</trigger>由一个<trigger=virus>病毒</trigger>;这可能对应于定期计划的病毒扫描过程，或者仅是一个人注意到计算机运行方式有些混乱
+
+### Excessive
+The total number of nodes in the network (or the population of a community)
+### Chinese
+网络中节点总数（或社区总数）
+
+### Excessive
+This model demonstrates the spread of a <trigger=virus,green>virus</trigger> through a network. Although the model is somewhat abstract, one interpretation is that each node represents a computer, and we are modeling the progress of a computer <color=green>virus</color> (or worm) through this network. Each node may be in one of three states: <trigger= susceptible,blue>susceptible</trigger>, <trigger=infected,red>infected</trigger>, or <trigger=resistant,grey>resistant</trigger>. In the academic literature such a model is sometimes referred to as an SIR model for <trigger=epidemic>epidemics</trigger>.
+### Chinese
+该模型演示了<trigger=virus,green>病毒</trigger>通过网络。尽管模型有些抽象，但一种解释是每个节点都代表一台计算机，而我们正在对计算机的进度进行建模<color=green>病毒</color>（或蠕虫）通过此网络。每个节点可能处于以下三种状态之一：<trigger= susceptible,blue>易受影响的</trigger>，<trigger=infected,red>已感染</trigger>， 或者<trigger=resistant,grey>抵抗的</trigger>。在学术文献中，这种模型有时被称为SIR模型，用于<trigger=epidemic>流行病</trigger>。
+
+### Excessive
+ Understand how a computer and a biological <trigger=virus,green>virus</trigger> spread
+ Recognize the assumptions/generalizations made by SIR models
+ Examine the factors that change how the <color=green>virus</color> spreads throughout the network 
+ Explore how manipulating these factors affect whether equilibrium or instability is reached over time
+### Chinese
+了解计算机和生物<trigger=virus,green>病毒</trigger>传播  认识到SIR模型所做的假设/概括  检查改变因素的因素<color=green>病毒</color>遍布整个网络  探索操纵这些因素如何影响随着时间的流逝达到平衡还是不稳定
+
 ### Source
 <trigger=infected,red>Infected</trigger> nodes are not immediately aware that they are <color=red>infected</color>. Only every so often do the nodes check whether they are <color=red>infected</color> by a <trigger=virus,green>virus</trigger>. When the <color=green>virus</color> has been detected, there is a probability that the <color=green>virus</color> will be removed. The model will stop running once the <color=green>virus</color> has completely died out .
 ### Chinese ***
@@ -60,7 +143,7 @@ An epidemic of an infectious disease/<trigger=virus,green>virus</trigger> that h
 ### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo Virus on a Network model by Uri Wilensky.
 ### Chinese ***
-作者：郑志刚，陈小春。基于Uri Wilensky的网络模型上的NetLogo病毒。
+作者：Charles Cheng 和 John Chen。基于 Uri Wilensky 的 NetLogo Virus on a Network 创作。
 
 ### Source
 average-node-degree
@@ -293,7 +376,7 @@ What happens to nodes that remove the virus?
  Examine the factors that change how the <color=green>virus</color> spreads throughout the network 
  Explore how manipulating these factors affect whether equilibrium  or instability  is reached over time 
 ### Chinese ***
- 了解计算机  和生物  <trigger=virus,green>病毒</trigger>传播 认识到以下假设/概括<color=blue>小号</color><color=red>一世</color><color=grey>[R</color>楷模 检查改变因素的因素<color=green>病毒</color>遍布整个网络network 探索操纵这些因素如何影响随着时间的推移达到平衡  或不稳定性 
+ 了解计算机  和生物  <trigger=virus,green>病毒</trigger>传播  认识到以下假设/概括<color=blue>小号</color><color=red>一世</color><color=grey>[R</color>楷模  检查改变因素的因素<color=green>病毒</color>遍布整个网络network  探索操纵这些因素如何影响随着时间的推移达到平衡  或不稳定性 
 
 ## Widgets
 ### Source
