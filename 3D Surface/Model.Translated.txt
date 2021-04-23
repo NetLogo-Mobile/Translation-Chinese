@@ -14,7 +14,7 @@ A coordinate system where the position of a point is specified by three numbers:
 ### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo 3D Surface model by Uri Wilensky.
 ### Chinese ***
-作者：郑志刚，陈小春。基于Uri Wilensky的NetLogo 3D Surface模型。
+作者：Charles Cheng, John Chen。基于 Uri Wilensky 的 NetLogo 3D Surface 模型。
 
 ### Source
 Cartesian coordinates
@@ -24,7 +24,7 @@ Cartesian coordinates
 ### Source
 Color Spectrum of the 3D Surface
 ### Chinese ***
-3D表面的色谱
+3D 表面的色谱
 
 ### Source
 Congratulations! 
@@ -34,7 +34,7 @@ Congratulations! 
 ### Source
 Cosine
 ### Chinese ***
-余弦
+余弦函数
 
 ### Source
 Creation of the Network
@@ -44,12 +44,12 @@ Creation of the Network
 ### Source
 Experiment with the num-turtles slider. How many <color=orange>turtles</color> are needed to produce a realistic effect? Why doesn't it keep getting better-looking indefinitely  as you add more <color=orange>turtles</color>?
 ### Chinese ***
-尝试使用num-turtles滑块。多少<color=orange>海龟</color>需要产生逼真的效果？为什么随着添加更多内容，它不会无限地变得更好看？<color=orange>海龟</color>？
+尝试使用海龟数量（num-turtles）滑块。需要多少<color=orange>海龟</color>才能产生逼真的效果？为什么随着<color=orange>海龟</color>数量的不断增长，图案不会继续变得更好看？
 
 ### Source
 Introduction
 ### Chinese ***
-介绍
+模型介绍
 
 ### Source
 Notice that as the <color=orange>turtles</color> move down (y-coordinate decreases ) they become <b>darker</b> in color , and when they move up (y-coordinate increases ) they become <color=grey>lighter</color>.
@@ -64,7 +64,7 @@ number
 ### Source
 Questions?
 ### Chinese ***
-问题？
+还有问题吗？
 
 ### Source
 Rendering the Surface
@@ -84,22 +84,22 @@ The network that is created is based on proximity (Euclidean distance ) betwe
 ### Source
 The number of <color=orange>turtles</color> that make up the surface
 ### Chinese ***
-的数量<color=orange>海龟</color>组成表面
+组成表面的<color=orange>海龟</color>数量。
 
 ### Source
 The trigonometric function that is equal to the ratio of the side adjacent to an acute angle  (in a right-angled  triangle) to the hypotenuse
 ### Chinese ***
-三角函数等于与锐角adjacent（直角  三角形）相邻的边与斜边的比率
+在直角  三角形中，Cosine 函数的值为邻边与斜边边长之比。
 
 ### Source
 This model maps <color=orange>turtles</color> between <trigger=cartesian-coordinates>Cartesian</trigger> and <trigger=spherical-coordinates>spherical</trigger> 3-dimensional coordinates. To create the appearance of a curved 3D surface, the program generates <color=orange>turtles</color> with random x- and z-coordinates, then computes each <color=orange>turtle's</color> y-coordinate based on x and z, and time . The <trigger=cosine>cosine</trigger> function is used in the formula to produce a curved surface. Varying the y coordinate based on time  produces motion.
 ### Chinese ***
-该模型图<color=orange>海龟</color>之间<trigger=cartesian-coordinates>直角坐标系</trigger>和<trigger=spherical-coordinates>球形</trigger>3维坐标。为了创建弯曲的3D曲面的外观，该程序将生成<color=orange>海龟</color>带有随机的x和z坐标，然后计算每个<color=orange>乌龟的</color>基于x和z以及时间  的y坐标。这<trigger=cosine>余弦</trigger>公式中使用了函数来生成曲面。根据时间改变y坐标会产生运动。
+这个模型将<color=orange>海龟</color> 在<trigger=cartesian-coordinates>直角坐标系</trigger>和<trigger=spherical-coordinates>球形坐标系</trigger>之间进行映射。为了创建弯曲的3D曲面的外观，该程序将生成<color=orange>海龟</color>带有随机的x和z坐标，然后计算每个<color=orange>乌龟的</color>基于x和z以及时间  的y坐标。这<trigger=cosine>余弦</trigger>公式中使用了函数来生成曲面。根据时间改变y坐标会产生运动。
 
 ### Source
 To render the surface in the NetLogo view, it maps from 3D to 2D coordinates as follows:
 ### Chinese ***
-为了在NetLogo视图中渲染表面，它按如下所示从3D坐标映射到2D坐标：
+为了在 NetLogo 视图中渲染表面，它按如下所示从 3D 坐标映射到 2D 坐标：
 
 ### Source
 Try changing the formula used to compute the y-coordinate to produce differently shaped surfaces. See if you can draw not just a surface, but a three dimensional shape such as a cone or a sphere. Record what surface/shape you produced and the corresponding formula.
@@ -114,7 +114,7 @@ Want to look at the community's or your answers to the questions asked in this m
 ### Source
 Well done! You have completed the 3D Surface model tutorial! Time to play with the model!
 ### Chinese ***
-做得好！您已完成3D表面模型教程！是时候玩模型了！
+干得漂亮，您已经完成了三维世界中的波浪教程——是时候自由探索了！
 
 ## Widgets
 ### Source
