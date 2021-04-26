@@ -50,7 +50,7 @@ After Being Infected
 ### Source
 After the <trigger=virus,green>virus</trigger> has died  out, some nodes are still <trigger=susceptible,blue>susceptible</trigger>, while others have become <trigger=resistant,grey>immune</trigger>. What is the ratio of the number of <color=grey>immune</color> nodes to the number of <color=blue>susceptible</color> nodes?
 ### Chinese ***
-在模型结束时，即使<trigger=virus,green>病毒</trigger>已经消亡 ，一些节点仍然<trigger=susceptible,blue>已受感染的</trigger>，而其他人已具有<trigger=resistant,grey>免疫力</trigger>。<color=grey>免疫的</color>节点和<color=blue>已受感染的</color>节点之间具有怎样的数量关系？试着调整网络的平均连接度，比例会如何变化呢？
+在模型结束时，即使<trigger=virus,green>病毒</trigger>已经消亡 ，一些节点仍然<trigger=susceptible,blue>易受感染</trigger>，而其他人已具有<trigger=resistant,grey>免疫力</trigger>。<color=grey>免疫的</color>节点和<color=blue>已受感染的</color>节点之间具有怎样的数量关系？试着调整网络的平均连接度，比例会如何变化呢？
 
 ### Source
 An epidemic of an infectious disease/<trigger=virus,green>virus</trigger> that has spread across a large region, for instance multiple continents or worldwide , affecting a substantial number of people 
@@ -90,7 +90,7 @@ Epidemic
 ### Source
 gain-resistance-chance
 ### Chinese ***
-获得抗性几率
+获得免疫几率
 
 ### Source
 Goals 
@@ -100,7 +100,7 @@ Goals 
 ### Source
 How Infection Occurs
 ### Chinese ***
-感染如何发生
+感染是如何发生的？
 
 ### Source
 How is the network created?
@@ -110,12 +110,12 @@ How is the network created?
 ### Source
 If a node does recover, there is some probability that it will become <trigger=resistant,grey>resistant</trigger> to this <color=green>virus</color> in the future. When a node becomes <color=grey>resistant</color>, the links between it and its neighbors  are <b>darkened</b>, since they are no longer possible vectors  for spreading the <color=green>virus</color>.
 ### Chinese ***
-如果节点确实恢复，则很有可能它将变为<trigger=resistant,grey>抵抗的</trigger>对此<color=green>病毒</color>将来。当一个节点成为<color=grey>抵抗的</color>，它和它的邻居between之间的链接<b>变暗了</b>，因为它们不再是传播the的可能的向量  。<color=green>病毒</color>。
+如果节点得到恢复，它很可能对此种病毒产生<trigger=resistant,grey>免疫力</trigger>。当一个节点<color=grey>具有免疫力</color>，它和邻居之间的链接<b>变暗</b>，因为它们之间不再可能传播<color=green>病毒</color>。
 
 ### Source
 If the recovery-chance is more than 0, even if the virus-spread-chance is high, do you think that if you ran the model forever, the <trigger=virus,green>virus</trigger> could stay alive ?
 ### Chinese ***
-如果恢复机会大于 0、病毒的传播概率很高，你觉得<trigger=virus,green>病毒</trigger>是否能够一直存活  下去？
+如果恢复几率大于 0、病毒的传播概率很高，你觉得<trigger=virus,green>病毒</trigger>是否能够一直存活  下去？
 
 ### Source
 Imagine you turn on the television  and switch to your local news  channel.  An important announcement  comes on, saying that there's a <trigger=pandemic>pandemic</trigger> rapidly  spreading, and citizens need to quarantine themselves inside their homes . You wonder: how do medical officials  know how fast a <trigger=virus,green>virus</trigger> is spreading and predict how many people will be <trigger=infected,red>infected</trigger> in the future?
@@ -140,7 +140,7 @@ Introduction
 ### Source
 Lacking immunity or <trigger=resistant>resistance</trigger>, at the risk of <trigger=infected,red>infection</trigger> by a pathogen/<trigger=virus,green>virus</trigger>
 ### Chinese ***
-缺乏免疫力或<trigger=resistant>反抗</trigger>，冒着<trigger=infected,red>感染</trigger>通过病原体/<trigger=virus,green>病毒</trigger>
+已受感染的节点缺乏先天或后天<trigger=resistant>免疫力</trigger>，因此可能受到病原体或<trigger=virus,green>病毒</trigger><trigger=infected,red>感染</trigger>。
 
 ### Source
 number-of-nodes
@@ -180,7 +180,7 @@ Resistant
 ### Source
 Set gain-resistance-chance to 0%. Under what conditions will the <trigger=virus,green>virus</trigger> die  out? How long  does it take? What conditions are required for the <color=green>virus</color> to live ?
 ### Chinese ***
-将获得免疫率设置为0％。在什么条件下<trigger=virus,green>病毒</trigger>会消亡？需要经过多久？怎样的条件可以让<color=green>病毒</color>存活？
+将获得免疫几率设置为 0％。在什么条件下<trigger=virus,green>病毒</trigger>会消亡？需要经过多久？怎样的条件可以让<color=green>病毒</color>存活？
 
 ### Source
 Susceptible
@@ -195,7 +195,7 @@ The average number of links coming out of each node
 ### Source
 The invasion and multiplication of microorganisms such as bacteria, <trigger=virus,green>viruses</trigger>, and parasites that are not normally present within the body
 ### Chinese ***
-微生物如细菌的入侵和繁殖，<trigger=virus,green>病毒</trigger>以及体内通常不存在的寄生虫
+受到微生物（细菌、<trigger=virus,green>病毒</trigger>、寄生虫）或电脑病毒的感染
 
 ### Source
 The network status plot shows the percentage of nodes in each state (<trigger=susceptible,blue>susceptible</trigger>, <trigger=infected,red>infected</trigger>, <trigger=resistant,grey>resistant</trigger>) over time .
@@ -205,52 +205,52 @@ The network status plot shows the percentage of nodes in each state (<trigger=su
 ### Source
 The network  that is created is based on proximity (Euclidean distance ) between nodes. A node is randomly  chosen and connected to the nearest node that it is not already connected to. This process is repeated until the network has the correct number of links to give the specified average node degree.
 ### Chinese ***
-创建的网络is基于节点之间的接近度（欧几里德距离  ）。随机选择一个节点并将其连接到尚未连接的最近节点。重复此过程，直到网络具有正确数量的链接以给出指定的平均节点程度为止。
+网络是基于节点之间的距离（欧几里德距离  ）创建的。创建网络时，首先随机选择一个节点，将其连接到未被连接的最近节点。重复此过程，直到网络中的链接数量达到设置的平均节点程度为止。
 
 ### Source
 The number of nodes that will start the simulation <trigger=infected,red>infected</trigger> with the <trigger=virus,green>virus</trigger>
 ### Chinese ***
-将开始模拟的节点数<trigger=infected,red>已感染</trigger>与<trigger=virus,green>病毒</trigger>
+开始模拟时，<trigger=infected,red>已被感染</trigger>并携带<trigger=virus,green>病毒</trigger>的节点数量。
 
 ### Source
 The probability that <trigger=susceptible,blue>susceptible</trigger> neighbors (colored <color=blue>blue</color>) will be <trigger=infected,red>infected</trigger>; this might correspond to the probability that someone on the <color=blue>susceptible</color> system actually executes the <color=red>infected</color> email  attachment.
 ### Chinese ***
-的概率<trigger=susceptible,blue>易受影响的</trigger>邻居（有色<color=blue>蓝色的</color>） 将<trigger=infected,red>已感染</trigger>;这可能对应于某人在<color=blue>易受影响的</color>系统实际上执行<color=red>已感染</color>电子邮件  附件。
+<trigger=susceptible,blue>蓝色、易受影响的</trigger>邻居被<trigger=infected,red>红色、已感染</trigger>节点感染的几率。
 
 ### Source
 The probability that a node that has recovered will become <trigger=resistant,grey>resistant</trigger> to this <trigger=virus,green>virus</trigger> in the future
 ### Chinese ***
-已恢复的节点将变为的概率<trigger=resistant,grey>抵抗的</trigger>对此<trigger=virus,green>病毒</trigger>将来
+从感染中恢复的节点拥有<trigger=resistant,grey>免疫力</trigger>的几率。
 
 ### Source
 The probability that the <trigger=virus,green>virus</trigger> will be removed when the <color=green>virus</color> has been detected
 ### Chinese ***
-该概率<trigger=virus,green>病毒</trigger>当<color=green>病毒</color>已被检测到
+当节点被<trigger=virus,green>病毒</trigger>感染时，检测到的几率。
 
 ### Source
 The rapid  spread of disease/<trigger=virus,green>virus</trigger> to a large number of people  in a given population within a short period of time 
 ### Chinese ***
- 疾病的迅速传播/<trigger=virus,green>病毒</trigger>short在短时间内  给定人口中的大量人口 
+疾病或<trigger=virus,green>病毒</trigger>在短时间内  向大量人口  传播。
 
 ### Source
 The rate at which nodes check whether they are <trigger=infected,red>infected</trigger> by a <trigger=virus>virus</trigger>; this might correspond to a regularly scheduled virus-scan  procedure, or simply a human noticing something fishy about how the computer  is behaving
 ### Chinese ***
-节点检查它们是否存在的速率<trigger=infected,red>已感染</trigger>由一个<trigger=virus>病毒</trigger>;这可能对应于定期安排的病毒扫描过程，或者仅是一个人注意到计算机的行为令人反感
+节点检查自身是否<trigger=infected,red>受到感染</trigger>的频率。
 
 ### Source
 The state of having a strong capacity to defend against a disease/<trigger=virus,green>virus</trigger>
 ### Chinese ***
-具有抵抗疾病的强大能力的状态/<trigger=virus,green>病毒</trigger>
+具有抵抗<trigger=virus,green>病毒</trigger>感染能力的状态。
 
 ### Source
 The total number of nodes in the network  (or the population of a community)
 ### Chinese ***
-网络  中节点总数（你也可以理解为：社区中的人口总数）
+网络  中的节点总数（你也可以理解为：社区中的人口总数）
 
 ### Source
 This model demonstrates the spread of a <trigger=virus,green>virus</trigger> through a network . Although the model is somewhat abstract, one interpretation is that each node represents a computer , and we are modeling the progress of a computer <color=green>virus</color> (or worm) through this network . Each node may be in one of three states: <trigger=susceptible,blue>susceptible</trigger>, <trigger=infected,red>infected</trigger>, or <trigger=resistant,grey>resistant</trigger>. In the academic literature  such a model is sometimes referred to as an <color=blue>S</color><color=red>I</color><color=grey>R</color> model for <trigger=epidemic>epidemics</trigger>.
 ### Chinese ***
-该模型演示了<trigger=virus,green>病毒</trigger>通过网络  。尽管模型有些抽象，但一种解释是，每个节点都代表一台计算机，而我们正在对计算机的进度进行建模<color=green>病毒</color>（或蠕虫）通过此网络  。每个节点可能处于以下三种状态之一：<trigger=susceptible,blue>易受影响的</trigger>，<trigger=infected,red>已感染</trigger>， 或者<trigger=resistant,grey>抵抗的</trigger>。在学术文献中  这种模型有时被称为<color=blue>小号</color><color=red>一世</color><color=grey>[R</color>的模型<trigger=epidemic>流行病</trigger>。
+该模型演示了<trigger=virus,green>病毒</trigger>通过网络  传播的过程。每个节点都代表一台计算机，而我们正在对<color=green>病毒</color>传播的过程进行进行建模。每个节点可能处于以下三种状态之一：<trigger=susceptible,blue>易受影响的</trigger>，<trigger=infected,red>已受感染</trigger>， 或者<trigger=resistant,grey>具有免疫的</trigger>。在学术文献中  这种模型有时被称为<trigger=epidemic>流行病</trigger>的SIR模型。
 
 ### Source
 Virus
@@ -275,17 +275,17 @@ Want to look at the community's or your answers to the questions asked in this m
 ### Source
 Welcome to the Virus on a Network Model!
 ### Chinese ***
-欢迎使用网络模型上的病毒！
+欢迎使用网络病毒传播模型！
 
 ### Source
 Well done! You have completed the Virus on a Network model tutorial! Time to play with the model!
 ### Chinese ***
-做得好！您已经完成了“网络上的病毒”模型教程！是时候玩模型了！
+太棒了，您已经完成了网络病毒传播模型教程！是时候自由探索了！
 
 ### Source
 What happens to nodes that remove the virus?
 ### Chinese ***
-删除病毒的节点会如何处理？
+成功删除病毒的节点会发生什么呢？
 
 ### Source
  Understand how a computer  and a biological  <trigger=virus,green>virus</trigger> spread
@@ -293,18 +293,21 @@ What happens to nodes that remove the virus?
  Examine the factors that change how the <color=green>virus</color> spreads throughout the network 
  Explore how manipulating these factors affect whether equilibrium  or instability  is reached over time 
 ### Chinese ***
- 了解计算机  和生物  <trigger=virus,green>病毒</trigger>传播  认识到以下假设/概括<color=blue>小号</color><color=red>一世</color><color=grey>[R</color>楷模  检查改变因素的因素<color=green>病毒</color>遍布整个网络network  探索操纵这些因素如何影响随着时间的推移达到平衡  或不稳定性 
+ 了解计算机  和生物  的<trigger=virus,green>病毒</trigger>传播；
+ 认识 S-I-R （易受感染-已被感染-具有免疫）疾病传播模型的基本假设；
+ 了解影响<color=green>病毒</color>在网络上传播的各类因素；
+ 探索如何调整这些因素，随着时间的推移  让模型达到平衡  或失衡 。
 
 ## Widgets
 ### Source
 average-node-degree
 ### Chinese
-平均节点的连接度
+节点的平均连接度
 
 ### Source
 gain-resistance-chance
 ### Chinese
-获得抗性几率
+获得免疫几率
 
 ### Source
 go
