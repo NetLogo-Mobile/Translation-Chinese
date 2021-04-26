@@ -3,6 +3,6 @@
   "SubjectTranslated": true,
   "ContentTranslated": true,
   "ContentMachineTranslated": false,
-  "ModelTranslated": true,
+  "ModelTranslated": false,
   "ModelMachineTranslated": false
 }
