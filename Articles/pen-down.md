@@ -1,17 +1,18 @@
 ﻿*** Machine Translated
-`Pen-down` （缩写为`pd` ）用于跟踪海龟的运动。画笔的颜色和海龟的颜色一样。当下`pen-down`开始追踪时，上`pen-up` （简称`pu` ）停止追踪海龟的运动。想到`pen-up`和`pen-down`像海龟的腹部画笔; `pen-down`可将画笔放到地面上，留下路径标记，而`pen-up`放笔可将画笔向上提起，不再标记地面。`Pen-down`和`Pen-down` `pen-up`是仅与海龟一起使用的格子。例如，`ask turtles [ pen-down]`将开始从海龟的运动中画图线条，而`ask turtles [ pen-up]`将不再跟踪该运动。（ `Pen-down` ，`pen-up`和`pen-erase`都等同于将海龟的`Pen-down` `pen-mode`为`down` ，`up`或`erase` ）
-
-以下代码将使海龟绘制正方形，然后移动到随机位置而不会留下痕迹：
+`pen-down` （简短版本`pd` ）用于跟踪乌龟的运动。画笔的颜色和海龟的颜色一样。 `pen-down`开始追踪时，上`pen-up` （对`pu`缩写）停止追踪乌龟的运动。想到`pen-up`和`pen-down`像海龟的腹部画笔; `pen-down`可将画笔放到地面上，留下路径标记，而`pen-up`放笔可将画笔往上拉，不再标记地面。 `Pen-down`和`Pen-down` `pen-up`是仅与海龟一起使用的图元。例如，如果我们希望乌龟画一个正方形，我们将编写以下代码：
 
 
-    ask turtles [
-    pen-down
-    repeat 4 [ forward 10 right 90 ]
-    pen-up
-    setxy random-xcor random-ycor
-    ]
+
+```
+ask turtles [
+	pen-down
+	repeat 4 [
+		right 90
+		forward 5
+	]
+	pen-up
+]
+```
 
 
-`Pen-erase` （缩写为`pe` ）在海龟经过它们时会删除以前绘制的线条。可以把它当作海龟腹部的橡皮擦。
-
-在下面的模型中，一架飞机在飞行。根据选择的过程，飞机将简单地四处飞行（使用上`pen-up` ），在离开跑道时四处飞行（使用`pen-down` ）或在擦除过去的线时四处飞行（使用`pen-erase` ）。
+在下面的模型中，一架飞机在两个神话般的目的地之间飞行：亚特兰蒂斯和瓦尔哈拉。在飞行过程中，是否在`draw-path?`留下了痕迹`draw-path?`开关打开。飞机每次到达目的地并转身时，都会更改其颜色，从而产生新的尾迹颜色。如果`draw-path?`开关关闭后，我们的飞机拿起画笔停止画图。当`draw-path?`时，我们还使用`clear-drawing`原语清除所有先前`draw-path?`开关关闭。请注意， `clear-drawing`是仅用于观察者的基元，因此我们在`ask turtles`语句之外使用它。

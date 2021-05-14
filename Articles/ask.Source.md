@@ -11,7 +11,7 @@ ask patches [ set pcolor pink ]
 
 
 
-You can also provide more than one commands with an `ask` primitive. For example, the following code would make all the turtles put their `pen-down`, and then turn right by ten degrees and go forward one unit 36 times, which would draw a circle.
+We can also provide more than one command with an `ask` primitive. For example, the following code would make all the turtles put their `pen-down`, and then turn right by ten degrees and go forward one unit 36 times, which would draw a circle.
 
 ```
 ask turtles [
@@ -31,3 +31,7 @@ Things to keep in mind when using `ask`:
 * You can ask individual turtles to follow a set of rules using the form `turtle n`, such as `ask turtle 1 [...]`, `ask turtle 2 [...]`
 * You can ask individual patches to follow a set of rules using the form `patch x y`, such as `patch 3 0 [...]`.
 * You can use the `with` primitive to ask an even smaller subset of given agents such as `ask turtles with [color = red][ ... ]` or `ask patches with [pxcor = 5][ ... ]`.
+
+
+
+In the model below, we want the fish to swim around randomly and the stars to just rotate, and we want all the turtles (fish + stars) to grow little by little. To make them follow these actions, we just use the `ask` primitive !

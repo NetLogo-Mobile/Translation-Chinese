@@ -1,10 +1,36 @@
 ﻿*** Machine Translated
-`Turtles-own`定义属于模型中所有海龟的变量。变量通常是海龟特有的特征或方面，例如*饥饿吗？*或*能量*。它的语法是：
+`turtles-own`允许我们为模型中的所有乌龟定义自定义海龟特征（变量）（除了默认的海龟特征，例如`color` ， `size`和`heading` ）。尽管所有乌龟的特征名称都相同，但是对于这些自定义特征，每只海龟将具有不同的值。一旦创建了此类自定义特征，就可以使用`set`原语更改其值。例如，如果我们要创建一个电动汽车模型，其中每辆汽车的剩余电池电量不同，则可以编写以下代码：
 
-`turtles-own [ variable1 variable2 ... ]`
 
-像全局变量和其他主体变量一样，它必须在任何过程定义之前的代码顶部定义。您可以定义一个或多个变量，但是它们必须全部在方括号内。
 
-如果您定义了多个海龟品种，则拥有`turtles-own`会将变量应用于所有品种。但是，您可以使用`<breed>-own`为特定种类定义变量，其中<breed>是你的种类的名字。例如，如果您已经通过定义龟的种类<code>breed [birds bird]</code> ，您可以通过创建只小鸟变<code>birds-own [wing-size]</code> 。</breed>
+```
+turtles-own [remaining-battery passengers]
+to setup
+	clear-all
+	create-turtles 100 [
+		set shape "car"
+		set remaining-battery random 100
+		set passengers one-of [1 2 3]
+	]
+	reset-ticks
+end
+to go
+	ask turtles [
+		if remaining-battery > 0 [
+			forward 1
+			set remaining-battery remaining-battery - 1
+		]
+	]
+	tick
+end
+```
 
-在以下模型中，汽车行驶时的油箱中存有一定量的汽油。我们使用`turtles-own`定义变量`gas` ，该变量代表汽车拥有多少汽油。之后，我们使用`gas`变量来确定汽车是否可以继续行驶。
+
+使用`turtles-own`时要记住的事情：
+
+- 在代码标签的顶部，您应该始终在代码的开头使用`turtles-own` 。
+- 通过用空格分隔每个特征，我们可以在`turtles-own`原始图中定义多个特征。
+- 您可以按照`<breed>-owns`格式创建特定于种类的特征。例如，如果我们有一个包含*银行*和*客户*的模型，则可以写成`banks-own [balance customer-list] customers-own [income]` 。如果您的模型中有多个品种，则使用“ `turtles-own`定义的特征将应用于所有乌龟，无论它们的种类如何。
+
+
+在下面的模型示例中，我们在三条平行的道路上有三辆汽车。每辆汽车的油箱中都有不同数量的汽油，旁边带有标签。单击“*执行”*按钮后，每辆汽车开始向前行驶，直到用完汽油为止。
