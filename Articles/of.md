@@ -1,24 +1,10 @@
 ﻿*** Machine Translated
-`of`是一个原始函数，它使我们可以接触到主体并提取其拥有的变量的值。通常，主体变量（例如`color` ， `size` ， `shape`以及使用`<agents>-own`命令定义的变量）是使用`ask`原语在主体上下文中访问的。 `of`让我们获得这样的块之外的变量或以获取在主体集合每个主体的所有值一次全部为列表。例如，如果我们想创建一个模型，每个人都挑选一个随机的朋友，如果他们还没有苹果，就给他们一个苹果，我们可以编写以下代码：
+`of`是一个关键字，使您可以接触到主体并提取其拥有的某些变量的值。通常，主体变量（例如`color` ，`size` ，`shape`以及用`<agent>-own`命令定义的变量）是在主体上下文中访问的，即在`ask turtles [...]`或`ask patches [...]`块。`of`将让你得到这样一个块之外的变量，或者得到一个主体集合每个主体的所有值的一次。
 
+`of`与`[]`块内的返回指令程序一起使用，例如：
 
+`[reporter] of agent` or `[reporter] of agentset`
 
-```
-ask people [
-	let my-friend one-of other people
-	if [apple] of my-friend = 0 [
-		ask my-friend [ set apple apple + 1 ]
-	]
-]
-```
+例如，如果我们想让格子的`pcolor`在世界的中心，我们会说`[pcolor] of patch 0 0` ，因为`pcolor`是我们想要获取的变量的名称，而`patch 0 0`是主体我们要从中获取变量。如果我们想要获取每只海龟的`size`值，我们将编写`[size] of turtles`并获取每只海龟大小的列表。
 
-
-使用`of`时要记住的事情：
-
-- `of`值对于查询主体特征非常有用，例如查找海龟的平均大小（海龟的`mean [size] of turtles` ），最大海龟的大小（ `max [size] of turtles` ）等。
-- 在界面中创建监视器或绘图时， `of`也是非常有用的。通常，我们需要提供某种汇总值，例如海龟的平均财富（海龟的`mean [wealth] of turtles` ）或`mean [wealth] of turtles`总财富（海龟的`sum [wealth] of turtles` ）。
-- 您还可以在之前`of`报告指令中执行一些简单的操作`of`例如，客户的`[checking-account + savings-account] of customers`可以获取客户帐户中的总金额，或者可以使用`[size / 2] of circles`自动计算出交易者的半径模型中的圆圈。
-- 如果我们使用`of`与agentsets（和没有原语，如`mean` ），它将返回列表。例如，如果模型中有3只海龟，则`[size] of turtles`将返回`[1 1 1]` 。
-
-
-在下面的模型示例中，我们具有与流行的在线游戏[*agar.io*](https://en.wikipedia.org/wiki/Agar.io)相似的模型。我们有很多乌龟代表圆圈，它们随机移动。当两只乌龟互相接触时，大海龟*吞食*小海龟。我们使用`of`来比较`ask`语句中的两只海龟，以选择较大的一只，然后将两只海龟的大小相加。
+注意：您的返回者可能比获取变量的值更复杂。您可以像对待Netlogo中的任何其他代码一样，将返回指令块中的代码视为必需，并在其中编写完整的表达式。例如，假设每个海龟的直径都存储在一个`diameter`变量中，而您想获取每个海龟半径的列表。一种简单的方法是写`[diameter / 2] of turtles` 。

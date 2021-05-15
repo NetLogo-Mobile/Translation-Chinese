@@ -1,17 +1,34 @@
-﻿`other` reports an agentset which is the same as the input agentset but omits the asking agent. It is very useful when we want turtles to communicate with each other. For example, if we wanted to create a network model in which each turtle is connected to another randomly picked turtle with a link, we would write the following link:
+﻿`other` reports an agentset which is the same as the input agentset but omits the asking agent. In other words, it excludes itself from the resulting agentset. For example:
 
 
 
 ```
-ask turtles [
-	create-link-with one-of other turtles
-]
+show count turtles-here
+=> 10
+show count other turtles-here
+=> 9  
 ```
 
 
-
-We use `other` in this context because if we did not, there is a chance that `one-of turtles`  would report the same turtle and because a turtle cannot create a link with itself, NetLogo would show an error.
-
+shows how one agent, the original turtle who called the command, is excluded from the agentset, resulting in the final count of "9". `other` is often useful when we want our agents to interact with other agents. For example,  
 
 
-In the model example below, we have clusters of stationary turtles randomly distributed in the world that represent people and we have a mobile turtle who represents a doctor. The doctor moves around randomly and when it comes across `other turtles`, it asks the other turtles on the same patch to turn themselves green if they are healthy and red if they are infected.
+
+```ask turtles [ if any? turtles-here [```
+
+```								set color red ] ]```
+
+
+
+ would make all the turtles red because `turtles-here` reports the original turtle as well. There is always at least 1 turtle when we use `turtles-here`. However, if we write 
+
+
+
+```ask turtles [if any? other turtles-here [```
+
+```								set color red ] ]```
+
+
+
+ only the turtles who have another turtle on the same patch would turn red. 
+

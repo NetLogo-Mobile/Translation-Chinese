@@ -1,42 +1,14 @@
 ﻿{
-  "all": {
-    "identity": "all",
-    "display_name": "all?",
-    "short_original": "Checks if a reporter is true for all the agents in an agentset.",
-    "short_description": "检查函数是否对主体集合中的所有主体都是正确的。",
-    "search_terms": [
-      "check",
-      "agents",
-      "agentset",
-      "exist"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "nobody",
-      "count",
-      "if",
-      "any"
-    ],
-    "library_models": [
-      "Autumn",
-      "Shepherds",
-      "Scatter",
-      "Party"
-    ]
-  },
   "and": {
     "identity": "and",
     "display_name": "and",
-    "short_original": "Checks if both provided conditions are true.",
+    "short_original": "checks if both of two conditions are true",
     "short_description": "检查两个条件是否都为真。",
     "search_terms": [
-      "both",
-      "boolean",
-      "true",
-      "false",
-      "combine"
+      "if",
+      "or",
+      "ifelse",
+      "ifelse-value"
     ],
     "agents": [
       "utilities"
@@ -45,79 +17,49 @@
       "if",
       "or",
       "ifelse",
-      "with"
+      "ifelse-value"
     ],
     "library_models": [
-      "Autumn",
-      "Fur",
-      "Flocking",
-      "Small Worlds"
+      "Virus on a Network",
+      "Tetris"
     ]
   },
   "any": {
     "identity": "any",
     "display_name": "any?",
-    "short_original": "Checks if there is at least one agent in an agentset.",
-    "short_description": "检查主体集合中是否有任何主体。",
+    "short_original": "checks if there are any agents in an agentset",
+    "short_description": "检查在主体集合中是否有任何主体。",
     "search_terms": [
-      "within",
+      "all?",
       "count",
-      "agentset",
-      "remaining"
+      "if",
+      "other"
     ],
     "agents": [
       "utilities"
     ],
     "see_also": [
-      "all",
+      "all?",
+      "count",
       "if",
-      "other",
-      "nobody"
+      "other"
     ],
     "library_models": [
-      "Anisogamy",
-      "Fur",
-      "Mammoths",
-      "Fireworks"
-    ]
-  },
-  "ask": {
-    "identity": "ask",
-    "display_name": "ask",
-    "short_original": "Asks agents do things.",
-    "short_description": "让主体或主体集合执行一些命令。",
-    "search_terms": [
-      "do",
-      "commands",
-      "rules",
-      "behavior"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "turtles",
-      "patches",
-      "links",
-      "with"
-    ],
-    "library_models": [
-      "Ants",
-      "Mimicry",
-      "Moths",
-      "Tumor"
+      "Team Assembly",
+      "Fireworks",
+      "Traffic Basic"
     ]
   },
   "breed": {
     "identity": "breed",
     "display_name": "breed",
-    "short_original": "Defines a custom breed of turtles.",
-    "short_description": "定义一种海龟（定义一个类型）。",
+    "short_original": "defines a breed or variant of turtle",
+    "short_description": "定义海龟的种类(或变种)。",
     "search_terms": [
-      "kind",
-      "type",
-      "subset",
-      "custom"
+      "create-turtles",
+      "turtles-own",
+      "die",
+      "ask"
     ],
     "agents": [
       "observer"
@@ -129,264 +71,21 @@
       "ask"
     ],
     "library_models": [
-      "Bacterial Infection",
-      "Disease Solo",
-      "Rabbit Grass Weeds",
-      "Wolf Sheep Predation"
-    ]
-  },
-  "ceiling": {
-    "identity": "ceiling",
-    "display_name": "ceiling",
-    "short_original": "Rounds a number up to the nearest integer.",
-    "short_description": "将数字向上取整。",
-    "search_terms": [
-      "round",
-      "up",
-      "integer",
-      "decimal",
-      "floating",
-      "math",
-      "calculate"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "floor",
-      "round",
-      "mean",
-      "count"
-    ],
-    "library_models": [
-      "GasLab Circular Particles",
-      "Traffic 2 Lanes",
-      "Chaos in a Box",
-      "Decay"
-    ]
-  },
-  "ca": {
-    "identity": "ca",
-    "display_name": "ca",
-    "short_original": "Clears all the drawings, turtles, plots, etc., leaving a blank slate.",
-    "short_description": "清除所有工程图，海龟，地块等，保留空白状态。",
-    "search_terms": [
-      "clear",
-      "erase",
-      "remove",
-      "delete",
-      "clean",
-      "new",
-      "fresh",
-      "refresh",
-      "reset",
-      "restart",
-      "reboot",
-      "recreate"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "clear-patches",
-      "clear-turtles",
-      "die",
-      "reset-ticks"
-    ],
-    "library_models": [
-      "Flocking",
-      "Fur",
-      "Daisyworld",
       "Wolf Sheep Predation",
-      "Follower"
-    ]
-  },
-  "clear-all": {
-    "identity": "clear-all",
-    "display_name": "clear-all",
-    "short_original": "Clears all the drawings, turtles, plots, etc., leaving a blank slate.",
-    "short_description": "清除所有绘图，海龟，图表等等，返回到初始状态。",
-    "search_terms": [
-      "clear",
-      "erase",
-      "remove",
-      "delete",
-      "clean",
-      "new",
-      "fresh",
-      "refresh",
-      "reset",
-      "restart",
-      "reboot",
-      "recreate"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "clear-patches",
-      "clear-turtles",
-      "die",
-      "reset-ticks"
-    ],
-    "library_models": [
-      "Flocking",
-      "Fur",
-      "Daisyworld",
-      "Wolf Sheep Predation",
-      "Follower"
-    ]
-  },
-  "clear-patches": {
-    "identity": "clear-patches",
-    "display_name": "clear-patches",
-    "short_original": "Clears the patches by resetting all patch variables to their default initial values and making them black.",
-    "short_description": "重置所有格子的状态。",
-    "search_terms": [
-      "clear",
-      "erase",
-      "remove",
-      "delete",
-      "clean",
-      "new",
-      "fresh",
-      "refresh",
-      "reset",
-      "restart",
-      "reboot",
-      "recreate"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "clear-all",
-      "clear-turtles",
-      "die",
-      "reset-ticks"
-    ],
-    "library_models": [
-      "Disease Solo",
-      "Turbulence",
-      "Simple Kinetics 3",
-      "Simple Birth Rates"
-    ]
-  },
-  "clear-turtles": {
-    "identity": "clear-turtles",
-    "display_name": "clear-turtles",
-    "short_original": "Removes all the turtles as well as resets the numbering of turtles.",
-    "short_description": "移除所有海龟。",
-    "search_terms": [
-      "clear",
-      "erase",
-      "remove",
-      "delete",
-      "clean",
-      "new",
-      "fresh",
-      "refresh",
-      "reset",
-      "restart",
-      "reboot",
-      "recreate"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "clear-all",
-      "clear-patches",
-      "die",
-      "reset-ticks"
-    ],
-    "library_models": [
-      "Grand Canyon",
-      "Disease Solo",
-      "CA 1D Elementary",
-      "Simple Birth Rates"
-    ]
-  },
-  "color": {
-    "identity": "color",
-    "display_name": "color",
-    "short_original": "Built-in turtle characteristic that the color of a turtle and allows us to change it.",
-    "short_description": "海龟和链接的内置变量，保存了海龟的颜色。",
-    "search_terms": [
-      "color",
-      "pencil",
-      "change",
-      "turtle",
-      "link",
-      "look",
-      "style",
-      "design",
-      "visual",
-      "hue",
-      "rgb",
-      "hex"
-    ],
-    "agents": [
-      "turtles",
-      "links"
-    ],
-    "see_also": [
-      "pcolor",
-      "scale-color",
-      "turtles-own",
-      "of"
-    ],
-    "library_models": [
-      "Sunflower",
-      "Mammoths",
-      "Bacterial Infection",
-      "Tumor"
-    ]
-  },
-  "count": {
-    "identity": "count",
-    "display_name": "count",
-    "short_original": "Counts the number of agents in an agentset.",
-    "short_description": "计算主体集合中的主体数量。",
-    "search_terms": [
-      "number",
-      "agents",
-      "many",
-      "turtles",
-      "links",
-      "patches",
-      "amount",
-      "total",
-      "sum"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "mean",
-      "mod",
-      "if",
-      "ifelse"
-    ],
-    "library_models": [
-      "Mimicry",
-      "Peppered Moths",
-      "Virus",
-      "Plant Growth"
+      "Fireworks",
+      "Minesweeper"
     ]
   },
   "create-links-with": {
     "identity": "create-links-with",
     "display_name": "create-links-with",
-    "short_original": "Creates links with every agent in an agentset.",
-    "short_description": "与主体集合中的每个主体创建链接。",
+    "short_original": "creates links with every agent in an agentset",
+    "short_description": "与主体集合中的每个主体创建链。",
     "search_terms": [
-      "social",
-      "connect",
-      "network",
-      "web",
-      "complex",
-      "relation"
+      "link-neighbors",
+      "layout-circle",
+      "links",
+      "n-of"
     ],
     "agents": [
       "turtles"
@@ -398,113 +97,20 @@
       "n-of"
     ],
     "library_models": [
-      "Team Assembly",
-      "CRISPR Bacterium",
-      "Membrane Formation",
-      "Virus on a Network"
-    ]
-  },
-  "crt": {
-    "identity": "crt",
-    "display_name": "crt",
-    "short_original": "Creates turtles with random colors and headings at the center of the world.",
-    "short_description": "在世界中心创建具有随机颜色和标题的海龟。",
-    "search_terms": [
-      "create",
-      "make",
-      "more",
-      "turtle",
-      "new",
-      "agent"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "hatch",
-      "sprout",
-      "ask",
-      "turtles-own"
-    ],
-    "library_models": [
-      "Sunflower",
-      "Wolf Sheep Predation",
-      "Virus",
-      "Plant Growth"
-    ]
-  },
-  "create-turtles": {
-    "identity": "create-turtles",
-    "display_name": "create-turtles",
-    "short_original": "Creates turtles with random colors and headings at the center of the world.",
-    "short_description": "创建具有随机颜色和方向的一组海龟。",
-    "search_terms": [
-      "make",
-      "more",
-      "turtle",
-      "new",
-      "agent"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "hatch",
-      "sprout",
-      "ask",
-      "turtles-own"
-    ],
-    "library_models": [
-      "Sunflower",
-      "Wolf Sheep Predation",
-      "Virus",
-      "Plant Growth"
-    ]
-  },
-  "die": {
-    "identity": "die",
-    "display_name": "die",
-    "short_original": "Removes a turtle or link from the world.",
-    "short_description": "从世界上移除一只海龟或一个链接。",
-    "search_terms": [
-      "remove",
-      "end",
-      "kill",
-      "erase",
-      "death",
-      "disappear",
-      "eliminate",
-      "discard"
-    ],
-    "agents": [
-      "turtles",
-      "links"
-    ],
-    "see_also": [
-      "turtles",
-      "links",
-      "patches",
-      "create-turtles"
-    ],
-    "library_models": [
-      "Wolf Sheep Predation",
-      "Virus",
-      "Tumor",
-      "Bug Hunt Camouflage"
+      "Fully Connected Network Example",
+      "Random Network Example"
     ]
   },
   "diffuse": {
     "identity": "diffuse",
     "display_name": "diffuse",
-    "short_original": "Spreads a patch characteristic to its neighbors.",
-    "short_description": "向目前格子相邻的格子散布变量。",
+    "short_original": "speads a patch variable around to its neighbors",
+    "short_description": "向目前格子相邻的八个格子散布变量。",
     "search_terms": [
-      "spread",
-      "share",
-      "disperse",
-      "radiate",
-      "propagate",
-      "broadcast"
+      "patches-own",
+      "patches",
+      "globals",
+      "neighbors"
     ],
     "agents": [
       "patches"
@@ -518,241 +124,19 @@
     "library_models": [
       "Ants",
       "Slime",
-      "Heatbugs",
-      "Honeycomb"
-    ]
-  },
-  "distance": {
-    "identity": "distance",
-    "display_name": "distance",
-    "short_original": "Reports the distance from one turtle/patch agent to another.",
-    "short_description": "返回从来源到主体的距离。",
-    "search_terms": [
-      "length",
-      "far",
-      "measure",
-      "range",
-      "gap",
-      "separation",
-      "space"
-    ],
-    "agents": [
-      "turtles",
-      "patches"
-    ],
-    "see_also": [
-      "facexy",
-      "min-pxcor",
-      "patch-ahead",
-      "setxy"
-    ],
-    "library_models": [
-      "Flocking Vee Formations",
-      "Fur",
-      "BeeSmart Hive Finding",
-      "Autumn"
-    ]
-  },
-  "end": {
-    "identity": "end",
-    "display_name": "end",
-    "short_original": "Concludes a procedure.",
-    "short_description": "结束一个自定义函数或过程。",
-    "search_terms": [
-      "finish",
-      "complete",
-      "close",
-      "finalize",
-      "wrap",
-      "terminate",
-      "define"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "to",
-      "to-report",
-      "ask",
-      "semicolon"
-    ],
-    "library_models": [
-      "Rock Paper Scissors",
-      "El Farol",
-      "Paths",
-      "Traffic Grid"
-    ]
-  },
-  "face": {
-    "identity": "face",
-    "display_name": "face",
-    "short_original": "Changes a turtle's heading towards another turtle or patch.",
-    "short_description": "转身面对特定的主体。",
-    "search_terms": [
-      "turn",
-      "spin",
-      "look",
-      "confront",
-      "watch",
-      "glare",
-      "stare",
-      "direction",
-      "angle"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "towards",
-      "facexy",
-      "forward",
-      "right"
-    ],
-    "library_models": [
-      "Disease Solo",
-      "Heatbugs",
-      "Voronoi - Emergent",
-      "Vants"
-    ]
-  },
-  "facexy": {
-    "identity": "facexy",
-    "display_name": "facexy",
-    "short_original": "Changes a turtle's heading towards a specific point (x, y) in the world.",
-    "short_description": "使海龟面向特定坐标（x，y）。",
-    "search_terms": [
-      "turn",
-      "spin",
-      "look",
-      "confront",
-      "watch",
-      "glare",
-      "stare",
-      "direction",
-      "angle"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "face",
-      "setxy",
-      "max-pxcor",
-      "towards"
-    ],
-    "library_models": [
-      "Ant Lines",
-      "Scatter",
-      "Bidding Market",
-      "Thermostat"
-    ]
-  },
-  "floor": {
-    "identity": "floor",
-    "display_name": "floor",
-    "short_original": "Rounds a number down to the nearest integer.",
-    "short_description": "将数字向下取整。",
-    "search_terms": [
-      "round",
-      "up",
-      "integer",
-      "decimal",
-      "floating",
-      "math",
-      "calculate"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "ceiling",
-      "round",
-      "mod",
-      "count"
-    ],
-    "library_models": [
-      "Daisyworld",
-      "Simple Birth Rates",
-      "Traffic Grid",
-      "CRISPR Bacterium"
-    ]
-  },
-  "forward": {
-    "identity": "forward",
-    "display_name": "forward",
-    "short_original": "Makes a turtle move in any number of units on a straight path.",
-    "short_description": "使海龟在目前的方向上前进一定距离。",
-    "search_terms": [
-      "move",
-      "motion",
-      "straight",
-      "go",
-      "around",
-      "position",
-      "location",
-      "step",
-      "walk",
-      "jog"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "right",
-      "random",
-      "turtles",
-      "move-to"
-    ],
-    "library_models": [
-      "Bidding Market",
-      "Vector Fields",
-      "CRISPR Ecosystem",
-      "Wolf Sheep Predation"
-    ]
-  },
-  "fd": {
-    "identity": "fd",
-    "display_name": "fd",
-    "short_original": "Makes a turtle move in any number of units on a straight path.",
-    "short_description": "使海龟沿直线路径以任意数量的单位移动。",
-    "search_terms": [
-      "move",
-      "motion",
-      "straight",
-      "go",
-      "around",
-      "position",
-      "location",
-      "step",
-      "walk",
-      "jog"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "right",
-      "random",
-      "turtles",
-      "move-to"
-    ],
-    "library_models": [
-      "Bidding Market",
-      "Vector Fields",
-      "CRISPR Ecosystem",
-      "Wolf Sheep Predation"
+      "Diffusion Graphics"
     ]
   },
   "globals": {
     "identity": "globals",
     "display_name": "globals",
-    "short_original": "Defines variables that can be accessed throughout the whole model and has the same value for all the agents.",
-    "short_description": "定义可以在整个模型中使用的变量。",
+    "short_original": "defines variables that can be used throughout the whole model",
+    "short_description": "定义可以在整个模型中被使用的变量。",
     "search_terms": [
-      "variable",
-      "scope",
-      "universal",
-      "constant"
+      "turtles-own",
+      "patches-own",
+      "set",
+      "ifelse"
     ],
     "agents": [
       "observer"
@@ -761,84 +145,23 @@
       "turtles-own",
       "patches-own",
       "set",
-      "let"
+      "ifelse"
     ],
     "library_models": [
-      "Shepherds",
-      "HIV",
-      "Giant Component",
-      "Fruit Wars"
-    ]
-  },
-  "hatch": {
-    "identity": "hatch",
-    "display_name": "hatch",
-    "short_original": "Makes a turtle make any number of new turtles that are identical to itself.",
-    "short_description": "从已有的海龟创建新的海龟。",
-    "search_terms": [
-      "birth",
-      "new",
-      "create",
-      "conceive",
-      "spawn",
-      "generate",
-      "make",
-      "parent"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "sprout",
-      "create-turtles",
-      "die",
-      "ask"
-    ],
-    "library_models": [
-      "Chaos in a Box",
-      "Reactor Top Down",
-      "Voronoi",
-      "Galton Box"
-    ]
-  },
-  "if": {
-    "identity": "if",
-    "display_name": "if",
-    "short_original": "Carries out a provided set of rules (code) if a given condition is true. Does nothing if a given condition is false.",
-    "short_description": "根据条件运行命令。",
-    "search_terms": [
-      "condition",
-      "true",
-      "false",
-      "branch"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "ifelse",
-      "ifelse-value",
-      "any",
-      "all"
-    ],
-    "library_models": [
-      "Reactor X-Section",
-      "Sand",
-      "DLA Alternate Linear",
-      "Fire"
+      "Simple Birth Rates",
+      "Wealth Distribution"
     ]
   },
   "ifelse": {
     "identity": "ifelse",
     "display_name": "ifelse",
-    "short_original": "Carries out one set of rules if a given condition is true, and another set of rules if a given condition is false.",
+    "short_original": "execute specific code if a condition is true, otherwise, execute other code",
     "short_description": "如果条件为真，则执行特定的代码，否则，执行其他代码。",
     "search_terms": [
-      "condition",
-      "true",
-      "false",
-      "branch",
-      "otherwise"
+      "if",
+      "ifelse-value",
+      "of",
+      "or"
     ],
     "agents": [
       "utilities"
@@ -846,26 +169,24 @@
     "see_also": [
       "if",
       "ifelse-value",
-      "or",
-      "and"
+      "of",
+      "or"
     ],
     "library_models": [
-      "Crystallization Basic",
-      "Rebellion",
-      "Hotelling's Law",
-      "Traffic Grid"
+      "Virus",
+      "Segregation"
     ]
   },
   "ifelse-value": {
     "identity": "ifelse-value",
     "display_name": "ifelse-value",
-    "short_original": "Picks a value based on a provided list of condition-value pairs.",
-    "short_description": "根据不同的条件，返回不同的值。",
+    "short_original": "execute different code for a number of different conditions",
+    "short_description": "根据不同的条件，执行不同的代码。",
     "search_terms": [
-      "switch",
-      "case",
-      "condition",
-      "otherwise"
+      "if",
+      "ifelse",
+      "of",
+      "count"
     ],
     "agents": [
       "utilities"
@@ -873,26 +194,24 @@
     "see_also": [
       "if",
       "ifelse",
-      "or",
-      "globals"
+      "of",
+      "count"
     ],
     "library_models": [
-      "Echo",
-      "Virus",
-      "Sunflower Emergent",
-      "DLA Alternate"
+      "Spread of Disease",
+      "Ant Adaptation"
     ]
   },
   "in-cone": {
     "identity": "in-cone",
     "display_name": "in-cone",
-    "short_original": "Reports members of an agentset within a \"cone-of-vision\" of an agent.",
-    "short_description": "返回主体集合中位于海龟“视锥”区域内的成员。",
+    "short_original": "reports members of an agentset within a \"cone-of-vision\" for a turtle",
+    "short_description": "返回海龟的“视野角度”给主体集合中的成员。",
     "search_terms": [
-      "see",
-      "vision",
-      "detect",
-      "near"
+      "in-radius",
+      "other",
+      "neighbors",
+      "with"
     ],
     "agents": [
       "turtles"
@@ -904,24 +223,20 @@
       "with"
     ],
     "library_models": [
-      "Flocking Vee Formations",
-      "BeeSmart Hive Finding",
-      "Bug Hunt Speeds",
-      "Flocking"
+      "Traffic 2 Lanes",
+      "Vision Cone Example"
     ]
   },
   "in-radius": {
     "identity": "in-radius",
     "display_name": "in-radius",
-    "short_original": "Reports members of an agentset within a certain radius of an agent.",
-    "short_description": "返回在某个主体一定距离内的一个主体集合的成员。",
+    "short_original": "reports members of an agentset within a certain distance of an agent",
+    "short_description": "返回主体的距离给主体集合中的成员。",
     "search_terms": [
-      "around",
-      "near",
-      "circle",
-      "detect",
-      "see",
-      "vision"
+      "in-cone",
+      "other",
+      "in-radius",
+      "neighbors"
     ],
     "agents": [
       "turtles",
@@ -930,84 +245,622 @@
     "see_also": [
       "in-cone",
       "other",
-      "neighbors",
-      "with"
+      "in-radius",
+      "neighbors"
     ],
     "library_models": [
-      "GasLab Circular Particles",
-      "Paths",
-      "Fruit Wars",
-      "Fairy Circles"
+      "Flocking",
+      "Scatter"
     ]
   },
   "layout-circle": {
     "identity": "layout-circle",
     "display_name": "layout-circle",
-    "short_original": "Places turtles in a circle circle around the center of the world.",
+    "short_original": "equally space turtles in a circle around the center of the world",
     "short_description": "在世界中心周围将海龟均匀地围成一圈。",
     "search_terms": [
-      "formation",
-      "arrangement",
-      "ring",
-      "link"
+      "links",
+      "link-neighbors",
+      "create-links-with",
+      "setxy"
     ],
     "agents": [
       "observer"
     ],
     "see_also": [
       "links",
+      "link-neighbors",
       "create-links-with",
-      "setxy",
-      "move-to"
+      "setxy"
     ],
     "library_models": [
-      "Planarity",
-      "Giant Component",
-      "Small Worlds",
-      "Spread of Disease"
+      "Network Example"
+    ]
+  },
+  "link-neighbors": {
+    "identity": "link-neighbors",
+    "display_name": "link-neighbors",
+    "short_original": "report all agents connected by links",
+    "short_description": "返回链连接的所有主体。",
+    "search_terms": [
+      "neighbors",
+      "create-links-with",
+      "layout-circle",
+      "any?"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "neighbors",
+      "create-links-with",
+      "layout-circle",
+      "any?"
+    ],
+    "library_models": [
+      "Virus on a Network"
+    ]
+  },
+  "links": {
+    "identity": "links",
+    "display_name": "links",
+    "short_original": "reports the agentset of all links in the model",
+    "short_description": "返回模型中所有链接的主体集合。",
+    "search_terms": [
+      "link-neighbors",
+      "layout-circle",
+      "turtles",
+      "patches"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "link-neighbors",
+      "layout-circle",
+      "turtles",
+      "patches"
+    ],
+    "library_models": [
+      "Random Network"
+    ]
+  },
+  "n-of": {
+    "identity": "n-of",
+    "display_name": "n-of",
+    "short_original": "randomly report \"n\" agents from an agentset",
+    "short_description": "随机一个主体集合中返回n个主体。",
+    "search_terms": [
+      "one-of",
+      "count",
+      "any?",
+      "all?"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "one-of",
+      "count",
+      "any?",
+      "all?"
+    ],
+    "library_models": [
+      "Virus",
+      "Segregation Simple"
+    ]
+  },
+  "of": {
+    "identity": "of",
+    "display_name": "of",
+    "short_original": "report the value of an agent-owned variable from another context",
+    "short_description": "从另一个环境返回主体变量的值。",
+    "search_terms": [
+      "with",
+      "to-report",
+      "turtles-own",
+      "patches-own"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "with",
+      "to-report",
+      "turtles-own",
+      "patches-own"
+    ],
+    "library_models": []
+  },
+  "or": {
+    "identity": "or",
+    "display_name": "or",
+    "short_original": "checks if either of two conditions is true",
+    "short_description": "检查两个条件中的任何一个是否为真。",
+    "search_terms": [
+      "if",
+      "ifelse",
+      "and",
+      "xor"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "if",
+      "ifelse",
+      "and",
+      "xor"
+    ],
+    "library_models": [
+      "Voronoi"
+    ]
+  },
+  "random": {
+    "identity": "random",
+    "display_name": "random",
+    "short_original": "generate a random whole number within a specified range",
+    "short_description": "生成一个指定范围内的随机整数。",
+    "search_terms": [
+      "random-float",
+      "random-normal",
+      "globals",
+      "turtles-own"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "random-float",
+      "random-normal",
+      "globals",
+      "turtles-own"
+    ],
+    "library_models": [
+      "Fireworks",
+      "Virus"
+    ]
+  },
+  "random-float": {
+    "identity": "random-float",
+    "display_name": "random-float",
+    "short_original": "generate a random real (non-whole) number within a specified range",
+    "short_description": "生成一个指定范围内的随机实数（非整数）。",
+    "search_terms": [
+      "random",
+      "random-normal",
+      "globals",
+      "turtles-own"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "random",
+      "random-normal",
+      "globals",
+      "turtles-own"
+    ],
+    "library_models": [
+      "Virus",
+      "Wolf Sheep Predation"
+    ]
+  },
+  "scale-color": {
+    "identity": "scale-color",
+    "display_name": "scale-color",
+    "short_original": "generate a shade of a base hue (color) based on a given value",
+    "short_description": "根据给定的值，生成一个基本色调（颜色）的阴影。",
+    "search_terms": [
+      "color",
+      "pcolor",
+      "set",
+      "turtles-own"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "color",
+      "pcolor",
+      "set",
+      "turtles-own"
+    ],
+    "library_models": [
+      "Ants",
+      "Wolf Sheep Simple 3"
+    ]
+  },
+  "setxy": {
+    "identity": "setxy",
+    "display_name": "setxy",
+    "short_original": "set the position of a turtle (in terms of X and Y coordinates)",
+    "short_description": "通过X和Y坐标设置海龟的位置。",
+    "search_terms": [
+      "move-to",
+      "min-pxcor",
+      "max-pxcor",
+      "neighbors"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "move-to",
+      "min-pxcor",
+      "max-pxcor",
+      "neighbors"
+    ],
+    "library_models": [
+      "Wolf Sheep Simple 2",
+      "Segregation Simple"
+    ]
+  },
+  "sort-by": {
+    "identity": "sort-by",
+    "display_name": "sort-by",
+    "short_original": "sort a list based on a user-defined comparison reporter",
+    "short_description": "根据用户定义的比较函数对列表进行排序。",
+    "search_terms": [
+      "sort-on",
+      "sort",
+      "count",
+      "mean"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "sort-on",
+      "sort",
+      "count",
+      "mean"
+    ],
+    "library_models": [
+      "Ask Ordering Example"
+    ]
+  },
+  "sort-on": {
+    "identity": "sort-on",
+    "display_name": "sort-on",
+    "short_original": "sort an agentset into a list ordered by the value of a given reporter",
+    "short_description": "根据已有报告指令的值，将主体集合排序。",
+    "search_terms": [
+      "sort-by",
+      "sort",
+      "count",
+      "mean"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "sort-by",
+      "sort",
+      "count",
+      "mean"
+    ],
+    "library_models": [
+      "Birthdays"
+    ]
+  },
+  "tie": {
+    "identity": "tie",
+    "display_name": "tie",
+    "short_original": "make a link into a solid connection that can move turtles in the world",
+    "short_description": "用一个链将两只海龟绑定起来，使他们能相同移动。",
+    "search_terms": [
+      "links",
+      "create-links-with",
+      "link-neighbors",
+      "layout-circle"
+    ],
+    "agents": [
+      "links"
+    ],
+    "see_also": [
+      "links",
+      "create-links-with",
+      "link-neighbors",
+      "layout-circle"
+    ],
+    "library_models": [
+      "Tie System Example"
+    ]
+  },
+  "all": {
+    "identity": "all",
+    "display_name": "all?",
+    "short_original": "Check if a reporter is true for all agents in an agentset.",
+    "short_description": "检查报告指令对主体集合中的所有主体是否为真。",
+    "search_terms": [
+      "any?",
+      "nobody",
+      "count",
+      "with"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "any?",
+      "nobody",
+      "count",
+      "with"
+    ],
+    "library_models": [
+      "Segregation",
+      "Voting"
+    ]
+  },
+  "ceiling": {
+    "identity": "ceiling",
+    "display_name": "ceiling",
+    "short_original": "Round a number up to the nearest integer.",
+    "short_description": "将数字向上取整。",
+    "search_terms": [
+      "floor",
+      "round",
+      "count",
+      "mean"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "floor",
+      "round",
+      "count",
+      "mean"
+    ],
+    "library_models": [
+      "Single Collision",
+      "Gravity Box"
+    ]
+  },
+  "count": {
+    "identity": "count",
+    "display_name": "count",
+    "short_original": "Count the number of agents in an agentset.",
+    "short_description": "计算主体集合中的主体数量。",
+    "search_terms": [
+      "mean",
+      "mod",
+      "if",
+      "ifelse"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "mean",
+      "mod",
+      "if",
+      "ifelse"
+    ],
+    "library_models": [
+      "Wolf Sheep Predation"
+    ]
+  },
+  "die": {
+    "identity": "die",
+    "display_name": "die",
+    "short_original": "Remove a turtle or link from the world.",
+    "short_description": "从世界上移除海龟或链。",
+    "search_terms": [
+      "hatch",
+      "sprout",
+      "create-turtles",
+      "create-links-with"
+    ],
+    "agents": [
+      "turtles",
+      "links"
+    ],
+    "see_also": [
+      "hatch",
+      "sprout",
+      "create-turtles",
+      "create-links-with"
+    ],
+    "library_models": [
+      "Wolf Sheep Predation",
+      "Virus",
+      "Tumor"
+    ]
+  },
+  "distance": {
+    "identity": "distance",
+    "display_name": "distance",
+    "short_original": "Find the distance from the caller to an agent.",
+    "short_description": "返回从来源到主体的距离。",
+    "search_terms": [
+      "face",
+      "move-to",
+      "max-pxcor",
+      "neighbors"
+    ],
+    "agents": [
+      "turtles",
+      "patches"
+    ],
+    "see_also": [
+      "face",
+      "move-to",
+      "max-pxcor",
+      "neighbors"
+    ],
+    "library_models": [
+      "Wave Machine",
+      "Mousetraps",
+      "Erosion",
+      "Flocking"
+    ]
+  },
+  "end": {
+    "identity": "end",
+    "display_name": "end",
+    "short_original": "Conclude a procedure.",
+    "short_description": "结束一个程序。",
+    "search_terms": [
+      "to",
+      "to-report",
+      "ask",
+      "semicolon"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "to",
+      "to-report",
+      "ask",
+      "semicolon"
+    ],
+    "library_models": [
+      "Wolf Sheep Predation",
+      "Forest Fire",
+      "Segregation"
+    ]
+  },
+  "face": {
+    "identity": "face",
+    "display_name": "face",
+    "short_original": "Turn to face a specific agent.",
+    "short_description": "转向面对一个特定的主体。",
+    "search_terms": [
+      "towards",
+      "facexy",
+      "heading",
+      "right"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "towards",
+      "facexy",
+      "heading",
+      "right"
+    ],
+    "library_models": [
+      "Simple Collision",
+      "Boiling",
+      "Fireworks"
+    ]
+  },
+  "floor": {
+    "identity": "floor",
+    "display_name": "floor",
+    "short_original": "Round a number down to the nearest integer.",
+    "short_description": "将数字向下取整。",
+    "search_terms": [
+      "ceiling",
+      "round",
+      "mod",
+      "count"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "ceiling",
+      "round",
+      "mod",
+      "count"
+    ],
+    "library_models": [
+      "Rebellion",
+      "Atmosphere"
+    ]
+  },
+  "hatch": {
+    "identity": "hatch",
+    "display_name": "hatch",
+    "short_original": "Creates turtles from an existing turtle.",
+    "short_description": "从已有的海龟创建新的海龟。",
+    "search_terms": [
+      "sprout",
+      "create-turtles",
+      "die",
+      "ask"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "sprout",
+      "create-turtles",
+      "die",
+      "ask"
+    ],
+    "library_models": [
+      "Virus",
+      "Wolf Sheep Predation",
+      "Sunflower"
+    ]
+  },
+  "if": {
+    "identity": "if",
+    "display_name": "if",
+    "short_original": "Conditionally run a command. ",
+    "short_description": "有条件地运行命令。",
+    "search_terms": [
+      "ifelse",
+      "ifelse-value",
+      "any?",
+      "all?"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "ifelse",
+      "ifelse-value",
+      "any?",
+      "all?"
+    ],
+    "library_models": [
+      "Virus",
+      "Shepherds"
     ]
   },
   "left": {
     "identity": "left",
     "display_name": "left",
-    "short_original": "Turns a turtle certain amount of degrees to the left.",
+    "short_original": "Turn a certain amount of degrees to the left.",
     "short_description": "向左旋转一定角度。",
     "search_terms": [
-      "turn",
-      "angle",
-      "direction",
-      "orientation",
-      "twist",
-      "rotate"
+      "right",
+      "heading",
+      "towards",
+      "face"
     ],
     "agents": [
       "turtles"
     ],
     "see_also": [
       "right",
-      "set",
-      "face",
-      "forward"
+      "heading",
+      "towards",
+      "face"
     ],
     "library_models": [
-      "Mammoths",
-      "Tumor",
-      "Flocking",
-      "Slime"
+      "Wolf Sheep Predation",
+      "Segregation",
+      "Traffic Grid"
     ]
   },
   "let": {
     "identity": "let",
     "display_name": "let",
-    "short_original": "Creates a local variable that only exists within just one procedure or a statement surrended with brackets (`[  ]`).",
+    "short_original": "Create a local variable.",
     "short_description": "创建一个局部变量。",
     "search_terms": [
-      "variable",
-      "local",
-      "declare",
-      "value",
-      "constant",
-      "temporary"
+      "turtles-own",
+      "patches-own",
+      "globals",
+      "set"
     ],
     "agents": [
       "utilities"
@@ -1019,196 +872,115 @@
       "set"
     ],
     "library_models": [
-      "Disease Solo",
-      "Sand",
-      "Lennard-Jones",
-      "Boiling"
+      "Sunflower",
+      "Flocking"
     ]
   },
-  "link-neighbors": {
-    "identity": "link-neighbors",
-    "display_name": "link-neighbors",
-    "short_original": "Reports all agents connected to a turtle with links.",
-    "short_description": "返回链接连接的所有主体。",
+  "max-pxcor": {
+    "identity": "max-pxcor",
+    "display_name": "max-pxcor",
+    "short_original": "Find patches' largest x-coordinate.",
+    "short_description": "返回格子的最大x坐标。",
     "search_terms": [
-      "connect",
-      "network",
-      "web",
-      "complex",
-      "relation",
-      "social"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "create-links-with",
-      "links",
-      "any",
-      "count"
-    ],
-    "library_models": [
-      "Membrane Formation",
-      "Giant Component",
-      "Small Worlds",
-      "Language Change"
-    ]
-  },
-  "links": {
-    "identity": "links",
-    "display_name": "links",
-    "short_original": "Reports an agentset that contains all the links in a model.",
-    "short_description": "返回模型中所有链接的集合。",
-    "search_terms": [
-      "connect",
-      "network",
-      "web",
-      "complex",
-      "relation",
-      "social"
-    ],
-    "agents": [
-      "links"
-    ],
-    "see_also": [
-      "link-neighbors",
-      "turtles",
-      "patches",
-      "create-links-with"
-    ],
-    "library_models": [
-      "Virus on a Network",
-      "Preferential Attachment",
-      "Team Assembly",
-      "Small Worlds"
-    ]
-  },
-  "max": {
-    "identity": "max",
-    "display_name": "max",
-    "short_original": "Reports the highest value in a provided list.",
-    "short_description": "返回列表中的最高值。",
-    "search_terms": [
-      "big",
-      "high",
-      "largest",
-      "most",
-      "top"
+      "min-pxcor",
+      "min-pycor",
+      "move-to",
+      "setxy"
     ],
     "agents": [
       "utilities"
     ],
     "see_also": [
-      "count",
-      "mean",
-      "mod",
-      "of"
+      "min-pxcor",
+      "min-pycor",
+      "move-to",
+      "setxy"
     ],
     "library_models": [
-      "Mimicry",
-      "Ant Lines",
-      "Grand Canyon",
-      "Fruit Wars"
+      "Erosion",
+      "Traffic Grid"
+    ]
+  },
+  "max-pycor": {
+    "identity": "max-pycor",
+    "display_name": "max-pycor",
+    "short_original": "Find patches' largest y-coordinate.",
+    "short_description": "返回格子的最大y坐标。",
+    "search_terms": [
+      "min-pxcor",
+      "min-pycor",
+      "move-to",
+      "setxy"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "min-pxcor",
+      "min-pycor",
+      "move-to",
+      "setxy"
+    ],
+    "library_models": [
+      "Erosion",
+      "Traffic Grid"
     ]
   },
   "max-n-of": {
     "identity": "max-n-of",
     "display_name": "max-n-of",
-    "short_original": "Reports a list of top values in a provided list.",
+    "short_original": "Gives a list of top values of a list.",
     "short_description": "从列表中取出最大的几个值，作为列表返回。",
-    "search_terms": [
-      "big",
-      "high",
-      "largest",
-      "most",
-      "top"
-    ],
+    "search_terms": [],
     "agents": [
       "utilities"
     ],
     "see_also": [
       "one-of",
       "max",
-      "of",
-      "count"
+      "mean",
+      "any?"
     ],
     "library_models": [
       "Simple Economy",
-      "Simple Viral Marketing"
+      "Viral Marketing"
     ]
   },
-  "max-pxcor": {
-    "identity": "max-pxcor",
-    "display_name": "max-pxcor",
-    "short_original": "Reports the largest x-coordinate of the patches in a model.",
-    "short_description": "返回格子的最大x坐标。",
+  "max": {
+    "identity": "max",
+    "display_name": "max",
+    "short_original": "Report the highest value in a list.",
+    "short_description": "返回列表中的最大值。",
     "search_terms": [
-      "patch",
-      "coordinate",
-      "x",
-      "axis",
-      "world",
-      "view",
-      "west"
+      "max-n-of",
+      "min",
+      "mean",
+      "of"
     ],
     "agents": [
       "utilities"
     ],
     "see_also": [
-      "min-pxcor",
-      "min-pycor",
-      "move-to",
-      "setxy"
+      "max-n-of",
+      "min",
+      "mean",
+      "of"
     ],
     "library_models": [
-      "Urban Suite - Economic Disparity",
-      "DLA",
-      "Traffic Grid Goal",
-      "Blood Sugar Regulation"
-    ]
-  },
-  "max-pycor": {
-    "identity": "max-pycor",
-    "display_name": "max-pycor",
-    "short_original": "Reports the largest y-coordinate of the patches in a model.",
-    "short_description": "返回格子的最大y坐标。",
-    "search_terms": [
-      "patch",
-      "coordinate",
-      "y",
-      "axis",
-      "world",
-      "view",
-      "north"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "min-pxcor",
-      "min-pycor",
-      "move-to",
-      "setxy"
-    ],
-    "library_models": [
-      "Fruit Wars",
-      "Ants",
-      "Sunflower Biomorphs",
-      "Galton Box"
+      "Flocking",
+      "Paths"
     ]
   },
   "mean": {
     "identity": "mean",
     "display_name": "mean",
-    "short_original": "Reports the average of a provided list of numerical values.",
+    "short_original": "Find the mean of a list of values.",
     "short_description": "返回值列表的平均值。",
     "search_terms": [
-      "average",
-      "list",
-      "array",
-      "median",
-      "medium",
-      "middle"
+      "count",
+      "max",
+      "round",
+      "ceiling"
     ],
     "agents": [
       "utilities"
@@ -1220,52 +992,46 @@
       "ceiling"
     ],
     "library_models": [
-      "Mimicry",
-      "Flocking",
-      "Scatter",
-      "CRISPR Ecosystem"
+      "Fire",
+      "Erosion",
+      "Traffic Grid"
     ]
   },
   "member": {
     "identity": "member",
     "display_name": "member?",
-    "short_original": "Reports true if a value is within a list or if an agent is in an agentset.",
-    "short_description": "检查值是否在列表中，或者主体是否在主体集中。",
+    "short_original": "Check if a value is within a list, or if an agent is in an agentset.",
+    "short_description": "检查值是否在列表中，或者主体是否在主体集合中。",
     "search_terms": [
-      "in",
-      "list",
-      "part",
-      "element"
+      "any?",
+      "all?",
+      "count",
+      "ifelse"
     ],
     "agents": [
       "utilities"
     ],
     "see_also": [
+      "any?",
+      "all?",
       "count",
-      "if",
-      "n-of",
-      "with"
+      "ifelse"
     ],
     "library_models": [
-      "Fairy Circles",
-      "Small Worlds",
-      "Party",
-      "Traffic Grid Goal"
+      "Flocking",
+      "Rumor Mill"
     ]
   },
   "min-pxcor": {
     "identity": "min-pxcor",
     "display_name": "min-pxcor",
-    "short_original": "Reports the smallest x-coordinate of the patches in a model.",
+    "short_original": "Find patches' smallest x-coordinate.",
     "short_description": "返回格子的最小x坐标。",
     "search_terms": [
-      "patch",
-      "coordinate",
-      "x",
-      "axis",
-      "world",
-      "view",
-      "east"
+      "max-pxcor",
+      "max-pycor",
+      "move-to",
+      "setxy"
     ],
     "agents": [
       "utilities"
@@ -1277,25 +1043,20 @@
       "setxy"
     ],
     "library_models": [
-      "Fire",
-      "Tumor",
-      "Blood Sugar Regulation",
-      "Ant Lines"
+      "Erosion",
+      "Traffic Grid"
     ]
   },
   "min-pycor": {
     "identity": "min-pycor",
     "display_name": "min-pycor",
-    "short_original": "Reports the smallest y-coordinate of the patches in a model.",
+    "short_original": "Find patches' smallest y-coordinate.",
     "short_description": "返回格子的最小y坐标。",
     "search_terms": [
-      "patch",
-      "coordinate",
-      "x",
-      "axis",
-      "world",
-      "view",
-      "south"
+      "max-pxcor",
+      "max-pycor",
+      "move-to",
+      "setxy"
     ],
     "agents": [
       "utilities"
@@ -1307,23 +1068,20 @@
       "setxy"
     ],
     "library_models": [
-      "Autumn",
-      "Fireworks",
-      "Galton Box",
-      "Rugby"
+      "Erosion",
+      "Traffic Grid"
     ]
   },
   "mod": {
     "identity": "mod",
     "display_name": "mod",
-    "short_original": "Performs the modulo operation; reports the remainder from the division of the first number by the second number.",
+    "short_original": "Perform the modulo operation, returning the remainder of two numbers.",
     "short_description": "执行取模运算，返回两个数字的余数。",
     "search_terms": [
-      "remainder",
-      "divide",
-      "math",
-      "calculate",
-      "arithmetic"
+      "mean",
+      "count",
+      "if",
+      "any?"
     ],
     "agents": [
       "utilities"
@@ -1332,56 +1090,24 @@
       "mean",
       "count",
       "if",
-      "any"
+      "any?"
     ],
     "library_models": [
-      "Sunflower",
-      "Flocking Vee Formations",
-      "Voronoi",
-      "Fruit Wars"
-    ]
-  },
-  "move-to": {
-    "identity": "move-to",
-    "display_name": "move-to",
-    "short_original": "Moves a turtle to set its x and y coordinates to be the same as another turtle or patch.",
-    "short_description": "允许海龟移动到另一只海龟或格子处。",
-    "search_terms": [
-      "jump",
-      "travel",
-      "relocate",
-      "shift",
-      "transport",
-      "hop"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "setxy",
-      "set",
-      "max-pxcor",
-      "patches"
-    ],
-    "library_models": [
-      "Heatbugs",
-      "Shepherds",
-      "Membrane Formation",
-      "Grand Canyon"
+      "Flocking",
+      "Wealth Distribution",
+      "Voting"
     ]
   },
   "myself": {
     "identity": "myself",
     "display_name": "myself",
-    "short_original": "Reports the original turtle that asked another turtle to follow some rules.",
+    "short_original": "Helps with interactions between an agent and the caller.",
     "short_description": "指代正在运行程序的主体。",
     "search_terms": [
-      "interaction",
-      "caller",
-      "original",
-      "nested",
-      "refer",
-      "talk"
+      "nobody",
+      "ask",
+      "of",
+      "let"
     ],
     "agents": [
       "turtles",
@@ -1395,169 +1121,46 @@
       "let"
     ],
     "library_models": [
-      "Sunflower Biomorphs",
-      "Mammoths",
-      "Autumn",
-      "Fairy Circles"
-    ]
-  },
-  "n-of": {
-    "identity": "n-of",
-    "display_name": "n-of",
-    "short_original": "Reports \"n\" randomly picked agents from an agentset or items from a list.",
-    "short_description": "从一个主体集合中随机返回n个主体。",
-    "search_terms": [
-      "subset",
-      "random",
-      "batch",
-      "portion",
-      "fragment"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "one-of",
-      "count",
-      "any",
-      "all"
-    ],
-    "library_models": [
-      "Virus",
-      "Heatbugs",
-      "Voronoi",
-      "Virus on a Network"
-    ]
-  },
-  "neighbors": {
-    "identity": "neighbors",
-    "display_name": "neighbors",
-    "short_original": "Reports an agentset containing the eight neighboring patches.",
-    "short_description": "返回包含八个（含对角线）相邻格子的主体集合。",
-    "search_terms": [
-      "surrounding",
-      "nearby",
-      "around",
-      "directions",
-      "next",
-      "border",
-      "adjoin",
-      "touch"
-    ],
-    "agents": [
-      "turtles",
-      "patches"
-    ],
-    "see_also": [
-      "neighbors4",
-      "patch-ahead",
-      "turtles-here",
-      "patches"
-    ],
-    "library_models": [
-      "Fur",
-      "DLA",
-      "Segregation",
-      "Daisyworld"
-    ]
-  },
-  "neighbors4": {
-    "identity": "neighbors4",
-    "display_name": "neighbors4",
-    "short_original": "Reports an agentset containing the four neighboring patches in cardinal directions (north, west, south, east).",
-    "short_description": "返回包含四个（不含对角线）相邻格子的主体集合。",
-    "search_terms": [
-      "surrounding",
-      "nearby",
-      "around",
-      "directions",
-      "next",
-      "border",
-      "adjoin",
-      "touch"
-    ],
-    "agents": [
-      "turtles",
-      "patches"
-    ],
-    "see_also": [
-      "neighbors",
-      "patch-ahead",
-      "turtles-here",
-      "patches"
-    ],
-    "library_models": [
-      "Fire",
-      "Life",
-      "Sandpile",
-      "Altruism"
+      "Virus on a Network",
+      "Scatter"
     ]
   },
   "nobody": {
     "identity": "nobody",
     "display_name": "nobody",
-    "short_original": "A special value that helps checking if an agent exists or not.",
+    "short_original": "Indicates that an agent does not exist.",
     "short_description": "指代不存在的主体。",
     "search_terms": [
-      "none",
-      "empty",
-      "dead",
-      "exist",
-      "nothing"
+      "all?",
+      "any?",
+      "member?",
+      "with"
     ],
     "agents": [
       "utilities"
     ],
     "see_also": [
-      "any",
-      "member",
-      "n-of",
-      "let"
+      "all?",
+      "any?",
+      "member?",
+      "with"
     ],
     "library_models": [
-      "Tumor",
-      "Heatbugs",
+      "Wolf Sheep Predation",
       "Shepherds",
-      "HIV"
-    ]
-  },
-  "of": {
-    "identity": "of",
-    "display_name": "of",
-    "short_original": "Reports the value of an agent-owned variable.",
-    "short_description": "返回另一主体某个变量的值。",
-    "search_terms": [
-      "variable",
-      "characteristic",
-      "property",
-      "feature"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "with",
-      "to-report",
-      "turtles-own",
-      "patches-own"
-    ],
-    "library_models": [
-      "Urban Suite - Recycling",
-      "Paths",
-      "Slime",
-      "Language Change"
+      "Ants"
     ]
   },
   "one-of": {
     "identity": "one-of",
     "display_name": "one-of",
-    "short_original": "Reports one randomly picked member from a provided agentset or list.",
-    "short_description": "从一个主体集中随机选择一个主体。",
+    "short_original": "Randomly select one agent out of an agentset.",
+    "short_description": "从一个主体集合中随机选择一个主体。",
     "search_terms": [
-      "pick",
-      "select",
-      "draw",
-      "lottery"
+      "n-of",
+      "random",
+      "max-n-of",
+      "any?"
     ],
     "agents": [
       "utilities"
@@ -1566,78 +1169,23 @@
       "n-of",
       "random",
       "max-n-of",
-      "let"
+      "any?"
     ],
     "library_models": [
-      "Mammoths",
-      "Ants",
-      "Shepherds",
-      "Fairy Circles"
-    ]
-  },
-  "or": {
-    "identity": "or",
-    "display_name": "or",
-    "short_original": "Checks if either of two provided conditions is true.",
-    "short_description": "检查两个条件是否至少一个为真。",
-    "search_terms": [
-      "either",
-      "boolean",
-      "true",
-      "false",
-      "condition",
-      "compare"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "if",
-      "ifelse",
-      "and",
-      "of"
-    ],
-    "library_models": [
-      "Lennard-Jones",
-      "GasLab Atmosphere",
-      "Bidding Market",
-      "Wealth Distribution"
-    ]
-  },
-  "other": {
-    "identity": "other",
-    "display_name": "other",
-    "short_original": "Reports an agentset which is the same as the input agentset but omits the agent that used this primitive.",
-    "short_description": "输入一个主体集合，返回除了来源之外的其他主体。",
-    "search_terms": [
-      "omit",
-      "exclude"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "any",
-      "turtles-here",
-      "in-radius",
-      "patches"
-    ],
-    "library_models": [
-      "Virus",
       "Flocking",
-      "Scatter",
-      "Fruit Wars"
+      "Disease"
     ]
   },
   "patch": {
     "identity": "patch",
     "display_name": "patch",
-    "short_original": "Reports a specific patch at the provided (x,y) conditions.",
-    "short_description": "指代特定格子。",
+    "short_original": "Address a specific patch.",
+    "short_description": "指代特定格子的x和y坐标。",
     "search_terms": [
-      "square",
-      "background",
-      "world"
+      "patches",
+      "clear-patches",
+      "patches-own",
+      "neighbors"
     ],
     "agents": [
       "observer"
@@ -1649,75 +1197,20 @@
       "neighbors"
     ],
     "library_models": [
-      "Ant Lines",
-      "Autumn",
-      "SmoothLife",
+      "Paths",
       "Rumor Mill"
-    ]
-  },
-  "patch-ahead": {
-    "identity": "patch-ahead",
-    "display_name": "patch-ahead",
-    "short_original": "Reports the single patch that is the given distance “ahead” of this turtle",
-    "short_description": "返回海龟“前面”一段距离的格子。",
-    "search_terms": [
-      "before",
-      "see",
-      "detect",
-      "lead",
-      "onward"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "neighbors",
-      "in-radius",
-      "in-cone",
-      "nobody"
-    ],
-    "library_models": [
-      "Mammoths",
-      "Slime",
-      "Climate Change",
-      "Traffic Intersection"
-    ]
-  },
-  "patches": {
-    "identity": "patches",
-    "display_name": "patches",
-    "short_original": "Reports an agentset that contains all the patches in a model.",
-    "short_description": "返回模型中所有格子的集合。",
-    "search_terms": [
-      "square",
-      "background",
-      "world"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "clear-patches",
-      "patches-own",
-      "neighbors",
-      "move-to"
-    ],
-    "library_models": [
-      "Peppered Moths",
-      "Blood Sugar Regulation",
-      "Honeycomb",
-      "Rock Paper Scissors"
     ]
   },
   "patches-own": {
     "identity": "patches-own",
     "display_name": "patches-own",
-    "short_original": "Defines custom characteristics (variables) for patches. Each custom characteristic can have a different value for each patch.",
+    "short_original": "Declare a variable that belongs to patches.",
     "short_description": "声明一个属于格子的变量。",
     "search_terms": [
-      "patches",
-      "variable",
-      "declare"
+      "turtles-own",
+      "set",
+      "of",
+      "with"
     ],
     "agents": [
       "observer"
@@ -1729,231 +1222,147 @@
       "with"
     ],
     "library_models": [
-      "Diffusion Graphics",
-      "Grand Canyon",
-      "Life",
+      "Rebellion",
+      "Traffic Grid",
       "Paths"
     ]
   },
-  "pcolor": {
-    "identity": "pcolor",
-    "display_name": "pcolor",
-    "short_original": "Reports a patch's color and changes a patch's color when used with the set primitive.",
-    "short_description": "格子的内置变量，保存了格子的颜色。",
+  "patches": {
+    "identity": "patches",
+    "display_name": "patches",
+    "short_original": "Address all patches of a model.",
+    "short_description": "返回模型中所有格子组成的主体集合。",
     "search_terms": [
-      "patch",
-      "square",
-      "world",
-      "background",
-      "paint"
+      "clear-patches",
+      "patches-own",
+      "neighbors",
+      "move-to"
     ],
     "agents": [
-      "turtles",
-      "patches"
+      "observer"
     ],
     "see_also": [
-      "color",
-      "set",
-      "patches",
-      "neighbors"
+      "clear-patches",
+      "patches-own",
+      "neighbors",
+      "move-to"
     ],
     "library_models": [
-      "Vision Evolution",
-      "Rock Paper Scissors",
       "Wolf Sheep Predation",
-      "Bacterial Infection"
+      "Forest Fire",
+      "Segregation"
     ]
   },
   "pen-down": {
     "identity": "pen-down",
     "display_name": "pen-down",
-    "short_original": "Starts tracing the movement of the turtle on patches.",
-    "short_description": "开始绘制海龟的运动。",
+    "short_original": "Starts tracing the movement of the turtle.",
+    "short_description": "开始绘制海龟的运动轨迹。",
     "search_terms": [
-      "trace",
-      "draw",
-      "mark",
-      "paint",
-      "engrave",
-      "sketch"
+      "pen-up",
+      "pen-erase",
+      "forward",
+      "right"
     ],
     "agents": [
       "turtles"
     ],
     "see_also": [
       "pen-up",
-      "clear-all",
+      "pen-erase",
       "forward",
       "right"
     ],
     "library_models": [
-      "Turtles Circling",
-      "Bidding Market",
-      "GasLab Single Collision",
-      "Pendulum"
+      "Single Collision",
+      "Tumor",
+      "Free Gas"
     ]
   },
   "pen-up": {
     "identity": "pen-up",
     "display_name": "pen-up",
     "short_original": "Stops tracing a turtle's movement.",
-    "short_description": "停止绘制海龟的运动。",
+    "short_description": "停止绘制海龟的运动轨迹。",
     "search_terms": [
-      "trace",
-      "draw",
-      "mark",
-      "paint",
-      "engrave",
-      "sketch"
+      "pen-down",
+      "pen-erase",
+      "forward",
+      "right"
     ],
     "agents": [
       "turtles"
     ],
     "see_also": [
       "pen-down",
-      "clear-all",
+      "pen-erase",
       "forward",
       "right"
     ],
     "library_models": [
-      "Turtles Circling",
-      "Bidding Market",
-      "GasLab Single Collision",
-      "Pendulum"
+      "Single Collision",
+      "Tumor",
+      "Free Gas"
     ]
   },
-  "random": {
-    "identity": "random",
-    "display_name": "random",
-    "short_original": "Reports a random whole number between 0 and a specified number.",
-    "short_description": "生成指定范围内的随机整数。",
+  "pen-erase": {
+    "identity": "pen-erase",
+    "display_name": "pen-erase",
+    "short_original": "Erases the paths left by turtles.",
+    "short_description": "清除已绘制海龟运动轨迹。",
     "search_terms": [
-      "probability",
-      "chance",
-      "lottery",
-      "luck",
-      "toss",
-      "pick"
+      "pen-up",
+      "pen-down",
+      "forward",
+      "pen-erase"
     ],
     "agents": [
-      "utilities"
+      "turtles"
     ],
     "see_also": [
-      "random-float",
-      "random-normal",
-      "globals",
-      "turtles-own"
+      "pen-up",
+      "pen-down",
+      "forward",
+      "pen-erase"
     ],
-    "library_models": [
-      "Sunflower Biomorphs",
-      "Mammoths",
-      "Autumn",
-      "Fairy Circles"
-    ]
-  },
-  "random-float": {
-    "identity": "random-float",
-    "display_name": "random-float",
-    "short_original": "Reports a random number with decimal points between 0 and a specified number.",
-    "short_description": "生成指定范围内的随机实数（非整数）。",
-    "search_terms": [
-      "decimal",
-      "floating",
-      "probability",
-      "chance",
-      "lottery",
-      "luck",
-      "toss",
-      "pick"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "random",
-      "random-normal",
-      "globals",
-      "turtles-own"
-    ],
-    "library_models": [
-      "Fire",
-      "Climate Change",
-      "Galton Box",
-      "Daisyworld"
-    ]
+    "library_models": []
   },
   "random-normal": {
     "identity": "random-normal",
     "display_name": "random-normal",
-    "short_original": "Reports a random number with decimal points that is picked from over a normal distribution with a specified mean and standard deviation.",
+    "short_original": "Randomly produces a number according to a normal distribution.",
     "short_description": "根据正态分布随机产生一个数字。",
     "search_terms": [
-      "distribution",
-      "bell",
-      "curve",
-      "chance",
-      "probability",
-      "lottery",
-      "luck",
-      "toss",
-      "pick"
+      "random",
+      "mean",
+      "set",
+      "mean"
     ],
     "agents": [
       "utilities"
     ],
     "see_also": [
       "random",
-      "random-float",
       "mean",
-      "set"
+      "set",
+      "mean"
     ],
     "library_models": [
-      "Anisogamy",
-      "Autumn",
+      "Sunflower",
       "Echo",
-      "Sex Ratio Equilibrium"
-    ]
-  },
-  "repeat": {
-    "identity": "repeat",
-    "display_name": "repeat",
-    "short_original": "Performs a provided set of rules (commands) repeatedly for a specified number of times.",
-    "short_description": "将一段代码重复执行n次。",
-    "search_terms": [
-      "repetition",
-      "again",
-      "multiple",
-      "loop",
-      "for",
-      "execute"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "ask",
-      "to",
-      "end",
-      "while"
-    ],
-    "library_models": [
-      "Disease Solo",
-      "Flocking Vee Formations",
-      "Peppered Moths",
-      "Ant Lines"
+      "Autumn"
     ]
   },
   "reset-ticks": {
     "identity": "reset-ticks",
     "display_name": "reset-ticks",
     "short_original": "Sets the tick counter to 0.",
-    "short_description": "将时钟周期计数器设置为0。",
+    "short_description": "将时间周期计数器设置为0。",
     "search_terms": [
-      "counter",
-      "time",
-      "restart",
-      "clock",
-      "watch"
+      "tick",
+      "to",
+      "ask",
+      "clear-all"
     ],
     "agents": [
       "observer"
@@ -1966,134 +1375,45 @@
     ],
     "library_models": [
       "Wolf Sheep Predation",
-      "Fire",
-      "Autumn",
-      "Climate Change"
+      "Forest Fire",
+      "Segregation"
     ]
   },
   "right": {
     "identity": "right",
     "display_name": "right",
-    "short_original": "Changes a turtle's heading a certain amount of degrees to the right.",
+    "short_original": "Turn a certain amount of degrees to the right.",
     "short_description": "向右旋转一定角度。",
     "search_terms": [
-      "turn",
-      "spin",
-      "rotate",
-      "angle",
-      "direction",
-      "orientation"
+      "left",
+      "heading",
+      "towards",
+      "face"
     ],
     "agents": [
       "turtles"
     ],
     "see_also": [
       "left",
-      "forward",
+      "heading",
       "towards",
       "face"
     ],
     "library_models": [
-      "Bacteria Hunt Speeds",
-      "Mammoths",
-      "Anisogamy",
-      "DLA Simple"
-    ]
-  },
-  "round": {
-    "identity": "round",
-    "display_name": "round",
-    "short_original": "Reports the integer that is nearest to a specified value.",
-    "short_description": "将数字四舍五入到最接近的整数。",
-    "search_terms": [
-      "decimal",
-      "floating",
-      "near",
-      "approximate",
-      "roughly"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "count",
-      "floor",
-      "ceiling",
-      "mean"
-    ],
-    "library_models": [
-      "Sex Ratio Equilibrium",
-      "Bug Hunt Camouflage",
-      "Bacterial Infection",
-      "Blood Sugar Regulation"
-    ]
-  },
-  "scale-color": {
-    "identity": "scale-color",
-    "display_name": "scale-color",
-    "short_original": "Reports a shade of a base hue (color) based on where a speficied value falls is within a specified range (min-max).",
-    "short_description": "根据给定的值、取值范围和原始色调，返回不同亮度的色彩值。",
-    "search_terms": [
-      "shade",
-      "legend",
-      "tint",
-      "paint",
-      "tone",
-      "saturation",
-      "gradient"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "color",
-      "pcolor",
-      "set",
-      "turtles-own"
-    ],
-    "library_models": [
-      "Moths",
-      "Ants",
-      "Honeycomb",
-      "Autumn"
-    ]
-  },
-  "semicolon": {
-    "identity": "semicolon",
-    "display_name": "semicolon",
-    "short_original": "Starts a comments to take notes on a line of code. anything that follows a semicolon (;) will not be considered code.",
-    "short_description": "分号（;）开始代码注释或笔记。",
-    "search_terms": [
-      "comment",
-      "note"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "to",
-      "to-report",
-      "end",
-      "ask"
-    ],
-    "library_models": [
-      "Moths",
-      "Ants",
-      "Honeycomb",
-      "Autumn"
+      "Paths",
+      "Segregation"
     ]
   },
   "set": {
     "identity": "set",
     "display_name": "set",
-    "short_original": "Changes the value of a variable (global, local, or agent-owned).",
+    "short_original": "Set the value of a variable.",
     "short_description": "设置变量的值。",
     "search_terms": [
-      "variable",
-      "value",
-      "change",
-      "modify",
-      "alter"
+      "let",
+      "globals",
+      "turtles-own",
+      "patches-own"
     ],
     "agents": [
       "utilities"
@@ -2105,152 +1425,20 @@
       "patches-own"
     ],
     "library_models": [
-      "Wolf Sheep Predation",
-      "Fire",
-      "Autumn",
-      "Climate Change"
-    ]
-  },
-  "setxy": {
-    "identity": "setxy",
-    "display_name": "setxy",
-    "short_original": "Moves a turtle to the exact location defined by the provided x and y coordinates.",
-    "short_description": "通过X和Y坐标设置海龟的位置。",
-    "search_terms": [
-      "position",
-      "coordinate",
-      "location",
-      "move",
-      "jump",
-      "transport"
-    ],
-    "agents": [
-      "turtles"
-    ],
-    "see_also": [
-      "move-to",
-      "min-pxcor",
-      "max-pycor",
-      "neighbors"
-    ],
-    "library_models": [
-      "Vision Evolution",
-      "Tumor",
-      "Virus",
-      "Flocking"
-    ]
-  },
-  "shape": {
-    "identity": "shape",
-    "display_name": "shape",
-    "short_original": "Reports a turtles or link's shape and changes a turtle's or link's shape when used with the set primitive.",
-    "short_description": "海龟和链接的内置变量，保存了它的外观。",
-    "search_terms": [
-      "look",
-      "design",
-      "style",
-      "outline",
-      "image",
-      "bitmap",
-      "vector",
-      "picture",
-      "icon",
-      "appearance",
-      "figure",
-      "photo"
-    ],
-    "agents": [
-      "turtles",
-      "links"
-    ],
-    "see_also": [
-      "color",
-      "turtles",
-      "set",
-      "of"
-    ],
-    "library_models": [
-      "Urban Suite - Pollution",
-      "Traffic Intersection",
-      "Mimicry",
-      "Ant Lines"
-    ]
-  },
-  "sort-by": {
-    "identity": "sort-by",
-    "display_name": "sort-by",
-    "short_original": "Reports a sorted version of a provided list based on a user-defined comparison.",
-    "short_description": "根据用户定义的比较函数对列表进行排序。",
-    "search_terms": [
-      "list",
-      "array",
-      "order",
-      "arrange",
-      "sift",
-      "cull",
-      "assort"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "sort-on",
-      "count",
-      "mean",
-      "ask"
-    ],
-    "library_models": [
-      "4 Block Stalagmites",
-      "GasLab Circular Particles",
-      "CRISPR Bacterium",
-      "Ask Ordering Example"
-    ]
-  },
-  "sort-on": {
-    "identity": "sort-on",
-    "display_name": "sort-on",
-    "short_original": "Reports a sorted version of a provided agentset based on a user-defined comparison.",
-    "short_description": "将主体集合按指定函数排序，并返回列表。",
-    "search_terms": [
-      "list",
-      "array",
-      "order",
-      "arrange",
-      "sift",
-      "cull",
-      "assort"
-    ],
-    "agents": [
-      "utilities"
-    ],
-    "see_also": [
-      "sort-by",
-      "count",
-      "mean",
-      "ask"
-    ],
-    "library_models": [
-      "Birthdays",
-      "Dice",
-      "DNA Protein Synthesis",
-      "Rnd Example"
+      "Minority Game",
+      "Voting"
     ]
   },
   "sprout": {
     "identity": "sprout",
     "display_name": "sprout",
-    "short_original": "Creates new turtles at the center of a patch.",
+    "short_original": "Create new turtles from a patch.",
     "short_description": "在格子中创建新的海龟。",
     "search_terms": [
-      "create",
-      "birth",
-      "new",
-      "turtle",
-      "grow",
-      "germinate",
-      "spring",
-      "vegetate",
-      "root"
+      "hatch",
+      "create-turtles",
+      "die",
+      "ask"
     ],
     "agents": [
       "patches"
@@ -2262,92 +1450,34 @@
       "ask"
     ],
     "library_models": [
-      "Daisyworld",
-      "Ant Lines",
-      "Heatbugs",
-      "Fairy Circles"
+      "Fire",
+      "Paths",
+      "Segregation"
     ]
   },
   "tick": {
     "identity": "tick",
     "display_name": "tick",
-    "short_original": "Advances the tick counter by 1.",
+    "short_original": "Advance the tick counter by 1.",
     "short_description": "增加时间周期计数器（默认为1）。",
     "search_terms": [
-      "time",
-      "counter",
-      "clock",
-      "watch"
+      "reset-ticks",
+      "to",
+      "repeat",
+      "clear-all"
     ],
     "agents": [
       "observer"
     ],
     "see_also": [
       "reset-ticks",
-      "ask",
       "to",
+      "repeat",
       "clear-all"
     ],
     "library_models": [
-      "Flocking",
-      "BeeSmart Hive Finding",
-      "Slime",
-      "Shepherds"
-    ]
-  },
-  "tie": {
-    "identity": "tie",
-    "display_name": "tie",
-    "short_original": "Turns a link between two turtles into a rigid connection so that the movement of one turtle impacts the movement of the other.",
-    "short_description": "将两只海龟绑定起来，创建一个使其共同移动的链接。",
-    "search_terms": [
-      "link",
-      "connection",
-      "attachment",
-      "lock",
-      "hook",
-      "anchor"
-    ],
-    "agents": [
-      "links"
-    ],
-    "see_also": [
-      "links",
-      "create-links-with",
-      "link-neighbors",
-      "layout-circle"
-    ],
-    "library_models": [
-      "Vision Evolution",
-      "DNA Replication Fork",
-      "Bug Hunt Environmental Changes",
-      "Connected Chemistry 8 Gas Particle Sandbox"
-    ]
-  },
-  "to": {
-    "identity": "to",
-    "display_name": "to",
-    "short_original": "used to begin a command procedure",
-    "short_description": "开始一个自定义过程。",
-    "search_terms": [
-      "to",
-      "begin",
-      "command"
-    ],
-    "agents": [
-      "observer",
-      "utilities"
-    ],
-    "see_also": [
-      "to-report",
-      "end",
-      "ask",
-      "create-turtles"
-    ],
-    "library_models": [
       "Wolf Sheep Predation",
-      "Fire",
-      "Ants",
+      "Forest Fire",
       "Segregation"
     ]
   },
@@ -2355,15 +1485,12 @@
     "identity": "to-report",
     "display_name": "to-report",
     "short_original": "Begin a procedure to create a custom reporter.",
-    "short_description": "开始一个自定义函数。",
+    "short_description": "运行创建自定义报告指令程序。",
     "search_terms": [
-      "procedure",
-      "function",
-      "return",
-      "calculate",
-      "transform",
-      "input",
-      "output"
+      "to",
+      "end",
+      "ask",
+      "ifelse"
     ],
     "agents": [
       "utilities"
@@ -2372,27 +1499,24 @@
       "to",
       "end",
       "ask",
-      "if"
+      "ifelse"
     ],
     "library_models": [
-      "Mimicry",
-      "Moths",
-      "Rock Paper Scissors",
-      "HIV"
+      "Boiling",
+      "Rebellion",
+      "Scatter"
     ]
   },
   "towards": {
     "identity": "towards",
     "display_name": "towards",
     "short_original": "Reports the angle of the caller towards an agent.",
-    "short_description": "返回来源与指定主体的夹角。",
+    "short_description": "返回来源与指定主体的夹角角度。",
     "search_terms": [
-      "turn",
-      "angle",
       "face",
-      "direction",
-      "twist",
-      "spin"
+      "right",
+      "left",
+      "heading"
     ],
     "agents": [
       "turtles"
@@ -2404,76 +1528,9 @@
       "heading"
     ],
     "library_models": [
-      "Chaos in a Box",
-      "Bug Hunt Coevolution",
-      "GenEvo 1 Genetic Switch",
-      "Traffic 2 Lanes"
-    ]
-  },
-  "turtle": {
-    "identity": "turtle",
-    "display_name": "turtle",
-    "short_original": "Reports a specific turtle that has the provided who number.",
-    "short_description": "报告具有提供的人员编号的特定乌龟。",
-    "search_terms": [
-      "shape",
-      "triangle",
-      "mobile",
-      "agent",
-      "tortoise",
-      "animal",
-      "person",
-      "people",
-      "object",
-      "thing"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "ask",
-      "turtles-own",
-      "patches",
-      "links"
-    ],
-    "library_models": [
-      "Wolf Sheep Predation",
-      "Virus",
-      "Tumor",
-      "Bug Hunt Camouflage"
-    ]
-  },
-  "turtles": {
-    "identity": "turtles",
-    "display_name": "turtles",
-    "short_original": "Reports an agentset that contains all the turtles in a model.",
-    "short_description": "返回模型中所有海龟的集合。",
-    "search_terms": [
-      "shape",
-      "triangle",
-      "mobile",
-      "agent",
-      "tortoise",
-      "animal",
-      "person",
-      "people",
-      "object",
-      "thing"
-    ],
-    "agents": [
-      "observer"
-    ],
-    "see_also": [
-      "ask",
-      "turtles-own",
-      "patches",
-      "links"
-    ],
-    "library_models": [
-      "Disease Solo",
-      "Flocking Vee Formations",
-      "Peppered Moths",
-      "Ant Lines"
+      "Moths",
+      "Flocking",
+      "Paths"
     ]
   },
   "turtles-here": {
@@ -2482,33 +1539,25 @@
     "short_original": "Reports the agentset of all the turtles on a caller's patch.",
     "short_description": "返回来源格子上所有海龟的主体集合。",
     "search_terms": [
-      "touch",
-      "contact",
-      "near",
-      "communicate",
-      "rub",
-      "tangent",
-      "tap",
-      "collide",
-      "notice",
-      "recognize",
-      "sense"
+      "count",
+      "neighbors",
+      "patches",
+      "other"
     ],
     "agents": [
       "turtles",
       "patches"
     ],
     "see_also": [
+      "count",
       "neighbors",
       "patches",
-      "other",
-      "in-radius"
+      "other"
     ],
     "library_models": [
-      "El Farol",
-      "Party",
       "Segregation",
-      "Chemical Equilibrium"
+      "Rebellion",
+      "Virus"
     ]
   },
   "turtles-own": {
@@ -2517,29 +1566,24 @@
     "short_original": "Declare a variable that belongs to turtles.",
     "short_description": "声明一个属于海龟的变量。",
     "search_terms": [
-      "variable",
-      "declare",
-      "characteristic",
-      "property",
-      "attribute",
-      "trait",
-      "quality",
-      "phenotype"
+      "set",
+      "of",
+      "patches-own",
+      "globals"
     ],
     "agents": [
       "observer"
     ],
     "see_also": [
       "set",
-      "globals",
+      "of",
       "patches-own",
-      "with"
+      "globals"
     ],
     "library_models": [
-      "Disease Solo",
-      "Flocking Vee Formations",
-      "Tumor",
-      "Wolf Sheep Predation"
+      "Segregation",
+      "Traffic Basic",
+      "Flocking"
     ]
   },
   "while": {
@@ -2548,7 +1592,10 @@
     "short_original": "Begins a loop that runs as long as the reporter returns true. ",
     "short_description": "开始一个循环，直到函数返回 true 时结束。",
     "search_terms": [
-      "loop"
+      "if",
+      "ifelse",
+      "repeat",
+      "tick"
     ],
     "agents": [
       "observer"
@@ -2562,42 +1609,516 @@
     "library_models": [
       "Moths",
       "Traffic Basic",
-      "Shepherds",
-      "Sunflower Biomorphs"
+      "Shepherds"
     ]
   },
   "with": {
     "identity": "with",
     "display_name": "with",
-    "short_original": "Reports a subset of the original agentset that only contains the agents with specified characteristics.",
+    "short_original": "Narrows down an agentset.",
     "short_description": "根据一定条件，缩小主体集合的范围。",
     "search_terms": [
-      "specific",
-      "agentset",
-      "query",
-      "narrow",
-      "subset",
-      "reduce",
-      "fragment",
-      "select"
+      "turtles",
+      "if",
+      "ask"
+    ],
+    "agents": [],
+    "see_also": [
+      "turtles",
+      "if",
+      "ask"
+    ],
+    "library_models": []
+  },
+  "ask": {
+    "identity": "ask",
+    "display_name": "ask",
+    "short_original": "a reporter that is used to make the agents in the agentset do something.",
+    "short_description": "让主体或主体集合执行一些事情的报告指令。",
+    "search_terms": [
+      "with",
+      "neighbors",
+      "patches",
+      "turtles"
     ],
     "agents": [
-      "observer",
-      "turtles",
+      "observer"
+    ],
+    "see_also": [
+      "with",
+      "neighbors",
       "patches",
+      "turtles"
+    ],
+    "library_models": [
+      "Fire"
+    ]
+  },
+  "clear-all": {
+    "identity": "clear-all",
+    "display_name": "clear-all",
+    "short_original": "clears all the drawings, turtles, plots, etc., leaving a blank slate.",
+    "short_description": "清除所有画图，海龟，图表等，返回到初始状态。",
+    "search_terms": [
+      "clear-patches",
+      "clear-turtles",
+      "die",
+      "reset-ticks"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "clear-patches",
+      "clear-turtles",
+      "die",
+      "reset-ticks"
+    ],
+    "library_models": []
+  },
+  "clear-patches": {
+    "identity": "clear-patches",
+    "display_name": "clear-patches",
+    "short_original": "clears the patches by resetting all patch variables to their default initial values",
+    "short_description": "将所有格子的变量设置为初始值。",
+    "search_terms": [
+      "clear-all",
+      "clear-turtles",
+      "neighbors",
+      "pcolor"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "clear-all",
+      "clear-turtles",
+      "neighbors",
+      "pcolor"
+    ],
+    "library_models": []
+  },
+  "clear-turtles": {
+    "identity": "clear-turtles",
+    "display_name": "clear-turtles",
+    "short_original": "removes all the turtles as well as resets the numbering of turtles",
+    "short_description": "移除所有海龟同时重置海龟。",
+    "search_terms": [
+      "die",
+      "clear-all",
+      "turtles-own",
+      "ask"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "die",
+      "clear-all",
+      "turtles-own",
+      "ask"
+    ],
+    "library_models": []
+  },
+  "color": {
+    "identity": "color",
+    "display_name": "color",
+    "short_original": "built-in turtle characteristic that changes the color of the turtle",
+    "short_description": "海龟或链的内置变量，可以改变海龟或链的颜色。",
+    "search_terms": [
+      "pcolor",
+      "scale-color",
+      "turtles-own",
+      "of"
+    ],
+    "agents": [
+      "turtles",
       "links"
     ],
     "see_also": [
-      "if",
-      "of",
+      "pcolor",
+      "scale-color",
       "turtles-own",
-      "patches-own"
+      "of"
+    ],
+    "library_models": []
+  },
+  "create-turtles": {
+    "identity": "create-turtles",
+    "display_name": "create-turtles",
+    "short_original": "creates turtles with random colors and headings in the default shape of a triangle",
+    "short_description": "创建具有随机颜色和方向的一组海龟。",
+    "search_terms": [
+      "hatch",
+      "sprout",
+      "ask",
+      "turtles-own",
+      "breeds"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "hatch",
+      "sprout",
+      "ask",
+      "turtles-own",
+      "breeds"
     ],
     "library_models": [
-      "Fur",
-      "Mimicry",
-      "Ants",
-      "Heatbugs"
+      "Flocking"
+    ]
+  },
+  "facexy": {
+    "identity": "facexy",
+    "display_name": "facexy",
+    "short_original": "sets the turtle’s heading towards the patch (x,y)",
+    "short_description": "使海龟面向特定坐标（x，y）。",
+    "search_terms": [
+      "face",
+      "setxy",
+      "heading",
+      "towards"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "face",
+      "setxy",
+      "heading",
+      "towards"
+    ],
+    "library_models": []
+  },
+  "forward": {
+    "identity": "forward",
+    "display_name": "forward",
+    "short_original": "allows turtles to move in any number of units that the programmer desires",
+    "short_description": "使海龟在目前的方向上前进设定的距离。",
+    "search_terms": [
+      "right",
+      "heading",
+      "turtles",
+      "move-to"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "right",
+      "heading",
+      "turtles",
+      "move-to"
+    ],
+    "library_models": [
+      "Ant Lines"
+    ]
+  },
+  "import-pcolors": {
+    "identity": "import-pcolors",
+    "display_name": "import-pcolors",
+    "short_original": "allows the user to import an image in NetLogo as the colors of the patches",
+    "short_description": "允许用户导入图片来改变格子的颜色。",
+    "search_terms": [
+      "pcolor",
+      "patches",
+      "patches-own",
+      "set"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "pcolor",
+      "patches",
+      "patches-own",
+      "set"
+    ],
+    "library_models": []
+  },
+  "move-to": {
+    "identity": "move-to",
+    "display_name": "move-to",
+    "short_original": "allows a turtle to set its x and y coordinates to be the same as another turtle or patch",
+    "short_description": "设定x和y坐标，允许海龟移动到另一只海龟或格子处。",
+    "search_terms": [
+      "setxy",
+      "face",
+      "distance",
+      "distancexy"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "setxy",
+      "face",
+      "distance",
+      "distancexy"
+    ],
+    "library_models": [
+      "Fairy Circles"
+    ]
+  },
+  "neighbors": {
+    "identity": "neighbors",
+    "display_name": "neighbors",
+    "short_original": "reports an agentset containing eight neighboring patches",
+    "short_description": "返回包含八个（含对角线）相邻格子的主体集合。",
+    "search_terms": [
+      "neighbors4",
+      "patch-ahead",
+      "pxcor",
+      "pycor"
+    ],
+    "agents": [
+      "turtles",
+      "patches"
+    ],
+    "see_also": [
+      "neighbors4",
+      "patch-ahead",
+      "pxcor",
+      "pycor"
+    ],
+    "library_models": [
+      "Recycling",
+      "Rumor Mill"
+    ]
+  },
+  "neighbors4": {
+    "identity": "neighbors4",
+    "display_name": "neighbors4",
+    "short_original": "reports an agentset containing four neighboring patches",
+    "short_description": "返回包含四个（不含对角线）相邻格子的主体集合。",
+    "search_terms": [
+      "neighbors",
+      "patch-ahead",
+      "pxcor",
+      "pycor"
+    ],
+    "agents": [
+      "turtles",
+      "patches"
+    ],
+    "see_also": [
+      "neighbors",
+      "patch-ahead",
+      "pxcor",
+      "pycor"
+    ],
+    "library_models": [
+      "Rumor Mill"
+    ]
+  },
+  "other": {
+    "identity": "other",
+    "display_name": "other",
+    "short_original": "reports an agentset which is the same as the input agentset but omits the agent who is asking for the report",
+    "short_description": "输入一个主体集合，返回除了来源之外的其他主体。",
+    "search_terms": [
+      "all?",
+      "any?",
+      "nobody",
+      "ask"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "all?",
+      "any?",
+      "nobody",
+      "ask"
+    ],
+    "library_models": [
+      "Traffic Basic"
+    ]
+  },
+  "patch-ahead": {
+    "identity": "patch-ahead",
+    "display_name": "patch-ahead",
+    "short_original": "reports the single patch that is the given distance “ahead” of this turtle",
+    "short_description": "返回海龟正面一段距离内的单一格子。",
+    "search_terms": [
+      "neighbors",
+      "neighbors4",
+      "pxcor",
+      "pycor"
+    ],
+    "agents": [
+      "turtles"
+    ],
+    "see_also": [
+      "neighbors",
+      "neighbors4",
+      "pxcor",
+      "pycor"
+    ],
+    "library_models": [
+      "Traffic Basic"
+    ]
+  },
+  "pcolor": {
+    "identity": "pcolor",
+    "display_name": "pcolor",
+    "short_original": "built-in patch variable that holds the color of the patch",
+    "short_description": "格子的内置变量，保存了格子的颜色。",
+    "search_terms": [
+      "color",
+      "set",
+      "patches",
+      "neighbors"
+    ],
+    "agents": [
+      "patches"
+    ],
+    "see_also": [
+      "color",
+      "set",
+      "patches",
+      "neighbors"
+    ],
+    "library_models": []
+  },
+  "repeat": {
+    "identity": "repeat",
+    "display_name": "repeat",
+    "short_original": "allows you to execute any set of commands n amount of times",
+    "short_description": "将指令集重复执行n次。",
+    "search_terms": [
+      "pen-down",
+      "pen-up",
+      "ask",
+      "right"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "pen-down",
+      "pen-up",
+      "ask",
+      "right"
+    ],
+    "library_models": []
+  },
+  "round": {
+    "identity": "round",
+    "display_name": "round",
+    "short_original": "reports the integer to the nearest whole number.",
+    "short_description": "返回数字最接近的整数(四舍五入)。",
+    "search_terms": [
+      "count",
+      "floor",
+      "ceiling",
+      "mean"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "count",
+      "floor",
+      "ceiling",
+      "mean"
+    ],
+    "library_models": []
+  },
+  "semicolon": {
+    "identity": "semicolon",
+    "display_name": "semicolon",
+    "short_original": "used for making helpful comments or notes on a line of code",
+    "short_description": "分号（;）后面用于代码注释或笔记。",
+    "search_terms": [
+      "to",
+      "to-report",
+      "end",
+      "ask"
+    ],
+    "agents": [
+      "utilities"
+    ],
+    "see_also": [
+      "to",
+      "to-report",
+      "end",
+      "ask"
+    ],
+    "library_models": []
+  },
+  "shape": {
+    "identity": "shape",
+    "display_name": "shape",
+    "short_original": "represents the shape of each agent",
+    "short_description": "海龟和链的内置变量，保存了它的外观。",
+    "search_terms": [
+      "color",
+      "turtles",
+      "set",
+      "of"
+    ],
+    "agents": [
+      "turtles",
+      "links"
+    ],
+    "see_also": [
+      "color",
+      "turtles",
+      "set",
+      "of"
+    ],
+    "library_models": []
+  },
+  "to": {
+    "identity": "to",
+    "display_name": "to",
+    "short_original": "used to begin a command procedure",
+    "short_description": "开始一个指令程序。",
+    "search_terms": [
+      "to-report",
+      "end",
+      "ask",
+      "repeat"
+    ],
+    "agents": [
+      "observer",
+      "utilities"
+    ],
+    "see_also": [
+      "to-report",
+      "end",
+      "ask",
+      "repeat"
+    ],
+    "library_models": [
+      "Bird Breeder",
+      "Rabbits Grass Weeds"
+    ]
+  },
+  "turtles": {
+    "identity": "turtles",
+    "display_name": "turtles",
+    "short_original": "used to complete actions in NetLogo",
+    "short_description": "返回模型中所有海龟的主体集合。",
+    "search_terms": [
+      "ask",
+      "turtles-own",
+      "patches",
+      "links"
+    ],
+    "agents": [
+      "observer"
+    ],
+    "see_also": [
+      "ask",
+      "turtles-own",
+      "patches",
+      "links"
+    ],
+    "library_models": [
+      "Ant Lines"
     ]
   }
 }

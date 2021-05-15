@@ -1,19 +1,15 @@
 ﻿*** Machine Translated
-只要给定的报告指令报告为真`while`开始无限期地重复提供的一组规则（例如`ask` ）。如果报告指令报告为**false** ， `while`停止重复提供的规则。例如，如果我们要创建一个房地产市场模型，在此模型中，每个买家继续寻找房子直到找到足够便宜的房子，我们可以编写以下代码：
+`While`开始执行一个**命令块的**循环，只要给定的**返回指令**程序返回**True即可**。如果返回指令返回**False** ，则退出循环。它采用以下形式：
 
+`while [ reporter ] [ commands ]`
 
+例如，要使海龟0继续前进直到遇到上面没有其他海龟的格子，我们可以这样说： 
 
 ```
-ask turtles [
-	let found-home? false
-	while [not found-home?] [
-		move-to one-of patches with [residents = 0]
-		if [price] of patch-here < my-budget [
-			set found-home? true
-		]
-	]
-]
+ask turtle 0 [ 
+    while [ any? Other turtles-here ] [ 
+    	forward 1] ]
 ```
 
 
-在下面的模型示例中，我们以网格布局放置了许多乌龟。每只海龟都是紫色或绿色，根据周围乌龟的数量，它们是高兴还是难过。如果一只海龟有两个以上不同颜色的邻居。我们使用`while`原语使每只海龟在网格中移动，直到它们找到使它们高兴的位置。
+注意：在NetLogo模型中，不经常使用while循环和其他循环。在下面的模型中，我们使用`while`循环使海龟绘制正方形。
