@@ -1,8 +1,4 @@
 ﻿*** Machine Translated
-`Member?`可以与**列表**或**主体集**一起使用，但更常见于列表。`Member?`如果给定值或主体出现在给定列表或主体集合，则返回**True** ，并采用以下形式：
+`member?`可以与**列表**或**代理集**一起使用，但更常与列表一起使用。 `member?`报道`true` ，如果给定值或主体出现在给定列表或主体集合。例如`member? 3 [12 -5 3 6 1]`会返回`true` ，而`member? 5 [12 -5 3 6 1]`将返回错误。
 
-`member? value list or member? agent agentset`
-
-例如，`show member? 5 [ 3 4 5 6 ]`将返回**True** ，并`show member? 5 [1 3 2 ]`将返回**False** ； `show member? turtle 0 turtle`会返回**True** ，而`show member? patch 0 turtles`会返回**False** 。
-
-在下面的模型中，有一个专属俱乐部，只有在您进入会员名单时，您才能进入。当海龟接近俱乐部时，只有`member? self members-list`才能`member? self members-list`返回true即可进入。
+在下面的模型示例中，我们有一个代表图书馆的建筑物和一些代表顾客的乌龟。当海龟随机四处走动时，我们的图书馆会在每一个周期检查附近是否有顾客。如果有顾客，我们的图书馆会检查该顾客是否是图书馆的成员。如果赞助人是会员，我们的图书馆会要求他们更改其图形，以表明该赞助人已摘书或掉书。

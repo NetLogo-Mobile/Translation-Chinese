@@ -1,12 +1,23 @@
 ﻿*** Machine Translated
-通过处理具有特定特征的一组特定主体，使用`With`来缩小一组主体，通常是**格子**或**海龟**。使用`with`将仅解决集合中符合特定特征的主体。其语法为：
+`with`是一个报告指令原语，它使我们能够根据提供的一组条件语句从一个主体集合提取一个子代理集。 `with`语句中的条件类似于`if`语句。例如，如果我们要建立一个捕食者-猎物生态系统的模型，在该生态系统中，一只鹰只能看到颜色较亮的小鼠，而不能看到颜色较深的小鼠，则可以编写以下代码：
 
-`agentset with [ desired-characteristic ]`
 
-例如，`ask turtles with [color = blue] [forward 1]`的海龟只会使蓝色的海龟向前移动。您可以在`[ ]`使用多个必需的特性，`and`用`and`或`or`分隔它们，以进一步缩小主体集合。例如
 
-`ask turtles with [color = red and size > 5] [`
+```
+ask hawks [
+	if any? (mice-here with [color = gray and distance myself < 2]) [
+		hunt
+	]
+]
+```
 
-`forward 1 ]`
 
-只会使大于5的红海龟前进。
+注意，我们首先写了主体集合的名称（ `mice-here` ），然后将`with`原语一起使用，然后在方括号（ `[ ]` ）中提供了条件语句。
+
+`with`使用时要记住的事情：
+
+- 我们可以将`with`用于所有类型的主体类型（ `turtles` ， `patches`和`links` ）。
+- 你也可以做到这一点之前而来的报告指令中的一些简单的操作`with`如`customers with [(checking-account + savings-account) > 1000]`获得仅包含其总的账户余额大于1000或大客户的主体集合 `circles with [size / 2 > 1]`来获取仅包含半径大于1的圆的主体集合。
+
+
+在下面的模型示例中，我们有3条平行道路，每条道路上都有一辆汽车。在执行过程，我们使用`with`区分蓝色汽车和红色汽车的速度。当蓝色汽车也有足够的汽油时，它们的行驶速度是红色汽车的两倍。当汽车的汽油不足时，它的行驶速度要慢得多。最后，当所有汽车的汽油都用完时，我们使用`with`停止模型。
