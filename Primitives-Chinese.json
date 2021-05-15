@@ -1590,7 +1590,7 @@
     "identity": "while",
     "display_name": "while",
     "short_original": "Begins a loop that runs as long as the reporter returns true. ",
-    "short_description": "开始一个循环，直到函数返回 true 时结束。",
+    "short_description": "开始一个循环，直到函数返回 true (为真)时结束。",
     "search_terms": [
       "if",
       "ifelse",
