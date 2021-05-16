@@ -1,15 +1,18 @@
 ﻿*** Machine Translated
-`repeat`允许您执行*n*次任何命令集。它采取以下形式：
-
-`repeat n [ commands ]`
-
-例如，如果您让海龟`repeat 10 [ forward 1 ]` ，它将执行这些命令10次连续背对背，这将导致海龟向前移动10个单位。您可以在任何上下文中使用`repeat` ，只要它在Ask命令内或Ask命令外即可。画图形状时，`repeat`可以特别方便。例如，以下代码将使海龟绘制一个正方形：
+`repeat`允许我们连续*n*次执行任意一组命令。当结合`pen-down`和`pen-up`图元画图几何形状时， `repeat`是特别有用的。例如，如果我们希望乌龟画一个正方形，我们将编写以下代码：
 
 
-    ask turtles [
-    pen-down
-    repeat 4 [
-    forward 10
-    right 90
-    ]
-    ]
+
+```
+ask turtles [
+	pen-down
+	repeat 4 [
+		right 90
+		forward 5
+	]
+	pen-up
+]
+```
+
+
+在下面的模型示例中，我们有36只海龟，这些海龟最初是在单击*设置*按钮时放置在圆形布局的。当我们单击“执行”按钮时，每只海龟向右转1度，并向前移动0.03个单位360次。这种简单的重复行为会产生非常有趣的图形。

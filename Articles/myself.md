@@ -1,20 +1,14 @@
 ﻿*** Machine Translated
-尽管`self`和`myself`听起来很相似，但是它们用在不同的情况下，一定不要混淆。`Myself`时使用的主体需要参照本身而试图解决内的不同的主体或主体集合 `ask`命令或返回指令（例如，与）。例如，如果您希望仅当一个人拥有正确的键码时才打开房门，那么您可以在`myself`指的是**人1的**地方写上
+`myself`是一个原始的，当我们想主体指本身，同时努力解决内部的不同的主体或主体集合是有用的`ask`命令或报告指令（如`of` ， `with` ）。例如，如果我们要创建一个模型，在其中一个具有相同颜色的海龟试图互相寻找，我们将编写以下代码：
+
+
 
 ```
-ask person 1 [ 
-    ask houses [ 
-        if keycode = [keycode] of myself [ open-front-door ] ] ]
+ask turtles [
+	face one-of turtles with [color = [color] of myself]
+	forward 1
+]
 ```
-。`Myself`经常与`of`一起使用以返回或设置询问主体的变量（ `ask turtles with [pcolor = [pcolor] of myself]` `ask turtles with [size < [size] of myself ]`或`ask turtles with [size < [size] of myself ]` ）。有关更多**示例**，请参见模型库中的**我自己的**示例。
 
-当有一个单独的`ask`命令，并且海龟，链接或格子试图引用自己时，使用`Self` 。例如，
 
-```
-let my-turtle nobody 
-create-turtles 1 [ set shape “turtle” set my-turtle self] 
-ask my-turtle [ forward 2]
-```
-会将变量`my-turtle`设置为新创建的海龟。它很少使用，因为`[color] of self`等同于说`color` 。
-
-在下面的模型中，`if color = [ color ] of myself [ stay home ]` ，我们使用`myself`使人们只能进入他们相同颜色的房子。
+在下面的模型示例中，我们具有与流行的在线游戏[*agar.io*](https://en.wikipedia.org/wiki/Agar.io)相似的模型。我们有很多乌龟代表圆圈，它们随机移动。当两只乌龟互相接触时，大海龟*吞食*小海龟。我们将`myself`用于两个目的：首先比较`ask`语句中的两只海龟，以选择较大的一只，然后将两只海龟的大小相加。

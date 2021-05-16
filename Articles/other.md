@@ -1,26 +1,15 @@
 ﻿*** Machine Translated
-`other`报道的主体集合其是与输入主体集合但是省略了询问主体。换句话说，它会将自己从结果主体集合排除。例如：
+`other`报道的主体集合其是与输入主体集合但是省略了询问主体。当我们希望海龟彼此交流时，这非常有用。例如，如果我们想创建一个网络模型，其中每个海龟都通过链接与另一只随机选择的海龟链，则可以编写以下链：
 
 
 
 ```
-show count turtles-here
-=> 10
-show count other turtles-here
-=> 9  
+ask turtles [
+	create-link-with one-of other turtles
+]
 ```
 
 
-显示了如何将一个主体（调用该命令的关键字海龟）从主体集合排除，从而最终计数为“9”。`other`时候，我们希望我们的主体与其他药物相互作用常常是有用的。例如，
+在这种情况下，我们使用`other` ，因为如果不这样做，则有一个`one-of turtles`可能会返回同一只海龟，并且由于海龟无法与其自身创建链，因此NetLogo会显示错误。
 
-`ask turtles [ if any? turtles-here [`
-
-`set color red ] ]`
-
-会使所有海龟变红，因为`turtles-here`返回了关键字的海龟。总是有至少1海龟当我们使用`turtles-here` 。但是，如果我们写
-
-`ask turtles [if any? other turtles-here [`
-
-`set color red ] ]`
-
-只有在同一格子上有另一只海龟的海龟才会变成红色。
+在下面的模型示例中，我们有固定的乌龟簇，它们随机分布在代表人的世界，而我们有一只流动的海龟代表医生。医生随机四处走动，当发现`other turtles` ，它要求同一格子上的其他乌龟健康时变绿，被感染时变红。
