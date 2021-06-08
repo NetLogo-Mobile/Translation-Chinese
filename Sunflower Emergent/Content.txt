@@ -1,0 +1,96 @@
+﻿## WHAT IS IT?
+
+This model shows the characteristic double spiral formation we see in many plants.  Most plants have leaves that spiral up the stem, appearing as a double spiral when viewed from above. This same double spiral is also seen in flower heads such as sunflowers and pine cones.
+
+The key idea is that the pattern emerges from simple physics--the minimization of repulsive energy. Neither evolutionary biology nor the geometry of angles are invoked in this model.
+
+## HOW IT WORKS
+
+The model is initialized with one particle in an inner ring around the origin.
+
+At each tick of the model, a new particle is added and placed in a concentric ring, a fixed distance from the last ring.
+
+The location of the new particle is determined in the following manner. Place 360 or more temporary particles on the ring, calculate the repulsive energy for each temporary particle by choosing one of two energy approximation methods, and choose the temporary particle has the minimum total repulsive energy. The rest of the temporary particles are then removed.
+
+This model includes two different methods to approximate the total repulsive energy of a particle. Both methods are based on the assumption that particles that are closest to one another exert much more repulsive energy than particles that are further away. The first method assumes that the relationship between distance and repulsion is inverse, while the second assumes that it is one of exponential decay.
+
+## HOW TO USE IT
+
+The SETUP procedure places one particle at a distance of RING-DIST from the origin.
+
+ADD-PARTICLE adds one new particle into the next concentric ring.
+
+RING-DIST is the distance between successive rings.
+
+The PARTICLE-SIZE is just the visual display size for the particles. It does not affect the growth placement pattern.
+
+GO adds particles until the spiral reaches the edge of the world.
+
+The FIXED-TEMPS? switch determines whether to use a fixed or variable number of temporary particles. If on, then 360 temporary particles are used. If off, then the number of particles increases with distance from the origin.
+
+The SHOW-TEMPS? switch, if on, displays the temporary particles.
+
+The ENERGY-APPROXIMATION chooser determines which energy approximation method is used. INVERSE DISTANCE uses the repulsive energy approximation 1/distance^ALPHA, and EXPONENTIAL uses the Born and Mayer repulsive energy approximation, e^(-distance/BETA). The ALPHA and BETA sliders determine the constants used in each of these approximations.
+
+## THINGS TO NOTICE
+
+Notice the double spiral pattern that emerges from these simple rules. Is the spiral pattern always the same with the same settings? Why or why not?
+
+Do you notice any other patterns in the left and right handed spirals?
+
+## THINGS TO TRY
+
+Try varying the RING-DIST to get looser or tighter spirals.
+
+Play with the various switches to visualize the temporary particles and the effect of different energy approximations.
+
+## EXTENDING THE MODEL
+
+Can you find a way to generate pleasingly colored spirals?
+
+What happens if you allow some random perturbations in particle placement?
+
+## NETLOGO FEATURES
+
+Note the use of the `min-one-of` primitive to find the temporary particle with the least repulsive energy.
+
+## RELATED MODELS
+
+Sunflower
+Sunflower Biomorphs
+
+## CREDITS AND REFERENCES
+
+This model is a replication of Victor Stenger's double spiral model in:
+Stenger, V. (2008). God: The Failed Hypothesis.
+
+The double spiral patterns as seen in nature are described in:
+Ball, P. (1995). The Self-Made Tapestry.
+
+Douady, S. and Couder, Y. (1992). Phyllotaxis as a Physical Self-Organized Process. Physical Review Letters, 68(13), 2098--2101.
+
+Dove, M. T. Structure and Dynamics: An Atomic View of Materials. New York: Oxford University Press, 2003.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2009).  NetLogo Sunflower Emergent model.  http://ccl.northwestern.edu/netlogo/models/SunflowerEmergent.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2009 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2009 -->

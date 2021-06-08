@@ -1,0 +1,97 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型显示了我们在许多植物中看到的典型双螺旋结构。大多数植物的叶子在茎上呈螺旋状，从上方看时呈双螺旋状。在向日葵和松果等花头中也可以看到同样的双螺旋。
+
+关键思想是该模式来自简单的物理学——排斥能量的最小化。在这个模型中既没有调用进化生物学也没有调用几何角度。
+
+## 这个模型是怎么运行的
+
+该模型用一个围绕原点的内环中的粒子进行初始化。
+
+在模型的每个周期上，都会添加一个新粒子并将其放置在同心环中，与最后一个环的距离固定。
+
+新粒子的位置以下列方式确定。在环上放置360个或更多的临时粒子，通过选择两种能量近似方法之一计算每个临时粒子的排斥能，并选择总排斥能最小的临时粒子。然后去除其余的临时颗粒。
+
+该模型包括两种不同的方法来估算粒子的总排斥能。这两种方法都基于这样一个假设，即彼此最接近的粒子比距离更远的粒子施加更多的排斥能量。第一种方法假设距离和斥力之间的关系是相反的，而第二种方法假设它是指数衰减的关系。
+
+## 如何这个模型怎么用
+
+SETUP过程将一个粒子放置在距原点 RING-DIST 的距离处。
+
+ADD-PARTICLE 将一个新粒子添加到下一个同心环中。
+
+RING-DIST 是连续环之间的距离。
+
+PARTICLE-SIZE 只是粒子的视觉显示大小。它不影响生长放置模式。
+
+GO 添加粒子直到螺旋到达世界的边缘。
+
+固定温度？ switch 决定是使用固定数量还是可变数量的临时粒子。如果打开，则使用 360 个临时粒子。如果关闭，则粒子数随着距原点的距离而增加。
+
+SHOW-TEMPS？开关，如果打开，显示临时粒子。
+
+ENERGY-APPROXIMATION 选择器确定使用哪种能量近似方法。 INVERSE DISTANCE 使用排斥能近似值 1/distance^ALPHA，EXPONENTIAL 使用 Born 和 Mayer 排斥能近似值 e^(-distance/BETA)。 ALPHA 和 BETA 滑块确定这些近似值中使用的常数。
+
+## 看一看
+
+请注意从这些简单规则中出现的双螺旋图案。在相同的设置下，螺旋图案总是相同的吗？为什么或者为什么不？
+
+你注意到左手和右手螺旋中的任何其他模式吗？
+
+## 试一试
+
+尝试改变 RING-DIST 以获得更松或更紧的螺旋。
+
+使用各种开关来可视化临时粒子和不同能量近似值的效果。
+
+## 改一改
+
+你能找到一种方法来产生令人愉悦的彩色螺旋吗？
+
+如果在粒子放置中允许一些随机扰动会发生什么？
+
+## NetLogo 语言特性
+
+请注意使用“min-one-of”原语来找到具有最小排斥能量的临时粒子。
+
+## 相关模型
+
+Sunflower
+Sunflower Biomorphs
+
+## 引用和致谢
+
+This model is a replication of Victor Stenger's double spiral model in:
+Stenger, V. (2008). God: The Failed Hypothesis.
+
+The double spiral patterns as seen in nature are described in:
+Ball, P. (1995). The Self-Made Tapestry.
+
+Douady, S. and Couder, Y. (1992). Phyllotaxis as a Physical Self-Organized Process. Physical Review Letters, 68(13), 2098--2101.
+
+Dove, M. T. Structure and Dynamics: An Atomic View of Materials. New York: Oxford University Press, 2003.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2009).  NetLogo Sunflower Emergent model.  http://ccl.northwestern.edu/netlogo/models/SunflowerEmergent.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2009 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2009 -->

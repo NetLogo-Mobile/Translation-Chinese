@@ -1,0 +1,104 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这个模型是模仿鸟群的尝试。 （由此产生的运动也类似于鱼群。）此模型中出现的群不是由特殊的领头鸟以任何方式创建或引导的。相反，每只鸟都遵循完全相同的一套规则，从这些规则中可以产生群。
+
+## 这个模型是怎么运行的
+
+鸟类跟随三个规则：“对齐”、“分离”和“凝聚”。
+
+“对齐”意味着一只鸟倾向于转动，以便它朝着与附近鸟类移动的方向相同的方向移动。
+
+“分离”意味着一只鸟会转身避开另一只靠得太近的鸟。
+
+“凝聚力”意味着一只鸟会向附近的其他鸟移动（除非另一只鸟太近）。
+
+当两只鸟靠得太近时，“分离”规则会覆盖另外两只鸟，在达到最小分离之前，它们会被停用。
+
+这三个规则只影响鸟的方向。每只鸟总是以相同的恒定速度向前移动。
+
+## 如何这个模型怎么用
+
+首先，确定模拟中所需的鸟类数量，并将 POPULATION滑块设置为该值。按 SETUP 创建小鸟，然后按 GO 让它们开始飞来飞去。
+
+滑块的默认设置将产生相当好的植绒行为。但是，您可以使用它们来获得变化：
+
+三个 TURN-ANGLE 滑块控制鸟可以根据每个规则转动的最大角度。
+
+VISION 是每只鸟可以 360 度看到它周围的距离。
+
+## 看一看
+
+该模型的核心是观察到没有领导者的羊群形成。
+
+在这个模型中没有使用随机数，除了最初定位鸟类。鸟类流畅、栩栩如生的行为完全是由确定性规则产生的。
+
+另外，请注意每个羊群都是动态的。一群人一旦聚集在一起，并不能保证保留其所有成员。你为什么认为这是？
+
+运行模型一段时间后，所有的鸟都有大致相同的方向。为什么？
+
+有时一只鸟会脱离它的群。这是怎么发生的？您可能需要减慢模型的速度或逐步运行它才能观察到这种现象。
+
+## 试一试
+
+玩滑块看看你是否可以得到更紧密的鸡群，更松散的鸡群，更少的鸡群，更多的鸡群，或多或少的分裂和加入鸡群，或多或少地重新排列鸡群等。
+
+您可以通过将规则的角度滑块设置为零来完全关闭规则。一个规则本身就足以产生至少一些蜂群吗？两条规则呢？当您忽略每条规则时，结果行为中缺少什么？
+
+长时间运行模型会产生静态羊群吗？或者鸟儿永远不会安定下来，形成一个不变的阵型？请记住，此模型中没有使用随机数。
+
+## 改一改
+
+目前，鸟类可以“看到”周围的一切。如果鸟类只能在它们面前看到会发生什么？ `in-cone` 原语可用于此目的。
+
+有什么办法可以得到V形的羊群，比如迁徙的鹅？
+
+如果你在世界的边缘设置围墙，鸟儿不能飞进去，会发生什么？
+
+你能让鸟儿绕过世界中央的障碍物吗？
+
+如果你给鸟类不同的速度会发生什么？例如，您可以让不在其他鸟类附近的鸟类飞得更快以赶上鸟群。或者，您可以通过让鸟类在成群结队时飞得更快来模拟鸟类在一起飞行时所经历的空气阻力减少。
+
+有没有其他有趣的方法可以让鸟类彼此不同？种群中可能存在随机变化，或者您可能拥有不同的鸟类“物种”。
+
+## NetLogo 语言特性
+
+请注意需要“subtract-headings”原语和特殊过程来平均标题组。只是减去的数字，或平均的数字，不给你你所期望的结果，因为在那里标题回绕回至0一旦达到360间断的。
+
+## 相关模型
+
+* Moths
+* Flocking Vee Formation
+* Flocking - Alternative Visualizations
+
+## 引用和致谢
+
+This model is inspired by the Boids simulation invented by Craig Reynolds.  The algorithm we use here is roughly similar to the original Boids algorithm, but it is not the same.  The exact details of the algorithm tend not to matter very much -- as long as you have alignment, separation, and cohesion, you will usually get flocking behavior resembling that produced by Reynolds' original model.  Information on Boids is available at http://www.red3d.com/cwr/boids/.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Flocking model.  http://ccl.northwestern.edu/netlogo/models/Flocking.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1998 2002 -->

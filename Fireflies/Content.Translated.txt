@@ -1,0 +1,100 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型展示了一群萤火虫，它们仅使用个体萤火虫之间的相互作用来同步它们的闪烁。这是分布式系统（即具有许多交互元素但没有“领导者”的系统）如何在没有任何中央协调器的情况下协调自身的一个很好的例子。
+
+虽然大多数种类的萤火虫通常不会成群地同步，但已经观察到一些（例如 Pteroptyx cribellata、Luciola 瞳孔和 Pteroptyx malaccae）在某些环境中这样做。该模型概括了此类昆虫用来相互同步的两种主要策略（相位延迟和相位超前同步，如下所述），保留了策略的要点，同时淡化了生物细节。
+
+## 这个模型是怎么运行的
+
+每只萤火虫不断地在自己的时钟中循环，在每个循环开始时闪烁，然后在达到最大值后将时钟重置为零。在每次模拟开始时，所有萤火虫都在其周期中的随机点开始（尽管它们都有相同的周期长度），因此在整个种群中会不规则地闪烁。当萤火虫感知到周围的其他闪光时，它们能够使用这些信息来重置自己的时钟，以尝试与附近的其他萤火虫同步。每只萤火虫使用相同的一组规则来管理自己的时钟，并且根据模拟的参数，种群可能或多或少地有效同步。
+
+## 如何这个模型怎么用
+
+GO：开始和停止模拟。
+
+SETUP：根据滑块设置的参数重置模拟。
+
+NUMBER：设置要创建的萤火虫数量。
+
+CYCLE-LENGTH：设置每个萤火虫的时钟在重置为 0 之前的长度。
+
+FLASHES-TO-RESET：设置萤火虫在其时钟重置之前必须在单个周期看到的闪光次数。
+
+FLASH-LENGTH：设置每次闪光的持续时间，以滴答为单位。
+
+策略：设置当萤火虫看到足够多的其他萤火虫在其周围闪烁时要使用的同步策略（其中“足够”由 FLASHES-TO-RESET 定义）。有两种可能的策略：
+
+- **“延迟”**：萤火虫将其时钟重置为 FLASH-LENGTH（就在通常会发生闪光之后）。这会导致萤火虫与其响应的萤火虫的下一个闪光同步。
+
+- **“前进”**：萤火虫立即闪烁。使用此策略时，萤火虫只能在它们闪烁后开始两个滴答声的窗口期间开始重置它们的时钟。这可确保闪光灯不会在短时间内卡住，从而持续重置其时钟并无限期地保持点亮状态。
+
+SHOW-DARK-FIREFLIES?：如果开关设置为开，不闪烁的萤火虫显示为灰色。如果开关设置为关闭，不闪烁的萤火虫会被涂成黑色，因此不可见。
+
+在按下 SETUP 按钮之前需要设置一些设置。对 NUMBER、STRATEGY 和 FLASH-LENGTH 滑块的更改不会影响正在进行的模拟。另一方面，FLASHES-TO-RESET、CYCLE-LENGTH 和 SHOW-DARK-FIREFLIES? 可以修改，并且会在模拟运行时产生影响。
+
+## 看一看
+
+使用默认设置（number: 1500, cycle-length: 10, flash-length: 1, number-flashes: 1, flashes-to-reset: 1, strategy: &quot;delay&quot;），注意本地同步集群如何开始形式。看看您是否能找出每个集群在绘图。随着模拟的进行，尝试确定哪个本地集群最终将“接管”种群。这个集群最初是否在绘图上有最高的尖峰？
+
+在相位超前模拟中，为什么这些图通常在峰值到达整个群体之前就结束了？
+
+在这个模型中，当萤火虫处于闪光中间时，它们无法重置它们的周期。为什么要施加这个限制？
+
+## 试一试
+
+在默认设置中使用“延迟”策略运行模型。将 FLASHES-TO-RESET 更改为 2，并使用“高级”策略运行模型（同时保持其他设置稳定）。哪种策略看起来更有效？为什么？
+
+尝试使用相位延迟和相位超前设置在 0、1 和 2 之间调整 FLASHES-TO-RESET。请注意，每个设置都会给出一个特征不同的绘图，其中一些根本不允许同步（例如，使用延迟策略，对比 FLASHES-TO-RESET 设置为 1 而不是 2）。为什么这种控制会对模拟结果产生如此大的影响？
+
+在模拟中改变萤火虫的数量会影响种群密度（就像调整世界的大小一样）。这对模拟有什么影响？
+
+## 改一改
+
+该模型仅探索了在这种受周期控制的萤火虫中实现同步的两种一般策略。你还能找到其他人吗？您能否改进现有策略（即通过加快速度）？
+
+还有许多其他可能的情况，其中分布式代理必须通过使用简单规则来同步其行为。如果一只昆虫不是只感知其他离散的闪光，而是可以感知另一只昆虫在其周期中的位置（也许通过听到越来越响亮的嗡嗡声）会怎样？在这种情况下，什么样的同步策略可能有用？
+
+如果所有萤火虫都有可调节的周期长度（最初设置为随机间隔），那么是否可以协调它们的周期长度和闪烁？
+
+介绍一些盲萤火虫。这种添加的策略如何？
+
+## NetLogo 语言特性
+
+注意使用 agentset 来计算附近闪烁的萤火虫的数量：
+
+用 [颜色 = 黄色] 计算半径 1 内的海龟
+
+## 引用和致谢
+
+Buck, John. (1988). Synchronous Rhythmic Flashing of Fireflies. The Quarterly Review of Biology, September 1988, 265 - 286.
+
+Carlson, A.D. & Copeland, J. (1985). Flash Communication in Fireflies. The Quarterly Review of Biology, December 1985, 415 - 433.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Fireflies model.  http://ccl.northwestern.edu/netlogo/models/Fireflies.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 -->

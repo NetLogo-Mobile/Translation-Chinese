@@ -1,0 +1,68 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这是气相色谱的模型。许多现代化学都依赖色谱法来分离化学品。 （气相色谱法是色谱法的一种形式，涉及气体。）色谱法甚至可以非常敏感，以致于分离对映异构体（即，仅因彼此镜像而不同的分子！）。
+
+色谱法使用表面相互作用来分离化学品。这个想法很简单。不同的化学品在小空间中移动的倾向不同（例如，如果它们的大小不同）和粘附在表面上的倾向不同。这可以在日常生活中观察到。例如，如果将一滴水和一滴胶水放在斜面上，水会滚落，但胶水会粘在原来的位置。单个分子也可以非常不同地粘附在表面上。例如，水蒸气会在冷玻璃上凝结，但空气中的氧气不会。这是因为氧气与玻璃的结合强度不足以将氧气固定在那里。想象一下利用分子的不同粘性将它们分开，只需要一小步。
+
+实际上，在气相色谱中，分子被迫通过多孔介质，该介质充当粘性表面。多孔介质是一种材料，里面有孔——就像瑞士奶酪一样，但这些孔的尺寸很小。这些孔允许分子从介质的一侧传递到另一侧。一个例子是填充二氧化硅。在显微镜下，填充的二氧化硅看起来与一块木屑没什么不同，因此分子可以像水穿过木屑一样穿过它。
+
+## 这个模型是怎么运行的
+
+世界的蓝色区域代表多孔介质。分子从顶部开始；它们收集在底部。红色和绿色粒子代表两种不同的分子。 （在实际的气相色谱中，这些通常由惰性气体携带。通过施加压力迫使惰性气体通过介质。但气相色谱也可用于在没有载体的情况下简单地分离气体。）此模型中的分子随机游动通过介质向下。红色分子不会粘在介质上，但绿色分子会。在化学上，这是由多种因素引起的：表面相互作用、分子的几何形状和大小等。
+
+粘性量由滑块控制。例如，如果粘性设置为 5，则绿色分子会粘附在蓝色介质的每个部分上 5 个周期，与红色分子相比，它的向下运动基本上减慢了速度。这导致分离。
+
+该模型还试图展示“墙效应”的概念。如果壁附近有一些空间，则分子可以通过这些通道。这将大大降低分离质量。靠近墙壁的空间可能是由于吸收器质量差或填充不足造成的。
+
+## 如何这个模型怎么用
+
+首先使用 NUMBER-OF-PORES滑块设置蓝色吸收器的孔隙率。您可以使用名为 THICKNESS-OF-MEDIUM 的滑块更改吸收层的厚度。墙效应？开关打开和关闭墙壁效果。
+
+要运行模型，请按 SETUP，然后按 GO。
+
+STICKINESS滑块可更改粘性参数。粘性值越高，绿海龟穿过吸收层的速度就越慢。
+
+当 STICKINESS 在 3 到 7 之间，当 NUMBER-OF-PORES 超过 30 时，程序运行最快。 如果 STICKINESS 太高，或 NUMBER-OF-PORES 太小，绿海龟可能需要很长时间才能通过通过吸收层。
+
+## 看一看
+
+分离取决于孔隙率。如果孔隙率太小，吸收剂会被污染并堵塞，过程就会停止。如果孔隙率太高，则分离不够。壁效应也大大降低了分离质量。
+
+## 试一试
+
+可以尝试改进绘图程序。在真正的色谱仪中，只有一条输出曲线显示分子出来的速率，还有一个称为积分器的设备，它显示出来的物质数量。
+
+尝试分离两种以上的气体。
+
+## NetLogo 语言特性
+
+注意挖掘隧道的程序。使用 NetLogo 很容易实现并行随机游走算法。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Gas Chromatography model.  http://ccl.northwestern.edu/netlogo/models/GasChromatography.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

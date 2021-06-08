@@ -1,0 +1,129 @@
+﻿## WHAT IS IT?
+
+This model simulates the behavior of two different types of gas particles in a box with a partitioning wall. Part or all of the wall can be removed, allowing the particles to mix together. It was one of the original CM StarLogo applications (under the name GPCEE) and is now ported to NetLogo as part of the Connected Mathematics "Making Sense of Complex Phenomena" Modeling Project.
+
+This model is one in a series of GasLab models. They use the same basic rules for simulating the behavior of gases.  Each model integrates different features in order to highlight different aspects of gas behavior.
+
+The basic principle of the models is that gas particles are assumed to have two elementary actions: they move and they collide --- either with other particles or with any other objects such as walls.
+
+This model is part of the Connected Mathematics "Making Sense of Complex Phenomena" Modeling Project.
+
+## HOW IT WORKS
+
+The particles are modeled as hard balls with no internal energy except that which is due to their motion.  Collisions between particles are elastic.  Particles are colored according to speed --- blue for slow, green for medium, and red for high speeds.
+
+Coloring of the particles is with respect to one speed (10). Particles with a speed less than 5 are blue, ones that are more than 15 are red, while all in those in-between are green.
+
+The exact way two particles collide is as follows:
+1. A particle moves in a straight line without changing its speed, unless it collides with another particle or bounces off the wall.
+2. Two particles "collide" if they find themselves on the same patch.
+3. A random axis is chosen, as if they are two balls that hit each other and this axis is the line connecting their centers.
+4. They exchange momentum and energy along that axis, according to the conservation of momentum and energy.  This calculation is done in the center of mass system.
+5. Each particle is assigned its new velocity, energy, and heading.
+6. If a particle finds itself on or very close to a wall of the container, it "bounces" --- that is, reflects its direction and keeps its same speed.
+
+## HOW TO USE IT
+
+Initial settings:
+- BOX-SIZE: the percent of the width and height of the world that the box will occupy.
+- NUM-MAGENTAS and NUM-CYAN: the number of gas particles of each color.
+- MAGENTA-INIT-SPEED and CYAN-INIT-SPEED: the initial speed the the respective particle.
+- MAGENTA-MASS and CYAN-MASS: the mass of the respective particles.
+
+The SETUP button will set these initial conditions.
+The GO button will begin the simulation.
+
+Controls:
+The OPEN button opens the wall between the chambers of the box.
+The CLOSE button closes the wall between the chambers of the box.
+
+Other settings:
+- COLLIDE?: Turns collisions between particles on and off.
+- OPENING-SIZE: the size of the opening made as a percentage of the BOX-SIZE when the OPEN button is pressed.
+
+Monitors:
+- MAGENTAS IN RIGHT CHAMBER: number of magenta particles in the right chamber.
+- CYANS IN LEFT CHAMBER: number of cyan particles in the left chamber
+- AVERAGE ENERGY MAGENTA or CYAN: average energy of magenta or cyan particles.
+- AVERAGE SPEED MAGENTA or CYAN: average speed of magenta or cyan particles.
+
+Plots:
+- AVERAGE ENERGY: average energy of the different particles over time.
+- AVERAGE SPEED: average speed of the different particles over time.
+
+## THINGS TO NOTICE
+
+What variables affect how quickly the model reaches a new equilibrium when the wall is removed?
+
+Why does the average speed for each color decrease as the model runs with the wall in place, even though the average energy remains constant?
+
+What happens to the relative energies and speeds of each kind of particle as they intermingle?   What effect do the initial speeds and masses have on this relationship?
+
+Does the system reach an equilibrium state?
+
+Do heavier particles tend to have higher or lower speeds when the distribution of energy has reached equilibrium?
+
+Is it reasonable that this box can be considered to be "insulated"?
+
+## THINGS TO TRY
+
+Calculate how long the model takes to reach equilibrium with different sizes of windows (holding other parameters constant).
+
+Calculate how long the model takes to reach equilibrium with different particle speeds.
+
+Set the number of cyan particles to zero.  This is a model of a gas expanding into a vacuum.  This experiment was first done by Joule, using two insulated chambers separated by a valve.  He found that the temperature of the gas remained the same when the valve was opened.  Why would this be true? Is this model consistent with that observation?
+
+Try some extreme situations, to test your intuitive understanding:
+-- masses the same, speeds of the two particles very different.
+-- speeds the same, masses very different.
+-- a very small number of one kind of particle -- almost, but not quite a vacuum.  What happens to those few particles, and how do they affect the other kind?
+
+Try relating quantitatively the ratio of the equilibrium speeds of both gases after the wall is opened to the ratio of the masses of both gases.  How are they related?
+
+## EXTENDING THE MODEL
+
+Monitor pressure in the right and left chambers.
+
+Monitor temperature in the right and left chambers.
+
+Replace the partition wall with a moveable piston, so that the two kinds of particles can push against each other without intermingling.  Do they arrive at a different equilibrium then?
+
+Replace the partition wall with a surface that can transmit energy.
+
+Add the histograms of energy and speed distribution (such as found in the "Free Gas" model).
+
+## NETLOGO FEATURES
+
+Notice how collisions are detected by the turtles and how the code guarantees that the same two particles do not collide twice.  What happens if we let the patches detect them?
+
+## CREDITS AND REFERENCES
+
+This model was developed as part of the GasLab curriculum (http://ccl.northwestern.edu/curriculum/gaslab/) and has also been incorporated into the Connected Chemistry curriculum (http://ccl.northwestern.edu/curriculum/ConnectedChemistry/)
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo GasLab Two Gas model.  http://ccl.northwestern.edu/netlogo/models/GasLabTwoGas.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1997 2002 -->

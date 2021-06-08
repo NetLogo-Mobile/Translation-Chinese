@@ -1,0 +1,64 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这个项目描绘了一个简单的元胞自动机模型，它类似于一壶开水。对整个锅均匀加热，但当格子的温度达到沸腾温度时，气泡会爆裂，贴片的温度降至零。
+
+这个过程类似于足够热的水区域通过形成蒸汽气泡来释放一些热量的方式。蒸汽泡周围的水冷却了片刻。
+
+## 这个模型是怎么运行的
+
+如果一个单元格的所有邻居都处于最大值 212，那么该单元格的新值将是 213，该值将被折回为零。在下一次周期，此零值单元格的存在将降低单元格最近邻居的值。
+
+## 如何这个模型怎么用
+
+单击 SETUP 按钮设置随机热场。
+
+单击 BOIL 按钮开始向锅中加热并观察它沸腾。颜色越红，格子越热（黑色很冷，白色很热）。
+
+## 看一看
+
+观察添加的热量如何通过锅扩散。当气泡破裂时，由此产生的热量下降也会通过带走热量来影响附近的补丁。
+
+锅中的平均热量会发生什么变化？
+
+## 改一改
+
+尝试更缓慢地通过系统散发热量。
+
+将扩散参数从 1 更改为较小的分数。
+
+添加“冰块”。
+
+添加散热器，例如不断冷却液体的边缘。
+
+## 引用和致谢
+
+This model is described on page 79 in "Artificial Life Lab", by Rudy Rucker, published in 1993 by Waite Group Press.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Boiling model.  http://ccl.northwestern.edu/netlogo/models/Boiling.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

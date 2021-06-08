@@ -1,0 +1,67 @@
+﻿## WHAT IS IT?
+
+This is a model of gas chromatography.  Much of modern chemistry depends on chromatography for the separation of chemicals.  (Gas chromatography is one form of chromatography, involving gases.)  Chromatography can even be so sensitive as to separate enantiomers (i.e., molecules that differ only by being mirror images of each other!).
+
+Chromatography separates chemicals using surface interactions. The idea is simple.  Different chemicals have different tendencies to move through small spaces (for example, if they are of different sizes) and different tendencies to stick to surfaces.  This can be observed in everyday life.  For example, if you put a drop of water and a drop of glue on an inclined plane, the water will roll off, but the glue will stick where it was.  Single molecules, too, can stick very differently to surfaces.  For instance, water vapor will condense on a cold glass, but the oxygen in the air will not.  This is because the bonds that oxygen can make with glass are not strong enough to hold the oxygen there.  It takes only a small step to imagine using the different stickiness of molecules to separate them.
+
+Practically, in gas chromatography molecules are forced to pass through a porous medium, which acts as the sticky surface.  A porous medium is a material that has holes in it -- like swiss cheese, but these holes are microscopic in size.  The holes allow molecules to pass from one side of the medium to the other.  One example would be packed silica.  Under a microscope, packed silica looks not unlike a lump of wood shavings, so molecules can go through it like water would through the wood shavings.
+
+## HOW IT WORKS
+
+The blue area of the world represents the porous medium. The molecules start at the top; they are collected at the bottom.  The red and green particles represent two different kind of molecules.  (In real gas chromatography, these would typically be carried by an inert gas.  The inert gas is forced through the medium by applying pressure.  But gas chromatography can also be used to simply separate gases without a carrier.)  Molecules in this model wander randomly downward through the medium.  Red molecules don't stick to the medium, but green molecules do.  Chemically, this is caused by a number of factors: surface interactions, geometry and size of the molecule, etc.
+
+The amount of stickiness is controlled by a slider.  For example, if the stickiness is set to five, then green molecules sticks to each part of the blue medium for five cycles, essentially slowing its downward motion when compared to the red molecules.  This leads to separation.
+
+This model also attempts to demonstrate the concept of "wall effect".  If there is some space near the walls then the molecules can get through these channels.  This will drastically reduce the quality of separation.  The empty space near the walls may result from bad quality of absorber or from inadequate stuffing.
+
+## HOW TO USE IT
+
+First set the porosity of the blue absorber with the NUMBER-OF-PORES slider.  You can change the thickness of the absorbent layer with a slider named THICKNESS-OF-MEDIUM.  The WALL-EFFECT? switch turns the wall effect on and off.
+
+To run the model, press SETUP, then press GO.
+
+The STICKINESS slider changes the stickiness parameter.  The higher the value of stickiness the slower the green turtles move through absorbing layer.
+
+The program works fastest when STICKINESS is between 3 and 7 and when NUMBER-OF-PORES is over 30.  If STICKINESS is too high, or NUMBER-OF-PORES is too small, it might take a long time for the green turtles to pass through the absorbing layer.
+
+## THINGS TO NOTICE
+
+Separation depends on porosity.  If porosity is too small the absorbent gets contaminated and clogged up and the process stops.  If porosity is too high then there is not enough separation.  Also wall effect reduces the quality of separation in a drastic way.
+
+## THINGS TO TRY
+
+One could try to improve the plotting routine.  In a real chromatograph there is only one output curve showing the rate at which molecules come out and a device called an integrator that tells the amount of matter that has come out.
+
+Try separating more than two gases.
+
+## NETLOGO FEATURES
+
+Notice the routine that digs tunnels.  It is very easy to implement parallel random walk algorithms with NetLogo.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Gas Chromatography model.  http://ccl.northwestern.edu/netlogo/models/GasChromatography.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

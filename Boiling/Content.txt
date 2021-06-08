@@ -1,0 +1,63 @@
+﻿## WHAT IS IT?
+
+This project depicts a simple cellular automata model that resembles a pot of boiling water. Heat is applied evenly to the entire pot, but when the temperature of a patch reaches the boiling temperature, the bubble pops and that patch's temperature drops to zero.
+
+This process is analogous to the way in which a hot enough region of water gives up some heat by forming a bubble of steam. The water right around the steam bubble cools off for a moment.
+
+## HOW IT WORKS
+
+If all of a cell's neighbors are at the maximum value of 212, then that cell's new value will be 213 which gets wrapped down to zero. At the next tick, the presence of this zero-valued cell will lower the values of the cell's nearest neighbors.
+
+## HOW TO USE IT
+
+Click the SETUP button to set up a random field of heat.
+
+Click the BOIL button to start adding heat to the pot and watch it boil. The redder the color, the hotter the patch (Black is very cool and white is very hot).
+
+## THINGS TO NOTICE
+
+Watch how the added heat diffuses through the pot. When bubbles pop, the resulting drop in heat affects nearby patches too by taking away their heat.
+
+What happens to the average heat in the pot?
+
+## EXTENDING THE MODEL
+
+Try diffusing the heat more slowly through the system.
+
+Change the diffuse parameter from 1 to a smaller fraction.
+
+Add "ice cubes".
+
+Add a heat sink, such as edges that constantly cool the liquid.
+
+## CREDITS AND REFERENCES
+
+This model is described on page 79 in "Artificial Life Lab", by Rudy Rucker, published in 1993 by Waite Group Press.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Boiling model.  http://ccl.northwestern.edu/netlogo/models/Boiling.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

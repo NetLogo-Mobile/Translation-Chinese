@@ -1,0 +1,110 @@
+﻿## WHAT IS IT?
+
+This project is inspired by two simpler models: one of termites gathering wood chips into piles and one of moving sheep.  In this project, sheep wander randomly while shepherds circulate trying to herd them.  Whether or not the sheep eventually end up in a single herd depends on the number of shepherds and how fast they move compared to the sheep.
+
+## HOW IT WORKS
+
+The shepherds follow a set of simple rules.  Each shepherd starts wandering randomly.  If it bumps into a sheep, it picks the sheep up, and continues to wander randomly. When it bumps into another sheep, it finds a nearby empty space, puts its sheep down, and looks for another one.
+
+## HOW TO USE IT
+
+Click the SETUP button to set up the shepherds (brown) and sheep (white).  Click the GO button to start the simulation.   A shepherd turns blue when it is carrying a sheep.
+
+There are three sliders.  NUM-SHEEP and NUM-SHEPHERDS control the numbers of sheep and shepherds, respectively.   Changes in these sliders do not take effect until the next setup.
+
+The SHEEP-SPEED slider controls the speed of the sheep relative to the shepherds.  This slider can be changed while the model is running.
+
+While the simulation runs, a plot of the shepherds' herding efficiency is displayed.  Herding efficiency is measured here by counting the number of patches that have no sheep in their neighborhood:
+
+efficiency = sheepless neighborhoods / (# of patches - # of sheep)
+[expressed as a percentage]
+
+As the shepherds herd the sheep, more of the neighborhoods should be empty. The measure of efficiency is fairly arbitrary; other measures could be devised.
+
+## THINGS TO NOTICE
+
+As small herds of sheep begin to form, the herds are not "protected" in any way.  That is, shepherds sometimes take sheep away from existing herds.  That strategy might seem counter-productive. But if the herds were "protected", you would end up with lots of little herds, not several big ones.   Why is this?
+
+In general, if there are enough shepherds and/or the shepherds move much faster than the sheep, the number of herds decreases with time. Why?  One explanation is as follows: some herds disappear, when shepherds carry away all of the sheep.  If sheep never moved, it would not be possible for a new herd to start from scratch, since shepherds always put their sheep near other sheep.  So the number of herds would necessarily decrease over time.  (The only way a "new" herd would start is when an existing herd splits into two.) However, since sheep move, they can form new herds. If they move too fast relative to the shepherds, the herding will break down.
+
+If there are not enough shepherds, or if the sheep move fast enough relative to the shepherds, the shepherds cannot keep up with the wanderings of their sheep, and the sheep will disperse.
+
+Are the final herds roughly round?  What other physical situations also produce round things?
+
+This project is a good example of a probabilistic and decentralized strategy.  There is no shepherd in charge, and no special pre-designated site for the herds. The movement of the shepherds and sheep and thus their behavior is probabilistic. Each shepherd follows a set of simple rules, but the group as a whole accomplishes a rather sophisticated task.
+
+## THINGS TO TRY
+
+Can you find the minimum number of shepherds needed to herd a given number of sheep?  Which helps more, doubling the number of shepherds or doubling the speed of the existing shepherds (by cutting the SHEEP-SPEED in half)?
+
+How many sheep can one individual shepherd keep in a group?
+
+Start with a SHEEP-SPEED of zero (the sheep stay put), let the shepherd gather them into herds, and then slowly increase the SHEEP-SPEED.   How is the herding efficiency affected?   How high does SHEEP-SPEED need to be for the shepherds to be useless, that is, for the herding efficiency returns to its initial value?  This is the same as saying that the distribution of sheep is no better than random.
+
+When there are just two or three herds left, which of them is most  likely to "win" as the single, final herd?  How often does  the larger of the two herds win?  If one herd has only a  single sheep, and the other herd has the rest of the sheep, what are the chances that the first herd will win?
+
+Compare this model to "Termites".  It runs slower, but aside from that, are the results the same?
+
+In both the Termites and the Shepherds models, if the turtles don't jump away from the piles/herds they make, piling/herding happens more slowly and to a lesser extent.  Does this make sense?  Experiment with different search commands that you might give the shepherds besides "fd 1" and "jump 20".
+
+## EXTENDING THE MODEL
+
+Can you find other ways to measure herding efficiency?
+
+Can you extend the model so that sheep follow each other, tending to cluster?
+
+Can you extend the model to have the shepherds sort white sheep from black sheep?
+
+Can you change the model so that there's only ever one sheep on a patch?  Does it change the behavior of the model?
+
+The way the model is currently written, multiple sheep are allowed to occupy the same physical location.  And, since all shepherds search for a sheep to pick up before any of them actually take their sheep away, a shepherd may come to a location with several sheep and, examining one at random, find that another shepherd has already laid a hold of that sheep.  Currently shepherds give up on all sheep at that location when this happens, rather than seeing if there are other sheep there which are still unattended.  (If shepherds did not check to see whether a sheep was attended, multiple shepherds might each pick up the same sheep and take it away, thereby cloning it!)  Can you find a way to make shepherds check all sheep at a location before leaving?
+
+Real shepherds often use sheepdogs to help them with their herding.  A sheepdog in this context might put down some chemical which "scares" the sheep, i.e., wandering sheep try to avoid it and move down gradient.  Can you implement sheepdogs and see how helpful they are?  Can you come up with a rough equivalence of how many shepherds a sheepdog can replace (to maintain the same herding efficiency), or how many sheepdogs are needed to replace a single shepherd?
+
+Since it would be difficult to force sheep-turtles to follow shepherd-turtles which have "picked them up", the mechanics of picking a sheep up actually involve "killing" the sheep and creating a sheep-shepherd collective which wanders around following shepherd rules until it finds a place to put the sheep down, at which point another sheep is "created" at that location, and the collective reverts to being a normal shepherd again. Can you change the model so the shepherds actually herd the sheep rather than killing them and recreating them?
+
+## NETLOGO FEATURES
+
+Compare this code to that of "Termites".  It's similar, except that sheep and shepherds are both turtles here, and active, while in Termites the wood chips are patches and remain passive.  As a result, the Termites model runs faster.
+
+The two models are coded somewhat differently, however.  Termites uses a loops-within-GO structure that is worth noting.  GO is a turtle forever button, so each turtle executes the code in the GO function in parallel and independently of each other.  Since each turtle moves through the GO function at its own pace, it's OK for functions like search-for-chip to be written as loops, which execute repeatedly until a certain condition is satisfied.  Then each turtle goes on to the next loop.
+
+But in this model, GO is an observer forever button, because we want to have separate "ask" blocks for the sheeps and the shepherds, and because we want to update the plot every so often.  Since the observer waits for all of the turtles to finish the "ask" before moving on to the next line of code, it wouldn't be OK for a turtle to take more than one step inside the "ask" -- because then all the other turtles would have to wait for it.  So instead of using loops, this model uses the boolean variables carrying-sheep? and found-herd? to keep track of whether each turtle is in sheep-finding mode, herd-finding mode, or empty-spot-finding mode.
+
+## RELATED MODELS
+
+* Termites
+* Painted Desert Challenge
+* State Machine Example
+
+## CREDITS AND REFERENCES
+
+Thanks to Christopher Kribs Zaleta for his help with converting the model from StarLogoT to NetLogo.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Shepherds model.  http://ccl.northwestern.edu/netlogo/models/Shepherds.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->
