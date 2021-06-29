@@ -2,57 +2,57 @@
 ## Plots
 ### Source
 Gas Output
-### Chinese ***
+### Chinese
 过滤后的气体
 
 ### Source
 Greens
-### Chinese ***
+### Chinese
 绿色数量
 
 ### Source
 Molecules
-### Chinese ***
+### Chinese
 分子数量
 
 ### Source
 Reds
-### Chinese ***
+### Chinese
 红色数量
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 number-of-pores
-### Chinese ***
+### Chinese
 空洞数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 stickiness
-### Chinese ***
+### Chinese
 分子粘性
 
 ### Source
 thickness-of-medium
-### Chinese ***
+### Chinese
 介质厚度
 
 ### Source
 wall-effect?
-### Chinese ***
+### Chinese
 两侧墙壁？
 

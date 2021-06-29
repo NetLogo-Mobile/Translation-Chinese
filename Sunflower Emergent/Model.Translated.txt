@@ -2,61 +2,61 @@
 ## Widgets
 ### Source
 # particles
-### Chinese ***
+### Chinese
 ＃ 古丁粒子数量
 
 ### Source
 # temps
-### Chinese ***
+### Chinese
 # 临时粒子数量
 
 ### Source
 alpha
-### Chinese ***
+### Chinese
 alpha 参数
 
 ### Source
 beta
-### Chinese ***
+### Chinese
 beta 参数
 
 ### Source
 energy-approximation
-### Chinese ***
+### Chinese
 能量近似方式
 
 ### Source
 fixed-temps?
-### Chinese ***
+### Chinese
 固定温度？
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 particle-size
-### Chinese ***
+### Chinese
 粒子尺寸
 
 ### Source
 ring-dist
-### Chinese ***
+### Chinese
 环区距离
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 show-temps?
-### Chinese ***
+### Chinese
 显示临时粒子？
 
 ### Source
 step
-### Chinese ***
+### Chinese
 运行一次
 

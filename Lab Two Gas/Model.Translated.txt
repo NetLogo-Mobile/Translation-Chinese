@@ -1,5 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 Average Energies
@@ -19,12 +18,12 @@ cyan
 ### Source
 energy
 ### Chinese ***
-活力
+能量
 
 ### Source
 magenta
 ### Chinese ***
-品红
+洋红
 
 ### Source
 speed
@@ -40,22 +39,22 @@ time
 ### Source
 average energy cyan
 ### Chinese ***
-平均能量青色
+青色粒子平均能量
 
 ### Source
 average energy magenta
 ### Chinese ***
-平均能量洋红色
+洋红粒子平均能量
 
 ### Source
 average speed cyan
 ### Chinese ***
-平均速度青色
+青色粒子平均速度
 
 ### Source
 average speed magenta
 ### Chinese ***
-平均速度洋红色
+洋红粒子平均能量
 
 ### Source
 box-size
@@ -65,7 +64,7 @@ box-size
 ### Source
 close
 ### Chinese ***
-关闭
+关闭隔板
 
 ### Source
 collide?
@@ -75,37 +74,37 @@ collide?
 ### Source
 cyan-init-speed
 ### Chinese ***
-cyan-init-speed
+青色粒子初始速度
 
 ### Source
 cyan-mass
 ### Chinese ***
-青色质量
+青色粒子质量
 
 ### Source
 cyans in right chamber
 ### Chinese ***
-右室青色
+右侧的青色数量
 
 ### Source
 go/stop
 ### Chinese ***
-走/停
+运行
 
 ### Source
 magenta-init-speed
 ### Chinese ***
-品红色初始化速度
+洋红粒子初始速度
 
 ### Source
 magenta-mass
 ### Chinese ***
-品红色
+洋红粒子质量
 
 ### Source
 magentas in left chamber
 ### Chinese ***
-左室洋红色
+左侧的洋红数量
 
 ### Source
 max particle speed
@@ -115,17 +114,17 @@ max particle speed
 ### Source
 num-cyans
 ### Chinese ***
-数量-青色
+青色粒子数量
 
 ### Source
 num-magentas
 ### Chinese ***
-数字-洋红色
+洋红粒子数量
 
 ### Source
 open
 ### Chinese ***
-打开
+打开隔板
 
 ### Source
 opening-size

@@ -2,41 +2,41 @@
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 max-align-turn
-### Chinese ***
+### Chinese
 最大对齐角度
 
 ### Source
 max-cohere-turn
-### Chinese ***
+### Chinese
 最大相干角度
 
 ### Source
 max-separate-turn
-### Chinese ***
+### Chinese
 最大分离角度
 
 ### Source
 minimum-separation
-### Chinese ***
+### Chinese
 最小间隔
 
 ### Source
 population
-### Chinese ***
+### Chinese
 人口
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 vision
-### Chinese ***
+### Chinese
 视觉距离
 

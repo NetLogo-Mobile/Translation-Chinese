@@ -2,77 +2,77 @@
 ## Plots
 ### Source
 blues
-### Chinese ***
+### Chinese
 蓝色的数量
 
 ### Source
 greens
-### Chinese ***
+### Chinese
 绿色的数量
 
 ### Source
 Molecule amounts
-### Chinese ***
+### Chinese
 分子数量
 
 ### Source
 number
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 pinks
-### Chinese ***
+### Chinese
 粉色数量
 
 ### Source
 ticks
-### Chinese ***
+### Chinese
 时钟周期
 
 ### Source
 yellows
-### Chinese ***
+### Chinese
 黄色数量
 
 ## Widgets
 ### Source
 blue-molecules
-### Chinese ***
+### Chinese
 蓝色分子数量
 
 ### Source
 blues
-### Chinese ***
+### Chinese
 蓝色数量
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 greens
-### Chinese ***
+### Chinese
 绿色数量
 
 ### Source
 pinks
-### Chinese ***
+### Chinese
 粉色数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 yellow-molecules
-### Chinese ***
+### Chinese
 黄色分子数量
 
 ### Source
 yellows
-### Chinese ***
+### Chinese
 黄色数量
 

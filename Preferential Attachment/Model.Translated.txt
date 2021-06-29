@@ -2,77 +2,77 @@
 ## Plots
 ### Source
 # of nodes
-### Chinese ***
+### Chinese
 节点数
 
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ### Source
 degree
-### Chinese ***
+### Chinese
 程度
 
 ### Source
 Degree Distribution
-### Chinese ***
+### Chinese
 连接程度分布
 
 ### Source
 Degree Distribution (log-log)
-### Chinese ***
+### Chinese
 连接程度分布（log-log）
 
 ### Source
 log(# of nodes)
-### Chinese ***
+### Chinese
 节点数（log）
 
 ### Source
 log(degree)
-### Chinese ***
+### Chinese
 连接数（log）
 
 ## Widgets
 ### Source
 # of nodes
-### Chinese ***
+### Chinese
 节点数
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 go-once
-### Chinese ***
+### Chinese
 运行一次
 
 ### Source
 layout?
-### Chinese ***
+### Chinese
 自动布局？
 
 ### Source
 plot?
-### Chinese ***
+### Chinese
 绘制图表？
 
 ### Source
 redo layout
-### Chinese ***
+### Chinese
 重新布局
 
 ### Source
 resize nodes
-### Chinese ***
+### Chinese
 调整节点大小
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

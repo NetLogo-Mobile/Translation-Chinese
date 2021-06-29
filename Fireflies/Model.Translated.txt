@@ -2,62 +2,62 @@
 ## Plots
 ### Source
 flashing
-### Chinese ***
+### Chinese
 闪烁
 
 ### Source
 Flashing Fireflies
-### Chinese ***
+### Chinese
 闪烁的萤火虫
 
 ### Source
 Number
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 cycle-length
-### Chinese ***
+### Chinese
 周期长度
 
 ### Source
 flashes-to-reset
-### Chinese ***
+### Chinese
 重置所需的闪烁次数
 
 ### Source
 flash-length
-### Chinese ***
+### Chinese
 每次闪烁时长
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 number
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 show-dark-fireflies?
-### Chinese ***
+### Chinese
 显示未发光的萤火虫？
 
 ### Source
 strategy
-### Chinese ***
+### Chinese
 策略
 

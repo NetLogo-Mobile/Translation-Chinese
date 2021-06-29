@@ -2,62 +2,62 @@
 ## Plots
 ### Source
 goal-temp
-### Chinese ***
+### Chinese
 目标温度
 
 ### Source
 Temp
-### Chinese ***
+### Chinese
 温度
 
 ### Source
 temperature
-### Chinese ***
+### Chinese
 温度
 
 ### Source
 Temperature
-### Chinese ***
+### Chinese
 温度
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 goal-temp
-### Chinese ***
+### Chinese
 目标温度
 
 ### Source
 heater-strength
-### Chinese ***
+### Chinese
 加热器强度
 
 ### Source
 initial-temp
-### Chinese ***
+### Chinese
 初始温度
 
 ### Source
 insulation
-### Chinese ***
+### Chinese
 绝缘
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 temperature
-### Chinese ***
+### Chinese
 温度
 

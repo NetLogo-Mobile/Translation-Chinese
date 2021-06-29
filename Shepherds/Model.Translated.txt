@@ -2,52 +2,52 @@
 ## Plots
 ### Source
 efficiency
-### Chinese ***
+### Chinese
 效率
 
 ### Source
 Herding Efficiency
-### Chinese ***
+### Chinese
 放牧效率
 
 ### Source
 Percent
-### Chinese ***
+### Chinese
 百分比
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 current efficiency
-### Chinese ***
+### Chinese
 目前效率
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 num-sheep
-### Chinese ***
+### Chinese
 羊的数量
 
 ### Source
 num-shepherds
-### Chinese ***
+### Chinese
 牧羊人的数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 sheep-speed
-### Chinese ***
+### Chinese
 羊的速度
 

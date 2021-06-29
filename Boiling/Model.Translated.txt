@@ -2,32 +2,32 @@
 ## Plots
 ### Source
 ave-heat
-### Chinese ***
+### Chinese
 平均热量
 
 ### Source
 Average Heat
-### Chinese ***
+### Chinese
 平均热量
 
 ### Source
 Avg Heat
-### Chinese ***
+### Chinese
 平均热量
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
