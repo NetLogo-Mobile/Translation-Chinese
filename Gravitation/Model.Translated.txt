@@ -1,0 +1,33 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+colors?
+### Chinese ***
+颜色？
+
+### Source
+fade-rate
+### Chinese ***
+淡出率
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+mass
+### Chinese ***
+大量的
+
+### Source
+number
+### Chinese ***
+数字
+
+### Source
+setup
+### Chinese ***
+设置
+

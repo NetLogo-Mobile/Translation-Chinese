@@ -1,0 +1,114 @@
+﻿## WHAT IS IT?
+
+This particle system models a waterfall where a steady stream of particles is created, then fall and bounce off the bottom.
+
+For basics on particle systems, start with Particle System Basic and Particle System Fountain.
+
+## HOW IT WORKS
+
+In this model each particle has three main behaviors:
+- If there is room ahead, it continues its trajectory.
+- If it's about to touch the floor, its velocity-y is reversed and scaled by a restitution coefficient.
+- If it's about to touch the left side, right side or ceiling, it disappears.
+
+A particle with an initial velocity emerges from the top left of the world. It is subjected to the force of gravity, which slows it down and pulls it to the bottom of the world. In addition, forces of wind and viscosity are present. The maximum number of particles and the particle rate can be changed with the appropriate sliders. Finally, the step of the systems, which controls the precision of the system calculations can be increased or decreased, but it will change the speed of the systems since more calculations have to be done for a more precise simulation. Below, the use of each slider, button and switch is explained.
+
+## HOW TO USE IT
+
+Press GO to start the particle waterfall.  You can then modify the settings to change how the waterfall behaves.  Note that no new particles will emerge once MAX-NUMBER-OF-PARTICLES has been reached, until one or more die by reaching the ceiling or sides.
+
+- World boundaries: When a particle leaves the world, the PATCH-AT command returns NOBODY.  Thus, every iteration, if PATCH-AT does not return NOBODY, the particle continues its trajectory.  However, if the particle is close to the left wall, right wall or ceiling, and the patch-at command returns that the next patch does not exist (i.e., NOBODY), and the particle "dies".
+
+- Bouncing: In order to bounce off the floor, the particle must detect if its next position will be outside of the world.  If the patch at the next location is equal to NOBODY and the particle is away from the other walls, the particle's velocity-y (VELOCITY-Y in the code) is multiplied by a negative constant (related to RESTITUTION-COEFFICIENT) to make it bounce vertically.
+
+- Energy restitution: RESTITUTION-COEFFICIENT models the energy interchanged by the particle when it bounces off the walls.  If the coefficient is less than 1, it models a realistic damping caused by the energy dissipated in the collision.  If the coefficient is greater than 1, the walls increment the particle's kinetic energy with each bounce. This behavior can be sometimes observed in pinball machines.
+
+- Initial velocities: The INITIAL-VELOCITY-X and INITIAL-VELOCITY-Y sliders control the initial velocity in the x and y axes for each particle.
+
+- INITIAL-RANGE-X: To make the particle system appear more realistic, each particle can be given a different random velocity at startup.  To set the random velocities, give INITIAL-RANGE-X a nonzero value.  Larger values will spread the waterfall out more.  (Even when this switch is off, the particles will have distinct trajectories, due to their different masses.)
+
+- Maximum particle number: The number of particles in the system is bounded by the MAX-NUMBER-OF-PARTICLES slider.  Once the particle count reaches the MAX-NUMBER-OF-PARTICLES limit, the generation of new particles is stopped.  Note that each time a particle reaches the edge of the screen it dies, providing an opening for another particle to be created.
+
+- Gravity: Gravity acts downwards, and is implemented by adding a negative number, the GRAVITY-CONSTANT, to the y force accumulator. We also scale the effect of gravity according to the particle's mass.  This simulates the effect of air resistance.
+
+- Wind: The wind force sways the particles of the system left and right in the world by adding a WIND-CONSTANT-X force in the x-axis.
+
+- Viscosity: The viscosity force resists the motion of a particle by exerting an opposite force proportional to the VISCOSITY-CONSTANT to the speed of the particle.  A higher VISCOSITY-CONSTANT means the particles flow easier.
+
+- Step size: A smaller STEP-SIZE will increase the precision of the trajectories but slow down the model computation. A large STEP-SIZE will decrease the precision of the trajectories but speed up the model computation.  Every iteration, STEP-SIZE scales the particle's velocity and change in location.
+
+- Particle rate: The particle RATE sets the rate at which new particles are generated.  A rate of 0 will stop the waterfall's flow.
+
+## THINGS TO NOTICE
+
+The particles spread out horizontally according to size. Why?
+
+## THINGS TO TRY
+
+Move the sliders and switches to see the behaviors you get from each force.  For example, by moving all sliders but GRAVITY-CONSTANT to a neutral position, you can see how gravity acts on the particles.  After you have seen how each individual force acts  (initial velocities, viscosity, wind, and the restitution coefficient), combine them to see how they act together.
+
+You should pay particular attention to RESTITUTION-CONSTANT, what happens when the restitution constant is below 1 and what happens when the restitution constant is above 1?
+
+Move the sliders in order to make the model look the most like a real waterfall to you.
+
+Remember you can move the sliders while the model is running.
+
+## EXTENDING THE MODEL
+
+Hide the particles and put the pen down in the CREATE-PARTICLE procedure to see the trajectories of the particles accumulate over time.
+
+Change the color of the particles when they bounce.
+
+Change the position of the particle source.
+
+Try to make the particles bounce off the right and left wall so the water accumulates.
+
+Add a repulsion force so the particles do not overlap and the water level goes up.
+
+Change the model to make it look like another physical phenomena.
+
+## NETLOGO FEATURES
+
+A difficulty in this example is to detect when a particle is going to hit a wall in order to make it bounce or die.  Check the `apply-forces` procedure to see how the `patch-at`, `nobody`, `max-pxcor`, `max-pycor`, and `min-pxcor`.  If you do not take care to detect the boundaries and you try to move the turtle out of bounds you will receive the following error message:
+
+> Cannot move turtle beyond the world's edge.
+
+In order to avoid getting this error message, check if the patch in the following xcor ypos position exists with for example the following true/false reporter:
+
+patch-at step-x step-y = nobody
+
+## RELATED MODELS
+
+Particle System Basic
+Particle System Fountain
+Particle System Flame
+
+## CREDITS AND REFERENCES
+
+See Particle System Basic for a list of references on particle systems.
+
+Thanks to Daniel Kornhauser for his work on this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Kornhauser, D. and Wilensky, U. (2007).  NetLogo Particle System Waterfall model.  http://ccl.northwestern.edu/netlogo/models/ParticleSystemWaterfall.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2007 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2007 Cite: Kornhauser, D. -->

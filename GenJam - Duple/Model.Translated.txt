@@ -1,0 +1,153 @@
+﻿## Language = Chinese
+## Plots
+### Source
+all
+### Chinese ***
+全部
+
+### Source
+Average Fitness
+### Chinese ***
+平均健康程度
+
+### Source
+Drummer
+### Chinese ***
+鼓手
+
+### Source
+Fitness
+### Chinese ***
+健康程度
+
+### Source
+high
+### Chinese ***
+高的
+
+### Source
+Hits per Drummer (total)
+### Chinese ***
+每个鼓手的鼓点次数（总计）
+
+### Source
+Hits Since Evolution
+### Chinese ***
+自进化以来的鼓点数量
+
+### Source
+low
+### Chinese ***
+低的
+
+### Source
+med
+### Chinese ***
+中等
+
+### Source
+Number of Hits
+### Chinese ***
+鼓点数量
+
+### Source
+pen-1
+### Chinese ***
+画笔-1
+
+### Source
+pen-2
+### Chinese ***
+画笔-2
+
+### Source
+Ticks
+### Chinese ***
+时钟周期
+
+## Widgets
+### Source
+Density
+### Chinese ***
+密度
+
+### Source
+generations
+### Chinese ***
+遗传代数
+
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+go-no-evolve
+### Chinese ***
+运行（不进化）
+
+### Source
+go-once
+### Chinese ***
+运行一次
+
+### Source
+go-once-no-evolve
+### Chinese ***
+运行一次（不进化）
+
+### Source
+hit-density-modifier
+### Chinese ***
+鼓点密度修正
+
+### Source
+hit-limit
+### Chinese ***
+鼓点限制
+
+### Source
+mutation-strength
+### Chinese ***
+突变强度
+
+### Source
+num-chromosomes
+### Chinese ***
+染色体数量
+
+### Source
+num-mutations
+### Chinese ***
+突变数量
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+shuffle-parts?
+### Chinese ***
+初始时进行洗牌？
+
+### Source
+solo?
+### Chinese ***
+独奏？
+
+### Source
+soloer
+### Chinese ***
+独奏者
+
+### Source
+sound?
+### Chinese ***
+声音？
+
+### Source
+tempo-bpm
+### Chinese ***
+节奏（每分钟节拍数）
+

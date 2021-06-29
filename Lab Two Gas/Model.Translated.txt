@@ -2,137 +2,137 @@
 ## Plots
 ### Source
 Average Energies
-### Chinese ***
+### Chinese
 平均能量
 
 ### Source
 Average Speeds
-### Chinese ***
+### Chinese
 平均速度
 
 ### Source
 cyan
-### Chinese ***
+### Chinese
 青色
 
 ### Source
 energy
-### Chinese ***
+### Chinese
 能量
 
 ### Source
 magenta
-### Chinese ***
+### Chinese
 洋红
 
 ### Source
 speed
-### Chinese ***
+### Chinese
 速度
 
 ### Source
 time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 average energy cyan
-### Chinese ***
+### Chinese
 青色粒子平均能量
 
 ### Source
 average energy magenta
-### Chinese ***
+### Chinese
 洋红粒子平均能量
 
 ### Source
 average speed cyan
-### Chinese ***
+### Chinese
 青色粒子平均速度
 
 ### Source
 average speed magenta
-### Chinese ***
+### Chinese
 洋红粒子平均能量
 
 ### Source
 box-size
-### Chinese ***
+### Chinese
 盒子大小
 
 ### Source
 close
-### Chinese ***
+### Chinese
 关闭隔板
 
 ### Source
 collide?
-### Chinese ***
+### Chinese
 碰撞？
 
 ### Source
 cyan-init-speed
-### Chinese ***
+### Chinese
 青色粒子初始速度
 
 ### Source
 cyan-mass
-### Chinese ***
+### Chinese
 青色粒子质量
 
 ### Source
 cyans in right chamber
-### Chinese ***
+### Chinese
 右侧的青色数量
 
 ### Source
 go/stop
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 magenta-init-speed
-### Chinese ***
+### Chinese
 洋红粒子初始速度
 
 ### Source
 magenta-mass
-### Chinese ***
+### Chinese
 洋红粒子质量
 
 ### Source
 magentas in left chamber
-### Chinese ***
+### Chinese
 左侧的洋红数量
 
 ### Source
 max particle speed
-### Chinese ***
+### Chinese
 最大粒子速度
 
 ### Source
 num-cyans
-### Chinese ***
+### Chinese
 青色粒子数量
 
 ### Source
 num-magentas
-### Chinese ***
+### Chinese
 洋红粒子数量
 
 ### Source
 open
-### Chinese ***
+### Chinese
 打开隔板
 
 ### Source
 opening-size
-### Chinese ***
+### Chinese
 开口尺寸
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

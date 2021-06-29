@@ -1,0 +1,66 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该项目模拟沿着绳索移动的波浪。绳索的右端（以蓝色显示）固定在墙上。绳索的左端（以绿色显示）提供输入，以正弦运动上下移动。这会产生沿着绳索传播的波浪。
+
+## 这个模型是怎么运行的
+
+绳子是由一排乌龟组成的。海龟水平固定，但可以上下移动。每只海龟的行为就像它用弹簧连接到它的两个相邻海龟一样。当相邻的海龟离得更远时，它会施加更大的力。
+
+当绳子的左端（绿海龟）向上移动时，它会将海龟“拉”到它的右边，而海龟又会拉到它的右边，依此类推。这样，波浪就会沿着绳子向下移动。当波到达绳子的右端（蓝海龟）时，波被反射回左边。
+
+## 如何这个模型怎么用
+
+单击“设置”按钮以设置绳索。单击 GO 使绳索的左端（绿海龟）开始上下移动。
+
+FRICTION滑块控制绳索中的摩擦量。 FREQUENCY滑块控制绳索左端上下移动的速度。幅度滑块控制绳索左端的最大高度。
+
+## 看一看
+
+绳索左端上下移动的频率与出现的峰值数量之间存在联系。
+
+## 试一试
+
+更改滑块上的值并观察绳索上的波浪会发生什么。
+
+尝试创建一个“驻波”，其中绳子上的某些点根本不移动。
+
+把蓝色的海龟绿色，这样就有两个驱动力了。然后把绳子中间的一只红海龟换成蓝色，这样中间就有一个固定点。波浪会发生什么？
+
+## 改一改
+
+改变绳子的右端，使其自由移动，而不是被固定。这如何改变绳索中波浪的行为？
+
+## NetLogo 语言特性
+
+对于这个项目，海龟到达世界的顶部或底部时“回绕”是没有意义的。因此海龟的实际Y位置保持在一个新的变量（`ypos`），海龟是隐藏的，如果`ycor`，其真实位置，是超越世界的边界。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Rope model.  http://ccl.northwestern.edu/netlogo/models/Rope.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds."  Cambridge, MA: MIT Press.  Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 MIT -->

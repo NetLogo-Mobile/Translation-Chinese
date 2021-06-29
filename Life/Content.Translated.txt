@@ -1,0 +1,111 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这个程序是一个二维元胞自动机的例子。这种特殊的元胞自动机被称为生命游戏。
+
+元胞自动机是一种根据特定规则执行操作的计算机器。它可以被认为是一个被分成多个单元格的棋盘（例如棋盘格的方形单元格）。每个细胞可以是“活的”或“死的”。这称为细胞的“状态”。根据指定的规则，每个单元格在下一个时间步将是活的或死的。
+
+## 这个模型是怎么运行的
+
+游戏规则如下。每个细胞检查自己和它周围的八个邻居，然后将自己设置为活着或死亡。如果存活的邻居少于两个，则细胞死亡。如果有超过三个活着的邻居，细胞就会死亡。如果有 2 个活着的邻居，则细胞保持它所处的状态。如果恰好有 3 个活着的邻居，则该细胞变得活着。这是并行完成的，并且永远持续下去。
+
+生活中有某些反复出现的形状，例如“滑翔机”和“闪光器”。滑翔机由 5 个单元组成，它们形成一个小的箭头图形，如下所示：
+
+```文本
+哦
+哦
+面向对象
+``
+
+这架滑翔机将在世界摆动，保持其图形。闪光灯是由三个单元格（上下或左右）组成的块，可在水平和垂直方向之间旋转。
+
+## 如何这个模型怎么用
+
+INITIAL-DENSITY滑块确定活细胞的初始密度。 SETUP-RANDOM 放置这些单元格。 GO-FOREVER 永远运行规则。 GO-ONCE 运行规则一次。
+
+如果要绘制自己的图案，请使用 DRAW-CELLS 按钮，然后在视图中使用鼠标“绘制”和“擦除”。
+
+## 看一看
+
+找到一些活着但静止不动的物体。
+
+是否存在“临界密度”——所有变化和运动停止/永恒运动开始的地方？
+
+## 试一试
+
+除了滑翔机和闪光灯之外，还有其他重复出现的形状吗？
+
+构建一些不会消亡的对象（使用 DRAW-CELLS）
+
+董事会可以保持多少生命并且仍然保持不动和不变？ （使用 DRAW-CELLS）
+
+滑翔机枪是一大群细胞，反复吐出滑翔机。找到一把“滑翔机枪”（非常非常困难！）。
+
+## 改一改
+
+给生活一些不同的规则，看看会发生什么。
+
+尝试使用邻居 4 代替邻居（见下文）。
+
+## NetLogo 语言特性
+
+原始邻居将补丁的主体集合集返回到北、南、东、西、东北、西北、东南和西南。因此，`count带有[living?]`的邻居计算这八个补丁中有多少将`living?`格子变量设置为true。
+
+`neighbors4` 类似于 `邻居，但只使用北、南、东和西的补丁。一些元胞自动机，比如这个，是使用 8-邻居规则定义的，其他的使用 4-邻居规则。
+
+## 相关模型
+
+Life Turtle-Based --- same as this, but implemented using turtles instead of patches, for a more attractive display
+CA 1D Elementary --- a model that shows all 256 possible simple 1D cellular automata
+CA 1D Totalistic --- a model that shows all 2,187 possible 1D 3-color totalistic cellular automata
+CA 1D Rule 30 --- the basic rule 30 model
+CA 1D Rule 30 Turtle --- the basic rule 30 model implemented using turtles
+CA 1D Rule 90 --- the basic rule 90 model
+CA 1D Rule 110 --- the basic rule 110 model
+CA 1D Rule 250 --- the basic rule 250 model
+
+## 引用和致谢
+
+The Game of Life was invented by John Horton Conway.
+
+See also:
+
+Von Neumann, J. and Burks, A. W., Eds, 1966. Theory of Self-Reproducing Automata. University of Illinois Press, Champaign, IL.
+
+"LifeLine: A Quarterly Newsletter for Enthusiasts of John Conway's Game of Life", nos. 1-11, 1971-1973.
+
+Martin Gardner, "Mathematical Games: The fantastic combinations of John Conway's new solitaire game `life',", Scientific American, October, 1970, pp. 120-123.
+
+Martin Gardner, "Mathematical Games: On cellular automata, self-reproduction, the Garden of Eden, and the game `life',", Scientific American, February, 1971, pp. 112-117.
+
+Berlekamp, Conway, and Guy, Winning Ways for your Mathematical Plays, Academic Press: New York, 1982.
+
+William Poundstone, The Recursive Universe, William Morrow: New York, 1985.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Life model.  http://ccl.northwestern.edu/netlogo/models/Life.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

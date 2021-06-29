@@ -1,0 +1,28 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+amplitude
+### Chinese ***
+振幅
+
+### Source
+frequency
+### Chinese ***
+频率
+
+### Source
+friction
+### Chinese ***
+摩擦
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+setup
+### Chinese ***
+设置
+

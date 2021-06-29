@@ -1,0 +1,65 @@
+﻿## WHAT IS IT?
+
+This project simulates a wave moving along a rope.  The right end of the rope (shown in blue) is fixed to a wall.  The left end of the rope (shown in green) provides an input, moving up and down in a sinusoidal motion.  This creates a wave that travels along the rope.
+
+## HOW IT WORKS
+
+The rope is made up of a line of turtles.  The turtle are fixed horizontally, but can move up and down.  Each turtle acts as it were connected to its two neighboring turtles with springs.  When a neighboring turtle is farther away, it exerts a stronger force.
+
+When the left end of the rope (the green turtle) moves up, it "pulls up" the turtle to its right, which in turn pulls up the turtle to its right, and so on. In that way, a wave moves down the rope. When the wave reaches the right end of the rope (the blue turtle), the wave is reflected back to the left.
+
+## HOW TO USE IT
+
+Click the SETUP button to set up the rope.  Click GO to make the left end of the rope (the green turtle) begin moving up and down.
+
+The FRICTION slider controls the amount of friction in the rope.  The FREQUENCY slider controls the speed with with the left end of the rope moves up and down.  The AMPLITUDE slider controls the maximum height of the left end of the rope.
+
+## THINGS TO NOTICE
+
+There's a connection between the frequency with which the left end of the rope goes up and down and the number of peaks that emerge.
+
+## THINGS TO TRY
+
+Change the values on the sliders and observe what happens to the waves on the rope.
+
+Try to create a "standing wave", in which some points on the rope do not move at all.
+
+Change the blue turtle to green, so that there are two driving forces. Then change one of the red turtles in the middle of the rope to blue, so that there is a fixed point in the middle. What happens to the waves?
+
+## EXTENDING THE MODEL
+
+Change the right end of the rope so that it moves freely, rather than being fixed. How does that change the behavior of waves in the rope?
+
+## NETLOGO FEATURES
+
+For this project, it does not make sense for the turtles to "wrap" when they get to the top or bottom of the world.  So the real y-position of the turtles is kept in a new variable (`ypos`), and the turtle is hidden if `ycor`, its true position, is beyond the boundaries of the world.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Rope model.  http://ccl.northwestern.edu/netlogo/models/Rope.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds."  Cambridge, MA: MIT Press.  Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 MIT -->

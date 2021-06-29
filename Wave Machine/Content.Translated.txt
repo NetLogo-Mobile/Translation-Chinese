@@ -1,0 +1,92 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+该模型模拟膜中的波浪运动。膜的四个边缘固定在框架上。绿色矩形区域代表一个上下移动的驱动板，呈现正弦运动。
+
+## 这个模型是怎么运行的
+
+膜由海龟线组成。每只海龟的行为就像它通过泉水与四只相邻的海龟相连。在这个模型中，海龟只能上下移动——力的方向只是上下移动。海龟与其邻居之间的距离越大，力就越强。
+
+当绿海龟向上移动时，它们“拉起”作为它们的邻居的海龟，而后者又拉起作为它们的邻居的海龟，依此类推。这样，波就会沿着膜移动。当波到达膜的边缘（蓝海龟）时，波被反射回膜的中心。
+
+无论膜的刚度如何，绿海龟的振幅都是固定的。但是，移动硬膜需要更大的力才能将其移动到与非硬膜相同的量。因此，即使膜的刚度增加，波高也将保持不变，因为振幅保持不变。
+
+## 如何这个模型怎么用
+
+膜特性的控制：
+
+FRICTION滑块控制膜中的摩擦或衰减量。 STIFFNESS滑块通过海龟与其四个邻居之间的单位偏转差来控制施加在海龟上的力。
+
+驱动力的控制：
+
+DRIVER-FREQUENCY滑块控制膜的绿色区域（驱动力）上下移动的频率。 DRIVER-AMPLITUDE滑块控制膜绿色区域的最大高度。
+
+DRIVER-X 和 DRIVER-Y 滑块控制驱动器的位置。 DRIVER-SIZE滑块控制驱动程序的大小。
+
+查看控件：
+
+三D？开关控制投影的视点。 OFF 用于顶视图（二维向下看），ON 提供等轴测视图，角度使用 VIEW-ANGLE滑块。
+
+## 试一试
+
+单击 SETUP 按钮设置膜。单击 GO 使膜的选定区域（绿海龟）开始上下移动。
+
+尝试不同的膜。软膜具有较小的刚度值，而硬膜具有较大的刚度值。
+
+尝试不同的驱动力，或尝试改变频率或幅度。改变驱动力的大小和位置来看到对称和不对称的波浪运动是非常有趣的。
+
+尝试创建一个“驻波”，其中膜中的某些点根本不移动。
+
+## 改一改
+
+在这个模型中，海龟的运动只是在垂直方向，垂直于膜。修改模型，使运动在膜平面内，即 x/y 平面。
+
+您还可以尝试添加额外的驱动力来制作多输入膜模型。您可以尝试的另一件事是将不同的波形应用于驱动力，以查看膜对不同输入的反应。尝试改变驱动力的整体图形。
+
+尝试建立实体模型，即所有三个维度内的波形模型。
+
+不要使用振幅来创建波，而是将其更改为连续施加固定量的力。
+
+## NetLogo 语言特性
+
+请注意使用 `turtles-on`报告指令来查找相邻补丁上的海龟。
+
+开发此模型的关键步骤是创建内部坐标系。 X、Y 和 Z 只是三个海龟自己的变量。您可以想象海龟位于 3 空间中并在其中移动。但是要在二维视图中显示海龟，海龟的三个坐标必须映射为两个。
+
+在二维视图中，海龟的 x 和 y 坐标直接转换为 NetLogo 坐标，z 坐标仅通过使用 `scale-color` 原语改变海龟的颜色来表示。
+
+在 3-D 视图中，等距投影用于将 x、y 和 z（海龟的实际位置）转换为 xcor 和 ycor（它在视图中的位置）。在这个投影中，世界的一个点可能对应于 3 维坐标系中的多个点。因此，在这个投影中，我们仍然根据乌龟的 z 位置改变海龟的颜色，以帮助眼睛区分。
+
+在 3-D 版本中，如果海龟到达世界的顶部或底部，那么它们“回绕”是没有意义的，它们留在世界顶部也是没有世界的，因此如果 ，海龟是隐藏的。他们计算出的 ycor 超出了世界的界限。
+
+## 引用和致谢
+
+Thanks to Weiguo Yang for his help with this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Wave Machine model.  http://ccl.northwestern.edu/netlogo/models/WaveMachine.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 -->

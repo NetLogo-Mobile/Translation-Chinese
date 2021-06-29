@@ -1,0 +1,17 @@
+﻿## WHAT IS IT?
+
+Composer is a toy model that lets you write songs and play them using the sound extension.
+
+## HOW TO USE IT
+
+Click SETUP to draw a staff.  Then choose a note length (quarter notes or half notes), click on DRAW-NOTES and draw notes on the staff.  Pick an instrument, click PLAY and listen to your music.
+
+## EXTENDING THE MODEL
+
+Add eighth notes.
+
+Add sharps and flats.
+
+Support several instruments at once.
+
+<!-- 2004 -->

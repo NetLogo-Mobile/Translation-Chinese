@@ -1,0 +1,87 @@
+﻿## WHAT IS IT?
+
+This particle system models a flame as a collection of particles rising up from the bottom of the world.
+
+For basics on particle systems, start with Particle System Basic.
+
+## HOW IT WORKS
+
+A particle with an initial velocity emerges from the bottom center of world with an INITIAL-VELOCITY-X and INITIAL-VELOCITY-Y around a random INITIAL-POSITION-X. It is subjected to forces of wind from both sides, swaying the particles to left and right of the middle of the world.  The particles rise upwards, decrease in size, and become darker as they are swung left and right.
+
+The MAX-NUMBER-OF-PARTICLES, and particle RATE can be changed using the bottom sliders. Finally, the system's STEP-SIZE controls the precision of the system calculations. For example, decreasing the STEP-SIZE will slow down the model's speed since more calculations are needed for a more precise simulation. Below the use of each slider, button and switch is explained.
+
+## HOW TO USE IT
+
+Press the SETUP followed by the GO button to start the particle flame.  You can then modify the settings to change how the flame behaves.  Note that if the maximum number of particles is reached, particles will cease to emerge until another particle disappears.
+
+Initial velocities: The INITIAL-VELOCITY-X and INITIAL-VELOCITY-Y sliders control the initial velocity in the x and y axes for each particle.
+
+Initial position in the x axis: To make the particle system appear more realistic, each particle can be given a random starting point.  When INITIAL-POSITION-X is set to zero, the particles will emerge from the middle of the screen, however if the initial INITIAL-POSITION-X slider is increased the particles will emerge at a random distance between 0 and INITIAL-POSITION-X from the bottom center of the world.
+
+Wind: The wind force sways the particles of the system towards the center of the world by adding a WIND-CONSTANT force in the x-axis to draw the particle towards the middle of the world.
+
+Step size: A smaller step will increase the precision of the trajectories of each particle, but will also slow down the model computation; A large step will decrease the precision of the trajectories but speed up the model computation. Upon each iteration, the STEP-SIZE scales the velocity and location of the particle.
+
+Maximum particle number: The number of particles in the system is bounded by the MAX-NUMBER-OF-PARTICLES slider. Once the turtle count reaches the MAX-NUMBER-OF-PARTICLES limit the generation of new particles is stopped.  Note that each time a particle reaches the edge of the screen it dies, providing room for another particle to be created.
+
+- Particle rate: The particle RATE sets the rate at which new particles are generated.  A rate of 0 will stop the flame.
+
+## THINGS TO NOTICE
+
+Note the wind in this model behaves differently than other particle system models: it flows from the left and right to the center of the world.
+
+There is no viscosity and no gravitational force in this model.
+
+## THINGS TO TRY
+
+Move the sliders and switches to see the behaviors you get from the initial condition and the wind force.  For example, move all the sliders except WIND-CONSTANT to a neutral position, to see how wind acts on the particles.  After you have seen how the wind force, initial velocities, and initial positions affect the flame shape, combine them to see how they act together.
+
+Move the sliders in order to make the model look the most like a flame to you.
+
+Remember, you can move the sliders while the model is running.
+
+## EXTENDING THE MODEL
+
+Hide the particles and ask one or a few particles to put their pen down to trace their trajectories.
+
+Change the color of the particles to another color.
+
+Add some randomness to the aging of the particles so they do not darken evenly.
+
+Change the model to emit particles with different shapes, sizes, and colors in order to make the particle system look like air bubbles in water or other physical phenomena.
+
+## RELATED MODELS
+
+Particle System Basic
+Particle System Fountain
+Particle System Waterfall
+
+## CREDITS AND REFERENCES
+
+See Particle System Basic for a list of references on particle systems.
+
+Thanks to Daniel Kornhauser for his work on this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Kornhauser, D. and Wilensky, U. (2007).  NetLogo Particle System Flame model.  http://ccl.northwestern.edu/netlogo/models/ParticleSystemFlame.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2007 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2007 Cite: Kornhauser, D. -->

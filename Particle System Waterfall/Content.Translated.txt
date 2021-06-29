@@ -1,0 +1,115 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这个粒子系统模拟了一个瀑布，在这个瀑布中产生了稳定的粒子流，然后落下并从底部反弹。
+
+有关粒子系统的基础知识，请从粒子系统基础和粒子系统喷泉开始。
+
+## 这个模型是怎么运行的
+
+在这个模型中，每个粒子都有三个主要的行为：
+- 如果前面有空间，它会继续它的轨迹。
+- 如果它即将接触地板，它的速度-y 会被反转并由恢复系数缩放。
+- 如果它即将接触到左侧、右侧或天花板，它就会消失。
+
+一个具有初始速度的粒子从世界的左上角出现。它受到重力的作用，使其减速并将其拉到世界的底部。此外，还存在风力和粘性。可以使用适当的滑块更改最大粒子数和粒子速率。最后，控制系统计算精度的系统步骤可以增加或减少，但它会改变系统的速度，因为必须进行更多的计算才能进行更精确的模拟。下面，解释了每个滑块、按钮和开关的使用。
+
+## 如何这个模型怎么用
+
+按 GO 启动粒子瀑布。然后，您可以修改设置以更改瀑布的行为方式。请注意，一旦达到 MAX-NUMBER-OF-PARTICLES，就不会出现新粒子，直到一个或多个到达天花板或侧面而死亡。
+
+- 世界边界：当粒子离开世界，PATCH-AT 命令返回 NOBODY。因此，每次迭代，如果 PATCH-AT 没有返回 NOBODY，粒子将继续其轨迹。但是，如果粒子靠近左墙、右墙或天花板，并且 patch-at 命令返回下一个格子不存在（即 NOBODY），则粒子“死亡”。
+
+- 弹跳：为了从地板上弹起，粒子必须检测它的下一个位置是否在世界之外。如果下一个位置的格子等于 NOBODY 并且粒子远离其他墙壁，则粒子的速度-y（代码中的速度-Y）乘以负常数（与 RESTITUTION-COEFFICIENT 相关）以使其成为垂直弹跳。
+
+- 能量恢复：RESTITUTION-COEFFICIENT 模拟粒子从墙壁反弹时交换的能量。如果系数小于 1，它将模拟由碰撞中耗散的能量引起的真实阻尼。如果系数大于 1，则壁会在每次反弹时增加粒子的动能。这种行为有时可以在弹球机中观察到。
+
+- 初始速度：INITIAL-VELOCITY-X 和 INITIAL-VELOCITY-Y 滑块控制每个粒子在 x 和 y 轴上的初始速度。
+
+- INITIAL-RANGE-X：为了使粒子系统看起来更逼真，可以在启动时为每个粒子指定不同的随机速度。要设置随机速度，请给 INITIAL-RANGE-X 一个非零值。较大的值将使瀑布散布得更多。 （即使关闭此开关，由于质量不同，粒子也会有不同的轨迹。）
+
+- 最大粒子数：系统中的粒子数受 MAX-NUMBER-OF-PARTICLES滑块。一旦粒子计数达到 MAX-NUMBER-OF-PARTICLES 限制，新粒子的生成就会停止。请注意，每次粒子到达屏幕边缘时，它都会死亡，从而为要创建的另一个粒子提供了一个开口。
+
+- 重力：重力向下作用，通过向 y 力累加器添加负数 GRAVITY-CONSTANT 来实现。我们还根据粒子的质量缩放重力的影响。这模拟了空气阻力的影响。
+
+- 风：风力通过在 x 轴上添加 WIND-CONSTANT-X 力，在世界左右摇摆系统的粒子。
+
+- 粘度：粘度力通过施加与粘度常数与颗粒速度成正比的相反力来抵抗颗粒的运动。较高的粘度常数意味着颗粒更容易流动。
+
+- 步长：较小的步长会增加轨迹的精度，但会减慢模型计算速度。较大的 STEP-SIZE 会降低轨迹的精度，但会加快模型计算。每次迭代，STEP-SIZE 都会缩放粒子的速度和位置的变化。
+
+- 粒子速率：粒子速率设置生成新粒子的速率。速率为 0 将停止瀑布的流动。
+
+## 看一看
+
+颗粒根据大小水平分布。为什么？
+
+## 试一试
+
+移动滑块和开关以查看您从每个力获得的行为。例如，通过将除 GRAVITY-CONSTANT 之外的所有滑块移动到中性位置，您可以看到重力如何作用于粒子。在您了解了每个单独的力的作用（初始速度、粘度、风和恢复系数）之后，将它们组合起来看看它们是如何一起作用的。
+
+你应该特别注意RESTITUTION-CONSTANT，当恢复常数小于1时会发生什么，当恢复常数大于1时会发生什么？
+
+移动滑块以使模型看起来最像真正的瀑布。
+
+请记住，您可以在模型运行时移动滑块。
+
+## 改一改
+
+隐藏的颗粒，把画笔下来CREATE粒子过程中看到粒子的轨迹随时间累积。
+
+改变粒子反弹时的颜色。
+
+改变粒子源的位置。
+
+尝试使粒子从左右壁反弹，使水积聚。
+
+添加排斥力，使粒子不会重叠并且水位上升。
+
+更改模型，使其看起来像另一种物理现象。
+
+## NetLogo 语言特性
+
+此示例中的一个难点是检测粒子何时撞击墙壁以使其弹跳或死亡。检查“apply-forces”过程以了解“patch-at”、“nobody”、“max-pxcor”、“max-pycor”和“min-pxcor”如何。如果您不注意检测边界并尝试将海龟移出边界，您将收到以下错误消息：
+
+&gt; 无法将海龟移出世界边缘。
+
+为了避免收到此错误消息，请检查以下 xcor ypos 位置中的格子是否存在，例如以下 true/false报告指令：
+
+patch-at step-x step-y = 没人
+
+## 相关模型
+
+Particle System Basic
+Particle System Fountain
+Particle System Flame
+
+## 引用和致谢
+
+See Particle System Basic for a list of references on particle systems.
+
+Thanks to Daniel Kornhauser for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Kornhauser, D. and Wilensky, U. (2007).  NetLogo Particle System Waterfall model.  http://ccl.northwestern.edu/netlogo/models/ParticleSystemWaterfall.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2007 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2007 Cite: Kornhauser, D. -->

@@ -1,0 +1,53 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese ***
+去
+
+### Source
+initial-position-x
+### Chinese ***
+初始位置-x
+
+### Source
+initial-velocity-x
+### Chinese ***
+初始速度-x
+
+### Source
+initial-velocity-y
+### Chinese ***
+初始速度y
+
+### Source
+max-number-of-particles
+### Chinese ***
+最大粒子数
+
+### Source
+particles
+### Chinese ***
+粒子
+
+### Source
+rate
+### Chinese ***
+速度
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+step-size
+### Chinese ***
+一步的大小
+
+### Source
+wind-constant
+### Chinese ***
+恒风
+

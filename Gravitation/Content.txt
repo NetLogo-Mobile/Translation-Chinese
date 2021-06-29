@@ -1,0 +1,79 @@
+﻿## WHAT IS IT?
+
+This project displays the common natural phenomenon expressed by the inverse-square law.  Essentially this model displays what happens when the strength of the force between two objects varies inversely with the square of the distance between these two objects.
+
+## HOW IT WORKS
+
+In this model the formula used to guide each object's behavior is the standard formula for the Law of Gravitational Attraction:
+
+>(m1 * m2 * G) / r<sup>2</sup>
+
+This is a single force 'n-body' model, where we have a certain number of small particles, and one large acting mass (the mouse pointer). The force is entirely one-way: the large mass remains unaffected by the smaller particles around it.  And the smaller particles remain unaffected by each other as well.  (Note that this is purely for purposes of simulation.  In the real world, a force such as gravity acts on all bodies around it.)
+
+Gravity is the best example of such a force. You can watch the particles form elliptic orbits around the mouse pointer, or watch them slingshot around it, similar to how a comet streaks past our sun. Think of the individual objects as planets or other solar bodies, and see how they react to various masses that move or remain stationary.
+
+## HOW TO USE IT
+
+First select the number of particles with the NUMBER slider. Then press the SETUP button to create and scatter them across the world.
+
+The MASS slider sets the value of the mass of the acting force. (Thus, it also determines at what distances the particles can safely orbit before they get sucked in by an overwhelming force.)
+
+The FADE-RATE slider controls the percent of color that the paths marked by the particles fade after each cycle.  Thus at 100% there won't be any paths as they fade immediately, and at 0% the paths won't fade at all.  With this you can see the ellipses and parabolas formed by different particles' travels.
+
+The COLORS? switch, when set to ON, assigns different colors to the particles, otherwise they will all be white.
+
+When the sliders have been set to desirable levels, press the GO button to begin the simulation. Move the mouse to where you wish it to begin, and click and hold the mouse button. This will start the particles moving. If you wish to stop the simulation (say, to change the value of MASS), release the mouse button and the particles will stop moving.  You may then change any settings you wish (except PARTICLES).  Then, to continue the simulation, simply put your mouse in the window again and click and hold. Objects in the window will only move while the mouse button is pressed down within the window.
+
+## THINGS TO NOTICE
+
+The most important thing to observe is the behavior of the particles. Notice that, as the particles have no initial velocity of their own, a single motionless acting mass will just pull them all in. Even a very slight mass (MASS set to a small value) will pull in all the particles. (Due to limited precision beyond a certain point, the motive-force on a particle can become zero.)
+
+Move the mouse around - watch what happens if you move it quickly or slowly. Jiggle it around in a single place, or let it sit still. Observe what patterns the particles fall into. (Keep FADE-RATE low to watch this explicitly.)
+
+## THINGS TO TRY
+
+There are a few other parameters, set in the code, that affect the behavior of the model.  The force acting upon each particle is multiplied by a constant, 'g' (another global variable).  Feel free to play with their values, set in the procedure 'setup'. (Of course, the default value of g for the model, 0.5, is much higher than the value used in Newtonian Mechanics, 6.67e-11.)
+
+Initial conditions are very important for a model such as this one. Try changing how the particles are placed during the `setup` procedure.
+
+Make sure to watch how different values of the MASS slider impact the model.
+
+## EXTENDING THE MODEL
+
+Let the particles begin with a constant velocity, or give them all a random velocity. You could add a slider that would let the user set the velocities, and thus be able to compare the effects of different speeds. Or try giving each particle a variable mass, which directly affects the strength of the acting force upon it.
+
+The model assumes the force to be an attractive force (the particles tend to be pulled towards it). However, it should be a relatively easy change to make this into a repulsive force. Try setting up the model with a repulsive force, and observe what happens.
+
+## NETLOGO FEATURES
+
+This model creates the illusion of a plane of infinite size, to better model the behavior of the particles. Notice that, with path marking you can see most of the ellipse a particle draws, even though the particle periodically shoots out of bounds. This is done through a combination of the basic turtle primitives `hide-turtle` and `show-turtle`, when a particle hits the boundary, keeping every turtle's `xcor` and `ycor` as special turtle variables `xc` and `yc`, and calculations similar to the `distance` primitive that uses `xc` and `yc` instead of `xcor` and `ycor`.
+
+When you examine the code, take note that standard turtle commands like `set heading`, `fd 1`, and so on aren't used here. Everything is done directly to the x  and y coordinates of the turtles.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Gravitation model.  http://ccl.northwestern.edu/netlogo/models/Gravitation.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1998 2002 -->

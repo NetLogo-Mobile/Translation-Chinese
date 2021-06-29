@@ -1,0 +1,52 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+draw-notes
+### Chinese ***
+画上音符
+
+### Source
+erase-notes
+### Chinese ***
+擦除音符
+
+### Source
+instrument-name
+### Chinese ***
+乐器名称
+
+### Source
+instrument-number
+### Chinese ***
+乐器编号
+
+### Source
+metronome?
+### Chinese ***
+节拍器？
+
+### Source
+note-length
+### Chinese ***
+音符长度
+
+### Source
+play
+### Chinese ***
+播放
+
+### Source
+quarter-note-length
+### Chinese ***
+四分音符长度
+
+### Source
+rewind
+### Chinese ***
+倒带
+
+### Source
+setup
+### Chinese ***
+设置
+

@@ -1,0 +1,77 @@
+﻿## WHAT IS IT?
+
+Like the main DLA model, this model demonstrates diffusion-limited aggregation.  In this variant, instead of particles forming a circular aggregate that grows from a central point, particles form vertical aggregates that grow along an edge.
+
+In diffusion limited aggregation, particles moving (diffusing) in random trajectories stick together (aggregate) to form beautiful treelike branching fractal structures.  There are many patterns found in nature that resemble the patterns produced by this model: crystals, coral, fungi, lightning, and so on.
+
+This model has "Alternate" in its name because, like DLA Alternate, it is based on slightly different rules than the main DLA model.  In the main model, the aggregate forms on a grid.  In this version, there is no grid; the particles are circles and we do the necessary calculations to determine exactly when the circles touch each other.  That makes this version more complicated, but arguably more physically accurate.
+
+## HOW IT WORKS
+
+Gray particles fall from the top of the world, straight down.  When a falling particle touches the floor, or a stationary particle, the falling particle stops moving.  Periodically, a new particle is created to keep the process going.
+
+When a particle touches the floor, it changes color.  When a particle touches another particle, it takes that particle's color.  That makes it easy to see the separate aggregates that form.
+
+## HOW TO USE IT
+
+Press SETUP, then press GO.
+
+SETUP: eliminates all existing particles and starts over
+
+GO: runs the simulation
+
+## THINGS TO NOTICE
+
+Stuck particles block the passage of falling particles.  We get black areas that do not have any stuck particles, because the falling particles are moving in straight lines, so they cannot work their way in to fill the black areas.
+
+The simulation runs slower as it goes on.  That's because there are more and more particles in the view that have to be redrawn.  If you freeze the view, the model will always run at the same speed.  You can also use the speed slider to "fast forward" the model.
+
+The number of "live" aggregates (that can still grow) decreases over time.
+
+## THINGS TO TRY
+
+Try changing the size of the world (by editing the view).  What happens when the world is very tall?  How many live aggregates do you end up with?
+
+## EXTENDING THE MODEL
+
+Create a plot showing the number of live aggregates over time.  Over several runs, does this graph have a typical shape?
+
+Introduce a "wiggle" into the path of falling particles.  That means that just before the particle moves forward, it turns a bit, randomly.  How does the affect the aggregate?  Experiment with different amounts of wiggle.
+
+## NETLOGO FEATURES
+
+The code is mostly the same as in DLA Alternate.
+
+In particular, the `collision-distance` procedure, the one with all the hairy math, is the same.  It would actually be possible to use simpler math in this model, because we know that only the y coordinate of the moving particle is changing, while its x coordinate remains the same.
+
+## RELATED MODELS
+
+DLA and DLA Alternate are the same idea, but with particles all falling towards a central point instead of straight down.
+
+## CREDITS AND REFERENCES
+
+The mathematical procedures used in calculating the collision paths comes from: Eric W. Weisstein, "Circle-Line Intersection". From MathWorld--A Wolfram Web Resource.  http://mathworld.wolfram.com/Circle-LineIntersection.html
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo DLA Alternate Linear model.  http://ccl.northwestern.edu/netlogo/models/DLAAlternateLinear.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

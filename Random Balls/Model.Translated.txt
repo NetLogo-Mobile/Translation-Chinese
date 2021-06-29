@@ -1,0 +1,18 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese ***
+去
+
+### Source
+number
+### Chinese ***
+数字
+
+### Source
+setup
+### Chinese ***
+设置
+

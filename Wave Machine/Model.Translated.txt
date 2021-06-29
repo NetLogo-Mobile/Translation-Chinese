@@ -1,0 +1,58 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+driver-amplitude
+### Chinese ***
+驱动幅度
+
+### Source
+driver-frequency
+### Chinese ***
+驱动频率
+
+### Source
+driver-size
+### Chinese ***
+驱动程序大小
+
+### Source
+driver-x
+### Chinese ***
+驱动程序-x
+
+### Source
+driver-y
+### Chinese ***
+司机-y
+
+### Source
+friction
+### Chinese ***
+摩擦
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+stiffness
+### Chinese ***
+刚性
+
+### Source
+three-d?
+### Chinese ***
+三度？
+
+### Source
+view-angle
+### Chinese ***
+视角
+

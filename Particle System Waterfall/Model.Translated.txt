@@ -1,0 +1,73 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese ***
+去
+
+### Source
+gravity-constant
+### Chinese ***
+重力常数
+
+### Source
+initial-range-x
+### Chinese ***
+初始范围-x
+
+### Source
+initial-velocity-x
+### Chinese ***
+初始速度-x
+
+### Source
+initial-velocity-y
+### Chinese ***
+初始速度y
+
+### Source
+max-number-of-particles
+### Chinese ***
+最大粒子数
+
+### Source
+particles
+### Chinese ***
+粒子
+
+### Source
+rate
+### Chinese ***
+速度
+
+### Source
+restitution-coefficient
+### Chinese ***
+恢复系数
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+step-size
+### Chinese ***
+一步的大小
+
+### Source
+viscosity-constant
+### Chinese ***
+粘度常数
+
+### Source
+wind-constant-x
+### Chinese ***
+风常数-x
+
+### Source
+wind-constant-y
+### Chinese ***
+风常数 y
+

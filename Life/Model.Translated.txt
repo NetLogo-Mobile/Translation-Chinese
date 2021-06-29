@@ -1,0 +1,42 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+current density
+### Chinese ***
+当前密度
+
+### Source
+draw-cells
+### Chinese ***
+绘制单元格
+
+### Source
+go-forever
+### Chinese ***
+运行
+
+### Source
+go-once
+### Chinese ***
+运行一次
+
+### Source
+initial-density
+### Chinese ***
+初始密度
+
+### Source
+recolor
+### Chinese ***
+重新着色
+
+### Source
+setup-blank
+### Chinese ***
+设置空白
+
+### Source
+setup-random
+### Chinese ***
+随机设置
+

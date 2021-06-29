@@ -1,0 +1,157 @@
+﻿## WHAT IS IT?
+
+This model generates drum rhythms using a genetic algorithm. Using the rhythmic "rules" from West African drum circles, low, medium, and high-drum patterns work in concert with evolution to create jamming beats. This is the 'duple' version of the model, where there are 4 'beats' per chromosome.
+
+In many West African countries, music serves as an integral part of culture. In Senegal in particular, drums and percussion instruments serve as both focal points of performance as well as features in ceremonial contexts. West African drum ensemble performances are grand affairs featuring costumes of loud colors, drums of all different shapes and sizes, and colorful and rhythmically intricate music. These performances are stages for rich, cross and poly-rhythmic development because many of the "songs" are simply improvisatory frameworks. In Senegal, three distinct drums make up the typical ensemble: a low drum called the dundun, a middle timbre drum called the sabar, and high timbre drum called a djembe.
+
+During a performance, the drummers listen to and blend with their fellow performers in order to create the rich sound the audience hears. The rhythm is constantly evolving based on solos, clusters, and the attenuation of the "strong-weak beat feel." This model shows one way of attempting to generate pleasing drum rhythms automatically in the style of West African Drumming. While most attempts to automatically generate music depend on having a human select rhythms they like, this model tries to generate rhythms without explicitly asking a human whether or not they like a particular rhythm.
+
+A [genetic algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm#) is a tool used in computer science to produce solutions to optimization and search problems. It relies on biologically inspired techniques in order to "search" a parameter space for an "optimal solution." The key lies in representing the given problem using "genetic material" like chromosomes. Then, the algorithm uses the techniques of [selection](https://en.wikipedia.org/wiki/Genetic_algorithm#Selection), [crossover](https://en.wikipedia.org/wiki/Genetic_algorithm#Genetic_operators), and [mutation](https://en.wikipedia.org/wiki/Genetic_algorithm#Genetic_operators) to "evolve" the solution.
+
+## HOW IT WORKS
+
+### What makes these rhythms evolve?
+
+The basic idea uses the concept of genetic algorithms in computer science. A genetic algorithm is meant to take "organisms" with "chromosomes" and simulate their evolution toward some sort of objective (so over time, organisms have higher "fitness"). In this example, drummers are our organisms and each has a set chromosomes composed of hits and rests that represent the rhythm they play.
+
+There are 16 drums: 5 high drummers, 5 medium drummers, and 6 low drummers. Here we are using "low", "medium", and "high" to describe the pitch and timbre of a drum. Each drummer (an invisible turtle) has a set of "rhythm chromosomes" which dictate what drum pattern it plays.
+
+In this model, each rhythmic chromosome is represented by a list of 4 binary digits. A '0' indicates a rest while a '1' indicates a hit. In this model, you can think of each of these digits as 'sixteenth-notes' such that each chromosome represents a 'beat'. This means there are 2^4 = 16 different types of chromosomes.
+
+The number of chromosomes that make up a drummer's genetic code is specified by the user. The default number is 4 (which, for the musically inclined results in a "four-four" time signature).
+
+At the beginning, every player starts with the exact same chromosomes (each player only plays on the downbeat). Each player plays through its chromosomes in sync with the other players (i.e. all turtles play note 0 of chromosome 0, then note 1 of chromosome 0, etc...). After the turtles have finished playing through their chromosomic rhythms, the turtles "evolve."
+
+After each play through of their genetic rhythms, two of each type of drummer (high, medium, and low drummers) are selected to 'reproduce' and 'evolve.' Each turtle selects a mate based on a fitness function (different for each breed). Turtles with higher fitness are more likely to be selected as mates.
+
+In West African drumming, low drummers are considered the base of the rhythm. Therefore, their fitness is determined by the number of strong-beats (i.e. the 0th and 2nd entries in each chromosome) that they play on.
+
+Medium drummers are typically a little bit more soloistic than low drummers, but often emphasize off-beats. So their fitness is evaluated on the number of off-beats (i.e. the 1st and 3rd entries in each chromosome) that they play on.
+
+Finally, high drummers are considered the soloists of the ensemble. They provide rhythmic tension and tend to play in clusters. Therefore, their fitness is based on the number of 3-clusters [0 1 1 1] that they play, which are considered regardless of their position in the pattern.
+
+Once a mate pair is selected, each mate picks between 1 and 4 chromosomes to contribute to the offspring (for a total of 4). This genetic material is combined and, depending on user parameters, is subject to random mutations. This new set of genetic material is considered a new off-spring. This off-spring then replaces the least fit member of the type of drummer originally selected to evolve.
+
+Once this evolution has taken place, the whole process repeats again!
+
+This differs from a "pure" genetic algorithm in a few ways. Firstly, turtles that are selected to "evolve" are randomly selected. This was a design decision that should not dramatically affect the evolution of the model. In addition, we limit the population to 16 drummers by "killing" the least fit members of each breed after every round of evolution.
+
+### What in the world is the view showing?
+
+This model uses the NetLogo view in a non-standard way. Instead of showing agent interactions, this model uses the view to display properties of the agents. Each row of patches represents a single drummer's pattern. A colored patch represents a hit while a black patch represents a rest. This way, the user can simultaneously view the patterns of all 16 drummers.
+
+When a user clicks any of the GO buttons, a vertical yellow bar moves across the view and indicates where in the rhythm each turtle is.
+
+## HOW TO USE IT
+
+The whole idea of this model is to experiment with the parameters in order to build a "great" rhythm. What makes a great rhythm is entirely up to you.
+
+### Interface Elements
+There are two interface elements that must be set before pressing the SETUP button:
+
+1. NUM-CHROMOSOMES - This specifies the number of rhythmic chromosomes each player has
+2. SHUFFLE-PARTS? - This is simply a GUI change that shuffles around the player's lines on the view (just to make things look cooler)
+
+The SETUP button is used to create the agents and update the display. It will also cause a test tone to be played to make sure the sound extension is working and your speakers are not muted
+
+GO-ONCE is used to ask all the turtles to play their pattern exactly once and then evolve
+
+GO is used to loop the process of playing and evolving over and over again
+
+GO-ONCE-NO-EVOLVE can be used to play any particular pattern exactly once with no evolution
+
+GO-NO-EVOLVE is used to loop a pattern over and over again with no evolution
+
+SOUND? is used to toggle sound output
+
+TEMPO-BPM changes how fast each pattern is played (measured in beats (or chromosomes) per minute)
+
+### Evolution Parameters
+
+HIT-LIMIT defines how long a turtle can go without being forced to evolve in some way. Again, this differs slightly from a traditional genetic algorithm but can be used to escape "stale" rhythms
+
+HIT-DENSITY-MODIFIER is a modifier to specify how "dense" a pattern should be (hits vs rests)
+
+NUM-MUTATIONS is how many mutations are applied to an off-springs chromosomes
+
+MUTATION-STRENGTH dictates how much a particular chromosome can mutate
+
+SOLOER is a chooser that allows you to single out one drummer for a solo
+
+SOLO? dictates whether or not to allow the SOLOER to solo. This means that the SOLOER plays its drum louder and the other turtles play their drums softer. In addition, the SOLOER will have maximum fitness
+
+### Model Outputs
+
+GENERATIONS counts how many generations of players we've seen
+
+DENSITY represents the current ratio of hits to rests
+
+The following are plots of the model:
+
+AVERAGE FITNESS plots the average fitness of each type of turtle and the average overall fitness over time
+
+HITS SINCE EVOLUTION is a histogram showing how long it has been since each player has 'evolved'
+
+HITS PER DRUMMER is a histogram showing how many hits each player has done
+
+## THINGS TO NOTICE
+
+When you first start the model, everyone starts with the same chromosomes. So if you disable mutation by making MUTATION-STRENGTH 0, your model won't evolve! That's because the same chromosomes are just being combined together for each player.
+
+Notice that sometimes, a single turtle sticks around for a really long time (because it's super fit!)
+
+Checkout the Hits per Drummer plot. Do you see any general trends over the course of running the model? Why might that trend be taking place?
+
+Notice that the SOLO function doesn't just make one player louder, it makes it so that the player doesn't evolve or mutate. How does that affect the model?
+
+## THINGS TO TRY
+
+Use the SOLO function to force a rhythm to evolve around a single steady player.
+
+Try and make a rhythm where all three types of players are "equally" fit!
+
+Try to evolve a rhythm where the high drums are very sparse.
+
+See how creating a "complex" meter changes the way you hear the beat. An easy way to do this is to set the NUMBER-CHROMOSOMES to 5 and see if you can hear the musical phrase.
+
+## EXTENDING THE MODEL
+
+Try changing the instrument sounds for the turtles. Can you switch from a drum circle feel to more of a rock beat feel by just changing instruments?
+
+Add more types of drummers. See how that changes the evolution.
+
+Change the criteria for a mate for each breed and see how that effects the evolution of the rhythm.
+
+Try to add the ability for turtles to play triplets! This would make the rhythms super cool, but would require warping time a bit! (Hint: check out the play-later primitive in the sound extension)
+
+## NETLOGO FEATURES
+
+Notice that this model purposefully slows down the NetLogo world by using the `wait` primitive. That's because music doesn't happen as fast as possible! Unfortunately, this doesn't work for the first tick, so the space between the "first beat" and "second beat" is not equal to the space between the rest of the beats.
+
+## RELATED MODELS
+
+Check out the Sound Machines and Drum Machine models in the Models Library!
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Bain, C. and Wilensky, U. (2017).  NetLogo GenJam - Duple model.  http://ccl.northwestern.edu/netlogo/models/GenJam-Duple.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2017 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2017 Cite: Bain, C. -->
