@@ -2,152 +2,152 @@
 ## Plots
 ### Source
 all
-### Chinese ***
+### Chinese
 全部
 
 ### Source
 Average Fitness
-### Chinese ***
+### Chinese
 平均健康程度
 
 ### Source
 Drummer
-### Chinese ***
+### Chinese
 鼓手
 
 ### Source
 Fitness
-### Chinese ***
+### Chinese
 健康程度
 
 ### Source
 high
-### Chinese ***
+### Chinese
 高的
 
 ### Source
 Hits per Drummer (total)
-### Chinese ***
+### Chinese
 每个鼓手的鼓点次数（总计）
 
 ### Source
 Hits Since Evolution
-### Chinese ***
+### Chinese
 自进化以来的鼓点数量
 
 ### Source
 low
-### Chinese ***
+### Chinese
 低的
 
 ### Source
 med
-### Chinese ***
+### Chinese
 中等
 
 ### Source
 Number of Hits
-### Chinese ***
+### Chinese
 鼓点数量
 
 ### Source
 pen-1
-### Chinese ***
+### Chinese
 画笔-1
 
 ### Source
 pen-2
-### Chinese ***
+### Chinese
 画笔-2
 
 ### Source
 Ticks
-### Chinese ***
+### Chinese
 时钟周期
 
 ## Widgets
 ### Source
 Density
-### Chinese ***
+### Chinese
 密度
 
 ### Source
 generations
-### Chinese ***
+### Chinese
 遗传代数
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 go-no-evolve
-### Chinese ***
+### Chinese
 运行（不进化）
 
 ### Source
 go-once
-### Chinese ***
+### Chinese
 运行一次
 
 ### Source
 go-once-no-evolve
-### Chinese ***
+### Chinese
 运行一次（不进化）
 
 ### Source
 hit-density-modifier
-### Chinese ***
+### Chinese
 鼓点密度修正
 
 ### Source
 hit-limit
-### Chinese ***
+### Chinese
 鼓点限制
 
 ### Source
 mutation-strength
-### Chinese ***
+### Chinese
 突变强度
 
 ### Source
 num-chromosomes
-### Chinese ***
+### Chinese
 染色体数量
 
 ### Source
 num-mutations
-### Chinese ***
+### Chinese
 突变数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 shuffle-parts?
-### Chinese ***
+### Chinese
 初始时进行洗牌？
 
 ### Source
 solo?
-### Chinese ***
+### Chinese
 独奏？
 
 ### Source
 soloer
-### Chinese ***
+### Chinese
 独奏者
 
 ### Source
 sound?
-### Chinese ***
+### Chinese
 声音？
 
 ### Source
 tempo-bpm
-### Chinese ***
+### Chinese
 节奏（每分钟节拍数）
 

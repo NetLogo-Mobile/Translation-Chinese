@@ -2,51 +2,51 @@
 ## Widgets
 ### Source
 draw-notes
-### Chinese ***
+### Chinese
 画上音符
 
 ### Source
 erase-notes
-### Chinese ***
+### Chinese
 擦除音符
 
 ### Source
 instrument-name
-### Chinese ***
+### Chinese
 乐器名称
 
 ### Source
 instrument-number
-### Chinese ***
+### Chinese
 乐器编号
 
 ### Source
 metronome?
-### Chinese ***
+### Chinese
 节拍器？
 
 ### Source
 note-length
-### Chinese ***
+### Chinese
 音符长度
 
 ### Source
 play
-### Chinese ***
+### Chinese
 播放
 
 ### Source
 quarter-note-length
-### Chinese ***
+### Chinese
 四分音符长度
 
 ### Source
 rewind
-### Chinese ***
+### Chinese
 倒带
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

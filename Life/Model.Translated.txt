@@ -2,41 +2,41 @@
 ## Widgets
 ### Source
 current density
-### Chinese ***
+### Chinese
 当前密度
 
 ### Source
 draw-cells
-### Chinese ***
+### Chinese
 绘制单元格
 
 ### Source
 go-forever
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 go-once
-### Chinese ***
+### Chinese
 运行一次
 
 ### Source
 initial-density
-### Chinese ***
+### Chinese
 初始密度
 
 ### Source
 recolor
-### Chinese ***
+### Chinese
 重新着色
 
 ### Source
 setup-blank
-### Chinese ***
+### Chinese
 设置空白
 
 ### Source
 setup-random
-### Chinese ***
+### Chinese
 随机设置
 
