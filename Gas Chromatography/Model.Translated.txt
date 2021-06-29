@@ -1,0 +1,58 @@
+﻿## Language = Chinese
+## Plots
+### Source
+Gas Output
+### Chinese ***
+过滤后的气体
+
+### Source
+Greens
+### Chinese ***
+绿色数量
+
+### Source
+Molecules
+### Chinese ***
+分子数量
+
+### Source
+Reds
+### Chinese ***
+红色数量
+
+### Source
+Time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+number-of-pores
+### Chinese ***
+空洞数量
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+stickiness
+### Chinese ***
+分子粘性
+
+### Source
+thickness-of-medium
+### Chinese ***
+介质厚度
+
+### Source
+wall-effect?
+### Chinese ***
+两侧墙壁？
+

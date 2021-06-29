@@ -1,0 +1,52 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+initial-density
+### Chinese ***
+初始密度
+
+### Source
+inner-radius-x
+### Chinese ***
+内半径（横向）
+
+### Source
+inner-radius-y
+### Chinese ***
+内半径（纵向）
+
+### Source
+outer-radius-x
+### Chinese ***
+外半径（横向）
+
+### Source
+outer-radius-y
+### Chinese ***
+外半径（纵向）
+
+### Source
+ratio
+### Chinese ***
+比率
+
+### Source
+restart
+### Chinese ***
+重新开始
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+step
+### Chinese ***
+运行一次
+

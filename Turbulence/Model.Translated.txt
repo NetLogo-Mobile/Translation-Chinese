@@ -1,0 +1,32 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+auto-continue?
+### Chinese ***
+自动继续？
+
+### Source
+coupling-strength
+### Chinese ***
+耦合强度
+
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+initial-turbulence
+### Chinese ***
+初始湍流
+
+### Source
+roughness
+### Chinese ***
+粗糙度
+
+### Source
+setup
+### Chinese ***
+设置
+

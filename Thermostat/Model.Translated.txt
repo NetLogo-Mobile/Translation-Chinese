@@ -1,0 +1,63 @@
+﻿## Language = Chinese
+## Plots
+### Source
+goal-temp
+### Chinese ***
+目标温度
+
+### Source
+Temp
+### Chinese ***
+温度
+
+### Source
+temperature
+### Chinese ***
+温度
+
+### Source
+Temperature
+### Chinese ***
+温度
+
+### Source
+Time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+goal-temp
+### Chinese ***
+目标温度
+
+### Source
+heater-strength
+### Chinese ***
+加热器强度
+
+### Source
+initial-temp
+### Chinese ***
+初始温度
+
+### Source
+insulation
+### Chinese ***
+绝缘
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+temperature
+### Chinese ***
+温度
+

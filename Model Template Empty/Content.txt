@@ -1,0 +1,7 @@
+﻿## What is it?
+This is an empty template for creating a NetLogo model - although we also put some comments for you to learn the first steps for a "Hello World" model.
+
+## How to use it?
+Open the model, and click play - you will find some flickering color patches! That's the spirit. Then, open the code panel, switch to the editor mode. There you will figure out how this simple model was implemented, and start to make your own model.
+
+**Any questions? Feel free to leave it on the comment area!**

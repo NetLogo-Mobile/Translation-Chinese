@@ -1,0 +1,78 @@
+﻿## Language = Chinese
+## Plots
+### Source
+# of nodes
+### Chinese ***
+节点数
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+degree
+### Chinese ***
+程度
+
+### Source
+Degree Distribution
+### Chinese ***
+连接程度分布
+
+### Source
+Degree Distribution (log-log)
+### Chinese ***
+连接程度分布（log-log）
+
+### Source
+log(# of nodes)
+### Chinese ***
+节点数（log）
+
+### Source
+log(degree)
+### Chinese ***
+连接数（log）
+
+## Widgets
+### Source
+# of nodes
+### Chinese ***
+节点数
+
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+go-once
+### Chinese ***
+运行一次
+
+### Source
+layout?
+### Chinese ***
+自动布局？
+
+### Source
+plot?
+### Chinese ***
+绘制图表？
+
+### Source
+redo layout
+### Chinese ***
+重新布局
+
+### Source
+resize nodes
+### Chinese ***
+调整节点大小
+
+### Source
+setup
+### Chinese ***
+设置
+

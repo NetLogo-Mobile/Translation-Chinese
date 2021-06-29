@@ -1,0 +1,139 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+Average Energies
+### Chinese ***
+平均能量
+
+### Source
+Average Speeds
+### Chinese ***
+平均速度
+
+### Source
+cyan
+### Chinese ***
+青色
+
+### Source
+energy
+### Chinese ***
+活力
+
+### Source
+magenta
+### Chinese ***
+品红
+
+### Source
+speed
+### Chinese ***
+速度
+
+### Source
+time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+average energy cyan
+### Chinese ***
+平均能量青色
+
+### Source
+average energy magenta
+### Chinese ***
+平均能量洋红色
+
+### Source
+average speed cyan
+### Chinese ***
+平均速度青色
+
+### Source
+average speed magenta
+### Chinese ***
+平均速度洋红色
+
+### Source
+box-size
+### Chinese ***
+盒子大小
+
+### Source
+close
+### Chinese ***
+关闭
+
+### Source
+collide?
+### Chinese ***
+碰撞？
+
+### Source
+cyan-init-speed
+### Chinese ***
+cyan-init-speed
+
+### Source
+cyan-mass
+### Chinese ***
+青色质量
+
+### Source
+cyans in right chamber
+### Chinese ***
+右室青色
+
+### Source
+go/stop
+### Chinese ***
+走/停
+
+### Source
+magenta-init-speed
+### Chinese ***
+品红色初始化速度
+
+### Source
+magenta-mass
+### Chinese ***
+品红色
+
+### Source
+magentas in left chamber
+### Chinese ***
+左室洋红色
+
+### Source
+max particle speed
+### Chinese ***
+最大粒子速度
+
+### Source
+num-cyans
+### Chinese ***
+数量-青色
+
+### Source
+num-magentas
+### Chinese ***
+数字-洋红色
+
+### Source
+open
+### Chinese ***
+打开
+
+### Source
+opening-size
+### Chinese ***
+开口尺寸
+
+### Source
+setup
+### Chinese ***
+设置
+

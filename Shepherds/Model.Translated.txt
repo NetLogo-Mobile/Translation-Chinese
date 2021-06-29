@@ -1,0 +1,53 @@
+﻿## Language = Chinese
+## Plots
+### Source
+efficiency
+### Chinese ***
+效率
+
+### Source
+Herding Efficiency
+### Chinese ***
+放牧效率
+
+### Source
+Percent
+### Chinese ***
+百分比
+
+### Source
+Time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+current efficiency
+### Chinese ***
+目前效率
+
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+num-sheep
+### Chinese ***
+羊的数量
+
+### Source
+num-shepherds
+### Chinese ***
+牧羊人的数量
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+sheep-speed
+### Chinese ***
+羊的速度
+

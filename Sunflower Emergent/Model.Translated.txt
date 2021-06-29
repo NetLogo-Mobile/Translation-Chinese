@@ -1,0 +1,62 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+# particles
+### Chinese ***
+＃ 古丁粒子数量
+
+### Source
+# temps
+### Chinese ***
+# 临时粒子数量
+
+### Source
+alpha
+### Chinese ***
+alpha 参数
+
+### Source
+beta
+### Chinese ***
+beta 参数
+
+### Source
+energy-approximation
+### Chinese ***
+能量近似方式
+
+### Source
+fixed-temps?
+### Chinese ***
+固定温度？
+
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+particle-size
+### Chinese ***
+粒子尺寸
+
+### Source
+ring-dist
+### Chinese ***
+环区距离
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+show-temps?
+### Chinese ***
+显示临时粒子？
+
+### Source
+step
+### Chinese ***
+运行一次
+

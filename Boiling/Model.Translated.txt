@@ -1,0 +1,33 @@
+﻿## Language = Chinese
+## Plots
+### Source
+ave-heat
+### Chinese ***
+平均热量
+
+### Source
+Average Heat
+### Chinese ***
+平均热量
+
+### Source
+Avg Heat
+### Chinese ***
+平均热量
+
+### Source
+Time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+go
+### Chinese ***
+运行
+
+### Source
+setup
+### Chinese ***
+设置
+
