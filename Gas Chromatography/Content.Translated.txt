@@ -23,7 +23,7 @@
 
 STICKINESS滑块可更改粘性参数。粘性值越高，绿海龟穿过吸收层的速度就越慢。
 
-当 STICKINESS 在 3 到 7 之间，当 NUMBER-OF-PORES 超过 30 时，程序运行最快。 如果 STICKINESS 太高，或 NUMBER-OF-PORES 太小，绿海龟可能需要很长时间才能通过通过吸收层。
+当 STICKINESS 在 3 到 7 之间，当 NUMBER-OF-PORES 超过 30 时，程序运 行最快。 如果 STICKINESS 太高，或 NUMBER-OF-PORES 太小，绿海龟可能需要很长时间才能通过通过吸收层。
 
 ## 看一看
 
