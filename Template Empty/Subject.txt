@@ -1,1 +1,1 @@
-﻿Model Template: Empty
+﻿Template: Empty
