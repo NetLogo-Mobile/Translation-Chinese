@@ -1,0 +1,294 @@
+﻿## Language = Chinese
+## NetTango
+### Source
+Angle?
+### Chinese
+角度？
+
+### Source
+Brightness
+### Chinese
+亮度
+
+### Source
+Efficiency
+### Chinese
+进食效率
+
+### Source
+Energy gains
+### Chinese
+能量收益
+
+### Source
+Every how many rounds?
+### Chinese ***
+每几轮？
+
+### Source
+How large?
+### Chinese ***
+多大？
+
+### Source
+How many times?
+### Chinese ***
+多少次？
+
+### Source
+How many?
+### Chinese ***
+多少？
+
+### Source
+How much?
+### Chinese ***
+多少？
+
+### Source
+How possible?
+### Chinese ***
+多大概率？
+
+### Source
+Only smaller?
+### Chinese ***
+只吃更小的？
+
+### Source
+Randomly?
+### Chinese ***
+随机进行？
+
+### Source
+Scale with size
+### Chinese ***
+随大小增长
+
+### Source
+Scale with speed
+### Chinese ***
+随速度增长
+
+### Source
+What kind?
+### Chinese ***
+哪一种？
+
+### Source
+Which color?
+### Chinese ***
+哪种颜色？
+
+### Source
+Which shape?
+### Chinese ***
+哪种图案？
+
+### Source
+ Add Energy
+### Chinese ***
+ 提供能量
+
+### Source
+ Become a
+### Chinese ***
+ 成为
+
+### Source
+ Change Size
+### Chinese ***
+ 改变大小
+
+### Source
+ Change Speed
+### Chinese ***
+ 改变速度
+
+### Source
+ Eat Grass
+### Chinese ***
+ 吃草
+
+### Source
+ Eat Prey
+### Chinese ***
+ 吃猎物
+
+### Source
+ If Energy <=
+### Chinese ***
+ 如果能量小于
+
+### Source
+ If Size <=
+### Chinese ***
+ 如果尺寸小于
+
+### Source
+ Move and Wiggle
+### Chinese ***
+ 移动并摇摆
+
+### Source
+ Reproduce
+### Chinese ***
+ 进行繁殖
+
+### Source
+ Set Color
+### Chinese ***
+ 设置颜色
+
+### Source
+ Set Size
+### Chinese ***
+ 设置尺寸
+
+### Source
+ Spend Energy
+### Chinese ***
+ 消耗能量
+
+### Source
+ Go 
+### Chinese ***
+ 进行 
+
+### Source
+ Setup 
+### Chinese ***
+ 设置 
+
+### Source
+ Ask Animals 
+### Chinese ***
+ 命令动物 
+
+### Source
+ Ask Patches 
+### Chinese ***
+ 命令格子 
+
+### Source
+ Ask Sheep 
+### Chinese ***
+ 命令羊 
+
+### Source
+ Ask Wolves 
+### Chinese ***
+ 命令狼 
+
+### Source
+ Create Sheep 
+### Chinese ***
+ 创建羊 
+
+### Source
+ Create Wolves 
+### Chinese ***
+ 创造狼 
+
+### Source
+ Chance
+### Chinese ***
+ 有概率进行
+
+### Source
+ Repeat
+### Chinese ***
+ 重复进行
+
+### Source
+ Ask Neighbors 
+### Chinese ***
+ 命令邻近格子 
+
+### Source
+ Grow Grass
+### Chinese ***
+ 让草生长
+
+### Source
+ Set Terrain
+### Chinese ***
+ 设置地形
+
+### Source
+ With Terrain
+### Chinese ***
+ 如果地形为
+
+## Plots
+### Source
+grass / 4
+### Chinese ***
+草 / 4
+
+### Source
+pop.
+### Chinese ***
+人口
+
+### Source
+populations
+### Chinese ***
+人口
+
+### Source
+sheep
+### Chinese ***
+羊
+
+### Source
+time
+### Chinese ***
+时间
+
+### Source
+wolves
+### Chinese ***
+狼
+
+## Widgets
+### Source
+go
+### Chinese ***
+进行
+
+### Source
+go once
+### Chinese ***
+进行一次
+
+### Source
+grass / 4
+### Chinese ***
+草 / 4
+
+### Source
+set fire randomly
+### Chinese ***
+随机纵火
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+sheep
+### Chinese ***
+羊
+
+### Source
+show-energy?
+### Chinese ***
+显示能量？
+
+### Source
+wolves
+### Chinese ***
+狼
+

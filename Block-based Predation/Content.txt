@@ -1,0 +1,6 @@
+﻿More information to be added...
+
+*Credit*: Everyone participated in the first Summer Design Institute of Turtle Universe.
+
+(C) 2021 John Chen
+Based on the original Wolf Sheep Predation model, (C) 1997 Uri Wilensky
