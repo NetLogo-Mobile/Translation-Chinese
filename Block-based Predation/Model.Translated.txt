@@ -1,14 +1,34 @@
 ﻿## Language = Chinese
 ## NetTango
 ### Source
+all
+### Chinese
+所有
+
+### Source
 Angle?
 ### Chinese
 角度？
 
 ### Source
+black
+### Chinese
+黑色
+
+### Source
+blue
+### Chinese
+蓝色
+
+### Source
 Brightness
 ### Chinese
 亮度
+
+### Source
+brown
+### Chinese
+棕色
 
 ### Source
 Efficiency
@@ -24,6 +44,21 @@ Energy gains
 Every how many rounds?
 ### Chinese
 每几轮？
+
+### Source
+fire
+### Chinese
+火焰
+
+### Source
+grass
+### Chinese
+草地
+
+### Source
+green
+### Chinese
+绿色
 
 ### Source
 How large?
@@ -56,9 +91,24 @@ Only smaller?
 只吃更小的？
 
 ### Source
+orange
+### Chinese
+橙色
+
+### Source
+pink
+### Chinese
+粉色
+
+### Source
 Randomly?
 ### Chinese
 随机进行？
+
+### Source
+red
+### Chinese
+红色
 
 ### Source
 Scale with size
@@ -69,6 +119,21 @@ Scale with size
 Scale with speed
 ### Chinese
 随速度增长
+
+### Source
+sheep
+### Chinese
+羊
+
+### Source
+soil
+### Chinese
+土壤
+
+### Source
+water
+### Chinese
+水域
 
 ### Source
 What kind?
@@ -84,6 +149,26 @@ Which color?
 Which shape?
 ### Chinese
 哪种图案？
+
+### Source
+white
+### Chinese
+白色
+
+### Source
+wolf
+### Chinese
+狼
+
+### Source
+wolves
+### Chinese
+狼
+
+### Source
+yellow
+### Chinese
+黄色
 
 ### Source
  Add Energy
@@ -216,6 +301,16 @@ Which shape?
  设置地形
 
 ### Source
+ Summon Rain
+### Chinese
+ 召唤阵雨
+
+### Source
+ Throw Thunder
+### Chinese
+ 召唤闪电
+
+### Source
  With Terrain
 ### Chinese
  如果地形为
@@ -273,6 +368,11 @@ set fire randomly
 随机纵火
 
 ### Source
+set-fire
+### Chinese
+纵火焚烧
+
+### Source
 setup
 ### Chinese
 设置
@@ -286,6 +386,41 @@ sheep
 show-energy?
 ### Chinese
 显示能量？
+
+### Source
+spawn-sheep
+### Chinese
+召唤羊群
+
+### Source
+spawn-wolves
+### Chinese
+召唤狼群
+
+### Source
+summon rain randomly
+### Chinese
+随机召唤阵雨
+
+### Source
+summon-rain
+### Chinese
+召唤阵雨
+
+### Source
+throw thunder randomly
+### Chinese
+随机召唤闪电
+
+### Source
+throw-thunder
+### Chinese
+召唤闪电
+
+### Source
+touch-behavior
+### Chinese
+双击时发生什么？
 
 ### Source
 wolves
