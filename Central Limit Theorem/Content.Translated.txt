@@ -1,0 +1,135 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## 这个模型是什么？
+
+这证明了人口分布与其样本均值分布之间的关系以及样本大小对这种关系的影响。在这个模型中，人口由一些变量分布，例如以千美元为单位的总资产。总体是随机分布的——不一定是“正态”分布——但是来自这个总体的样本均值在接近正态曲线的分布中累积。该程序允许对种群中的个体样本进行重复采样。
+
+该模型是 ProbLab 课程的一部分。 CCL 目前正在开发 ProbLab 课程。有关 ProbLab 课程的更多信息，请参阅 http://ccl.northwestern.edu/curriculum/ProbLab/。
+
+## 这个模型是怎么运行的
+
+程序或用户创建了一个在某个维度（例如总资产）范围内的总体。在视图中，我们看到这个人口排列在“图片条形图”中。例如，穷人越靠左，富人越靠右。接下来，从这个群体中选择一组个体样本作为样本（这些被抽样的人被涂上了不同的颜色）。程序计算这个样本的平均值——他们的平均资产——并在视图下方的直方图中绘制这个平均值。我们可以设置程序重复采样，观察样本均值分布的出现。我们还可以查看样本总和的相应直方图。这使我们能够根据它们的分布特性来研究总和与均值之间的关系。
+
+## 如何这个模型怎么用
+
+按 SETUP，然后按 CREATE RANDOM PEOPLE 或 CREATE MY OWN PEOPLE 或按 PRESET 按钮之一。如果您创建了随机人物或按下了其中一个预设，您现在可以按下 GO ONCE 或 GO。但是，如果您按下了 CREATE MY OWN PEOPLE，您现在需要单击 View 来创建这些人。只有这样你才应该按 GO ONCE 或 GO。您还可以改变滑块的设置。在绘图观察结果并探索设置和结果之间的关系。如果您想在开始采样之前猜测样本均值的平均值，可以使用 RANGE滑块来指示该均值的位置。
+
+纽扣：
+SETUP——初始化变量
+CREATE RANDOM PEOPLE -- 激活 SETUP 然后在视图中创建一个随机群体
+CREATE MY OWN PEOPLE -- 允许用户通过单击视图来创建人员
+PRESET 1 - PRESET 6 -- 创建具有可能感兴趣的特殊模式的种群
+GO ONCE -- 在总体中标记一个样本并计算并绘图它们的平均值。
+GO - 无限期地重复 GO ONCE。
+
+滑块：
+SAMPLER SIZE -- 确定每次运行 Go过程采样的样本数量
+MAX-VALUE -- 确定总体成员可以采用的值范围（0 到 MAX-VALUE 区间的数字）
+
+开关：
+也-和？ -- 如果设置为“开”，则绘制样本的总和（以及这些总和的均值）以及样本的均值（以及这些均值的均值）。如果设置为“关”，则仅绘制均值。
+SHOW-EV？ -- 如果设置为“开”，预期值 (EV) 监视器将显示一个值
+
+监视器：
+NUM-SAMPLES -- 显示在最后一次“设置”中采集的样本总数。
+预期值——计算总体的平均 x 值。对于每一列，程序计算海龟数量与该列的 x 值的乘积。接下来，将所有这些乘积相加并除以海龟总数。
+STD-DEV-MEANS -- 显示样本均值直方图的标准偏差。这是分布“扩散”程度的指标。数字越小，样本均值的分布越紧密（更窄、更聚类）。
+STD-DEV-MEANS -- 显示样本总和直方图的标准偏差。
+
+情节：
+SAMPLE-MEAN DISTRIBUTION -- 所取所有样本的平均值和所取所有样本的平均总和的分布。
+
+## 看一看
+
+我们正在查看的属性由视图中条形图中人员的“x 值”索引。一个人的 x 值可以在视图中其列底部的数字标签中看到。例如，最左边一列中人员的 x 值为 0。原则上，可能没有人的 x 值为“0”，可能只有一个人具有该值，或者可能有两个或更多。它们都共享相同的值，因为它们都在同一列中。
+
+当您按 GO 或 GO ONCE 时变为绿色的总体成员是“样本”。他们的平均 x 值，例如他们的储蓄，绘制在视图下方的直方图中。例如，如果取三个人的样本，他们的 x 值分别为 7、8 和 12，那么直方图列“9”将上升一个单位，因为 9 是 7、8 和 12 的平均值.
+
+对于总体的某些设置，您采集的样本越多，获得稀有样本的可能性就越大。因此，仅在几个样本后得到的分布不一定反映所有可能的平均值。
+
+## 试一试
+
+您能看到总体分布（在图形显示窗口中）与直方图平均值（在绘图窗口中）之间的任何联系吗？例如，如果范围左侧碰巧有更多的总体样本（“人”），您希望在哪里看到大部分样本均值？
+
+尝试以 1 的 SAMPLE-SIZE 运行模型。你会得到什么。现在尝试将 SAMPLE-SIZE 设为 2。有什么改变吗？更大的样本量怎么样？
+
+SAMPLE SIZE、RANGE 和 STD-DEV 之间是否有任何联系？探索这个问题的一种方法是保持其中两个变量不变，然后检查更改第三个变量时会发生什么。您可能希望为每个试验采集相同数量的样本。
+
+如果您将模型设置为大于总体总大小的样本大小，您将收到一条消息，告诉您不能这样做。但是，您可以设置一个大于大多数列的样本大小。这意味着整个样本无法放入这些列中。这是一个问题吗？这对样本均值的分布有何影响？
+
+使用 CREATE MY OWN PEOPLE 选项，建立一些“不寻常”的群体。其中一些已被放入 PRESET 按钮中。例如，您可以仅在一列或两列中创建人员，或者您可以将人口设为“U 形”（在外面更多，向中间走时越来越少）。你的发现是什么？
+
+同样，使用 CREATE MY OWN PEOPLE 选项，在视图的右侧（大约在 x 值 8 处）构建一个非常高的列，并构建一些非常短的列。将 SAMPLE-SIZE 设置为 10。按 GO ONCE。关于从高柱中选出的人数，你能说些什么？再试一次，然后按 GO。看看绘图。您是否看到从高列中获取样本的机会与绘图平均值的位置之间存在任何联系？
+
+设置 ALSO-SUMS？到“开”，然后激活程序。你能解释一下你得到的两个直方图之间的异同吗？例如，您可以查看它们的范围、它们覆盖的总面积、它们的高度和它们的图形。尝试解释两个直方图之间的转换。例如，为什么在左边长得比右边的直方图直方图？查看均值和总和的标准差。这两个值之间的比率是多少？此比率是否与此模型设置中的任何其他值相关？
+
+关于两个直方图，你能找到两个直方图收敛到一个直方图吗？
+
+按 SETUP，按 CREATE MY OWN PEOPLE 并制作高度为 2（两个人）的 6 列，将样本大小设置为 2，并设置 ALSO-SUMS?到“开”。现在按 GO。将此统计活动与您掷骰子的概率活动进行比较是很有趣的。例如，总和直方图中有多少可能的列？事实上，这样的比较可以帮助我们思考统计学和概率之间的异同。
+
+您采集的样本数量、每个样本的大小以及由此产生的样本均值分布之间有什么关系？例如，如果您有预算对 1,000 人进行抽样，您应该抽取 10 个大小为 100 的样本还是 100 个大小为 10 的样本？在这些选择中的每一个中，您得到了什么，也许失去了什么？例如，就置信度或有关您抽样的总体信息而言。要探索这个问题，您可能需要扩大样本量的范围。您可能还想调整视图大小，以便在您的群体中容纳更多样本。最后，有一个滑块和相应的代码来控制您正在采集的样本总数可能会有所帮助。
+
+## 教学笔记
+
+首先要记住的是，实际上我们不知道我们抽样的总体分布。我们只有绘图，可以这么说。因此，当您与此模型交互时，您应该记得在应用统计中不存在图形显示。然而，在这个模型中，我们模拟了总体——就好像我们确实知道它的分布一样——以了解总体指标与其样本均值分布之间的关系。
+
+您可能已经注意到，几乎不管人口的图形如何，直方图最终都会呈现出某种图形。这种图形称为“正常曲线”或“钟形曲线”或“钟形曲线”。我们说直方图“接近”正态曲线，因为我们需要越来越多的样本。对于特殊的人口分布，我们可能会得到这条曲线的特殊情况。例如，如果您创建了一个在同一列中包含所有人员的总体，则您的直方图将是钟形曲线的极端情况——它本身仅包含一列。
+
+通常，人们会说，“人口是分布的……等等”，但有时，他们实际的意思可能是“人口的样本均值是分布的……等等”。这并不意味着第二个修辞格一定更可取，只是我们应该理解这两种想法之间的区别。在此模型中，视图显示了总体本身的分布情况，而绘图显示了样本均值的分布情况。使用这个模型，人们可能会被这两种分布之间的对比所震惊。
+
+该绘图显示了样本均值的分布和这些均值的均值。该均值收敛于从该总体中抽样的期望值。它可以计算为平均 x 值。也就是说，将每列的 x 和 y 值相乘，将这些乘积相加，然后将总和除以数据点的总数（“人”）。例如，如果 0 值上有 3 个人，1 值上有 2 人，2 值上有 5 人，则 x 和 y 三个乘积的总和为：
+3*0 + 2*1 + 5*2 = 12。我们现在将 12 除以 10（总人数）。
+12 : 10 = 1.2。因此，如果我们从这个总体中抽样，样本均值的均值将收敛于 1.2。试试这个。您可以使用上面的示例或您发明的任何其他示例。
+
+最大的挑战是使用这个模型来解释为什么当我们采集足够的样本时，我们几乎总是得到钟形曲线。
+
+请注意以下潜在的混淆点。为了能够仔细检查采样过程，该模型中的种群包含的样本少于研究人员通常使用统计分析研究的大多数种群。例如，一个群体中共享相同 x 值的个体样本可能不超过 5 个（即，他们都在同一列中）。因此，大小大于该列中样本数量的样本，例如大小为 8 的样本，永远不能仅包含来自该列的样本。在“现实生活”中，理论上可能会发生从单个列中抽取整个随机样本的情况。这意味着，如果您使用大样本量，您应该期望获得比其他人预期的更窄的样本均值分布。例如，如果最左边的列不够高以包含整个样本，您将永远不会收到与该列的 x 值相等的样本均值。这是因为某些样本会“溢出”到该列的右侧，从而导致更大的样本均值。因为同样的逻辑适用于从最右边采集的样本，样本平均值将比小样本量更接近中心。
+
+## 改一改
+
+该模型的当前版本允许对单个样本进行重复采样。也就是说，如果一个人在第一个样本中被随机抽取，那么在第二个样本中可以再次抽样，以此类推。如果我们不允许这种重复抽样，样本均值分布是否会受到影响？如果是这样，如何？添加仅允许重复采样作为选项的代码，并比较两个选项之间的结果。
+
+中位数如何表现？和手段一样吗？添加一个选项以查看总体和样本数据的中位数。
+
+添加一个监视器，显示此模型中表示的两个标准偏差之间的比率。
+
+该模型显示采样数据的均值和总和。查看样本的其他分析可能会很有趣。例如，抽样人员的所有值的乘积以及该乘积的 n 次根（对于大小为 n 的样本）。
+
+随着我们收集越来越多的样本，标准偏差如何变化？为了检验这一点，你可以在“时间”（在样本）添加标准偏差的绘图。
+
+## NetLogo 语言特性
+
+在过程`draw`中，我们使用了一个临时变量`temp-mouse-xcor`。此变量可确保程序不会变得“混乱”。如果没有这个变量，程序可能会在 `ifelse` 代码中输入一个子句，当他/她用鼠标单击时，它不再满足用户的实际意思。这可能发生，因为用户正在快速移动鼠标。所以程序选择了当时正确的`ifelse`子句，但同时鼠标点击已经在别的地方，所以子句选择将不再合适。临时变量通过执行指令来避免这种情况，就好像鼠标仍然在刚才的位置点击一样。
+
+在当前版本中，您可以创建总体，但不能对抽样进行试验。建立一个过程，让您可以采集自己的样本。
+
+## 相关模型
+
+Several ProbLab models look at the emergence of bell-shaped curves through the accumulation of sample means. See, for example, Prob Graphs Basic and Random Basic Advanced. To look closer at the idea of expected value, see the models Expected Value and Expected Value Advanced.
+
+## 引用和致谢
+
+This model is a part of the ProbLab curriculum. The ProbLab Curriculum is currently under development at Northwestern's Center for Connected Learning and Computer-Based Modeling. . For more information about the ProbLab Curriculum please refer to http://ccl.northwestern.edu/curriculum/ProbLab/.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Abrahamson, D. and Wilensky, U. (2005).  NetLogo Central Limit Theorem model.  http://ccl.northwestern.edu/netlogo/models/CentralLimitTheorem.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 Cite: Abrahamson, D. -->

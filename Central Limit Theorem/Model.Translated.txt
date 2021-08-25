@@ -1,0 +1,134 @@
+﻿*** ea019251e9a1e995aee56207db61702e
+## Language = Chinese
+## Plots
+### Source
+Count
+### Chinese ***
+数数
+
+### Source
+Mean Value
+### Chinese ***
+平均值
+
+### Source
+means
+### Chinese ***
+方法
+
+### Source
+means-mean
+### Chinese ***
+均值
+
+### Source
+Sample-Data Distribution
+### Chinese ***
+样本数据分布
+
+### Source
+sums
+### Chinese ***
+总和
+
+### Source
+sums-mean
+### Chinese ***
+总和-均值
+
+## Widgets
+### Source
+also-sums?
+### Chinese ***
+也总和？
+
+### Source
+Create My Own People
+### Chinese ***
+创建我自己的人
+
+### Source
+Create Random People
+### Chinese ***
+创建随机人物
+
+### Source
+Expected Value
+### Chinese ***
+期望值
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+Go Once
+### Chinese ***
+去一次
+
+### Source
+max-value
+### Chinese ***
+最大值
+
+### Source
+num-samples
+### Chinese ***
+样本数
+
+### Source
+Preset 1
+### Chinese ***
+预设 1
+
+### Source
+Preset 2
+### Chinese ***
+预设 2
+
+### Source
+Preset 3
+### Chinese ***
+预设 3
+
+### Source
+Preset 4
+### Chinese ***
+预设 4
+
+### Source
+Preset 5
+### Chinese ***
+预设 5
+
+### Source
+Preset 6
+### Chinese ***
+预设 6
+
+### Source
+sample-size
+### Chinese ***
+样本量
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+show-ev?
+### Chinese ***
+显示-ev？
+
+### Source
+std-dev-means
+### Chinese ***
+标准开发手段
+
+### Source
+std-dev-sums
+### Chinese ***
+标准开发总和
+

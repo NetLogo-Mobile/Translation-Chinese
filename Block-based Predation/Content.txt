@@ -2,5 +2,6 @@
 
 Double-tap anywhere in the world to experience something really cool!
 
-(C) 2021 John Chen, Lexie Zhao, Students in the 1st Summer Design Institute of Turtle Universe.
+(C) 2021 John Chen
+, Lexie Zhao, Students in the 1st Summer Design Institute of Turtle Universe.
 Based on the original Wolf Sheep Predation model, (C) 1997 Uri Wilensky
