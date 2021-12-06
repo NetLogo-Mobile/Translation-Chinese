@@ -1,5 +1,5 @@
 ﻿*** Machine Translated
-`Set`变量的值更改为提供的新值。我们可以使用`set`来更改使用`globals`创建的`globals` ，使用`let`创建的局部变量，预定的主体特征（例如`pcolor` ， `size`和`xcor` ）以及使用`turtles-own` ， `xcor` `patches-own`和`links-own`创建的自定义主体特征的值。 `links-own` 。例如，如果我们想为每只海龟分配一个随机的年龄并将旧的乌龟设为蓝色，我们将编写以下代码：
+`Set`变量的值更改为提供的新值。我们可以使用`set`来更改使用`globals`创建的`globals` ，使用`let`创建的局部变量，预定的主体特征（例如`pcolor` ， `size`和`xcor` ）以及使用`turtles-own` ， `xcor` `patches-own`和`links-own`创建的自定义主体特征的值。 `links-own` 。例如，如果我们想为每只海龟分配一个随机的年龄并将旧的海龟设为蓝色，我们将编写以下代码：
 
 
 

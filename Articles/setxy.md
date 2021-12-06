@@ -15,7 +15,7 @@ create-turtles 1 [
 
 - 默认情况下，位于世界中心的x和y坐标均为0，因此`setxy 0 0`会将海龟的位置设置为世界中心。
 - 赋予`setxy`的x和y坐标可以是十进制值，而不仅仅是整数，因此`setxy 0.5 -0.5`会将海龟放在右侧0.5个单位，从中心向下0.5个单位的位置。
-- 如果要为海龟选择随机位置，则可以使用`random-xcor`和`random-ycor`原语，例如`setxy random-xcor random-ycor` 。我们也可以混合并匹配此设置。例如，如果我们希望乌龟沿x轴随机分布，则可以编写`setxy random-xcor 0` 。
+- 如果要为海龟选择随机位置，则可以使用`random-xcor`和`random-ycor`关键字，例如`setxy random-xcor random-ycor` 。我们也可以混合并匹配此设置。例如，如果我们希望海龟沿x轴随机分布，则可以编写`setxy random-xcor 0` 。
 - 注意， `setxy`紧随当前的NetLogo世界的缠绕规则，所以在世界上是10个单位由10个单位与垂直和水平缠绕， `setxy 26 42`将围绕到（6,2）的方式回绕所有。
 
 

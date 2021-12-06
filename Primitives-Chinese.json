@@ -84,7 +84,7 @@
   "ask": {
     "identity": "ask",
     "display_name": "ask",
-    "short_original": "Asks agents do things.",
+    "short_original": "Asks agents to do things.",
     "short_description": "让主体或主体集合执行一些命令。",
     "search_terms": [
       "do",
@@ -310,7 +310,7 @@
   "color": {
     "identity": "color",
     "display_name": "color",
-    "short_original": "Built-in turtle characteristic that the color of a turtle and allows us to change it.",
+    "short_original": "Built-in turtle characteristic that reports the color of a turtle and allows us to change it.",
     "short_description": "海龟或链接的内置变量，可以改变海龟或链接的颜色。",
     "search_terms": [
       "color",
@@ -999,7 +999,7 @@
   "let": {
     "identity": "let",
     "display_name": "let",
-    "short_original": "Creates a local variable that only exists within just one procedure or a statement surrended with brackets (`[  ]`).",
+    "short_original": "Creates a local variable that only exists within a procedure or a statement surrounded with brackets (`[  ]`).",
     "short_description": "创建一个局部变量。",
     "search_terms": [
       "variable",
@@ -2327,7 +2327,7 @@
   "to": {
     "identity": "to",
     "display_name": "to",
-    "short_original": "used to begin a command procedure",
+    "short_original": "Begins a command procedure",
     "short_description": "开始一个指令程序。",
     "search_terms": [
       "to",
@@ -2413,8 +2413,8 @@
   "turtle": {
     "identity": "turtle",
     "display_name": "turtle",
-    "short_original": "Reports a specific turtle that has the provided who number.",
-    "short_description": "报告具有提供的人员编号的特定乌龟。",
+    "short_original": "Reports a specific turtle that has the provided unique number.",
+    "short_description": "返回具有某一独特编号的海龟。",
     "search_terms": [
       "shape",
       "triangle",
