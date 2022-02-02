@@ -29,7 +29,7 @@ ask turtles [
 
 使用`min-pycor`时要记住的事情：
 
-- `max-pxcor` ， `min-pxcor` ， `max-pycor`和`min-pycor`不是变量；他们是恒定的常量。也就是说，诸如`set min-pxcor 30`类的代码将显示错误消息。
+- `max-pxcor` ， `min-pxcor` ， `max-pycor`和`min-pycor`不是变量；他们是恒定的常量。也就是说，诸如`set min-pycor 30`类的代码将显示错误消息。
 - 您可以通过“**界面**”选项卡中的“**设置**”按钮（netlogo桌面版）或控件编辑区的“世界设置”（海龟实验室）或使用`resize-world`关键字来更改模型的大小。
 
 
