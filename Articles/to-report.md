@@ -1,5 +1,4 @@
-﻿*** Machine Translated
-**报告指令**是一个预定义的过程，它返回一个值，与命令不同，它不能是一个独立的代码元素。 NetLogo 有一些有用的内置报告器，它们不能直接更改，例如`ticks` 、 `pi` 、 `e` 、 `world-width`和`world-height` 。例如，我们不能只在代码中写`ticks` 。我们需要在其他一些算法中使用刻度，例如：
+**报告指令**是一个预定义的过程，它返回一个值，与命令不同，它不能是一个独立的代码元素。 NetLogo 有一些有用的内置报告器，它们不能直接更改，例如`ticks` 、 `pi` 、 `e` 、 `world-width`和`world-height` 等。例如，我们不能只在代码中写`ticks` 。我们需要在其他一些算法中使用ticks，例如：
 
 
 
@@ -10,9 +9,9 @@ if ticks > 9 [
 ```
 
 
-我们用于过滤主体集或操作列表的其他关键字，例如`of` 、 `with` 、 `sort-on`和`word`也是报告者。
+我们用于过滤主体集或操作列表的其他关键字，例如`of` 、 `with` 、 `sort-on`和`word`等也是报告器。
 
-许多海龟、格子和链接属性（如`color`或`label`都可以被认为是我们可以使用`set`命令更改的变量，以及为我们提供这些变量值的报告者。请注意，在以下示例中，方括号`[ ]` `of`之前：
+许多海龟、格子和链接属性（如`color`或`label`都可以被认为是我们可以使用`set`命令更改的变量，以及为我们提供这些变量值的报告器。请注意，在以下示例中，方括号`[ ]`应该在 `of`之前：
 
 
 
@@ -25,9 +24,9 @@ if xcor < 0 [
 ```
 
 
-最后，您可以使用创建自定义的记者`to-report`的关键字，开始了报告指令的过程和`report`在你的过程结束指令时，前右`end`关键字。 Reporters 可用于整理您的代码并防止您重复代码行；如果您多次使用相同的公式或长代码行，则可以使用`to-report`过程来替换它。
+最后，您可以使用创建自定义报告器的`to-report`的关键字，告诉程序你的报告指令开始了并运行代码并在你的过程结束指令时使用`report`命令，最后是`end`关键字。 报告器可用于整理您的代码并防止您重复代码行；如果您多次使用相同的公式或长代码行，则可以使用`to-report`过程来替换它。
 
-例如，不是多次`ask turtles with [ shape = “person” and color = green and size > 5 ]`编写`ask turtles with [ shape = “person” and color = green and size > 5 ]` ，我们可以定义一个报告指令过程，如下所示：
+例如，如果我们要使用多次`ask turtles with [ shape = “person” and color = green and size > 5 ]` ，我们可以定义一个报告指令过程，如下所示：
 
 
 
@@ -38,7 +37,7 @@ end
 ```
 
 
-一旦我们定义了这个变量，我们就可以用`big-green-people`代码中的`turtles with [ shape = “person” and color = green and size > 5 ]`语句替换每个`turtles with [ shape = “person” and color = green and size > 5 ]` ，例如`ask big-green-people [ do-things ]` 。
+一旦我们定义了这个报告器，我们就可以用`big-green-people`代码中的`turtles with [ shape = “person” and color = green and size > 5 ]`语句替换每个`turtles with [ shape = “person” and color = green and size > 5 ]` ，例如`ask big-green-people [ do-things ]` 。
 
 `to-report`通常用于复杂的计算。例如，如果我们想在代码中多次计算圆的面积，我们可以定义以下报告指令：
 
@@ -69,4 +68,4 @@ to-report big-green-people
 	report turtles with [ shape = “person” and color = green and size > 5 ]
 end
 ```
- mv^2$)。我们没有编写这个复杂的代码来在`go`过程计算粒子的速度，而是定义了一个*速度*报告指令。虽然我们特意让这个模型示例的代码保持简单，但如果我们有一个更复杂的模型，我们需要在代码的许多不同部分计算粒子的速度，那么定义这个报告指令会产生很大的不同。
+ mv^2$)。我们没有编写复杂的代码来在`go`过程计算粒子的速度，而是定义了一个*速度*报告指令。虽然我们特意让这个模型示例的代码保持简单，但如果我们有一个更复杂的模型，我们需要在代码的许多不同部分计算粒子的速度，那么定义这个报告指令会产生很大的不同。
