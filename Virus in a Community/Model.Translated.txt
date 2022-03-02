@@ -1,4 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
 ## Language = Chinese
 ## Plots
 ### Source
@@ -9,7 +9,7 @@
 ### Source
 # Residents
 ### Chinese ***
-#居民
+# 居民
 
 ### Source
 Daily Statistics
@@ -44,7 +44,7 @@ New Cases
 ### Source
 New Recovered
 ### Chinese ***
-新回收
+新恢复
 
 ### Source
 Not Infected
@@ -54,12 +54,12 @@ Not Infected
 ### Source
 Quarantined
 ### Chinese ***
-已隔离
+被隔离
 
 ### Source
 Situation Overview
 ### Chinese ***
-情况概览
+情况概述
 
 ### Source
 Symptoms
@@ -75,37 +75,37 @@ Symptoms
 ### Source
 % Masked
 ### Chinese ***
-% 蒙面
+% 掩蔽
 
 ### Source
 Acc. Death %
 ### Chinese ***
-累积死亡 ％
+会计。死亡 ％
 
 ### Source
 Acc. Detected %
 ### Chinese ***
-累积检测到 %
+会计。检测到 %
 
 ### Source
 Acc. Hospitalized %
 ### Chinese ***
-累积住院百分比
+会计。住院百分比
 
 ### Source
 Acc. Infected %
 ### Chinese ***
-累积已感染 ％
+会计。已感染 ％
 
 ### Source
 Acc. Recovered %
 ### Chinese ***
-累积恢复百分比
+会计。恢复百分比
 
 ### Source
 Acc. Symptoms %
 ### Chinese ***
-累积症状 ％
+会计。症状 ％
 
 ### Source
 Apply your policy belief
@@ -115,7 +115,7 @@ Apply your policy belief
 ### Source
 apply-your-personal-belief-to-family
 ### Chinese ***
-将你的个人信念应用于家庭
+将您的个人信念应用于家庭
 
 ### Source
 Are masks needed to protect us?
@@ -125,7 +125,7 @@ Are masks needed to protect us?
 ### Source
 Current residents
 ### Chinese ***
-现住居民
+现有居民
 
 ### Source
 Do we need more testing?
@@ -135,7 +135,7 @@ Do we need more testing?
 ### Source
 Go
 ### Chinese ***
-去
+走
 
 ### Source
 hospital-detect-chance-per-hour
@@ -145,7 +145,7 @@ hospital-detect-chance-per-hour
 ### Source
 hospital-hospitalize-capacity
 ### Chinese ***
-住院容量
+医院住院能力
 
 ### Source
 hospital-hospitalize-chance-per-hour
@@ -170,7 +170,7 @@ initial-households
 ### Source
 initial-infected-percentage
 ### Chinese ***
-初始感染率
+初始感染百分比
 
 ### Source
 initial-residents
@@ -180,12 +180,12 @@ initial-residents
 ### Source
 initial-workplaces
 ### Chinese ***
-最初的工作场所
+初始工作场所
 
 ### Source
 Is lockdown necessary?
 ### Chinese ***
-是否需要锁定？
+有必要封城吗？
 
 ### Source
 lockdown?
@@ -215,17 +215,17 @@ lockdown-lifting-threshold
 ### Source
 lockdown-obeyance-chance
 ### Chinese ***
-锁定遵守机会
+锁定服从机会
 
 ### Source
 mask-inclination-healthy
 ### Chinese ***
-面罩倾角健康
+面具倾向健康
 
 ### Source
 mask-inclination-quarantined
 ### Chinese ***
-口罩倾斜隔离
+面罩倾斜隔离
 
 ### Source
 mask-inclination-symptoms
@@ -240,7 +240,7 @@ max-residents-per-household
 ### Source
 min-residents-per-household
 ### Chinese ***
-每户最低居民人数
+每户最少居民
 
 ### Source
 Original Residents
@@ -250,22 +250,22 @@ Original Residents
 ### Source
 quarantine-days
 ### Chinese ***
-隔离天数
+隔离日
 
 ### Source
 quarantine-obeyance-chance-contacts
 ### Chinese ***
-隔离遵守机会接触
+隔离服从机会接触
 
 ### Source
 quarantine-obeyance-chance-detected
 ### Chinese ***
-检测到隔离遵守的机会
+检疫服从机会检测到
 
 ### Source
 resident-size
 ### Chinese ***
-居民规模
+居民大小
 
 ### Source
 Select yourself
@@ -280,7 +280,7 @@ Setup
 ### Source
 Should we quarantine contacts of confirmed cases?
 ### Chinese ***
-我们是否应该隔离确诊病例的接触者？
+我们应该隔离确诊病例的接触者吗？
 
 ### Source
 street-size-x
@@ -305,7 +305,7 @@ will-you-go-out-when-lockdown
 ### Source
 will-you-go-out-when-lockdown-lifted
 ### Chinese ***
-解除锁定时你会出去吗
+解除封锁时你会出去吗
 
 ### Source
 will-you-wear-masks

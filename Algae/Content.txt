@@ -1,0 +1,79 @@
+﻿## WHAT IS IT?
+
+This is a model of a simplified aquatic ecosystem consisting of a column of water containing algae, light, and nutrients.  There is more light at the top but more food at the bottom, so algae move up and down to balance their needs.
+
+## HOW IT WORKS
+
+Algae need both light and nutrients (such as ammonia and phosphate) in order to grow. Although there is ample light near the lake surface, there are few nutrients.  On the other hand, it is dark deep in the lake, but there is a lot of ammonia and phosphate down there. Some algae can move up and down in the water column to get both light and nutrients. These algae make dense substances using the energy from light in order to make them sink, and then burn up those dense substances in the dark at the deeper parts of the water column.
+
+The algae move up and down in the water column based on how dense they are. The algae's density is something that changes continuously based on how much light they are able to get during the day. Density decreases some every turn because the algae use the dense substances to produce chemical energy. However, the algae can also use light energy to make the dense substances. The more light present, the denser they get. When they become denser than water, they move down. Deeper water gets less light, so the deeper algae goes, the less density it is able to add. When algae becomes less dense than water, it moves up towards the surface again. Also, as the seasons change, the length of the day changes, which changes how much light is present throughout the day.
+
+## HOW TO USE IT
+
+The SETUP button prepares the ecosystem and the GO button runs the simulation.
+
+The LIGHT-SPREADINESS slider changes how much the light penetrates the water. The higher the "spreadiness," the more light can reach down into the water. If the DAY-AND-NIGHT? switch is on, the DAY-LENGTH slider changes how much of each day has sunlight. If it is off, light does not change throughout the day. If the CHANGE-DAY-LENGTH? switch is on, DAY-LENGTH changes as GO is running, simulating the changes of the seasons. If it is off, DAY-LENGTH will only change manually.
+
+The AVERAGE-HEIGHT plot shows a history of the average height of the algae over the past 24 hour period. The DAY-LENGTH plot show the history of the DAY-LENGTH slider. The ALGAE-DISTRIBUTION plot shows the current position of the algae. Lower algae appear farther to the right in the plot.
+
+## THINGS TO NOTICE
+
+Notice how as the days get longer, the average height of the algae gets lower. Similarly, as the days get shorter, the average height of the algae gets higher. Also, the more the light penetrates the water, the lower the algae are on average.
+
+The color of the patches indicate the light intensity at that depth in the water column --- the more yellow, the more light is present.
+
+Sometimes the algae clumps all together and sometimes the algae forms multiple clumps.
+
+## THINGS TO TRY
+
+To get time to pass faster, use the speed slider.
+
+Turn off DAY-AND-NIGHT? to see that the algae still go up and down when the sun is always shining.
+
+How does having lots of LIGHT-SPREADINESS and a small DAY-LENGTH compare to having little LIGHT-SPREADINESS and a big DAY-LENGTH? (It'll help to turn off CHANGE-DAY-LENGTH?.)
+
+## EXTENDING THE MODEL
+
+Even though algae need both light and nutrients, this simple model only considers the role of light. Add a nutrient gradient in the water column. The floor could contain nutrients and the algae might contribute to the gradient when they die.
+
+When real algae are healthy, they grow new algae. Also, when they run out of food, they die. Add these rules to the model.
+
+## NETLOGO FEATURES
+
+In the `spread-light` procedure, the water patches grab light from the patch directly above them. Note the use of the `foreach` and `sort` primitives to ensure that the patches are asked in the desired order.
+
+In order to display all of the elements of the control strip above it, the 2D View needs to be of a certain minimum width, so world-width is larger than it needs to be. The necessary patches are stored as patch agentsets in the `air`, `water`, and `ground` global variables and the `setup-environment` procedure "gets rid" of the unnecessary patches:
+
+    ask patches with [pxcor != 0] [
+      set pcolor gray + 1.75
+    ]
+
+## CREDITS AND REFERENCES
+
+This model is based on a preliminary model developed by Allan Konopka at the 2004 NetLogo workshop at Northwestern University.
+
+Thanks to Josh Unterman for his work on this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Algae model.  http://ccl.northwestern.edu/netlogo/models/Algae.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

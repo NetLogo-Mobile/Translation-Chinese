@@ -1,0 +1,72 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+这个程序是一个二维元胞自动机的例子。如果您还不熟悉 2D CA，请参阅模型“Life”进行基本讨论。
+
+典型的 CA 使用两种细胞状态（活的和死的），但 Brian 的 Brian 使用三种：激发（白色）、耐火（红色）和死（黑色）。
+
+这个 CA 特别值得关注，因为它有许多在网格中稳定移动的配置（与 Life 相比，它只有相对较少的此类配置）。
+
+## 这个模型是怎么运行的
+
+发射（白色）细胞总是在下一个时间步变成耐火（红色）。
+
+难熔（红色）细胞总是在下一个时间步死亡（变黑）。
+
+一个新的发射（白色）细胞诞生在任何恰好有两个发射（白色）邻居（其八个周围细胞中）的黑色细胞中。
+
+## 如何这个模型怎么用
+
+INITIAL-DENSITY滑块确定正在发射的细胞的初始密度。 SETUP-RANDOM 放置这些单元格。 GO-FOREVER 永远运行规则。 GO-ONCE 运行一次规则。
+
+如果您想自己绘制初始图案，或在运行过程中更改图案，请打开 DRAW WHITE CELLS 或 DRAW RED CELLS 按钮，然后在视图中使用鼠标“绘制”和“擦除”。
+
+## 看一看
+
+许多模式保持稳定并在网格中稳定移动。这种模式通常被称为“滑翔机”。你见过多少种不同类型的滑翔机？为什么会这样？ CA 的规则如何导致这种行为？
+
+## 试一试
+
+有没有不动的稳定形状？
+
+是否有任何“滑翔机枪”（发射源源不断的滑翔机的物体）？
+
+在一个足够小的网格上，CA 通常会达到一个稳定状态，可能会有运动但没有新的事情发生。在布赖恩的大脑中，方形网格通常比矩形网格更快地达到稳定状态（试试看！）。为什么？
+
+## 改一改
+
+存在许多其他有趣的 3 态 2D 自动机。试验此模型中规则的变化。
+
+## 相关模型
+
+See all of the other models in the Cellular Automata subsection of the Computer Science section of the NetLogo Models Library.
+
+## 引用和致谢
+
+Brian's Brain was invented by Brian Silverman.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2002).  NetLogo Brian's Brain model.  http://ccl.northwestern.edu/netlogo/models/Brian'sBrain.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2002 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2002 -->

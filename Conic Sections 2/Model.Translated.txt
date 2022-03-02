@@ -1,0 +1,28 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Widgets
+### Source
+const
+### Chinese ***
+常量
+
+### Source
+directrix?
+### Chinese ***
+准线？
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+num-turtles
+### Chinese ***
+海龟
+
+### Source
+setup
+### Chinese ***
+设置
+

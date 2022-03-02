@@ -1,4 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
 ## Language = Chinese
 ## Plots
 ### Source
@@ -14,7 +14,7 @@ default
 ### Source
 Energy
 ### Chinese ***
-能源
+活力
 
 ### Source
 Frequency
@@ -24,12 +24,12 @@ Frequency
 ### Source
 LacZ Number
 ### Chinese ***
-LacZ编号
+LacZ 编号
 
 ### Source
 Number of Ticks
 ### Chinese ***
-Ti数
+刻度数
 
 ### Source
 Time
@@ -55,22 +55,22 @@ go
 ### Source
 LacI-bond-leakage
 ### Chinese ***
-lacI键泄漏
+LacI键泄漏
 
 ### Source
 LacI-lactose-binding-chance
 ### Chinese ***
-lacI-乳糖结合机会
+LacI-乳糖结合机会
 
 ### Source
 LacI-lactose-separation-chance
 ### Chinese ***
-乳糖-乳糖分离的机会
+LacI-乳糖分离机会
 
 ### Source
 LacI-number
 ### Chinese ***
-LacI数
+乳酸数
 
 ### Source
 lactose?
@@ -80,22 +80,22 @@ lactose?
 ### Source
 LacY-degradation-chance
 ### Chinese ***
-LacY降解的机会
+花边降解机会
 
 ### Source
 LacZ-degradation-chance
 ### Chinese ***
-LacZ降解机会
+LacZ-降解机会
 
 ### Source
 LevelSpace?
 ### Chinese ***
-LevelSpace？
+水平空间？
 
 ### Source
 reset
 ### Chinese ***
-重启
+重置
 
 ### Source
 RNAP-number
@@ -110,5 +110,5 @@ save screenshot
 ### Source
 setup
 ### Chinese ***
-建立
+设置
 

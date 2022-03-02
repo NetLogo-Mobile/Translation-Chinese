@@ -1,0 +1,86 @@
+﻿## WHAT IS IT?
+
+This model simulates the spontaneous decay of a collection of radioactive nuclei.  As they decay and become stable, the plot of the number that are still radioactive demonstrates the notion of "half-life".
+
+## HOW IT WORKS
+
+At each time tick, each undecayed (light blue) nucleus has a certain chance of decaying.  When a nucleus decays, it briefly flashes bright yellow (as if giving off radiation), then turns dark blue.  Eventually, if you wait long enough, all of the nuclei will have decayed and the model will stop.
+
+## HOW TO USE IT
+
+Set the initial number of nuclei (NUMBER-NUCLEI slider) and the likelihood of decay during each time interval (DECAY-CHANCE slider). Then push the SETUP button. Push the GO button to run the model.
+
+The number of radioactive nuclei that remain is shown in the "Radioactive Nuclei" plot.  Each time the number of nuclei is reduced by half, red and green lines appear on the plot to mark the place where each halfway mark was reached.  The "Decay Rate" plot shows the number of decays that occur during each clock tick.
+
+## THINGS TO NOTICE
+
+What is the shape of the decay curve (Radioactive Nuclei)?  How is this affected by the initial conditions?
+
+Why is the decay curve this shape?  Is it the same as the decay curve shown in books?
+
+The time between red lines is called the half-life.  What is its physical meaning?  Is it constant as the number of nuclei decreases?  Is it affected by the initial number of nuclei or the decay-chance?  Do you think it's a useful way to characterize a radioactive material?
+
+How long does it take for all the nuclei to decay?
+
+Watch one nucleus carefully.  When will it decay?
+
+Radioactivity depends on the number of decays per unit time (Decay Rate), because each decay event gives off radiation.  What happens to the radioactivity of this sample over time?  What is the shape of the decay rate curve?  How is it related to the shape of the decay curve?
+
+Examine the standard equation for nuclear decay:
+
+> N = No (e exp -(T/tau))
+
+No is the initial number of nuclei, N is the number at a later time T, and tau is the "mean lifetime".  Compare its behavior to what you see in this model.  The corresponding equation for radiation is:
+
+> R = Ro (e exp -(T/tau))
+
+Why are these two equations so similar?
+
+## THINGS TO TRY
+
+Try the extremes of the initial conditions: many or few nuclei, high or low decay-chance.  How does this affect the "jaggedness" of the decay rate plot?
+
+What does the plot do when very few nuclei are left?
+
+What instructions would you give each turtle be to make it behave like an unstable nucleus?  Check the code in the Code tab and see if it's what you thought it should be.
+
+Carbon-14 dating involves comparing the ratio of a stable (C-12) to an unstable (C-14) nucleus.  Explain that method in terms of this model.
+
+## EXTENDING THE MODEL
+
+It is often the case in nature that two nuclei with different decay rates are present in the same sample.  Modify this model to have two or more types of nuclei.  What happens to the radiation curve?
+
+In this model, the nuclei don't affect their neighbors when they decay --- they just disappear. Get them to emit particles that in turn cause reactions in other nuclei.  See if you can model a chain reaction.  (See the Reactor Top Down and Reactor X-Section models.)
+
+## RELATED MODELS
+
+* Reactor Top-Down
+* Reactor X-Section
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Decay model.  http://ccl.northwestern.edu/netlogo/models/Decay.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 -->

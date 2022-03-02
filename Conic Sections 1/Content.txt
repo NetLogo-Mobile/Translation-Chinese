@@ -1,0 +1,77 @@
+﻿## WHAT IS IT?
+
+The model displays two basic conic sections: circles and ellipses. The figures are generated behaviorally as opposed to algebraically --- the turtles attempt to behave like points on the specified shape.
+
+## HOW IT WORKS
+
+A circle is the set of all points at a certain distance (radius) from a central point.  An ellipse is the set of points such that the sum of the distances to two points is constant.  These two points are called foci. The CONSTANT slider corresponds to the radius for circles and to the sum of distances to the foci for each turtle.
+
+As an illustration of this, imagine a string loosely looped around two nails, each representing a focus.  If you pull the string tight with a pencil point and move the pencil point around the foci, you will draw an ellipse.
+
+The ancient Greeks discovered that each conic section can be found by taking a cross section of one or two cones with their points pointing toward each other.  A circle results from taking a slice that is perpendicular to the axis, while an ellipse results from taking a slice of one cone that is not perpendicular to the axis. Similarly, a parabola results from a cross section that passes through one cone in a vertical fashion, such that the plane of the cut is parallel to one face. A hyperbola results from a vertical section that passes through both cones.
+
+The turtles use feedback to make decisions about how they behave. They set out in random directions, and then they receive information as to whether or not they are getting closer to where they want to be. If they are getting closer, they continue moving forward in the direction they are going. If they are moving farther away, they set out in a new random direction. This process is akin to the children's game of "Hot & Cold", in which players are told whether they are getting "hotter" or "colder" in relation to a hidden goal.
+
+## HOW TO USE IT
+
+### Circles
+
+- Select the number of turtles with the TURTLES slider.
+- Press SETUP.
+- Make sure the SECOND-FOCUS switch is set to OFF.
+- Press the MOVE-TURTLES button. Adjust the radius of the circle with the CONSTANT slider. The turtles will automatically correct themselves as you change both CONSTANT and the location of the center. You can change the circle's center by clicking on a new point.
+
+### Ellipses
+
+- Select the number of turtles with the TURTLES slider.
+- Press SETUP.
+- Make sure the SECOND-FOCUS switch is set to ON.
+- Press the MOVE-TURTLES button. As for a circle, the size of the ellipse can be modified with CONSTANT, and new foci can be picked by clicking the mouse.
+
+## THINGS TO NOTICE
+
+When forming a circle, turtles try to attain a distance of CONSTANT (a value determined by the user with a slider) from a center that the user determines by pointing and clicking (as explained above).
+
+When forming an ellipse, turtles try to attain a combined distance of 2 * CONSTANT from the two foci, again determined by the user's points and clicks.  If the foci are too far apart, there be no way to satisfy this condition.  What do the turtles do then?
+
+## THINGS TO TRY
+
+You may be able to get a better feeling for the turtles' behavior if only a few turtles are alive one time. Try setting num-turtles to a small value (like 16 or 1) and watching the turtles.
+
+Both of these conic sections can be observed by shining a flashlight at a cone and looking at its shadow.  Can you figure out at what angles the cone must be held?
+
+## EXTENDING THE MODEL
+
+If you have access to StarLogoT (NetLogo's Macintosh-only predecessor), look at the StarLogoT model 'emergent-circle'. Watch how the turtles react with each other- something that is missing from 'Conic Sections'. Implement this emergent behavior for one or both of the conics in this project.
+
+## NETLOGO FEATURES
+
+The mouse primitives are used for handling interaction with the user.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Conic Sections 1 model.  http://ccl.northwestern.edu/netlogo/models/ConicSections1.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

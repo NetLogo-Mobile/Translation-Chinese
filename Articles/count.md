@@ -1,4 +1,4 @@
-`count`是一个关键字，它报告给定主体集合的 agent 数量。例如， `count turtles`报告模型中所有`turtles`的总数，而`count turtles with [color = green]`报告模型中绿色海龟的数量。您可以对海龟、格子和链接使用`count` 。
+﻿`count`是一个关键字，它报告给定主体集合的 agent 数量。例如， `count turtles`报告模型中所有`turtles`的总数，而`count turtles with [color = green]`报告模型中绿色海龟的数量。您可以对海龟、格子和链接使用`count` 。
 
 我们还可以将`count`与海龟类型和链接类型（如`count dogs` ）结合使用，或与其他报告指令主体关键字（如`count turtles-here`）结合使用。
 

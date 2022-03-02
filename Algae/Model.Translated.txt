@@ -1,0 +1,54 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+algae distribution
+### Chinese ***
+藻类分布
+
+### Source
+average height
+### Chinese ***
+平均身高
+
+### Source
+day length
+### Chinese ***
+日长
+
+### Source
+default
+### Chinese ***
+默认
+
+## Widgets
+### Source
+change-day-length?
+### Chinese ***
+改变日长？
+
+### Source
+day-and-night?
+### Chinese ***
+日日夜夜？
+
+### Source
+day-length
+### Chinese ***
+日长
+
+### Source
+go
+### Chinese ***
+走
+
+### Source
+light-spreadiness
+### Chinese ***
+光扩散性
+
+### Source
+setup
+### Chinese ***
+设置
+

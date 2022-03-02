@@ -1,0 +1,78 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+该模型显示两个基本圆锥截面：圆形和椭圆形。这些数字是通过行为而不是代数生成的——海龟试图表现得像指定图形上的点。
+
+## 这个模型是怎么运行的
+
+圆是距中心点一定距离（半径）的所有点的集合。椭圆是一组点，使得到两点的距离之和是恒定的。这两点称为焦点。 CONSTANT滑块对应于圆的半径和每个海龟到焦点的距离总和。
+
+为了说明这一点，想象一根细绳松散地缠绕在两个钉子上，每个钉子代表一个焦点。如果你用铅笔尖把绳子拉紧，然后在焦点周围移动铅笔尖，你会画一个椭圆。
+
+古希腊人发现每个圆锥截面可以通过取一个或两个圆锥的横截面来找到，它们的点彼此指向。一个圆是从一个垂直于轴的切片中得到的，而一个椭圆是从一个不垂直于轴的锥体上切下来的。类似地，抛物线由以垂直方式穿过一个锥体的横截面产生，使得切割平面平行于一个面。双曲线由穿过两个锥体的垂直截面产生。
+
+海龟使用反馈来决定它们的行为方式。他们沿着随机的方向出发，然后他们收到关于他们是否越来越接近他们想去的地方的信息。如果他们越来越近，他们会继续朝着他们前进的方向前进。如果他们移动得更远，他们会朝着一个新的随机方向出发。这个过程类似于儿童的“冷热”游戏，在这个游戏中，玩家被告知他们是否会变得“更热”或“更冷”与一个隐藏的目标有关。
+
+## 如何这个模型怎么用
+
+### 圈子
+
+- 使用 TURTLES滑块选择海龟的数量。
+- 按设置。
+- 确保 SECOND-FOCUS 开关设置为 OFF。
+- 按下 MOVE-TURTLES 按钮。使用 CONSTANT滑块调整圆的半径。当你改变 CONSTANT 和中心的位置时，海龟会自动纠正自己。您可以通过单击一个新点来更改圆的中心。
+
+### 椭圆
+
+- 使用 TURTLES滑块选择海龟的数量。
+- 按设置。
+- 确保 SECOND-FOCUS 开关设置为 ON。
+- 按下 MOVE-TURTLES 按钮。对于圆，可以用CONSTANT修改椭圆的大小，点击鼠标可以选择新的焦点。
+
+## 看一看
+
+当形成一个圆圈时，海龟会尝试从用户通过指向和单击确定的中心（如上所述）获得 CONSTANT（用户使用滑块确定的值）的距离。
+
+当形成一个椭圆时，海龟尝试从两个焦点获得 2 * CONSTANT 的组合距离，这同样由用户的点和点击决定。如果焦点相距太远，则无法满足此条件。那么海龟们会怎么做呢？
+
+## 试一试
+
+如果一次只有几只海龟活着，您可能会对海龟的行为有更好的感觉。尝试将 num-turtles 设置为一个较小的值（如 16 或 1）并观察海龟。
+
+这两个圆锥截面都可以通过将手电筒照在圆锥上并观察其阴影来观察。你能弄清楚锥体必须保持在什么角度吗？
+
+## 改一改
+
+如果您可以访问 StarLogoT（NetLogo 的仅 Macintosh 前身），请查看 StarLogoT 模型“emergent-circle”。观察海龟之间的反应——“圆锥曲线”中缺少的东西。为该项目中的一个或两个圆锥实施此紧急行为。
+
+## NetLogo 语言特性
+
+鼠标原语用于处理与用户的交互。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Conic Sections 1 model.  http://ccl.northwestern.edu/netlogo/models/ConicSections1.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

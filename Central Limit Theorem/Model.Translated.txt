@@ -1,4 +1,4 @@
-﻿*** ea019251e9a1e995aee56207db61702e
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
 ## Language = Chinese
 ## Plots
 ### Source
@@ -34,7 +34,7 @@ sums
 ### Source
 sums-mean
 ### Chinese ***
-总和-均值
+平均数
 
 ## Widgets
 ### Source
@@ -60,7 +60,7 @@ Expected Value
 ### Source
 go
 ### Chinese ***
-去
+走
 
 ### Source
 Go Once
@@ -125,7 +125,7 @@ show-ev?
 ### Source
 std-dev-means
 ### Chinese ***
-标准开发手段
+标准开发意味着
 
 ### Source
 std-dev-sums

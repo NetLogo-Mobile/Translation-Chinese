@@ -1,0 +1,84 @@
+﻿## WHAT IS IT?
+
+The model displays two basic conic sections: hyperbolas and parabolas.  The figures are generated behaviorally as opposed to algebraically - the turtles attempt to behave like points on the specified shape. The partner to this model is called "Conic Sections 1".
+
+A parabola is the set of all points that are the same distance from a point (focus) and a line (directrix).  A hyperbola is based on the same idea as is a parabola except that it is reflected over the directrix.
+
+The ancient Greeks discovered that each conic section can be found by taking a cross section of one or two cones with their points pointing toward each other.  A circle results from taking a slice that is perpendicular to the axis, while an ellipse results from taking a slice of one cone that is not perpendicular to the axis. Similarly, a parabola results from a cross section that passes through one cone in a vertical fashion, such that the plane of the cut is parallel to one face. A hyperbola results from a vertical section that passes through both cones.
+
+## HOW IT WORKS
+
+The turtles use feedback to make decisions about how they behave. They set out in random directions, and then they receive information as to whether or not they are getting closer to where they want to be. If they are getting closer, they continue moving forward in the direction they are going. If they are moving farther away, they set out in a new random direction. This process is akin to the children's game of "Hot and Cold", in which players are told whether they are getting "hotter" or "colder" in relation to a hidden goal.
+
+## HOW TO USE IT
+
+### Hyperbolas
+
+- Select the number of turtles with the NUM-TURTLES slider.
+- Press SETUP.
+- Make sure the DIRECTRIX? switch is set to OFF.
+- Press GO
+- click at two points in the view to set the foci
+
+### Parabolas
+
+- Select the number of turtles with the NUM-TURTLES slider.
+- Press SETUP.
+- Make sure the DIRECTRIX? switch is set to TRUE.
+- Press GO
+- click at two different locations in the view to set the directrix and the focus.
+
+## THINGS TO NOTICE
+
+When forming a hyperbola, turtles adjust their positions from two user-defined foci so that the difference between their distances from the foci attains a
+value of CONSTANT.
+
+When forming a parabola, turtles move to an equal distance from the directrix to the focus.
+
+## THINGS TO TRY
+
+Adjust the slope of the parabola's directrix or the value of CONSTANT for the hyperbola while the turtles are still moving. See how they react to the changes in their environment.
+
+You may be able to get a better feeling for the turtles' behavior if only a few turtles are in the world at one time.  Try setting num to a small value (like 16 or 1), and watching the turtles.
+
+Both of these conic sections can be observed by shining a flashlight at a cone and looking at its shadow.  Can you figure out at what angles the cone must be held?
+
+## EXTENDING THE MODEL
+
+Look at the StarLogoT model 'emergent-circle'. Watch how the turtles react with each other- something that is missing from 'Conic Sections'. Implement this emergent behavior for one or all of the conics in this project.
+
+## NETLOGO FEATURES
+
+Like more traditional programming languages (e.g. Java), NetLogo can have procedures that report a value to the caller. The command used is called `report` --- it takes one input, the value to be reported. Look at the function `pos`. It takes two inputs, `x` and `y`, and reports a boolean.
+
+## RELATED MODELS
+
+Conic Sections 1
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Conic Sections 2 model.  http://ccl.northwestern.edu/netlogo/models/ConicSections2.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

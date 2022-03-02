@@ -1,0 +1,106 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+Belousov-Zhabotinsky 反应（或简称 BZ 反应）是一种不寻常的化学反应。它不是稳定地朝着单一的平衡状态移动，而是在两个这样的状态之间来回摆动。在这种“化学振荡器”被发现之前，人们认为这种反应不可能存在。
+
+如果您在烧杯中进行反应，整个烧杯会定期将颜色从黄色变为透明，然后一遍又一遍地变回。在这种情况下，我们说反应随时间振荡。然而，如果你在两块玻璃板之间的薄薄一层流体中进行反应，那么就会出现一个美丽的图案，即同心或螺旋形的颜色变化波穿过流体。在这里，反应在时间和空间上都在振荡。
+
+该模型是一个元胞自动机（或 CA），它产生类似于 BZ 反应产生的螺旋波。在生物系统中也观察到了类似的螺旋波，例如粘菌。
+
+BZ 反应是一种氧化还原反应，它周期性地在氧化态和还原态之间移动，并已在各种化学品中得到证实。该模型并未试图复制相当复杂的化学反应的实际机制（根据 Fields-Koros-Noyes 模型，包括 18 个反应和 21 个物种）。真实反应与该模型共有的抽象特征包括：
+
+1. 两种结束状态。
+2.正反馈机制。
+3. 负反馈机制。
+
+正反馈机制的作用是将系统进一步推向它已经前进的方向，加强和放大最初的变化。 （在化学反应中，正反馈来自自催化。）一旦达到阈值，负反馈机制就会将系统推回相反的方向，从而抑制或抵消受影响的变化。
+
+## 这个模型是怎么运行的
+
+每个单元格都有一个从 0 到最大状态的整数状态。我们选择将状态 0 显示为黑色，最大状态显示为白色，中间状态显示为红色阴影。
+
+假设我们将状态 0 称为“健康”，将最大状态称为“生病”，以及介于两者之间的任何情况“感染”。那么每个单元格在每个步骤中如何变化的规则可以描述如下：
+
+1. 生病的细胞变得健康。
+2. 如果它的八个邻居中有足够多的细胞被感染或生病，那么一个健康的细胞可能会被感染。是否发生这种情况受 k1 和 k2 滑块的影响。 （较低的 k1 意味着更高的被感染邻居感染的趋势；更低的 k2 意味着更高的被患病邻居感染的趋势。）
+3. 一个被感染的细胞通过平均它自己和它的八个邻居的状态来计算它的新状态，然后加上 g滑块的值。 （较高的 g 意味着受感染的细胞病得更快。）
+
+1是负反馈； 2 和 3 是正反馈。
+
+这些只是定性的描述。要查看实际使用的数学，请查看代码选项卡中的 FIND-NEW-STATE过程。
+
+## 如何这个模型怎么用
+
+按 SETUP 将网格中的每个单元格初始化为随机状态。
+
+按 GO 运行模型。
+
+## 看一看
+
+使用默认滑块设置运行模型。
+
+运行开始附近会发生什么？
+
+大约 100 个周期后，您应该开始看到出现螺旋。
+
+大约 200 个周期之后，螺旋应该充满整个世界。
+
+你能弄清楚为什么使用的特定规则会产生像你看到的那样的模式吗？
+
+## 试一试
+
+如果你做一个非常长的运行——会发生什么？
+
+改变不同的滑块有什么影响？你可以认为 k1 和 k2 会影响健康细胞被感染的趋势，而 g 会影响感染恶化的速度。
+
+## 改一改
+
+这个自动机是“反应扩散”系统的一个例子。通过更改 CA 规则，您可以模拟其他反应扩散系统。
+
+## NetLogo 语言特性
+
+`find-new-state` 是一个漫长而复杂的过程。如果将其拆分为子过程可能会更清楚，但是模型的运行速度不会那么快。由于这个特定的 CA 需要多次迭代才能适应其特征模式，因此我们认为速度很重要。
+
+## 相关模型
+
+Boiling, in the Physics/Heat section, is another cellular automaton that uses similar, though simpler, rules.  The early stages of the Boiling model resemble the early stages of this model.
+
+Fireflies, in the Biology section, is analogous to the B-Z reaction in a stirred beaker (the whole beaker "synchronizes" so it's switching back and forth all at once, like the fireflies).
+
+Many models in the NetLogo models library can be thought as systems composed of positive and/or negative feedback mechanisms.
+
+## 引用和致谢
+
+The B-Z reaction is named after Boris Belousov and Anatol Zhabotinsky, the Russian scientists who discovered it in the 1950's.
+
+A discussion of the chemistry behind the reaction, plus a movie and some pictures, are available at https://www.faidherbe.org/site/cours/dupuis/oscil.htm.
+
+The cellular automaton was presented by A.K. Dewdney in his "Computer Recreations" column in the August 1988 of Scientific American.
+
+See https://web.archive.org/web/20141227154826/http://www.hermetic.ch/pca/bz.htm for a pretty screen shot of the cellular automaton running on a very large grid (using custom software for Windows, not NetLogo).
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2003).  NetLogo B-Z Reaction model.  http://ccl.northwestern.edu/netlogo/models/B-ZReaction.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2003 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2003 -->

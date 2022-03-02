@@ -1,0 +1,114 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+Blue
+### Chinese ***
+蓝色
+
+### Source
+Population
+### Chinese ***
+人口
+
+### Source
+Populations by Colony Color
+### Chinese ***
+按菌落颜色划分的种群
+
+### Source
+Red
+### Chinese ***
+红色的
+
+### Source
+Time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+Add
+### Chinese ***
+添加
+
+### Source
+Blue Ants
+### Chinese ***
+蓝蚂蚁
+
+### Source
+blue-aggression
+### Chinese ***
+蓝色侵略
+
+### Source
+blue-size
+### Chinese ***
+蓝色尺寸
+
+### Source
+blue-start-energy
+### Chinese ***
+蓝色启动能源
+
+### Source
+Chemical
+### Chinese ***
+化工
+
+### Source
+Create Cost
+### Chinese ***
+创建成本
+
+### Source
+evaporation-rate
+### Chinese ***
+蒸发率
+
+### Source
+Flower
+### Chinese ***
+花
+
+### Source
+Play |>
+### Chinese ***
+播放 |&gt;
+
+### Source
+Red Ants
+### Chinese ***
+红蚂蚁
+
+### Source
+red-aggression
+### Chinese ***
+红色侵略
+
+### Source
+red-size
+### Chinese ***
+红色大小
+
+### Source
+red-start-energy
+### Chinese ***
+红启动能量
+
+### Source
+Restart
+### Chinese ***
+重新开始
+
+### Source
+Stop ||
+### Chinese ***
+停止 ||
+
+### Source
+Vinegar
+### Chinese ***
+尖酸刻薄
+

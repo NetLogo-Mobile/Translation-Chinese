@@ -23,7 +23,7 @@ resistant
 ### Source
 susceptible
 ### Chinese
-已受感染的
+易受感染的
 
 ### Source
 time

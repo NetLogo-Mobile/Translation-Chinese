@@ -1,0 +1,84 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+这是一个自然/人工选择模型，显示了两个竞争力量对猎物速度的自然选择的结果。哪种力量占主导地位取决于捕食者的行为。
+
+一种力量是追逐猎物的捕食者倾向于更频繁地捕捉移动速度较慢的猎物，从而选择在许多代后代中速度更快的猎物。
+
+另一种力量是，等待猎物不动的捕食者往往会捕捉移动速度更快的猎物，从而选择在许多代后代中速度较慢的猎物。
+
+通过调整虫子是否试图避开捕食者以及它们运动的可预测性，这些竞争力量中的另一种力量将倾向于主导对种群的选择压力。
+
+## 这个模型是怎么运行的
+
+你在一群虫子中扮演捕食者的角色。要开始以捕食者的身份追捕虫子，请按 SETUP 创建虫群，由 INITIAL-BUGS-EACH-SPEED滑块的六倍确定。这些创建的错误随机分布在世界并分配了速度。
+
+当您按下 GO 时，虫子开始以指定的速度移动。当它们四处移动时，请尝试通过单击它们以尽可能快地吃掉它们。或者，您可以按住鼠标按钮并将捕食者移动到虫子上方。
+
+虫子可能移动的六种不同速度分布在虫子的六个不同子群中。这些速度是遗传的。每吃一个虫子，就会从种群中随机选择一个新的虫子来产生一个后代。后代是父母的完全复制品（在它的速度和位置上）。新后代的产生使虫子的总体数量保持不变。
+
+最初，每个 bug 子群的数量相等（例如，6 种速度中的每一个都有 10 个 bug）。然而，随着时间的推移，当你吃掉虫子时，虫子的分布会发生变化，如“虫子数量”直方图所示。在直方图中，您可能会看到分布向左移动（显示更慢的 bug 存活）或向右移动（显示更快速的 bug 存活）。有时单速虫子的一个亚群会被消灭。在这一点上，无法在种群中创建其他这种速度的错误。
+
+## 如何这个模型怎么用
+
+INITIAL-BUGS-EACH-SPEED 是您在六个子群体中的每一个中开始出现的错误数。通过将此值乘以 6 来确定错误的总体数量。
+
+显示颜色？帮助您根据错误的速度应用或删除颜色可视化。打开时，它会显示 6 种不同的颜色，代表错误可能具有的 6 种不同速度。这些颜色设置对应于图表中的图表画笔颜色。关闭时，每个错误都显示为灰色。这可以防止捕食者（模型玩家）无意中根据颜色选择错误。
+
+BUGS 数量是一个直方图，显示了不同速度下的错误分布。
+
+BUGS CAUGHT 是一个直方图，显示了以不同速度捕获的错误分布的历史记录。
+
+WIGGLE?，当设置为“on”时，会在虫子的每个时间步向前移动时在它们的运动中添加少量随机扭曲。
+
+FLEE?，当设置为“开”时，当它们在检测锥（120 度的弧，范围为 2 个单位）中检测到您的鼠标点击（作为捕食者）时，虫子会转身（面向相反的方向） .虫子只能在它们前面的这个弧线上发现捕食者，因此从后面被抓住时不会做出反应。
+
+## 看一看
+
+如果您扮演追逐容易猎物的角色，CURRENT BUGS直方图倾向于向右移动（增加平均速度）。
+
+如果您承担等待猎物的角色，CURRENT BUGS直方图倾向于向左移动（降低平均速度）。通过在世界随机移动捕食者也可以达到相同的效果。
+
+## 试一试
+
+设置模型，将 INITIAL-BUGS-EACH-SPEED 设置为 1。放慢模型速度，观察吃虫子时新虫子从哪里来。您应该会从剩下的五个中的一个中看到一个新的虫子孵化，并且它应该以与其父级相同的速度移动。
+
+通过将捕食者放置在一个位置并按住鼠标按钮，在一个位置等待虫子来找你。所有碰到你的虫子都会被吃掉。
+
+通过按住鼠标按钮并在最近的虫子之后在视图中移动捕食者，随时追赶虫子，试图捕捉离您最近的虫子。
+
+## 改一改
+
+该模型的 HubNet 版本具有可调整的错误起始种群，这将有助于显示当两个或多个竞争对手同时对同一种群采用相似或不同的狩猎策略时会发生什么。
+
+## 相关模型
+
+Bug Hunt Camouflage
+
+## 引用和致谢
+
+Inspired by EvoDots software: https://faculty.washington.edu/herronjc/SoftwareFolder/EvoDots.html/
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Novak, M. and Wilensky, U. (2005).  NetLogo Bug Hunt Speeds model.  http://ccl.northwestern.edu/netlogo/models/BugHuntSpeeds.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 Cite: Novak, M. -->

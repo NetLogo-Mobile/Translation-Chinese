@@ -1,4 +1,4 @@
-`facexy`使海龟改变其方向（ `heading` ）以指向给定的坐标（x，y）。例如， `ask turtles [ facexy 0 0 ]`使模型中的所有海龟面向模型中心(0,0)。
+﻿`facexy`使海龟改变其方向（ `heading` ）以指向给定的坐标（x，y）。例如， `ask turtles [ facexy 0 0 ]`使模型中的所有海龟面向模型中心(0,0)。
 
 使用`facexy`时要记住的：
 

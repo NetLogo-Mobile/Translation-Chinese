@@ -1,0 +1,120 @@
+﻿## WHAT IS IT?
+
+In this game, two colonies of ants forage for food. Though each ant follows a set of simple rules, the colonies as a whole act in sophisticated ways. Ant Adaptation simulates two ant colonies side by side, each controlled by a different player.
+
+The model teaches users about complexity through play. The sensing area of the view contains five widgets for each of the two players. With Ant Adaptation, we aim to realize the promise of agent-based modeling originally illustrated by systems such as GasLab (Wilensky, 1997) or NIELS (Sengupta and Wilensky, 2009), in a rich interaction form factor for walk-up-and-play use in an informal learning space.
+
+## HOW IT WORKS
+
+In this model two ant colonies send out their foragers to move around and find food. If they walk over food, they pick it up and return to their colony. When the nest gets enough food, the colony produces another ant. The user can interact with the model by painting (and removing) pheromones or adding additional food to the game. While users can add food, the food (flowers) also reproduce on their own slowly. After some time, the colonies will produce new queens to found new colonies of each color. If ants of different colonies run into each other, they might fight. When ants fight, or return food from flowers, they will leave pheromone trails to attract other ants.
+
+### WITHOUT USER INTERACTION
+On setup, two ant colonies (one of red ants and one of black ants) and a number of flowers are created in the world. Ants are spawned in the ant colony and then wander until they find food, represented as flowers in the model. When they find food, they personally gain energy through eating nectar, then they return to the colony while laying down a pheromone, represented as pink trails in this model to feed the young inside the nest. Ants near pheromone trails are attracted to the strongest chemical trail. As the ants exhaust a food source, they once again begin to wander until they find another food source or another pheromone trail to follow.
+
+When two or more ants of opposing colonies encounter each other, they fight or scare each other away also leaving chemicals that attract more ants. For the winner, this works to protect the food source from competing colonies. The ant queen reproduces when the ants in her colony collect enough food, set by the create cost for each colony. Flowers periodically grow up around the map, resupplying food in the game. Ants die if they get too old, cannot find food, or sometimes when they lose a fight. Nests die if they have no more ants living in them.
+
+When the ants have enough surplus food, they release male and female winged ants to reproduce. When these winged ants meet they make a new colony.
+
+### USER INTERACTION
+
+Users can interact with the model, setting parameters for their colony and ants. Ideally each colony color would be played by an individual or team. Only a single input will be registered at any time - so teams will need to determine turn-taking practices.
+
+The colony teams interact with this complex system in two ways. First, they can adjust the characteristics of their colony and its ants. Second, they can add or remove certain environmental features from the world.
+
+Colony teams can decide how large and aggressive their ants are. When the size of ants increases, they become slightly faster and stronger in a fight. When players make their ants more aggressive, it increases the likelihood that ants detect opposing ants and thus the probability that they will attack. The START-ENERGY sliders set the amount of energy a new born ant has when it leaves the nest for the first time. This determines how far it can walk before finding food.
+
+Increases in size, aggressiveness or start-energy reduces the expected population of the colony, by increasing the the cost of creating more ants, displayed in the "Create Cost" widget. The changes also increases their likelihood of fighting and winning through emergent interactions of parameters (size and aggressiveness) and agent actions (collecting food, leaving trails, and fighting).
+
+Colony teams can adjust the environment by adding chemical trails, adding flowers, and erasing chemical trails with vinegar.
+
+## HOW TO USE IT
+
+![](ant_adaptation_figure.png)
+
+There are five widgets in the center of the screen that control functions for both the red and black colony teams. As shown in the diagram above, marked 4 above, PLAY and STOP control the model’s time measured in ticks. Marked 5 in the diagram, RESTART sets the model back to initial conditions. The ADD drop down menu, marked 6 above, allows you to choose to place flowers, chemical pheromone trails, or erase trails with vinegar. To use it, select one of them, then click on the view. The EVAPORATION-RATE slider, marked 7 above, controls the evaporation rate of the chemical.
+
+Each team decides how large and aggressive their ants are with the sliders to the left and right of the view, marked 2 in the diagram above. Then they each select how much food each new ant starts with. Once teams have decided, they should agree to click the RESTART button to set up the ant nests (with red and black flags) and the food-flowers. Clicking the PLAY button starts the simulation.
+
+If you want to change the size, aggressiveness or starting food move your team's sliders either before pressing RESTART, or after to affect newly born ants.
+
+Marked 1, monitors Red and Black ants at the top, counts the ants’ population named BLACK ANTS on the left, and RED ANTS on the right. Marked 2, the three sliders at the bottom left and right are sliders players can use to adjust their ant’s size, aggressiveness, and the maximum amount of energy, or basically how long ants can walk without eating. Adjusting any of these sliders will change the Create Cost. These sliders can be adjusted at any time during the game to experiment with different settings. Marked 3, in the middle, Ant Adaptation provides a monitor CREATE COST. The CREATE COST monitor shows the total value that it currently costs to produce one more ant. Specifically, the colony produces a new ant when the stored food is greater than the CREATE COST. The cost is calculated by a function of the three sliders.
+
+## THINGS TO NOTICE
+
+The ant colony generally exploits the food sources in order, starting with the food closest to the nest, and finishing with the food most distant from the nest. It is more difficult for the ants to form a stable trail to the more distant food, since the chemical trail has more time to evaporate and diffuse before being reinforced.
+
+Once the colony finishes collecting the closest food, the chemical trail to that food naturally disappears, freeing up ants to help collect the other food sources. The more distant food sources require a larger "critical number" of ants to form a stable trail.
+
+The population of each of the two colonies is shown in the plot.  The line colors in the plot match the colors of the colonies.
+
+Changing a team's AGGRESSIVENESS, or SIZE, changes ant behavior. It also changes the depiction of the ant in the widget marked 8 above.
+
+Notice how proximity of food to the colony affects population growth.
+
+Notice if too much chemical causes problems.
+
+This model operates at two levels, both representing the individual ant, and the colony. This makes it an agent-based model of a super-organism.
+
+## THINGS TO TRY
+
+Try different placements for the food sources. What happens if you put flowers closer to the nests? Farther away? equidistant from the nest? When that happens in the real world, ant colonies typically exploit one source then the other (not at the same time).
+
+Explore where you place chemical trails for ants to follow. What is the most effective placement of chemicals for ants to find food?
+
+How long can your colony survive? How large can you make your colony?
+
+Try different levels of being aggressive and being big. Is one more important than the other for the colony's success?
+
+Try peacefully collecting flowers.
+
+Try starting a fight between colonies.
+
+## EXTENDING THE MODEL
+
+Right now, both colonies respond to the same pheromone for food collection, and fight. Try implementing a separate pheromone (a green chemical). In the real world, ant colonies blend 21 scents to create accents for their colony. This allows them to pass secret messages to colony mates. Try extending to multiple types of pheromone and see how this changes the outcome.
+
+Right now, ants can fight ants from the other team, what happens if ants sometimes fight ants from their own colony?
+
+Change the code so the colonies start in different locations. Does changing the starting proximity affect the model?
+
+Right now there is only one type of ant: forager. Try adding ant castes, such as soldiers.
+
+## NETLOGO FEATURES
+
+This model uses the updated variadic `ifelse` primitive.
+
+The model was originally built for use on a 52-inch touch pad in a museum. If you are interested in using it in this context, please contact kitmartin@u.northwestern.edu and info@ccl.northwestern.edu.
+
+## RELATED MODELS
+
+This model extends the NetLogo Ants (Wilensky, 1997) and is based on Hölldobler and Wilson's The Ants (1990).
+
+Hölldobler, B., & Wilson, E. O. (1990). The Ants. Belknap (Harvard University Press), Cambridge, MA.
+
+## ACKNOWLEDGMENTS
+
+The project gratefully acknowledges the support of the Multidisciplinary Program in Education Sciences for funding the project (Award # R305B090009).
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Martin, K. and Wilensky, U. (2019).  NetLogo Ant Adaptation model.  http://ccl.northwestern.edu/netlogo/models/AntAdaptation.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2019 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2019 Cite: Martin, K. -->

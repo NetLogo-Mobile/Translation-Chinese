@@ -1,0 +1,71 @@
+﻿## WHAT IS IT?
+
+This program is an example of a two-dimensional cellular automaton.  If you are not already familiar with 2D CA, see the model "Life" for a basic discussion.
+
+Typical CAs use two cell states (live and dead), but Brian's Brian uses three: firing (white), refractory (red), and dead (black).
+
+This CA is especially interesting to watch because it has many configurations that move steadily across the grid (as opposed to Life, which has only relatively few such configurations).
+
+## HOW IT WORKS
+
+Firing (white) cells always become refractory (red) at the next time step.
+
+Refractory (red) cells always die (turn black) at the next time step.
+
+A new firing (white) cell is born in any black cell that has exactly two firing (white) neighbors (of its eight surrounding cells).
+
+## HOW TO USE IT
+
+The INITIAL-DENSITY slider determines the initial density of cells that are firing.  SETUP-RANDOM places these cells.  GO-FOREVER runs the rule forever.  GO-ONCE runs the rule once.
+
+If you want to draw an initial pattern yourself, or alter the pattern in the middle of a run, turn on the DRAW WHITE CELLS or DRAW RED CELLS button, then "draw" and "erase" with the mouse in the view.
+
+## THINGS TO NOTICE
+
+Lots of patterns stay stable and move steadily across the grid.  Such patterns are often referred to as "gliders".  How many different types of gliders do you see?  Why does this happen?  How do the rules of the CA result in this behavior?
+
+## THINGS TO TRY
+
+Are there any stable shapes that don't move?
+
+Are there any "glider guns" (objects that emit a steady stream of gliders)?
+
+On a small enough grid, usually the CA reaches a steady state where there may be movement but nothing new happens.  In Brian's Brain, a square grid usually reaches a steady state more quickly than a rectangular grid (try it!).  Why?
+
+## EXTENDING THE MODEL
+
+Many other interesting 3-state 2D automata exist.  Experiment with variations on the rules in this model.
+
+## RELATED MODELS
+
+See all of the other models in the Cellular Automata subsection of the Computer Science section of the NetLogo Models Library.
+
+## CREDITS AND REFERENCES
+
+Brian's Brain was invented by Brian Silverman.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2002).  NetLogo Brian's Brain model.  http://ccl.northwestern.edu/netlogo/models/Brian'sBrain.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2002 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2002 -->

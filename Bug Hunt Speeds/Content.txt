@@ -1,0 +1,83 @@
+﻿## WHAT IS IT?
+
+This is a natural/artificial selection model that shows the result of two competing forces on natural selection of the speed of prey.  Which force dominates depends on the behavior of predators.
+
+One force is that predators that chase prey, tend to catch slower moving prey more often, thereby selecting for prey that are faster over many generations of offspring.
+
+Another force is that predators who wait for their prey without moving, tend to catch prey that are moving faster more often, thereby selecting for prey that are slower over many generations of offspring.
+
+By also adjusting whether bugs try to avoid the predator and the predictability of their motion, a different one of these competing forces will tend to dominate the selective pressure on the population.
+
+## HOW IT WORKS
+
+You assume the role of a predator amongst a population of bugs.  To begin your pursuit of bugs as a predator, press SETUP to create a population of bugs, determined by six times the INITIAL-BUGS-EACH-SPEED slider.  These bugs that are created are randomly distributed around the world and assigned a speed.
+
+When you press GO the bugs begin to move at their designated speeds.  As they move around, try to eat as many bugs as fast as you can by clicking on them.  Alternatively, you may hold the mouse button down and move the predator over the bugs.
+
+The six different speeds that a bug might move at are distributed amongst six different sub-populations of the bugs.  These speeds are inherited.  With each bug you eat, a new bug is randomly chosen from the population to produce one offspring.  The offspring is an exact duplicate of the parent (in its speed and location).  The creation of new offspring keeps the overall population of the bugs constant.
+
+Initially there are equal numbers of each sub-population of bug (e.g. ten bugs at each of the 6 speeds).  Over time, however, as you eat bugs, the distribution of the bugs will change as shown in the "Number of bugs" histogram.  In the histogram, you might see the distribution shift to the left (showing that more slow bugs are surviving) or to the right (showing that more fast bugs are surviving).  Sometimes one sub-population of a single speed of bug will be exterminated.  At this point, no other bugs of this speed can be created in the population.
+
+## HOW TO USE IT
+
+INITIAL-BUGS-EACH-SPEED is the number of bugs you start with in each of the six sub-populations.  The overall population of bugs is determined by multiplying this value by 6.
+
+SHOW-COLORS? helps you apply or remove color visualization based on the speed of the bugs.  When turned on, it shows 6 distinct colors for the 6 different speeds a bug might have.  These color settings correspond to the plot pen colors in the graphs.  When turned off, each bug is colored gray.  This prevents the predator (the model player) from unintentionally selecting bugs based on color.
+
+NUMBER OF BUGS is a histogram showing the distribution of bugs at different speeds.
+
+BUGS CAUGHT is a histogram showing the historical record of the distribution of bugs caught at different speeds.
+
+WIGGLE?, when set to "on" adds a small amount of random twist in the motion of the bugs as they move forward each time step.
+
+FLEE?, when set to "on" has bugs turn around (to face in the opposite direction) when they detect your mouse click (as a predator) in their detection cone (an arc of 120 degrees that has a range of 2 units).  Bugs can detect the predator only in this arc in front of them, and so will not react when caught from behind.
+
+## THINGS TO NOTICE
+
+The CURRENT BUGS histogram tends to shift right (increasing average speed) if you assume the role of chasing easy prey.
+
+The CURRENT BUGS histogram tends to shift left (decreasing average speed) if you assume the role of waiting for prey come to you.  The same effect can also be achieved by moving the predator around the world randomly.
+
+## THINGS TO TRY
+
+Set the model up with INITIAL-BUGS-EACH-SPEED set to 1.  Slow the model down and watch where new bugs come from when you eat a bug.  You should see a new bug hatch from one of the five remaining and it should be moving at the same speed as its parent.
+
+Wait in one location for the bugs to come to you by placing the predator in one location and holding down the mouse button.  All bugs that run into you will be eaten.
+
+Chase bugs around trying to catch the bug nearest you at any one time by holding the mouse button down and moving the predator around the view after the nearest bug.
+
+## EXTENDING THE MODEL
+
+A HubNet version of the model with adjustable starting populations of bugs would help show what happens when two or more competitors assume similar vs. different hunting strategies on the same population at the same time.
+
+## RELATED MODELS
+
+Bug Hunt Camouflage
+
+## CREDITS AND REFERENCES
+
+Inspired by EvoDots software: https://faculty.washington.edu/herronjc/SoftwareFolder/EvoDots.html/
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Novak, M. and Wilensky, U. (2005).  NetLogo Bug Hunt Speeds model.  http://ccl.northwestern.edu/netlogo/models/BugHuntSpeeds.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 Cite: Novak, M. -->

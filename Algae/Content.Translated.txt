@@ -1,0 +1,80 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+这是一个简化的水生生态系统模型，由含有藻类、光和营养物质的水柱组成。顶部有更多的光线，但底部有更多的食物，因此藻类会上下移动以平衡它们的需求。
+
+## 这个模型是怎么运行的
+
+藻类需要光和养分（如氨和磷酸盐）才能生长。虽然湖面附近光线充足，但营养物质却很少。另一方面，湖的深处是黑暗的，但那里有很多氨和磷酸盐。一些藻类可以在水柱中上下移动以获得光和养分。这些藻类利用光能制造致密物质以使它们下沉，然后在黑暗中在水柱的较深部分将这些致密物质烧掉。
+
+藻类根据它们的密度在水柱中上下移动。藻类的密度会根据它们在白天能够获得多少光而不断变化。密度每转一圈都会降低一些，因为藻类利用密集的物质产生化学能。然而，藻类也可以利用光能来制造致密物质。存在的光越多，它们的密度就越大。当它们变得比水更稠密时，它们会向下移动。水越深，光线越少，所以藻类越深，它能够增加的密度就越小。当藻类变得比水的密度小时，它会再次向上移动到表面。此外，随着季节的变化，一天的长度也会发生变化，这会改变全天的光照量。
+
+## 如何这个模型怎么用
+
+SETUP 按钮准备生态系统，GO 按钮运行模拟。
+
+LIGHT-SPREADINESS滑块改变光线穿透水的程度。 “扩散度”越高，越多的光线可以进入水中。如果白天和黑夜？开关打开时，DAY-LENGTH滑块会改变每天有多少阳光。如果它关闭，则光线全天都不会变化。如果 CHANGE-DAY-LENGTH？开关打开，DAY-LENGTH 会随着 GO 的运行而变化，模拟季节的变化。如果它关闭，DAY-LENGTH 将仅手动更改。
+
+平均高度图表显示了过去 24 小时内藻类平均高度的历史。 DAY-LENGTH图表显示 DAY-LENGTH滑块的历史。藻类分布图表显示了藻类的当前位置。低等藻类出现在图表的更右侧。
+
+## 看一看
+
+请注意，随着天数变长，藻类的平均高度会变低。同样，随着白天变短，藻类的平均高度会变高。此外，光线穿透水越多，藻类的平均含量就越低。
+
+斑块的颜色表示水柱中该深度的光强度——黄色越多，存在的光越多。
+
+有时藻类聚集在一起，有时藻类形成多个团块。
+
+## 试一试
+
+要让时间过得更快，请使用速度滑块。
+
+关掉白天和黑夜？看到藻类仍然在阳光明媚的时候上下浮动。
+
+与具有小光散度和大日长相比，具有大量光散度和小日长如何？ （关闭 CHANGE-DAY-LENGTH 会有所帮助吗？。）
+
+## 改一改
+
+尽管藻类需要光和养分，但这个简单的模型只考虑了光的作用。在水柱中添加营养梯度。地板可能含有营养物质，藻类在死亡时可能会对梯度产生影响。
+
+当真正的藻类健康时，它们会长出新的藻类。此外，当它们用完食物时，它们就会死亡。将这些规则添加到模型中。
+
+## NetLogo 语言特性
+
+在 `spread-light`过程中，水贴片从它们正上方的格子中获取光。注意使用 `foreach` 和 `sort` 原语以确保以所需的顺序询问补丁。
+
+为了显示其上方控制条的所有元素，2D 视图需要具有一定的最小宽度，因此 world-width 大于它需要的宽度。必要的补丁作为格子主体集合存储在 `air`、`water` 和 `ground` 全局变量中，并且 `setup-environment`过程“摆脱”了不必要的补丁：
+
+用 [pxcor != 0] 询问补丁 [
+设置 pcolor 灰色 + 1.75
+]
+
+## 引用和致谢
+
+This model is based on a preliminary model developed by Allan Konopka at the 2004 NetLogo workshop at Northwestern University.
+
+Thanks to Josh Unterman for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Algae model.  http://ccl.northwestern.edu/netlogo/models/Algae.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->
