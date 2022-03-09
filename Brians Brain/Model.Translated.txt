@@ -2,36 +2,36 @@
 ## Widgets
 ### Source
 draw red cells
-### Chinese ***
+### Chinese
 绘制红细胞
 
 ### Source
 draw white cells
-### Chinese ***
+### Chinese
 绘制白细胞
 
 ### Source
 go-forever
-### Chinese ***
+### Chinese
 持续执行
 
 ### Source
 go-once
-### Chinese ***
+### Chinese
 执行一次
 
 ### Source
 initial-density
-### Chinese ***
+### Chinese
 初始密度
 
 ### Source
 setup-blank
-### Chinese ***
+### Chinese
 设置（清空）
 
 ### Source
 setup-random
-### Chinese ***
+### Chinese
 设置（随机）
 

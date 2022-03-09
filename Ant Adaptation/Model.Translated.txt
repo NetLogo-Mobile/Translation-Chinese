@@ -2,112 +2,112 @@
 ## Plots
 ### Source
 Blue
-### Chinese ***
+### Chinese
 蓝色
 
 ### Source
 Population
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 Populations by Colony Color
-### Chinese ***
+### Chinese
 各种群的数量
 
 ### Source
 Red
-### Chinese ***
+### Chinese
 红色
 
 ### Source
 Time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 Add
-### Chinese ***
+### Chinese
 添加
 
 ### Source
 Blue Ants
-### Chinese ***
+### Chinese
 蓝色蚂蚁
 
 ### Source
 blue-aggression
-### Chinese ***
+### Chinese
 蓝色的侵略性
 
 ### Source
 blue-size
-### Chinese ***
+### Chinese
 蓝色尺寸
 
 ### Source
 blue-start-energy
-### Chinese ***
+### Chinese
 蓝色的初始能量
 
 ### Source
 Chemical
-### Chinese ***
+### Chinese
 化学信号
 
 ### Source
 Create Cost
-### Chinese ***
+### Chinese
 繁殖成本
 
 ### Source
 evaporation-rate
-### Chinese ***
+### Chinese
 化学信号挥发率
 
 ### Source
 Flower
-### Chinese ***
+### Chinese
 花朵
 
 ### Source
 Play |>
-### Chinese ***
+### Chinese
 播放 |&gt;
 
 ### Source
 Red Ants
-### Chinese ***
+### Chinese
 红色蚂蚁
 
 ### Source
 red-aggression
-### Chinese ***
+### Chinese
 红色的侵略性
 
 ### Source
 red-size
-### Chinese ***
+### Chinese
 红色大小
 
 ### Source
 red-start-energy
-### Chinese ***
+### Chinese
 红色的初始能量
 
 ### Source
 Restart
-### Chinese ***
+### Chinese
 重新开始
 
 ### Source
 Stop ||
-### Chinese ***
+### Chinese
 停止 ||
 
 ### Source
 Vinegar
-### Chinese ***
+### Chinese
 醋（洗去信号）
 

@@ -2,52 +2,52 @@
 ## Plots
 ### Source
 algae distribution
-### Chinese ***
+### Chinese
 藻类分布
 
 ### Source
 average height
-### Chinese ***
+### Chinese
 平均高度
 
 ### Source
 day length
-### Chinese ***
+### Chinese
 昼间长度
 
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ## Widgets
 ### Source
 change-day-length?
-### Chinese ***
+### Chinese
 改变昼间长度？
 
 ### Source
 day-and-night?
-### Chinese ***
+### Chinese
 日夜交替？
 
 ### Source
 day-length
-### Chinese ***
+### Chinese
 昼间长度
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 light-spreadiness
-### Chinese ***
+### Chinese
 光扩散性
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 

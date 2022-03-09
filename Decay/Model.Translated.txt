@@ -2,62 +2,62 @@
 ## Plots
 ### Source
 Decay Rate
-### Chinese ***
+### Chinese
 衰减率
 
 ### Source
 default
-### Chinese ***
+### Chinese
 默认
 
 ### Source
 lines
-### Chinese ***
+### Chinese
 线条
 
 ### Source
 number
-### Chinese ***
+### Chinese
 数量
 
 ### Source
 Radioactive Nuclei
-### Chinese ***
+### Chinese
 放射性原子核
 
 ### Source
 time
-### Chinese ***
+### Chinese
 时间
 
 ## Widgets
 ### Source
 decay-chance
-### Chinese ***
+### Chinese
 衰减概率
 
 ### Source
 decays
-### Chinese ***
+### Chinese
 衰变
 
 ### Source
 go
-### Chinese ***
+### Chinese
 运行
 
 ### Source
 nuclei
-### Chinese ***
+### Chinese
 原子核
 
 ### Source
 number-nuclei
-### Chinese ***
+### Chinese
 原子核的数量
 
 ### Source
 setup
-### Chinese ***
+### Chinese
 设置
 
