@@ -1,10 +1,9 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
-## Language = Chinese
+﻿## Language = Chinese
 ## Widgets
 ### Source
 draw red cells
 ### Chinese ***
-画红细胞
+绘制红细胞
 
 ### Source
 draw white cells
@@ -14,12 +13,12 @@ draw white cells
 ### Source
 go-forever
 ### Chinese ***
-永远走下去
+持续执行
 
 ### Source
 go-once
 ### Chinese ***
-去一次
+执行一次
 
 ### Source
 initial-density
@@ -29,10 +28,10 @@ initial-density
 ### Source
 setup-blank
 ### Chinese ***
-设置空白
+设置（清空）
 
 ### Source
 setup-random
 ### Chinese ***
-随机设置
+设置（随机）
 

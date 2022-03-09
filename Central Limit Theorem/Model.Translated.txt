@@ -1,10 +1,9 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 Count
 ### Chinese ***
-数数
+数量
 
 ### Source
 Mean Value
@@ -14,12 +13,12 @@ Mean Value
 ### Source
 means
 ### Chinese ***
-方法
+平均值
 
 ### Source
 means-mean
 ### Chinese ***
-均值
+平均值的期望
 
 ### Source
 Sample-Data Distribution
@@ -34,18 +33,18 @@ sums
 ### Source
 sums-mean
 ### Chinese ***
-平均数
+总和的期望
 
 ## Widgets
 ### Source
 also-sums?
 ### Chinese ***
-也总和？
+显示总和？
 
 ### Source
 Create My Own People
 ### Chinese ***
-创建我自己的人
+创建自定义人物
 
 ### Source
 Create Random People
@@ -60,12 +59,12 @@ Expected Value
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 Go Once
 ### Chinese ***
-去一次
+运行一次
 
 ### Source
 max-value
@@ -125,10 +124,10 @@ show-ev?
 ### Source
 std-dev-means
 ### Chinese ***
-标准开发意味着
+标准差的期望
 
 ### Source
 std-dev-sums
 ### Chinese ***
-标准开发总和
+标准差的和
 

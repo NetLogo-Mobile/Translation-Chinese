@@ -4,22 +4,22 @@
 ### Source
 constant
 ### Chinese ***
-持续的
+常量
 
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 num-turtles
 ### Chinese ***
-海龟
+海龟数量
 
 ### Source
 second-focus?
 ### Chinese ***
-第二重点？
+双焦点？
 
 ### Source
 setup

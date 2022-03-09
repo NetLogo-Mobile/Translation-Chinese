@@ -1,5 +1,4 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 Decay Rate
@@ -19,12 +18,12 @@ lines
 ### Source
 number
 ### Chinese ***
-数字
+数量
 
 ### Source
 Radioactive Nuclei
 ### Chinese ***
-放射性核
+放射性原子核
 
 ### Source
 time
@@ -35,7 +34,7 @@ time
 ### Source
 decay-chance
 ### Chinese ***
-衰减机会
+衰减概率
 
 ### Source
 decays
@@ -45,17 +44,17 @@ decays
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 nuclei
 ### Chinese ***
-核
+原子核
 
 ### Source
 number-nuclei
 ### Chinese ***
-数核
+原子核的数量
 
 ### Source
 setup

@@ -14,7 +14,7 @@ directrix?
 ### Source
 go
 ### Chinese ***
-走
+运行
 
 ### Source
 num-turtles
