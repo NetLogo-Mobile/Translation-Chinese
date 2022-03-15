@@ -1,0 +1,71 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+在这个项目中，一群蚂蚁觅食。尽管每只蚂蚁都遵循一套简单的规则，但整个蚁群的行为方式却很复杂。
+
+## 这个模型是怎么运行的
+
+当蚂蚁找到一块食物时，它会将食物带回巢穴，并在移动时掉落一种化学物质。当其他蚂蚁“嗅”出化学物质时，它们会跟随化学物质向食物走去。随着越来越多的蚂蚁将食物带到巢穴，它们加强了化学痕迹。
+
+## 如何这个模型怎么用
+
+点击 SETUP 按钮设置蚁巢（紫色，在中心）和三堆食物。单击 GO 按钮开始模拟。该化学品以绿色到白色的渐变显示。
+
+蒸发率滑块控制化学品的蒸发率。 DIFFUSION-RATE滑块控制化学物质的扩散速率。
+
+如果要更改蚂蚁的数量，请在按 SETUP 之前移动 POPULATION滑块。
+
+## 看一看
+
+蚁群一般按顺序利用食物来源，从离巢最近的食物开始，到离巢最远的食物结束。蚂蚁更难形成一条稳定的轨迹到达更远的食物，因为化学痕迹在被强化之前有更多的时间蒸发和扩散。
+
+一旦殖民地完成收集最近的食物，该食物的化学痕迹自然消失，腾出蚂蚁来帮助收集其他食物来源。更远的食物来源需要更大的“临界数量”蚂蚁才能形成稳定的踪迹。
+
+食物的消耗量显示在图表中。图表中的线条颜色与食物堆的颜色相匹配。
+
+## 改一改
+
+尝试不同的食物来源位置。如果两个食物来源与巢穴等距，会发生什么？当这种情况发生在现实世界中时，蚁群通常会利用一个来源然后另一个来源（不是同时）。
+
+在这个项目中，蚂蚁使用“技巧”找到回到巢穴的路：它们跟随“巢穴气味”。真正的蚂蚁使用各种不同的方法来找到回到巢穴的路。尝试实施一些替代策略。
+
+蚂蚁只对 0.05 到 2 之间的化学物质水平作出反应。使用了下限，因此蚂蚁不会无限敏感。尝试删除上限。发生什么了？为什么？
+
+在“上坡化学”过程中，蚂蚁“遵循化学物质的梯度”。也就是说，它在三个方向“嗅”，然后转向化学物质最强的方向。您可能想尝试“上坡化学”过程的变体，改变“蚂蚁嗅探”的数量和位置。
+
+## NetLogo 语言特性
+
+内置的 `扩散原语让我们无需复杂的代码即可轻松地扩散化学物质。
+
+原始的 `patch-right-and-ahead` 用于让蚂蚁在不实际转向的情况下向不同方向闻到气味。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Chen, J. & Wilensky, U. (2022).  NetLogo Ants (block-based) model.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Wilensky, U. (1997).  NetLogo Ants model.  http://ccl.northwestern.edu/netlogo/models/Ants.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Resnick, M. (1994) "Turtles, Termites and Traffic Jams: Explorations in Massively Parallel Microworlds."  Cambridge, MA: MIT Press.  Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 1998.
+
+<!-- 1997 1998 MIT -->
