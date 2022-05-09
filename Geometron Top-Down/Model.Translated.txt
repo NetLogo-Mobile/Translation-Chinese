@@ -1,0 +1,102 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+color-sep
+### Chinese
+颜色分离
+
+### Source
+color-shift
+### Chinese
+变幻色彩
+
+### Source
+curr-color-sep
+### Chinese
+当前颜色
+
+### Source
+decrement
+### Chinese
+递减
+
+### Source
+direction
+### Chinese
+方向
+
+### Source
+expander
+### Chinese
+膨胀速度
+
+### Source
+follow-turtle?
+### Chinese
+观察一只海龟？
+
+### Source
+increment
+### Chinese
+增量
+
+### Source
+lift-pen
+### Chinese
+提笔
+
+### Source
+max-num
+### Chinese
+最大数量
+
+### Source
+num-turtles
+### Chinese
+海龟数量
+
+### Source
+pattern 1
+### Chinese
+模式 1
+
+### Source
+pattern 2
+### Chinese
+模式 2
+
+### Source
+pattern 3
+### Chinese
+模式 3
+
+### Source
+pattern 4
+### Chinese
+模式 4
+
+### Source
+pattern 5
+### Chinese
+模式 5
+
+### Source
+pattern 6
+### Chinese
+模式 6
+
+### Source
+restore
+### Chinese
+恢复
+
+### Source
+setup
+### Chinese
+设置
+
+### Source
+shift-direction
+### Chinese
+变幻方向
+

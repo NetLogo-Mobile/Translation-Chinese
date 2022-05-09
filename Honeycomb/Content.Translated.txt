@@ -1,0 +1,84 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+蜜蜂群体是如何用完美的六边形建造它们的蜂巢的？该模型说明了一种可能机制的假设。
+
+## 这个模型是怎么运行的
+
+每只蜜蜂都按顺时针方向移动，在其身后散布一种化学信息素。随着时间的推移，信息素会扩散并最终蒸发。信息素影响蜜蜂在上面爬行的行为如下：当信息素越多时，蜜蜂移动得越快，但它们也会减小转弯半径。这两个规则的效果相互平衡，使循环的大小大致保持不变。
+
+## 如何这个模型怎么用
+
+按 SETUP 创建一些蜜蜂，然后按 GO 开始它们的回合。如果您希望模型运行得更快，请使用 HIDE BEES 按钮使蜜蜂不可见。通过视图控件关闭显示，使模型运行得更快。
+
+## 看一看
+
+最初，蜜蜂会画出一大堆不规则的循环。但随着时间的推移，这些循环会将自己整理成一个松散的网格。随着时间的流逝，网格变得越来越规则，接近完美的六边形格子，这是最大化适合表面的圆数的最佳排列。
+
+## 试一试
+
+试验改变蜜蜂数量的效果。
+
+## 改一改
+
+代码选项卡中有很多任意选择的数字。尝试改变它们的效果。
+
+在这个版本的模型中，蜜蜂回绕着世界的边缘。尝试修改模型，使蜜蜂聚集在世界中心附近，以防止缠绕。发生什么了？
+
+此外，尝试让蜜蜂都从一个中心位置开始。这是否仍然在整个世界产生六角晶格？
+
+## NetLogo 语言特性
+
+将化学物质扩散和蒸发到世界上的每格子区域都需要时间，所以我们不是每海龟步都做一次，而是每 10海龟做一次。这大大加快了模型的速度，而不会明显改变行为。
+
+## 相关模型
+
+Slime and Ants are other models that use pheromones to coordinate the behavior of individuals into an interesting overall effect.
+
+## 引用和致谢
+
+The rules for this model were invented by David Little in 1995.  The NetLogo code is adapted from his original MacStarLogo code.  On the starlogo-users list, he wrote:
+
+> During a visit to Tilff, in the Belgian Ardennes this summer, I was amazed to watch live beehives that had been built with glass walls, in the Bee Museum there. You could see into the hive, and observe the bees' activity (safely!). As if by magic, the regular architecture of the hive emerges from the seemingly random motions of the workers: the famous hexagonal array, constructed on both sides of plates hung vertically, and evenly spaced apart. The million-dollar question is, how do they do it? Is the beehive determined by their genes? How is it that different sized bees make cells all exactly the same size?
+
+> That the piling up of round objects easily ends up as a hexagonal array, I already knew: it takes up the least amount of space. Being almost totally ignorant of entomology, nevertheless, I made an amateur hypothesis: maybe the hive is the result of a few simple behavioral rules, and there is no hive 'blueprint' in the bees' genes. The apparent random motion of the bees is perhaps in fact highly organised into feedback loops: a bee's next move must depend on what she and the others have done and built before.
+
+> I don't claim that real bees work with the same rules, but I've proved my hypothesis anyway!
+
+Researchers have extensively studied honeycomb formation.  Here are some references to consult for further information:
+
+Camazine, S., et al., Self-organization in biological systems. 2001, Princeton, NJ: Princeton University Press. 538. (ch.16)
+
+Camazine, 1990 -- SO pattern formation in the combs of honey bee colonies.
+
+Pratt, Stephen. 1998. Condition-dependent timing of comb construction by honey bee colonies, animal behaviour, 56, 603-610
+
+Theraulaz, G. & Bonabeau, E. (1995) Modelling the collective building of complex architectures in social insects with lattice swarms. Journal of theoretical Biology 177, 381-400.
+
+Theraulaz and Eric Bonabeau. Coordination in distributed building. Science, 269(4):686--688, 1995.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2003).  NetLogo Honeycomb model.  http://ccl.northwestern.edu/netlogo/models/Honeycomb.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2003 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2003 -->

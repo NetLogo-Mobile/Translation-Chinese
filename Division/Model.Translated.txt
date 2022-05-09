@@ -1,0 +1,47 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+cycle-in-order?
+### Chinese
+按顺序循环？
+
+### Source
+dividend
+### Chinese
+被除数
+
+### Source
+divisor
+### Chinese
+除数
+
+### Source
+go
+### Chinese
+运行
+
+### Source
+go once
+### Chinese
+运行一次
+
+### Source
+next-is-other?
+### Chinese
+按顺序比较？
+
+### Source
+quotient
+### Chinese
+商
+
+### Source
+remainder
+### Chinese
+余
+
+### Source
+setup
+### Chinese
+设置
+

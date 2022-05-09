@@ -1,0 +1,104 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+“65除以14等于多少？”有很多方法可以回答这个问题。一些例子是 4.643、4、4 和 9 的 14，以及 4 和 9 剩下的。最后一个答案是这个模型给出的结果的一个例子。
+
+就像有很多方法可以回答“65 除以 14 是多少？”的问题一样。每个答案都有很多方法。这个模型展示了一种有趣的方法，它将寻找解决方案的工作分配给一组独立的主体。
+
+DIVIDEND 圆圈在 DIVISOR 彩色块中尽可能均匀地分布。结果是商数，余数留在最左边的黑色块上。请注意，REMAINDER 小于彩色块的数量。否则，每个彩色块至少可以多出一个圆圈。
+
+## 这个模型是怎么运行的
+
+块轮流行动，试图实现均匀分布圆圈的目标。
+
+彩色块的作用如下：正在起作用的块将其自身有多少个圆圈与另一个彩色块上有多少个圆圈进行比较。如果它比另一个块至少多两个，它可以给另一个块一个，所以它确实如此。如果作用块比另一个块多一个圆圈，它会将多余的圆圈发送到最左边的黑色块。由于彩色块以这种方式起作用，因此没有彩色块上的圆圈比任何其他彩色块都多。
+
+黑块很特别。当彩色块试图将圆圈均匀分布时，黑色块会保留多余的圆圈。当黑色方块动作时，它会检查它上面有多少个圆圈。如果它至少足够在每个彩色块上放置一个圆圈，它会将其上的所有圆圈随机发送到彩色块。由于黑色块以这种方式作用，最大数量的圆圈将均匀分布在彩色块上。
+
+## 如何这个模型怎么用
+
+将 DIVIDEND 和 DIVISOR 设置为所需的数字，按 SETUP 设置问题，然后按 GO 让模型找到答案。
+
+DIVIDEND 是分散的圈数。
+
+DIVISOR 是圆圈将展开到的彩色块的数量。
+
+SETUP 设置问题。
+
+GO 解决了这个问题。
+
+当模型停止时，QUOTIENT 监视器会显示每个彩色块上的圆圈数。
+
+当模型停止时，REMAINDER 监视器在黑色块上显示圈数，也就是剩余的圈数。
+
+如果按顺序循环？开启时，积木轮流按顺序行动。如果它关闭，则随机选择下一个要执行的块。
+
+如果下一个是其他的？开启时，彩色块与右侧的块进行比较。如果关闭，它们会与随机的其他彩色块进行比较。
+
+为了帮助观察算法的工作情况，还有一些其他监视器和一个 GO ONCE 按钮，一次只有一个块动作。
+
+BLOCK-TO-GO 显示哪个块在起作用。
+
+CIRCLES-ON-BLOCK-TO-GO 显示 BLOCK-TO-GO 上有多少圈。
+
+OTHER-BLOCK 显示 BLOCK-TO-GO 正在与哪个块进行比较。
+
+CIRCLES-ON-OTHER-BLOCK 显示 OTHER-BLOCK 上有多少个圆圈。
+
+## 看一看
+
+有时，圆圈堆叠在一起。发生这种情况时，块上的圆圈可能看起来比实际的要少。
+
+即使使用相同的设置，算法工作所需的时间也有很大差异。
+
+不同的余数会改变算法花费的时间。什么余数更快？什么余数比较慢？
+
+还有什么影响算法需要多长时间？以什么方式？
+
+## 试一试
+
+哪些开关（如果有）会影响算法运行所需的时间以及以何种方式？
+
+你能找到你知道算法永远不会工作的设置吗？如果是这样，你怎么知道？
+
+## 改一改
+
+QUOTIENT 监视器查找彩色块上的平均圆圈数。求平均值涉及除以除数。找出另一种显示不使用除法的商的方法。
+
+为模型计时。
+
+除非没有其他方法可以将圆圈安装到块上，否则不要让多个圆圈位于块内的单个格子上。
+
+修改算法以加快速度。一些想法：在继续下一个块之前，尽量让块相互平衡。尝试让算法“解决两次”，即通过一次尝试在彩色块之间共享，一次向其余的发送额外内容。
+
+## 引用和致谢
+
+The algorithm that this model uses comes from a post to the starlogo-users mailing list by Ted Kaehler.
+
+Thanks to Josh Unterman for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2002).  NetLogo Division model.  http://ccl.northwestern.edu/netlogo/models/Division.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2002 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2002 -->

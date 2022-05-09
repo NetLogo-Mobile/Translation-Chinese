@@ -1,0 +1,123 @@
+﻿## Language = Chinese
+## Plots
+### Source
+Combination
+### Chinese
+组合
+
+### Source
+count
+### Chinese
+数量
+
+### Source
+Permutations
+### Chinese
+排列
+
+### Source
+successes per sample
+### Chinese
+每样本成功率
+
+### Source
+Successes-per-Sample Distributions
+### Chinese
+每样本成功率的分布
+
+## Widgets
+### Source
+#Samples
+### Chinese
+#样本
+
+### Source
++ # Rolls
+### Chinese
++ # 投骰子
+
+### Source
+analysis-type
+### Chinese
+分析类型
+
+### Source
+bars?
+### Chinese
+条形图？
+
+### Source
+Both
+### Chinese
+排列与组合
+
+### Source
+Combination
+### Chinese
+组合
+
+### Source
+Combinations
+### Chinese
+组合
+
+### Source
+Combinations : Permutations
+### Chinese
+组合 : 排列
+
+### Source
+Hide/Reveal
+### Chinese
+隐藏/显示
+
+### Source
+Instructions
+### Chinese
+引导信息
+
+### Source
+Mean-Combination
+### Chinese
+均值组合
+
+### Source
+Mean-Permutations
+### Chinese
+平均排列
+
+### Source
+Permutations
+### Chinese
+排列
+
+### Source
+Pick Values
+### Chinese
+选择值
+
+### Source
+Roll Dice
+### Chinese
+掷骰子
+
+### Source
+sample-size
+### Chinese
+样本大小
+
+### Source
+Setup
+### Chinese
+设置
+
+### Source
+single-success?
+### Chinese
+成功时停止？
+
+### Source
+total-samples
+### Chinese
+总样本
+

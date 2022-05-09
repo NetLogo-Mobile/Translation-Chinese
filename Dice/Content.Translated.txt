@@ -1,0 +1,158 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+“骰子”是一个通过进行和分析实验来学习概率的虚拟实验室。您通过选择每个骰子的面值组合来设置实验，例如 3 和 4（我们将始终使用此示例）。然后模型反复“掷”两个骰子并记录其骰子与您选择的组合匹配的频率。
+
+该模型的骰子可以通过两种方式匹配您的初始组合：它们可以以相同的顺序显示相同的数字；或者无论顺序如何，它们都可以显示相同的数字。该模型收集两种匹配的统计信息。模型中的图表和监视器为您提供了有关累积数据的不同视角。
+
+该模型是 ProbLab 课程的一部分。有关 ProbLab 课程的更多信息，请参阅 http://ccl.northwestern.edu/curriculum/ProbLab/。
+
+## 这个模型是怎么运行的
+
+用户为每个骰子选择一个面值。按下**掷骰子**后，模型会一遍又一遍地掷虚拟骰子，以测试用户选择的组合掷骰子的频率。直方图**Successes-per-Sample Distributions** 显示成功虚拟滚动的频率。
+
+## 教学说明
+
+该模型介绍了用于描述随机事件的工具、概念、表示和词汇。引入的概念包括“采样”和“分布”。
+
+各种 ProbLab 模型使用基于虚拟计算机的“对象”来教授概率。在这个模型中，这些对象是虚拟骰子，类似于熟悉的物理骰子。通过使用熟悉的对象，我们希望帮助学习者在日常经验和更抽象的概念之间架起一座概念桥梁。使用 Dice 模型有助于学生准备体验其他使用不太熟悉的虚拟对象的 ProbLab 模型。
+
+鼓励辅导员介绍这个模型，作为对真实骰子实验的增强。与真实骰子相比，该模型有几个优点。虚拟骰子滚动速度更快，计算机可以同时从多个角度即时准确地记录结果。
+
+该模型试图通过允许学习者在运行实验之前选择组合来让他们参与进来。
+
+## 如何这个模型怎么用
+
+按 **setup**，然后按 **Pick Values**。通过单击视图顶部的骰子，您可以循环遍历骰子的每个可能面以最终设置组合，例如 [3; 4]。完成后，取消按 **Pick Values**。按**掷骰子**开始实验。如果您将 **single-success?** 开关设置为“开”，则实验将在您选择的组合或组合的排列被滚动时停止（取决于选择的**分析类型**）。如果 **single-success?** 为“关闭”，则实验将继续运行您设置的 **sample-size** 和 **total-samples** 滑块的值。在图表窗口中，您可以看到直方图开始堆叠，显示模型以原始顺序（**组合**）滚动您的配对的次数以及发现您以任意顺序配对的次数（**排列**)。
+
+＃＃＃ 纽扣：
+
+**设置**：开始新的实验
+
+**Pick Values**：允许您使用鼠标单击方块来选择目标骰子面。在同一个方格上反复单击会使骰子面循环通过每个可能的面值选项。
+
+**隐藏/显示**：在隐藏和显示您选择的骰子之间切换。当您向朋友提出谜语并且您不希望他们知道您选择了哪种骰子时，此功能很有用。
+
+**掷骰子**：激活计算机掷骰子。该程序会生成随机骰子面并将结果与您的组合进行匹配。
+
+### 开关：
+
+**single-success?**：组合匹配一次后停止滚动。
+
+**bars?**：在两个图形选项之间切换：“On”是直方图，“Off”是折线图。
+
+### 选择：
+
+**分析型**
+
+* &quot;Permutations&quot;：顺序无关紧要，所以&#39;4 3&#39;被认为和它的排列&#39;3 4&#39;相同（注册成功）
+* “组合”：顺序很重要，因此不接受“4 3”与其排列“3 4”相同（未注册为成功）
+* “Both”：“Permutations”和“Combination”都算成功
+
+### 滑块：
+
+**sample-size**：样本中掷骰子的数量
+
+**total-samples**：您在整个实验中采集的样本数。
+
+### 监视器：
+
+**#samples**：显示在此实验中到目前为止已采集了多少样本
+
+**+ # Rolls**：显示当前样本中发生了多少单卷。
+
+**组合**：显示当前样本中的成功次数（顺序很重要）
+
+**排列**：显示当前样本中的成功次数（顺序无关紧要）
+
+**Mean-Combinations**：成功的样本均值（顺序很重要）。这仅在完整的完整样本上计算。
+
+**Mean-Permutations**：成功的样本均值（顺序无关紧要）。这仅在完整的完整样本上计算。
+
+**组合：排列**：成功的“组合”和“排列”滚动之间的比率。这仅在完整的完整样本上计算。
+
+### 情节：
+
+**Successes-per-sample Distributions**：每个样本的成功次数。例如，如果在前五个样本上，组合匹配了 3 次、2 次、4 次、7 次和 4 次，则“组合”直方图在 2、3 和 7 上的高度相同，但它将是 4 的两倍，因为 4 出现了两次。
+
+## 看一看
+
+随着实验的进行，图表中结果的分布逐渐呈现钟形曲线。
+
+当模型掷骰子时，观察监视器 **Combinations** 和 **Permutations**。注意它们是否以相同的速度更新它们的值。对于您设置的大多数组合，**Permutations** 更新得更快。这是因为 **Permutations** 每次模型滚动您选择的值时都会注册成功，即使它们以不同的顺序出现。
+
+当模型掷骰子时，观察监视器**组合：排列**。一开始变化很快，然后变化越来越少。最终，它似乎稳定在某个值上。这是为什么？
+
+除非红色直方图（显示排列）完全覆盖黑色直方图（显示组合），否则您会看到排列直方图总是比组合直方图更宽和更短。此外，排列直方图通常比组合直方图延伸更大的值范围。尝试解释为什么排列分布比组合分布具有更大的方差。
+
+此外，您可能会注意到排列和组合直方图覆盖了相同的区域。这是因为每个直方图的总面积，无论它们沿水平轴的位置如何，也无论它们的图形如何，都表示样本的数量。因为这两个直方图代表相同数量的样本，所以它们具有相同的面积。
+
+## 试一试
+
+一般来说，排列总是比组合多吗？
+
+运行一个样本大小为 20 的实验，然后使用相同的设置运行它，但样本大小为 100 或更多。在每个实验中，查看 **Successes-per-sample Distributions** 的分布。看看小样本的实验是如何产生半钟形曲线的，而大样本的实验是如何产生全钟形曲线的。这是为什么？
+
+创建组合后按 **Hide/Reveal** 可让您设置实验以供朋友运行。您的朋友将不知道组合是什么，并且必须分析图表和监视器以做出明智的猜测。您可能会发现某些组合比其他组合更难猜。这是为什么？例如，比较组合 [1; 1]和[3； 4]。有什么好方法可以确定我们是否正在处理双重问题？这个问题也与下面要尝试的事情有关。
+
+对于您选择的某些骰子值，如果模型在 **analysis-type** 选项的“Both”选项下掷骰子，您将在 **Successes-per-sample Distributions** 中仅看到一个直方图。尝试选择产生单个直方图的骰子组合。这些骰子组合有什么共同点？为什么你认为你只观察到一个直方图？另一个直方图在哪里？当您有一个直方图时，监视器的行为如何？
+
+当组合直方图和排列直方图不重叠时，我们可以说它们沿 x 轴的均值之间的距离。模型中的哪个元素会影响它们之间的距离？例如，您应该怎么做才能使这些直方图之间的距离更大？是什么导致狭窄的直方图？它们真的更窄，还是仅仅因为最大 x 轴值更大，因此直方图“拥挤”？
+
+将 **sample-size** 设置为 360，将 **total-samples** 设置为最大值。选择骰子 [3; 4]，并运行实验。组合条件的平均值约为 10（顺序很重要，因此只有 [3; 4] 被认为是成功的），而排列条件的平均值约为 20（顺序无关紧要） ，所以 [3; 4] 和 [4; 3] 都被认为是成功的）。为什么是 10 和 20？当我们考虑顺序时，有 6*6=36 个不同的骰子对：[1; 1] [1; 2] [1; 3] [1; 4] [1; 5] ... [6； 4] [6; 5] [6; 6]。所以 36 卷的样本平均只有一次出现 [3; 4] 和单次出现 [4; 3]。因此，360 个样本的 10 倍是： 10 次出现 [3; [4] 和 [4] 中的 10 个； 3]，平均。
+
+## 改一改
+
+添加第 7 个骰子面。然后您可以使用 7 面骰子进行实验！
+
+添加组合和排列之间的比率图表。
+
+目前，该模型只是随机掷骰子，并记录其掷骰值何时与您选择的骰子值相似。该模型能否使用更有效的搜索过程来猜测您的骰子？例如，当其中一个方块具有正确的骰子面时，程序将继续只猜测另一个骰子。另一个想法可能是创建一个系统的搜索过程。
+
+跟踪模型从一个成功到另一个成功需要多长时间应该很有趣。添加代码、监视器和图表以执行此操作。
+
+## NetLogo 语言特性
+
+我们依靠迭代来平均分配模型中的骰子。我们不是硬编码每个骰子的 x 和 y 值，而是计算它们之间的“间距”，并迭代骰子的数量 (2)。这样做的好处是，如果我们想要添加更多骰子，或者如果我们决定更改模型视图的大小，骰子仍然会均匀分布。
+
+“骰子”的一个有趣的特点是在许多其他模型中都没有出现，它是选择骰子面值的过程。查看“工具”下拉菜单中的“形状编辑器”。您会发现六种模具形状：“1”、“2”、“3”、“4”、“5”和“6”。对你来说，很明显，三个点的意思是“3”，这与数字 3 相同，但除非你“告诉”它，否则程序不会“知道”这一点。当我们检查计算机是否找到组合时，这不是问题，我们只需比较形状的名称：是“三”、“3”还是“犀牛”，重要的是它们是否匹配.
+
+但是，当我们想将骰子的面更改为某个数字时，我们需要将该数字转换为字符串。 NetLogo 有 `word` 原语：`(word 3)` 会将数字 `3` 转换为字符串 `&quot;3&quot;`。到目前为止一切都很好，但是当你点击一个骰子并进入下一个值时会发生什么？计算机擅长添加数字，但不擅长添加字符串！程序需要查看图形的名称（在我们的示例中为`&quot;3&quot;`），将其转换为数字，添加`1`，然后将其转换回字符串（`&quot;4&quot;` ) 以获得正确的图形。 `read-from-string` 原语将字符串转换为数字。
+
+还有一个更复杂的问题！如果我们已经在第 6 号面并且我们在上面加 1 怎么办？我们得到 `7`，但我们想回到 1。[模]（https://en.wikipedia.org/wiki/Modulo_operation）数学运算（`mod`，在 NetLogo 中）可以帮助我们：任何数字 `mod 6` 的结果将始终是从 `0` 到 `5` 的数字。要将任何数字（在我们的示例中为“7”）转换为从 1 到 6 的骰子面，我们从数字中减去 1，应用“mod 6”，然后再加一，然后瞧！这支小舞由‘shape-for’报告指令负责。
+
+提示：如果你想为骰子添加第七个面，就像上面建议的那样，你需要修改 `shape-for`报告指令器...
+
+## 相关模型
+
+The ProbLab model Random Combinations and Permutations builds on Dice. There, you can work with more than just 2 dice at a time. Also, you can work with colors instead of dice faces.
+
+## 引用和致谢
+
+This model is a part of the ProbLab curriculum. For more information about the ProbLab Curriculum please refer to http://ccl.northwestern.edu/curriculum/ProbLab/.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Abrahamson, D. and Wilensky, U. (2004).  NetLogo Dice model.  http://ccl.northwestern.edu/netlogo/models/Dice.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2004 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2004 Cite: Abrahamson, D. -->

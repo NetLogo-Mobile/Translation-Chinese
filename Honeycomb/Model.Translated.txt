@@ -1,0 +1,27 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese
+运行
+
+### Source
+hide bees
+### Chinese
+隐藏蜜蜂
+
+### Source
+num-bees
+### Chinese
+蜜蜂数
+
+### Source
+setup
+### Chinese
+设置
+
+### Source
+show bees
+### Chinese
+显示蜜蜂
+

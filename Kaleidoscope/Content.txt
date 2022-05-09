@@ -1,0 +1,79 @@
+﻿## WHAT IS IT?
+
+This model uses NetLogo turtles to repeatedly draw circles, turning periodically so that the display gives the impression of a kaleidoscope or pinwheel. It is a demonstration of how a set of simple agent rules can give rise to complex and beautiful patterns.
+
+## HOW IT WORKS
+
+The inner workings of the model are quite simple. A number of turtles are created with their pen's down (wherever they move, they will draw a trail). At each tick, every original turtle hatches a new "drawing turtle" whose only job is to draw a circle and then immediately die. In between hatchings, the only thing the original turtles are doing is slowly rotating. While there are two built-in patterns for the model, both follow the same set of rules, with the only difference being that half of the drawing turtles in PATTERN-2 draw circles counterclockwise while all of the turtles in PATTERN-1 draw circles clockwise.
+
+## HOW TO USE IT
+
+The NUM-TURTLES slider really determines the number of "arms" or "petals" that the kaleidoscope will have. Begin by setting this slider to the desired value (10 is fine).
+
+Next, set COLOR-SEP to some value. COLOR-SEP determines the range of colors that the turtles (and hence the kaleidoscope) will take on. The higher the value, the smaller the range. For a nice, three-colored kaleidoscope, set COLOR-SEP to 25. This inverse relation between COLOR-SEP and the color range is due to the fact that COLOR-SEP acts as a constant to divide a turtle's color by.
+
+When you have set both NUM-TURTLES and COLOR-SEP, press the SETUP button to get your model ready for drawing.
+
+Next, choose which pattern you want. Each pattern has its own forever-button that controls it. PATTERN-1 has the arms of the kaleidoscope all spiraling clockwise, while PATTERN-2 has the arms of the kaleidoscope spiral in both clockwise and counterclockwise directions, giving a slightly more complicated design.
+
+Finally, you have the power to change the color distribution exhibited by this model. The COLOR-SHIFT button will either increment or decrement the value of COLOR-SEP used by the turtles -- saved internally as CURR-COLOR-SEP. Thus the slider value itself isn't changed, but the number the turtles look at is constantly changing. This number is changed by a small random amount. The INCREASE-COLOR? switch determines if CURR-COLOR-SEP is increased (true) or decreased (false).
+
+You also have a monitor, CURR-COLOR-SEP, which will display that variable's value, so that you know when it has been altered, and by how much.
+
+## THINGS TO NOTICE
+
+First, just try playing around and observe what happens. This is meant to be a visually pleasing model just to watch. See what different values of NUM-TURTLES and COLOR-SEP produce, and explore how COLOR-SHIFT changes the appearance of the kaleidoscope. What seems the best to you?
+
+An important thing to notice here is the number given in COUNT-TURTLES. Right away, it becomes much larger than NUM-TURTLES, but quickly settles on some nice big number. Take a look at the Procedures Window. There are really two levels of turtle commands going on here. Initially, upon setup, there are NTURTLES number of turtles. Once one of the pattern buttons is pressed, each of these turtles (who compose the "arms" of the kaleidoscope) repeatedly hatches a new turtle and turns by a single degree. The newly-hatched turtles begin to draw circles, self-destructing upon completion. As the "arm" turtles execute their commands much quicker than the hatched turtles, they produce many turtles during one loop of a circle; eventually, though, turtles start to die off. At this point, the number of turtles who are born is roughly equal to the number who die at any given step.
+
+You also should notice how COLOR-SEP (or really CURR-COLOR-SEP) alters the appearance of the kaleidoscope. Turn COLOR-SHIFT? on, and let CURR-COLOR-SEP become very large. Then watch what happens when it is small, maybe zero or some negative number.
+
+## THINGS TO TRY
+
+Try changing the code in the Code tab. Increase the size of the circles drawn by each of the turtles, or try changing the size of the angle each of the turtles turns through.
+
+Instead of each turtle moving or turning a given amount, what about having it move a small random amount (as in the changes to curr-color-sep from COLOR-SHIFT). How much randomness can you add and still maintain some kind of overall structure?
+
+## EXTENDING THE MODEL
+
+Whenever a turtle is hatched by one of the "arm" turtles, it proceeds to draw a circle. Change the `hatch` command list so that it draws some other shape or pattern. Try to predict what overall shape will emerge.
+
+Currently, the only difference between the two patterns is that PATTERN-2 has half of the "arm" turtles circle to the left, the other half to the right. Write your own pattern -- i.e., come up with a new command or set of commands for these turtles to execute.
+
+Try to write an entirely new kind of model along similar lines.  In the current model, turtles spin off from a center core of NTURTLES turtles. In your new model, maybe the drawing turtles could orbit around some fixed (or moving) point, like in the StarLogoT models N Bodies and Gravitation.
+
+## NETLOGO FEATURES
+
+This makes nice use of the turtle primitive `hatch`. Whenever a turtle is hatched, it executes the command list that follows the `hatch` command. In most context this is used just to change the new turtle's color or alter some variable.  But there's no reason it can't run some other, possibly lengthy, procedure, and that's exactly what happens here.
+
+## ACKNOWLEDGEMENTS
+
+Thanks to Connor Bain for updating this model in 2021.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Kaleidoscope model.  http://ccl.northwestern.edu/netlogo/models/Kaleidoscope.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

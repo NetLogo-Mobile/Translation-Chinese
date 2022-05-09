@@ -1,5 +1,11 @@
-﻿## Language = Chinese
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
 ## NetTango
+### Source
+arrow
+### Chinese ***
+箭
+
 ### Source
 At least
 ### Chinese
@@ -11,9 +17,24 @@ At most
 至多
 
 ### Source
+black
+### Chinese ***
+黑色的
+
+### Source
+blue
+### Chinese ***
+蓝色的
+
+### Source
 Brightness
 ### Chinese
 色彩亮度
+
+### Source
+brown
+### Chinese ***
+棕色的
 
 ### Source
 By proportion
@@ -26,14 +47,34 @@ By value
 按数值
 
 ### Source
+car
+### Chinese ***
+车
+
+### Source
+circle
+### Chinese ***
+圆圈
+
+### Source
 Color
 ### Chinese
 颜色
 
 ### Source
-Go 
-### Chinese
-运行时 
+Create your own model
+### Chinese ***
+创建自己的模型
+
+### Source
+green
+### Chinese ***
+绿色
+
+### Source
+house
+### Chinese ***
+屋
 
 ### Source
 How far?
@@ -86,19 +127,49 @@ Minimum
 最少
 
 ### Source
+orange
+### Chinese ***
+橙
+
+### Source
+person
+### Chinese ***
+人
+
+### Source
+pink
+### Chinese ***
+粉色的
+
+### Source
+red
+### Chinese ***
+红色的
+
+### Source
 Rounds/Tick
 ### Chinese
 每周期旋转圈数
 
 ### Source
-Setup 
-### Chinese
-启动时 
+sheep
+### Chinese ***
+羊
 
 ### Source
 Sniff angle
 ### Chinese
 嗅探角度
+
+### Source
+tree
+### Chinese ***
+树
+
+### Source
+turtle
+### Chinese ***
+海龟
 
 ### Source
 Which color?
@@ -116,6 +187,16 @@ Which shape?
 什么图形？
 
 ### Source
+white
+### Chinese ***
+白色的
+
+### Source
+wolf
+### Chinese ***
+狼
+
+### Source
 X (Horizontal)
 ### Chinese
 X（水平）
@@ -124,6 +205,11 @@ X（水平）
 Y (Vertical)
 ### Chinese
 Y（垂直）
+
+### Source
+yellow
+### Chinese ***
+黄色的
 
 ### Source
 Yes or no?
@@ -274,6 +360,16 @@ Yes or no?
  When Turtles Here
 ### Chinese
  当海龟的数量
+
+### Excessive
+ Go 
+### Chinese
+ 运行时 
+
+### Excessive
+ Setup 
+### Chinese
+ 启动时 
 
 ### Source
  Ask Patches 

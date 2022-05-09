@@ -161,6 +161,11 @@ wolf
 狼
 
 ### Source
+Wolf Sheep Predation
+### Chinese
+大灰狼和小绵羊
+
+### Source
 wolves
 ### Chinese
 狼

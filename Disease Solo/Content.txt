@@ -1,0 +1,104 @@
+﻿## WHAT IS IT?
+
+Disease Solo is a one-player version of the HubNet activity Disease.  It simulates the spread of a disease through a population.  One agent in the population is a person controlled by the user; the others are "androids" controlled by the computer.
+
+## HOW IT WORKS
+
+The user controls the blue agent via the buttons and slider on the right side of the view.  The infection is started by pressing the "infect" button.
+
+Sick agents are indicated by a red circle.
+
+Androids can move using a few different simple strategies. By default they simply move randomly, however, using the AVOID? and CHASE? switches you can indicate that uninfected androids should run from infected ones or infected androids should chase uninfected ones.
+
+The person may also catch the infection.
+
+Healthy "agents" on the same patch as sick agents have an INFECTION-CHANCE chance of becoming ill.
+
+## HOW TO USE IT
+
+### Buttons
+
+SETUP/CLEAR - sets up the world and clears plots.
+SETUP/KEEP - sets up the world without clearing the plot; this lets you compare results from different runs.
+GO - runs the simulation.
+INFECT - infects one of the androids
+
+### Sliders
+
+NUM-ANDROIDS - determines how many androids are created at setup
+INFECTION-CHANCE - a healthy agent's chance at every time step to become sick if it is on the same patch as an infected agent
+
+### Monitors
+
+NUMBER SICK - the number of sick agents
+
+### Plots
+
+NUMBER SICK - the number of sick agents versus time
+
+### Switches
+
+AVOID? - when this switch is on each uninfected android checks all four directions to see if it can move to a patch that is safe from infected agents.
+CHASE? - when this switch is on each infected androids checks all four directions to see if it can infect another agent.
+
+### User controls
+
+UP, DOWN, LEFT, and RIGHT - move the person around the world, STEP-SIZE determines how far the person moves each time one of the control buttons is pressed.
+
+## THINGS TO NOTICE
+
+Think about how the plot will change if you alter a parameter.  Altering the infection chance will have different effects on the plot.
+
+## THINGS TO TRY
+
+Do several runs of the model and record a data set for each one by using the setup/keep button. Compare the different resulting plots.
+
+What happens to the plot as you do runs with more and more androids?
+
+## EXTENDING THE MODEL
+
+Currently, the agents remain sick once they're infected.  How would the shape of the plot change if agents eventually healed?  If, after healing, they were immune to the disease, or could still spread the disease, how would the dynamics be altered?
+
+The user has a distinct advantage in this version of the model (assuming that the goal is either not to become infected, or to infect others), as the user can see the entire world and the androids can only see one patch ahead of them.  Try to even out the playing field by giving the androids a larger field of vision.
+
+Determining the first agent who is infected may impact the way disease spreads through the population.  Try changing the target of the first infection so it can be determined by the user.
+
+## NETLOGO FEATURES
+
+You can use the keyboard to control the person.  To activate the keyboard shortcuts for the movement button, either hide the command center or click in the white background.
+
+The plot uses temporary plot pens, rather than a fixed set of permanent plot pens, so you can use the setup/keep button to overlay as many runs as you want.
+
+## RELATED MODELS
+
+* Disease (HubNet version)
+* Virus
+* HIV
+
+## CREDITS AND REFERENCES
+
+This model is a one player version of the HubNet activity Disease.  In the HubNet version, multiple users can participate at once.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Disease Solo model.  http://ccl.northwestern.edu/netlogo/models/DiseaseSolo.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

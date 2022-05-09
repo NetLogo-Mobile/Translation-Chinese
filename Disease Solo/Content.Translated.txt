@@ -1,0 +1,105 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+疾病独奏是 HubNet 活动疾病的单人版本。它模拟了疾病在人群中的传播。人口中的一个主体是由用户控制的人；其他的是由计算机控制的“机器人”。
+
+## 这个模型是怎么运行的
+
+用户通过视图右侧的按钮和滑块控制蓝色主体。通过按下“感染”按钮开始感染。
+
+生病的主体用红色圆圈表示。
+
+机器人可以使用几种不同的简单策略移动。但是，默认情况下，它们只是随机移动，使用 AVOID?和追逐？开关，您可以指示未受感染的机器人应该从受感染的机器人身上运行，或者受感染的机器人应该追逐未感染的机器人。
+
+该人也可能感染。
+
+健康的“主体”与生病的主体在同一个格子上，有感染机会生病。
+
+## 如何这个模型怎么用
+
+＃＃＃ 纽扣
+
+SETUP/CLEAR - 设置世界并清除图表。
+SETUP/KEEP - 在不清除图表的情况下设置世界；这使您可以比较不同运行的结果。
+GO - 运行模拟。
+感染 - 感染其中一个机器人
+
+### 滑块
+
+NUM-ANDROIDS - 确定在设置时创建了多少个机器人
+感染机会 - 如果健康代理与受感染主体位于同一格子上，则其在每个时间步骤中生病的机会
+
+### 监视器
+
+NUMBER SICK - 生病主体的数量
+
+### 地块
+
+NUMBER SICK - 生病主体的数量与时间的关系
+
+### 开关
+
+避免？ - 当这个开关打开时，每个未受感染的 android 检查所有四个方向，看它是否可以移动到不受感染主体的安全格子。
+追赶？ - 当这个开关打开时，每个受感染的机器人都会检查所有四个方向，看看它是否可以感染另一个主体。
+
+### 用户控制
+
+向上、向下、向左和向右 - 在世界移动人，步长确定每次按下控制按钮时人移动的距离。
+
+## 看一看
+
+想想如果你改变一个参数，图表将如何变化。改变感染几率会对图表产生不同的影响。
+
+## 试一试
+
+使用 setup/keep 按钮对模型进行多次运行并为每个运行记录一个数据集。比较不同的结果图表。
+
+当你使用越来越多的机器人运行时，图表会发生什么？
+
+## 改一改
+
+目前，主体一旦被感染就会生病。如果主体最终痊愈，图表的图形将如何变化？如果在治愈后，他们对疾病免疫，或者仍然可以传播疾病，那么动态将如何改变？
+
+用户在这个版本的模型中具有明显的优势（假设目标不是被感染，或者感染其他人），因为用户可以看到整个世界，而机器人只能看到他们前面的一个格子。尝试通过给机器人更大的视野来平衡比赛场地。
+
+确定第一个被感染的主体可能会影响疾病在人群中传播的方式。尝试更改第一次感染的目标，以便用户可以确定。
+
+## NetLogo 语言特性
+
+您可以使用键盘来控制人。要激活移动按钮的键盘快捷键，请隐藏命令中心或单击白色背景。
+
+该图表使用临时图表笔，而不是一组固定的永久图表笔，因此您可以使用设置/保持按钮覆盖任意数量的运行。
+
+## 相关模型
+
+* Disease (HubNet version)
+* Virus
+* HIV
+
+## 引用和致谢
+
+This model is a one player version of the HubNet activity Disease.  In the HubNet version, multiple users can participate at once.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Disease Solo model.  http://ccl.northwestern.edu/netlogo/models/DiseaseSolo.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

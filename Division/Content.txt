@@ -1,0 +1,103 @@
+﻿## WHAT IS IT?
+
+"What's 65 divided by 14?" There are many ways to answer this question. Some examples are 4.643, 4, four and nine fourteenths, and 4 with 9 left over. The last answer is an example of the kind of result this model would give.
+
+Just as there are many ways to answer the question of "What's 65 divided by 14?" there are many methods to coming up with each answer.  This model shows an interesting method that distributes the work of finding a solution among a group of separate agents.
+
+DIVIDEND circles get spread out as evenly as possible among the DIVISOR colorful blocks. The result is QUOTIENT with REMAINDER left over on the black block to the far left. Note that REMAINDER is smaller than the number of colorful blocks. Otherwise, each of the colorful blocks could have at least one more circle.
+
+## HOW IT WORKS
+
+The blocks take turns acting trying to accomplish the goal of distributing the circles evenly.
+
+The colorful blocks act as follows: The block that's acting compares how many circles it has on itself with how many circles are on another colorful block. If it has at least two more than the other block, it can afford to give the other block one, so it does. If the acting block has exactly one more circle than the other block, it sends that extra circle to the black block on the far left. Since the colorful blocks act in this way, no colorful block can have more circles on it than any other colorful block.
+
+The black block is special. While the colorful blocks are trying to spread the circles out evenly, the black block is keeping the extra circles. When the black block acts, it checks how many circles it has on it. If it has enough at least enough to put one circle on each of the colorful blocks, it sends all of the circles on it out to the colorful blocks randomly. Since the black block acts in this way, the maximum number of circles will be spread evenly on the colorful blocks.
+
+## HOW TO USE IT
+
+Set DIVIDEND and DIVISOR to the desired numbers, press SETUP to set the problem up, and press GO to have the model find the answer.
+
+DIVIDEND is the number of circles that will get spread out.
+
+DIVISOR is the number of colorful blocks the circles will be spread out onto.
+
+SETUP sets the problem up.
+
+GO solves the problem.
+
+When the model stops, the QUOTIENT monitor displays the number of circles on each of the colorful blocks.
+
+When the model stops, the REMAINDER monitor displays the number of circles on the black block, which is the number of circles left over.
+
+If CYCLE-IN-ORDER? is on, the blocks take turns acting in order. If it's off, the next block to act is chosen randomly.
+
+IF NEXT-IS-OTHER? is on, the colorful blocks compare with the block to their right. If it's off, they compare with a random other colorful block.
+
+To help watch the algorithm working, there are a few other monitors and a GO ONCE button that has just one block act at a time.
+
+BLOCK-TO-GO shows which block is acting.
+
+CIRCLES-ON-BLOCK-TO-GO show how many circles are on BLOCK-TO-GO.
+
+OTHER-BLOCK shows which block BLOCK-TO-GO is comparing itself with.
+
+CIRCLES-ON-OTHER-BLOCK shows how many circles are on OTHER-BLOCK.
+
+## THINGS TO NOTICE
+
+Sometimes, the circles are piled up on top of each other. When this happens, it may look like there are fewer circles on a block than there actually are.
+
+The time it takes for the algorithm to work varies quite a bit, even with the same settings.
+
+Different remainders change how long the algorithm takes. What remainders are faster? What remainders are slower?
+
+What else effects how long the algorithm takes? In what ways?
+
+## THINGS TO TRY
+
+What switches, if any, make a difference in the time it takes for the algorithm to work and in what way?
+
+Can you find settings that you know the algorithm will never work for? If so, how do you know?
+
+## EXTENDING THE MODEL
+
+The QUOTIENT monitor finds the average number of circles on the colorful blocks. Finding the average involves dividing by DIVISOR. Figure out another way to display the QUOTIENT that doesn't use division.
+
+Make a way to time the model.
+
+Don't allow more than one circle to be on a single patch within a block unless there's no other way to fit the circles onto the block.
+
+Modify the algorithm to speed it up. Some ideas: Try having the blocks balance out with each other as much as possible before moving on to the next block. Try having the algorithm "settle twice", that is, go through once trying to share among the colorful blocks and once to send extras to the remainder.
+
+## CREDITS AND REFERENCES
+
+The algorithm that this model uses comes from a post to the starlogo-users mailing list by Ted Kaehler.
+
+Thanks to Josh Unterman for his work on this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2002).  NetLogo Division model.  http://ccl.northwestern.edu/netlogo/models/Division.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2002 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2002 -->

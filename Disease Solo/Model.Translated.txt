@@ -1,0 +1,98 @@
+﻿## Language = Chinese
+## Plots
+### Source
+default
+### Chinese
+默认
+
+### Source
+Number Sick
+### Chinese
+病人数量
+
+### Source
+run 1
+### Chinese
+运行 1
+
+### Source
+sick
+### Chinese
+生病的
+
+### Source
+time
+### Chinese
+时间
+
+## Widgets
+### Source
+avoid?
+### Chinese
+避免？
+
+### Source
+chase?
+### Chinese
+追赶？
+
+### Source
+down
+### Chinese
+下
+
+### Source
+go
+### Chinese
+运行
+
+### Source
+infect
+### Chinese
+感染
+
+### Source
+infection-chance
+### Chinese
+感染几率
+
+### Source
+left
+### Chinese
+左
+
+### Source
+num-androids
+### Chinese
+机器人数
+
+### Source
+Number Sick
+### Chinese
+病人数量
+
+### Source
+right
+### Chinese
+右
+
+### Source
+setup/clear
+### Chinese
+设置/清除
+
+### Source
+setup/keep
+### Chinese
+设置/保持
+
+### Source
+step-size
+### Chinese
+移动速度
+
+### Source
+up
+### Chinese
+上
+

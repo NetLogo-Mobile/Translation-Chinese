@@ -1,0 +1,158 @@
+﻿## WHAT IS IT?
+
+"Dice" is a virtual laboratory for learning about probability through conducting and analyzing experiments. You set up an experiment by choosing a combination of face values for each dice, for instance 3 and 4 (we will use this example throughout). Then the model "rolls" two dice repeatedly and records how often its dice match your chosen combination.
+
+The model’s dice can match your initial combination in two ways: they can show the same numbers in the same order; or they can show the same numbers regardless of order. The model collects statistics on both kinds of matches.  The plots and monitors in the model give you different perspectives on the accumulated data.
+
+This model is a part of the ProbLab curriculum. For more information about the ProbLab Curriculum please refer to http://ccl.northwestern.edu/curriculum/ProbLab/.
+
+## HOW IT WORKS
+
+The user selects a face value for each dice. After pressing **Roll Dice**, the model  rolls virtual dice over and over to test how frequently the user-selected combination is rolled. The histogram, **Successes-per-Sample Distributions**, shows the frequency of successful virtual rolls.
+
+## PEDAGOGICAL NOTE
+
+This model introduces tools, concepts, representations, and vocabulary for describing random events.  Among the concepts introduced are "sampling" and "distribution".
+
+The various ProbLab models use virtual computer-based "objects" to teach probability.  In this model, these objects are virtual dice, similar to the familiar, physical ones. By using familiar objects, we hope to help learners form a conceptual bridge from their everyday experience to more abstract concepts. Using the Dice model helps prepare students for experiences with other ProbLab models that use virtual objects that are less familiar.
+
+Facilitators are encouraged to introduce this model as an enhancement of experiments with real dice. The model has several advantages over real dice. Virtual dice roll faster, and the computer can record the results instantly and accurately from multiple perspectives simultaneously.
+
+The model attempts to involve the learner by allowing them to choose a combination before running the experiment.
+
+## HOW TO USE IT
+
+Press **setup**, then press **Pick Values**.  By clicking on the dice at the top of the view, you cycle through each possible face of the dice to eventually set a combination, for instance [3; 4].  When you’re finished, unpress **Pick Values**. Press **Roll Dice** to begin the experiment. If you set the **single-success?** switch to 'On,' the experiment will stop the moment the combination or a permutation of the combination you chose is rolled (depending on the **analysis-type** chosen). If **single-success?** Is 'Off,' the experiment will keep running as many times as you have set the values of the **sample-size** and **total-samples** sliders. In the plot window, you can see histograms start stacking up, showing how many times the model has rolled your pair in its original order (**Combinations**) and how many times it has discovered you pair in any order (**Permutation**).
+
+
+### Buttons:
+
+**setup**: begins new experiment
+
+**Pick Values**: allows you to use the mouse to click on squares to pick the target dice face.  Clicking repeatedly on the same square loops the die-faces through each possible face-value option.
+
+**Hide/Reveal**: toggles between hiding and revealing the dice you picked. This function is useful when you pose a riddle to a friend and you do not want them to know what dice you chose.
+
+**Roll Dice**: activates the rolling of the computer's dice. The program generates random dice-faces and matches the outcome against your combination.
+
+### Switches:
+
+**single-success?**: stops rolling after the combination has been matched once.
+
+**bars?**: toggles between two graphing options: "On" is a histogram, and "Off" gives a line graph.
+
+### Choices:
+
+**analysis-type**
+
+  * "Permutations": Order does not matter, so '4 3' is considered the same as its permutation '3 4' (it is registered as a success)
+  * "Combination": Order matters, so '4 3' is not accepted as the same as its permutation '3 4' (it is not registered as a success)
+  * "Both": "Permutations" and "Combination" both count as successes
+
+### Sliders:
+
+**sample-size**: The number of dice rolls in a sample
+
+**total-samples**: The number of samples you are taking throughout an experiment.
+
+### Monitors:
+
+**#samples**: Shows how many samples have been taken up to this point in this experiment
+
+**+ # Rolls**: Shows how many single rolls have occurred within the current sample.
+
+**Combinations**: Shows the number of successes (where order matters) in the current sample
+
+**Permutations**: Shows the number of successes (where order does not matter) in the current sample
+
+**Mean-Combinations**: The sample mean of successes (order matters). This is calculated only on full, completed samples.
+
+**Mean-Permutations**: the sample mean of successes (order does not matter). This is calculated only on full, completed samples.
+
+**Combinations : Permutations**: The ratio between the successful 'combination' and 'permutation' rolls. This is calculated only on full, completed samples.
+
+### Plots:
+
+**Successes-per-sample Distributions**: The number of successes per sample. For instance, if on the first five samples, the combination was matched 3 times, 2 times, 4 times, 7 times, and 4 times, then the "Combinations" histogram will be the same height over 2, 3, and 7, but it will be twice as highover the 4, because 4 occurred twice.
+
+## THINGS TO NOTICE
+
+As the experiment runs, the distributions of outcomes in the plots gradually take on a bell-shaped curve.
+
+As the model rolls its dice, watch the monitors **Combinations** and **Permutations**. Note whether or not they are updating their values at the same pace. For most combinations that you set, **Permutations** updates much faster. This is because **Permutations** registers a success each time the model rolls the values you selected, even if they appear in a different order.
+
+As the model rolls its dice, watch the monitor **Combinations : Permutations**. At first, it changes rapidly, and then it changes less and less frequently. Eventually, it seems to stabilize on some value. Why is that?
+
+Unless the red histogram (showing permutations) covers the black histogram (showing combination) entirely, you will see that the permutations-histogram always becomes both wider and shorter than the combinations-histogram. Also, the permutations-histogram  typically stretches over a greater range of values than the combinations-histogram. Try to explain why the permutations-distribution has greater variance than the combinations-distribution.
+
+Also, you may notice that the permutations- and combinations-histograms cover the same area. That is because the total area of each histogram, irrespective of their location along the horizontal axis and irrespective of their shape, indicates the number of samples. Because the two histograms represent the same number of samples they have the same area.
+
+## THINGS TO TRY
+
+Generally, are there always more permutations than combinations?
+
+Run an experiment with a sample size of 20 and then run it with the same settings but with a sample size of 100 or more. In each experiment, look at the distribution of the **Successes-per-sample Distributions**. See how the experiment with the small sample resulted in half-a-bell curve, whereas the experiment with the larger sample results in a whole-bell curve. Why is that?
+
+Pressing **Hide/Reveal** after you create a combination allows you to setup an experiment for a friend to run. Your friend will not know what the combination is and will have to analyze the graphs and monitors to make an informed guess. You may find that some combinations are harder to guess than others. Why is that? For instance, compare the case of the combination [1; 1] and [3; 4]. Is there any good way to figure out if we are dealing with a double or not? This question is also related to the following thing to try.
+
+For certain dice values you pick, if the model rolls dice under the "Both" option of the **analysis-type** choice, you will see only a single histogram in **Successes-per-sample Distributions**. Try to pick dice combinations that produce a single histogram. What do these dice combinations have in common? Why do you think you observe only a single histogram? Where is the other histogram? How do the monitors behave when you have a single histogram?
+
+When the combinations- and permutations-histograms do not overlap, we can speak of the distance between their means along the x-axis. Which element in the model can affect this distance between them? For instance, what should you do in order to get a bigger distance between these histograms? What makes for narrow histograms? Are they really narrower, or is it just because the maximum x-axis value is greater and so the histograms are "crowded?"
+
+Set **sample-size** to 360 and **total-samples** to its maximum value. Pick the dice [3; 4], and run the experiment. You will get a mean of about 10 for the Combination condition (in which order matters, so only [3; 4] is considered a success), and you will get a mean of about 20 for the Permutations condition (where order does not matter, so both [3; 4] and [4; 3] are considered successes). Why 10 and 20? There are 6*6=36 different dice pairs when we take into consideration the order: [1; 1] [1; 2] [1; 3] [1; 4] [1; 5] ... [6; 4] [6; 5] [6; 6]. So samples of 36 rolls have on average a single occurrence of [3; 4] and a single occurrence of [4; 3]. Thus, samples of 360 have 10 times that: 10 occurrences of [3; 4] and 10 of [4; 3], on average.
+
+## EXTENDING THE MODEL
+
+Add a 7th die face. Then you can run experiments with 7-sided dice!
+
+Add a plot of the ratio between combinations and permutations.
+
+Currently the model just rolls dice randomly, and records when its roll is similar to the dice values you picked. Could the model use a more efficient search procedure to guess your dice? For instance, the moment one of the squares has the correct die face, the program would continue guessing only the other die. Another idea might be to create a systematic search procedure.
+
+It should be interesting to track how long it takes the model from one success to another. Add code, monitors, and a plot to do so.
+
+## NETLOGO FEATURES
+
+We rely on iteration to evenly distribute the dice in the model. Rather than hard coding the x and y values of each dice, we calculate a 'spacing' between them, and iterate over the number of dice (2). The advantage to this is that if we ever want to add more dice, or if we decide to change the size of the model view, dice will still be distributed evenly.
+
+An interesting feature of "Dice," that does not appear in many other models, is the procedure for selecting a die's face value. Look in the Shapes Editor that is in the Tools dropdown menu. You will find six die shapes: "1", "2", "3", "4", "5", and "6". To you, it is obvious that three dots means "3," and that this is the same as the number 3, but the program doesn't "know" this unless you "tell" it. This is not a problem when we check to see if the computer has found a combination, we just have to compare the names of the shapes: whether is "three", "3" or "rhinoceros", the important thing is that they match.
+
+When we want to change the face of a die to a certain number, however, we need to convert this number to a string. NetLogo has the `word` primitive for that: `(word 3)` will convert the number `3` to the string `"3"`. So far so good, but what happens when you click on a dice and it goes to the next value? Computers are good at adding numbers, but not at adding strings! The program need to look at the name of the shape (`"3"`, in our example), convert it to a number, add `1` to it, and then convert it back to a string (`"4"`) to get the right face shape. The `read-from-string` primitive does the conversion from string to number.
+
+And there is one further complication! What if we are already at face number 6 and we add 1 to it? We get `7`, but we want to go back to face 1. The [modulo](https://en.wikipedia.org/wiki/Modulo_operation) mathematical operation (`mod`, in NetLogo) can help us here: the result of any number `mod 6` will always be a number from `0` to `5`. To convert any number (`7`, in our example) to a die face from 1 to 6, we subtract one from the number, apply `mod 6`, add back one, and voilà! This little dance is taken care of by the `shape-for` reporter.
+
+Hint: if you wanted to add a seventh face for the dice, like it is suggested above, you would need to modify the `shape-for` reporter...
+
+## RELATED MODELS
+
+The ProbLab model Random Combinations and Permutations builds on Dice. There, you can work with more than just 2 dice at a time. Also, you can work with colors instead of dice faces.
+
+## CREDITS AND REFERENCES
+
+This model is a part of the ProbLab curriculum. For more information about the ProbLab Curriculum please refer to http://ccl.northwestern.edu/curriculum/ProbLab/.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Abrahamson, D. and Wilensky, U. (2004).  NetLogo Dice model.  http://ccl.northwestern.edu/netlogo/models/Dice.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2004 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2004 Cite: Abrahamson, D. -->

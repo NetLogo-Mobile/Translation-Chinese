@@ -62,7 +62,7 @@ Introduce some blind fireflies. How do the strategies fare with this addition?
 
 Note the use of agentsets to count the number of nearby fireflies that are flashing:
 
-count turtles in-radius 1 with [color = yellow]
+    count turtles in-radius 1 with [color = yellow]
 
 ## CREDITS AND REFERENCES
 

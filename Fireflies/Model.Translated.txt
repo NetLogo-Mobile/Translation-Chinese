@@ -22,9 +22,19 @@ Time
 
 ## Widgets
 ### Source
+advance
+### Chinese
+提前量
+
+### Source
 cycle-length
 ### Chinese
 周期长度
+
+### Source
+delay
+### Chinese
+延迟
 
 ### Source
 flashes-to-reset

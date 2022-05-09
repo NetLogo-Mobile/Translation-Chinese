@@ -1,0 +1,42 @@
+﻿## Language = Chinese
+## Widgets
+### Source
+color-sep
+### Chinese
+变幻颜色
+
+### Source
+color-shift?
+### Chinese
+变色？
+
+### Source
+current-color-sep
+### Chinese
+当前颜色
+
+### Source
+increase-color?
+### Chinese
+颜色正向变化？
+
+### Source
+num-turtles
+### Chinese
+海龟数量
+
+### Source
+pattern-1
+### Chinese
+模式 1
+
+### Source
+pattern-2
+### Chinese
+模式 2
+
+### Source
+setup
+### Chinese
+设置
+

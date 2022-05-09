@@ -1,314 +1,313 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
-## Language = Chinese
+﻿## Language = Chinese
 ## Plots
 ### Source
 # Cases
-### Chinese ***
-# 案例
+### Chinese
+# 病例
 
 ### Source
 # Residents
-### Chinese ***
-# 居民
+### Chinese
+# 人数
 
 ### Source
 Daily Statistics
-### Chinese ***
+### Chinese
 每日统计
 
 ### Source
 Days
-### Chinese ***
+### Chinese
 天
 
 ### Source
 Deaths
-### Chinese ***
+### Chinese
 死亡人数
 
 ### Source
 Detected
-### Chinese ***
-检测到
+### Chinese
+已确诊
 
 ### Source
 Infected
-### Chinese ***
+### Chinese
 已感染
 
 ### Source
 New Cases
-### Chinese ***
-新案例
+### Chinese
+新增确诊
 
 ### Source
 New Recovered
-### Chinese ***
-新恢复
+### Chinese
+新增康复
 
 ### Source
 Not Infected
-### Chinese ***
+### Chinese
 未感染
 
 ### Source
 Quarantined
-### Chinese ***
+### Chinese
 被隔离
 
 ### Source
 Situation Overview
-### Chinese ***
-情况概述
+### Chinese
+情况综述
 
 ### Source
 Symptoms
-### Chinese ***
-症状
+### Chinese
+有症状
 
 ## Widgets
 ### Source
 % Hospital Capacity
-### Chinese ***
+### Chinese
 % 医院容量
 
 ### Source
 % Masked
-### Chinese ***
-% 掩蔽
+### Chinese
+% 戴口罩
 
 ### Source
 Acc. Death %
-### Chinese ***
-会计。死亡 ％
+### Chinese
+累计死亡 ％
 
 ### Source
 Acc. Detected %
-### Chinese ***
-会计。检测到 %
+### Chinese
+累计检测到 %
 
 ### Source
 Acc. Hospitalized %
-### Chinese ***
-会计。住院百分比
+### Chinese
+累计住院 %
 
 ### Source
 Acc. Infected %
-### Chinese ***
-会计。已感染 ％
+### Chinese
+累计已感染 %
 
 ### Source
 Acc. Recovered %
-### Chinese ***
-会计。恢复百分比
+### Chinese
+累计恢复 %
 
 ### Source
 Acc. Symptoms %
-### Chinese ***
-会计。症状 ％
+### Chinese
+累计有症状 %
 
 ### Source
 Apply your policy belief
-### Chinese ***
+### Chinese
 应用您的政策信念
 
 ### Source
 apply-your-personal-belief-to-family
-### Chinese ***
-将您的个人信念应用于家庭
+### Chinese
+应用您的个人信念
 
 ### Source
 Are masks needed to protect us?
-### Chinese ***
-需要口罩来保护我们吗？
+### Chinese
+需要口罩来保护居民吗？
 
 ### Source
 Current residents
-### Chinese ***
+### Chinese
 现有居民
 
 ### Source
 Do we need more testing?
-### Chinese ***
-我们需要更多的测试吗？
+### Chinese
+需要进行更多测试吗？
 
 ### Source
 Go
-### Chinese ***
-走
+### Chinese
+运行
 
 ### Source
 hospital-detect-chance-per-hour
-### Chinese ***
-每小时医院检测机会
+### Chinese
+医院确诊概率（每小时 %）
 
 ### Source
 hospital-hospitalize-capacity
-### Chinese ***
-医院住院能力
+### Chinese
+医院住院容量
 
 ### Source
 hospital-hospitalize-chance-per-hour
-### Chinese ***
-每小时住院机会
+### Chinese
+医院住院概率（每小时 %)
 
 ### Source
 initial-facilities
-### Chinese ***
+### Chinese
 初始设施
 
 ### Source
 initial-hospitals
-### Chinese ***
+### Chinese
 初始医院
 
 ### Source
 initial-households
-### Chinese ***
+### Chinese
 初始家庭
 
 ### Source
 initial-infected-percentage
-### Chinese ***
-初始感染百分比
+### Chinese
+初始感染 %
 
 ### Source
 initial-residents
-### Chinese ***
-初始居民
+### Chinese
+初始居民人数
 
 ### Source
 initial-workplaces
-### Chinese ***
+### Chinese
 初始工作场所
 
 ### Source
 Is lockdown necessary?
-### Chinese ***
-有必要封城吗？
+### Chinese
+有必要静态管理吗？
 
 ### Source
 lockdown?
-### Chinese ***
-封锁？
+### Chinese
+静态管理？
 
 ### Source
 lockdown-announcement-increase
-### Chinese ***
-锁定公告增加
+### Chinese
+静态管理-新增病例阈值
 
 ### Source
 lockdown-announcement-percentage
-### Chinese ***
-锁定公告百分比
+### Chinese
+静态管理-感染百分比
 
 ### Source
 lockdown-lifting-patience
-### Chinese ***
-锁定解除耐心
+### Chinese
+静态管理-解除等候时间
 
 ### Source
 lockdown-lifting-threshold
-### Chinese ***
-锁定解除阈值
+### Chinese
+静态管理-解除门槛
 
 ### Source
 lockdown-obeyance-chance
-### Chinese ***
-锁定服从机会
+### Chinese
+静态管理-服从概率 %
 
 ### Source
 mask-inclination-healthy
-### Chinese ***
-面具倾向健康
+### Chinese
+口罩倾向-无症状 %
 
 ### Source
 mask-inclination-quarantined
-### Chinese ***
-面罩倾斜隔离
+### Chinese
+口罩倾向-已隔离 %
 
 ### Source
 mask-inclination-symptoms
-### Chinese ***
-面罩倾斜症状
+### Chinese
+口罩倾向-有症状 %
 
 ### Source
 max-residents-per-household
-### Chinese ***
-每户最大居民数
+### Chinese
+每户最大人数
 
 ### Source
 min-residents-per-household
-### Chinese ***
-每户最少居民
+### Chinese
+每户最少人数
 
 ### Source
 Original Residents
-### Chinese ***
-原住民
+### Chinese
+最初居民人数
 
 ### Source
 quarantine-days
-### Chinese ***
-隔离日
+### Chinese
+隔离时长
 
 ### Source
 quarantine-obeyance-chance-contacts
-### Chinese ***
-隔离服从机会接触
+### Chinese
+隔离服从-密切接触 %
 
 ### Source
 quarantine-obeyance-chance-detected
-### Chinese ***
-检疫服从机会检测到
+### Chinese
+隔离服从-已确诊 %
 
 ### Source
 resident-size
-### Chinese ***
-居民大小
+### Chinese
+居民人数
 
 ### Source
 Select yourself
-### Chinese ***
+### Chinese
 选择自己
 
 ### Source
 Setup
-### Chinese ***
+### Chinese
 设置
 
 ### Source
 Should we quarantine contacts of confirmed cases?
-### Chinese ***
+### Chinese
 我们应该隔离确诊病例的接触者吗？
 
 ### Source
 street-size-x
-### Chinese ***
-街道大小-x
+### Chinese
+街道数量-X
 
 ### Source
 street-size-y
-### Chinese ***
-街道大小-y
+### Chinese
+街道数量-Y
 
 ### Source
 tutorial?
-### Chinese ***
+### Chinese
 教程？
 
 ### Source
 will-you-go-out-when-lockdown
-### Chinese ***
-锁定时你会出去吗
+### Chinese
+静态管理时会离开家吗？
 
 ### Source
 will-you-go-out-when-lockdown-lifted
-### Chinese ***
-解除封锁时你会出去吗
+### Chinese
+解除静态管理后会离开家吗？
 
 ### Source
 will-you-wear-masks
-### Chinese ***
-你会戴口罩吗
+### Chinese
+你会戴口罩吗？
 
