@@ -1,0 +1,10 @@
+﻿## Only for Turtle Universe 1.1.9 and above!
+<color=#123456>
+For those who wants to send out a discussion without code. What you need:
+- Find a cover picture online.
+- Enter this model.
+- Import a picture from your device.
+- Add some texts, and publish!</color>
+
+## Please wait if the image is really large
+In addition, since the loaded drawing is temporary, anyone who remixes your project won't be able to use the image as cover again. (The data will be reset)

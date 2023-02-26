@@ -1,0 +1,369 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+Business Miles
+### Chinese ***
+商务里程
+
+### Source
+Dead Miles
+### Chinese ***
+死里
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Miles
+### Chinese ***
+英里
+
+### Source
+Taxicabs Travelling Distance
+### Chinese ***
+出租车行驶距离
+
+### Source
+Total Miles
+### Chinese ***
+总里程
+
+### Source
+Trip Distance Distribution
+### Chinese ***
+出行距离分布
+
+### Source
+Trip Duration Distribution
+### Chinese ***
+行程持续时间分布
+
+### Source
+Trip Income
+### Chinese ***
+旅行收入
+
+### Source
+Trip Income Distribution
+### Chinese ***
+旅行收入分配
+
+## Widgets
+### Source
+AM Peak Marginal
+### Chinese ***
+AM 峰值边缘
+
+### Source
+each-additional-passenger-cost
+### Chinese ***
+每增加一名乘客的费用
+
+### Source
+each-grid-cost
+### Chinese ***
+每个网格成本
+
+### Source
+each-tick-cost
+### Chinese ***
+每笔费用
+
+### Source
+Early Morning Marginal
+### Chinese ***
+清晨边缘
+
+### Source
+Evening Marginal
+### Chinese ***
+晚上边缘
+
+### Source
+first-passenger-cost
+### Chinese ***
+首位乘客费用
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+go-once
+### Chinese ***
+去一次
+
+### Source
+length-of-green-light
+### Chinese ***
+绿灯长度
+
+### Source
+length-of-time-period
+### Chinese ***
+时间长度
+
+### Source
+Midday Marginal
+### Chinese ***
+午间边缘
+
+### Source
+num-taxicab
+### Chinese ***
+出租车号
+
+### Source
+PM Peak Marginal
+### Chinese ***
+PM 峰值边际
+
+### Source
+prob-cbd-cbd-AM
+### Chinese ***
+prob-cbd-cbd-AM
+
+### Source
+prob-cbd-cbd-EM
+### Chinese ***
+prob-cbd-cbd-EM
+
+### Source
+prob-cbd-cbd-EVE
+### Chinese ***
+prob-cbd-cbd-EVE
+
+### Source
+prob-cbd-cbd-MD
+### Chinese ***
+prob-cbd-cbd-MD
+
+### Source
+prob-cbd-cbd-PM
+### Chinese ***
+prob-cbd-cbd-PM
+
+### Source
+prob-cbd-com-AM
+### Chinese ***
+prob-cbd-com-AM
+
+### Source
+prob-cbd-com-EM
+### Chinese ***
+prob-cbd-com-EM
+
+### Source
+prob-cbd-com-EVE
+### Chinese ***
+prob-cbd-com-EVE
+
+### Source
+prob-cbd-com-MD
+### Chinese ***
+prob-cbd-com-MD
+
+### Source
+prob-cbd-com-PM
+### Chinese ***
+prob-cbd-com-PM
+
+### Source
+prob-cbd-res-AM
+### Chinese ***
+prob-cbd-res-AM
+
+### Source
+prob-cbd-res-EM
+### Chinese ***
+prob-cbd-res-EM
+
+### Source
+prob-cbd-res-EVE
+### Chinese ***
+prob-cbd-res-EVE
+
+### Source
+prob-cbd-res-MD
+### Chinese ***
+prob-cbd-res-MD
+
+### Source
+prob-cbd-res-PM
+### Chinese ***
+prob-cbd-res-PM
+
+### Source
+prob-com-cbd-AM
+### Chinese ***
+prob-com-cbd-AM
+
+### Source
+prob-com-cbd-EM
+### Chinese ***
+prob-com-cbd-EM
+
+### Source
+prob-com-cbd-EVE
+### Chinese ***
+prob-com-cbd-EVE
+
+### Source
+prob-com-cbd-MD
+### Chinese ***
+prob-com-cbd-MD
+
+### Source
+prob-com-cbd-PM
+### Chinese ***
+prob-com-cbd-PM
+
+### Source
+prob-com-com-AM
+### Chinese ***
+prob-com-com-AM
+
+### Source
+prob-com-com-EM
+### Chinese ***
+prob-com-com-EM
+
+### Source
+prob-com-com-EVE
+### Chinese ***
+prob-com-com-EVE
+
+### Source
+prob-com-com-MD
+### Chinese ***
+prob-com-com-MD
+
+### Source
+prob-com-com-PM
+### Chinese ***
+prob-com-com-PM
+
+### Source
+prob-com-res-AM
+### Chinese ***
+prob-com-res-AM
+
+### Source
+prob-com-res-EM
+### Chinese ***
+prob-com-res-EM
+
+### Source
+prob-com-res-EVE
+### Chinese ***
+prob-com-res-EVE
+
+### Source
+prob-com-res-MD
+### Chinese ***
+prob-com-res-MD
+
+### Source
+prob-com-res-PM
+### Chinese ***
+prob-com-res-PM
+
+### Source
+prob-res-cbd-AM
+### Chinese ***
+prob-res-cbd-AM
+
+### Source
+prob-res-cbd-EM
+### Chinese ***
+prob-res-cbd-EM
+
+### Source
+prob-res-cbd-EVE
+### Chinese ***
+prob-res-cbd-EVE
+
+### Source
+prob-res-cbd-MD
+### Chinese ***
+prob-res-cbd-MD
+
+### Source
+prob-res-cbd-PM
+### Chinese ***
+prob-res-cbd-PM
+
+### Source
+prob-res-com-AM
+### Chinese ***
+prob-res-com-AM
+
+### Source
+prob-res-com-EM
+### Chinese ***
+prob-res-com-EM
+
+### Source
+prob-res-com-EVE
+### Chinese ***
+prob-res-com-EVE
+
+### Source
+prob-res-com-MD
+### Chinese ***
+prob-res-com-MD
+
+### Source
+prob-res-com-PM
+### Chinese ***
+prob-res-com-PM
+
+### Source
+prob-res-res-AM
+### Chinese ***
+prob-res-res-AM
+
+### Source
+prob-res-res-EM
+### Chinese ***
+prob-res-res-EM
+
+### Source
+prob-res-res-EVE
+### Chinese ***
+概率-res-res-EVE
+
+### Source
+prob-res-res-MD
+### Chinese ***
+prob-res-res-MD
+
+### Source
+prob-res-res-PM
+### Chinese ***
+prob-res-res-PM
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+Time of the Day
+### Chinese ***
+一天中的时间
+
+### Source
+wait-time-mean
+### Chinese ***
+等待时间均值
+
+### Source
+wait-time-sd
+### Chinese ***
+等待时间-sd
+

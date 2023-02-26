@@ -1,0 +1,78 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+这是一个演示抽象矢量场和积分曲线的数学模型。
+
+一般而言，场是一个“区域，在该区域中，一个物体由于存在其他一个或多个物体而受到力。因此，场是一种表示物体能够相互影响的方式的方法。对于例如，一个有质量的物体被一个区域包围，在这个区域中，另一个有质量的物体会受到一种力，将这两个物体拉到一起……任何场的强度都可以描述为一个物体所承受的力的比率小的适当样本与该样本的相关属性，例如引力场的力/质量”（牛津物理学小词典）。
+
+“抽象矢量场”是指该模型不受任何特定类型的力的影响，例如重力或磁力。相反，它模拟了一个一般场，其中一些影响的焦点属性影响放置在该场中的“适当的小样本”或粒子。
+
+通常，如果你用肉眼看一个领域，你不一定会看到力量。例如，如果你放下一个苹果，它就会掉下来，即使你看不到重力。苹果是重力场中的物体。您看到了它的行为方式，因此您可以猜测是有某种力量使其下降。人类无法感知（视觉上）引力或电磁力。然而，在模型中，我们可以使用小箭头（矢量）来显示该场中的力在何处、力的大小以及方向。
+
+## 怎么这个模型是怎么运行的
+
+在这个模型中，该字段是使用矢量图形绘制的：绿色条纹是带有黄色海龟作为箭头的单个矢量。每个矢量的长度大致与每个点处矢量场的大小成正比。在这个模型中，它只是与原点的距离：离原点越远，向量越大。此外，所有矢量都沿着以原点为中心的圆的切线顺时针方向瞄准。
+
+这些矢量向您展示了一个合适的标本——这里是一个“粒子”——一旦被放置在场中就会被“撞到”的方向和力度。一旦粒子被“敲击”到一个新位置，它将再次被那里的力（由矢量表示）击打。实际上，它不断地被“敲击”，但在这个模拟中，“敲击”发生在场中的离散点。由于粒子没有用完力，它会一直被撞来撞去。粒子所走的路径称为它的“轨迹”。您将能够跟踪此轨迹，因为粒子在沿着其轨迹移动时会在其身后留下一条红色轨迹。矢量场中的轨迹称为“积分曲线”。
+
+尽管粒子的行为可能很有趣并且可能出乎意料，但由于力在场中分布不均匀或其他一些因素，为了清楚起见，我们选择了一个向量场，该向量场在空间位置和大小之间具有逻辑和一致的关系/力的方向。为此特定模型选择的矢量场是
+
+```文本
+- yd/dx + xd/dy
+```
+
+理想情况下，在这里建模的特定力场中，粒子轨迹应该是同心圆（也就是说，粒子应该沿着相同的圆形轨迹一圈又一圈）。
+
+## 如何这个模型怎么用
+
+设置：清除世界并计算矢量场。
+PLACE-PARTICLES：将程序置于可以通过单击视图中的任意位置来放置红色测试粒子的模式。
+GO：连续运行模拟以显示积分曲线。
+
+## 看一看
+
+请注意，当您远离原点时，矢量的长度会增加。短向量对粒子有什么影响？长向量？
+
+该模型的编程方式是，每个粒子在计算其新方向之前移动一定量。因此，如果连续重新计算它们的航向，粒子不会转动那么多。这导致它们的轨迹缓慢向外盘旋。 （在这变得明显之前，您必须让模型运行一段时间。）我们试图通过让粒子在每个时间步长（变量“步长”）仅向前移动非常小的量来最小化这种情况。我们不能让这个数量太小，因为模型会运行得太慢。如果您希望粒子螺旋减少，或者您希望模型运行得更快，请更改此值。
+
+## 试一试
+
+将粒子放置在世界的不同地方。粒子的位置对轨迹有影响吗？
+
+## 改一改
+
+通过在 `setup-vector`、`force-x` 和 `force-y`过程中更改它来尝试不同的矢量场。例如，如果您选择
+
+```文本
+xd/dx - yd/dy
+```
+
+积分曲线将是双曲线。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Vector Fields model.  http://ccl.northwestern.edu/netlogo/models/VectorFields.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1998 2002 -->

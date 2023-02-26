@@ -1,0 +1,112 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+此模型演示了如何在一个非常简单的问题上使用遗传算法。遗传算法 (GA) 是一种受生物学启发的计算机科学技术，它结合了孟德尔遗传学和达尔文进化论的概念来寻找问题（包括难题）的良好解决方案。 GA 的工作原理是生成一个问题的随机解决方案，评估这些解决方案，然后使用克隆、重组和变异来创建问题的新解决方案。
+
+在这个模型中，我们使用简单的“全合一”问题来演示这是如何实现的。我们在这个模型中使用这样一个简单的问题只是为了突出解决方案的技术。 “全一”问题的想法是找到一串位（即，只有 1 和 0 的序列），其中包含全 1 而没有 0。因此，最能解决此问题的字符串是“111111...111”。
+
+## 怎么这个模型是怎么运行的
+
+遗传算法由以下步骤组成。
+
+1）创建随机解决方案的群体。每个解决方案由一串随机混合的“1”和“0”组成。
+
+2) 根据解决问题的好坏程度对每个解决方案进行评估。这种解决方案“优度”的衡量标准称为“适合度”。在这个模型中，我们的目标只是找到一个由全“1”组成的解决方案。 （在遗传算法的实际应用中，目标要复杂得多，但解决方案通常仍被编码为二进制字符串。）
+
+3）新一代解决方案是从老一代创建的，其中具有较高适应度分数的解决方案比那些具有较低适应度分数的解决方案更有可能被选为“父”解决方案。
+
+A) 该模型中使用的选择方法称为“锦标赛选择”，锦标赛规模为 3。这意味着从老一代中随机抽取 3 个解决方案，并选择适应度最高的解决方案作为父代。
+
+B) 选择一个或两个父母来创造孩子。对于一个父母，孩子是父母的克隆或副本。对于两个父母，这个过程是性重组的数字模拟——两个孩子从父母一方继承部分遗传物质，从另一方继承部分遗传物质。
+
+C) 也有可能会发生突变，孩子的某些位会从“1”变为“0”，反之亦然。
+
+4）重复上面的步骤2和3，直到找到成功解决问题的方案。
+
+## 如何这个模型怎么用
+
+按 SETUP 按钮创建一个初始的随机解决方案群体。
+
+按 STEP 按钮从老一代创建新的一代。
+
+按 GO 按钮运行遗传算法，直到找到解决方案。
+
+在每一代中找到的最佳解决方案显示在视图中。每个白色列代表一个“1”位，每个黑色列代表一个“0”位。
+
+===参数===
+
+POPULATION-SIZE滑块控制每一代中出现的解决方案的数量。
+
+CROSSOVER-RATE滑块控制通过有性繁殖（两个父母的遗传物质之间的重组或交叉）产生的每一代的百分比，以及通过无性繁殖（克隆一个父母的遗传物质）产生的百分比（100 - CROSSOVER-RATE）材料）。
+
+MUTATION-RATE滑块控制突变的百分比。这种机会适用于新个体的比特串中的每个位置。例如，如果字符串的长度为 100 位，并且突变率设置为 1%，那么在每个新个体的创建过程中平均会更改一位。
+
+情节多样性？ switch 控制是否每代绘制解决方案种群内的多样性数量，如“多样性图”所示。关闭情节多样性？显着提高模型的速度，因为计算多样性需要大量计算。
+
+“适应度图”用于显示每一代解的最佳、平均和最差适应度值。
+
+## 看一看
+
+慢慢浏览模型，查看在 VIEW 中显示的每一代中找到的最佳解决方案的可视化表示。 X+1 代中的最佳解决方案多久出现一次是 X 代最佳解决方案的后代？
+
+随着种群适应度的增加，多样性会降低。为什么是这样？
+
+## 试一试
+
+探索更大或更小的人口规模对完全解决问题所需的世代数的影响。如果您测量完全解决问题所需的时间（以秒为单位）会怎样？
+
+无性繁殖与有性繁殖相比如何解决这个问题？ （如果 CLONING-RATE 是 100，或者 CLONING-RATE 是 0 会怎么样？）
+
+多少突变对遗传算法有利？如果 MUTATION-RATE 为 0，遗传算法能否找到完美的解决方案？如果 MUTATION-RATE 是 10.0 呢？你能找到最佳的 MUTATION-RATE 吗？
+
+## 改一改
+
+这种简单的遗传算法存在许多变体。例如，一些遗传算法包括“精英主义”。在这种情况下，总是将老一代中最好的 X% 的解决方案直接复制到新一代中。修改此模型，使其使用精英主义。
+
+有时在遗传算法中使用的另一种繁殖选择称为“轮盘赌选择”。在这种情况下，您可以想象总体中的每个解决方案都被分配了一个大轮盘赌的楔子。楔形的大小由每个解的适应度除以种群中所有解的适应度之和来确定。因此，选择任何给定解决方案进行重现的概率与其适应度成正比。尝试实现这种类型的选择，并将其性能与当前在该模型中使用的“锦标赛选择”方法进行比较。
+
+如上所述，“ALL-ONES”问题是一个玩具问题，其本身并不是很有趣。该模型的一个自然延伸是使用遗传算法来解决一个明显更有趣的问题。幸运的是，你可以改变遗传算法正在解决的问题，只需修改一个东西，即“适应度函数”，它评估给定的字符串在解决你试图解决的任何问题方面有多好。例如，您可以制定海龟移动方式的规则，以便在它穿越世界时最大限度地收集食物。为此，您可以更改 `ga-calculate-fitness`过程以运行一个小的模拟，其中海龟在世界中移动（根据由“1”和“0”的字符串定义的一些规则） ，计算海龟收集了多少食物，然后相应地设置适应度。
+
+## NetLogo 语言特性
+
+请注意，NetLogo 与主体集合一起工作的强大能力使得编写此模型中使用的“锦标赛选择”代码变得非常容易。以下代码就足够了：
+
+max-one-of (n-of 3 old-generation) [ga-fitness]
+
+## 相关模型
+
+Echo is another model that is inspired by the work of John H. Holland.  It examines issues of evolutionary fitness and natural selection.
+
+There are several NetLogo models that examine principles of evolution from a more biological standpoint, including Altruism, Bug Hunt Camouflage, Cooperation, Mimicry, Peppered Moths, as well as the set of Genetic Drift models.
+
+Sunflower Biomorph uses an artistic form of simulated evolution, driven by aesthetic choices made by the user.
+
+## 引用和致谢
+
+This model is based off of work by John H. Holland, who is widely regarded as the father of the genetic algorithms.  See Holland's book "Adaptation in Natural and Artificial Systems", 1992, MIT Press.
+
+Additional information about genetic algorithms is available from a plethora of sources online.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stonedahl, F. and Wilensky, U. (2008).  NetLogo Simple Genetic Algorithm model.  http://ccl.northwestern.edu/netlogo/models/SimpleGeneticAlgorithm.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2008 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2008 Cite: Stonedahl, F. -->

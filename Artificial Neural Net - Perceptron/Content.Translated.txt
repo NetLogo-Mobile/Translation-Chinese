@@ -1,0 +1,96 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+人工神经网络 (ANN) 是生物神经元的计算并行。 “感知器”是对这种特殊类型机器学习的首次尝试。它尝试对输入信号进行分类并输出结果。它通过给出大量示例并尝试对它们进行分类，并让主管告诉它分类是对还是错来做到这一点。基于此信息，感知器更新其权重，直到它正确地对所有输入进行分类。
+
+有一段时间，人们认为感知器可以成为很好的通用模式识别单元。然而，人们发现单个感知器无法学习一些像“xor”这样的基本任务，因为它们不是线性可分的。该模型说明了这种情况。
+
+## 怎么这个模型是怎么运行的
+
+左边的节点是输入节点。它们的值可以是 1 或 -1。这些是将输入呈现给感知器的方式。中间的节点是偏置节点。它的值始终设置为“1”，并允许感知器在其计算中使用常数。一个输出节点在右侧。节点通过链连接。每个链都有一个权重。
+
+为了确定其值，输出节点计算其输入节点的加权和。每个输入节点的值乘以将其连接到输出节点的链的权重以给出加权值。然后将加权值全部相加。如果结果高于阈值，则值为 1，否则为 -1。此模型中输出节点的阈值为 0。
+
+当网络正在训练时，输入被呈现给感知器。将输出节点值与预期值进行比较，并更新链的权重以尝试对输入进行正确分类。
+
+## 如何这个模型怎么用
+
+SETUP 将初始化模型并将所有权重重置为一个小的随机数。
+
+按 TRAIN ONCE 运行一次训练。在此时期向网络呈现的示例数量由 EXAMPLES-PER-EPOCH滑块控制。
+
+按 TRAIN 持续训练网络。
+
+移动 LEARNING-RATE滑块会更改任何一个示例在特定权重下可以进行的最大移动量。
+
+按下 TEST 会将 INPUT-1 和 INPUT-2 的值输入感知器并计算输出。
+
+在视图中，链的大小越大，它的权重就越大。如果链是红色的，那么它就是一个正权重。如果链是蓝色的，那么它就是负权重。
+
+如果显示权重？打开然后链将标有它们的权重。
+
+TARGET-FUNCTION 选择器允许您决定感知器尝试学习哪个函数。
+
+## 看一看
+
+感知器将快速学习“或”函数。但是它永远不会学习“xor”函数。不仅如此，当尝试学习“xor”函数时，它永远不会稳定到一组特定的权重，因此它作为非线性可分离函数的模式分类器是完全无用的。感知器的这个问题可以通过将它们中的几个组合在一起来解决，就像在多层网络中所做的那样。例如，请检查 ANN 神经网络模型。
+
+RULE LEARNED 图直观地展示了感知器已经学习的分隔线，并呈现了当前输入及其分类。绿色的点代表应该被正面分类的点。红色的点代表应该被分类为负面的点。呈现的线是感知器学到的东西。在线一侧的所有内容都将被分类为正类，而在线另一侧的所有内容将被分类为负类。从这张图可以明显看出，在“异或”函数中不可能画出一条直线来分隔红点和绿点。这就是所谓的“异或”函数不是线性可分的意思。
+
+错误 VS。 EPOCHS 图显示了平方误差与训练时期数之间的关系。
+
+## 试一试
+
+尝试不同的学习率，看看这如何影响学习规则图的运动。
+
+尝试使用“或”规则并打开 SHOW-WEIGHTS 多次训练感知器？模型会改变吗？
+
+修改 EXAMPLES-PER-EPOCH 的数量如何影响 ERROR 图？
+
+## 改一改
+
+你能想出一个新的学习规则来更新边缘权重，即使函数不是线性可分的，它也总是会收敛吗？
+
+您能否修改学习规则图，使线条的哪一侧为正，哪一侧为负，一目了然？
+
+## NetLogo 语言特性
+
+该模型利用了一些链功能。它还将每个节点和链视为一个单独的主体。这与许多其他语言不同，在其他语言中，整个感知器将被视为单个主体。
+
+## 相关模型
+
+Artificial Neural Net shows how arranging perceptrons in multiple layers can overcomes some of the limitations of this model (such as the inability to learn 'xor')
+
+## 引用和致谢
+
+Several of the equations in this model are derived from Tom Mitchell's book "Machine Learning" (1997).
+
+Perceptrons were initially proposed in the late 1950s by Frank Rosenblatt.
+
+A standard work on perceptrons is the book Perceptrons by Marvin Minsky and Seymour Papert (1969).  The book includes the result that single-layer perceptrons cannot learn XOR.  The discovery that multi-layer perceptrons can learn it came later, in the 1980s.
+
+Thanks to Craig Brozefsky for his work in improving this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Rand, W. and Wilensky, U. (2006).  NetLogo Artificial Neural Net - Perceptron model.  http://ccl.northwestern.edu/netlogo/models/ArtificialNeuralNet-Perceptron.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2006 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2006 Cite: Rand, W. -->

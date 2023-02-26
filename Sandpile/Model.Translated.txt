@@ -1,0 +1,119 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+Avalanche lifetimes
+### Chinese ***
+雪崩寿命
+
+### Source
+Avalanche sizes
+### Chinese ***
+雪崩尺寸
+
+### Source
+average
+### Chinese ***
+平均的
+
+### Source
+Average grain count
+### Chinese ***
+平均粒数
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+grains
+### Chinese ***
+谷物
+
+### Source
+log count
+### Chinese ***
+日志计数
+
+### Source
+log lifetime
+### Chinese ***
+日志生命周期
+
+### Source
+log size
+### Chinese ***
+日志大小
+
+### Source
+ticks
+### Chinese ***
+周期
+
+## Widgets
+### Source
+animate-avalanches?
+### Chinese ***
+动画雪崩？
+
+### Source
+average
+### Chinese ***
+平均的
+
+### Source
+center
+### Chinese ***
+中心
+
+### Source
+clear size and lifetime data
+### Chinese ***
+清晰的尺寸和寿命数据
+
+### Source
+drop-location
+### Chinese ***
+放置位置
+
+### Source
+explore
+### Chinese ***
+探索
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+go once
+### Chinese ***
+去一次
+
+### Source
+grains-per-patch
+### Chinese ***
+每块颗粒
+
+### Source
+mouse-click
+### Chinese ***
+鼠标点击
+
+### Source
+random
+### Chinese ***
+随机的
+
+### Source
+setup random
+### Chinese ***
+设置随机
+
+### Source
+setup uniform
+### Chinese ***
+设置制服
+

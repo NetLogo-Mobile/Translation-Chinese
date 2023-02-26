@@ -1,0 +1,81 @@
+﻿## WHAT IS IT?
+
+The model mimics taxi cab ridership in an urban area. Users can control ridership demand, fleet size, traffic rules, and fare calculation. The model aims to reveal insights into taxi cab profitability based on trip characteristics and demand dynamics.
+
+## HOW IT WORKS
+
+The urban area is portrayed as a grid system, which is formed by two-lane roads and intersections. The metropolitan area consists of three regions: (1) Central Business District (in orange), (2) Commercial Zone (in blue), and (3) Residential Zone (in grey). The three regions can form nine origin-destination (OD) pairs, with six pairs of inter-regional flows and three pairs of intra-regional flows.
+
+Since taxi demands for each type of flow can be dramatically different based on the time of a day, users can control the amount of flow from regions to regions through the interface.
+
+Potential passenger(s) show up on roads controlled by users. When a vacant taxicab happens to pass by, it stops and pickups the passenger(s). The passenger(s) inform the taxicab of the destination coordinate, and the taxi turns light-purple and starts the trip. The taxi will travel from the pickup coordinate to the light-purple colored drop-off coordinate by the shortest Manhattan distance and complete the trip when it arrives at the destination coordinate.
+
+After finishing a trip, the taxi becomes vacant and searches for the next passenger(s) by traveling randomly on roads.
+
+## HOW TO USE IT
+
+### Taxicab Demand
+* Spatial Flow and Time Interval:
+- _Time Interval_: The flow of residents in an urban area between regions can be quite different depending on the time of day. To indicate the differences in the spatial flow of taxi trips between regions throughout the day, a clock is created to keep track of the time in the world. Five distinct time intervals are implemented (1) AM Peak, (2) Midday, (3) PM Peak, (4) Evening, (5) Early Morning. A reporter shows the current time interval in the interface, and the length of each time interval can be controlled by a slider called LENGTH-OF-TIME-PERIOD.
+- _Spatial Flow_: Demand for taxicabs in city districts can be variable, and different amounts of flows can be manipulated by users through the spatial flow sliders, which control the probability (or proportion) of trips that are going from an origin to a destination during a specific time interval. For such purposes, each time interval's marginal probabilities are shown by a reporter at the bottom of each slider column to remind the users that the marginal probability should sum to 1.
+
+### Traffic Rules
+* Traffic Lights: the length of red/green lights can be controlled by a slider in the interface called LENGTH-OF-GREEN-LIGHT.
+
+### Passengers
+* Passenger waiting time is modeled by a normal distribution. The parameters of this normal distribution can be input by users in the interface through WAIT-TIME-MEAN and WAIT-TIME-SD.
+
+### Taxicabs
+* Fleet size: taxicab fleet size can be controlled by a slider NUM-TAXICABS.
+
+* Trip Fare: Trip fare is calculated based on Chicago Yellow Taxicab. Trip fare is mainly calculated by three different variables: (1) the number of passengers on-board, (2) the number of miles traveled, (3) the trip duration. These cost variables can be determined by users in the interface using FIRST-PASSENGER-COST, EACH-ADDITIONAL-PASSENGER-COST, EACH-GRID-COST, and EACH-TICK-COST.
+
+## THINGS TO NOTICE
+
+As the model runs, the trade-off between business miles and dead miles can be contrasting. The distributions of trip income, distance, and duration should be correlated, and the overall shapes of the distribution are susceptible to the changes in traffic rules and interval lengths.
+
+## THINGS TO TRY
+
+For a clear visualization of the pickup and dropoff process, it is suggested to start with one taxicab to see how a taxicab behaves before generating multiple taxicabs.
+
+## EXTENDING THE MODEL
+
+There are many ways to extend this model. Interesting avenues would be to use real-world data with the GIS extension, more complex searching strategies, such as using AI tools, and including rideshare systems such as Uber or Lyft in the model, to better understand the relation between taxicabs and the rideshare systems.
+
+Some other meaningful extension specific to taxicabs is to figure out how to reduce the number of dead miles -- miles traveled by taxicabs with no passengers on-board. Dead miles are costly to drivers because drivers need to internalize vehicle depreciation and gasoline price while searching for passengers. Figuring out more intelligent searching strategies such as locating the next passenger immediately after the last dropoff will be meaningful to pursue.
+
+## NETLOGO FEATURES
+
+Each road in the model is formed by two lanes, with each lane allowing taxicabs to travel in one direction. When delivering passengers, taxicabs will make U-turns to put themselves in the right direction to start the delivery following the shortest Manhattan distance. Some workarounds can be done to avoid making the u-turns.
+
+## RELATED MODELS
+
+- "Traffic Basic": a simple model of the movement of cars on a highway.
+- "Traffic Basic Utility": a version of "Traffic Basic" including a utility function for the cars.
+- "Traffic 2 Lanes": a more sophisticated two-lane version of the "Traffic Basic" model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Ping, D. and Wilensky, U. (2019).  NetLogo Taxi Cabs model.  http://ccl.northwestern.edu/netlogo/models/TaxiCabs.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+This model was developed as part of the Spring 2019 Multi-agent Modeling course offered by Dr. Uri Wilensky at Northwestern University. For more info, visit http://ccl.northwestern.edu/courses/mam/. Special thanks to Teaching Assistants Sugat Dabholkar, Can Gurkan, and Connor Bain.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2019 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2019 MAM2019 Cite: Ping, D. -->

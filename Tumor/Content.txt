@@ -1,0 +1,80 @@
+﻿## WHAT IS IT?
+
+This model illustrates the growth of a tumor and how it resists chemical treatment.  A tumor consists of two kinds of cells: stem cells (blue turtles) and transitory cells (all other turtles).
+
+## HOW IT WORKS
+
+During mitosis, a stem cell can divide either asymmetrically or symmetrically. In asymmetric mitosis, one of the two daughter cells remains a stem cell, replacing its parent. So a stem cell effectively never dies - it is quasi reincarnated after each division. The other daughter cell turns into a transitory cell that moves outward.
+
+Young transitory cells may divide, breeding other transitory cells.  The transitory cells stop dividing at a certain age and change color from red to white to black, eventually dying.
+
+A stem cell may also divide symmetrically into two stem cells (blue turtles). In this example the original stem cell divides symmetrically only once. The first stem cell remains static, but the second stem cell moves to the right. This activity, in which the cell advances into distant sites and creates another tumor colony, is called metastasis. Notice that the metastasis is red. It is made of cells that die young, when they are still red, rather than ending as black dots as in the static tumor. As the disease progresses, cells die younger and younger.
+
+## HOW TO USE IT
+
+SETUP: Clears the world and creates two blue neoplastic (cancerous) stem cells.  One cell stays put and the other moves to the right.
+GO: Runs the simulation.
+KILL TRANSITORY CELLS: Kills transitory cells that are younger than 10 time steps.
+KILL STEM CELL:  Kills a stem cell. If the adjacent KILL-MOVING-CELL switch is set to OFF, the original is eliminated. If the switch is set to ON, the moving stem cell is eliminated.
+KILL-MOVING-CELL: Determines which stem cell is killed when the KILL STEM CELL button is pressed.
+LEAVE-TRAIL: If it's ON, the cells trace their paths; if it's OFF, they do not.
+CELL-COUNT: Displays the total number of living cells.
+LIVING CELLS PLOT: plots the number of living cells.
+
+## THINGS TO NOTICE
+
+First, notice the blue dot. It represents a normal stem cell that has been transformed into a tumor stem cell.  Set the "leave-trail" switch to On, and click 'go'.  A tumor is formed as the stem cell creates transitory cells, which reproduce themselves.  It grows to a certain size.  As it grows, a bulge appears on the right side.  This is a tumor outgrowth, caused by symmetric mitosis of the stem cell. The outgrowth will turn into a metastasis and grow into remote regions.
+
+After a while the tumor and metastasis appear to reach their ultimate size and nothing interesting seems to be happening. This illustrates how the tumor presents itself to the physician - as a solid cell mass. In reality, this seemingly solid mass conceals active cell turnover. To reveal it, set the leave-trail switch to Off, click on SETUP, and then click on GO to run the simulation again.
+
+Slow down the model so you can follow individual steps.  Move the speed slider to the left, click on SETUP and GO, and observe the blue stem cell.  It divides into two blue stem cells.  One remains static, and the other moves to the right.
+
+Look at the static stem cell (blue).  It breeds red cells which move outward and change their color as they age. When young, they are red and create more transitory cells. Then they turn white, then black, and then they die.
+
+## THINGS TO TRY
+
+Try a treatment: click on the 'kill transitory cells' button while the model is running. This simulates treatment with a chemical agent.  The agent eliminates young (red) cells that divide, and it spares older cells.  Note that the tumor shrinks and grows again.  Continue with this "chemotherapy" by clicking on the button again and watch the plot.  Repeat the treatment several times until you have understood why it fails.
+
+Most of the chemotherapy drugs known as M- and S-poisons inhibit cell division, but generally do not cause cell death. Thus chemotherapy can be represented as killing the young (red) transitory cells, since only young cells divide. Older, non-dividing transitory cells are not affected; they continue aging and finally pass away.
+
+The problem is that the stem cells maintain the tumor and propagate its metastases. Also known as clonogenic cells, stem cells are generally resistant to chemotherapy. They can be eliminated only with high doses of chemicals, which endanger healthy stem cells. The therapeutic margin of chemical drugs is extremely narrow. That is, they do about the same amount of harm as good.
+
+Let the tumor grow again.  Click on 'kill moving stem cell' and continue running the model.  The right blue stem cell disappears. Its progeny live a bit longer and then die. Now click on "kill original stem cell", and watch the gradual disappearance of the tumor, as no new cells are created and existing cells continue aging until they die and disappear.
+
+Any questions? Before asking, continue exploring the model until you grasp its behavior.  The model reveals a hidden dimension that is difficult to understand. It is the time dimension of tissues (and the tumor) in the body.
+
+## EXTENDING THE MODEL
+
+What alternative treatments would you suggest?  How would you model them here?
+
+## CREDITS AND REFERENCES
+
+The original StarLogoT Tumor model was contributed in 1997 by Gershom Zajicek M.D., Professor of Experimental Medicine and Cancer Research at The Hebrew University-Hadassah Medical School, Jerusalem. It was adapted and converted to NetLogo by Wilensky and members of the CCL in 1998.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Zacijek, G. and Wilensky, U. (1998).  NetLogo Tumor model.  http://ccl.northwestern.edu/netlogo/models/Tumor.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 Cite: Zacijek, G. -->

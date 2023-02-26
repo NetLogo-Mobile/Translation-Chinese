@@ -5,20 +5,35 @@ action
 ### Chinese
 行动
 
-### Source
+### Excessive
 check-area
 ### Chinese
 检查区域
 
-### Source
+### Excessive
 clear-polygons
 ### Chinese
 清除多边形
 
-### Source
+### Excessive
 clear-segments
 ### Chinese
 清除线段
+
+### Source
+Delete Segment
+### Chinese
+删除线段
+
+### Source
+Draw Polygon
+### Chinese
+绘制多边形
+
+### Source
+Draw Segment
+### Chinese
+绘制线段
 
 ### Source
 go
@@ -30,7 +45,7 @@ height
 ### Chinese
 高度
 
-### Source
+### Excessive
 perimeter
 ### Chinese
 周长

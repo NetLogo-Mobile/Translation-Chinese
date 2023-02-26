@@ -1,0 +1,95 @@
+﻿## WHAT IS IT?
+
+Artificial Neural Networks (ANNs) are computational parallels of biological neurons. The "perceptron" was the first attempt at this particular type of machine learning.  It attempts to classify input signals and output a result.  It does this by being given a lot of examples and attempting to classify them, and having a supervisor tell it if the classification was right or wrong.  Based on this information the perceptron updates its weights until it classifies all inputs correctly.
+
+For a while it was thought that perceptrons might make good general pattern recognition units.  However, it was discovered that a single perceptron can not learn some basic tasks like 'xor' because they are not linearly separable.  This model illustrates this case.
+
+## HOW IT WORKS
+
+The nodes on the left are the input nodes. They can have a value of 1 or -1.   These are how one presents input to the perceptron.  The node in the middle is the bias node.  Its value is constantly set to '1' and allows the perceptron to use a constant in its calculation.  The one output node is on the right.  The nodes are connected by links.  Each link has a weight.
+
+To determine its value, an output node computes the weighted sum of its input nodes.  The value of each input node is multiplied by the weight of the link connecting it to the output node to give a weighted value.  The weighted values are then all added up. If the result is above a threshold value, then the value is 1, otherwise it is -1.  The threshold value for the output node in this model is 0.
+
+While the network is training, inputs are presented to the perceptron.  The output node value is compared to an expected value, and the weights of the links are updated in order to try and correctly classify the inputs.
+
+## HOW TO USE IT
+
+SETUP will initialize the model and reset any weights to a small random number.
+
+Press TRAIN ONCE to run one epoch of training.  The number of examples presented to the network during this epoch is controlled by EXAMPLES-PER-EPOCH slider.
+
+Press TRAIN to continually train the network.
+
+Moving the LEARNING-RATE slider changes the maximum amount of movement that any one example can have on a particular weight.
+
+Pressing TEST will input the values of INPUT-1 and INPUT-2 to the perceptron and compute the output.
+
+In the view, the larger the size of the link the greater the weight it has.  If the link is red then its a positive weight.  If the link is blue then its a negative weight.
+
+If SHOW-WEIGHTS? is on then the links will be labeled with their weights.
+
+The TARGET-FUNCTION chooser allows you to decide which function the perceptron is trying to learn.
+
+## THINGS TO NOTICE
+
+The perceptron will quickly learn the 'or' function.  However it will never learn the 'xor' function.  Not only that but when trying to learn the 'xor' function it will never settle down to a particular set of weights as a result it is completely useless as a pattern classifier for non-linearly separable functions.  This problem with perceptrons can be solved by combining several of them together as is done in multi-layer networks.  For an example of that please examine the ANN Neural Network model.
+
+The RULE LEARNED graph visually demonstrates the line of separation that the perceptron has learned, and presents the current inputs and their classifications.  Dots that are green represent points that should be classified positively.  Dots that are red represent points that should be classified negatively.  The line that is presented is what the perceptron has learned.  Everything on one side of the line will be classified positively and everything on the other side of the line will be classified negatively.  As should be obvious from watching this graph, it is impossible to draw a straight line that separates the red and the green dots in the 'xor' function.  This is what is meant when it is said that the 'xor' function is not linearly separable.
+
+The ERROR VS. EPOCHS graph displays the relationship between the squared error and the number of training epochs.
+
+## THINGS TO TRY
+
+Try different learning rates and see how this affects the motion of the RULE LEARNED graph.
+
+Try training the perceptron several times using the 'or' rule and turning on SHOW-WEIGHTS?  Does the model ever change?
+
+How does modifying the number of EXAMPLES-PER-EPOCH affect the ERROR graph?
+
+## EXTENDING THE MODEL
+
+Can you come up with a new learning rule to update the edge weights that will always converge even if the function is not linearly separable?
+
+Can you modify the LEARNED RULE graph so it is obvious which side of the line is positive and which side is negative?
+
+## NETLOGO FEATURES
+
+This model makes use of some of the link features.  It also treats each node and link as an individual agent.  This is distinct from many other languages where the whole perceptron would be treated as a single agent.
+
+## RELATED MODELS
+
+Artificial Neural Net shows how arranging perceptrons in multiple layers can overcomes some of the limitations of this model (such as the inability to learn 'xor')
+
+## CREDITS AND REFERENCES
+
+Several of the equations in this model are derived from Tom Mitchell's book "Machine Learning" (1997).
+
+Perceptrons were initially proposed in the late 1950s by Frank Rosenblatt.
+
+A standard work on perceptrons is the book Perceptrons by Marvin Minsky and Seymour Papert (1969).  The book includes the result that single-layer perceptrons cannot learn XOR.  The discovery that multi-layer perceptrons can learn it came later, in the 1980s.
+
+Thanks to Craig Brozefsky for his work in improving this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Rand, W. and Wilensky, U. (2006).  NetLogo Artificial Neural Net - Perceptron model.  http://ccl.northwestern.edu/netlogo/models/ArtificialNeuralNet-Perceptron.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2006 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2006 Cite: Rand, W. -->

@@ -1,0 +1,102 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+该模型演示了在评估溶液中的弱酸时 pH 计算的差异。最好将其视为 ACID-BASE 包中的第二个模型。
+
+## 怎么这个模型是怎么运行的
+
+与强酸不同，弱酸具有非常低的 Ka（或酸解离常数）。因此，如以下反应所示，很少有酸离解成水合氢离子和共轭碱。
+
+&gt; HA + H <sub>2</sub> O &lt;————(1%)————&gt; H <sub>3</sub> O <sup>+</sup> + A <sup>-</sup>
+
+由于存在的水合氢离子很少，因此无法根据酸的初始浓度直接计算溶液的 pH 值。尽管计算 pH 的方程式与计算强碱的方程式相同，
+
+&gt; pH = - log [H <sub>3</sub> O <sup>+</sup> ]
+
+我们必须首先计算溶液中存在的水合氢离子的量。该量取决于酸的 Ka。每种酸都有一个独特的 Ka，它表示酸分子与水分子反应形成水合氢离子和阴离子的概率。这种反应中的阴离子被称为原酸的共轭碱。虽然共轭碱这个词看起来很奇怪，但如果你看一下上面的化学方程式，它就会有意义。 A-是HA的共轭碱，因为它可以从水合氢离子中带走质子生成原酸。
+
+该模型模拟弱酸性溶液的成分，并允许用户观察改变溶液中的物质如何影响 pH 值。在模型中，解离常数 Ka 远高于酸的实际 Ka。事实上，该模型使用以下公式将真实世界的 Ka 转换为模型的模拟 Ka：
+
+&gt; Ka for MODEL = 11 - pKa (pKa = - log (real-world Ka)
+
+## 如何这个模型怎么用
+
+使用 VOL-ACID滑块确定模拟开始时应存在多少酸，然后按 SETUP。海龟将随机分布在世界各地。蓝色海龟代表水分子，绿色海龟代表水合氢离子，黄色海龟是酸分子，最后橙色海龟是共轭碱分子。每次向溶液中加入一定量的水分子。在这个模型中，我们使用乙酸的 Ka，这意味着大约 1% 的原始酸分子解离为 1 个共轭碱分子和 1 个水合氢分子。
+
+按开始。海龟将在世界各地随机移动，溶液的 pH 值将随时间绘制在 pH 曲线上并显示在 pH 监视器中。
+
+通过使用 VOL-BASE (mL)滑块设置碱基体积并按下 ADD-BASE，观察将红色碱基分子添加到溶液中的效果。
+
+在按下 go 的任何时候，都可以按下 RECORD-PH 以在滴定曲线上图表pH 值与添加碱量的关系图。
+
+## 看一看
+
+观察添加碱后 pH 曲线如何随时间变化。这条曲线与强酸模型中看到的曲线有何不同？绘制滴定曲线并将其与强酸进行比较。
+
+VOL-BASE 的值是否以任何方式影响滴定曲线？这与强酸和强碱之间的关系不同吗？
+
+为什么碱分子不与水分子反应？有关系吗？
+
+## 试一试
+
+请注意，溶液的 pH 值似乎是平均值而不是常数。你能解释一下吗？
+
+用不同量的酸启动模型。这对滴定曲线有何影响？反应终点有什么不同吗？
+
+继续添加碱，直到 pH 值上升到大约 10。注意出现的海龟种类。 pH 值如何取决于存在的分子？
+
+请注意，在我们的模型中，酸分子根据 Ka 的值与碱分子发生反应。制作一个滑块，以便您可以更改此值。观察系统如何根据该变量发生变化。您的 pH 值在 0-14 之间吗？
+
+请注意，我们已经在过程窗口中为 Ka 建立了一个常量。当您用同名的滑块替换它时，您必须删除该常量。
+
+## 改一改
+
+请注意，该代码要求氢氧化物分子在与酸分子反应之前首先与格子的水合氢分子反应。这是因为氢氧化物和水合氢离子的反应比氢氧化物与弱酸的反应要快得多。逆向代码并观察对系统的影响。
+
+更改代码，使基海龟只与水合氢分子发生反应。观察到什么效果？您需要进行哪些额外的更改才能使 pH 值随着碱的添加而继续升高？
+
+增加离解百分比，以便在设置时生成更多的水合氢离子。这对 pH 值有何影响？你能预测强酸的 Ka 可能是多少吗？
+
+尝试使用下面列出的各种 pKa 值来确定每种弱酸的终点。
+
+<table border>
+<tr><th>弱酸<th>K a<th> pKa<th>卡为模型
+<tr><td>氰化氢<td>1.26×10 <sup>-9</sup><td> 9.1<td> 1.9
+<tr><td>乙酸<td>1.8×10 <sup>-5</sup><td> 4.8<td> 6.2
+<tr><td>氢气<sub>2</sub>二氧化碳<sub>3</sub><td> 3.16×10 <sup>-7</sup><td> 6.5<td> 4.5
+<tr><td>碳酸氢根<sub>2</sub>小时<td>2.0×10 <sup>-4</sup><td> 3.7<td> 7.3
+</table>
+
+## NetLogo 语言特性
+
+请注意此模型中使用的大量种类。由于弱酸性溶液中分子间相互作用复杂，因此有必要根据海龟的身份进行区分。这允许每个种类的海龟跟随独特的指令，从而使模型能够模拟分子相互作用的复杂性。
+
+## 引用和致谢
+
+Thanks to Mike Stieff for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stieff, M. and Wilensky, U. (2001).  NetLogo Weak Acid model.  http://ccl.northwestern.edu/netlogo/models/WeakAcid.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 Cite: Stieff, M. -->

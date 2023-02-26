@@ -1,0 +1,87 @@
+﻿## WHAT IS IT?
+
+A [kicked rotator](https://en.wikipedia.org/wiki/Kicked_rotator) is usually imagined as a particle constrained to move on a circle in a system with no friction or gravity that is periodically kicked. You can also think of it as a pendulum swinging with no gravity. The motion of this particle can be used to generate what is called the [Chirikov standard map](http://www.scholarpedia.org/article/Chirikov_standard_map), a tool in physics that can be used to describe many different dynamical systems from the motion of particles in accelerators to comet dynamics in solar systems.
+
+The particle starts out at a random position on the circle with a random initial momentum and is periodically kicked by a "homogeneous field". Think of it as gravity being turned on for just an instant. Depending on where on the circle the particle is located, the kick affects the motion of the particle differently. For low kick strengths, the particle motion is fairly regular. However at higher kick strengths, this seemingly simple system quickly becomes chaotic, making it a perfect candidate for studying [dynamical chaos](https://en.wikipedia.org/wiki/Dynamical_systems_theory#Chaos_theory).
+
+## HOW IT WORKS
+
+The particle is modeled by a single turtle that is connected to an invisible pivot-point using a link agent. This particle has two variables associated with it: angular position (where it is on the circle in radians) and momentum. The particle's momentum can be positive or negative, where positive momentum indicates counter-clockwise motion and negative momentum indicates clockwise motion.
+
+At each tick, the particle receives a kick. A kick is indicated by an arrow that is drawn where the kick occurred in the particle's motion and in the direction the force was applied.
+
+In order to calculate the momentum of the particle after a kick, we first calculate how 'effective' the kick is by multiplying it by the sine of the angular-position of the particle. We then add this effect to the previous momentum.
+
+## HOW TO USE IT
+
+Use the INITIAL-POSITION, INITIAL-MOMENTUM and KICK-STRENGTH sliders to define the initial conditions of the model. Or, you can use the RAND INITIAL CONDITIONS button to start with random initial conditions.
+
+After setting the parameters, click SETUP. Clicking GO will then start the model.
+
+The CONTINUOUS-MOTION? switch controls whether or not NetLogo will display the motion of the particle in between kicks. This significantly slows the model because it forces NetLogo to individually draw 10 frames of motion per 1 kick to the particle.
+
+## THINGS TO NOTICE
+
+Notice the 'Phase Portrait' plot on the left side of the model. This plot displays angular position (in radians) on the x-axis and momentum on the y-axis. This is how physicists depict trajectories of a system over time.
+
+Notice that changing the initial angular position and momentum of the particle but keeping the same kick-strength results in drastically different particle motion.
+
+## THINGS TO TRY
+
+See if you can make a rotator that travels the entire ring.
+
+Now see if you can make a rotator that doesn't complete an entire orbit.
+
+Try and create a rotator that has a circular phase portrait. What kind of motion does that rotator have?
+
+Try and create a rotator that has a phase portrait that is a periodic wave. What kind of motion does that rotator have?
+
+Try and create a rotator that has chaotic behavior.
+
+## EXTENDING THE MODEL
+
+Right now, the kick comes in from the right side of the model, forcing the particle to the left. Can you switch the direction of the kick so that it forces the particle to the right?
+
+See if you can create a plot that tracks the particle's centripetal force over time.
+
+## NETLOGO FEATURES
+
+The kicked rotator is a continuous phenomenon in that between kicks the particle is still in motion. However, in this mode the particle is kicked at every tick meaning we just calculate the new position and move the particle there. In essence, the particle is 'transporting' from one location to another. In order to emulate continuous motion, when the CONTINUOUS-MOTION? option is on, we ask NetLogo to break down a tick into 10 separate frames. The kick occurs only in the 1st frame but the motion of the particle is split evenly amongst all 10 frames. This way, we simulate continuous motion while still using 'discrete' time.
+
+Instead of manually drawing the string constricting the particle to the ring, we instead create a hidden 'pivot-point' turtle and then create a link between the particle and pivot-point. That way, NetLogo draws this connection for us!
+
+NetLogo's built in primitives for sine and cosine only accept degrees. The `rad-sin` and `rad-cos` reporters first convert a parameter from radians (the unit of choice for physics) to degrees and then uses `sin` and `cos`.
+
+Trigonometry in NetLogo is a little different from the mathematical standard. Imagine the four quadrants in the Cartesian plane. In NetLogo, quadrants 1 and 3 are the same, but quadrants 2 and 4 are switched. This is because, in NetLogo, the quadrants are considered clockwise oriented. In addition, a heading of 0 in NetLogo points the turtle due north, but in standard trig, that corresponds to  pi / 2 radians, whereas a heading of 0 in trig points due east. For this model, we don't use NetLogo trig, and instead use regular trig by explicitly calculating Cartesian coordinates instead of the usual turtle-based movements.
+
+## RELATED MODELS
+
+Take a look at the Kicked Rotators model to see what happens when you have many kicked rotators running in concert.
+
+## CREDITS AND REFERENCES
+
+This model was inspired by a model used in Dirk Brockmann's Complex Systems in Biology course at the Humboldt University of Berlin.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Brockmann, D., Bain, C., Hjorth, A. & Wilensky, U. (2016).  NetLogo Kicked Rotator model.  http://ccl.northwestern.edu/netlogo/models/KickedRotator.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2016 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2016 Cite: Brockmann, D., Bain, C., Hjorth, A. & Wilensky, U. -->

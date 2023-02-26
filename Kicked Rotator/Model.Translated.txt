@@ -1,0 +1,69 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+angular position
+### Chinese ***
+角度位置
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+momentum
+### Chinese ***
+势头
+
+### Source
+Phase Portrait
+### Chinese ***
+相像
+
+## Widgets
+### Source
+continuous-motion?
+### Chinese ***
+连续运动？
+
+### Source
+current angular position
+### Chinese ***
+当前角度位置
+
+### Source
+current momentum
+### Chinese ***
+目前的势头
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+initial-momentum
+### Chinese ***
+初始动量
+
+### Source
+initial-position
+### Chinese ***
+初始位置
+
+### Source
+kick-strength
+### Chinese ***
+踢力
+
+### Source
+random initial conditions
+### Chinese ***
+随机初始条件
+
+### Source
+setup
+### Chinese ***
+设置
+

@@ -1,0 +1,7 @@
+﻿## What is it?
+This is an empty template for creating a NetLogo model - without comments!
+
+## How to use it?
+Open the model, nothing will be there - because this is the "no comment" version of template! Open the code panel to make your own model.
+
+**Any questions? Feel free to leave it on the comment area!**

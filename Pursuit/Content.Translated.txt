@@ -1,0 +1,214 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+在这个模型中有一只领导海龟和一组跟随海龟。找点乐子 - 隐藏领导者并尝试猜测它移动的路径。观察追随者可以为您提供有关领导者路径的线索。
+
+## 怎么这个模型是怎么运行的
+
+领导者根据预先选择的公式沿着路径移动，例如 y = x ^ 2。
+
+领导者从世界的左边缘开始。
+
+引线始终沿 x 轴从左向右移动一个单位增量。但是请注意，对于多个函数，该函数会按某些因素进行缩放，以使其图形很好地适应世界。
+
+领导者的 y 坐标基于所选公式和当前 x 坐标。例如，如果当前公式为 y = x ^ 2 并且领导者当前的 xcor 值为 -3，则 ycor 值将设置为 9。
+
+每个跟随者转身面对领导者，然后向前移动一个固定的量。
+
+## 如何这个模型怎么用
+
+使用 NUM-FOLLOWERS滑块来选择追随领导者的追随者数量。如果恰好选择了四个追随者，他们将被放置在世界的四个角落。如果选择了不同的数字，追随者将被放置在世界上的随机位置。
+
+使用 STEP-SIZE滑块来决定跟随者在领导者的每一步之后从当前位置移动多远。
+
+当您按下 SETUP 时，出现的浅灰色线条是 x 轴和 y 轴。
+
+领导开关：
+表演负责人？使领导者显示或隐藏。必须在按下 SETUP 之前设置此开关。
+当开关设置为打开时，领导者将可见。
+当开关设置为关闭时，领导者将被隐藏。
+
+SHOW-TRAIL?，当打开时，导致领导者在其公式确定的每个位置留下一个标记。这个开关可以在追逐过程中随时打开和关闭。
+当开关设置为打开时，轨迹将可见。
+当开关设置为关闭时，路径将被隐藏。
+
+完成上述所有选择后，按 RANDOM 或任何功能按钮。这将创建领导者和选定数量的追随者。
+
+RANDOM 为领导者选择一个随机函数跟随，最好与 SHOW-LEADER? 一起使用。和表演？关闭，以便可以根据追随者的动作猜测功能。
+
+其他按钮为跟随者选择一个特定的功能。
+
+按 GO-ONCE 使领导者将其 xcor 值增加 1，并使追随者向领导者迈出一步。
+
+按 GO 使领导者和追随者连续移动。
+要停止它们，请再次按 GO 按钮。
+
+SLOWDOWN滑块控制所有海龟移动的速度。
+
+模型完成后按 REVEAL 查看领导者的路径是什么，如果 SHOW-TRAIL？被关闭。您可以使用它来检查您对函数是什么的猜测。
+
+## 看一看
+
+尝试从步长为 1 的 4 个追随者开始。不要显示领导者或领导者的踪迹。
+
+使用设置使世界是正方形的。
+
+按 RANDOM 然后按 GO。
+
+看看你是否能通过观察每个追随者的路径猜出领导者使用的公式。
+
+对于接下来的每个问题，请考虑后续问题“为什么或为什么不？”和“你怎么知道？”
+
+领导者的速度似乎会随着时间而改变吗？
+
+追随者的速度似乎会随着时间而改变吗？
+
+所有追随者都以相同的速度旅行吗？
+
+根据每个追随者的路径，你能说出领导者的什么公式？
+
+每个追随者路径的哪些特征为您提供有关领导者公式的信息？您觉得以下哪些特征最有帮助？为什么？
+
+要更改领导者的公式：
+许多公式已存储在该模型的过程中。要明确激活给定的公式，请选择所需公式的按钮而不是 RANDOM。
+
+有关如何将您自己的公式添加到模型的说明，请参阅改一改部分。
+
+每个追随者的路径和领导者的踪迹都有几个值得注意的特征。
+
+从动路径斜率：
+如果路径的斜率在增加，这意味着什么？
+如果路径的斜率在减小，这意味着什么？
+如果路径的一部分比另一部分的坡度更陡，这意味着什么？
+如果路径的斜率恒定，这意味着什么？
+
+要考虑路径的坡度，请考虑路径看起来是“上坡”还是“下坡”，并考虑“山坡”是陡峭还是平坦。
+
+从动路径凹度：
+如果路径有一个部分是凹的，这意味着什么？
+如果路径有一段向下凹陷，这意味着什么？
+如果路径包含这两种类型的部分，这意味着什么？
+如果路径既没有上凹的部分也没有下凹的部分，这意味着什么？
+
+向上凹的路径的形状类似于直立咖啡杯的一部分。
+下凹的路径的形状类似于倒置的咖啡杯的一部分。
+
+路径之间的关系：
+路径是否对称？你希望他们这样做吗？为什么或者为什么不？
+
+领导者和追随者之间的距离：
+一旦确定了领导者的公式，就可以在领导者的踪迹打开的情况下运行模拟。 （请注意，在试一试部分还有其他建议可以验证您的答案。确保您在展示踪迹之前至少尝试了其中一些。如果您在真正确定自己是正确的之前就展示了踪迹，您可能最终破坏你所有的乐趣 - 一旦你看到领导者的踪迹就没有回头路了！）
+
+找到一条跟随者似乎接近领导者的路径，只是让领导者似乎加速并逃离跟随者。
+
+为什么会这样？对于发生这种情况的公式或关系，您可以做出哪些概括？
+
+领导者足迹之间的距离与领导者的感知速度有何关系？
+
+领导者标记接近度：
+根据领导者所走的路径，领导者的踪迹可能不会均匀分布。
+
+当台阶间隔均匀时，这意味着什么？
+当台阶间距不均匀时，这意味着什么？
+当标记靠得更近时，这意味着什么？
+当标记相距较远时，这意味着什么？
+
+## 试一试
+
+尝试在按下 SETUP 之后但在按下 GO 之前将追随者移动到特定位置。预测不同地点的帮助。
+
+如果追随者从以下任何位置开始，您可以学到什么？
+- 沿着世界的右边
+- 沿着世界的左边缘
+- 沿着世界的顶端
+- 沿着世界的底部边缘
+- 沿 x 轴
+- 沿 y 轴
+- 在原点
+
+对追随者最有帮助的第一个位置是什么？ （当然，在领导者之上的位置是不可能的！）
+
+对于单个关注者或一组关注者，最有帮助的跟进地点是什么？
+
+想出一个放置追随者的策略，这样你就可以相当快地确定领导者的路径。描述你的策略。
+
+您可以使用命令中心或海龟窗口来移动随从。 leader 是海龟 0，followers 都是 who &gt; 0 的海龟 。
+
+尝试增加关注者的数量。
+（即使你认为你已经弄清楚了公式，在显示领导者或领导者的踪迹之前尝试使用更大的 NUM-FOLLOWERS 值。）
+为什么使用较大的 NUM-FOLLOWERS 值会更容易猜出领导者的公式？
+
+尝试增加追随者的 STEP-SIZE。
+（即使你认为你已经弄清楚了公式，在显示领导者或领导者的踪迹之前尝试使用更大的 STEP-SIZE 值。）
+为什么使用较大的 STEP-SIZE 值更容易猜出领导者的公式？
+
+以上讨论都涉及尝试猜测领导者的路径。或者，您可以知道领导者的公式并尝试猜测追随者的路径。
+
+如果您知道领导者的公式并试图猜测追随者路径的模式，请确保在运行模拟之前记录您的猜测。将您的预测结果与实际结果进行比较。
+- 是什么推理让你做出正确的预测？
+- 您所做的哪些假设需要修改？
+
+## 改一改
+
+要添加您自己的公式，您需要向模型添加一个新的 Leader Procedure（其他的在 Code 选项卡的底部声明。
+
+将您的公式添加到当前列表。
+- 在这组命令中，您可能需要缩放 y 轴以防止引线缠绕。 （例如，参见三次函数。）
+- 如果您的公式具有未定义的值，则必须限制领导者的域。 （例如，参见对数函数。）
+- 将公式名称添加到 MOVE-LEADER过程并添加一个按钮供选择。
+- 增加 RANDOM 按钮代码中“random”之后的数字，将您的功能添加到 RANDOM 将选择的可能功能列表中。
+
+在此模拟中，领导者仅使用整数 x 坐标。如果领导者沿着较小的间隔移动，对于哪些公式，结果可能会有所不同？
+
+如果跟随者的 STEP-SIZE 始终设置为等于领导者在其最近一步中移动的距离，会发生什么情况？
+
+调整过程，使矩形世界不会导致意外的环绕。
+
+这些变化是否会影响对上述任何问题的回答？
+
+创建领导者功能并选择一个跟随者位置以在跟随者的路径中获得以下形状：
+- 具有正斜率的直线
+- 一条负斜率的直线
+- 一条水平线
+- 一个循环
+- 一个圆圈
+- 有一个“驼峰”的曲线
+- 有两个“驼峰”的曲线
+- 具有三个“驼峰”的曲线
+- 一条有 n 个“驼峰”的曲线
+
+## NetLogo 语言特性
+
+乌龟笔用于绘制追随者的路径。
+
+`stamp` 命令用于绘制领导者的路径。
+
+`face` 命令用于定位追随者。
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Pursuit model.  http://ccl.northwestern.edu/netlogo/models/Pursuit.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 -->

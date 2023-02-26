@@ -1,0 +1,82 @@
+﻿## WHAT IS IT?
+
+This model is based on the Termites model.  In Termites, the agents follow a set of simple rules that results in them moving all of the wood chips into a single pile.  Painted Desert Challenge adds the dimension of multiple types (colors) of wood chips.  The challenge is to get the termites to sort each chip type into its own pile.
+
+## HOW IT WORKS
+
+Each termite starts wandering randomly. If it bumps into a wood chip, it picks the chip up, and continues to wander randomly. When it bumps into another wood chip of that color, it finds a nearby empty space and puts its wood chip down.  With these simple rules, the woodchips eventually end up in piles sorted by color.
+
+## HOW TO USE IT
+
+Click the SETUP button to set up the termites (white) and wood chips (all other colors). Click the GO button to start the simulation.  A termite that is carrying a wood chip turns the color of the chip.
+
+The NUMBER slider controls the number of termites. (Note: Changes in the NUMBER slider do not take effect until the next setup.) The DENSITY slider controls the initial density of wood chips.  The SIM-DELAY slider can be used to slow down the speed of the simulation. The PILES slider allows the user sets the number of different chip types (i.e., the number of different piles to be made).
+
+## THINGS TO NOTICE
+
+As piles of wood chips begin to form, the piles are not "protected" in any way. That is, termites sometimes take chips away from existing piles. That strategy might seem counter-productive. But if the piles were "protected", you would end up with lots of little piles, not one big one.
+
+The final piles are roughly round.  Why is this?  What other physical situations also produce round things?
+
+In general, the number of piles decreases with time. Why?  Some piles disappear, when termites carry away all of the chips. And there is no way to start a new pile from scratch, since termites always put their wood chips near other wood chips. So the number of piles must decrease over time. (The only way a "new" pile starts is when an existing pile splits into two.)
+
+How do the termites know which color chip to take?  This model assigns to each termite a variable that tells it which color chip to pick up. But, why do the termites sort the different types into discrete piles? Why don't they just make mixed groupings of chips?
+
+This project is a good example of a "decentralized" strategy.  There is no termite in charge, and no special pre-designated site for the piles. Each termite follows a set of simple rules, but the colony as a whole accomplishes a rather sophisticated task.
+
+## THINGS TO TRY
+
+Do the results change if you use just a single termite?  What if you use several thousand termites?
+
+Try changing the `fd 10` command in the find-new-pile method.  How does it affect the termites' behavior if the `fd 10` becomes a `fd 1`, or is taken out altogether?
+
+When there are just two piles left, which of them is most likely to "win" as the single, final pile? How often does the larger of the two piles win? If one pile has only a single wood chip, and the other pile has the rest of the wood chips, what are the chances that the first pile will win?
+
+## EXTENDING THE MODEL
+
+Currently, the each termite "belongs" to a chip type.  Can you extend the model so that the a termite can pick up chips of any type, and yet still sort the chips into discrete piles?
+
+Plot the number of piles, or their average size, or the number of termites carrying wood chips, as the model runs.
+
+## NETLOGO FEATURES
+
+Notice that the wood chips do not exist as objects. They are just represented as colors in the patches. The termites update the patch colors as they pick up and put down the wood chips. In effect, the screen is being used as the data structure. This strategy is useful in many NetLogo programs.
+
+## RELATED MODELS
+
+ * Termites
+ * Shepherds
+
+## CREDITS AND REFERENCES
+
+Resnick, M. & Wilensky, U. (1998). Diving into Complexity: Developing Probabilistic Decentralized Thinking through Role-Playing Activities. Journal of Learning Sciences, Vol. 7, No. 2.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Painted Desert Challenge model.  http://ccl.northwestern.edu/netlogo/models/PaintedDesertChallenge.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Wilensky, U. (1993). Thesis - Connected Mathematics: Building Concrete Relationships with Mathematical Knowledge. Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.  Adapted to NetLogo, 2001, as part of the Participatory Simulations Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 Wilensky -->

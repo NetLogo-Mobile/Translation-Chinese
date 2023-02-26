@@ -1,0 +1,139 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+Aquatic
+### Chinese ***
+水
+
+### Source
+Average Eye Size
+### Chinese ***
+平均眼睛大小
+
+### Source
+Avg Eye Size
+### Chinese ***
+平均眼睛大小
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Eye Size
+### Chinese ***
+眼睛大小
+
+### Source
+Eye Size Histogram
+### Chinese ***
+眼睛大小直方图
+
+### Source
+Fish
+### Chinese ***
+鱼
+
+### Source
+Food
+### Chinese ***
+食物
+
+### Source
+Food Pref
+### Chinese ***
+食物偏好
+
+### Source
+Food Preference Histogram
+### Chinese ***
+食物偏好直方图
+
+### Source
+Land Mobility
+### Chinese ***
+陆地机动性
+
+### Source
+Land Mobility Histogram
+### Chinese ***
+土地机动性直方图
+
+### Source
+Number of Fish
+### Chinese ***
+鱼的数量
+
+### Source
+Population
+### Chinese ***
+人口
+
+### Source
+Population Size
+### Chinese ***
+人口规模
+
+### Source
+Terrestrial
+### Chinese ***
+地面
+
+## Widgets
+### Source
+energy-gain-from-food
+### Chinese ***
+从食物中获取能量
+
+### Source
+eye-cost
+### Chinese ***
+眼睛成本
+
+### Source
+food-replenish-rate
+### Chinese ***
+食物补充率
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+initial-number-fish
+### Chinese ***
+初始数字鱼
+
+### Source
+initial-number-food
+### Chinese ***
+初始数字食物
+
+### Source
+max-eye-size
+### Chinese ***
+最大眼睛尺寸
+
+### Source
+mutation-rate
+### Chinese ***
+突变率
+
+### Source
+reproduction-rate
+### Chinese ***
+繁殖率
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+show-vision?
+### Chinese ***
+显示视觉？
+

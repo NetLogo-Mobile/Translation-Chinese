@@ -1,0 +1,81 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+该模型说明了肿瘤的生长及其如何抵抗化学治疗。肿瘤由两种细胞组成：干细胞（蓝海龟）和临时细胞（所有其他海龟）。
+
+## 怎么这个模型是怎么运行的
+
+在有丝分裂期间，干细胞可以不对称或对称分裂。在不对称有丝分裂中，两个子细胞中的一个仍然是干细胞，取代了它的母细胞。所以干细胞实际上永远不会死亡——它在每次分裂后都会再生。另一个子细胞变成一个向外移动的临时细胞。
+
+年轻的短暂细胞可以分裂，繁殖其他短暂细胞。瞬时细胞在一定年龄停止分裂，颜色从红色变为白色再变为黑色，最终死亡。
+
+一个干细胞也可以对称地分裂成两个干细胞（蓝海龟）。在本例中，原始干细胞仅对称分裂一次。第一个干细胞保持静止，但第二个干细胞向右移动。这种细胞进入远处并产生另一个肿瘤集落的活动称为转移。请注意，转移是红色的。它由年轻时死亡的细胞组成，当它们仍然是红色时，而不是像静态肿瘤那样以黑点结束。随着疾病的进展，细胞死亡的时间越来越短。
+
+## 如何这个模型怎么用
+
+设置：清除世界并创建两个蓝色肿瘤（癌）干细胞。一个单元格保持不动，另一个单元格向右移动。
+GO：运行模拟。
+杀死瞬态细胞：杀死小于 10 个时间步的瞬态细胞。
+杀死干细胞：杀死干细胞。如果相邻的 KILL-MOVING-CELL 开关设置为 OFF，则原件将被清除。如果开关设置为 ON，则移动的干细胞将被消除。
+KILL-MOVING-CELL：确定按下 KILL STEM CELL 按钮时哪个干细胞被杀死。
+LEAVE-TRAIL：如果打开，细胞会追踪它们的路径；如果它关闭，他们就不会。
+CELL-COUNT：显示活细胞总数。
+活细胞图：图表活细胞的数量。
+
+## 看一看
+
+首先，注意蓝点。它代表已转化为肿瘤干细胞的正常干细胞。将“leave-trail”开关设置为 On，然后单击“go”。当干细胞产生可自我繁殖的临时细胞时，肿瘤就形成了。它长到一定大小。随着它的增长，一个凸起出现在右侧。这是一种肿瘤生长，由干细胞的对称有丝分裂引起。副产物将变成转移并长到偏远地区。
+
+一段时间后，肿瘤和转移似乎达到了它们的最终大小，似乎没有发生任何有趣的事情。这说明了肿瘤如何以实体细胞团的形式呈现给医生。实际上，这种看似坚实的物质掩盖了活跃的细胞更新。要显示它，将 leave-trail 开关设置为 Off，单击 SETUP，然后单击 GO 再次运行模拟。
+
+放慢模型，以便您可以跟随各个步骤。将速度滑块向左移动，单击 SETUP 和 GO，观察蓝色干细胞。它分裂成两个蓝色干细胞。一个保持静止，另一个向右移动。
+
+查看静态干细胞（蓝色）。它种类红细胞，这些红细胞会随着年龄的增长而向外移动并改变颜色。年轻时，它们是红色的，会产生更多的临时细胞。然后他们变白，然后变黑，然后死去。
+
+## 试一试
+
+尝试一种处理方法：在模型运行时单击“kill transitory cells”按钮。这模拟了用化学主体进行的处理。该主体消除了分裂的年轻（红色）细胞，并保留了较老的细胞。请注意，肿瘤缩小并再次生长。再次点击按钮继续这个“化疗”并观看图表。重复治疗几次，直到你明白失败的原因。
+
+大多数被称为 M 毒药和 S 毒药的化疗药物会抑制细胞分裂，但通常不会导致细胞死亡。因此，化学疗法可以表示为杀死年轻（红色）临时细胞，因为只有年轻细胞分裂。较老的、不分裂的暂时性细胞不受影响；他们继续衰老并最终去世。
+
+问题是干细胞维持肿瘤并传播其转移。也称为克隆形成细胞，干细胞通常对化学疗法具有抗性。它们只能用高剂量的化学物质来消除，这会危及健康的干细胞。化学药物的治疗范围极其狭窄。也就是说，它们造成的伤害与好处大致相同。
+
+让肿瘤再次生长。单击“杀死移动的干细胞”并继续运行模型。右边的蓝色干细胞消失了。它的后代活得更长一点，然后死去。现在点击“kill original stem cell”，观察肿瘤逐渐消失，因为没有新细胞产生，现有细胞继续老化直至死亡和消失。
+
+任何问题？在提问之前，继续探索模型，直到您掌握了它的行为。该模型揭示了一个难以理解的隐藏维度。它是体内组织（和肿瘤）的时间维度。
+
+## 改一改
+
+您会建议哪些替代疗法？您将如何在这里为它们建模？
+
+## 引用和致谢
+
+The original StarLogoT Tumor model was contributed in 1997 by Gershom Zajicek M.D., Professor of Experimental Medicine and Cancer Research at The Hebrew University-Hadassah Medical School, Jerusalem. It was adapted and converted to NetLogo by Wilensky and members of the CCL in 1998.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Zacijek, G. and Wilensky, U. (1998).  NetLogo Tumor model.  http://ccl.northwestern.edu/netlogo/models/Tumor.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1998 2001 Cite: Zacijek, G. -->

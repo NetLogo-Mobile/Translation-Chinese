@@ -1,0 +1,79 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+avg
+### Chinese ***
+平均值
+
+### Source
+best
+### Chinese ***
+最好的
+
+### Source
+diversity
+### Chinese ***
+多样性
+
+### Source
+Diversity Plot
+### Chinese ***
+多样性图
+
+### Source
+Fitness Plot
+### Chinese ***
+健身情节
+
+### Source
+gen #
+### Chinese ***
+创#
+
+### Source
+raw fitness
+### Chinese ***
+原始健身
+
+### Source
+worst
+### Chinese ***
+最差
+
+## Widgets
+### Source
+crossover-rate
+### Chinese ***
+交叉率
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+mutation-rate
+### Chinese ***
+突变率
+
+### Source
+plot-diversity?
+### Chinese ***
+情节多样性？
+
+### Source
+population-size
+### Chinese ***
+人口规模
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+step
+### Chinese ***
+步
+

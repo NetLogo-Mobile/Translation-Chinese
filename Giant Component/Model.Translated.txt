@@ -1,0 +1,64 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+Connections per node
+### Chinese ***
+每个节点的连接数
+
+### Source
+Fraction in giant component
+### Chinese ***
+巨大成分中的分数
+
+### Source
+Growth of the giant component
+### Chinese ***
+巨大成分的增长
+
+### Source
+size
+### Chinese ***
+尺寸
+
+### Source
+transition
+### Chinese ***
+过渡
+
+## Widgets
+### Source
+Giant component size
+### Chinese ***
+巨大的组件尺寸
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+go once
+### Chinese ***
+去一次
+
+### Source
+layout?
+### Chinese ***
+布局？
+
+### Source
+num-nodes
+### Chinese ***
+节点数
+
+### Source
+redo layout
+### Chinese ***
+重做布局
+
+### Source
+setup
+### Chinese ***
+设置
+

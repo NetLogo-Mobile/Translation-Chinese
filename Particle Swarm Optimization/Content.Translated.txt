@@ -1,0 +1,107 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+粒子群优化（PSO）是机器学习领域的一种搜索/优化技术。尽管 PSO 通常用于具有多个维度的搜索空间，但为了更容易可视化，此模型演示了它在二维空间中的使用。
+
+正式地说，有一些未知函数 f(x,y)，我们试图找到 x 和 y 的值，以使 f(x,y) 最大化。 f(x,y) 有时被称为适应度函数，因为它决定了每个粒子在空间中的当前位置有多好。适应度函数有时也称为“适应度景观”，因为它可能由许多山谷和丘陵组成。
+
+一种方法（随机搜索）是继续随机选择 x 和 y 的值，并记录找到的最大结果。对于许多搜索空间来说，这效率不高，因此使用了其他更“智能”的搜索技术。粒子群优化就是这样一种技术。粒子被放置在搜索空间中，并根据考虑到每个粒子的个人知识和全局“群体”知识的规则在空间中移动。通过它们的运动，粒子发现了特别高的 f(x,y) 值。
+
+该模型非常基于 Kennedy 和 Eberhart 的原始论文中描述的算法（参见下面的参考资料）。然而，这个模型是为了展示原理，而不是一个精确的复制品。一些改动是必要的，以说明使用环形（环绕）世界，并增强群体运动的可视化。此外，被优化的函数是离散的（基于值网格），而不是连续的。
+
+## 怎么这个模型是怎么运行的
+
+每个粒子在搜索空间中都有一个位置 (xcor, ycor) 和它在该空间中移动的速度 (vx, vy)。粒子具有一定的惯性，这使它们沿与之前移动的相同方向移动。
+它们也有加速度（速度的变化），这取决于两个主要因素。
+
+1) 每个粒子都被吸引到它之前在其历史上个人找到的最佳位置（个人最佳位置）。
+
+2) 每个粒子都被吸引到*任何*粒子在搜索空间中找到的最佳位置（全局最佳）。
+
+粒子在每个方向上被拉动的强度取决于参数ATTRACTION-TO-PERSONAL-BEST 和 ATTRACTION-TO-GLOBAL-BEST。随着粒子远离这些“最佳”位置，吸引力变得更强。还有一个关于粒子被拉向每个位置的程度的随机因素。
+
+在此模型中，粒子群试图优化一个函数，该函数由视图中显示的离散单元格网格中的值确定。景观是通过为每个网格单元随机分配值，然后执行扩散以平滑这些值来创建的，从而产生许多局部最小值（山谷）和最大值（山丘）。选择此功能仅用于说明目的。作为 PSO 实际应用的一个更合理的例子，变量 (x,y,z,...) 可能对应于股票市场预测模型的参数，而函数 f(x,y,z,... ) 可以评估模型在历史数据上的性能。
+
+该模型一直运行到群中的某个粒子找到“真实”最佳值（即 1.00）为止。
+
+## 如何这个模型怎么用
+
+按 SETUP 初始化适应度景观并将粒子随机放置在空间中。每次按下 SETUP 时，都会创建一个不同的随机景观。
+
+按 STEP（一步）或 GO 运行粒子群优化算法。
+
+LANDSCAPE-SMOOTHNESS滑块确定按下 SETUP 按钮时创建的景观的平滑程度。
+
+POPULATION-SIZE滑块控制使用的粒子数。
+
+ATTRACTION-TO-PERSONAL-BEST滑块确定每个粒子对它先前找到最高值（在它自己的历史中）的位置的吸引力强度。
+
+ATTRACTION-TO-GLOBAL-BEST滑块决定了每个粒子对任何群体成员发现的最佳位置的吸引力强度。
+
+PARTICLE-INERTIA滑块控制粒子在相同方向上保持移动的量（与被吸引力拉动相反）。
+
+PARTICLE-SPEED-LIMIT滑块控制每个粒子的最大移动速率（在 x 或 y 方向）。尽管此功能并不总是
+
+TRAILS-MODE 选择器允许您选择粒子路径（轨迹）的可视化类型。 “痕迹”意味着粒子将无限期地在视图上留下它们的路径。 “Tails”表示只显示他们最后迈出的一步。 “无”意味着不会显示任何粒子路径。请注意，在再次运行 GO（或 STEP）之前，显示不会更新。
+
+HIGHLIGHT-MODE 选择器让您可以看到搜索空间中任何位置的最佳位置（“真实最佳”）或蜂群找到的最佳位置（“最佳找到”）。请注意，在再次运行 GO（或 STEP）之前，显示不会更新。
+
+BEST-VALUE-FOUND 监视器显示到目前为止蜂群的“全局最佳”值。也就是说，任何粒子已经找到的最佳值是多少。它可以达到的最大值为 1.0，此时模拟将停止。
+
+## 看一看
+
+您经常会看到粒子在大致椭圆形的路径中行进。你为什么认为这是？ （考虑影响每个粒子速度的主要因素。）
+
+有时群体会快速找到“完美”（值 = 1.0）的解决方案，而其他时候它会“卡在”搜索空间的错误区域，看起来可能永远找不到完美的解决方案。当搜索空间中某处存在更好的“全局最大值”时，这种陷入“局部最大值”附近的概念是许多优化技术（爬山程序、遗传算法、模拟退火）中可能出现的常见问题。 PSO 算法的一种变体使用粒子之间的排斥力来帮助它们在空间中分散，并且不太可能全部被吸引到次优值。
+
+## 试一试
+
+将 HIGHLIGHT-MODE 设置为“Best found”，并多次运行模拟。 “最佳发现”位置多久更改一次？是在模拟开始时更频繁地更改，还是在模拟接近尾声时更频繁地更改？
+
+尝试改变 PARTICLE-INERTIA滑块。当它为 0.0 时，粒子仅根据它们“个人最佳”和“全局最佳”的位置移动，而不是它们的移动历史。当它为 1.0 时，粒子速度永远不会改变，从而导致直线运动。你能在这些极端值之间的某处找到粒子惯性的最佳值吗？您认为最佳值是否取决于其他因素，例如人口规模、景观的平滑度或吸引力参数？
+
+## 改一改
+
+在粒子之间添加排斥力，试图帮助防止它们过早地聚集在搜索空间的一小块区域。
+
+在此模型中探索的搜索空间毫无意义——只是经过平滑处理的随机值景观。将其更改为更有意义的内容。
+
+如果正在优化的功能随时间变化会发生什么？也就是说，修改模型，使粒子群试图在网格单元的值不断变化的动态环境中找到最佳解决方案。如果变化没有发生得太快，蜂群在穿过空间时能否跟随最大周围？
+
+PSO 还有许多其他变体。尝试在网上搜索以了解更多关于其中一些的信息，或者发明您自己的。
+
+## NetLogo 语言特性
+
+使用内置 NetLogo 基元的组合可以避免环形世界中棘手的“边缘情况”。在决定每个粒子的速度应该如何变化时，我们需要一些方法来获得从每个粒子的位置到世界上另一个位置（个人最佳或全局最佳）的向量。在无界二维空间中，可以通过减去“(x-goal - xcor)”和“(y-goal - ycor)”来计算此向量。然而，这在我们的环绕（环形）世界中不起作用。 （为什么不？）。因此，我们使用 facexy 将海龟指向正确的方向，然后 dx 和 dy 一起给我们一个指向目标的单位向量，我们可以将它们乘以该位置的 distancexy，得到正确长度的向量。
+
+## 相关模型
+
+Simple Genetic Algorithm, Artificial Neural Net, Perceptron, Hill Climbing Example (Code Example).
+
+## 引用和致谢
+
+Based on the algorithm presented in the following paper: Kennedy, J. & Eberhart, R. (1995), 'Particle swarm optimization', Neural Networks, 1995. Proceedings., IEEE International Conference on 4.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stonedahl, F. and Wilensky, U. (2008).  NetLogo Particle Swarm Optimization model.  http://ccl.northwestern.edu/netlogo/models/ParticleSwarmOptimization.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2008 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2008 Cite: Stonedahl, F. -->

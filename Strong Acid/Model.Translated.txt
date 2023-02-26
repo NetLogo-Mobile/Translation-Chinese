@@ -1,0 +1,59 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+pH
+### Chinese ***
+酸碱度
+
+### Source
+pH Curve
+### Chinese ***
+酸碱度曲线
+
+### Source
+Titration Curve
+### Chinese ***
+滴定曲线
+
+### Source
+Volume base
+### Chinese ***
+卷基
+
+## Widgets
+### Source
+add-base
+### Chinese ***
+添加基础
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+pH
+### Chinese ***
+酸碱度
+
+### Source
+record pH
+### Chinese ***
+记录酸碱度
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+vol-acid
+### Chinese ***
+挥发酸
+
+### Source
+vol-base
+### Chinese ***
+卷基
+

@@ -1,0 +1,115 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+这是一个非常小的神经网络模型。它基于感知器模型，但该网络不是一层，而是两层“感知器”。此外，这些层以非线性方式相互激活。这两个添加意味着它可以学习单层无法学习的操作。
+
+网络的目标是从最左侧的输入节点获取输入，并在最右侧的输出节点中对这些输入进行适当分类。它通过给出大量示例并尝试对它们进行分类，并让主管告诉它分类是对还是错来做到这一点。基于此信息，神经网络更新其权重，直到它正确地正确分类所有输入。
+
+## 怎么这个模型是怎么运行的
+
+最初，网络链上的权重是随机的。
+
+左边的节点称为输入节点，中间的节点称为隐藏节点，右边的节点称为输出节点。
+
+输入节点的激活值是网络的输入。隐藏节点的激活值等于输入节点的激活值，乘以它们的链权重，加在一起，并通过 [sigmoid 函数](https://en.wikipedia.org/wiki/Sigmoid_function)。类似地，输出节点的激活值等于隐藏节点的激活值乘以链权重，相加后通过 sigmoid 函数。如果输出节点的激活值大于 0.5，则网络输出为 1，如果小于 0.5，则为 0。
+
+sigmoid 函数将负值映射到 0 到 0.5 之间的值，并将正值映射到 0.5 到 1 之间的值。值在 0 到 1 之间非线性增加，并在 0.5 处急剧过渡。
+
+为了让网络学习任何东西，它需要被训练。在此示例中，使用的训练算法称为反向传播算法。它由两个阶段组成：传播和反向传播。上面描述了传播阶段：它将输入节点的激活值传播到网络的输出节点。
+在反向传播阶段，产生值中的误差通过网络逐层传回。
+
+为了进行反向传播阶段，首先将误差计算为正确（预期）输出与网络实际输出之间的差异。由于连接到输出的所有隐藏节点都会导致错误，因此需要更新所有权重。为此，我们需要计算每个节点对输出的整体误差的贡献程度。这是通过计算每个节点的局部梯度来完成的，不包括输入节点（因为输入是我们提供给网络的激活，因此没有与之相关的错误）。
+
+局部梯度是逐层计算的。对于输出节点，它是误差与将激活值传递给激活函数的导数的结果的乘积。因为在这个模型中，激活函数是 sigmoid 函数，所以它的简化导数最终是：
+
+激活值 * (1 - 激活值)
+
+如果我们希望使用不同的激活函数，我们将使用该函数的导数。
+
+对于每个隐藏节点，局部梯度计算如下：
+
+1.对于每个连接到隐藏节点的输出节点，将其局部梯度乘以连接它们的链的权重；
+
+2. 总结上一步的所有结果；
+
+3. 将该总和乘以将隐藏节点的激活值传递给激活函数的导数的结果。
+
+为了更新每个链的权重，我们将学习率乘以 end2 的局部梯度（如果链将隐藏节点与输出节点连接起来，这将是输出节点）和 end1 的激活值`（这将是隐藏节点，以防链将隐藏节点与输出节点连接起来）。然后将结果添加到旧权重。
+
+对于向网络显示的每个示例，重复传播和反向传播阶段。
+
+## 如何这个模型怎么用
+
+要使用它，请按 SETUP 创建网络并将权重初始化为小的随机数。
+
+按 TRAIN ONCE 运行一次训练。在此时期向网络呈现的示例数量由 EXAMPLES-PER-EPOCH滑块控制。
+
+按 TRAIN 持续训练网络。
+
+在视图中，链的大小越大，它的权重就越大。如果链为红色，则它具有正权重。如果链是蓝色的，那么它的权重是负的。
+
+如果显示权重？打开然后链将标有它们的权重。
+
+要测试网络，请设置 INPUT-1 和 INPUT-2，然后按 TEST 按钮。将出现一个对话框，告诉您网络是否能够正确分类您提供的输入。
+
+LEARNING-RATE 控制神经网络从任何一个示例中学习的程度。
+
+TARGET-FUNCTION 允许您选择网络试图解决的功能。
+
+## 看一看
+
+与感知器模型不同，该模型能够学习 OR 和 XOR。它能够学习 XOR，因为隐藏层（中间节点）和非线性激活允许网络绘制两条线，将输入分为正区域和负区域。具有线性激活的感知器只能绘制一条线。结果，其中一个节点将学习 OR 函数，如果输入中的任何一个都应该打开，另一个节点将学习一个排除函数，如果两个输入都应该打开（但加权消极）。
+
+然而，与感知器模型不同，神经网络模型需要更长的时间来学习任何函数，包括简单的 OR 函数。这是因为它还有很多东西需要学习。感知器模型必须学习三种不同的权重（输入链和偏置链）。神经网络模型必须学习十个权重（4 个输入到隐藏层权重，2 个隐藏层到输出权重和三个偏置权重）。
+
+## 试一试
+
+操纵学习率参数。你能加快或放慢训练速度吗？
+
+在运行过程中多次在 OR 和 XOR 之间来回切换。为什么网络运行时间越长，网络返回0错误的时间越短？
+
+## 改一改
+
+除了 OR 和 XOR 之外，为网络添加额外的学习功能。这可能需要您向网络添加额外的隐藏节点。
+
+使用梯度下降的反向传播作为真实神经元的模型被认为有些不切实际，因为在真实的神经元系统中，输出节点无法将其误差传回。你能实施另一个更有效的权重更新规则吗？
+
+## NetLogo 语言特性
+
+该模型使用链原语。它还大量使用列表。
+
+## 相关模型
+
+This is the second in the series of models devoted to understanding artificial neural networks.  The first model is Perceptron.
+
+## 引用和致谢
+
+The code for this model is inspired by the pseudo-code which can be found in Tom M. Mitchell's "Machine Learning" (1997).
+
+See also Haykin (2009) Neural Networks and Learning Machines, Third Edition.
+
+Thanks to Craig Brozefsky for his work in improving this model and to Marin Aglić Čuvić for info tab improvements.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Rand, W. and Wilensky, U. (2006).  NetLogo Artificial Neural Net - Multilayer model.  http://ccl.northwestern.edu/netlogo/models/ArtificialNeuralNet-Multilayer.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2006 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2006 Cite: Rand, W. -->

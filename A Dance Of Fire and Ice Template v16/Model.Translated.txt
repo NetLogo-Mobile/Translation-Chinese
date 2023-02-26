@@ -1,0 +1,68 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Widgets
+### Source
+cps
+### Chinese ***
+cps
+
+### Source
+go
+### Chinese
+运行
+
+### Source
+setup
+### Chinese
+设置
+
+### Source
+tap
+### Chinese ***
+轻敲
+
+### Source
+tap2
+### Chinese ***
+水龙头2
+
+### Source
+延迟
+### Chinese ***
+延滞
+
+### Source
+延遲
+### Chinese ***
+延滞
+
+### Source
+显示的海龟
+### Chinese ***
+显示的海龟
+
+### Source
+海龜總數
+### Chinese ***
+海龟总数
+
+### Source
+海龟总数
+### Chinese ***
+海龟总数
+
+### Source
+自动？
+### Chinese ***
+自动？
+
+### Source
+自動？
+### Chinese ***
+自动？
+
+### Source
+顯示的海龜
+### Chinese ***
+显示的海龟
+

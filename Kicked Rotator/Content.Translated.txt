@@ -1,0 +1,88 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+[被踢旋转器](https://en.wikipedia.org/wiki/Kicked_rotator) 通常被想象成一个粒子，在一个没有摩擦或重力的系统中，被约束在一个圆上移动，并且周期性地被踢。你也可以把它想象成一个没有重力摆动的钟摆。该粒子的运动可用于生成所谓的 [Chirikov 标准图](http://www.scholarpedia.org/article/Chirikov_standard_map)，这是一种物理学工具，可用于描述许多不同的动力系统加速器中粒子的运动到太阳系中的彗星动力学。
+
+粒子以随机初始动量从圆上的随机位置开始，并周期性地被“均匀场”踢动。把它想象成引力被瞬间打开。根据粒子在圆上的位置，反冲对粒子的运动产生不同的影响。对于低反冲强度，粒子运动相当规律。然而，在更高的踢力下，这个看似简单的系统很快就会变得混乱，使其成为研究 [动态混沌](https://en.wikipedia.org/wiki/Dynamical_systems_theory#Chaos_theory) 的完美候选者。
+
+## 怎么这个模型是怎么运行的
+
+粒子由使用链主体连接到不可见枢轴点的单个海龟建模。这个粒子有两个与之相关的变量：角位置（它在圆上的弧度）和动量。粒子的动量可正可负，正动量表示逆时针运动，负动量表示顺时针运动。
+
+在每个周期中，粒子都会受到一次踢击。反冲由箭头指示，该箭头绘制在粒子运动中反冲发生的位置和施加力的方向上。
+
+为了计算踢球后粒子的动量，我们首先通过将踢球乘以粒子角位置的正弦来计算踢球的“效果”。然后我们将此效果添加到之前的动量中。
+
+## 如何这个模型怎么用
+
+使用 INITIAL-POSITION、INITIAL-MOMENTUM 和 KICK-STRENGTH 滑块定义模型的初始条件。或者，您可以使用 RAND INITIAL CONDITIONS 按钮从随机初始条件开始。
+
+设置好参数后，点击SETUP。单击 GO 将启动模型。
+
+连续运动？ switch 控制 NetLogo 是否显示踢球之间的粒子运动。这会显着减慢模型速度，因为它会强制 NetLogo 每踢 1 次粒子单独绘制 10 帧运动。
+
+## 看一看
+
+注意模型左侧的“相图”图表。该图表在 x 轴上显示角位置（以弧度为单位），在 y 轴上显示动量。这就是物理学家描述系统随时间变化轨迹的方式。
+
+请注意，改变粒子的初始角位置和动量但保持相同的冲击强度会导致截然不同的粒子运动。
+
+## 试一试
+
+看看你是否可以制作一个遍历整个环的旋转器。
+
+现在看看你是否可以制作一个不完成整个轨道的旋转器。
+
+尝试创建一个具有圆形相图的旋转器。那个旋转器有什么样的运动？
+
+尝试创建一个具有周期波相图的旋转器。那个旋转器有什么样的运动？
+
+尝试创建一个具有混乱行为的旋转器。
+
+## 改一改
+
+现在，反冲来自模型的右侧，迫使粒子向左移动。你能改变踢的方向，使粒子向右移动吗？
+
+看看您是否可以创建一个图表来跟踪粒子的向心力随时间的变化。
+
+## NetLogo 语言特性
+
+踢动旋转器是一种连续现象，因为在两次踢动之间，粒子仍在运动。然而，在这种模式下，粒子在每次周期都会被踢出，这意味着我们只需计算新位置并将粒子移动到那里。本质上，粒子正在从一个位置“传输”到另一个位置。为了模拟连续运动，当CONTINUOUS-MOTION?选项打开时，我们要求 NetLogo 将一个周期分解为 10 个独立的帧。踢只发生在第一帧，但粒子的运动在所有 10 帧中平均分配。这样，我们模拟连续运动，同时仍然使用“离散”时间。
+
+我们不是手动画图将粒子限制在环上的弦，而是创建一个隐藏的“枢轴点”海龟，然后在粒子和枢轴点之间创建链。这样，NetLogo 就为我们绘制了这个连接！
+
+NetLogo 内置的正弦和余弦原语只接受度数。 `rad-sin` 和 `rad-cos` 报告器首先将参数从弧度（物理选择单位）转换为度，然后使用 `sin` 和 `cos`。
+
+NetLogo 中的三角学与数学标准略有不同。想象一下笛卡尔平面中的四个象限。在 NetLogo 中，1 和 3 象限相同，但 2 和 4 象限互换。这是因为，在 NetLogo 中，象限被认为是顺时针方向的。此外，NetLogo 中的 0方向指向海龟正北，但在标准 trig 中，它对应于 pi / 2 弧度，而 trig 中的 0方向指向正东。对于这个模型，我们不使用 NetLogo trig，而是通过显式计算笛卡尔坐标而不是通常的基于海龟的运动来使用常规 trig。
+
+## 相关模型
+
+Take a look at the Kicked Rotators model to see what happens when you have many kicked rotators running in concert.
+
+## 引用和致谢
+
+This model was inspired by a model used in Dirk Brockmann's Complex Systems in Biology course at the Humboldt University of Berlin.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Brockmann, D., Bain, C., Hjorth, A. & Wilensky, U. (2016).  NetLogo Kicked Rotator model.  http://ccl.northwestern.edu/netlogo/models/KickedRotator.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2016 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2016 Cite: Brockmann, D., Bain, C., Hjorth, A. & Wilensky, U. -->

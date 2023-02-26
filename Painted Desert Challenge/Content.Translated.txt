@@ -1,0 +1,83 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+该模型基于白蚁模型。在 Termites 中，主体跟随一组简单的规则，这些规则导致他们将所有木屑移动成一堆。彩绘沙漠挑战增加了多种类型（颜色）木片的维度。挑战在于让白蚁将每种芯片类型分类到自己的一堆中。
+
+## 怎么这个模型是怎么运行的
+
+每只白蚁开始随机游荡。如果它撞到木屑，它会捡起木屑，继续随机游荡。当它碰到另一块该颜色的木片时，它会找到附近的空地并放下木片。有了这些简单的规则，木片最终会按颜色分类成堆。
+
+## 如何这个模型怎么用
+
+单击设置按钮设置白蚁（白色）和木屑（所有其他颜色）。单击 GO 按钮开始模拟。携带木屑的白蚁会改变木屑的颜色。
+
+NUMBER滑块控制白蚁的数量。 （注意：NUMBER滑块中的更改在下一次设置之前不会生效。）DENSITY滑块控制木屑的初始密度。 SIM-DELAY滑块可用于减慢模拟速度。 PILES滑块允许用户设置不同芯片类型的数量（即要制作的不同桩的数量）。
+
+## 看一看
+
+随着成堆的木屑开始形成，这些木屑不会以任何方式得到“保护”。也就是说，白蚁有时会从现有的堆中带走碎屑。该策略似乎适得其反。但是如果这些堆是“受保护的”，你最终会得到很多小堆，而不是一大堆。
+
+最后的桩大致是圆形的。为什么是这样？还有哪些物理情况也会产生圆形的东西？
+
+一般来说，堆的数量会随着时间的推移而减少。为什么？当白蚁带走所有木屑时，一些木桩消失了。并且没有办法从头开始新的一堆，因为白蚁总是把它们的木屑放在其他木屑附近。所以堆的数量必须随着时间的推移而减少。 （“新”桩开始的唯一方式是当现有桩分成两部分时。）
+
+白蚁如何知道要拿哪个色片？该模型为每只白蚁分配一个变量，告诉它要拾取哪个颜色芯片。但是，为什么白蚁会将不同的类型分类成离散的一堆呢？他们为什么不把筹码混合在一起呢？
+
+这个项目是“去中心化”战略的一个很好的例子。没有白蚁负责，也没有专门为桩预先指定的地点。每只白蚁都遵循一套简单的规则，但整个蚁群要完成一项相当复杂的任务。
+
+## 试一试
+
+如果只使用一只白蚁，结果会改变吗？如果你使用几千只白蚁怎么办？
+
+尝试更改 find-new-pile 方法中的 `fd 10` 命令。如果 `fd 10` 变成 `fd 1` 或被完全取出，它如何影响白蚁的行为？
+
+当只剩下两堆时，哪堆最有可能“获胜”成为唯一的最后一堆？两堆中较大的那堆获胜的频率是多少？如果一堆只有一个木屑，而另一堆有其余的木屑，那么第一堆获胜的机会有多大？
+
+## 改一改
+
+目前，每只白蚁“属于”一种芯片类型。你能否扩展模型，使白蚁能够捡起任何类型的木屑，同时仍将木屑分类成离散的一堆？
+
+在模型运行时绘制桩的数量，或它们的平均大小，或携带木屑的白蚁数量。
+
+## NetLogo 语言特性
+
+请注意，木屑并不作为物体存在。它们只是在补丁中表示为颜色。白蚁在捡起和放下木屑时会更新格子颜色。实际上，屏幕被用作数据结构。此策略在许多 NetLogo 程序中很有用。
+
+## 相关模型
+
+* Termites
+* Shepherds
+
+## 引用和致谢
+
+Resnick, M. & Wilensky, U. (1998). Diving into Complexity: Developing Probabilistic Decentralized Thinking through Role-Playing Activities. Journal of Learning Sciences, Vol. 7, No. 2.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1997).  NetLogo Painted Desert Challenge model.  http://ccl.northwestern.edu/netlogo/models/PaintedDesertChallenge.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 1997 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was developed at the MIT Media Lab using CM StarLogo.  See Wilensky, U. (1993). Thesis - Connected Mathematics: Building Concrete Relationships with Mathematical Knowledge. Adapted to StarLogoT, 1997, as part of the Connected Mathematics Project.  Adapted to NetLogo, 2001, as part of the Participatory Simulations Project.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2001.
+
+<!-- 1997 2001 Wilensky -->

@@ -1,0 +1,82 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+该模型模拟了城市地区出租车的乘客量。用户可以控制乘客需求、车队规模、交通规则和票价计算。该模型旨在根据出行特征和需求动态揭示对出租车盈利能力的洞察。
+
+## 怎么这个模型是怎么运行的
+
+市区被描绘成一个网格系统，由双车道道路和十字路口组成。大都市区由三个区域组成：(1) 中央商务区（橙色），(2) 商业区（蓝色），以及 (3) 住宅区（灰色）。这三个区域可以形成九个起点-终点（OD）对，六对区域间流和三对区域内流。
+
+由于出租车对每种流量的需求可能会根据一天中的时间而有很大不同，因此用户可以通过界面控制区域之间的流量。
+
+潜在乘客出现在用户控制的道路上。当一辆空的出租车碰巧经过时，它会停下来接载乘客。乘客将目的地坐标告知出租车，出租车变成浅紫色，开始行程。出租车将从上车坐标出发，以曼哈顿最短距离行驶至浅紫色下车坐标，到达目的地坐标后完成行程。
+
+完成一次旅行后，出租车会空着，并通过在道路上随机行驶来寻找下一位乘客。
+
+## 如何这个模型怎么用
+
+### 出租车需求
+* 空间流动和时间间隔：
+- _时间间隔_：不同地区之间的城区居民流动可能会因一天中的不同时间而有很大差异。为了指示一天中各地区之间出租车行程的空间流动差异，创建了一个时钟来跟踪世界时间。实施五个不同的时间间隔 (1) AM Peak，(2) Midday，(3) PM Peak，(4) Evening，(5) Early Morning。报告指令在界面中显示当前时间间隔，每个时间间隔的长度可以通过一个名为 LENGTH-OF-TIME-PERIOD 的滑块来控制。
+- _空间流量_：城市各区对出租车的需求是可变的，用户可以通过空间流量滑块来控制不同的流量，控制期间从起点到目的地的出行概率（或比例）一个特定的时间间隔。为此，每个时间间隔的边际概率由每个滑块列底部的报告指令显示，以提醒用户边际概率总和应为 1。
+
+＃＃＃ 交通规则
+* 交通灯：红/绿灯的长度可以通过名为 LENGTH-OF-GREEN-LIGHT 的界面中的滑块来控制。
+
+###乘客
+* 乘客等候时间按正态分布建模。这个正态分布的参数可以由用户通过WAIT-TIME-MEAN和WAIT-TIME-SD在界面中输入。
+
+###出租车
+* 车队规模：出租车车队规模可以通过滑块NUM-TAXICABS 控制。
+
+* 车费：车费是根据芝加哥黄色出租车计算的。行程费用主要由三个不同的变量计算：(1) 机上乘客人数，(2) 行驶的英里数，(3) 行程持续时间。这些成本变量可以由用户在界面中使用 FIRST-PASSENGER-COST、EACH-ADDITIONAL-PASSENGER-COST、EACH-GRID-COST 和 EACH-TICK-COST 来确定。
+
+## 看一看
+
+随着模型的运行，营业里程和无效里程之间的权衡可能会形成对比。出行收入、距离和持续时间的分布应该是相关的，并且分布的总体形状容易受到交通规则和间隔长度变化的影响。
+
+## 试一试
+
+为了清楚地可视化上下车过程，建议从一辆出租车开始，先了解一辆出租车的行为，然后再生成多辆出租车。
+
+## 改一改
+
+有很多方法可以扩展这个模型。有趣的途径是使用具有 GIS 扩展的真实世界数据、更复杂的搜索策略（例如使用 AI 工具）以及在模型中包括拼车系统（例如 Uber 或 Lyft），以更好地理解出租车和拼车系统之间的关系.
+
+其他一些针对出租车的有意义的扩展是找出如何减少死英里数——出租车在没有乘客的情况下行驶的英里数。死英里对司机来说是昂贵的，因为司机在寻找乘客时需要内化车辆折旧和汽油价格。找出更智能的搜索策略，例如在上次下车后立即定位下一位乘客，将是有意义的。
+
+## NetLogo 语言特性
+
+模型中的每条道路由两条车道组成，每条车道允许出租车沿一个方向行驶。在运送乘客时，出租车会掉头，按照最短的曼哈顿距离，将自己放在正确的方向开始运送。可以采取一些变通办法来避免掉头。
+
+## 相关模型
+
+- "Traffic Basic": a simple model of the movement of cars on a highway.
+- "Traffic Basic Utility": a version of "Traffic Basic" including a utility function for the cars.
+- "Traffic 2 Lanes": a more sophisticated two-lane version of the "Traffic Basic" model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Ping, D. and Wilensky, U. (2019).  NetLogo Taxi Cabs model.  http://ccl.northwestern.edu/netlogo/models/TaxiCabs.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+This model was developed as part of the Spring 2019 Multi-agent Modeling course offered by Dr. Uri Wilensky at Northwestern University. For more info, visit http://ccl.northwestern.edu/courses/mam/. Special thanks to Teaching Assistants Sugat Dabholkar, Can Gurkan, and Connor Bain.
+
+## 版权和授权
+
+Copyright 2019 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2019 MAM2019 Cite: Ping, D. -->

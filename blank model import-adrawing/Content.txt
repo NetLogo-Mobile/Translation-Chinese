@@ -1,0 +1,4 @@
+﻿There is already a still picture frame in this template, you just need to paste the picture code into it. 
+## The 3rd party input method clipboard may not be able to paste too much text, resulting in incomplete coding, please also use the paste function in the system text tool.
+To get the code, please search on the Internet: picture to base64
+Or directly access: https://c.runoob.com/front-end/59/  <a>(this is a Chinese website)</a>

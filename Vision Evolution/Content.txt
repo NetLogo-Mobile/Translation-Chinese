@@ -1,0 +1,128 @@
+﻿## WHAT IS IT?
+
+This model explores the potential relationship between our early ancestors' transition from water to land and the evolution of their eyes.
+
+Around 385 million years ago, vertebrates inhabiting underwater environments began to evolve to live on land. A recent study by MacIver et al. (2017) suggests that the radical fin-to-limb transformation of early tetrapods (vertebrates with four limbs) was accompanied by a radical change in eye size. This would have dramatically increased the visual perception space of these tetrapods, allowing them to observe the abundant food sources on land, and thus aiding their selection for limbs. In this model, we investigate the interplay between eye size and the fin-to-limb transformation, as well as the emergence of terrestrial vertebrates with large eyes.
+
+## HOW IT WORKS
+
+This model aims to simulate the transition of vertebrates from life underwater to life on land. Thus half the world in our simulation is underwater, and the other half is land. The agents in our model are fish initially swimming underwater. We refer to the agents in this model as fish for simplicity purposes, however we think about them more of as vertebrates that are on the brink of transitioning to terrestrial life. At the beginning of our simulation, we can indeed think of these agents as aquatic tetrapods, however as time goes by, they evolve and some of them transition to life on land.
+
+In addition there are other organisms that these fish prey upon. We refer to them as food in our model, but we can think of them as invertebrates that inhabit water as well as land.
+
+Each agent or fish has certain characteristics. These are listed below.
+
+* EYE-SIZE: This is a real number between 1 and the parameter MAX-EYE-SIZE set by the user. Eye-size determines the radius of the field of vision of the fish. For the sake of simplicity, we assume that fish have a field of vision of 360 degrees. Since a typical field of vision of fish is 305 degrees, this assumption is justified. We note that the radius of the field of vision also depends on whether the fish is on land or underwater. Since visibility is very poor underwater, the radius of the field of vision underwater is significantly smaller than it is on land. Furthermore, an increase in eye-size provides little improvement to the radius of the field of vision underwater, but provides a dramatic improvement to the radius of the field of vision on land.
+
+* LAND-MOBILITY: This characteristic is a real number between 0 and 1, and it models how well adapted the fish is to life underwater or on land. This characteristic aims to capture the morphology of the fish (or vertebrate) as it undergoes the fin-to-limb transformation, and how this relates to its locomotion. If this characteristic is 0, this means that the fish is completely adapted to life underwater and is likely to have fins. It means that the fish can move underwater quickly and without a lot of effort. However, it can hardly move on land and would have to spend a lot of energy to cover a small distance on land. Similarly, if land-mobility is 1 the organism is adapted to life on land and is likely to have limbs. For example, applying this characteristic to real world species we could suppose that a clown fish would have a land-mobility value of almost 0, a crocodile would have a land-mobility value of approximately 0.25, a frog would have a land-mobility value of 0.5, and finally a cat would have a land-mobility value of almost 1.
+
+* LAND-FOOD-PREFERENCE: This value is also a real number between 0 and 1. This characteristic aims to capture the food preference of the fish–specifically whether it prefers food on land or food underwater. The intuition behind this characteristic is that a terrestrial animal would be more likely to hunt and eat another terrestrial animal and would be less likely to hunt an aquatic animal.
+
+* ENERGY: This characteristic is used to model the level of nutrition of the fish, which is in a sense, the level of energy of the fish. Fish gain energy from consuming food, and lose energy as they move, and as they reproduce.
+
+Initially, the fish are located underwater, because they have not made the transition to land yet. They have the smallest eye size possible since visibility is very low underwater. And they are completely adapted to life underwater, so they move fast and consume little energy underwater. This means that they move very slowly and consume a lot of energy on land. Each fish has a random preference towards food on land or underwater water. This could be explained by genetic variability and the scarcity of food underwater compared to that of on land.
+
+At each time step, each fish moves. If there is food in the field of vision of the fish, then it moves toward the food, otherwise it just moves randomly. The speed of their movement depends upon their land-mobility value and whether they are on land or underwater. Fish with low land-mobility values move fast underwater and slowly on land. The food remain stationary. As the fish move, they consume energy. How much energy they consume, again depends on their land-mobility value and whether they are underwater or on land. Fish with low land-mobility values consume less energy underwater than on land.
+
+Energy consumption also depends on the eye size of the fish. Having larger eyes cost more energy, since they require more resources to operate. If a fish reaches food, it kills the food and gains energy. There is a fixed probability that a new food appears at each time step.
+
+If the energy value of a fish goes below zero, it dies. The fish reproduce at a fixed rate: if their  energy level exceeds a certain threshold. When a fish reproduces, its energy is divided between it and its offspring. Furthermore, the offspring genetically inherits the other characteristics of its parent, however each of these characteristics are mutated. The rate of mutation is determined by the user.
+
+## HOW TO USE IT
+
+The SETUP button initializes the model.
+
+The GO button runs the model.
+
+Use the INITIAL-NUMBER-FISH slider to set the initial amount of fish.
+
+Use the INITIAL-NUMBER-FOOD slider to set the initial amount of food.
+
+Use the SHOW-VISION switch to toggle on or off the visualization of the field of view of each fish.
+
+Use the FOOD-REPLENISH-RATE slider to set the probability that a new food appears at each time step.
+
+Use the ENERGY-GAIN-FROM-FOOD slider to set how many units of energy a fish gains when it eats a food.
+
+Use the REPRODUCTION-RATE slider to set the probability that a fish reproduces at each time step, and how much energy is required for reproduction.
+
+Use the MUTATION-RATE slider to set how much each characteristic of the offspring could mutate when a fish reproduces.
+
+Use the EYE-COST slider to set how much energy having large eyes costs.
+
+Use the MAX-EYE-SIZE slider to set the maximum size the eyes of a fish can evolve to.
+
+The shade of each fish represents the land-mobility value of that fish. The lighter colored fish have lower land mobility values (i.e. they’re more adapted to live underwater). Similarly, the darker colored fish have higher land-mobility values, that is they’re more adapted to live on land.
+
+The plot of the average eye size displays the average eye size of two populations as a function of time. The terrestrial population consists of fish with land-mobility values greater than 0.5, while the aquatic population consists of fish with land-mobility values less than 0.5.
+
+The Population Size plot represents the size of both the fish population (displayed in cyan) and the amount of available food (displayed in brown). The x-axis represents the passage of time, and the y-axis is the population size.
+
+The Land Mobility Histogram depicts the emergence of distinct fish populations, where land-mobility values range from 0 to 1 along the x-axis. Recall that a land-mobility value of 0 represents fish that are completely adapted to live in water, while a land-mobility value of 1 represents fish that are completely adapted to live on land. The y-axis represents the number of fish with each land-mobility value at the current time step.
+
+The Eye Size Histogram depicts the eye size of all the fish at the current time step. Along the x-axis, eye size ranges from 1 (smallest) to MAX-EYE-SIZE (biggest). The y-axis represents the number of fish with the given eye size value at the current time step.
+
+The Food Preference Histogram depicts the food source preferences of all fish at the current time step. Along the x-axis food preference value of 0 indicates that the fish strongly prefers aquatic food sources, whereas a food preference value of 1 indicates that the fish strongly prefers terrestrial food sources. The y-axis represents the number of fish with the given food preference value at the current time step.
+
+## THINGS TO NOTICE
+
+Notice that after the food population size peaks, a sudden jump in the fish population size follows and fish start to move on land. After that point, notice how the histogram of the land-mobility characteristic tends to have two peaks at the ends of the spectrum indicating two populations: terrestrials and aquatics.
+
+Notice that after a while, the average eye size of the terrestrial population triples in size, where the eye size of the aquatic population tends to stay small.
+
+## THINGS TO TRY
+
+Under what conditions does a terrestrial population with larger eyes not emerge? Why?
+
+Is there a condition in which the transition from water to land does not happen?
+
+Try changing the initial population sizes, ENERGY-GAIN-FROM-FOOD, FOOD-REPLENISH-RATE, and REPRODUCTION-RATE? How do these changes affect the population dynamics?
+
+## EXTENDING THE MODEL
+
+There are various ways this model can be extended and improved. One of them is adding a depth component so that fish can peak above the water line and look towards the shore.
+
+A more realistic field of vision could be used, where the field of vision is narrower, and the distance to the food source could only be measured in a field of binocular vision where both eyes are used.
+
+Another way is to introduce a new characteristic that determines the location of the eye on the head. Then modeling how this changes the field of view and the depth perception of the fish.
+
+Another exciting extension of this model would be using LevelSpace such that each agent has an actual neural network that tells it where to go based on its inputs. This would allow one to investigate how an increase in the visual perception space might affect the intelligence of the agents by allowing them to plan.
+
+## NETLOGO FEATURES
+
+The TIE primitive is used to tie a turtle to every fish for visualizing the field of vision of each fish.
+
+The IN-RADIUS primitive is used to find every food source in a fish's field of vision.
+
+## RELATED MODELS
+
+* BEAGLE Evolution Curricular Models
+* Bug Hunt Models
+
+## CREDITS AND REFERENCES
+
+MacIver, Malcolm & Schmitz, Lars & Mugan, Ugurcan & D. Murphey, Todd & D. Mobley, Curtis. (2017). Massive increase in visual range preceded the origin of terrestrial vertebrates. Proceedings of the National Academy of Sciences. 114. 201615563. 10.1073/pnas.1615563114.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Gurkan, C., Head, B., Woods, P. and Wilensky, U. (2018).  NetLogo Vision Evolution model.  http://ccl.northwestern.edu/netlogo/models/VisionEvolution.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2018 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2018 Cite: Gurkan, C., Head, B., Woods, P. -->

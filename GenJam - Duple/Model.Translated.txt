@@ -1,4 +1,5 @@
-﻿## Language = Chinese
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
 ## Plots
 ### Source
 all
@@ -67,11 +68,91 @@ Ticks
 
 ## Widgets
 ### Source
+0
+### Chinese ***
+0
+
+### Source
+1
+### Chinese ***
+1个
+
+### Source
+10
+### Chinese ***
+10
+
+### Source
+11
+### Chinese ***
+11
+
+### Source
+12
+### Chinese ***
+12
+
+### Source
+13
+### Chinese ***
+13
+
+### Source
+14
+### Chinese ***
+14
+
+### Source
+15
+### Chinese ***
+15
+
+### Source
+2
+### Chinese ***
+2个
+
+### Source
+3
+### Chinese ***
+3个
+
+### Source
+4
+### Chinese ***
+4个
+
+### Source
+5
+### Chinese ***
+5个
+
+### Source
+6
+### Chinese ***
+6个
+
+### Source
+7
+### Chinese ***
+7
+
+### Source
+8
+### Chinese ***
+8个
+
+### Source
+9
+### Chinese ***
+9
+
+### Source
 Density
 ### Chinese
 密度
 
-### Source
+### Excessive
 generations
 ### Chinese
 遗传代数

@@ -1,0 +1,103 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+在网络中，“组件”是一组节点（人），它们都直接或间接地相互连接。因此，如果一个网络有一个“巨型组件”，这意味着几乎每个节点都可以从几乎所有其他节点访问。这个模型显示了如果你增长一个随机网络，一个巨大的组件会多快出现。
+
+## 怎么这个模型是怎么运行的
+
+最初我们有节点，但它们之间没有连接（边）。在每一步中，我们随机选择两个之前没有直接连接的节点，并在它们之间添加一条边。它们之间所有可能的联系都有完全相同的发生概率。
+
+随着模型的运行，形成了小型链状“组件”，每个组件中的成员直接或间接地相互连接。如果在两个不同组件的节点之间创建一条边，则这两个组件合并为一个。在任何给定时间点拥有最多成员的组件是“巨型”组件，它被标记为红色。 （如果有最大的捆绑，我们会选择一个随机组件来着色。）
+
+## 如何这个模型怎么用
+
+NUM-NODES滑块控制网络的大小。选择尺寸并按设置。
+
+按 GO ONCE 按钮向网络添加一个新边。要重复添加边，请按 GO。
+
+在模型运行时，节点和边会尝试将自己定位在使网络结构易于查看的布局中。不过，布局会使模型运行速度变慢。要更快地获得结果，请关闭 LAYOUT？转变。
+
+REDO LAYOUT 按钮连续运行布局步骤过程以改进网络布局。
+
+监视器显示巨型组件的当前大小，图表显示巨型组件的大小随时间的变化情况。
+
+## 看一看
+
+该图表的 y 轴显示了包含在巨型组件中的所有节点的分数。 x 轴显示每个节点的平均连接数。图表中的垂直线显示每个节点的平均连接数等于 1 的位置。此时巨型组件的增长率会发生什么变化？
+
+该模型展示了数学家 Paul Erdos 和 Alfred Renyi (1959) 对随机图论的早期证明之一。他们表明，在每个节点的平均连接数等于 1 后，通过在每个时间步随机连接两个现有节点而形成的网络的最大连接组件迅速增长。换句话说，平均连接数有一个“临界点”，其中网络经历了一个“相变”，从一个由一堆小的、分散的组件组成的相当不连接的世界，到一个大多数节点都属于同一个连接组件的世界。
+
+## 试一试
+
+让模型运行到最后。 “巨型组件”是否名副其实？
+
+再次运行模型，这次慢慢地，一次一步。观察组件如何增长。当图表最陡时会发生什么？
+
+使用少量节点（如 10 个）运行它并观察图表。它与使用大量节点（例如 300 个）运行时得到的图表有何不同？如果您使用相同数量的节点进行多次运行，每次运行的图表图形有多大差异？你可以关掉LAYOUT吗？切换以更快地获得结果。
+
+## 改一改
+
+现在任何两个节点相互连接的概率是相同的。你能想办法让一些节点比其他节点更有吸引力吗？这将如何影响巨型组件的形成？
+
+在 `add-edge`过程中创建新链时，您可能想知道为什么我们不这样做：
+
+问一只海龟[
+使用 [ 不是链接海龟？我自己]
+]
+
+想象一下，我们在网络中有一个节点已经连接到大多数其他节点。在 add-edge 的原始版本中，如果该节点被选为我们尝试在其间创建边的两个节点之一，它可能会被拒绝，因为它很可能已经与所选的另一个节点链接。然而，在这个 add-edge 的替代版本中，我们告诉 NetLogo 明确地去寻找一个尚未连接到第一个节点的节点（即使这些节点很少）。这有很大的不同。尝试一下，看看它如何影响巨型组件的形成。
+
+## 网络概念
+
+使用称为“深度优先搜索”的标准搜索算法完成连接组件的识别。 “深度优先”是指算法首先深入连接的一个分支，一直追踪到最后。对于给定的节点，它会在移动到自己的下一个邻居之前探索其邻居的邻居（然后是他们的邻居等）。该算法是递归的，因此最终将探索从特定起始节点开始的所有可达节点。由于我们需要找到每个可到达的节点，而且我们找到它们的顺序无关紧要，因此“广度优先搜索”等另一种算法也同样有效。我们选择深度优先搜索是因为它最容易编码。
+
+节点的位置由“spring”方法确定，这在优先依附模型中有进一步描述。
+
+## NetLogo 语言特性
+
+节点是海龟主体，边是链主体。 `layout-spring` 原语放置节点，就像边缘是弹簧并且节点相互排斥一样。
+
+虽然此模型中未使用它，但存在 NetLogo 的网络扩展，您可以从以下网址下载：https://github.com/NetLogo/NW-Extension。
+
+## 相关模型
+
+See other models in the Networks section of the Models Library, such as Preferential Attachment.
+
+See also Network Example, in the Code Examples section.
+
+There is also a version of this model using the (NW extension)[https://github.com/NetLogo/NW-Extension] in the `demo` folder of the extension.
+
+## 引用和致谢
+
+This model is adapted from:
+Duncan J. Watts. Six Degrees: The Science of a Connected Age (W.W. Norton & Company, New York, 2003), pages 43-47.
+
+The work Watts describes was originally published in:
+P. Erdos and A. Renyi. On random graphs. Publ. Math. Debrecen, 6:290-297, 1959.
+
+This paper has some additional analysis:
+S. Janson, D.E. Knuth, T. Luczak, and B. Pittel. The birth of the giant component. Random Structures & Algorithms 4, 3 (1993), pages 233-358.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Giant Component model.  http://ccl.northwestern.edu/netlogo/models/GiantComponent.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

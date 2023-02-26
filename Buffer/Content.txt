@@ -1,0 +1,116 @@
+﻿## WHAT IS IT?
+
+This model demonstrates the behavior of a buffered solution.  A buffer is a solution that resists change in pH when either acid or base are added into it, within limits.  It is best viewed as the third model in the ACID-BASE package.
+
+Chemists and biologists use the properties of acids and bases to create buffer solutions.  It is often desirable to keep the acidity, or hydronium ion concentration of a solution, as nearly constant as possible.  Examples of such situation would be: measuring the velocity of a reaction, selectively dissolving certain salts, or studying the growth of bacteria or plants.   In our body, the blood has a buffering capacity, keeping the pH at 7.35.  If the pH goes above 7.7 (alkalosis) or below 7.0 (acidosis), the results are fatal.
+
+## HOW IT WORKS
+
+To accomplish this feat, buffers depend on the presence of both a weak acid and its conjugate base. With both of these species in the solution, additional acids and bases are neutralized according to the following chemical equations. H-A denotes the weak acid and A- denotes its conjugate base.
+
+> H-A + OH<sup>-</sup> —> H<sub>2</sub>O + A<sup>-</sup>
+> A<sup>-</sup> + H<sub>3</sub>O<sup>+</sup> —> H<sub>2</sub>O + H-A
+
+The pH of a buffer is determined in the same manner that the pH of a weak acid is determined - by counting the number of hydronium and hydroxide ions and calculating their ratio with total number of ions and molecules in the solution.
+
+When there are more hydroniums,  pH = - log ( hydronium concentration )
+
+When there are more hydroxides,  pH = 14 - pOH = 14 - log ( hydroxide concentration )
+
+Buffers are effective only within their unique buffering range. This range is determined by the concentrations of the weak acid and its conjugate base.  Outside of its buffering range, the solution behaves as a strong acid or base.
+
+## HOW TO USE IT
+
+Decide how many acid molecules should be present at the start of the simulation with the STARTING-ACID slider. Set the number of conjugate base molecules with the STARTING-CONJ-BASE slider.
+
+Press SETUP.  The turtles will distribute randomly across the world.
+
+YELLOW turtles are acid molecules (HA)
+ORANGE turtles are conjugate base molecules (A-)
+GREEN turtles represent hydronium ions (H30+)
+RED turtles are hydroxide molecules (OH-)
+BLUE turtles represent water molecules (H20)
+
+In this model we are assuming that 2% of the original acid molecules are dissociated into 2 conjugate base molecules and 2 hydronium molecules.  This is true only before the molecules start interacting between themselves.
+
+Press GO. The molecules will move randomly across the world.
+
+When two turtles occupy the same patch, the following rules apply:
+1.  When a weak acid and a water molecule collide, the acid molecule dissociates into its conjugate base and the water molecule transforms to a hydronium ion.
+2.  When hydroxide and hydronium ions collide, they always form two water molecules.
+3.  When a weak acid and hydroxide collide, they have a high probability of transforming into a conjugate base and a water molecule.
+4.  When hydronium and conjugate base collide, they have a high probability of transforming into a weak acid molecule and a water molecule.
+
+To observe the effect of adding base or acid to the solution, set the number of acid molecules you want to add with the ADDED-ACID slider and press ADD-ACID (H30+)
+Do the same for adding base with the ADDED-BASE slider and ADD-BASE button.
+
+A number of plots and monitors can be observed:
+The pH of the solution is plotted over time on the PH plot, and at each time tick on the PH monitor.  pH is calculated using the ratio of the number of hydronium and hydroxide molecules to the total number of turtles.  This is different from the chemistry calculation that relates this number to solution volume.
+You can see the number of hydroniums and hydroxides in the solution in their monitors  (# HYDRONIUMS, # HYDROXIDES).
+You may follow the number of molecules of each species over time in the MOLECULE COUNTS plot.
+
+You may choose to see the initial water molecules or not with the SEE-STARTING-WATER? switch.
+
+## THINGS TO NOTICE
+
+After you press SETUP, the buffer solution is not yet in equilibrium.  After the model starts running, the molecules react until the system is equilibrated, and the pH doesn't change anymore.
+
+Observe the pH curve.  How are the numbers of hydronium and hydroxide molecules in the monitors below related to the pH?
+
+Examine the shape of the pH curve. Notice how the pH changes with respect to the amount of base or acid added. Does the buffer resist change in pH?
+
+Observe the number of molecules in the plot.   When acid or base is added to the solution, they quickly disappear as they react. Can you determine which molecules react with each other?  What is the relationship between the two plots: pH and number of molecules?
+
+What happens when large amounts of base or acid are added to the system?  Is it the same as adding small amounts?  Does the pH curve reflect this?
+
+## THINGS TO TRY
+
+Add a large amount of acid or base to the solution and observe the effect.  Why does the pH change dramatically outside of the buffering range?  Would it be useful to add large amounts of base all at once to a solution in the laboratory if you were trying to adjust the pH?
+
+Can you relate the idea of a "buffering range" to the molecules and their behavior in the model?
+
+Try running the model with different amounts of acid or conjugate base.  The buffering range of the solution should shift.  How is the shift related to the changes you made?  Does changing the proportion between the number of weak acid and conjugate base molecules have an effect on the buffering capacity?
+
+How does changing the amount of buffer molecules influence the buffering capacity?
+
+Try pressing SETUP a number of times with the same initial settings, and observe the number of hydroniums.  Is the number always the same?  Press GO and watch the change in pH.  Why is the same equilibrium reached in each case?
+
+## EXTENDING THE MODEL
+
+Increase the amount of hydronium originally generated upon SETUP by increasing the chance of dissociation in the procedures.  What effect does this have on the initial pH?
+
+Add a button and procedure to add more conjugate base to the reaction.  How could this help a chemist who is trying to keep the pH of a solution at a constant value?
+
+Add a procedure that allows you to plot a titration curve for a buffer.  Is it similar to any other titration curves you have seen?  What additional information can you learn from the titration curve?
+
+Additional interactions could take place in a solution in addition to those stated in the rules.  These were omitted because their probability of occurring is low.  Try including one of these rules to the procedure.  For example, two water molecules could transform into a hydronium and hydroxide ions.  Does it make a change?
+
+## CREDITS AND REFERENCES
+
+Thanks to Mike Stieff for his work on this model.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stieff, M. and Wilensky, U. (2001).  NetLogo Buffer model.  http://ccl.northwestern.edu/netlogo/models/Buffer.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 Cite: Stieff, M. -->

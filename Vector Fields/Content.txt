@@ -1,0 +1,77 @@
+﻿## WHAT IS IT?
+
+This is a mathematical model that demonstrates abstract vector fields and integral curves.
+
+Generally speaking, a field is a "region in which a body experiences a force as the result of the presence of some other body or bodies.  A field is thus a method of representing the way in which bodies are able to influence each other.  For example, a body that has mass is surrounded by a region in which another body that has mass experiences a force tending to draw the two bodies together.... The strength of any field can be described as the ratio of the force experienced by a small appropriate specimen to the relevant property of that specimen, e.g. force/mass for the gravitational field"  (Oxford Minidictionary of Physics).
+
+By 'abstract vector fields' we mean that this model is not committed to any specific type of force, such as gravity or magnetism.  Rather, it simulates a general field, in which some focal property of influence affects a "small appropriate specimen", or particle, placed in the field.
+
+Normally, if you look at a field with bare eyes, you will not necessarily see the forces.  For instance, if you drop an apple it falls down, even though you cannot see the gravitational force.  The apple is an object in the gravitational field.  You saw how it behaved so you could guess that there is some force that made it go down.  Humans do not perceive (visually) forces of gravitation or electro-magnetic forces.  However, in a model, we can use little arrows (vectors) to show where, how forceful, and in which direction there are forces in this field.
+
+## HOW IT WORKS
+
+In this model, the field is plotted using vector graphics: green streaks are individual vectors with yellow turtles serving as arrowheads.  The length of each vector is roughly proportional to the magnitude of the vector field at each point.  In this model, it is just the distance from the origin: The further away from the origin, the larger the vector.  Also, all vectors are aimed clockwise along tangents to circles centered on the origin.
+
+The vectors show you in what direction and how forcefully an appropriate specimen -- here, a 'particle' -- will be "knocked about" once it is placed the field.  Once the particle is "knocked" to a new location, it will be knocked yet again by the force there (represented by the vector).  Actually, it being "knocked about" continuously, but in this simulation, the "knock" occurs at discrete points in the field.  Since the particle does not use up the forces, it will keep being knocked about.  The path the particle takes is called its 'trajectory.'  You will be able to track this trajectory because the particle will leave a red trail behind it as it moves along its trajectory.  Trajectories in vector fields are called 'integral curves.'
+
+Even though behavior of particles can be interesting and possibly unanticipated, owing to forces not being distributed uniformly in the field, or some other factor, we have chosen, for clarity, a vector field with a logical and consistent relation between location in space and size/orientation of the force.  The vector field chosen for this particular model is
+
+```text
+- y d/dx  +  x d/dy
+```
+
+Ideally, in the particular force field modeled here, the particle trajectories should be concentric circles (that is, the particle should go round and round along the same circular trajectory).
+
+## HOW TO USE IT
+
+SETUP: Clears the world and computes the vector field.
+PLACE-PARTICLES: Puts the program into the mode in which you can position red test-particles by clicking anywhere in the View.
+GO: Runs the simulation continuously to show the integral curves.
+
+## THINGS TO NOTICE
+
+Notice that the vectors grow in length as you move away from the origin.  What effect do short vectors have on a particle?  Long vectors?
+
+The way this model is programmed, each particle moves some finite amount before calculating its new heading.  Therefore, the particles do not turn as much as they would if their headings were continuously recalculated.  This causes their trajectories to spiral slowly outward.  (You have to let the model run for a while before this becomes apparent.)  We tried to minimize this by having the particles move forward only a very small amount at each time step (the variable `step-size`).  We couldn't make this amount too small since the model would then run too slowly.  If you want the particles to spiral less, or you want the model to run faster, change this value.
+
+## THINGS TO TRY
+
+Place particles in different parts of the world.  Does the particle's position have any effect on the trajectory?
+
+## EXTENDING THE MODEL
+
+Try a different vector field by changing it in the `setup-vector`, `force-x`, and `force-y` procedures.  For instance, if you choose
+
+```text
+x d/dx - y d/dy
+```
+
+the integral curves will be hyperbolas.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (1998).  NetLogo Vector Fields model.  http://ccl.northwestern.edu/netlogo/models/VectorFields.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 1998 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the project: CONNECTED MATHEMATICS: MAKING SENSE OF COMPLEX PHENOMENA THROUGH BUILDING OBJECT-BASED PARALLEL MODELS (OBPML).  The project gratefully acknowledges the support of the National Science Foundation (Applications of Advanced Technologies Program) -- grant numbers RED #9552950 and REC #9632612.
+
+This model was converted to NetLogo as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227. Converted from StarLogoT to NetLogo, 2002.
+
+<!-- 1998 2002 -->

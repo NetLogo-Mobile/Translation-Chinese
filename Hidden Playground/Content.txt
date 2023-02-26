@@ -1,5 +1,6 @@
-﻿This is the HIDDEN PLAYGROUND of Turtle Universe.
+﻿The POCKETWORLD Playground of Turtle Universe. Explore it, play with it, and create your own pocketworld with the help of our... Mechanical Assistant. Please share your pocketworlds when you finish!
 
-Explore it, and you will get what you want. Please share your artifacts when you are done!
+P.S. If you encounter any issue, please comment on this model, and tell me what's the problem and how did you get it. If you think any building block is needed for your microworld, please also leave your idea. I am more than happy to realize your wildest dream for you.
 
-P.S. If you encounter any issue, please comment on this model, and tell me what's the problem and how did you get it. If you think any block is needed for your microworld, please also leave your idea. I am more than happy to realize your wildest dream for you.
+***Version 1.0***
+The initial release.

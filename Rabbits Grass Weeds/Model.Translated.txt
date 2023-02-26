@@ -1,0 +1,74 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+grass
+### Chinese ***
+草
+
+### Source
+Pop
+### Chinese ***
+流行音乐
+
+### Source
+Populations
+### Chinese ***
+种群
+
+### Source
+rabbits
+### Chinese ***
+兔子
+
+### Source
+weeds
+### Chinese ***
+杂草
+
+## Widgets
+### Source
+birth-threshold
+### Chinese ***
+出生阈值
+
+### Source
+count rabbits
+### Chinese ***
+数兔子
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+grass-energy
+### Chinese ***
+草能
+
+### Source
+grass-grow-rate
+### Chinese ***
+草长率
+
+### Source
+number
+### Chinese ***
+数字
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+weed-energy
+### Chinese ***
+杂草能量
+
+### Source
+weeds-grow-rate
+### Chinese ***
+杂草生长率
+

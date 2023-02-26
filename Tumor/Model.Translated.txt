@@ -1,0 +1,49 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+Cells Alive
+### Chinese ***
+活细胞
+
+### Source
+Living Cells
+### Chinese ***
+活细胞
+
+## Widgets
+### Source
+cell-count
+### Chinese ***
+细胞计数
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+kill moving stem cell
+### Chinese ***
+杀死移动的干细胞
+
+### Source
+kill original stem cell
+### Chinese ***
+杀死原始干细胞
+
+### Source
+kill transitory cells
+### Chinese ***
+杀死暂行细胞
+
+### Source
+leave-trail?
+### Chinese ***
+留下踪迹？
+
+### Source
+setup
+### Chinese ***
+设置
+

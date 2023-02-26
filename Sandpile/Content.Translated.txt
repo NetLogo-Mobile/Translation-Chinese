@@ -1,0 +1,122 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+Bak–Tang–Wiesenfeld 沙堆模型展示了“自组织临界”的概念。它进一步表明，复杂性可以从简单的规则中产生，并且系统可以自发地到达临界状态，而不是通过精确参数的微调。
+
+## 怎么这个模型是怎么运行的
+
+想象一张桌子上有沙子。桌子的表面是正方形的网格。每个正方形最多可以轻松容纳三粒沙子。
+
+现在将沙粒滴在桌子上，一次一颗。当一个方格达到四个或更多谷物的过载阈值时，所有谷物（不仅仅是多余的）都会重新分配到四个相邻的方格。邻居可能反过来变得过载，引发进一步重新分配的“雪崩”。
+
+沙粒会从桌子边缘掉落，有助于确保雪崩最终结束。
+
+当然，真正的沙粒不会像这样。您可能更愿意想象每个方格都是官僚的办公桌，上面堆满了工作文件夹。当一位官僚的办公桌满了时，她会通过将文件夹传递给她的邻居来清理办公桌。
+
+## 如何这个模型怎么用
+
+按其中一个 **setup** 按钮清除并重新填充表格。您可以使用 **setup uniform** 按钮和 **grains-per-patch**滑块从随机沙子或每方块统一数量的颗粒开始。
+
+视图中的配色方案灵感来自“交通灯”模式：
+
+红色 = 3 粒
+黄色 = 2 粒
+绿色 = 1 粒
+黑色 = 0 粒
+
+如果 **animate-avalanches?** 开关打开，过载的补丁是白色的。
+
+按 **go** 开始投放沙子。您可以使用 **drop-location** 选择放置位置。如果 **drop-location** 设置为“鼠标单击”，您可以通过单击视图来放下沙子（**go** 按钮需要处于活动状态才能工作。）
+
+如果您从 0 甚至 1 的均匀分布开始，可能需要一段时间才能看到雪崩。如果你想加快这个过程，取消勾选“查看更新”几秒钟，然后再勾选。这使得模型运行得更快，因为 NetLogo 不必每周期都绘制模型。
+
+当 **animate-avalanches?** 打开时，您可以观看每次雪崩的发生，然后当雪崩完成时，雪崩接触的区域会闪烁白色。
+
+将速度滑块向右推以更快地获得结果。
+
+如果您按下 **explore**，将鼠标悬停在一个正方形上，将显示如果将一粒谷物丢在该正方形上，雪崩会有多大。
+
+## 看一看
+
+白色闪光帮助您区分连续的雪崩。它们还可以让您了解每次雪崩的规模。
+
+大多数雪崩都很小。偶尔会发生更大的事情。一次加一粒沙子，怎么可能影响那么多方格呢？
+
+你能预测大雪崩何时会发生吗？你在找什么？
+
+离开 **animate-avalanches?** 可以让你观察每次雪崩形成的模式。你会如何描述你看到的模式？
+
+观察**平均晶粒数**图表。随着时间的推移，沙子的平均高度会发生什么变化？
+
+观察 **Avalanche sizes** 和 **Avalanche lifetimes**图表。此直方图采用双对数刻度，这意味着两个轴都是对数的。从长远来看，图表的图形是什么？您可以使用 **clear size data** 按钮丢弃系统达到平衡前收集的尺寸数据。
+
+## 试一试
+
+尝试初始设置和放置位置的所有不同组合。您在跑步开始时看到的情况有何不同？经过许多周期后，行为是否仍然不同？
+
+使用空的初始设置并在中心放置沙粒。这使得系统具有确定性。你看到什么样的模式？沙堆是对称的吗？如果是，它表现出什么类型的对称性？为什么会这样？每个细胞只知道它的邻居，那么如果彼此看不到，细胞堆的两端如何产生相同的模式呢？桩是什么图形，为什么会这样？如果每个格子只往它上面、下面、左边和右边的格子里加沙子，那么生成的堆不应该也是十字形的吗？
+
+选择通过鼠标单击放置。你能找到添加一粒谷物会导致雪崩的地方吗？如果你有一个对称的桩，然后添加一些战略性的随机沙粒，然后继续向桩的中心添加沙子——图案会发生什么变化？
+
+## 改一改
+
+尝试大于 4 的阈值。
+
+尝试在重新分配中也包括对角线邻居。
+
+尝试随机将沙子重新分配给邻居，而不是总是每个邻居一个。
+
+该模型展示了复杂自然系统中常见的特征，例如自组织临界性、分形几何、1/f 噪声和幂律。这些概念在 Per Bak 的书中有更详细的解释（参见下面的参考资料）。将代码添加到模型以测量这些特征。
+
+尝试根据如果您将另一颗谷物丢在上面时雪崩的大小来为每个方块着色。为此，请使用 **push-n** 和 **pop-n** 以便您可以在计算雪崩的大小之前返回到晶粒分布。
+
+## NetLogo 语言特性
+
+* 在世界设置中，世界边缘的环绕被关闭。因此，`neighbors4` 原语有时只返回两个或三个补丁。
+
+* 为了让模型运行得更快，我们需要避免做任何需要迭代所有补丁的操作。避免这种情况意味着跟踪雪崩中当前涉及的补丁集。关键的代码行是：
+
+`set active-patches 补丁集 [neighbors4] of overloaded-patches`
+
+* 相同的“设置”过程用于创建统一的初始设置或随机设置。不同之处在于我们为每次传递传递什么任务来运行。有关任务的更多信息，请参阅用户手册中编程指南的任务部分。
+
+* 为了启用探索模式，该模型使用了计算机科学中称为“堆栈”的数据结构。堆栈就像现实生活中的一叠纸一样工作：您将项目放置（或“推”）到堆栈上，这样堆栈的顶部始终是最近推到它上面的项。然后您可以从堆栈顶部“弹出”项目，显示它们的值并将它们从堆栈中移除。因此，堆栈非常适合保存和恢复变量的值。要保存一个值，您将变量的值压入堆栈，然后将变量设置为您想要的任何新值。要恢复，您需要弹出该值并将变量设置回该值。
+
+探索模式实际上只需要堆栈中的项。然而，堆栈可用于保存任意数量的值。因此，你可以扩展这个模型，让人们探索越来越远的未来，然后让他们回到原来的地方。
+
+## 相关模型
+
+* Sand
+* Sandpile 3D (in NetLogo 3D)
+
+## 引用和致谢
+
+https://en.wikipedia.org/wiki/Abelian_sandpile_model
+
+https://en.wikipedia.org/wiki/Self-organized_criticality
+
+Bak, P. 1996. How nature works: the science of self-organized criticality. Copernicus, (Springer).
+
+Bak, P., Tang, C., & Wiesenfeld, K. 1987. Self-organized criticality: An explanation of the 1/f noise. Physical Review Letters, 59(4), 381.
+
+The bureaucrats-and-folders metaphor is due to Peter Grassberger.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Weintrop, D., Tisue, S., Tinker, R., Head, B. and Wilensky, U. (2011).  NetLogo Sandpile model.  http://ccl.northwestern.edu/netlogo/models/Sandpile.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+[![CC0](http://ccl.northwestern.edu/images/creativecommons/zero.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Public Domain: To the extent possible under law, Uri Wilensky has waived all copyright and related or neighboring rights to this model.
+
+<!-- 2011 CC0 Cite: Weintrop, D., Tisue, S., Tinker, R., Head, B. -->

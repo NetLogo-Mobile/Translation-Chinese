@@ -1,0 +1,86 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+该模型演示了化学家和生物学家如何测量溶液的 pH 值。与许多其他化学测量一样，pH 值来自溶液中复合分子的相互作用和相对比例。
+
+## 怎么这个模型是怎么运行的
+
+具体而言，pH 值是溶液中存在的水合氢离子（H+ 或 H3O+）数量的量度。当酸分子向水分子提供质子时，会产生水合氢离子。碱对水有相反的作用——它们从水分子中吸收氢并产生氢氧根离子 (OH-)。下面列出了这两个反应。注意电荷的平衡和原子的转换。 HA表示强酸，B表示强碱。
+
+&gt; H <sub>2</sub> O + HA —&gt; H <sub>3</sub> O <sup>+</sup> + A <sup>-</sup>
+&gt; B + H <sub>2</sub> O —&gt; OH <sup>-</sup> + HB <sup>+</sup>
+
+值得注意的是，该模型模拟了强酸和强碱的相互作用。强酸和强碱在水中完全离解。这意味着所有 HA 都转化为水合氢离子并且所有 B 都被质子化，因此原始酸的浓度等于水合氢离子的浓度。 pH 计能够检测溶液中存在多少水合氢离子或氢氧根离子。下面列出了测量 pH 值的公式。也可以用类似的方式计算 pOH。 [] 表示摩尔浓度。
+
+&gt; pH = -log [H+]
+&gt; pOH = -log [OH-]
+
+水合氢离子和氢氧根离子带相反电荷，很容易一起反应。当它们发生反应时，会转移一个氢原子，并在此过程中生成两个水分子。化学家经常一起滴定酸和碱以确定特定酸或碱的 pH 值的稳定性。该实验是通过取已知量的酸并向其中添加不同量的碱来完成的。滴定曲线是通过绘制 pH 值对添加的碱的体积来生成的。
+
+## 如何这个模型怎么用
+
+使用 VOL-ACID滑块确定模拟开始时应存在多少酸，然后按 SETUP。海龟将随机分布在世界各地。蓝色海龟代表水分子，绿色海龟代表水合氢离子。每次向溶液中加入一定量的水分子。
+
+按开始。海龟将在世界各地随机移动，溶液的 pH 值将随时间绘制并显示在 pH 监视器中。
+
+要观察向溶液中添加碱基的效果，请使用 VOL-BASE滑块设置要添加的碱基体积，然后按 ADD-BASE 添加红色碱基分子。
+
+要执行滴定实验，请将滑块设置为所需值并按 GO。在模型运行时，按 ADD-BASE。这会将 VOL-BASE 添加到世界的酸中。等待 pH 稳定，就像您在真实实验中所做的那样，然后按 RECORD-PH。然后在每次添加碱的曲线上绘制一个点，以便用户可以观察 pH 值与添加到溶液中的碱量之间的关系。
+
+## 看一看
+
+观察滴定曲线的图形，尤其是斜率接近 1 的地方。你能解释一下这个现象吗？
+
+该模型中 pH 值的最小值和最大值分别是多少？你能想出一种方法来改变他们的价值观吗？
+
+为什么模拟中没有酸分子？同样，为什么模型中没有显示 A 和 HB？
+
+## 试一试
+
+使用 VOL-BASE 的各种设置绘制滴定曲线。这对滴定曲线有何影响？使用大量碱还是少量碱更可取？你应该使用恒定量的碱吗？
+
+点击 ADD-BASE 几次并观察 pH 值与时间的图表。你觉得这是一个有用的实验图表吗？它告诉你什么？
+
+你能在不向溶液中添加碱的情况下改变溶液的 pH 值吗？
+
+## 改一改
+
+每当水合氢分子和氢氧化物分子发生碰撞时，该代码目前都会生成两个水分子。根据上面的化学方程式，更改代码以生成氢氧化物和水碰撞的行为。这如何改变模型？
+
+如果只有一个水分子产生而氢氧化物分子在两者碰撞时被破坏怎么办？这将如何影响 pH 值？
+
+添加一个按钮可以在任何时间点向溶液中添加更多的酸，您可以使用它来将 pH 值调整到目标值吗？
+
+## NetLogo 语言特性
+
+请注意，在“calculate-pH”过程中，模型使用“count”原语和一些数学将世界海龟的数量转换为实验室中看到的浓度。
+
+## 引用和致谢
+
+Thanks to Mike Stieff for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stieff, M. and Wilensky, U. (2001).  NetLogo Strong Acid model.  http://ccl.northwestern.edu/netlogo/models/StrongAcid.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 Cite: Stieff, M. -->

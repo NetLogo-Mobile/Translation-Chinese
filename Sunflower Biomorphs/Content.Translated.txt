@@ -1,0 +1,74 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+用户提供选择压力的进化模型。用户从随机生成的动画花朵网格中挑选一两朵花。被选中的花朵成为下一代的“父母”。随着时间的推移，用户的选择会导致人群的特征发生变化。
+
+## 怎么这个模型是怎么运行的
+
+每朵花都有四个决定其形态的基因。例如，一朵花可能比另一朵花有更大的花瓣或更鲜艳。当用户选择下一代的父母时，屏幕会被清空，花朵会根据父母的基因重新填充。用户可以对五颜六色的花朵施加选择压力，例如，通过选择可用的最鲜艳的花朵。
+
+在每一朵“花”的中心都有一个看不见的“产卵者”。它留在中心不断孵化向外移动的“花瓣”。每个生成器都包含四个变量：num-colors、step-size、size-modifier 和 turn-increment。 （由于每个花瓣都需要知道每次向前移动多远以及要生长多大，它们有自己的步长和大小修改器，与生成它们的产卵者的值相同。）每一轮，每个产卵者孵化一个新的花瓣并适当地转动和设置它的颜色（基于 num-colors 和 turn-increment 的值。）一旦产卵者都孵化了一个新的花瓣，每个花瓣简单地向前移动其步长并根据它的行进距离和它的大小修饰符。如果花瓣移出那朵花的盒子，它就会死去。
+
+用户可以选择无性繁殖（一个父母）和有性繁殖（两个父母）。下一代是通过改变四个变量的父母的值来创建的。然后杀死现有的花瓣，创造下一代。
+
+## 如何这个模型怎么用
+
+在单击“设置”之前，将“行”和“列”设置为所需的值。这些决定了模型中有多少花。
+
+然后适当设置突变率。突变率越高，下一代的花就越不像父母。如果受控突变？打开，则模型通过在种群内改变突变来控制突变；在这种模式下，突变在种群中的个体之间发生变化；其中 MUTATION 的数量在前一个（或下一行）右侧的每个个体中增加。因此，模型左上角附近的花比右下角的花更像它们的父母。
+
+如果选择了无性选择（ASEXUAL？开关打开），那么每次点击都会根据距离您点击最近的产卵箱的值重新填充花朵。如果选择了性选择，则第一次单击会选择第一个父代（并将其背景着色为灰色。）当您再次单击时，两个单击的产卵者“交配”并填充下一代。
+
+## 试一试
+
+尝试让某些花朵图案出现；例如，尝试有选择地向非常紧密的螺旋、非旋转的“海星”或直线种类。
+
+记住一朵特别讨人喜欢的花，然后清除所有的花，看看能不能再次进化出你喜欢的花。
+
+## 改一改
+
+允许用户在模型运行时更改花的数量可能会很整洁。例如，将模型从 2x2 网格更改为 3x3 网格可能会将五朵新花放入种群中，所有这些花都基于先前选择的父代。
+
+改变父母基因在有性生殖中的传递方式和表达方式。
+
+## NetLogo 语言特性
+
+该模型使用种类隐形的产卵器来跟踪每朵花。
+
+## 相关模型
+
+Sunflower
+
+## 引用和致谢
+
+This model is loosely based on the Biomorphs discussed at length in Richard Dawkins' _The Blind Watchmaker_ (1986).
+
+In Dawkins' original model, the user was presented with a series of "insects" that were drawn based on nine separate values.  For example, if insect A has a "leg-length" value of 2 and insect B has a "leg-length" value of 1, then insect A would be drawn with longer legs.  These 9 variables were thus the genotype of each insect-like creature, and the drawing based on those numbers was the phenotype.  If the user clicked on an insect (or "biomorph"), then all the insects would be erased and the chosen biomorph would be used as the basis for a new population of biomorphs.  Each variable would be mutated slightly in the new generation (representing the inheriting of a slightly higher or lower value for the genotype), and these mutated values would be used in the new population of the biomorphs.  In this manner, the new generation of  biomorphs resembled the previously chosen biomorph, with some variation.  For example, if you chose a biomorph with an exceptionally long abdomen, then, because they are all modified versions of the chosen biomorph, biomorphs in the next generation would tend to have longer abdomens than previously.
+
+In this model, "flowers" are used as the biomorphs instead of the insect-like creatures Dawkins used; furthermore, these biomorphs only vary among four variables--num-color, step-size, size-modifier, and turn-increment--and not nine.  The idea is very similar, though.  The user is presented with a number of flowers.  By clicking on a flower, the user can choose the type of flower that will populate the next generation.  If ASEXUAL? is false, the user picks two biomorphs instead of just one; the next generation will be produced by selecting one the values for each of the four genotype variables from either one of the parents.
+
+Thanks to Nate Nichols for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Nichols, N. and Wilensky, U. (2006).  NetLogo Sunflower Biomorphs model.  http://ccl.northwestern.edu/netlogo/models/SunflowerBiomorphs.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2006 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2006 Cite: Nichols, N. -->

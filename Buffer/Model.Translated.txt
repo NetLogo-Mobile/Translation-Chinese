@@ -1,0 +1,119 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+#
+### Chinese ***
+#
+
+### Source
+acid
+### Chinese ***
+酸
+
+### Source
+conj. base
+### Chinese ***
+连词。根据
+
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+hydronium
+### Chinese ***
+离子
+
+### Source
+hydroxide
+### Chinese ***
+氢氧化物
+
+### Source
+Molecule Counts
+### Chinese ***
+分子计数
+
+### Source
+pH
+### Chinese ***
+酸碱度
+
+### Source
+pH Curve
+### Chinese ***
+酸碱度曲线
+
+### Source
+time
+### Chinese ***
+时间
+
+### Source
+water
+### Chinese ***
+水
+
+## Widgets
+### Source
+# hydronium
+### Chinese ***
+# 水合氢
+
+### Source
+# hydroxide
+### Chinese ***
+#氢氧化物
+
+### Source
+add acid
+### Chinese ***
+加酸
+
+### Source
+add base
+### Chinese ***
+添加基础
+
+### Source
+added-acid
+### Chinese ***
+添加酸
+
+### Source
+added-base
+### Chinese ***
+添加碱基
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+pH
+### Chinese ***
+酸碱度
+
+### Source
+see-starting-water?
+### Chinese ***
+看到启动水？
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+starting-acid
+### Chinese ***
+起始酸
+
+### Source
+starting-conj-base
+### Chinese ***
+起始连接基
+

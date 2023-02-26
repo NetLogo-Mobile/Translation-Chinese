@@ -1,0 +1,144 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## Language = Chinese
+## Plots
+### Source
+default
+### Chinese ***
+默认
+
+### Source
+Epochs
+### Chinese ***
+纪元
+
+### Source
+Error
+### Chinese ***
+错误
+
+### Source
+Error vs. Epochs
+### Chinese ***
+错误与时代
+
+### Source
+negatives
+### Chinese ***
+底片
+
+### Source
+positives
+### Chinese ***
+优点
+
+### Source
+rule
+### Chinese ***
+规则
+
+### Source
+Rule Learned
+### Chinese ***
+学到的规则
+
+### Source
+x1
+### Chinese ***
+x1
+
+### Source
+x2
+### Chinese ***
+x2
+
+## Widgets
+### Source
+1
+### Chinese ***
+1个
+
+### Source
+-1
+### Chinese ***
+-1
+
+### Source
+and
+### Chinese ***
+和
+
+### Source
+examples-per-epoch
+### Chinese ***
+每个时期的例子
+
+### Source
+input-1
+### Chinese ***
+输入-1
+
+### Source
+input-2
+### Chinese ***
+输入-2
+
+### Source
+learning-rate
+### Chinese ***
+学习率
+
+### Source
+nand
+### Chinese ***
+与非
+
+### Source
+nor
+### Chinese ***
+也不
+
+### Source
+or
+### Chinese ***
+或者
+
+### Source
+output
+### Chinese ***
+输出
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+show-weights?
+### Chinese ***
+显示重量？
+
+### Source
+target-function
+### Chinese ***
+目标函数
+
+### Source
+test
+### Chinese ***
+测试
+
+### Source
+train
+### Chinese ***
+火车
+
+### Source
+train once
+### Chinese ***
+训练一次
+
+### Source
+xor
+### Chinese ***
+异或
+

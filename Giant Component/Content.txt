@@ -1,0 +1,102 @@
+﻿## WHAT IS IT?
+
+In a network, a "component" is a group of nodes (people) that are all connected to each other, directly or indirectly.  So if a network has a "giant component", that means almost every node is reachable from almost every other.  This model shows how quickly a giant component arises if you grow a random network.
+
+## HOW IT WORKS
+
+Initially we have nodes but no connections (edges) between them. At each step, we pick two nodes at random which were not directly connected before and add an edge between them.  All possible connections between them have exactly the same probability of occurring.
+
+As the model runs, small chain-like "components" are formed, where the members in each component are either directly or indirectly connected to each other.  If an edge is created between nodes from two different components, then those two components merge into one. The component with the most members at any given point in time is the "giant" component and it is colored red.  (If there is a tie for largest, we pick a random component to color.)
+
+## HOW TO USE IT
+
+The NUM-NODES slider controls the size of the network.  Choose a size and press SETUP.
+
+Pressing the GO ONCE button adds one new edge to the network.  To repeatedly add edges, press GO.
+
+As the model runs, the nodes and edges try to position themselves in a layout that makes the structure of the network easy to see.  Layout makes the model run slower, though.  To get results faster, turn off the LAYOUT? switch.
+
+The REDO LAYOUT button runs the layout-step procedure continuously to improve the layout of the network.
+
+A monitor shows the current size of the giant component, and the plot shows how the giant component's size changes over time.
+
+## THINGS TO NOTICE
+
+The y-axis of the plot shows the fraction of all nodes that are included in the giant component.  The x-axis shows the average number of connections per node. The vertical line on the plot shows where the average number of connections per node equals 1.  What happens to the rate of growth of the giant component at this point?
+
+The model demonstrates one of the early proofs of random graph theory by the mathematicians Paul Erdos and Alfred Renyi (1959).  They showed that the largest connected component of a network formed by randomly connecting two existing nodes per time step, rapidly grows after the average number of connections per node equals 1. In other words, the average number of connections has a "critical point" where the network undergoes a "phase transition" from a rather unconnected world of a bunch of small, fragmented components, to a world where most nodes belong to the same connected component.
+
+## THINGS TO TRY
+
+Let the model run until the end.  Does the "giant component" live up to its name?
+
+Run the model again, this time slowly, a step at a time.  Watch how the components grow. What is happening when the plot is steepest?
+
+Run it with a small number of nodes (like 10) and watch the plot.  How does it differ from the plot you get when you run it with a large number of nodes (like 300)?  If you do multiple runs with the same number of nodes, how much does the shape of the plot vary from run to run?  You can turn off the LAYOUT? switch to get results faster.
+
+## EXTENDING THE MODEL
+
+Right now the probability of any two nodes getting connected to each other is the same. Can you think of ways to make some nodes more attractive to connect to than others?  How would that impact the formation of the giant component?
+
+When creating new links in the `add-edge` procedure, you might be wondering why we don't do something like this:
+
+    ask one-of turtles [
+      create-link-with one-of other turtles with [ not link-neighbor? myself ]
+    ]
+
+Imagine that we have one node in the network that is already connected to most of the other nodes. In the original version of `add-edge`, if that node is picked as one of the two nodes between which we try to create an edge, it will probably get rejected because it is likely that it's already linked with the other node picked. In this alternate version of `add-edge`, however, we tell NetLogo to explicitly go looking for a node that is not already connected to the first one (even if there are very few of those). That makes a big difference. Try it and see how it impacts the formation of the giant component.
+
+## NETWORK CONCEPTS
+
+Identification of the connected components is done using a standard search algorithm called "depth first search."  "Depth first" means that the algorithm first goes deep into a branch of connections, tracing them out all the way to the end.  For a given node it explores its neighbor's neighbors (and then their neighbors, etc) before moving on to its own next neighbor.  The algorithm is recursive so eventually all reachable nodes from a particular starting node will be explored.  Since we need to find every reachable node, and since it doesn't matter what order we find them in, another algorithm such as "breadth first search" would have worked equally well.  We chose depth first search because it is the simplest to code.
+
+The position of the nodes is determined by the "spring" method, which is further described in the Preferential Attachment model.
+
+## NETLOGO FEATURES
+
+Nodes are turtle agents and edges are link agents. The `layout-spring` primitive places the nodes, as if the edges are springs and the nodes are repelling each other.
+
+Though it is not used in this model, there exists a network extension for NetLogo that you can download at: https://github.com/NetLogo/NW-Extension.
+
+## RELATED MODELS
+
+See other models in the Networks section of the Models Library, such as Preferential Attachment.
+
+See also Network Example, in the Code Examples section.
+
+There is also a version of this model using the (NW extension)[https://github.com/NetLogo/NW-Extension] in the `demo` folder of the extension.
+
+## CREDITS AND REFERENCES
+
+This model is adapted from:
+Duncan J. Watts. Six Degrees: The Science of a Connected Age (W.W. Norton & Company, New York, 2003), pages 43-47.
+
+The work Watts describes was originally published in:
+P. Erdos and A. Renyi. On random graphs. Publ. Math. Debrecen, 6:290-297, 1959.
+
+This paper has some additional analysis:
+S. Janson, D.E. Knuth, T. Luczak, and B. Pittel. The birth of the giant component. Random Structures & Algorithms 4, 3 (1993), pages 233-358.
+
+## HOW TO CITE
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2005).  NetLogo Giant Component model.  http://ccl.northwestern.edu/netlogo/models/GiantComponent.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## COPYRIGHT AND LICENSE
+
+Copyright 2005 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+<!-- 2005 -->

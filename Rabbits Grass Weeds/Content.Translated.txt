@@ -1,0 +1,82 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+这个项目探索了一个由兔子、草和杂草组成的简单生态系统。兔子乱窜，野草杂草乱长。当兔子撞到一些草或杂草时，它会吃草并获得能量。如果兔子获得足够的能量，它就会繁殖。如果它没有获得足够的能量，它就会死亡。
+
+可以调整草和杂草以不同的速度生长，并为兔子提供不同的能量。该模型可用于探索这些变量的竞争优势。
+
+## 如何这个模型怎么用
+
+单击设置按钮设置兔子（红色）、草（绿色）和杂草（紫色）。单击 GO 按钮开始模拟。
+
+NUMBER滑块控制兔子的初始数量。 BIRTH-THRESHOLD滑块设置兔子繁殖的能量水平。 GRASS-GROWTH-RATE滑块控制草的生长速度。 WEEDS-GROWTH-RATE滑块控制杂草的生长速度。
+
+该模型的默认设置是，起初杂草不存在（杂草生长率 = 0，杂草能量 = 0）。这样您就可以看到兔子和草的相互作用。完成此操作后，您就可以开始添加杂草的效果了。
+
+## 看一看
+
+观察 COUNT RABBITS 监视器和 POPULATIONS图表，了解兔子数量如何随时间变化。起初，没有足够的草给兔子吃，很多兔子死了。但这让草可以更自由地生长，为剩下的兔子提供丰富的食物。兔子获得能量并繁殖。兔子多，草少，又开始循环。
+
+兔子种群经历了一个阻尼振荡，最终稳定在一个狭窄的范围内。草的总量也会振荡，与兔子的数量不同步。
+
+这些双重振荡是捕食者-猎物系统的特征。此类系统通常由一组称为 Lotka-Volterra 方程的微分方程来描述。 NetLogo 提供了一种研究捕食-猎物系统和其他生态系统的新方法。
+
+## 试一试
+
+别管其他参数，改变草的生长率，让系统再次稳定下来。你认为现在会有更多的草吗？更多兔子？
+
+只改变兔子的出生阈值。这如何影响兔子和草的稳态水平？
+
+在当前设置下，兔子种群会经历阻尼振荡。通过改变参数，你能创造一个无阻尼振荡吗？还是不稳定的振荡？
+
+在当前版本中，每只兔子都有相同的出生阈值。如果每只兔子的出生阈值不同，会发生什么？如果每只新兔子的出生阈值与其父母的出生阈值略有不同怎么办？ birth-threshold 的值将如何随时间演变？
+
+现在通过使滑块 WEEDS-GROW-RATE 与 GRASS-GROW-RATE 和 WEEDS-ENERGY 与 GRASS-ENERGY 相同来添加杂草。请注意，草和杂草的数量大致相同。
+
+现在让草和杂草以不同的速度生长。会发生什么？
+
+如果杂草以与草相同的速度生长，但它们给兔子提供的能量更少（WEEDS-ENERGY 小于 GRASS-ENERGY）怎么办？
+
+想一想两种植物可能不同的其他方式，并尝试看看它们的相对种群会发生什么变化。例如，如果杂草可以在已经有草的地方生长，但草不能在有杂草的地方生长怎么办？如果兔子更喜欢给它们提供最多能量的植物呢？
+
+运行模型一会儿，然后突然将出生阈值更改为零。会发生什么？
+
+## NetLogo 语言特性
+
+请注意，每个黑色格子都有随机的机会长出草或
+每轮杂草，使用规则：
+
+如果随机浮动 1000 &lt; 杂草生长率
+[ 设置 pcolor 紫色 ]
+如果 random-float 1000 &lt; grass-grow-rate
+[设置pcolor绿色]
+
+## 相关模型
+
+Wolf Sheep Predation is another interacting ecosystem with different rules.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Wilensky, U. (2001).  NetLogo Rabbits Grass Weeds model.  http://ccl.northwestern.edu/netlogo/models/RabbitsGrassWeeds.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 -->

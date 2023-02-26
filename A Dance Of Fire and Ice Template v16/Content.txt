@@ -1,0 +1,16 @@
+﻿<discussion=621ac4d18124cf0001237642>A Dance Of Fire and Ice - Series of works</discussion>
+
+<b><color=red>Attention: this work comes from the Chinese area, its content is mainly designed for Chinese players. The link to the series of works is the Chinese area link. </color></b>
+
+World ∞: Custom Ice and Fire
+Custom Level - Blank Template 
+
+## A Dance Of Fire and Ice（ADOFI）
+A Dance of Fire and Ice is a beat game. Players need to follow the rhythm of the music to hit the keyboard or screen  and manipulate the ball to rush to the light in a narrow road. The stars and the moon are vast, the universe is boundless, and many different star continents and fantastic music are waiting for you to experience. 
+With the press of a key / screen, you can control the hovering binary star, follow the swaying dance steps, and continue to advance on a winding road that follows the rhythm of the music to explore the universe of music. The rhythm is skillfully presented in a visual form. It will be a challenging musical journey, keep a steady mind and follow the rhythm of the heart. This is not a game that relies on quick reactions. 
+
+## v1.6's changes: 
+-optimized
+-added the High Performance Mode and Detail Generation Limits
+-improved details
+-fixed bugs

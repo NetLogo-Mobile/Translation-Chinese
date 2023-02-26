@@ -1,0 +1,117 @@
+﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+## 这个模型是什么？
+
+此模型演示缓冲溶液的行为。缓冲液是一种溶液，当在一定范围内向其中添加酸或碱时，它可以抵抗 pH 值的变化。它最好被视为 ACID-BASE 包中的第三个模型。
+
+化学家和生物学家利用酸和碱的特性来创建缓冲溶液。通常希望使溶液的酸度或水合氢离子浓度尽可能接近恒定。此类情况的示例包括：测量反应速度、选择性溶解某些盐类或研究细菌或植物的生长。在我们体内，血液具有缓冲能力，可将 pH 值保持在 7.35。如果 pH 值超过 7.7（碱中毒）或低于 7.0（酸中毒），结果是致命的。
+
+## 怎么这个模型是怎么运行的
+
+为了实现这一壮举，缓冲液取决于弱酸及其共轭碱的存在。对于溶液中的这两种物质，额外的酸和碱根据以下化学方程式被中和。 HA 表示弱酸，A- 表示其共轭碱。
+
+&gt; HA + OH <sup>-</sup> —&gt; H <sub>2</sub> O + A <sup>-</sup>
+&gt; A <sup>-</sup> + H <sub>3</sub> O <sup>+</sup> —&gt; H <sub>2</sub> O + 透明质酸
+
+缓冲液 pH 值的测定方式与弱酸 pH 值的测定方式相同——通过计算水合氢离子和氢氧根离子的数量，并计算它们与溶液中离子和分子总数的比率。
+
+当有更多的水合氢时，pH = - log（水合氢浓度）
+
+当氢氧化物较多时，pH = 14 - pOH = 14 - log（氢氧化物浓度）
+
+缓冲器仅在其独特的缓冲范围内有效。该范围由弱酸及其共轭碱的浓度决定。在其缓冲范围之外，该溶液表现为强酸或强碱。
+
+## 如何这个模型怎么用
+
+使用 STARTING-ACID滑块决定在模拟开始时应存在多少酸分子。使用 STARTING-CONJ-BASE滑块设置共轭碱基分子的数量。
+
+按设置。海龟将随机分布在世界各地。
+
+黄海龟是酸性分子（HA）
+ORANGE 海龟是共轭基础分子 (A-)
+绿海龟代表水合氢离子 (H30+)
+红海龟是氢氧化物分子 (OH-)
+蓝色海龟代表水分子（H20）
+
+在这个模型中，我们假设 2% 的原始酸分子解离为 2 个共轭碱分子和 2 个水合氢分子。只有在分子开始相互作用之前，这才是正确的。
+
+按开始。分子将在世界内随机移动。
+
+当两只海龟占据同一个格子时，以下规则适用：
+1. 当弱酸和水分子碰撞时，酸分子离解成其共轭碱，水分子转变成水合氢离子。
+2. 当氢氧根离子和水合氢离子碰撞时，它们总是形成两个水分子。
+3、弱酸与氢氧化物碰撞时，极有可能转变成共轭碱和水分子。
+4. 水合氢离子与共轭碱发生碰撞时，极有可能转变成弱酸分子和水分子。
+
+要观察向溶液中添加碱或酸的效果，请使用 ADDED-ACID滑块设置要添加的酸分子数，然后按 ADD-ACID (H30+)
+使用 ADDED-BASE滑块和 ADD-BASE 按钮添加基础也是如此。
+
+可以观察到许多图表和监视器：
+溶液的 pH 值随着时间的推移绘制在 PH图表上，并在每次在 PH 监视器上周期。 pH 值是使用水合氢离子和氢氧化物分子的数量与海龟总数的比率来计算的。这不同于将该数字与溶液体积相关联的化学计算。
+您可以在他们的监视器中看到溶液中水合氢离子和氢氧化物的数量（# HYDRONIUMS，# HYDROXIDES）。
+您可以在 MOLECULE COUNTS图表中跟随每个物种随时间变化的分子数。
+
+您可以选择是否使用 SEE-STARTING-WATER? 查看初始水分子？转变。
+
+## 看一看
+
+按下 SETUP 后，缓冲溶液尚未达到平衡。模型开始运行后，分子会发生反应，直到系统达到平衡，pH 值不再变化。
+
+观察 pH 曲线。下面监测器中水合氢离子和氢氧化物分子的数量与 pH 值有何关系？
+
+检查 pH 曲线的图形。注意 pH 值如何随添加的碱或酸的量而变化。缓冲液是否能抵抗 pH 值的变化？
+
+观察图表中的分子数。当向溶液中加入酸或碱时，它们会在反应时迅速消失。你能确定哪些分子相互反应吗？这两个图表之间的关系是什么：pH 值和分子数？
+
+当向系统中添加大量碱或酸时会发生什么？和少量添加一样吗？ pH 曲线是否反映了这一点？
+
+## 试一试
+
+向溶液中加入大量酸或碱，观察效果。为什么 pH 会在缓冲范围之外发生剧烈变化？如果您正在尝试调整 pH 值，将大量碱一次添加到实验室的溶液中是否有用？
+
+您能否将“缓冲范围”的概念与分子及其在模型中的行为联系起来？
+
+尝试使用不同量的酸或共轭碱来运行模型。溶液的缓冲范围应该改变。转变与您所做的更改有何关系？改变弱酸和共轭碱分子数量之间的比例是否会影响缓冲能力？
+
+改变缓冲分子的数量如何影响缓冲能力？
+
+尝试使用相同的初始设置多次按 SETUP，并观察水合氢元素的数量。号码总是一样的吗？按 GO 并观察 pH 值的变化。为什么在每种情况下都达到相同的平衡？
+
+## 改一改
+
+通过增加过程中离解的机会来增加最初在 SETUP 时产生的水合氢量。这对初始 pH 有什么影响？
+
+添加一个按钮和过程以向反应中添加更多共轭碱基。这对试图将溶液的 pH 值保持在恒定值的化学家有何帮助？
+
+添加一个允许您图表缓冲液滴定曲线的过程。它与您见过的任何其他滴定曲线相似吗？您可以从滴定曲线中了解哪些额外信息？
+
+除了规则中规定的交互之外，解决方案中还可以进行其他交互。这些被省略了，因为它们发生的可能性很低。尝试将这些规则之一包含到过程中。例如，两个水分子可以转化为水合氢离子和氢氧根离子。它有改变吗？
+
+## 引用和致谢
+
+Thanks to Mike Stieff for his work on this model.
+
+## 如何引用本模型
+
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Stieff, M. and Wilensky, U. (2001).  NetLogo Buffer model.  http://ccl.northwestern.edu/netlogo/models/Buffer.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+## 版权和授权
+
+Copyright 2001 Uri Wilensky.
+
+![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+Commercial licenses are also available. To inquire about commercial licenses, please contact Uri Wilensky at uri@northwestern.edu.
+
+This model was created as part of the projects: PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -- grant numbers REC #9814682 and REC-0126227.
+
+<!-- 2001 Cite: Stieff, M. -->
