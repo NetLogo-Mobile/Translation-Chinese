@@ -1,10 +1,10 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## Language = Chinese
 ## Widgets
 ### Source
 go
 ### Chinese ***
-走
+去
 
 ### Source
 initial-position-x
@@ -49,5 +49,5 @@ step-size
 ### Source
 wind-constant
 ### Chinese ***
-风速不变
+风常数
 

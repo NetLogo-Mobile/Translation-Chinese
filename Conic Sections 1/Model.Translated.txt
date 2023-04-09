@@ -1,25 +1,25 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## Language = Chinese
 ## Widgets
 ### Source
 constant
 ### Chinese ***
-常量
+持续的
 
 ### Source
 go
 ### Chinese ***
-运行
+去
 
 ### Source
 num-turtles
 ### Chinese ***
-海龟数量
+海龟数
 
 ### Source
 second-focus?
 ### Chinese ***
-双焦点？
+第二焦点？
 
 ### Source
 setup

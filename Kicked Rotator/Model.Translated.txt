@@ -1,4 +1,4 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## Language = Chinese
 ## Plots
 ### Source
@@ -35,7 +35,7 @@ current angular position
 ### Source
 current momentum
 ### Chinese ***
-目前的势头
+当前势头
 
 ### Source
 go

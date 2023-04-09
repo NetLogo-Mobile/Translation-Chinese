@@ -1,4 +1,4 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## 这个模型是什么？
 
 [被踢旋转器](https://en.wikipedia.org/wiki/Kicked_rotator) 通常被想象成一个粒子，在一个没有摩擦或重力的系统中，被约束在一个圆上移动，并且周期性地被踢。你也可以把它想象成一个没有重力摆动的钟摆。该粒子的运动可用于生成所谓的 [Chirikov 标准图](http://www.scholarpedia.org/article/Chirikov_standard_map)，这是一种物理学工具，可用于描述许多不同的动力系统加速器中粒子的运动到太阳系中的彗星动力学。

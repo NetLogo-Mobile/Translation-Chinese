@@ -1,15 +1,15 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## Language = Chinese
 ## Widgets
 ### Source
 go
 ### Chinese ***
-走
+去
 
 ### Source
 gravity-constant
 ### Chinese ***
-重力常数
+引力常数
 
 ### Source
 initial-range-x
@@ -64,7 +64,7 @@ viscosity-constant
 ### Source
 wind-constant-x
 ### Chinese ***
-风常数-x
+风常数x
 
 ### Source
 wind-constant-y

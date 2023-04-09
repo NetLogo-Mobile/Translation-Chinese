@@ -1,4 +1,4 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## Language = Chinese
 ## NetTango
 ### Source
@@ -69,12 +69,12 @@ Create your own model
 ### Source
 green
 ### Chinese ***
-绿色
+绿色的
 
 ### Source
 house
 ### Chinese ***
-屋
+房子
 
 ### Source
 How far?
@@ -129,7 +129,7 @@ Minimum
 ### Source
 orange
 ### Chinese ***
-橙
+橙子
 
 ### Source
 person

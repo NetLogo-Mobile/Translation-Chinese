@@ -1,4 +1,4 @@
-﻿*** a9ab0d60c4bb64a6ae5b2b0bde5e0b25
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
 ## Language = Chinese
 ## Plots
 ### Source
@@ -24,12 +24,12 @@ Frequency
 ### Source
 LacZ Number
 ### Chinese ***
-LacZ 编号
+LacZ 号码
 
 ### Source
 Number of Ticks
 ### Chinese ***
-刻度数
+滴答数
 
 ### Source
 Time
@@ -50,12 +50,12 @@ glucose?
 ### Source
 go
 ### Chinese ***
-走
+去
 
 ### Source
 LacI-bond-leakage
 ### Chinese ***
-LacI键泄漏
+LacI-键泄漏
 
 ### Source
 LacI-lactose-binding-chance
@@ -65,12 +65,12 @@ LacI-乳糖结合机会
 ### Source
 LacI-lactose-separation-chance
 ### Chinese ***
-LacI-乳糖分离机会
+乳糖分离机会
 
 ### Source
 LacI-number
 ### Chinese ***
-乳酸数
+紫胶号码
 
 ### Source
 lactose?
@@ -85,7 +85,7 @@ LacY-degradation-chance
 ### Source
 LacZ-degradation-chance
 ### Chinese ***
-LacZ-降解机会
+LacZ 降解机会
 
 ### Source
 LevelSpace?
@@ -100,7 +100,7 @@ reset
 ### Source
 RNAP-number
 ### Chinese ***
-RNAP编号
+RNAP数
 
 ### Source
 save screenshot
