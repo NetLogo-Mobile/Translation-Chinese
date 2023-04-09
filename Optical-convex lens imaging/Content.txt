@@ -1,0 +1,35 @@
+﻿Physics content of grade two ~ (teacher's SWF animation in the 2000s is too weak)
+Core algorithm: 1 / T = 1 / U + 1 / V
+##Convex lens is drawn with code! (make a part of the circle with F as the center)
+##Adjustable focal length
+##If you don't understand the meaning of letters, you can click the help of user message
+Here are the key points
+##Five laws of convex lens:
+Rule 1: when the object distance is greater than 2 times the focal length, the image distance is between 1 and 2 times the focal length, forming an inverted and reduced real image. At this time, the image distance is smaller than the object distance, the image is smaller than the object, and the object image is on the opposite side.
+Applications: cameras, cameras.
+Rule 2: when the object distance is equal to twice the focal length, the image distance is also at twice the focal length, forming an inverted, equal size real image. At this time, the object distance is equal to the image distance, the size of the image and the object is equal, and the object image is on the opposite side.
+Application: measure focal length.
+Rule 3: when the object distance is less than 2 times the focal length and greater than 1 time the focal length, the image distance is greater than 2 times the focal length, forming an inverted and enlarged real image. At this time, the image distance is larger than the object distance, the image is larger than the object, and the object image is on the opposite side.
+Application: projector, slide projector, movie projector.
+Rule 4: when the object distance is equal to 1 times the focal length, the image is not formed, and it is emitted as parallel light.
+Rule 5: when the object distance is less than 1 times the focal length, it will become a vertical and enlarged virtual image. At this time, the image distance is larger than the object distance, the image is larger than the object, and the object and the image are on the same side.
+##Memory formula (Baidu Baike)
+（1）
+One time focus is divided into virtual and real, two times focus is divided into size, and two times focus is divided into object image.
+The real image is always on the wrong side. The near image and the far image of the object become larger, and the far image and the near image of the object become smaller.
+The virtual image is always on the same side. The far image of the object becomes larger, and the near image of the object becomes smaller.
+The size of the image is fixed by the image distance, and the image runs after the object. The sum of the object distance and the image distance is changing.
+（2）
+One focal length is divided into virtual and real, and two focal lengths are divided into size. The near image and the far image of the object become larger, and the far image and the near image of the object become smaller.
+（3）
+One time focal length divides virtual image and real image, "from virtual image to real image"
+It's just one time without imaging.
+The double focal length is divided by size, "the object image changes from large to small"
+It's just twice as big.
+The near image and the far image of the object become larger,
+The far image and the near image become smaller.
+The real image stands upside down on the opposite side,
+The virtual image stands on the same side.
+##Note: the double focal length refers to the distance from the point where the parallel light source converges to the main optical axis through the lens to the optical center of the lens, which can also be directly called the focal length; Twice the focal length is twice the distance
+##Two dividing points of convex lens imaging:
+Point 2F is the dividing point for enlarging and reducing the real image; Point F is the dividing point between the real image and the virtual image.

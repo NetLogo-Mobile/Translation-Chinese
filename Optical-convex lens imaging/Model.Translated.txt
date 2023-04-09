@@ -1,0 +1,18 @@
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
+## Widgets
+### Source
+f
+### Chinese ***
+F
+
+### Source
+go
+### Chinese
+运行
+
+### Source
+setup
+### Chinese
+设置
+

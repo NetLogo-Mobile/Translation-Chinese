@@ -1,0 +1,165 @@
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
+## NetTango
+### Source
+At the nest?
+### Chinese ***
+在窝里？
+
+### Source
+Carrying food?
+### Chinese ***
+背食物？
+
+### Source
+Drop off food
+### Chinese ***
+放下食物
+
+### Source
+Drop off smell
+### Chinese ***
+去除气味
+
+### Source
+Each Ant
+### Chinese ***
+每只蚂蚁
+
+### Source
+Food here?
+### Chinese ***
+这里的食物？
+
+### Source
+Move forward
+### Chinese ***
+前进
+
+### Source
+No food here?
+### Chinese ***
+这里没有食物？
+
+### Source
+Not at the nest?
+### Chinese ***
+不在窝里？
+
+### Source
+Not carrying food?
+### Chinese ***
+不带食物？
+
+### Source
+Rules for Ants
+### Chinese ***
+蚂蚁规则
+
+### Source
+steps
+### Chinese ***
+脚步
+
+### Source
+Take food
+### Chinese ***
+拿食物
+
+### Source
+Turn right
+### Chinese ***
+右转
+
+### Source
+Turn toward nest
+### Chinese ***
+转向巢
+
+### Source
+Turn toward smell
+### Chinese ***
+转向气味
+
+### Source
+Wiggle
+### Chinese ***
+摆动
+
+## Plots
+### Source
+food
+### Chinese ***
+食物
+
+### Source
+Food in each pile
+### Chinese ***
+每堆食物
+
+### Source
+food-in-pile1
+### Chinese ***
+食物堆1
+
+### Source
+food-in-pile2
+### Chinese ***
+食物堆2
+
+### Source
+food-in-pile3
+### Chinese ***
+food-in-pile3
+
+### Source
+time
+### Chinese ***
+时间
+
+## Widgets
+### Source
+Ant's Perception
+### Chinese ***
+蚂蚁的感知
+
+### Source
+As Ant?
+### Chinese ***
+作为蚂蚁？
+
+### Source
+diffusion-rate
+### Chinese ***
+扩散率
+
+### Source
+evaporation-rate
+### Chinese ***
+蒸发率
+
+### Source
+Follow You?
+### Chinese ***
+跟着你？
+
+### Source
+go
+### Chinese ***
+去
+
+### Source
+population
+### Chinese ***
+人口
+
+### Source
+setup
+### Chinese ***
+设置
+
+### Source
+step-size
+### Chinese ***
+一步的大小
+

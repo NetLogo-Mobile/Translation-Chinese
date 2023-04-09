@@ -1,0 +1,9 @@
+﻿This is the AR version of the <model=6000fa5d8a9485000192b8b6>Ants Foraging</model> model.
+
+After completing the scan, a ant nest and three food piles will be generated around you. The goal of the ants is to retrieve all the food in the food piles and bring it back to the nest. The ant nest is purple, and the food piles are different colors.
+
+Overall, the ants' actions are influenced by smells (pheromones) and the scent of the nest. When an ant doesn't have any food, it will follow the smells  (represented by brightness in the model, with brighter colors indicating stronger smells left by other ants with food, which are chemical signals. When an ant has food, it will ignore smells and instead rely on the scent of the nest (which is stronger the closer the ant is to the nest) to determine its direction. As in reality, their movements are sometimes swaying left and right, and they will try to turn around if they collide with obstacles.
+
+You will play the role of an ant (represented by an arrow). Your rules are the same as those of the ants: if you walk onto a food pile, you will get food and start leaving smells for other ants. When you return to the nest, you will put down the food and stop leaving pheromones. You can choose to play as an ant (following pheromones) or be yourself.
+
+Now, do you want to do something?

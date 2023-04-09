@@ -1,0 +1,128 @@
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
+## Widgets
+### Source
+go
+### Chinese
+运行
+
+### Source
+setup
+### Chinese
+设置
+
+### Source
+当前颜色 
+### Chinese ***
+当前颜色 
+
+### Source
+录制并在加载时自动回放
+### Chinese ***
+录音并在加载时自动回放
+
+### Source ***
+清除緩存
+### Chinese
+
+
+### Source
+清除缓存
+### Chinese ***
+清理库存
+
+### Source ***
+當前顏色 
+### Chinese
+
+
+### Source
+笔粗细 
+### Chinese ***
+粗细 
+
+### Source
+笔锋旋转灵敏度 
+### Chinese ***
+笔锋旋转灵敏度 
+
+### Source
+笔锋长度 
+### Chinese ***
+笔尖长度 
+
+### Source ***
+筆粗細 
+### Chinese
+
+
+### Source ***
+筆鋒旋轉靈敏度 
+### Chinese
+
+
+### Source ***
+筆鋒長度 
+### Chinese
+
+
+### Source
+精度 
+### Chinese ***
+度 
+
+### Source
+自定义
+### Chinese ***
+自定义
+
+### Source ***
+自定義
+### Chinese
+
+
+### Source ***
+請不要調太高！除非你對你設備的性能很有自信！
+### Chinese
+
+
+### Source
+请不要调太高！除非你对你设备的性能很有自信！
+### Chinese ***
+请不要调太高！除了你对你设备的性能力很有信心！
+
+### Source
+选择颜色 
+### Chinese ***
+选择颜色 
+
+### Source ***
+選擇顏色 
+### Chinese
+
+
+### Source ***
+重繪背景為選擇的顏色 
+### Chinese
+
+
+### Source
+重绘背景为选择的颜色 
+### Chinese ***
+重绘背景为选择的颜色 
+
+### Source ***
+錄制并在加載時自動回放
+### Chinese
+
+
+### Source ***
+鎖定畫筆 
+### Chinese
+
+
+### Source
+锁定画笔 
+### Chinese ***
+锁定画笔 
+

@@ -2,5 +2,9 @@
 
 P.S. If you encounter any issue, please comment on this model, and tell me what's the problem and how did you get it. If you think any building block is needed for your microworld, please also leave your idea. I am more than happy to realize your wildest dream for you.
 
-***Version 1.0***
-The initial release.
+### Version 1.0
+The first release version.
+
+### Version 1.1
+Fixed the "Set Color" module for patches.
+Added modules for labels and "Nearby Turtles".

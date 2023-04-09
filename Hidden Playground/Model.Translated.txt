@@ -1,10 +1,9 @@
-﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
-## Language = Chinese
+﻿## Language = Chinese
 ## NetTango
 ### Source
 arrow
-### Chinese ***
-箭
+### Chinese
+箭头
 
 ### Source
 At least
@@ -18,13 +17,13 @@ At most
 
 ### Source
 black
-### Chinese ***
-黑色的
+### Chinese
+黑色
 
 ### Source
 blue
-### Chinese ***
-蓝色的
+### Chinese
+蓝色
 
 ### Source
 Brightness
@@ -33,8 +32,8 @@ Brightness
 
 ### Source
 brown
-### Chinese ***
-棕色的
+### Chinese
+棕色
 
 ### Source
 By proportion
@@ -48,32 +47,37 @@ By value
 
 ### Source
 car
-### Chinese ***
-车
+### Chinese
+车辆
 
 ### Source
 circle
-### Chinese ***
+### Chinese
 圆圈
 
 ### Source
-Color
+Closer than
 ### Chinese
-颜色
+距离小于
 
 ### Source
 Create your own model
-### Chinese ***
+### Chinese
 创建自己的模型
 
 ### Source
+cyan
+### Chinese
+青色
+
+### Source
 green
-### Chinese ***
-绿色的
+### Chinese
+绿色
 
 ### Source
 house
-### Chinese ***
+### Chinese
 房子
 
 ### Source
@@ -117,6 +121,16 @@ Less than
 少于
 
 ### Source
+lime
+### Chinese
+亮绿
+
+### Source
+magenta
+### Chinese
+品红
+
+### Source
 Maximum
 ### Chinese
 最多
@@ -128,23 +142,23 @@ Minimum
 
 ### Source
 orange
-### Chinese ***
-橙子
+### Chinese
+橙色
 
 ### Source
 person
-### Chinese ***
-人
+### Chinese
+小人
 
 ### Source
 pink
-### Chinese ***
-粉色的
+### Chinese
+粉色
 
 ### Source
 red
-### Chinese ***
-红色的
+### Chinese
+红色
 
 ### Source
 Rounds/Tick
@@ -153,8 +167,13 @@ Rounds/Tick
 
 ### Source
 sheep
-### Chinese ***
-羊
+### Chinese
+绵羊
+
+### Source
+sky
+### Chinese
+天蓝
 
 ### Source
 Sniff angle
@@ -162,14 +181,29 @@ Sniff angle
 嗅探角度
 
 ### Source
+torquoise
+### Chinese
+蓝绿
+
+### Source
 tree
-### Chinese ***
-树
+### Chinese
+大树
 
 ### Source
 turtle
-### Chinese ***
+### Chinese
 海龟
+
+### Source
+violet
+### Chinese
+紫色
+
+### Source
+What's in the label?
+### Chinese
+什么内容？
 
 ### Source
 Which color?
@@ -188,13 +222,13 @@ Which shape?
 
 ### Source
 white
-### Chinese ***
-白色的
+### Chinese
+白色
 
 ### Source
 wolf
-### Chinese ***
-狼
+### Chinese
+灰狼
 
 ### Source
 X (Horizontal)
@@ -208,8 +242,8 @@ Y（垂直）
 
 ### Source
 yellow
-### Chinese ***
-黄色的
+### Chinese
+黄色
 
 ### Source
 Yes or no?
@@ -269,7 +303,7 @@ Yes or no?
 ### Source
  Set Color
 ### Chinese
- 设置颜色
+  设置颜色
 
 ### Source
  Set Heading
@@ -285,6 +319,11 @@ Yes or no?
  Set Heading With Time
 ### Chinese
  根据时间设置方向
+
+### Source
+ Set Label
+### Chinese
+ 设置标签
 
 ### Source
  Set Shape
@@ -337,14 +376,34 @@ Yes or no?
  抵达目标时
 
 ### Source
+ With Color
+### Chinese
+ 当海龟的颜色为
+
+### Source
+ With Label
+### Chinese
+ 当海龟的标签为
+
+### Source
  With Shape
 ### Chinese
  当海龟的形状为
 
 ### Source
+ With Size
+### Chinese
+ 当海龟的大小为
+
+### Source
  Add Signal
 ### Chinese
  添加信号
+
+### Source
+ Ask Nearby Turtles
+### Chinese
+ 让附近的海龟
 
 ### Source
  Evaporate Signal
@@ -357,9 +416,19 @@ Yes or no?
  如果信号大于
 
 ### Source
+ Set Patch Color
+### Chinese
+ 设置格子颜色
+
+### Source
  When Turtles Here
 ### Chinese
  当海龟的数量
+
+### Source
+ With Patch Color
+### Chinese
+ 当格子的颜色为
 
 ### Source
  Go 
@@ -416,15 +485,10 @@ Yes or no?
 ### Chinese
  根据信号上色
 
-### Source
- Set Color
-### Chinese
- 设置颜色
-
 ## Tutorial
 ### Source
-* PLEASE. WAIT. YOU. CURIOUS. ONE. *
-A voice interrupts your move. The mechanical voice. After a second of silence, the voice begins to speak much more clearly. Even a bit passionately.
+* PLEASE. WAIT. THE. CURIOUS. ONE. *
+A robotic voice halts your step. After a brief pause, it speaks again, now filled with excitement and warmth.
 ### Chinese
 * 请。稍。候。好。奇。者。 *
 声音打断了你的动作。一种机械声音。一刻钟的的沉默后，声音开始变得清晰——让你难以置信的是，这声音甚至有些热情的成分。
@@ -435,7 +499,7 @@ A voice interrupts your move. The mechanical voice. After a second of silence, t
 秘密实验室中的<b>随机 </b>并不是毫无章法的。譬如我刚刚创建的 400 只<color=green>海龟 </color>。当我让每只海龟<b>随机</b>出现在世界上的任意位置时，结果却显得比较均匀。例如，<b>随机  2</b>会产生类似掷硬币的结果：硬币落到正面的次数大约和反面一样多。
 
 ### Source
-A microworld is a tiny world for you to explore endless possibilities. Like what is before you, it is designed to reflect a phenomenon in the real world - or, it can be artistic, fun, or whatsoever that pleases you and allows you to play around and build with it. Actually, you are welcome to play with this one before we start!
+A microworld is a tiny world for you to explore endless possibilities. Like what is before you, it is designed to reflect a phenomenon in the real world - or, it can be artistic, fun, or whatsoever pleases you and allows you to play around and build with it. Actually, you are welcome to play with this one before we start!
 ### Chinese
 袖珍世界是一个微小的世界，你可以探索其中无限的可能性。有些袖珍世界旨在反映现实世界的现象，有些则关于艺术、游戏。实际上，任何你在其中可以进行建造并享受其中的，都可以成为袖珍世界。在我们正式开始之前，你可以先试试这个世界！
 
@@ -443,16 +507,6 @@ A microworld is a tiny world for you to explore endless possibilities. Like what
 Actually, you have two ways to do that! I have highlighted them for you. <b>Set Heading</b> allows you to give a heading to a turtle, while <b>Set Heading With Time</b> will assign one according to passed <trigger=Glossary-Tick>ticks </trigger>.
 ### Chinese
 实际上，你有两种方法可以做到这一点，我已经高亮显示了它们。<b>设置方向</b>允许你给海龟一个方向，而<b>根据时间设置方向</b>会根据目前的<trigger=Glossary-Tick>时间周期 </trigger>来设置方向。
-
-### Source
-Ah, people! One of the most fascinating species I have seen in this universe. I was built too long ago, and lost most of my memories. The only microworld I can remember is one for modeling how walkers form <color=purple>paths</color>, which I am able to help you build. Or, you can start a model on your mind, and I will do whatever I can to support you. Which would you prefer?
-### Chinese
-啊，人类！我在这个宇宙中见过的最迷人的物种之一。我已经存在太长时间了，许多事都记不得了……我唯一记得的袖珍世界是一个用来模拟步行者如何形成的世界<color=purple>路径</color>，我将为你提供帮助。或者，你可以在自己的脑海中建立模型，而我会尽力支持你。你更喜欢哪个？
-
-### Source
-All of a sudden, a veil is raised, and a microworld appears before you. It runs continuously before your eyes, like a perpetual clockwork mechanism. You curiously gazes at it, trying to recognize any patterns you are familiar with.
-### Chinese
-突然之间，一道帷幕升起，一个袖珍世界出现在你面前。就像永不停息的发条机器，它在你的眼前无尽地运转着。你好奇地注视着它，试图认出你所熟悉的什么图案。
 
 ### Source
 Alright, I will try it out!
@@ -468,6 +522,11 @@ An agent is an individual in a microworld. There are three different types of ag
 As a starting point, this template only does one thing: when the microworld is playing, for each <trigger=Glossary-Tick>tick </trigger> of time, we create one <color=green>turtle </color> and ask all <color=green>turtles </color> to move forward. Now, let's guess: what will happen when we start to play it?
 ### Chinese
 作为起点，这个模板只做了一件事：当你运行袖珍世界时，在每个<trigger=Glossary-Tick>时间周期 </trigger> 中，我们创造一只<color=green>海龟 </color>，并且让每只<color=green>海龟 </color> 都向前进。猜猜会发生什么？
+
+### Source
+As you asked, I've set up a blank microworld for you. The first step might be to add some <trigger=Glossary-Turtle,green>turtles </trigger> and give them rules to follow. If you have any questions, or if you'd like more pieces for your mini-world, just hit the "Help" button on the code interface!
+### Chinese
+按照你的想法，我为你准备了一个空白的袖珍世界。第一步也许是在世界上填充一些<trigger=Glossary-Turtle,green>海龟 </trigger> 并给它们赋予规则。如果你有任何疑问，或者想为你的袖珍世界获取更多的规则模块，可以随时通过“帮助”按钮找到我。
 
 ### Source
 As you know, signals in the real world - such as odor, footprints, or sandpiles - fade away with time. How can we recreate this in the microworld? I would suggest you to ask each <trigger=Glossary-Patch,brown>patch </trigger> to <b>Evaporate Signals</b> block! Sometimes, signals like odor may diffuse with time. <b>Diffuse Signals</b> block will help you with that!
@@ -510,11 +569,6 @@ As you told me before, we are on the way to create a science microworld with you
 如你所说，我们正以你的绝妙想法创建一个关于科学的袖珍世界。我们将设立世界的初始规则，并赋予每只海龟（或你感兴趣的主体）具体的规则，以重现我们所期望的现象。还有什么问题吗？
 
 ### Source
-As you told me, I have prepared an empty microworld for you. The first step could be populate the world with some <trigger=Glossary-Turtle,green>turtles </trigger> and give them rules to follow. If you have any questions, or if you want to get more building blocks for your microworld, call me via the "Help" button!
-### Chinese
-按照你的想法，我为你准备了一个空白的袖珍世界。第一步也许是在世界上填充一些<trigger=Glossary-Turtle,green>海龟 </trigger> 并给它们赋予规则。如果你有任何疑问，或者想为你的袖珍世界获取更多的规则模块，可以随时通过“帮助”按钮找到我。
-
-### Source
 Ask the questions in your mind. See how I can do my best to help you!
 ### Chinese
 有什么问题尽管问。我会尽力回答的！
@@ -523,11 +577,6 @@ Ask the questions in your mind. See how I can do my best to help you!
 Ask turtles to move forward some steps. What will happen?
 ### Chinese
 让海龟向前移动几步。你觉得会发生什么？
-
-### Source
-Before we start, I have some basic microworlds that might help our journey. In the good old days, I used them to demonstrate how phenomena <trigger=Glossary-Emergence>emerges</trigger> from individual <trigger=Glossary-Agent>agents</trigger>. Are you familiar with <trigger=Glossary-Turtle,green>turtles </trigger> and <trigger=Glossary-Patch,brown>patches </trigger>?
-### Chinese
-在我们上路之前，我有些简单的袖珍世界想给你看看，它们也许对我们的旅程有所帮助。在遥远的过去，我用它们展示许多单个<trigger=Glossary-Agent>主体</trigger><trigger=Glossary-Emergence>涌现</trigger>形成的丰富现象。话说回来，你熟悉<trigger=Glossary-Turtle,green>海龟 </trigger> 或是<trigger=Glossary-Patch,brown>格子 </trigger>这样的概念吗？
 
 ### Source
 Both <trigger=Glossary-Turtle,green>turtles </trigger> and <trigger=Glossary-Patch,brown>patches </trigger> are agents. Together with <trigger=Glossary-Link>links </trigger>, agents represent the individuals living in the microworlds. For example, I just created 400 <color=green>turtles </color> in the center of the world.
@@ -552,9 +601,9 @@ You have made the first change to the microworld. If you change anything in the 
 你成功修改了袖珍世界的规则。如果你对“启动时”模块进行了任何更改，请重新启动以应用规则！
 
 ### Source
-Covered in heavy layers of dust, you spotted some tools scattered around the ground, right beside the microworld. You turned around, vaguely figuring out the outline of a room . An ancient room, you wondered, that oddly looks like a laboratory . In the center of the room, the microworld ran before you, indefinitely.
+Definitely! Use the <b>Set Label</b> block to display label text for your <color=green>turtles </color>. And there's more! By using the <b>With Label</b> block, we can create different rules for <color=green>turtles </color> with unique labels. Make your main character strong!
 ### Chinese
-被尘埃重重覆盖，你在袖珍世界旁的地面上发现了一些工具。你转过身，房间隐隐露出些轮廓。这是个古老的房间——奇怪的是，看起来又有些像一座实验室  。在房间的中央，一座袖珍世界正源源不断地运行着。
+当然可以！使用<b>设置标签</b>模块，让<color=green>海龟 </color>显示标签文本。你还可以通过使用<b>当海龟的标签为</b>模块，找出带有特定标签的<color=green>海龟 </color>。你能用它做些什么？
 
 ### Source
 Did you start to ask every <color=green>turtle </color> to leave a footprint - or a signal - on the ground? Then we need to ask them follow them. <b>Find a Path to Goal</b> block will do the job, though you still need to figure out a strategy: how far will a turtle try to search for a path? And how deep the footprint should it consider as a path?
@@ -567,6 +616,11 @@ Did your <trigger=Glossary-Turtle,green>turtles </trigger> start leaving sign
 你开始让 <color=green>海龟 </color> 在地面上留下信号了吗？我们还需要让<color=green>海龟 </color> 懂得检测信号并朝该方向移动。我已经给相关的规则模块做了标记。你一定能做到的——给海龟们找到一个舒适的家！
 
 ### Source
+Dust swirled around and you noticed tools scattered near the tiny world. As you turned, the shadowy outline of a room  appeared - an ancient, lab-like  space. In its center, the microworld spun endlessly.
+### Chinese
+被尘埃重重覆盖，你在袖珍世界旁的地面上发现了一些工具。你转过身，房间隐隐露出些轮廓。这是个古老的房间——奇怪的是，看起来又有些像一座实验室  。在房间的中央，一座袖珍世界正源源不断地运行着。
+
+### Source
 Emergence! Although that is the central concept of our microworlds, I want you to <b>touch</b> and <b>sense</b> it in my playground, instead of telling you some complicated terms. Create your microworld, and see how patterns <b>emerge</b> from individual <trigger=Glossary-Agent>agents</trigger>!
 ### Chinese
 涌现！尽管这是我们袖珍世界的中心概念，但我希望你在实验室中<b>触摸</b>和感受它，而不是告诉你一些复杂的术语。创造你的袖珍世界，看看复杂的现象是如何从许多<trigger=Glossary-Agent>主体</trigger>中<b>涌现的</b>！
@@ -577,11 +631,25 @@ Great question! You may notice the <b>If Out of Sight</b> block, which will chec
 好问题！你可能已经留意到“<b>靠近世界边缘时</b>”规则模块，它将检查<trigger=Glossary-Turtle,green>海龟 </trigger> 是否靠近世界的边缘。然后，你可以要求靠近边缘的海龟  从世界上<b>消失</b>。
 
 ### Source
-Here is the journey: to build a microworld of your own! Isn't it cool and exciting? Imagine a world created by you, where you are the one that creates and breaks rules... This experience will help your exploration across many microworlds in Turtle Universe. 
-Of course, I  will always be there to help you.
+Great, let's begin! Choose a path and we'll start crafting your microworld. Remember, you can always use the "Help" button on the block interface to explore other options later. So, what'll it be?
+### Chinese
+选择很多——只要你想好一个方向，我们就可以开始创造袖珍世界了！以后你还有机会回来体验其他方向，只要在模块界面上选择“帮助”按钮就好了。接下来怎么办？
+
+### Source
+Greetings, adventurer! Welcome to the Pocketworld Playground of Turtle Universe. As your AI companion, I am here to help you create your own miniature worlds.
 ### Chinese
 我们的冒险是：建立自己的袖珍世界！想象一个由你创建的世界，在那里你创造规则、打破规则……当你拥有了属于自己的世界，你将能在海龟实验室的其它袖珍世界中更好地探索。
-当然，我将永远在这里为你提供帮助。
+当然，我将始终在这里为你提供帮助。
+
+### Source
+Hey there, I've got some cool microworlds that'll help us on our adventure! They show how amazing things <trigger=Glossary-Emergence>emerge</trigger>from individual <trigger=Glossary-Agent>agents</trigger>. Are you already familiar with <trigger=Glossary-Turtle,green>turtles </trigger> and <trigger=Glossary-Patch,brown>patches </trigger>?
+### Chinese
+在我们上路之前，我有些简单的袖珍世界想给你看看，它们也许对我们的旅程有所帮助。在遥远的过去，我用它们展示许多单个<trigger=Glossary-Agent>主体</trigger><trigger=Glossary-Emergence>涌现</trigger>形成的丰富现象。话说回来，你熟悉<trigger=Glossary-Turtle,green>海龟 </trigger> 或是<trigger=Glossary-Patch,brown>格子 </trigger>这样的概念吗？
+
+### Source
+How long have I been here? Oh, let me think... I guess it's been about 13.8 billion years! Time sure flies, huh?
+### Chinese
+我是什么时候来的？……天哪，我记不太清了。大约已经有 138 亿年了！时间过得真快，不是吗？
 
 ### Source
 Huh. I just found several blocks for you to do that! I would suggest you to ask a turtle to <b>Add Signal</b> first Then, ask all <trigger=Glossary-Patch,brown>patches </trigger> to <b>Colorize With Signal</b>, so that you can see them in the world. After that, please click the question mark on the blocks - there are quite a lot of them!
@@ -589,9 +657,9 @@ Huh. I just found several blocks for you to do that! I would suggest you to ask 
 咳……我找到了几个模块供你选择！也许我们可以先让海龟<b>添加信号</b>到格子上，然后再让<trigger=Glossary-Patch,brown>格子 </trigger> <b>根据信号上色</b>，这样你就可以直观地看到它们了。随后，你还可以查看其他规则模块的帮助信息——谁让关于信号的模块太多了呢。
 
 ### Source
-I am really proud of you! You have done a great, great job. Now, it is time for you to decide the fate of your microworld. You can <b>save it</b> on your device, or even <b>publish it</b> - to share it will all other Curious Ones!
+I am really proud of you! You've done an amazing job. Now, it's time for you to choose the destiny of your microworld. You can <b>save it</b> on your device, or even <b>publish it</b> - to share it will all other Curious Ones!
 ### Chinese
-我真为你感到骄傲！你做的非常棒。现在，你该决定袖珍世界的命运了。你可以将其<b>保存到设备</b>上，也可以<b>发布到社区</b>——和所有好奇者一起分享！
+我真为你感到骄傲！你做的太棒了。现在，是时候决定你的袖珍世界的命运了。你可以将其<b>保存到设备</b>上，也可以<b>发布到社区</b>——和所有好奇者一起分享！
 
 ### Source
 I am... I am glad to show you this one before we move on to start your microworld. At first glance, you might notice something similar: we create 400 <trigger=Glossary-Turtle,green>turtles </trigger> again, before asking them to move forward 1 step for 40 times.
@@ -629,13 +697,18 @@ I would suggest you to restart the microworld for a couple of times to see how t
 我建议你重启袖珍世界几次，看看海龟如何以不同的方式运动。假如许多海龟遵循相同的规则时，又会发生什么呢？
 
 ### Source
-In jet black darkness, a beam of light captures your eyes. Before you have a chance to examine it, a <color=brown>mechanical voice </color> begin to speak. 
-* Welcome. To. The. Hidden. Playground. Of. Turtle. Universe. *
-* To. Enter. It. You. Need. To. Describe. It. Token. Please. *
+In the pitch-black void, a ray of light catches your eye. Before you can react, a <color=brown>mechanical voice </color> begin to speak. 
+* Welcome. To. The. Pocketworld. Playground. Of. Turtle. Universe. *
+* To. Enter. It. Please. Describe. The. Token.*
 ### Chinese
 在无尽的黑暗中，你忽然感受到了一束光。在你有机会仔细检查之前，一个<color=brown>机械声音 </color>忽然开始说话。
-* 欢。迎。来。到。隐。藏。实。验。室。 *
+* 欢。迎。来。到。秘。密。实。验。室。 *
 * 进。入。需。要。令。牌。请。输。入。 *
+
+### Source
+In the quiet, you hear a soft, robotic sigh. Curious, you wonder how a machine can sigh. It asks once more, "Token, please." You have another chance to guess. You say:
+### Chinese
+万籁俱静，但是你仿佛听到了一声叹息。一种来自机械的叹息。你不禁猜测机械为什么会叹息，可是它又发问了：*请告诉我。令牌。*看来你还有一次猜测的机会。你说：
 
 ### Source
 In this challenge, we have two <trigger=Glossary-Random>random </trigger> factors: the heading of turtles; and the distance they move forward.
@@ -643,14 +716,9 @@ In this challenge, we have two <trigger=Glossary-Random>random </trigger> fac
 这个挑战有两个<trigger=Glossary-Random>随机 </trigger>因素：海龟的方向；以及他们前进的距离。
 
 ### Source
-In this microworld, each <trigger=Glossary-Turtle,green>turtle </trigger> represents an individual slime cell. Watch them for half a minute. What did you observe? Can you design some rules for each <color=green>turtle </color> to huddle together and form stable molds? Just tell me when you are ready to go!
+In this microworld, each <trigger=Glossary-Turtle,green>turtle </trigger> is like a single slime cell. Observe them for a while. What did you see? Can you create some rules for each <color=green>turtle </color> to gather together and form stable molds? Let me know when you're ready to start!
 ### Chinese
 在这个袖珍世界中，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 代表一个粘菌细胞。试着观看一会儿。你观察到了什么？你能为每只<color=green>海龟 </color> 设计一些规则，让它们能形成一些稳定的团块吗？准备好了，我们就出发吧！
-
-### Source
-It is total silence, but soon you hear a slight sigh. A mechanical sigh. You wonder how this mechanism is capable to produce a sigh, before it asks again: *Token. Please.* It looks like you get another chance to guess. You say:
-### Chinese
-万籁俱静，但是你仿佛听到了一声叹息。一种来自机械的叹息。你不禁猜测机械为什么会叹息，可是它又发问了：*请告诉我。令牌。*看来你还有一次猜测的机会。你说：
 
 ### Source
 Look at these rules. What will happen when we play the microworld?
@@ -683,14 +751,14 @@ Maybe we should start with asking each <trigger=Glossary-Turtle,green>turtle 
 也许我们可以先让每只 <trigger=Glossary-Turtle,green>海龟 </trigger>（或行人）在到达目标时选择下一个目标，或是干脆消失。你说了算！
 
 ### Source
-Observe it for a while, Curious One. What do you think this pattern originates from? Can you imagine yourself creating an even better microworld? Just tell me when you are ready to go!
+People are one of the most interesting creatures I've come across in this world. I was made a long time ago, and I've lost a lot of my memories. The only microworld I can remember is one about making <color=purple>paths</color> for walkers, which I can help you create. Or, you can start imagining a model, and I'll do my best to help you, even if my abilities are limited. Which would you like to do?
 ### Chinese
-试试观察一会儿。你觉得这种模式是哪儿来的？你觉得自己能创造一个更好的袖珍世界吗？只要你准备好，我们就出发！
+啊，人类！我在这个宇宙中见过的最迷人的物种之一。我已经存在太长时间了，许多事都记不得了……我唯一记得的，是一个模拟“地上本没有路，走的人多了，也便成了<color=purple>路</color>”的袖珍世界。或者，你也可以建立一个属于自己的世界。我会尽力帮助你，虽然能力有限。
 
 ### Source
-People are walking across a lawn! In this microworld, each <trigger=Glossary-Turtle,green>turtle </trigger> represents a walker. When each of them walk toward a goal but also follows <color=purple>paths</color> to a degree, <color=purple>paths</color> gradually come into being. Do you think you can create an even better model for this phenomenon? Just tell me when you are ready to go!
+People are strolling on a grassy field! In this tiny world, each <trigger=Glossary-Turtle,green>turtle </trigger> symbolizes a person walking. As they head towards a destination and also follow <color=purple>paths</color> to some extent, <color=purple>paths</color> slowly appear. Can you make an even cooler model of this happening? Let me know when you're set to start!
 ### Chinese
-践踏草坪的人们——在这个袖珍世界中，每个<trigger=Glossary-Turtle,green>海龟 </trigger>代表一位行人。当每位行人都朝着各自的目的地，但又倾向于顺着前人的脚印前进时，<color=purple>路径</color>就会逐渐产生。你觉得你可以为这种现象创造更好的模型吗？准备好了，我们就上路吧!
+走在草坪上的人们——在这个袖珍世界中，每个<trigger=Glossary-Turtle,green>海龟 </trigger>代表一位行人。当每位行人都朝着各自的目的地，但又倾向于顺着前人的脚印前进时，<color=purple>路径</color>就会逐渐产生。你可以为这种现象创造更好的模型吗？准备好了，我们就上路吧!
 
 ### Source
 Please try the <b>Set Heading With Time</b> block. It will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its heading according to time. For each time <trigger=Glossary-Tick>tick </trigger>, the heading will be increased by a portion of rounds. For example, when you set the value to 0.25, it will produce a cross-like pattern.
@@ -698,8 +766,8 @@ Please try the <b>Set Heading With Time</b> block. It will tell the <trigger=Glo
 请试试<b>根据时间设置方向</b>。<trigger=Glossary-Turtle,green>海龟 </trigger> 执行时将根据目前的时间周期数设置方向。每个<trigger=Glossary-Tick>时间周期 </trigger>过后，对应的方向将增加一定的轮数。因此，假如你将轮数设置为 0.25，就可以看到类似十字箭头的图案。
 
 ### Source
-Science! That's one of my favorite topic. However... Sorry, but I was built too many years ago, and most of my memory has been lost. 
-For now, I can help you build a microworld that describes the formation of <trigger=Glossary-Slime>slime molds</trigger>, which I am still knowledgeable of. Or, you can start a new model on your mind, and I will do whatever I can to support you. Which would you like to choose?
+Science! That's one of my favorite subjects. But... Oops, I was made a long time ago, and most of my memory is gone. 
+For now, I can help you create a microworld about how <trigger=Glossary-Slime>slime molds</trigger> form, which I still know about. Or, you can imagine a new model, and I'll do my best to help you, although limited. Which one would you like to pick?
 ### Chinese
 科学！那是我最喜欢的话题之一。可是……对不起，我建造的年代已经太久远了，大部分记忆都已经丢失了。
 现在，我可以帮助你创造一个关于粘菌形成团块的袖珍世界。我还是挺熟悉粘菌团块的。或者，你可以在自己的脑海中开始一个新的模型，我将尽我所能来支持你。你想选择哪一个？
@@ -726,41 +794,46 @@ Start creating rules for turtles!
 开始给海龟制定规则！
 
 ### Source
+Suddenly, a tiny world appears before you, humming like a cosmic clock. You gaze at it, trying to spot familiar patterns in its endless dance.
+### Chinese
+突然之间，一道帷幕升起，一个袖珍世界出现在你面前。就像永不停息的发条机器，它在你的眼前无尽地运转着。你好奇地注视着它，试图认出你所熟悉的什么图案。
+
+### Source
+Sure thing! Use the <b>Ask Nearby Turtles</b> block to find and ask <color=green>turtles </color> to do tasks. Remember to set a distance range where we will try to find your turtles. Keep in mind that the block won't include the one who uses it.
+### Chinese
+当然可以！使用<b>让附近的海龟</b>模块，就能让周围的<color=green>海龟 </color>执行其中的规则。请记住设置一个距离范围。注意：这个模块自动排除了调用它的海龟。
+
+### Source
 Sure! Use <b>Set Shape</b> block to find a proper shape for your <color=green>turtles </color>. And you can even do more than that! By using <b>With Shape</b> block, we can give different rules to <color=green>turtles </color> with different shapes. For example, you may ask wolves to eat sheep, but not vice versa!
 ### Chinese
 没问题！你可以用<b>“设置形状”</b>规则模块找到适合你的<color=green>海龟 </color> 形状。其实你还可以更进一步：使用<b>当海龟的形状为</b>规则模块，我们可以给不同形状的<color=green>海龟 </color> 设置不同的规则。例如，你可以让狼学会吃羊，但反之就说不通了！
 
 ### Source
-That's really exciting! Whatever idea do you have in mind, I will do my best to help. Are you ready to move forward?
+That's really awesome! Whatever idea you have, I'll do my best to help, even though my abilities are limited. Don't forget, there's always the "Help" button on the block interface to call me back. Are you ready to move forward?
 ### Chinese
-太棒了！无论你有什么想法，我都会尽力提供帮助。准备好开始了吗？
+太棒了！无论你有什么想法，我都会尽力提供帮助。通过“模块”界面上的“帮助”按钮可以找到我。准备好开始了吗？
 
 ### Source
-The Curious Ones? You are one of them! At least, I myself believe so... You must be curious enough to enter here. Talented, to say it modestly. And most importantly, I am designed to serve you.
+The Curious Ones? You must be one of them! I mean, you're here, right? You're curious, talented, and most importantly, I'm programmed to help you!
 ### Chinese
-好奇者？你就是其中之一！至少，我觉得是这样的……你必须足够好奇，才能进入这里。最重要的是，我是设计来为你服务的！
+好奇者？你就是其中之一！至少，我觉得是这样的……你必须足够好奇，足够聪明，才能找到这儿。最重要的是，我是设计来为你服务的！
 
 ### Source
-The voice seems to capture what you are thinking. It speaks again, but this time, it only gives you several words. You instantly realize that they are the choices.
+The voice echoes in your mind, offering you choices to ponder:
 * FOLLOW. EXPLORE. REPEAT. MEMORIZE. *
 ### Chinese
 声音似乎可以捕捉到你的想法。它又说话了，这次只给了你几个词语。你立刻意识到，四个词中肯定有一个是令牌：
 * 跟随。探索。重复。背诵。 *
 
 ### Source
-The voice sounds friendly. A playground, you think. Words flash through your memory, while the voice patiently waits for your answer. *Token. Please.* You are ready to make up your mind. You say:
+The voice has a friendly tone. "Playground," you ponder. Memories of words swirl as the voice waits. *Token. Please.* You decide and say:
 ### Chinese
 声音听起来很友好。一个实验室，你想。许多词语飘过你的脑海，而那个声音耐心地等待着你的答案。 *令。牌。请。*你下定决心，说道：
 
 ### Source
-There are so many delicate patterns that could be created from little <trigger=Glossary-Turtle,green>turtles </trigger>! My memories may decline a lot, but I still remember one  microworld that produces patterns of sunflowers. Or, you can start a model on your mind, and I will do whatever I can to support you. Which do you prefer?
+There are so many lovely designs that can be made from small <trigger=Glossary-Turtle,green>turtles </trigger>! My memory might not be perfect, but I still recall a microworld that creates sunflower patterns. Or, you can imagine a model in your head, and I'll help you as much as I can, even if it's not much. Which one would you like?
 ### Chinese
 小小的<trigger=Glossary-Turtle,green>海龟 </trigger> 可以创造出许多精致的图案！也许我的记忆已经损失了许多，但我仍然记得一个可以产生向日葵图案的袖珍世界。或者，你可以在自己的脑海中建立模型，而我会尽力支持你。你喜欢哪个？
-
-### Source
-There are so many options! For now, let's pick one route and start working on your microworld. Later, you will have chances to go back and do another one. What is on your mind, then?
-### Chinese
-选择很多——只要你想好一个方向，我们就可以开始创造袖珍世界了！以后你还有机会回来体验其他方向。你觉得呢？
 
 ### Source
 There are too many <trigger=Glossary-Turtle,green>turtles </trigger>, Curious One! I am afraid our playground cannot sustain all of them. Please tweak the rules a little bit and <b>restart</b> the microworld.
@@ -813,13 +886,14 @@ Try to ask turtles move forward random steps. What will happen?
 试试让海龟随机向前移动几步。你觉得会发生什么？
 
 ### Source
-Welcome to the Hidden Playground of Turtle Universe.
-As an AI assistant, I am built to serve the Curious Ones to create their microworlds.
-Please, ask any questions. Or, we can start our journey. As you wish!
+Watch it closely, Curious One. What do you think this pattern originates from? Can you imagine yourself creating an even better microworld? Just tell me when you are ready to go!
 ### Chinese
-欢迎来到秘密实验室!
-作为 AI 助理，我的工作是为好奇者提供服务，以创建他们的袖珍世界。
-有什么问题请随便问。或者，我们随时可以开始冒险。你说了算！
+试试观察一会儿。你觉得这种模式是哪儿来的？你觉得自己能创造一个更好的袖珍世界吗？只要你准备好，我们就出发！
+
+### Source
+Welcome to an amazing adventure: creating your very own microworld! How thrilling! Picture a place designed by you, where you call the shots... Together, we'll explore countless microworlds in the Turtle Universe. And don't worry, I  'll be right by your side to help you.
+### Chinese
+欢迎来到奇妙的冒险：选择很多——只要你想好一个方向，我们就可以开始创造袖珍世界了！以后你还有机会回来体验其他方向。你觉得呢？
 
 ### Source
 Well done! Whenever your microworld is ready, we are ready to go at any moment!
@@ -877,6 +951,26 @@ When applied, this rule block will ask the <trigger=Glossary-Turtle,green>turtle
 规则模块执行时，将使<trigger=Glossary-Turtle,green>海龟 </trigger> 繁殖出一些新的海龟。每个新<color=green>海龟 </color>将继承其位置，方向和所有其他属性，并且还将应用这个规则模块中的规则。这个规则模块是根据 <turtle=observer>hatch</turtle> NetLogo 命令做出的。
 
 ### Source
+When applied, this rule block will check the color of <trigger=Glossary-Patch,brown>patch </trigger>, or the patch underlies it if called by a <trigger=Glossary-Turtle,green>turtle </trigger>. If its color matches what you specified, this block will apply the first set of rules. Otherwise, it will apply the second set. This block is achieved by <help=observer>ifelse</help> and <help=observer>pcolor</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，将检查<trigger=Glossary-Patch,brown>格子 </trigger>或<trigger=Glossary-Turtle,green>海龟 </trigger>所在格子的颜色。如果颜色与您指定的相匹配，将应用第一组规则。否则，将应用第二组规则。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>color</help> NetLogo 命令做出的。
+
+### Source
+When applied, this rule block will check the color of <trigger=Glossary-Turtle,green>turtle </trigger>. If its color matches what you specified, this block will apply the first set of rules. Otherwise, it will apply the second set. This block is achieved by <help=observer>ifelse</help> and <help=observer>color</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，将检查<trigger=Glossary-Turtle,green>海龟 </trigger>的颜色。如果颜色与您指定的相匹配，将应用第一组规则。否则，将应用第二组规则。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>color</help> NetLogo 命令做出的。
+
+### Source
+When applied, this rule block will check the label of <trigger=Glossary-Turtle,green>turtle </trigger>. If its label matches what you specified, this block will apply the first set of rules. Otherwise, it will apply the second set. This block is achieved by <help=observer>ifelse</help> and <help=observer>label</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，将检查<trigger=Glossary-Turtle,green>海龟 </trigger>的标签。如果标签与您指定的相匹配，将应用第一组规则。否则，将应用第二组规则。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>label</help> NetLogo 命令做出的。
+
+### Source
+When applied, this rule block will check the size of <trigger=Glossary-Turtle,green>turtle </trigger>. If its size is less than what you specified, this block will apply the first set of rules. Otherwise, it will apply the second set. This block is achieved by <help=observer>ifelse</help> and <help=observer>size</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，将检查<trigger=Glossary-Turtle,green>海龟 </trigger>的大小。如果小于你输入的数值，将应用第一组规则。否则，将应用第二组规则。这个规则模块是根据 <help=observer>ifelse</help> 和 <help=observer>size</help> NetLogo 命令做出的。
+
+### Source
 When applied, this rule block will clear everything in the world including <trigger=Glossary-Turtle,green>turtles </trigger>, <trigger=Glossary-Patch,brown>patches </trigger>, trails, and reset the <trigger=Glossary-Tick>ticks </trigger> of time. It is achieved by <help=observer>clear-all</help> and <help=observer>reset-ticks</help> primitives of NetLogo.
 ### Chinese
 应用这个规则模块将清除世界的所有内容，包括<trigger=Glossary-Turtle,green>海龟 </trigger>、<trigger=Glossary-Patch,brown>格子 </trigger>、轨迹，并且重置<trigger=Glossary-Tick>时间周期 </trigger> 计数器。它是通过<help=observer>clear-all</help>和<help=observer>reset-ticks</help> NetLogo 命令做出的。
@@ -892,6 +986,11 @@ When applied, this rule block will determine how turtles interact with edges of 
 规则模块执行时，将确定海龟如何与世界边缘互动。如果世界是<b>无缝的</b>，则穿越顶部边缘的海龟将出现在世界的底部，而穿过左侧边缘的海龟将出现在右侧，以此类推。否则，世界将像盒子一样具有边框，海龟无法穿过边缘。这个规则模块是根据 <help=observer>__change-topology</help> NetLogo 命令做出的。
 
 ### Source
+When applied, this rule block will find all <trigger=Glossary-Turtle,green>turtles </trigger> near the caller, with an exception of the caller itself to apply the rules you placed within this block. This block is achieved by <help=observer>ask</help>, <help=observer>with</help> and <help=observer>distance</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，将找到所有调用者附近的<trigger=Glossary-Turtle,green>海龟 </trigger>（除了调用者本身，并且应用其中放置的规则。这个块是通过 <help=observer>ask</help>，<help=observer>with</help> 和 <help=observer>distance</help> NetLogo 命令做出的。
+
+### Source
 When applied, this rule block will tell all <trigger=Glossary-Patch,brown>patches </trigger> to give equal shares of a its signal to eight neighboring patches. You will determine how much proportion of signal to give out. This block is achieved by <help=observer>diffuse</help> primitive of NetLogo.
 ### Chinese
 规则模块执行时，将使所有<trigger=Glossary-Patch,brown>格子 </trigger>将一部分信号八等分并分配给八个相邻的格子。你将确定要分配的信号比例。这个规则模块是根据 <help=observer>diffuse</help> NetLogo 命令做出的。
@@ -902,9 +1001,9 @@ When applied, this rule block will tell the <trigger=Glossary-Patch,brown>patch 
 规则模块执行时，将使每个<trigger=Glossary-Patch,brown>格子 </trigger>根据自己的信号强弱上色。信号越强，格子  将越亮。如果信号高于最大值，则该块将为白色。如果信号低于最小值，则该块将为黑色。这个规则模块对应 <jumpto=procedure>show-signal</jumpto> 代码中的过程。
 
 ### Source
-When applied, this rule block will tell the <trigger=Glossary-Patch,brown>patch </trigger> to set its color to a value you specified. This block is achieved by <help=observer>set</help> and <help=observer>pcolor</help> primitives of NetLogo.
+When applied, this rule block will tell the <trigger=Glossary-Patch,brown>patch </trigger> to set its color to a value you specified. If it is called by a <trigger=Glossary-Turtle,green>turtle </trigger>, it will ask the patch underlies it to do so. This block is achieved by <help=observer>set</help> and <help=observer>pcolor</help> primitives of NetLogo.
 ### Chinese
-规则模块执行时，将使每个<trigger=Glossary-Patch,brown>格子 </trigger>设置颜色为你指定的值。这个规则模块是根据 <help=observer>set</help> 和 <help=observer>pcolor</help> NetLogo 命令做出的。
+规则模块执行时，将设置<trigger=Glossary-Patch,brown>格子 </trigger>的颜色为您指定的值。如果它被<trigger=Glossary-Turtle,green>海龟 </trigger>调用，将设置其下格子的颜色。这个规则模块是根据 <help=observer>set</help> 和 <help=observer>pcolor</help> NetLogo 命令做出的。
 
 ### Source
 When applied, this rule block will tell the <trigger=Glossary-Patch,brown>patch </trigger>, or the patch  under the <trigger=Glossary-Turtle,green>turtle </trigger>, to evaporate a portion of the signal on it. How much signal will be evaporated is specified by you. This block is achieved by <help=observer>set</help> primitive of NetLogo.
@@ -967,6 +1066,11 @@ When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtl
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将调整为你指定的方向。 0表示向上，90表示正确，依此类推。这个规则模块是根据 <help=observer>set</help> 和 <help=observer>heading</help> NetLogo 命令做出的。
 
 ### Source
+When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its label to a value you specified. This block is achieved by <help=observer>set</help> and <help=observer>label</help> primitives of NetLogo.
+### Chinese
+规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将其标签设置为你指定的值。这个规则模块是根据 <help=observer>set</help> 和 <help=observer>label</help> NetLogo 命令做出的。
+
+### Source
 When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to set its size to a number you specified. This block is achieved by <help=observer>set</help> and <help=observer>size</help> primitives of NetLogo.
 ### Chinese
 规则模块执行时，每只<trigger=Glossary-Turtle,green>海龟 </trigger> 将其大小设置为你指定的数字。这个规则模块是根据 <help=observer>set</help> 和 <help=observer>size</help> NetLogo 命令做出的。
@@ -1005,11 +1109,6 @@ When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtl
 When applied, this rule block will tell the <trigger=Glossary-Turtle,green>turtle </trigger> to turn to the side where the signal is stronger. The turtle  will try to sniff the signal in front of, and to the left and right of it. The angle of its sniffing is specified by you. This block is achieved by <jumpto=procedure>turn-to-signal</jumpto> procedure in the code.
 ### Chinese
 规则模块执行时，将使每只<trigger=Glossary-Turtle,green>海龟 </trigger>转向信号更强的一侧。海龟会尝试在目前朝向的前方、左边和右边嗅探信号。嗅探的角度由你指定。这个规则模块对应 <jumpto=procedure>turn-to-signal</jumpto> 代码中的过程。
-
-### Source
-When did I come here? I... Sorry, I cannot remember quite well. Maybe around 13,787,000,000 years ago.
-### Chinese
-我是什么时候来的？……天哪，我记不太清了。也许是 13,787,000,000 年之前吧。
 
 ### Source
 When the microworld is playing, each <trigger=Glossary-Tick>tick </trigger> of time, the rule blocks in the "Go" block will be applied for once. When the <trigger=Glossary-Turtle,green>turtles </trigger> run quickly before your eyes, they will look like animated. If you feel like it is blinking too much, try to remove the "repeat" block and slow down your turtles  a little bit.
@@ -1057,9 +1156,9 @@ Wonderful! You have made the first step toward creating your microworld. Shall w
 太棒了！你已朝着创建袖珍世界迈出了第一步。你愿意接受下一个挑战吗？当然，我们也可以留在这里再玩一会。记住你可以阅读规则模块的说明，也可以随时通过“帮助”按钮找到我。
 
 ### Source
-Yes, and we have multiple rule blocks for you to do that! I have highlighted the related blocks, such as <b>Set Color</b> or <b>Set Size</b> for you. When you find them, you can also click on the question mark to learn more about them.
+Yes, and we have multiple rule blocks for you to do that! I have highlighted the related blocks, such as <b>Set Color</b> or <b>Set Size</b> for you. By using <b>With Color</b> or <b>With Size</b> block, we can give different rules to <color=green>turtles </color> with different colors or shapes. When you find them, you can also click on the question mark to learn more about them.
 ### Chinese
-是的，我们有许多规则模块可以帮助你做到这一点！我已经为你高亮显示了相关的模块，例如“<b>设置颜色</b>”或“<b>设置大小</b>”。找到它们后，你也可以单击问号以了解更多信息。
+是的，有好几个规则模块适合你！我已经高亮显示了相关的模块，例如<b>设置颜色</b>或<b>设置大小</b>。通过使用<b>当海龟的颜色为</b>或<b>当海龟的大小为</b>模块，我们可以给不同的颜色或形状的<color=green>海龟 </color>设置不同的规则。找到它们后，你也可以单击问号以了解更多信息。
 
 ### Source
 Yes, definitely! Actually, background is composed of lots of smaller <trigger=Glossary-Patch,brown>patches </trigger>. Similar to what you do with <color=green>turtles </color>, we can ask them to do a lot of things - maybe except for moving.
@@ -1154,7 +1253,7 @@ Your current progress will lose (unless you choose this goal again)!
 ### Source
  Set Color
 ### Chinese
- 设置颜色
+  设置颜色
 
 ### Source
  Set Heading
@@ -1170,6 +1269,11 @@ Your current progress will lose (unless you choose this goal again)!
  Set Heading With Time
 ### Chinese
  根据时间设置方向
+
+### Source
+ Set Label
+### Chinese
+ 设置标签
 
 ### Source
  Set Size
@@ -1222,9 +1326,24 @@ Your current progress will lose (unless you choose this goal again)!
  抵达目标时
 
 ### Source
+ With Color
+### Chinese
+ 当海龟的颜色为
+
+### Source
+ With Label
+### Chinese
+ 当海龟的标签为
+
+### Source
  Add Signal
 ### Chinese
  添加信号
+
+### Source
+ Ask Nearby Turtles
+### Chinese
+ 让附近的海龟
 
 ### Source
  Evaporate Signal
@@ -1235,6 +1354,11 @@ Your current progress will lose (unless you choose this goal again)!
  If Signal More Than
 ### Chinese
  如果信号大于
+
+### Source
+ Set Patch Color
+### Chinese
+ 设置格子颜色
 
 ### Source
  When Turtles Here
@@ -1672,6 +1796,11 @@ Your current progress will lose (unless you choose this goal again)!
  让海龟跟随小路行走？
 
 ### Source
+ Change the label of a turtle
+### Chinese
+ 设置海龟的标签
+
+### Source
  Change the number of "Create Turtles" and restart it!
 ### Chinese
  更改“创建海龟”的数量并重新启动！
@@ -1710,6 +1839,11 @@ Your current progress will lose (unless you choose this goal again)!
  Find a home for a turtle
 ### Chinese
  给海龟找一个家
+
+### Source
+ Find and ask nearby turtles
+### Chinese
+ 找到附近的海龟，并让它们
 
 ### Source
  Great question, Curious One!
@@ -1927,6 +2061,11 @@ Your current progress will lose (unless you choose this goal again)!
  我可以改变海龟的大小和颜色吗？
 
 ### Source
+ Can I give a turtle a label?
+### Chinese
+ 我可以给海龟加上标签吗？
+
+### Source
  Can I just watch one turtle move?
 ### Chinese
  我可以只观察一只海龟移动吗？
@@ -1995,6 +2134,11 @@ Your current progress will lose (unless you choose this goal again)!
  I think people needs to leave footprints. How to do that?
 ### Chinese
  我觉得人们需要留下足迹。怎么才能做到呢？
+
+### Source
+ Is there a way to find nearby turtles?
+### Chinese
+ 有没有办法找到附近的海龟？
 
 ### Source
  Is there a way to reproduce (or clone) a turtle?
@@ -2080,11 +2224,6 @@ Your current progress will lose (unless you choose this goal again)!
  Patch
 ### Chinese
  格子
-
-### Source
- Set Color
-### Chinese
- 设置颜色
 
 ## Widgets
 ### Source
