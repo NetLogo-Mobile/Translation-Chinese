@@ -1,27 +1,28 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 denominator
-### Chinese
+### Chinese ***
 分母
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 numerator
-### Chinese
+### Chinese ***
 分子
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 width
-### Chinese
-表格宽度
+### Chinese ***
+宽度
 

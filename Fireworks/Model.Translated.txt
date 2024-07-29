@@ -1,47 +1,48 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 fade-amount
-### Chinese
-淡出幅度
+### Chinese ***
+淡入淡出量
 
 ### Source
 fragments
-### Chinese
-碎片数量
+### Chinese ***
+碎片
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 gravity
-### Chinese
+### Chinese ***
 重力
 
 ### Source
 initial-x-vel
-### Chinese
-初始横向速度
+### Chinese ***
+初始-x-vel
 
 ### Source
 initial-y-vel
-### Chinese
-初始纵向速度
+### Chinese ***
+初始 y 速度
 
 ### Source
 max-fireworks
-### Chinese
-最大烟花数量
+### Chinese ***
+最大烟花
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 trails?
-### Chinese
-显示踪迹？
+### Chinese ***
+踪迹？
 

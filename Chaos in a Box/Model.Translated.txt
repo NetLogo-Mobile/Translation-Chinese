@@ -1,47 +1,48 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 clear-drawing
-### Chinese
-清除图案
+### Chinese ***
+清晰绘图
 
 ### Source
 drag
-### Chinese
-拖动模式
+### Chinese ***
+拖
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 num-obstacles
-### Chinese
-障碍数量
+### Chinese ***
+障碍物数量
 
 ### Source
 setup-periodic-quilt
-### Chinese
-预设：长期规律轨迹
+### Chinese ***
+设置周期性被子
 
 ### Source
 setup-periodic-x
-### Chinese
-预设：规律轨迹
+### Chinese ***
+设置周期性 x
 
 ### Source
 setup-random
-### Chinese
+### Chinese ***
 随机设置
 
 ### Source
 trace-path?
-### Chinese
+### Chinese ***
 跟踪路径？
 
 ### Source
 two-balls?
-### Chinese
-两颗小球？
+### Chinese ***
+两球？
 

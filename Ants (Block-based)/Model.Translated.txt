@@ -1,304 +1,305 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## NetTango
 ### Source
 Ask each ant to do things according to the attach blocks.
-### Chinese
-让每只蚂蚁根据所附的编程模块进行行动。
+### Chinese ***
+要求每只蚂蚁根据附着的方块做事。
 
 ### Source
 Ask the ant to drop food on the ground.
-### Chinese
-让蚂蚁将食物丢在地上。
+### Chinese ***
+让蚂蚁把食物扔到地上。
 
 ### Source
 Ask the ant to drop some pheromone smell on the patch.
-### Chinese
-让蚂蚁在格子上留下一些信息素。
+### Chinese ***
+让蚂蚁在这格子上滴一些信息素气味。
 
 ### Source
 Ask the ant to move forward for 1 step.
-### Chinese
-让蚂蚁向前走 1 步。
+### Chinese ***
+让蚂蚁向前走一步。
 
 ### Source
 Ask the ant to pick up food. The ant could only pick up one at a time.
-### Chinese
-让蚂蚁捡起食物。蚂蚁一次只能捡起 1 单位。
+### Chinese ***
+让蚂蚁捡食物。蚂蚁一次只能捡一个。
 
 ### Source
 Ask the ant to randomly wiggle for certain degrees. If the ant cannot move, it will turn backwards.
-### Chinese
-让蚂蚁随机摆动一定角度。然后，如果蚂蚁无法向前移动，将向后转 180 度。
+### Chinese ***
+让蚂蚁随机摆动一定角度。如果蚂蚁无法移动，它就会向后转。
 
 ### Source
 Ask the ant to turn right for certain degrees.
-### Chinese
-让蚂蚁右转一定角度。
+### Chinese ***
+要求蚂蚁向右转一定的角度。
 
 ### Source
 Ask the ant to turn towards pheromone smell, indicated by light colors on each patch.
-### Chinese
-让蚂蚁转向信息素气味。信息素气味的浓度由格子上的亮色表示。
+### Chinese ***
+让蚂蚁转向信息素气味，每个格子上的浅色表示该气味。
 
 ### Source
 Ask the ant to turn towards the smell of the nest.
-### Chinese
-让蚂蚁转向蚁穴的气味。
+### Chinese ***
+让蚂蚁转向蚁巢的气味方向。
 
 ### Source
 Attached blocks are executed to reset the simulated world.
-### Chinese
-执行所附的编程模块以重置模型世界。
+### Chinese ***
+执行附加的块来重置模拟世界。
 
 ### Source
 Blue
-### Chinese
-蓝色
+### Chinese ***
+蓝色的
 
 ### Source
 Color
-### Chinese
+### Chinese ***
 颜色
 
 ### Source
 Create a food pile at
-### Chinese
-创建食物堆，位于：
+### Chinese ***
+在以下位置创建食物堆
 
 ### Source
 Create a food pile at a certain place.
-### Chinese
-在指定位置创建一个食物堆。
+### Chinese ***
+在特定位置创建食物堆。
 
 ### Source
 Create a nest that occupies patches within a certain radius.
-### Chinese
-创建一个占据一定半径内格子的蚁穴。
+### Chinese ***
+创建一个占据一定半径范围内斑块的巢穴。
 
 ### Source
 Create a nest with radius
-### Chinese
-创建蚁巢，半径为：
+### Chinese ***
+创建具有半径的嵌套
 
 ### Source
 Create ants
-### Chinese
+### Chinese ***
 创建蚂蚁
 
 ### Source
 Cyan
-### Chinese
+### Chinese ***
 青色
 
 ### Source
 degrees
-### Chinese
-度数
+### Chinese ***
+度
 
 ### Source
 Degrees
-### Chinese
-度数
+### Chinese ***
+学位
 
 ### Source
 Diameter
-### Chinese
+### Chinese ***
 直径
 
 ### Source
 Drop food
-### Chinese
-放下食物
+### Chinese ***
+掉落食物
 
 ### Source
 Drop pheromone
-### Chinese
-分泌信息素
+### Chinese ***
+掉落信息素
 
 ### Source
 Each ant
-### Chinese
+### Chinese ***
 每只蚂蚁
 
 ### Source
 For each slice of time (tick), attached block will be executed once.
-### Chinese
-在每个时钟周期中，所附的编程模块将被执行一次。
+### Chinese ***
+对于每个时间片段（周期），附加的块将执行一次。
 
 ### Source
 Forward
-### Chinese
+### Chinese ***
 向前
 
 ### Source
 Go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 how many?
-### Chinese
+### Chinese ***
 多少？
 
 ### Source
 If I am at the nest
-### Chinese
-如果在蚁穴里
+### Chinese ***
+如果我在巢穴
 
 ### Source
 If I am carrying food
-### Chinese
-如果携带食物
+### Chinese ***
+如果我携带食物
 
 ### Source
 If I am not at the nest
-### Chinese
-如果不在蚁穴
+### Chinese ***
+如果我不在巢穴
 
 ### Source
 If I am not carrying food
-### Chinese
-如果不携带食物
+### Chinese ***
+如果我没有带食物
 
 ### Source
 If the ant is carrying food, then do something according to the attached blocks.
-### Chinese
-如果蚂蚁在搬运食物，则根据所附的编程模块进行行动。
+### Chinese ***
+如果蚂蚁搬运着食物，就根据所附着的方块做一些事情。
 
 ### Source
 If the ant is inside the nest, then do something according to the attached blocks.
-### Chinese
-如果蚂蚁在蚁穴内，则根据所附的编程模块进行行动。
+### Chinese ***
+如果蚂蚁在巢穴里，则根据附着的方块做一些事情。
 
 ### Source
 If the ant is not carrying food, then do something according to the attached blocks.
-### Chinese
-如果蚂蚁没有携带食物，则根据所附的编程模块进行行动。
+### Chinese ***
+如果蚂蚁没有携带食物，则根据所附的方块采取相应措施。
 
 ### Source
 If the ant is not inside the nest, then do something according to the attached blocks.
-### Chinese
-如果蚂蚁不在蚁穴内，则根据所附的编程模块进行行动。
+### Chinese ***
+如果蚂蚁不在巢穴里，则根据所附的方块进行操作。
 
 ### Source
 If there is food here
-### Chinese
+### Chinese ***
 如果这里有食物
 
 ### Source
 If there is food on the same patch (place) of the ant, then do something according to the attached blocks.
-### Chinese
-如果蚂蚁的同格子（地方）有食物，则根据所附的编程模块进行行动。
+### Chinese ***
+如果蚂蚁所在的同一块格子有食物，则根据所附的方块采取相应行动。
 
 ### Source
 Pick food
-### Chinese
+### Chinese ***
 挑选食物
 
 ### Source
 Red
-### Chinese
-红色
+### Chinese ***
+红色的
 
 ### Source
 Setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 Sky
-### Chinese
+### Chinese ***
 天空
 
 ### Source
 Spawn some ants in the nest. Each ant will have a random heading.
-### Chinese
-在巢穴中孵化一些蚂蚁。每只蚂蚁都会有一个随机的方向。
+### Chinese ***
+在巢穴中产下一些蚂蚁。每只蚂蚁都会有一个随机的方向。
 
 ### Source
 Turn right
-### Chinese
+### Chinese ***
 右转
 
 ### Source
 Turn towards nest smell
-### Chinese
+### Chinese ***
 转向巢穴气味
 
 ### Source
 Turn towards pheromone smell
-### Chinese
+### Chinese ***
 转向信息素气味
 
 ### Source
 Wiggle
-### Chinese
-随机摆动
+### Chinese ***
+摆动
 
 ### Source
 X Coordinate
-### Chinese
+### Chinese ***
 X 坐标
 
 ### Source
 Y Coordinate
-### Chinese
+### Chinese ***
 Y 坐标
 
 ### Source
 Yellow
-### Chinese
-黄色
+### Chinese ***
+黄色的
 
 ## Plots
 ### Source
 food
-### Chinese
+### Chinese ***
 食物
 
 ### Source
 Food in each pile
-### Chinese
+### Chinese ***
 每堆食物
 
 ### Source
 food-in-pile1
-### Chinese
+### Chinese ***
 食物堆1
 
 ### Source
 food-in-pile2
-### Chinese
+### Chinese ***
 食物堆2
 
 ### Source
 food-in-pile3
-### Chinese
+### Chinese ***
 食物堆3
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 diffusion-rate
-### Chinese
-扩散率
+### Chinese ***
+扩散速率
 
 ### Source
 evaporation-rate
-### Chinese
+### Chinese ***
 蒸发率
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

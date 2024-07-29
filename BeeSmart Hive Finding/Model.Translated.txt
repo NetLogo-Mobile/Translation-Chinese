@@ -1,78 +1,79 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 committed
-### Chinese
-已确认
+### Chinese ***
+坚定的
 
 ### Source
 default
-### Chinese
+### Chinese ***
 默认
 
 ### Source
 on-site
-### Chinese
-在场蜜蜂
+### Chinese ***
+现场
 
 ### Source
 piping-scouts
-### Chinese
-进行鸣叫的侦察蜂
+### Chinese ***
+管道侦察员
 
 ### Source
 watching bees
-### Chinese
+### Chinese ***
 观察蜜蜂
 
 ### Source
 watching v.s. working
-### Chinese
-围观 vs 工作中的蜜蜂
+### Chinese ***
+观看与工作
 
 ### Source
 working bees
-### Chinese
-工作中的蜜蜂
+### Chinese ***
+工作蜜蜂
 
 ## Widgets
 ### Source
 Go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 hive-number
-### Chinese
-可能的蜂巢数
+### Chinese ***
+蜂巢编号
 
 ### Source
 initial-explore-time
-### Chinese
+### Chinese ***
 初始探索时间
 
 ### Source
 initial-percentage
-### Chinese
-初始侦察蜂比例
+### Chinese ***
+初始百分比
 
 ### Source
 quorum
-### Chinese
-达到共识所需蜜蜂
+### Chinese ***
+法定人数
 
 ### Source
 Setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 Show/Hide Dance Path
-### Chinese
+### Chinese ***
 显示/隐藏舞蹈路径
 
 ### Source
 Show/Hide Scouts
-### Chinese
-显示/隐藏侦察蜂
+### Chinese ***
+显示/隐藏侦察兵
 

@@ -1,72 +1,73 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 debris-level
-### Chinese
-难度等级（起始碎片）
+### Chinese ***
+碎片级
 
 ### Source
 Down
-### Chinese
+### Chinese ***
 向下
 
 ### Source
 Drop
-### Chinese
-下落
+### Chinese ***
+降低
 
 ### Source
 Left
-### Chinese
-向左
+### Chinese ***
+左边
 
 ### Source
 Level
-### Chinese
-水平
+### Chinese ***
+等级
 
 ### Source
 Lines
-### Chinese
-行数
+### Chinese ***
+线条
 
 ### Source
 New
-### Chinese
-新游戏
+### Chinese ***
+新的
 
 ### Source
 Play
-### Chinese
-开始
+### Chinese ***
+玩
 
 ### Source
 Right
-### Chinese
-向右
+### Chinese ***
+正确的
 
 ### Source
 RotLeft
-### Chinese
-左转
+### Chinese ***
+腐左
 
 ### Source
 RotRight
-### Chinese
-右转
+### Chinese ***
+腐化右翼
 
 ### Source
 Score
-### Chinese
-得分
+### Chinese ***
+分数
 
 ### Source
 show-next?
-### Chinese
-显示下一个？
+### Chinese ***
+显示-下一个？
 
 ### Source
 starting-level
-### Chinese
-难度等级（下落速度）
+### Chinese ***
+起始级别
 

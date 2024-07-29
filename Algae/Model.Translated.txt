@@ -1,53 +1,54 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 algae distribution
-### Chinese
+### Chinese ***
 藻类分布
 
 ### Source
 average height
-### Chinese
-平均高度
+### Chinese ***
+平均身高
 
 ### Source
 day length
-### Chinese
-昼间长度
+### Chinese ***
+日照长度
 
 ### Source
 default
-### Chinese
+### Chinese ***
 默认
 
 ## Widgets
 ### Source
 change-day-length?
-### Chinese
-改变昼间长度？
+### Chinese ***
+改变日照长度？
 
 ### Source
 day-and-night?
-### Chinese
-日夜交替？
+### Chinese ***
+白天和黑夜？
 
 ### Source
 day-length
-### Chinese
-昼间长度
+### Chinese ***
+日照长度
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 light-spreadiness
-### Chinese
-光扩散性
+### Chinese ***
+光的扩散性
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

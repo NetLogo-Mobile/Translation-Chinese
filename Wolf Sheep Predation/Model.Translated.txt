@@ -1,434 +1,435 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 grass / 4
-### Chinese
-1/4 草
+### Chinese ***
+草 / 4
 
 ### Source
 pop.
-### Chinese
-种群数量
+### Chinese ***
+流行音乐。
 
 ### Source
 populations
-### Chinese
-种群数量
+### Chinese ***
+人口
 
 ### Source
 sheep
-### Chinese
+### Chinese ***
 羊
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ### Source
 wolves
-### Chinese
+### Chinese ***
 狼
 
 ## Tutorial
 ### Source
 A biological species is a group of organisms that can <trigger=reproduction>reproduce</trigger> with one another in nature and produce fertile offspring .
-### Chinese
-物种是指一群在自然界中可以<trigger=reproduction>互相交配</trigger>并繁殖可生殖后代  的生物体。
+### Chinese ***
+生物物种是指能够<trigger=reproduction>复制</trigger>在自然界中相互繁殖并产生可育的后代  。
 
 ### Source
 A population is the number of organisms of the same <trigger=species>species</trigger> that live in a particular geographic area  at the same time , with the capability of producing fertile offspring .
-### Chinese
-种群指的是一批生活在某一特定地理区域 、同一时期及同一<trigger=species>物种</trigger>的生物体。种群应有能力繁衍具有生殖能力的后代 。
+### Chinese ***
+种群是指同一物种的生物数量<trigger=species>物种</trigger>它们同时生活在特定的地理区域，并具有繁育后代的能力。
 
 ### Source
 An <trigger=ecosystem>ecosystem</trigger>  is said to possess ecological <color=blue>stability </color> (or equilibrium) if it is capable of returning to its equilibrium state after a perturbation (a capacity known as resilience) or does not experience unexpected large changes in its characteristics across time .
-### Chinese
-如果一个<trigger=ecosystem>生态系统 </trigger>能在受到外部干扰之后回到稳定状态（我们称之为弹性），或者不会在长时间  中出现不可预见的大幅变化，那么我们认为它具备生态<color=blue>稳定性  </color>，或生态平衡。
+### Chinese ***
+一个<trigger=ecosystem>生态系统</trigger> 据说具有生态<color=blue>稳定性</color>（或平衡）如果它能够在受到干扰之后恢复到其平衡状态（这种能力称为弹性），或者其特性不会随着时间的推移发生意外的巨大变化  。
 
 ### Source
 An ecosystem  or biome describes a single environment and every <color=green>living (biotic)</color> organism  and <color=#555555ff>non-living (abiotic)</color> factor  that is contained within it or characterizes it. An ecosystem  embodies every aspect of a single habitat, including all interactions between its different elements.
-### Chinese
-一个生态系统  或生物群系指的是一处地理环境和其中所有<color=green>生命体 </color>及<color=#555555ff>无生命</color>因素的总和，或可以代表其特征的性状。一个生态系统  涵盖了一个生物栖息处的一切，包括其中不同元素的一切相互作用。
+### Chinese ***
+生态系统  或生物群落描述的是一个单一的环境，并且每个<color=green>活的（生物的）</color>生物体  和<color=#555555ff>非生物的（非生物的）</color>因素  包含在其中或表征其特征的因素。生态系统  体现了单个栖息地的各个方面，包括其不同要素之间的所有相互作用。
 
 ### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo Wolf Sheep Predation model by Uri Wilensky.
-### Chinese
-作者：Charles Cheng, John Chen。基于 NetLogo 的狼-羊狩猎模型，作者 Uri Wilensky。
+### Chinese ***
+作者：Charles Cheng、John Chen。基于 Uri Wilensky 的 NetLogo 狼羊捕食模型。
 
 ### Source
 Can you find any parameters that generate a <color=blue>stable </color> <trigger=ecosystem>ecosystem</trigger>  in the <color=grey>sheep </color>-<color=#a07348ff>wolves </color> model variation?
-### Chinese
-你能在“羊-狼-草”模型中找到可以产生<color=blue>稳定  </color>的<trigger=ecosystem>生态系统</trigger>的参数吗？
+### Chinese ***
+你能找到参数<color=blue>穩定 </color><trigger=ecosystem>生态系统</trigger> 在<color=grey>羊 </color> -<color=#a07348ff>狼 </color>模型变化？
 
 ### Source
 Can you modify the model so that <color=#a07348ff>wolves </color> actively chase <color=grey>sheep </color>?
-### Chinese
-你能修改一下这个模型，让<color=#a07348ff>狼  </color>主动追逐<color=grey>羊 </color> 吗？
+### Chinese ***
+你能修改模型以便<color=#a07348ff>狼 </color>积极追逐<color=grey>羊 </color> ？
 
 ### Source
 Can you modify the model so the <color=grey>sheep </color> will flock?
-### Chinese
-你能修改一下模型，让<color=grey>羊群 </color>成群结队吗？
+### Chinese ***
+你能修改模型，以便<color=grey>羊 </color>会蜂拥而至吗？
 
 ### Source
 Changing the Reproduction Rules 
-### Chinese
-调整繁殖规则 
+### Chinese ***
+改变繁殖规则 
 
 ### Source
 Congratulations! 
-### Chinese
-恭喜！
+### Chinese ***
+恭喜！ 
 
 ### Source
 Ecosystem 
-### Chinese
+### Chinese ***
 生态系统 
 
 ### Source
 Extinction 
-### Chinese
+### Chinese ***
 灭绝 
 
 ### Source
 Extinction  is the dying out or extermination of a <trigger=species>species</trigger>. Extinction  occurs when species are diminished because of environmental forces (habitat fragmentation, global  change, natural disaster , overexploitation of species for human use ) or because of evolutionary changes in their members (genetic  inbreeding, poor <trigger=reproduction>reproduction</trigger>, decline in <trigger=population>population</trigger> numbers).
-### Chinese
-灭绝  指的是一个<trigger=species>物种</trigger>在世界中消失。可能导致灭绝  的原因包括环境因素（栖息地破碎、全球气候变化 、自然灾害 、或人类的过度利用 ）或种群内个体的演化变迁（近亲交配 、<trigger=reproduction>繁殖能力</trigger>下降、或是<trigger=population>种群数量</trigger>持续衰退）。
+### Chinese ***
+灭绝是指一个物种的消亡或灭绝<trigger=species>物种</trigger>灭绝是指物种数量因环境因素（栖息地破碎化、全球变化、自然灾害、人类过度开发物种）或其成员的进化变化（遗传近亲繁殖、不良<trigger=reproduction>再生产</trigger>，下降<trigger=population>人口</trigger>数字）。
 
 ### Source
 First Variation of Model 
-### Chinese
-模型的第一个版本（羊-狼）
+### Chinese ***
+模型的第一个变体 
 
 ### Source
 Goals 
-### Chinese
+### Chinese ***
 目标 
 
 ### Source
 grass 
-### Chinese
+### Chinese ***
 草 
 
 ### Source
 grass-regrowth-time 
-### Chinese
-草的再生时间 (grass-regrowth-time) 
+### Chinese ***
+草再生时间 
 
 ### Source
 Here, you can watch the <color=#a07348ff>wolf </color>, <color=grey>sheep </color>, and <color=green>grass </color> <trigger=population>populations</trigger> fluctuate  over time . When running the <color=grey>sheep </color>-<color=#a07348ff>wolves </color> model variation, watch as the <color=grey>sheep </color> and <color=#a07348ff>wolf </color> populations fluctuate . Notice that increases and decreases in the sizes of each population are related. In what way are they related? What eventually happens?
-### Chinese
-在这里，你可以观察<color=#a07348ff>狼  </color>、<color=grey>羊  </color>、以及 <color=green>草 </color> <trigger=population>种群数量</trigger>随着时间  的波动 。当你运行“羊-狼”模型时，试着观察狼和羊的数量波动 。有趣的是，两个物种数量之间的增长和减少是相互关联的。那么，它们是如何联系在一起的？究竟又发生了些什么？
+### Chinese ***
+在这里，您可以观看<color=#a07348ff>狼 </color> ，<color=grey>羊 </color> ， 和<color=green>草 </color><trigger=population>人口</trigger>随时间波动。运行<color=grey>羊 </color> -<color=#a07348ff>狼 </color>模型变化，观看<color=grey>羊 </color>和<color=#a07348ff>狼 </color>种群数量波动。请注意，每个种群规模的增加和减少是相关的。它们以何种方式相关？最终会发生什么？
 
 ### Source
 How long it takes for <color=green>grass </color> to regrow once it is eaten (note this is not used in the <color=grey>sheep </color>-<color=#a07348ff>wolves </color> model version)
-### Chinese
-当某处<color=green>草  </color>被吃掉之后，需要多少时间周期才能重新生长。注意这个参数在羊-狼模型中无效。
+### Chinese ***
+需要多长时间<color=green>草 </color>吃掉后重新长出（注意这不用于<color=grey>羊 </color> -<color=#a07348ff>狼 </color>模型版本）
 
 ### Source
 Imagine you are standing in a <color=green>green pasture </color> on a beautiful, <color=#b3b300ff>sunny </color> day. A few hundred feet away, you observe a <color=grey>flock of sheep </color> meandering in the <color=#654321ff>fields</color>, feasting on the plentiful <color=green>grass </color>. Suddenly, a <color=#a07348ff>pack of wolves </color> appear and begin chasing the <color=grey>sheep </color> that have already begun to disperse. How do the <trigger=population>populations</trigger> of the <trigger=predator,#a07348ff>predator</trigger> and <trigger=prey,grey>prey</trigger> change over time  due to predation? Click <b>next</b> to explore this further more.
-### Chinese
-想象在<color=#b3b300ff>阳光明媚  </color>的一天，你站在一处<color=green>青葱翠绿的牧场  </color>上。你看见几十米之外有<color=grey>一群羊  </color>正于<color=#654321ff>野地</color><color=green>草丛  </color>之间觅食。忽然之间，<color=#a07348ff>狼群  </color>现身，开始追赶四散奔逃的羊群。你不禁想问，<trigger=predator,#a07348ff>猎食者</trigger>和<trigger=prey,grey>被捕食者</trigger>数量数量上的消长，是如何因为猎食关系而变化的？点击<b>下一步</b>开始你的探索吧！
+### Chinese ***
+想象一下你站在<color=green>绿色牧场 </color>在一个美丽的，<color=#b3b300ff>阳光灿烂</color>一天。几百英尺外，你观察到<color=grey>羊群 </color>蜿蜒在<color=#654321ff>字段</color>，享受丰盛的<color=green>草 </color>突然，<color=#a07348ff>狼群 </color>出现并开始追逐<color=grey>羊 </color>已经开始散去。<trigger=population>人口</trigger>的<trigger=predator,#a07348ff>捕食者</trigger>和<trigger=prey,grey>猎物</trigger>随着时间的推移，是否会因掠食而发生变化？单击<b>下一步</b>以进一步探索。
 
 ### Source
 In ecology, <color=#a07348ff>predators</color> are organisms that live by <trigger=prey,grey>preying</trigger> on other organisms for food .
-### Chinese
-在生物学中，<color=#a07348ff>猎食者</color>指的是通过<trigger=prey,grey>猎食</trigger>其他生命体为食物  的生命体。
+### Chinese ***
+在生态学中，<color=#a07348ff>掠食者</color>是依靠<trigger=prey,grey>捕食</trigger>以其他生物为食  。
 
 ### Source
 In ecology, <color=grey>preys</color> are organisms that <trigger=predator,#a07348ff>predator</trigger> kill for food .
-### Chinese
-在生物学中，<color=grey>被捕食者</color>指的是被<color=#a07348ff>猎食者</color>猎杀作为食物  的生命体。
+### Chinese ***
+在生态学中，<color=grey>猎物</color>是<trigger=predator,#a07348ff>捕食者</trigger>杀生以求食物  。
 
 ### Source
 In the <color=grey>sheep </color>-<color=#a07348ff>wolves </color>-<color=green>grass </color> model variation, notice the <color=green>green line</color> added to the <trigger=population>population</trigger> plot representing fluctuations  in the amount of <color=green>grass </color>. How do the sizes of the three populations appear to relate now? What is the explanation for this?
-### Chinese
-在<color=grey>羊  </color>-<color=#a07348ff>狼  </color>-<color=green>草  </color>模型中，请留意<trigger=population>种群数量</trigger>图表中多出来的<color=green>绿线</color>，它代表着<color=green>草  </color>数量上的相对波动。现在想想，三个种群之间的数量波动是如何互相联系的？你觉得应该怎么解释这个现象？
+### Chinese ***
+在里面<color=grey>羊 </color> -<color=#a07348ff>狼 </color> -<color=green>草 </color>模型变化，注意<color=green>绿线</color>添加到<trigger=population>人口</trigger>表示波动的图表<color=green>草 </color> 。现在这三个种群的规模看起来如何相关？对此该如何解释？
 
 ### Source
 In this variation, we model the <color=green>grass </color> as "infinite " so that <color=grey>sheep </color> always have enough to eat, and we don't explicitly model the eating or growing of <color=green>grass </color>. As such, <color=grey>sheep </color> don't either gain or lose <color=#b3b300ff>energy </color> by eating or moving.
-### Chinese
-在这个版本中，我们假设<color=green>草  </color>的数量是“无限的 ”，因此<color=grey>羊  </color>总是有足够的食物。同时，我们并没有明确地模拟草被羊吃掉或者生长的过程。因此，羊不会因为吃草获得<color=#b3b300ff>体力  </color>，也不会因为移动而消耗体力。
+### Chinese ***
+在这个变体中，我们建模<color=green>草 </color>为“无限  ”，因此<color=grey>羊 </color>总是有足够的食物，我们并没有明确地模拟饮食或生长<color=green>草 </color> 。 像这样，<color=grey>羊 </color>不获不失<color=#b3b300ff>能源 </color>通过进食或运动。
 
 ### Source
 In what condition is this variation well-suited for?
-### Chinese
-在什么情况下适合使用这个模型？
+### Chinese ***
+这种变化适合于什么情况？
 
 ### Source
 initial-number-sheep 
-### Chinese
-羊的初始数量 (initial-number-sheep) 
+### Chinese ***
+初始数字羊 
 
 ### Source
 initial-number-wolves 
-### Chinese
-狼的初始数量 (initial-number-wolves) 
+### Chinese ***
+初始数字狼 
 
 ### Source
 Introduction
-### Chinese
-模型简介
+### Chinese ***
+介绍
 
 ### Source
 model-version
-### Chinese
-模型版本 (model-version)
+### Chinese ***
+模型版本
 
 ### Source
 Notice that under <color=blue>stable </color> settings, the <trigger=population>populations</trigger> tend to fluctuate  at a predictable pace. Can you find any parameters that will speed this up  or slow it down ?
-### Chinese
-注意到在<color=blue>稳定的  </color>设置下，<trigger=population>种群数量</trigger>倾向于有规律地波动 。你能找到任何能加快  或者减慢  波动速度的参数吗？
+### Chinese ***
+请注意<color=blue>穩定 </color>设置，<trigger=population>人口</trigger>倾向于以可预测的速度波动。你能找到任何可以加快或减慢这一速度的参数吗？
 
 ### Source
 Plot 
-### Chinese
-图表 
+### Chinese ***
+剧情 
 
 ### Source
 Population
-### Chinese
-种群数量
+### Chinese ***
+人口
 
 ### Source
 Predator
-### Chinese
+### Chinese ***
 捕食者
 
 ### Source
 Prey
-### Chinese
-被捕食者
+### Chinese ***
+猎物
 
 ### Source
 Questions?
-### Chinese
-还有问题吗？
+### Chinese ***
+问题？
 
 ### Source
 Reproduction
-### Chinese
-繁殖
+### Chinese ***
+再生产
 
 ### Source
 Reproduction is a biological process by which an organism reproduces an offspring  who is biologically similar to the organism. Reproduction enables and ensures the continuity  of <trigger=species>species</trigger>, generation after generation.
-### Chinese
-繁殖指的是生命体繁衍出生物学上相近的个体的生物过程。繁殖保证了<trigger=species>物种</trigger>一代接一代的传承和延续。
+### Chinese ***
+繁殖是生物体繁殖与自身生物学相似的后代的生物学过程。繁殖使生命得以延续并确保其延续性。<trigger=species>物种</trigger>，一代又一代。
 
 ### Source
 Second Variation of Model 
-### Chinese
-模型的第二个版本（羊-狼-草）
+### Chinese ***
+模型的第二种变体 
 
 ### Source
 Sensitivity of Parameters 
-### Chinese
-参数的敏感度 
+### Chinese ***
+参数敏感性 
 
 ### Source
 Sheep Flock 
-### Chinese
+### Chinese ***
 羊群 
 
 ### Source
 sheep 
-### Chinese
+### Chinese ***
 羊 
 
 ### Source
 sheep-gain-from-food 
-### Chinese
-羊吃草获得的体力 (sheep-gain-from-food) 
+### Chinese ***
+羊从食物中获取收益 
 
 ### Source
 sheep-reproduce 
-### Chinese
-羊的繁殖概率 (sheep-reproduce) 
+### Chinese ***
+羊繁殖 
 
 ### Source
 show-energy? 
-### Chinese
-是否标出动物体力值 (show-energy?) 
+### Chinese ***
+展现能量？ 
 
 ### Source
 Species
-### Chinese
+### Chinese ***
 物种
 
 ### Source
 Stability When Wolf Population is Zero 
-### Chinese
-狼的数量为零时，模型的稳定性 
+### Chinese ***
+狼群数量为零时的稳定性 
 
 ### Source
 Stability With Only Wolves and Sheep (No Grass) 
-### Chinese
-只有狼和羊、没有草时，模型的稳定性 
+### Chinese ***
+只有狼和羊（没有草）的稳定性 
 
 ### Source
 Stability 
-### Chinese
-稳定性 
+### Chinese ***
+稳定性
 
 ### Source
 The amount of <color=#b3b300ff>energy </color> <color=#a07348ff>wolves </color> get for every <color=grey>sheep </color> eaten
-### Chinese
-狼每吃掉一只羊时，获得的<color=#b3b300ff>体力值  </color>大小。
+### Chinese ***
+大量的<color=#b3b300ff>能源 </color><color=#a07348ff>狼 </color>得到每一个<color=grey>羊 </color>吃过
 
 ### Source
 The amount of <color=#b3b300ff>energy </color> <color=grey>sheep </color> get for every <color=green>grass patch </color> eaten (note this is not used in the <color=grey>sheep </color>-<color=#a07348ff>wolves </color> model version)
-### Chinese
-羊每吃掉一格草时，获得的<color=#b3b300ff>体力值  </color>大小（只在羊-狼-草模型中生效）。
+### Chinese ***
+大量的<color=#b3b300ff>能源 </color><color=grey>羊 </color>得到每一个<color=green>草地格子</color>吃掉（注意这不用于<color=grey>羊 </color> -<color=#a07348ff>狼 </color>模型版本）
 
 ### Source
 The current size of the <color=#a07348ff>wolf </color> <trigger=population>population</trigger>
-### Chinese
-目前世界中 <color=#a07348ff>狼  </color>的<trigger=population>种群数量</trigger>
+### Chinese ***
+目前规模<color=#a07348ff>狼 </color><trigger=population>人口</trigger>
 
 ### Source
 The current size of the <color=green>grass </color> <trigger=population>population</trigger>
-### Chinese
-目前世界中 <color=green>草  </color>的<trigger=population>种群数量</trigger>
+### Chinese ***
+目前规模<color=green>草 </color><trigger=population>人口</trigger>
 
 ### Source
 The current size of the <color=grey>sheep </color> <trigger=population>population</trigger>
-### Chinese
-目前世界中 <color=grey>羊  </color>的<trigger=population>种群数量</trigger>
+### Chinese ***
+目前规模<color=grey>羊 </color><trigger=population>人口</trigger>
 
 ### Source
 The initial size of <color=#a07348ff>wolf </color> <trigger=population>population</trigger>
-### Chinese
-模型开始时，<color=#a07348ff>狼  </color>的<trigger=population>种群数量</trigger>
+### Chinese ***
+初始大小<color=#a07348ff>狼 </color><trigger=population>人口</trigger>
 
 ### Source
 The initial size of <color=grey>sheep </color> <trigger=population>population</trigger>
-### Chinese
-模型开始时，<color=grey>羊  </color>的<trigger=population>种群数量</trigger>
+### Chinese ***
+初始大小<color=grey>羊 </color><trigger=population>人口</trigger>
 
 ### Source
 The probability of a <color=#a07348ff>wolf </color> <trigger=reproduction>reproducing</trigger> at each time  step
-### Chinese
-每个时间周期中，<color=#a07348ff>狼  </color>进行<trigger=reproduction>繁殖</trigger>的概率
+### Chinese ***
+的概率<color=#a07348ff>狼 </color><trigger=reproduction>复制</trigger>每一步
 
 ### Source
 The probability of a <color=grey>sheep </color> <trigger=reproduction>reproducing</trigger> at each time  step
-### Chinese
-每个时间周期中，<color=grey>羊  </color>进行<trigger=reproduction>繁殖</trigger>的概率
+### Chinese ***
+的概率<color=grey>羊 </color><trigger=reproduction>复制</trigger>每一步
 
 ### Source
 The second variation, the "<color=grey>sheep </color>-<color=#a07348ff>wolves </color>-<color=green>grass </color>" version explictly models <color=green>grass </color> in addition to <color=#a07348ff>wolves </color> and <color=grey>sheep </color>. The behavior of the <color=#a07348ff>wolves </color> is identical to the first variation, however this time the <color=grey>sheep </color> must eat <color=green>grass </color> in order to maintain their <color=#b3b300ff>energy </color> - when they run out of <color=#b3b300ff>energy </color> they die . One unit of <color=#b3b300ff>energy </color> is deducted for every step a <color=grey>sheep </color> takes. Once <color=green>grass </color> is eaten it will only regrow after a fixed amount of time .
-### Chinese
-在模型的第二个版本中，除了<color=#a07348ff>狼  </color>和<color=grey>羊  </color>以外，还模拟了绿色的 <color=green>草 </color>。狼的行为与第一个模型相同，但是这一次，羊必须吃草才能维持体力，当它们<color=#b3b300ff>体力  </color>耗尽时也会消失 。每当羊移动一次，就会消耗一点能量。草一旦被羊吃掉，它们在固定的一段时间  后才会重新生长。
+### Chinese ***
+第二种变化是“<color=grey>羊 </color> -<color=#a07348ff>狼 </color> -<color=green>草 </color> “版本明确模型<color=green>草 </color>此外<color=#a07348ff>狼 </color>和<color=grey>羊 </color> . 的行为<color=#a07348ff>狼 </color>与第一个版本相同，但是这次<color=grey>羊 </color>必须吃<color=green>草 </color>为了保持他们的<color=#b3b300ff>能源 </color> - 当他们用完<color=#b3b300ff>能源 </color>他们死了。一个单位的<color=#b3b300ff>能源 </color>每走一步都会扣除<color=grey>羊 </color>需要。一旦<color=green>草 </color>被吃掉后，经过一定时间才会重新长出。
 
 ### Source
 There are a number ways to alter the model so that it will be <color=blue>stable </color> with only <color=#a07348ff>wolves </color> and <color=grey>sheep </color> (no <color=green>grass </color>). Some will require new elements to be coded in or existing behaviors to be changed. Can you develop such a version?
-### Chinese
-有很多方法可以改变模型，使生态系统在只有<color=#a07348ff>狼  </color>和<color=grey>羊  </color>（没有<color=green>草 </color>）的情况下保持<color=blue>稳定  </color>。比如说有些方法需要加入新元素或者改变现有的行为。你能制作出这样的版本吗？
+### Chinese ***
+有多种方法可以改变模型，以便<color=blue>穩定 </color>仅与<color=#a07348ff>狼 </color>和<color=grey>羊 </color> （不<color=green>草 </color> ）。有些需要编写新元素或更改现有行为。您能开发这样的版本吗？
 
 ### Source
 There are two main variations to this model. In the first variation, the "<color=grey>sheep </color>-<color=#a07348ff>wolves </color>" version, <color=#a07348ff>wolves </color> and <color=grey>sheep </color> wander randomly around the <color=#654321ff>landscape </color>, while the <color=#a07348ff>wolves </color> look for <color=grey>sheep </color> to prey on. Each step costs the <color=#a07348ff>wolves </color> one unit of <color=#b3b300ff>energy </color>, and they must eat <color=grey>sheep </color> in order to replenish their <color=#b3b300ff>energy </color> - when they run out of <color=#b3b300ff>energy </color> they die . To allow the <trigger=population>population</trigger> to continue, each <color=#a07348ff>wolf </color> or <color=grey>sheep </color> has a fixed probability of <trigger=reproduction>reproducing</trigger> at each time  step.
-### Chinese
-这个模型有两个版本。在第一个“<color=grey>羊  </color>-<color=#a07348ff>狼  </color>”的版本中，狼和羊在<color=#654321ff>环境 </color>中随机游荡，狼寻找羊来捕食。每一步都会消耗狼的<color=#b3b300ff>体力 </color>，它们必须吃羊来补充体力——当它们体力耗尽时，它们就会消失 。为了让种群继续<trigger=reproduction>繁殖</trigger>下去，在每个单位时间  内，每只狼或羊都有一个固定的生育率。
+### Chinese ***
+这个模型有两个主要变体。第一个变体是“<color=grey>羊 </color> -<color=#a07348ff>狼 </color> “ 版本，<color=#a07348ff>狼 </color>和<color=grey>羊 </color>随意闲逛<color=#654321ff>景观 </color> ，而<color=#a07348ff>狼 </color>寻找<color=grey>羊 </color>捕食。每一步都要付出<color=#a07348ff>狼 </color>一个单位<color=#b3b300ff>能源 </color> ，他们必须吃<color=grey>羊 </color>为了补充他们的<color=#b3b300ff>能源 </color> - 当他们用完<color=#b3b300ff>能源 </color>他们死了。为了允许<trigger=population>人口</trigger>继续，每个<color=#a07348ff>狼 </color>或者<color=grey>羊 </color>有固定的概率<trigger=reproduction>复制</trigger>在每个时间步骤中。
 
 ### Source
 Things to Try
-### Chinese
-试一试
+### Chinese ***
+值得尝试的事情
 
 ### Source
 This model explores the <trigger=stability,blue>stability </trigger> of <trigger=predator,#a07348ff>predator</trigger>-<trigger=prey,grey>prey</trigger> <trigger=ecosystem>ecosystems</trigger> . Such a system is called <color=red>unstable </color> if it tends to result in <trigger=extinction>extinction </trigger> for one or more <trigger=species>species</trigger> involved. In contrast, a system is <color=blue>stable </color> if it tends to maintain itself over time , despite fluctuations  in <trigger=population>population</trigger> sizes.
-### Chinese
-这个模型探讨了<trigger=predator,#a07348ff>捕食者</trigger>——<trigger=prey,grey>被捕食者</trigger>生态系统的<trigger=stability,blue>稳定性  </trigger>。如果一个系统会逐渐导致系统内一个或多个<trigger=species>物种</trigger>的灭绝，那就叫它“不稳定的系统”。相反，如果在一段时间  内一个系统中虽然<trigger=population>种群数量</trigger>  有上下波动，但总体来说物种的种类保持不变，那么就叫它“稳定的系统”。
+### Chinese ***
+该模型探索<trigger=stability,blue>稳定性</trigger>的<trigger=predator,#a07348ff>捕食者</trigger>-<trigger=prey,grey>猎物</trigger><trigger=ecosystem>生态系统</trigger> 。这样的系统被称为<color=red>不稳定 </color>如果它倾向于导致<trigger=extinction>灭绝 </trigger>对于一个或多个<trigger=species>物种</trigger>参与。相比之下，系统<color=blue>穩定 </color>如果它倾向于随着时间的推移保持自身，尽管波动<trigger=population>人口</trigger>尺寸。
 
 ### Source
 This variation is more complex than the first, but it is generally <color=blue>stable </color>. It is a closer match to the classic Lotka Volterra <trigger=population>population</trigger> oscillation models. The classic LV models though assume the populations can take on real values, but in small populations these models underestimate <trigger=extinction>extinctions </trigger> and agent-based models such as the ones here, provide more realistic results.
-### Chinese
-这种模型比第一种模型更复杂，但通常是<color=blue>稳定的 </color>。它与经典的掠食者—猎物<trigger=population>数量</trigger>方程更吻合。经典模型假定种群大小可以有小数点，但是在较小的种群中，由于动物的数量总是整数，基于公式的模型低估了<trigger=extinction>灭绝  </trigger>的风险。而类似本模型的多主体模型提供了更接近现实的结果。
+### Chinese ***
+这种变体比第一种更复杂，但通常<color=blue>穩定 </color> . 它更接近经典的 Lotka Volterra<trigger=population>人口</trigger>振荡模型。虽然经典的 LV 模型假设种群可以采用真实值，但在小种群中，这些模型低估了<trigger=extinction>灭绝 </trigger>并且像这里这样的基于代理的模型提供了更现实的结果。
 
 ### Source
 This variation produces interesting <trigger=population>population</trigger> dynamics, but is ultimately <color=red>unstable </color>. This variation of the model is particularly well-suited to interacting <trigger=species>species</trigger> in a <color=green>rich nutrient</color> environment, such as two strains of bacteria in a petri dish.
-### Chinese
-这种模型产生了有趣的<trigger=population>种群数量</trigger>动态，但最后我们发现它并不稳定。这个版本的模型特别适用于模拟营养丰富的环境中互相影响的<trigger=species>物种</trigger>，比如培养皿中的两种细菌。
+### Chinese ***
+这种变化产生了有趣的<trigger=population>人口</trigger>动态，但最终<color=red>不稳定 </color> 。该模型的这种变体特别适合于交互<trigger=species>物种</trigger>在一个<color=green>营养丰富</color>环境，例如培养皿中的两种细菌菌株。
 
 ### Source
 To further explore the model, click on any of the following topics.
-### Chinese
-点击下列任意话题，即可进一步探索模型。
+### Chinese ***
+要进一步探索该模型，请单击以下任意主题。
 
 ### Source
 Try adjusting the parameters under various settings. How sensitive is the <color=blue>stability </color> of the model to the particular parameters?
-### Chinese
-尝试调整参数到各种数值。改变这些参数对模型是否<color=blue>稳定  </color>影响是大还是小？
+### Chinese ***
+尝试在各种设置下调整参数。<color=blue>稳定性</color>模型的特定参数？
 
 ### Source
 Try changing the <trigger=reproduction>reproduction</trigger> rules -- for example, what would happen if reproduction depended on <color=#b3b300ff>energy </color> rather than being determined by a fixed probability?
-### Chinese
-试着改变<trigger=reproduction>繁殖</trigger>的规则——比如，如果繁殖依赖于体力而不是由固定的概率决定，会发生什么？
+### Chinese ***
+尝试改变<trigger=reproduction>再生产</trigger>规则——例如，如果繁殖取决于<color=#b3b300ff>能源 </color>而不是由固定的概率决定？
 
 ### Source
 Try running the <color=grey>sheep </color>-<color=#a07348ff>wolves </color>-<color=green>grass </color> model variation, but setting <I>initial-number-wolves</I> to 0. This gives a <color=blue>stable </color> <trigger=ecosystem>ecosystem</trigger>  with only <color=grey>sheep </color> and <color=green>grass </color>. Why might this be <color=blue>stable </color> while the variation with only <color=grey>sheep </color> and <color=#a07348ff>wolves </color> is not?
-### Chinese
-尝试运行“<color=grey>羊  </color>-<color=#a07348ff>狼  </color>-<color=green>草  </color>”模型，将一开始狼的数量设置为0，这样就形成了一个只有羊和草的稳定的生态系统。为什么这个生态系统是<color=blue>稳定的 </color> ，但是只有羊和狼的生态系统却不稳定？
+### Chinese ***
+尝试运行<color=grey>羊 </color> -<color=#a07348ff>狼 </color> -<color=green>草</color>模型变化，但将<I>初始狼数</i>设置为 0。这给出了<color=blue>穩定 </color><trigger=ecosystem>生态系统</trigger> 仅<color=grey>羊 </color>和<color=green>草 </color> . 为什么会这样<color=blue>穩定 </color>而只有<color=grey>羊 </color>和<color=#a07348ff>狼 </color>不是？
 
 ### Source
 Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
-### Chinese
-想看看社区中关于这个模型的所有问答？<b>去问答面板看看吧</b>。
+### Chinese ***
+想要查看社区或您对该模型中提出的问题的回答吗？单击<b>“转到问答面板”</b> 。
 
 ### Source
 Welcome to the Wolf Sheep Predation Model! 
-### Chinese
-欢迎来到小绵羊和大灰狼模型！
+### Chinese ***
+欢迎来到狼羊捕食模型！ 
 
 ### Source
 Well done! You have completed the Wolf Sheep Predation model tutorial! Time to play with the model!
-### Chinese
-太棒了！你已经完成了小绵羊和大灰狼模型的指南。现在是时候尽情探索了！
+### Chinese ***
+做得好！您已完成狼羊捕食模型教程！是时候玩一下模型了！
 
 ### Source
 What about the population of the grass?
-### Chinese
-那么，草的种群数目呢？
+### Chinese ***
+那么草的数量又如何呢？
 
 ### Source
 What about the population of the grass? 
-### Chinese
-那么，草的种群数目呢？ 
+### Chinese ***
+草的种群数量又如何呢？ 
 
 ### Source
 Whether or not to show the <color=#b3b300ff>energy </color> of each animal in the world
-### Chinese
-是否显示世界中每只动物的<color=#b3b300ff>体力值 </color>。
+### Chinese ***
+是否显示<color=#b3b300ff>能源 </color>世界上每种动物
 
 ### Source
 Whether we model <color=grey>sheep </color> <color=#a07348ff>wolves </color> and <color=green>grass </color> or just <color=grey>sheep </color> and <color=#a07348ff>wolves </color>
-### Chinese
-决定我们建立“羊-狼-草”模型还是“羊-狼”模型。
+### Chinese ***
+无论我们<color=grey>羊 </color><color=#a07348ff>狼 </color>和<color=green>草 </color>要不就<color=grey>羊 </color>和<color=#a07348ff>狼 </color>
 
 ### Source
 Why do you suppose that some variations of the model might be <color=blue>stable </color> while others are not?
-### Chinese
-你可以猜想一下为什么有些模型是<color=blue>稳定的 </color>，而另一些却不稳定？
+### Chinese ***
+为什么你认为模型的某些变体可能是<color=blue>穩定 </color>而其他的则不是？
 
 ### Source
 wolf-gain-from-food 
-### Chinese
-狼吃羊获得的体力 (wolf-gain-from-food) 
+### Chinese ***
+狼从食物中获取收益 
 
 ### Source
 wolf-reproduce 
-### Chinese
-狼的繁殖概率 (wolf-reproduce) 
+### Chinese ***
+狼繁殖 
 
 ### Source
 Wolves Chasing Sheep 
-### Chinese
-狼追逐羊 
+### Chinese ***
+狼追羊 
 
 ### Source
 wolves 
-### Chinese
+### Chinese ***
 狼 
 
 ### Source
@@ -436,80 +437,77 @@ wolves 
  Observe the difference between modeling in a <color=green>nutrient rich </color> environment and a <color=#654321ff>resource-limited</color> environment
  Examine factors that when changed, result in differing dynamics between <color=#a07348ff>predator</color> and <color=grey>prey</color> 
  Explore how manipulating these factors affect populations over time  and their <trigger=stability,blue>stability </trigger>
-### Chinese
- 理解<trigger=predator,#a07348ff>捕食者</trigger>和<trigger=prey,grey>被捕食者</trigger>之间的<trigger=species>种群</trigger><trigger=population>数量</trigger>动力学
- 观察<color=green>营养丰富  </color>的环境和<color=#654321ff>有限食物</color>环境下模型结果的不同
- 观察不同因素对于<trigger=predator,#a07348ff>捕食者</trigger>和<trigger=prey,grey>被捕食者</trigger>之间动态关系的影响
- 通过调整模型，探索不同因素对随时间变化  的种群数量以及模型<trigger=stability,blue>稳定性  </trigger>的影响
+### Chinese ***
+ 了解<trigger=population>人口</trigger>之间的动态<trigger=predator,#a07348ff>捕食者</trigger>和<trigger=prey,grey>猎物</trigger><trigger=species>物种</trigger> 观察模型之间的差异<color=green>营养丰富 </color>环境和<color=#654321ff>资源有限</color>环境 研究哪些因素发生变化会导致<color=#a07348ff>捕食者</color>和<color=grey>猎物</color> 探索操纵这些因素会如何随着时间的推移影响人口  及其<trigger=stability,blue>稳定性</trigger>
 
 ## Widgets
 ### Source
 go
-### Chinese
-开始
+### Chinese ***
+去
 
 ### Source
 grass
-### Chinese
-1/4 草
+### Chinese ***
+草
 
 ### Source
 grass-regrowth-time
-### Chinese
-草的再生时间
+### Chinese ***
+草再生时间
 
 ### Source
 initial-number-sheep
-### Chinese
-羊的初始数量
+### Chinese ***
+初始数字羊
 
 ### Source
 initial-number-wolves
-### Chinese
-狼的初始数量
+### Chinese ***
+初始数字狼
 
 ### Source
 model-version
-### Chinese
+### Chinese ***
 模型版本
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 sheep
-### Chinese
+### Chinese ***
 羊
 
 ### Source
 sheep-gain-from-food
-### Chinese
-羊吃草获得的体力
+### Chinese ***
+羊的食物收益
 
 ### Source
 sheep-reproduce
-### Chinese
-羊的繁殖概率
+### Chinese ***
+羊繁殖
 
 ### Source
 show-energy?
-### Chinese
-是否标出动物体力值
+### Chinese ***
+展现能量？
 
 ### Source
 wolf-gain-from-food
-### Chinese
-狼吃羊获得的体力
+### Chinese ***
+狼从食物中获取
 
 ### Source
 wolf-reproduce
-### Chinese
-狼的繁殖概率
+### Chinese ***
+狼繁殖
 
 ### Source
 wolves
-### Chinese
+### Chinese ***
 狼
 

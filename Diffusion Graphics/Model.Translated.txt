@@ -1,37 +1,38 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 diffusion-rate
-### Chinese
+### Chinese ***
 扩散速率
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 num-turtles
-### Chinese
+### Chinese ***
 海龟数量
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 turtle-heat
-### Chinese
-海龟散热幅度
+### Chinese ***
+龟热
 
 ### Source
 turtle-speed
-### Chinese
-海龟速度
+### Chinese ***
+龟速
 
 ### Source
 wander?
-### Chinese
-随机漫步？
+### Chinese ***
+漫步？
 

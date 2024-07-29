@@ -1,42 +1,43 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 color-sep
-### Chinese
-变幻颜色
+### Chinese ***
+颜色分离
 
 ### Source
 color-shift?
-### Chinese
-变色？
+### Chinese ***
+颜色偏移？
 
 ### Source
 current-color-sep
-### Chinese
-当前颜色
+### Chinese ***
+当前颜色分离
 
 ### Source
 increase-color?
-### Chinese
-颜色正向变化？
+### Chinese ***
+增加颜色？
 
 ### Source
 num-turtles
-### Chinese
+### Chinese ***
 海龟数量
 
 ### Source
 pattern-1
-### Chinese
-模式 1
+### Chinese ***
+图案-1
 
 ### Source
 pattern-2
-### Chinese
-模式 2
+### Chinese ***
+模式-2
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

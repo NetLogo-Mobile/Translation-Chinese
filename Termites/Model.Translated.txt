@@ -1,22 +1,23 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 density
-### Chinese
-木屑密度
+### Chinese ***
+密度
 
 ### Source
 go
-### Chinese
-开始
+### Chinese ***
+去
 
 ### Source
 number
-### Chinese
-白蚁数量
+### Chinese ***
+数字
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

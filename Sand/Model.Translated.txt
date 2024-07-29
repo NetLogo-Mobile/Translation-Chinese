@@ -1,32 +1,33 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 density
-### Chinese
+### Chinese ***
 密度
 
 ### Source
 dump-sand
-### Chinese
-放下一堆沙子
+### Chinese ***
+倾倒沙子
 
 ### Source
 go
-### Chinese
-进行
+### Chinese ***
+去
 
 ### Source
 release-chance
-### Chinese
-落沙几率
+### Chinese ***
+释放机会
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 spacing
-### Chinese
-落沙间距
+### Chinese ***
+间距
 

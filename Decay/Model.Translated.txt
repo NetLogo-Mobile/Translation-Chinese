@@ -1,63 +1,64 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 Decay Rate
-### Chinese
+### Chinese ***
 衰减率
 
 ### Source
 default
-### Chinese
+### Chinese ***
 默认
 
 ### Source
 lines
-### Chinese
-线条
+### Chinese ***
+线
 
 ### Source
 number
-### Chinese
-数量
+### Chinese ***
+数字
 
 ### Source
 Radioactive Nuclei
-### Chinese
-放射性原子核
+### Chinese ***
+放射性核
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 decay-chance
-### Chinese
-衰减概率
+### Chinese ***
+衰变几率
 
 ### Source
 decays
-### Chinese
+### Chinese ***
 衰变
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 nuclei
-### Chinese
-原子核
+### Chinese ***
+核
 
 ### Source
 number-nuclei
-### Chinese
-原子核的数量
+### Chinese ***
+数核
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

@@ -1,47 +1,48 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 cycle-in-order?
-### Chinese
+### Chinese ***
 按顺序循环？
 
 ### Source
 dividend
-### Chinese
-被除数
+### Chinese ***
+股利
 
 ### Source
 divisor
-### Chinese
+### Chinese ***
 除数
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 go once
-### Chinese
-运行一次
+### Chinese ***
+去一次
 
 ### Source
 next-is-other?
-### Chinese
-按顺序比较？
+### Chinese ***
+下一个是其他的吗？
 
 ### Source
 quotient
-### Chinese
+### Chinese ***
 商
 
 ### Source
 remainder
-### Chinese
+### Chinese ***
 余
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

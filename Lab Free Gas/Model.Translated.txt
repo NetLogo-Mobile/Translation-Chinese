@@ -1,143 +1,144 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 avg-energy
-### Chinese
+### Chinese ***
 平均能量
 
 ### Source
 avg-speed
-### Chinese
+### Chinese ***
 平均速度
 
 ### Source
 count (%)
-### Chinese
-数量 (%)
+### Chinese ***
+数数 （％）
 
 ### Source
 Energy
-### Chinese
-能量
+### Chinese ***
+活力
 
 ### Source
 Energy Histogram
-### Chinese
+### Chinese ***
 能量直方图
 
 ### Source
 fast
-### Chinese
-快速
+### Chinese ***
+快速地
 
 ### Source
 init-avg-energy
-### Chinese
+### Chinese ***
 初始平均能量
 
 ### Source
 init-avg-speed
-### Chinese
+### Chinese ***
 初始平均速度
 
 ### Source
 medium
-### Chinese
-中速
+### Chinese ***
+中等的
 
 ### Source
 Number
-### Chinese
-数量
+### Chinese ***
+数字
 
 ### Source
 slow
-### Chinese
-慢速
+### Chinese ***
+慢的
 
 ### Source
 Speed
-### Chinese
+### Chinese ***
 速度
 
 ### Source
 Speed Counts
-### Chinese
-速度计数
+### Chinese ***
+速度决定一切
 
 ### Source
 Speed Histogram
-### Chinese
+### Chinese ***
 速度直方图
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 average energy
-### Chinese
+### Chinese ***
 平均能量
 
 ### Source
 average speed
-### Chinese
+### Chinese ***
 平均速度
 
 ### Source
 clear trace
-### Chinese
-清除轨迹
+### Chinese ***
+清除痕迹
 
 ### Source
 collide?
-### Chinese
-开启碰撞？
+### Chinese ***
+碰撞？
 
 ### Source
 go/stop
-### Chinese
-进行/停下
+### Chinese ***
+走/停
 
 ### Source
 init-particle-speed
-### Chinese
+### Chinese ***
 初始粒子速度
 
 ### Source
 number-of-particles
-### Chinese
-粒子数量
+### Chinese ***
+粒子數
 
 ### Source
 particle-mass
-### Chinese
+### Chinese ***
 粒子质量
 
 ### Source
 percent fast
-### Chinese
-快速百分比
+### Chinese ***
+百分比快速
 
 ### Source
 percent medium
-### Chinese
-中速百分比
+### Chinese ***
+百分比中等
 
 ### Source
 percent slow
-### Chinese
-慢速百分比
+### Chinese ***
+缓慢百分比
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 trace?
-### Chinese
-显示轨迹？
+### Chinese ***
+痕迹？
 

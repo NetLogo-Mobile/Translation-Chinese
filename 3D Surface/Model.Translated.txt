@@ -1,129 +1,130 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Tutorial
 ### Source
 A coordinate system that specifies a point by a triplet of numerical coordinates, which are the distances to the point from three perpendicularly oriented axes, x, y, and z
-### Chinese
-一个通过 X、Y、Z 坐标对应三维空间中的点的坐标系统。X、Y、Z 三个坐标轴总是互相垂直。
+### Chinese ***
+一种坐标系，通过三个数值坐标指定一个点，这些数值坐标是从三个垂直方向的轴 x、y 和 z 到该点的距离
 
 ### Source
 A coordinate system where the position of a point is specified by three numbers: ρ (rho), the distance from the origin to the point, θ (theta), the angle between the positive x axis, and φ (phi), the angle between the positive z axis
-### Chinese
-球形坐标系统通过三个数值确定三维空间中点的位置：ρ（rho），从原点到该点的距离；θ（theta），X轴正半轴和原点到该点连线之间的夹角；以及 φ（phi），Z轴正半轴和原点到该点连线之间的夹角。
+### Chinese ***
+一种坐标系，其中点的位置由三个数字指定：ρ (rho)，从原点到该点的距离，θ (theta)，正 x 轴之间的角度，φ (phi)，正 z 轴之间的角度
 
 ### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo 3D Surface model by Uri Wilensky.
-### Chinese
-作者：Charles Cheng, John Chen。基于 Uri Wilensky 的 NetLogo 3D Surface 模型。
+### Chinese ***
+作者：Charles Cheng、John Chen。基于 Uri Wilensky 的 NetLogo 3D 表面模型。
 
 ### Source
 Cartesian coordinates
-### Chinese
-直角坐标
+### Chinese ***
+笛卡尔坐标
 
 ### Source
 Color Spectrum of the 3D Surface
-### Chinese
+### Chinese ***
 3D 表面的色谱
 
 ### Source
 Congratulations! 
-### Chinese
-恭喜你！ 
+### Chinese ***
+恭喜！ 
 
 ### Source
 Cosine
-### Chinese
-余弦函数
+### Chinese ***
+余弦
 
 ### Source
 Experiment with the num-turtles slider. How many <color=orange>turtles</color> are needed to produce a realistic effect? Why doesn't it keep getting better-looking indefinitely  as you add more <color=orange>turtles</color>?
-### Chinese
-尝试使用海龟数量（num-turtles）滑块。需要多少<color=orange>海龟</color>才能产生逼真的效果？为什么随着<color=orange>海龟</color>数量的不断增长，图案不会继续变得更好看？
+### Chinese ***
+尝试使用 num-turtles滑块。有多少<color=orange>海龟</color>需要多少才能产生逼真的效果？为什么随着你添加更多，它不会无限地变得更好看？<color=orange>海龟</color>？
 
 ### Source
 Introduction
-### Chinese
-模型介绍
+### Chinese ***
+介绍
 
 ### Source
 Notice that as the <color=orange>turtles</color> move down (y-coordinate decreases ) they become <b>darker</b> in color , and when they move up (y-coordinate increases ) they become <color=grey>lighter</color>.
-### Chinese
-<color=orange>海龟</color>向下移动（Y 坐标减小 ）时，它们的<b>颜色变深</b>；当向上移动（Y 坐标增大 ）时，它们的<color=grey>颜色变浅</color>。
+### Chinese ***
+请注意，作为<color=orange>海龟</color>向下移动（y 坐标减小），颜色会变<b>深</b> ，向上移动（y 坐标增加  ），颜色会变成<color=grey>打火机</color>。
 
 ### Source
 number
-### Chinese
-海龟数量
+### Chinese ***
+数字
 
 ### Source
 Questions?
-### Chinese
-还有问题吗？
+### Chinese ***
+问题？
 
 ### Source
 Rendering the Surface
-### Chinese
+### Chinese ***
 渲染表面
 
 ### Source
 Spherical coordinates
-### Chinese
+### Chinese ***
 球坐标
 
 ### Source
 The number of <color=orange>turtles</color> that make up the surface
-### Chinese
-组成表面的<color=orange>海龟</color>数量。
+### Chinese ***
+的数量<color=orange>海龟</color>构成表面
 
 ### Source
 The trigonometric function that is equal to the ratio of the side adjacent to an acute angle  (in a right-angled  triangle) to the hypotenuse
-### Chinese
-在直角  三角形中，Cosine 函数的值为邻边与斜边边长之比。
+### Chinese ***
+三角函数，等于直角三角形中锐角  的邻边与斜边的比值
 
 ### Source
 This model maps <color=orange>turtles</color> between <trigger=cartesian-coordinates>Cartesian</trigger> and <trigger=spherical-coordinates>spherical</trigger> 3-dimensional coordinates. To create the appearance of a curved 3D surface, the program generates <color=orange>turtles</color> with random x- and z-coordinates, then computes each <color=orange>turtle's</color> y-coordinate based on x and z, and time . The <trigger=cosine>cosine</trigger> function is used in the formula to produce a curved surface. Varying the y coordinate based on time  produces motion.
-### Chinese
-这个模型将<color=orange>海龟</color>的坐标在<trigger=cartesian-coordinates>直角</trigger>和<trigger=spherical-coordinates>球形</trigger>坐标系之间进行转化。为了创建三维波浪的外观，程序将生成具有随机X、Z坐标的<color=orange>海龟</color>，然后随着时间  变化，让每只<color=orange>海龟</color>在Y坐标上随机运动，形成波浪的动画。<trigger=cosine>余弦</trigger>函数则生成了你看到的波浪曲面。
+### Chinese ***
+该模型映射<color=orange>海龟</color>之间<trigger=cartesian-coordinates>笛卡尔</trigger>和<trigger=spherical-coordinates>球形</trigger>三维坐标。为了创建三维曲面的外观，程序会生成<color=orange>海龟</color>使用随机的 x 和 z 坐标，然后计算每个<color=orange>乌龟的</color>基于 x 和 z 的 y 坐标，以及时间  。<trigger=cosine>余弦</trigger>公式中使用函数来产生曲面。根据时间  改变y坐标产生运动。
 
 ### Source
 To render the surface in the NetLogo view, it maps from 3D to 2D coordinates as follows:
 view x = turtle x + (turtle z) / 2 
 view y = turtle y + (turtle z) / 2
 In other words, increasing z causes the <color=orange>turtle's</color> apparent position to move both up  and to the right .
-### Chinese
-为了显示 3D 表面，模型将 3D 坐标根据下列公式转化为 2D 坐标：
-视图 x = 海龟 x + (海龟 z) / 2 
-视图 y = 海龟 y + (海龟 z) / 2
-换句话说，增加 z 轴坐标会导致<color=orange>海龟</color>的显示位置向上 、向右  移动。
+### Chinese ***
+为了在 NetLogo 视图中渲染表面，它将 3D 坐标映射到 2D 坐标，如下所示：
+视图 x =海龟x + (海龟z) / 2
+视图 y =海龟y + (海龟z) / 2
+换句话说，增加 z 会导致<color=orange>乌龟的</color>明显位置同时向上  和向右  移动。
 
 ### Source
 Try changing the formula used to compute the y-coordinate to produce differently shaped surfaces. See if you can draw not just a surface, but a three dimensional shape such as a cone or a sphere. Record what surface/shape you produced and the corresponding formula.
-### Chinese
-尝试更改用于计算 Y 坐标的公式，以生成形状不同的曲面。看看你是否能绘制其他三维图形：圆锥、球体，或者随便什么！将你的公式和图形分享出来吧。
+### Chinese ***
+尝试改变用于计算 y 坐标的公式以生成不同形状的表面。看看你是否可以绘制不仅仅是一个表面，而是三维图形，例如圆锥体或球体。记录你生成的表面/图形以及相应的公式。
 
 ### Source
 Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
-### Chinese
-想看看大家是怎样回答问题的？点击<b>问答面板</b>。
+### Chinese ***
+想要查看社区或您对该模型中提出的问题的回答吗？单击<b>“转到问答面板”</b> 。
 
 ### Source
 Well done! You have completed the 3D Surface model tutorial! Time to play with the model!
-### Chinese
-干得漂亮，您已经完成了三维世界中的波浪教程——是时候自由探索了！
+### Chinese ***
+做得好！您已完成 3D 表面模型教程！是时候玩一下模型了！
 
 ## Widgets
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 number
-### Chinese
-海龟数量
+### Chinese ***
+数字
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

@@ -1,32 +1,33 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 clock
-### Chinese
-时钟
+### Chinese ***
+钟
 
 ### Source
 go
-### Chinese
-进行
+### Chinese ***
+去
 
 ### Source
 mark/unmark
-### Chinese
-标记/未标记
+### Chinese ***
+标记/取消标记
 
 ### Source
 mine-count
-### Chinese
-地雷计数
+### Chinese ***
+地雷数量
 
 ### Source
 mines marked
-### Chinese
+### Chinese ***
 标记的地雷
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

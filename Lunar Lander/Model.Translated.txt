@@ -1,42 +1,43 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 left
-### Chinese
-左转
+### Chinese ***
+左边
 
 ### Source
 platform-width
-### Chinese
-登陆平台宽度
+### Chinese ***
+平台宽度
 
 ### Source
 right
-### Chinese
-右转
+### Chinese ***
+正确的
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 terrain-bumpiness
-### Chinese
-地形凹凸
+### Chinese ***
+地形崎岖
 
 ### Source
 thrust
-### Chinese
-施加推力
+### Chinese ***
+推力
 
 ### Source
 thrust-amount
-### Chinese
-每次推力
+### Chinese ***
+推力量
 

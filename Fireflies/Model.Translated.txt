@@ -1,73 +1,74 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 flashing
-### Chinese
+### Chinese ***
 闪烁
 
 ### Source
 Flashing Fireflies
-### Chinese
-闪烁的萤火虫
+### Chinese ***
+萤火虫闪烁
 
 ### Source
 Number
-### Chinese
-数量
+### Chinese ***
+数字
 
 ### Source
 Time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 advance
-### Chinese
-提前量
+### Chinese ***
+进步
 
 ### Source
 cycle-length
-### Chinese
+### Chinese ***
 周期长度
 
 ### Source
 delay
-### Chinese
+### Chinese ***
 延迟
 
 ### Source
-flashes-to-reset
-### Chinese
-重置所需的闪烁次数
+flash-length
+### Chinese ***
+闪光长度
 
 ### Source
-flash-length
-### Chinese
-每次闪烁时长
+flashes-to-reset
+### Chinese ***
+闪烁重置
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 number
-### Chinese
-数量
+### Chinese ***
+数字
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 show-dark-fireflies?
-### Chinese
-显示未发光的萤火虫？
+### Chinese ***
+显示黑暗萤火虫？
 
 ### Source
 strategy
-### Chinese
-策略
+### Chinese ***
+战略
 

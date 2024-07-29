@@ -1,42 +1,43 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 current density
-### Chinese
+### Chinese ***
 当前密度
 
 ### Source
 draw-cells
-### Chinese
-绘制单元格
+### Chinese ***
+抽吸单元
 
 ### Source
 go-forever
-### Chinese
-运行
+### Chinese ***
+永不停止
 
 ### Source
 go-once
-### Chinese
-运行一次
+### Chinese ***
+一次完成
 
 ### Source
 initial-density
-### Chinese
+### Chinese ***
 初始密度
 
 ### Source
 recolor
-### Chinese
+### Chinese ***
 重新着色
 
 ### Source
 setup-blank
-### Chinese
+### Chinese ***
 设置空白
 
 ### Source
 setup-random
-### Chinese
-随机设置
+### Chinese ***
+设置随机
 

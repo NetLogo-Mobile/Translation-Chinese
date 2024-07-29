@@ -1,88 +1,89 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 Avg. Bug Speed vs. Time
-### Chinese
-平均速度和时间关联图
+### Chinese ***
+平均 Bug 速度与时间
 
 ### Source
 Bugs Caught
-### Chinese
-抓到的虫子
+### Chinese ***
+捕获的虫子
 
 ### Source
 Current Bug Population
-### Chinese
-目前虫子数量
+### Chinese ***
+当前错误数量
 
 ### Source
 default
-### Chinese
+### Chinese ***
 默认
 
 ### Source
 frequency
-### Chinese
+### Chinese ***
 频率
 
 ### Source
 number
-### Chinese
+### Chinese ***
 数字
 
 ### Source
 rate
-### Chinese
+### Chinese ***
 速度
 
 ### Source
 speeds
-### Chinese
+### Chinese ***
 速度
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 bugs
-### Chinese
-虫子
+### Chinese ***
+错误
 
 ### Source
 caught
-### Chinese
-已捉住数量
+### Chinese ***
+捕捉
 
 ### Source
 flee?
-### Chinese
-是否逃跑？
+### Chinese ***
+逃跑？
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 initial-bugs-each-speed
-### Chinese
-初始虫子数（每种速度）
+### Chinese ***
+每种速度的初始错误
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 show-colors?
-### Chinese
+### Chinese ***
 显示颜色？
 
 ### Source
 wiggle?
-### Chinese
-随机摆动？
+### Chinese ***
+摆动？
 

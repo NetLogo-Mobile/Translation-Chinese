@@ -1,133 +1,134 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 anthocyanin
-### Chinese
+### Chinese ***
 花青素
 
 ### Source
 attachedness
-### Chinese
-附着程度
+### Chinese ***
+依恋
 
 ### Source
 carotene
-### Chinese
+### Chinese ***
 胡萝卜素
 
 ### Source
 chlorophyll
-### Chinese
+### Chinese ***
 叶绿素
 
 ### Source
 dead leaves
-### Chinese
+### Chinese ***
 枯叶
 
 ### Source
 Leaf averages
-### Chinese
-叶片平均情况
+### Chinese ***
+叶片平均值
 
 ### Source
 leaves
-### Chinese
-叶片
+### Chinese ***
+树叶
 
 ### Source
 Leaves
-### Chinese
-叶片
+### Chinese ***
+树叶
 
 ### Source
 rain
-### Chinese
-下雨
+### Chinese ***
+雨
 
 ### Source
 sugar
-### Chinese
-糖分
+### Chinese ***
+糖
 
 ### Source
 sunlight
-### Chinese
+### Chinese ***
 阳光
 
 ### Source
 temperature
-### Chinese
+### Chinese ***
 温度
 
 ### Source
 Time
-### Chinese
+### Chinese ***
 时间
 
 ### Source
 water
-### Chinese
-水分
+### Chinese ***
+水
 
 ### Source
 Weather conditions
-### Chinese
+### Chinese ***
 天气状况
 
 ### Source
 wind
-### Chinese
-刮风
+### Chinese ***
+风
 
 ## Widgets
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 leaf-display-mode
-### Chinese
-叶片显示模式
+### Chinese ***
+叶子显示模式
 
 ### Source
 number-of-leaves
-### Chinese
-叶片数量
+### Chinese ***
+叶子数量
 
 ### Source
 rain-intensity
-### Chinese
+### Chinese ***
 降雨强度
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 start-sugar-mean
-### Chinese
-起始平均糖分
+### Chinese ***
+起始糖平均值
 
 ### Source
 start-sugar-stddev
-### Chinese
-起始糖分标准差
+### Chinese ***
+启动-糖-stddev
 
 ### Source
 sun-intensity
-### Chinese
-日照强度
+### Chinese ***
+太阳强度
 
 ### Source
 temperature
-### Chinese
+### Chinese ***
 温度
 
 ### Source
 wind-factor
-### Chinese
-风的因素
+### Chinese ***
+风因素
 

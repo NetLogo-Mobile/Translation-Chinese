@@ -2,6 +2,11 @@
 ## Language = Chinese
 ## Widgets
 ### Source
+-quadratic
+### Chinese ***
+-二次
+
+### Source
 cosine
 ### Chinese ***
 余弦
@@ -55,11 +60,6 @@ num-followers
 quadratic
 ### Chinese ***
 二次的
-
-### Source
--quadratic
-### Chinese ***
--二次
 
 ### Source
 random

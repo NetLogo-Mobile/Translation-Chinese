@@ -1,143 +1,144 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 # people
-### Chinese
-人数
+### Chinese ***
+＃ 人们
 
 ### Source
 % infected
-### Chinese
-感染百分比
+### Chinese ***
+％ 已感染
 
 ### Source
 % recovered
-### Chinese
-康复百分比
+### Chinese ***
+恢复率
 
 ### Source
 % total pop.
-### Chinese
-占人口的比例
+### Chinese ***
+占总人口的百分比
 
 ### Source
 Cumulative Infected and Recovered
-### Chinese
-累计感染和康复
+### Chinese ***
+累计感染和康复人数
 
 ### Source
 hours
-### Chinese
+### Chinese ***
 小时
 
 ### Source
 Infected
-### Chinese
+### Chinese ***
 已感染
 
 ### Source
 Infection and Recovery Rates
-### Chinese
-感染和康复率
+### Chinese ***
+感染率和康复率
 
 ### Source
 Infection Rate
-### Chinese
+### Chinese ***
 感染率
 
 ### Source
 Not Infected
-### Chinese
+### Chinese ***
 未感染
 
 ### Source
 Populations
-### Chinese
-人口
+### Chinese ***
+人群
 
 ### Source
 rate
-### Chinese
-率
+### Chinese ***
+速度
 
 ### Source
 Recovery Rate
-### Chinese
-康复率
+### Chinese ***
+恢复率
 
 ## Widgets
 ### Source
 average-hospital-going-tendency
-### Chinese
-平均前往医院几率
+### Chinese ***
+平均住院倾向
 
 ### Source
 average-isolation-tendency
-### Chinese
-平均接受隔离几率
+### Chinese ***
+平均孤立趋势
 
 ### Source
 average-recovery-time
-### Chinese
-平均康复时间
+### Chinese ***
+平均恢復時間
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 infection-chance
-### Chinese
-感染几率
+### Chinese ***
+感染机会
 
 ### Source
 initial-ambulance
-### Chinese
-救护车数量
+### Chinese ***
+初始救护车
 
 ### Source
 initial-people
-### Chinese
-人口数量
+### Chinese ***
+初始人
 
 ### Source
 inoculation-chance
-### Chinese
-接种疫苗几率
+### Chinese ***
+接种机会
 
 ### Source
 intra-mobility
-### Chinese
-人口两侧流动性
+### Chinese ***
+内部流动
 
 ### Source
 links?
-### Chinese
-显示链接？
+### Chinese ***
+链？
 
 ### Source
 R0
-### Chinese
+### Chinese ***
 R0
 
 ### Source
 recovery-chance
-### Chinese
-康复机会
+### Chinese ***
+复苏机会
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
-travel?
-### Chinese
-两侧之间存在旅行？
+travel-tendency
+### Chinese ***
+旅游倾向
 
 ### Source
-travel-tendency
-### Chinese
-旅行几率
+travel?
+### Chinese ***
+旅行？
 

@@ -1,67 +1,48 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 action
-### Chinese
+### Chinese ***
 行动
-
-### Excessive
-check-area
-### Chinese
-检查区域
-
-### Excessive
-clear-polygons
-### Chinese
-清除多边形
-
-### Excessive
-clear-segments
-### Chinese
-清除线段
 
 ### Source
 Delete Segment
-### Chinese
-删除线段
+### Chinese ***
+删除片段
 
 ### Source
 Draw Polygon
-### Chinese
+### Chinese ***
 绘制多边形
 
 ### Source
 Draw Segment
-### Chinese
+### Chinese ***
 绘制线段
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 height
-### Chinese
+### Chinese ***
 高度
-
-### Excessive
-perimeter
-### Chinese
-周长
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 unit-size
-### Chinese
-单位大小
+### Chinese ***
+单位尺寸
 
 ### Source
 width
-### Chinese
+### Chinese ***
 宽度
 

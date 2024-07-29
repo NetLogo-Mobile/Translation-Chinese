@@ -1,37 +1,38 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 ants-released
-### Chinese
-已放出的蚂蚁
+### Chinese ***
+蚂蚁放生
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 leader-heading
-### Chinese
-领行者的角度
+### Chinese ***
+领导者
 
 ### Source
 leader-wiggle-angle
-### Chinese
-领行者的摆动角度
+### Chinese ***
+引线摆动角
 
 ### Source
 num-ants
-### Chinese
-蚂蚁数量
+### Chinese ***
+努姆特
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 start-delay
-### Chinese
-蚂蚁间隔时间
+### Chinese ***
+开始延迟
 

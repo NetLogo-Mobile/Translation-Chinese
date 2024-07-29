@@ -1,305 +1,303 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 default
-### Chinese
+### Chinese ***
 默认
 
 ### Source
 Global Temperature
-### Chinese
-全球温度
+### Chinese ***
+全球气温
 
 ## Tutorial
 ### Source
 <color=#b3b300ff>Yellow arrowheads</color> stream downward  representing <color=#b3b300ff>sunlight  energy </color>. Some of the <color=#b3b300ff>sunlight </color> reflects off <color=grey>clouds </color> and more can reflect off the <color=green>earth's surface </color>. If <color=#b3b300ff>sunlight </color> is absorbed by the <color=green>earth </color>, it turns into a <color=red>red dot</color>, representing <trigger=thermal energy,red>heat  energy </trigger>. Each <color=red>dot</color> represents the energy  of one <color=#b3b300ff>yellow sunlight  arrowhead </color>. The <color=red>red dots</color> randomly  move around the <color=green>earth </color>, and its <trigger=temperature>temperature </trigger> is related to the total number of <color=red>red dots</color>.
-### Chinese
-向下流动的<color=#b3b300ff>黄色箭头</color>代表<color=#b3b300ff>光能 </color>。一些<color=#b3b300ff>阳光 </color>会被<color=grey>云彩 </color> 反射，另一些则会被<color=green>地表 </color> 本身反射。如果<color=#b3b300ff>阳光 </color>被<color=green>地球 </color> 吸收，就会转化为<color=red>红点</color>，代表大气层中的<trigger=thermal energy,red>热能 </trigger> 。每个<color=red>红点</color>代表相当于一束 <color=#b3b300ff>阳光 </color> 的能量。这些<color=red>红点</color>会在<color=green>大气层 </color> 中随机移动，它们的总数则与地球目前的平均<trigger=temperature>温度 </trigger> 相关。
+### Chinese ***
+<color=#b3b300ff>黄色箭头</color>向下流动  代表<color=#b3b300ff>阳光  能源 </color> 。 一些<color=#b3b300ff>阳光 </color>反射<color=grey>云 </color>并且更多可以反映出<color=green>地球表面</color>。 如果<color=#b3b300ff>阳光 </color>被吸收<color=green>地球</color>，它变成了<color=red>红点</color>，代表<trigger=thermal energy,red>热能  能</trigger>。 每个<color=red>点</color>代表一个人的能量  <color=#b3b300ff>黄色阳光  箭头 </color> 。 这<color=red>红点</color>随机移动<color=green>地球</color>，以及它的<trigger=temperature>溫度 </trigger>与总数有关<color=red>红点</color>。
 
 ### Source
 A greenhouse gas is a gas that absorbs and emits radiant energy within the thermal <trigger=infrared light>infrared</trigger> range, causing the greenhouse effect. The primary greenhouse gases in Earth's <trigger=atmosphere>atmosphere</trigger> are water vapor, <trigger=carbon dioxide>carbon dioxide</trigger>, methane, nitrous oxide, and ozone
-### Chinese
-温室气体是指能在<trigger=infrared light>红外线</trigger>光谱内吸收热能并释放辐射能的气体。它们的这一能力造成了温室效应。地球上主要的温室<trigger=atmosphere>气体</trigger>是水蒸气、<trigger=carbon dioxide>二氧化碳</trigger>、甲烷、一氧化二氮和臭氧。
+### Chinese ***
+温室气体是一种在热环境中吸收和释放辐射能的气体<trigger=infrared light>红外线的</trigger>范围，造成温室效应。地球上的主要温室气体<trigger=atmosphere>气氛</trigger>是水蒸气，<trigger=carbon dioxide>二氧化碳</trigger>、甲烷、一氧化二氮和臭氧
 
 ### Source
 A molecule  is an electrically neutral group of two or more atoms held together by chemical bonds. Molecules  are distinguished from ions by their lack of electrical charge
-### Chinese
-分子  是两个或两个以上通过化学键结合在一起的原子的电中性基团。分子与离子的区别在于分子没有电荷。
+### Chinese ***
+分子  是由两个或多个原子通过化学键结合在一起形成的电中性基团。分子  与离子的区别在于，前者不带电荷
 
 ### Source
 Albedo
-### Chinese
-反射率
+### Chinese ***
+反照率
 
 ### Source
 Albedo, fraction of light that is reflected by a body or surface. It is commonly used in astronomy to describe the reflective properties of planets , satellites, and asteroids. It is an important consideration in <trigger=climate>climatology</trigger> since recent albedo decreases in the Arctic have increased <color=red>heat </color> absorption at the surface
-### Chinese
-反射率被定义为物体或表面反射光的比例。它在天文学中通常用于描述行星 、卫星和小行星的反射能力。这是<trigger=climate>气候学</trigger>中的重要因素，例如近期地球北极的反射率下降，就提高了地球的<color=red>热量 </color> 吸收。
+### Chinese ***
+反照率，物体或表面反射的光的比例。它通常用于天文学，以描述行星、卫星和小行星的反射特性。它是天文学中的一个重要考虑因素<trigger=climate>气候学</trigger>由于最近北极地区反照率下降，<color=red>热 </color>表面吸收
 
 ### Source
 An atmosphere is a layer or a set of layers of gases surrounding a planet or other material body, that is held in place by the gravity of that body
-### Chinese
-大气层是指围绕行星或其他星体的一层或多层气体，通过星体自身的重力束缚在星体周围。
+### Chinese ***
+大气层是围绕行星或其他物体的一层或一组气体层，受该物体引力的作用
 
 ### Source
 Atmosphere
-### Chinese
-大气层
+### Chinese ***
+气氛
 
 ### Source
 Authors: Charles Cheng, John Chen. Based on NetLogo Climate Change model by Robert Tinker and Uri Wilensky.
-### Chinese
-作者：Charles Cheng 和 John Chen。基于 Robert Tinker 和 Uri Wilensky 的 NetLogo 气候变化模型创作。
+### Chinese ***
+作者：Charles Cheng、John Chen。基于 Robert Tinker 和 Uri Wilensky 的 NetLogo 气候变化模型。
 
 ### Source
 Carbon dioxide
-### Chinese
+### Chinese ***
 二氧化碳
 
 ### Source
 Carbon dioxide is an important constituent of Earth's air. A <trigger=molecule>molecule </trigger> of carbon dioxide (CO2) is made up of one carbon atom and two oxygen atoms
-### Chinese
-二氧化碳是地球空气的重要成分。一个二氧化碳（CO2）<trigger=molecule>分子 </trigger> 由一个碳原子和两个氧原子组成。
+### Chinese ***
+二氧化碳是地球空气的重要组成部分。<trigger=molecule>分子 </trigger>二氧化碳 (CO2) 由一个碳原子和两个氧原子组成
 
 ### Source
 Change the <trigger=albedo>albedo</trigger> and run the model. Add <color=grey>clouds </color> and <trigger=carbon dioxide>CO2</trigger> to the model and then watch a single <color=#b3b300ff>sunlight  arrowhead </color>. What is the highest  <color=green>earth </color> <trigger=temperature>temperature </trigger> you can produce?
-### Chinese
-调整<trigger=albedo>反射率</trigger>并运行模型。将<color=grey>云层 </color>和<trigger=carbon dioxide>二氧化碳</trigger>添加到模型，然后观看单个<color=#b3b300ff>阳光箭头 </color>。你能将<color=green>地球 </color> 的<trigger=temperature>温度 </trigger> 提高到多少度？
+### Chinese ***
+更改<trigger=albedo>反照率</trigger>并运行模型。添加<color=grey>云 </color>和<trigger=carbon dioxide>二氧化碳</trigger>到模型，然后观看一个<color=#b3b300ff>阳光  箭头 </color> . 最高是多少  <color=green>地球</color><trigger=temperature>溫度 </trigger>你能生产吗？
 
 ### Source
 Climate
-### Chinese
+### Chinese ***
 气候
 
 ### Source
 Congratulations! 
-### Chinese
-恭喜你！ 
+### Chinese ***
+恭喜！ 
 
 ### Source
 Explore the effect of <trigger=albedo>albedo</trigger> holding everything else constant. Does increasing the albedo increase  or decrease  the <color=green>earth</color> <trigger=temperature>temperature </trigger>? Be sure to run the model long enough  for the temperature  to settle down .
-### Chinese
-保持其他参数不变，探索<trigger=albedo>反射率</trigger>的效果。增加反射率会增加  还是减少  <color=green>地球</color><trigger=temperature>温度 </trigger>？你需要运行一段时间，让温度  能够稳定下来。
+### Chinese ***
+探索<trigger=albedo>反照率</trigger>保持其他所有条件不变。增加反照率是否会增加  还是减少  <color=green>地球</color><trigger=temperature>溫度 </trigger> ? 确保模型运行足够长的时间以使温度稳定下来。
 
 ### Source
 Goals 
-### Chinese
-学习目标 
+### Chinese ***
+目标 
 
 ### Source
 Greenhouse gas
-### Chinese
+### Chinese ***
 温室气体
 
 ### Source
 Heat capacity
-### Chinese
-比热容
+### Chinese ***
+热容量
 
 ### Source
 Heat capacity or thermal capacity is a physical property of matter, defined as the amount of <color=red>heat </color> to be supplied to a given mass of a material to produce a unit change in its <trigger=temperature>temperature </trigger>
-### Chinese
-比热容是物质的物理性质，定义为一定量的物质在一定条件下<trigger=temperature>温度 </trigger> 升高 1 度所需吸收的<color=red>热量 </color>。
+### Chinese ***
+热容量或热容量是物质的一种物理性质，定义为<color=red>热 </color>提供给一定质量的物质，使其发生单位变化。<trigger=temperature>溫度 </trigger>
 
 ### Source
 Heat Energy from Sunlight
-### Chinese
-来自阳光的热能
+### Chinese ***
+来自太阳光的热能
 
 ### Source
 Imagine you are sightseeing  with your friends in the <color=maroon>Himalayas </color>. You had previously travelled there two decade ago, and now upon seeing some <color=blue>alpine glaciers </color>, notice that they are much smaller than you remembered. You wonder: what is causing the <color=blue>glaciers</color> to melt and how can you mitigate the harmful impacts that humans  have on <color=green>Earth's</color> <trigger=climate>climate</trigger>  system?
-### Chinese
-试想你正在和朋友一同游览<color=maroon>喜马拉雅山 </color>。你二十年前去过那儿，可是现在的<color=blue>高山冰川 </color> 已经小了许多。你或许想问：是什么让<color=blue>冰川</color>融化？你又如何可以减轻人类  对<color=green>地球</color><trigger=climate>气候 </trigger> 系统的破坏？
+### Chinese ***
+想象一下你和你的朋友在<color=maroon>喜马拉雅山</color> 。你二十年前就去过那里，现在看到一些<color=blue>高山冰川</color> ，注意到它们比你记忆中的要小得多。你想知道：是什么导致了<color=blue>冰川</color>融化，你如何减轻人类对冰川的有害影响？<color=green>地球的</color><trigger=climate>气候</trigger> 系统？
 
 ### Source
 Infrared light
-### Chinese
-红外光
+### Chinese ***
+红外线
 
 ### Source
 Infrared Light
-### Chinese
-红外光
+### Chinese ***
+红外线
 
 ### Source
 Infrared light (IR), is electromagnetic radiation (EMR) with wavelengths longer than those of visible light. It is therefore invisible to the human eye . IR is generally understood to encompass wavelengths  from the nominal <color=red>red edge</color> of the visible spectrum around 700 nanometers to 1 millimeter
-### Chinese
-红外光（IR）是波长比可见光长的电磁辐射（EMR）。因此，人眼无法看见 。通常认为IR包含标称波长的1/3<color=red>红边</color>大约700纳米到1毫米的可见光谱
+### Chinese ***
+红外光 (IR) 是一种波长比可见光长的电磁辐射 (EMR)。因此，人眼无法看到它。一般认为，红外光涵盖的波长为  至  的标称波长。<color=red>红边</color>可见光谱范围约为 700 纳米至 1 毫米
 
 ### Source
 Introduction
-### Chinese
-模型介绍
+### Chinese ***
+介绍
 
 ### Source
 IR Energy
-### Chinese
-红外光
+### Chinese ***
+红外线能量
 
 ### Source
 Molecule
-### Chinese
+### Chinese ***
 分子
 
 ### Source
 Questions?
-### Chinese
-还有问题吗？
+### Chinese ***
+问题？
 
 ### Source
 Simplifications in the Model
-### Chinese
-模型做了哪些简化？
+### Chinese ***
+模型简化
 
 ### Source
 Sometimes the <color=red>red dots</color> transform themselves into <trigger=infrared light>infrared (IR) light</trigger> that heads toward space , carrying off energy . The probability of a <color=red>red dots</color> becoming IR light depends on the <color=green>earth's </color> <trigger=temperature>temperature </trigger>. When the <color=green>earth </color> is <color=blue>cold </color>, few <color=red>red dots</color> generate IR light; when it is <color=red>hot </color>, most do.
-### Chinese
-有时<color=red>红点</color>转化为向外空间发射的<trigger=infrared light>红外光</trigger>，带走其中的热能 。<color=red>红点</color>转化为红外光的概率取决于<color=green>地球 </color> 的<trigger=temperature>温度 </trigger>。当<color=green>地球 </color> 较<color=blue>冷 </color> 的时候，<color=red>红点</color>很少能产生红外光，反之亦然。
+### Chinese ***
+有时<color=red>红点</color>转变为<trigger=infrared light>红外线 (IR) 光</trigger>飞向太空  ，带走能量  。<color=red>红点</color>变成红外光取决于<color=green>地球的 </color><trigger=temperature>溫度 </trigger> 。 当。。。的时候<color=green>地球</color>是<color=blue>冷 </color> ， 很少<color=red>红点</color>产生红外光；当<color=red>熱熱 </color>大部分人都是这样的。
 
 ### Source
 Temperature
-### Chinese
+### Chinese ***
 温度
 
 ### Source
 Temperature of the Earth
-### Chinese
-地球温度
+### Chinese ***
+地球的温度
 
 ### Source
 Temperature , measure of <color=red>hotness </color> or <color=blue>coldness </color> expressed in terms of any of several arbitrary scales and indicating the direction in which <trigger=thermal energy>heat energy</trigger> will spontaneously flow—i.e., from a <color=red>hotter body (one at a higher temperature )</color> to a <color=blue>colder body (one at a lower temperature )</color>
-### Chinese
-温度  是测量<color=red>炎热 </color>或者<color=blue>寒冷 </color>的尺度，它可以用任何比例表示。根据温度  可以判断<trigger=thermal energy>热能</trigger>自发流动其中的方向——换句话说，热能总是从温度较高的物质流向温度较低的物质。
+### Chinese ***
+温度  ，测量<color=red>热度 </color>或者<color=blue>冷凍 </color>用任意几种尺度来表示，并指出<trigger=thermal energy>热能</trigger>会自发流动——即从<color=red>较热的物体（温度较高的物体  ）</color>到<color=blue>较冷的物体（体温较低的物体  ）</color>
 
 ### Source
 The <trigger=infrared light>IR</trigger> energy is represented by a <color=magenta>magenta arrowhead </color>. Each carries the same energy   as a <color=#b3b300ff>yellow arrowhead </color> and as a <color=red>red dot</color>. The IR light goes through <color=grey>clouds </color> but can bounce off <trigger=carbon dioxide>CO2</trigger> <trigger=molecule>molecules </trigger>.
-### Chinese
-<trigger=infrared light>红外光</trigger>的能量由<color=magenta>洋红色箭头 </color> 表示。每个箭头和<color=#b3b300ff>黄色箭头  </color>或<color=red>红点</color>携带相同能量 。红外光可以穿透<color=grey>云层 </color>，但会被<trigger=carbon dioxide>二氧化碳</trigger><trigger=molecule>分子 </trigger> 反弹。
+### Chinese ***
+这<trigger=infrared light>红外线</trigger>能量表示为<color=magenta>洋红色箭头 </color>每一个都带有与<color=#b3b300ff>黄色箭头 </color>并作为<color=red>红点</color>. 红外光穿过<color=grey>云 </color>但可以反弹<trigger=carbon dioxide>二氧化碳</trigger><trigger=molecule>分子 </trigger> 。
 
 ### Source
 The relationship exists because the <color=green>earth </color> <trigger=temperature>temperature </trigger> goes up as the total <trigger=thermal energy,red>thermal  energy </trigger> is increased . <color=red>Thermal  energy </color> is added by <color=#b3b300ff>sunlight </color> that reaches the <color=green>earth </color> as well as from <trigger=infrared light>infrared (IR) light</trigger> reflected down to the <color=green>earth </color>. <color=red>Thermal  energy </color> is removed by IR emitted by the <color=green>earth </color>. The balance  of these determines the <color=#b3b300ff>energy </color> in the <color=green>earth </color>, which is proportional to its temperature .
-### Chinese
-之所以存在这种关系，是因为随着<trigger=thermal energy,red>热能 </trigger> 总量提高，<color=green>地球 </color> 的<trigger=temperature>温度 </trigger>也会增加。<color=red>热能 </color>由抵达<color=green>地球 </color> 的<color=#b3b300ff>阳光 </color> 以及反弹到<color=green>地球 </color> 的<trigger=infrared light>红外光</trigger> 增加，又因为<color=green>地球 </color> 反射出的红外光而减少。这些因素的平衡决定了留在<color=green>地球 </color> 内部<color=#b3b300ff>能量 </color> 的多少，能量又和地球温度成正比。
+### Chinese ***
+这种关系之所以存在，是因为<color=green>地球</color><trigger=temperature>溫度 </trigger>随着总量的增加<trigger=thermal energy,red>热能</trigger>增加了  。<color=red>热能 </color>添加于<color=#b3b300ff>阳光 </color>达到<color=green>地球</color>以及来自<trigger=infrared light>红外线 (IR) 光</trigger>反射到<color=green>地球</color>。<color=red>热能 </color>被红外线发射的<color=green>地球</color>. 这些的平衡决定了<color=#b3b300ff>能源 </color>在里面<color=green>地球</color>，与其温度  成正比。
 
 ### Source
 The weather conditions prevailing in an area in general or over a long period
-### Chinese
-整个地区普遍或长期内存在的天气状况
+### Chinese ***
+一个地区普遍或长期的天气状况
 
 ### Source
 There are, of course, many simplifications in this model. The <color=green>earth </color> is not a single <trigger=temperature>temperature </trigger>, does not have a single <trigger=albedo>albedo</trigger>, and does not have a single <trigger=heat capacity,red>heat  capacity</trigger>. Visible light  is somewhat absorbed by <trigger=carbon dioxide>CO2</trigger> and some <trigger=infrared light>IR light</trigger> does bounce off <color=grey>clouds </color>. No model is completely accurate . What is important is that a model reacts in some ways like the system it is supposed to model. This model does that, showing how the greenhouse effect is caused by C<color=red>O2</color> and other gases  that absorb IR.
-### Chinese
-这个模型对现实世界做出了许多简化。<color=green>地球 </color>的<trigger=temperature>温度 </trigger> 并不均匀，没有均匀的 <trigger=albedo>反射率</trigger>，也不存在一个独立的<trigger=heat capacity,red>比热容 </trigger>。可见光  以某种形式被<trigger=carbon dioxide>二氧化碳</trigger>吸收，一些<trigger=infrared light>红外光</trigger>也确实被<color=grey>云层 </color> 反弹。当然，没有模型是完全准确的 。重要的是：模型在某种程度上会和它对应的现实系统产生类似的反应。这个模型就能做到：说明了温室效应是由<color=red>二氧化碳</color>以及吸收红外线的其他气体  引起的。
+### Chinese ***
+当然，这个模型有很多简化之处。<color=green>地球</color>不是一个单一的<trigger=temperature>溫度 </trigger> ，没有一个<trigger=albedo>反照率</trigger>并且没有一个<trigger=heat capacity,red>热容量</trigger>可见光  被部分吸收<trigger=carbon dioxide>二氧化碳</trigger>还有一些<trigger=infrared light>红外线</trigger>反弹<color=grey>云 </color> 。没有一个模型是完全准确的  。重要的是，模型的反应方式与它应该模拟的系统相似。这个模型就是这样的，它显示了温室效应是如何由碳引起的<color=red>氧气</color>以及其他吸收红外线的气体。
 
 ### Source
 Thermal energy
-### Chinese
+### Chinese ***
 热能
 
 ### Source
 Thermal energy (also called heat energy) is produced when a rise in <trigger=temperature>temperature </trigger> causes atoms and <trigger=molecule>molecules </trigger> to move faster and collide with each other. The energy that comes from the temperature of the heated substance is called thermal energy.
-### Chinese
-热能是与温度对应的概念。<trigger=temperature>温度 </trigger> 升高时，原子和<trigger=molecule>分子 </trigger> 的移动变快，互相碰撞增加。来自物质温度升高的能量被称为热能。
+### Chinese ***
+热能（也称热能）是指<trigger=temperature>溫度 </trigger>导致原子和<trigger=molecule>分子 </trigger>以更快的速度移动并相互碰撞。由加热物质的温度产生的能量称为热能。
 
 ### Source
 This is a model of <color=#b3b300ff>energy  flow</color> in the <color=green>earth </color>, particularly <trigger=thermal energy,red>heat  energy</trigger>. It shows the <color=green>earth </color> as <color=#cd59a1ff>rose</color> colored, and the surface of the <color=green>planet</color> is represented by a <b>black</b> strip. Above the strip there is a <trigger=atmosphere,blue>blue atmosphere</trigger> and <b>black space</b> at the top. <color=grey>Clouds </color> and <trigger=carbon dioxide>carbon dioxide</trigger> (C<color=red>O2</color>) <trigger=molecule>molecules </trigger> can be added to the <trigger=atmosphere>atmosphere</trigger>. The C<color=red>O2</color> molecules  represent <trigger=greenhouse gas>greenhouse gases</trigger> that block <trigger=infrared light>infrared light</trigger> that is emitted by the <color=green>earth </color>. <color=grey>Clouds </color> block incoming or outgoing <color=#b3b300ff>sun  rays</color>, influencing the <color=red>heating up </color> or <color=blue>cooling down </color> of the <color=green>planet</color>.
-### Chinese
-这是一个关于<color=green>地球 </color>内外<color=#b3b300ff>能量 </color>——尤其是<trigger=thermal energy,red>热能 </trigger>——流动的模型。在模型中，地球的大气层表示为<color=#cd59a1ff>玫瑰</color>色，地表则由<b>黑色</b>条带表现。条带之上是<trigger=atmosphere,blue>蓝色的大气层</trigger>和<b>黑色的外空间</b>。<color=grey>云彩 </color>和<trigger=carbon dioxide>二氧化碳</trigger><trigger=molecule>分子 </trigger> 可以添加到大气层中。 二氧化碳分子  代表能够阻拦地球发出<trigger=infrared light>红外光</trigger>的<trigger=greenhouse gas>温室气体</trigger>。<color=grey>云层 </color>能够阻挡射入或射出的<color=#b3b300ff>阳光 </color>，它们共同影响行星整体的<color=red>加热 </color> 或者<color=blue>冷却 </color>。
+### Chinese ***
+这是一个模型<color=#b3b300ff>能量流动</color>在里面<color=green>地球</color>， 特别<trigger=thermal energy,red>热能</trigger>. 它显示了<color=green>地球</color>作为<color=#cd59a1ff>玫瑰</color>彩色，和表面的<color=green>行星</color>用<b>黑色</b>条带表示。条带上方有一个<trigger=atmosphere,blue>蓝色大气</trigger>顶部有<b>黑色空间</b>。<color=grey>云 </color>和<trigger=carbon dioxide>二氧化碳</trigger>（C<color=red>氧气</color>）<trigger=molecule>分子 </trigger>可以添加到<trigger=atmosphere>气氛</trigger>. C<color=red>氧气</color>分子  代表<trigger=greenhouse gas>温室气体</trigger>那个街区<trigger=infrared light>红外线</trigger>发射的<color=green>地球</color>。<color=grey>云 </color>阻止传入或传出<color=#b3b300ff>太阳光线</color>，影响<color=red>升温 </color>或者<color=blue>降温 </color>的<color=green>行星</color>。
 
 ### Source
 Want to look at the community's or your answers to the questions asked in this model? Click on <b>Go to Q&A Panel</b>.
-### Chinese
-想看看大家是怎样回答问题的？点击<b>问答面板</b>。
+### Chinese ***
+想要查看社区或您对该模型中提出的问题的回答吗？单击<b>“转到问答面板”</b> 。
 
 ### Source
 Welcome to the Climate Change Model!
-### Chinese
+### Chinese ***
 欢迎来到气候变化模型！
 
 ### Source
 Well done! You have completed the Climate Change model tutorial! Time to play with the model!
-### Chinese
-干得漂亮，您已经完成了气候变化教程——是时候自由探索了！
+### Chinese ***
+做得好！您已完成气候变化模型教程！是时候玩一下模型了！
 
 ### Source
 What happens to the <color=#b3b300ff>arrowhead </color> when it hits the <color=green>earth </color>? Describe its later path. Does it escape the <color=green>earth </color>? What happens then? Do all <color=#b3b300ff>arrowhead</color> follow similar paths?
-### Chinese
-<color=#b3b300ff>箭头 </color击中<color=green>大气层 </color> 时发生了什么？描述击中之后发生的事情。它逃脱<color=green>大气层 </color> 了吗，那会发生什么？所有的<color=#b3b300ff>箭头</color>都会这样吗？
+### Chinese ***
+会发生什么<color=#b3b300ff>箭头 </color>当它击中<color=green>地球</color>描述其后续路径。它是否逃脱了<color=green>地球</color>？然后会发生什么？<color=#b3b300ff>箭头</color>跟随类似的路径？
 
 ### Source
 What is the relation between the number of red dots and Earth's temperature?
-### Chinese
-红点数量与地球温度之间有什么关系？
+### Chinese ***
+红点的数量和地球的温度有什么关系？
 
 ### Source
 Where in the model is IR energy represented?
-### Chinese
-模型是如何表示红外辐射能量的？
+### Chinese ***
+红外能量在模型中的什么位置表示？
 
 ### Source
  Understand how <trigger=greenhouse gas>greenhouse gases</trigger> affect the <trigger=climate>climate </trigger>
  Observe how <trigger=carbon dioxide>carbon dioxide</trigger> <trigger=molecule>molecules </trigger> and <trigger=infrared light>infrared light</trigger> interact 
  Examine factors that influence the <color=red>heating up </color> and <color=blue>cooling down </color> of the <color=green>Earth </color>
  Explore concepts of <trigger=thermal energy,red>thermal  energy </trigger> that affect the global <trigger=temperature>temperature </trigger>
-### Chinese
- 了解温室气体如何影响地球<trigger=climate>气候 </trigger>
- 观察如何<trigger=carbon dioxide>二氧化碳</trigger><trigger=molecule>分子 </trigger>和<trigger=infrared light>红外光</trigger>的相互作用
- 研究影响地球<color=green>地球 </color> <color=red>变暖 </color> 和<color=blue>变冷 </color> 的因素
- 探索<trigger=thermal energy,red>热能 </trigger>是如何影响全球<trigger=temperature>温度 </trigger> 的
+### Chinese ***
+ 了解如何<trigger=greenhouse gas>温室气体</trigger>影响<trigger=climate>气候 </trigger> 观察如何<trigger=carbon dioxide>二氧化碳</trigger><trigger=molecule>分子 </trigger>和<trigger=infrared light>红外线</trigger>相互影响 研究影响<color=red>升温 </color>和<color=blue>降温</color>的<color=green>地球 </color> 探索概念<trigger=thermal energy,red>热能</trigger>影响全球<trigger=temperature>溫度 </trigger>
 
 ## Widgets
 ### Source
 add cloud
-### Chinese
-添加云彩
+### Chinese ***
+添加云
 
 ### Source
 add CO2
-### Chinese
+### Chinese ***
 添加二氧化碳
 
 ### Source
 albedo
-### Chinese
-反射率
+### Chinese ***
+反照率
 
 ### Source
 CO2 amount
-### Chinese
-二氧化碳数量
+### Chinese ***
+二氧化碳量
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 remove cloud
-### Chinese
-去除云彩
+### Chinese ***
+移除云
 
 ### Source
 remove CO2
-### Chinese
+### Chinese ***
 去除二氧化碳
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 sun-brightness
-### Chinese
-阳光亮度
+### Chinese ***
+太阳亮度
 
 ### Source
 temperature
-### Chinese
+### Chinese ***
 温度
 
 ### Source
 watch a ray
-### Chinese
-观察一条入射光
+### Chinese ***
+观看射线
 

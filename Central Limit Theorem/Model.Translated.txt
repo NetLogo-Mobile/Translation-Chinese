@@ -1,133 +1,134 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 Count
-### Chinese
-数量
+### Chinese ***
+数数
 
 ### Source
 Mean Value
-### Chinese
+### Chinese ***
 平均值
 
 ### Source
 means
-### Chinese
-平均值
+### Chinese ***
+方法
 
 ### Source
 means-mean
-### Chinese
-平均值的期望
+### Chinese ***
+均值-均值
 
 ### Source
 Sample-Data Distribution
-### Chinese
+### Chinese ***
 样本数据分布
 
 ### Source
 sums
-### Chinese
+### Chinese ***
 总和
 
 ### Source
 sums-mean
-### Chinese
-总和的期望
+### Chinese ***
+总和-均值
 
 ## Widgets
 ### Source
 also-sums?
-### Chinese
-显示总和？
+### Chinese ***
+还有总数吗？
 
 ### Source
 Create My Own People
-### Chinese
-创建自定义人物
+### Chinese ***
+创建我自己的人民
 
 ### Source
 Create Random People
-### Chinese
+### Chinese ***
 创建随机人物
 
 ### Source
 Expected Value
-### Chinese
+### Chinese ***
 期望值
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 Go Once
-### Chinese
-运行一次
+### Chinese ***
+去一次
 
 ### Source
 max-value
-### Chinese
+### Chinese ***
 最大值
 
 ### Source
 num-samples
-### Chinese
-样本数
+### Chinese ***
+样本数量
 
 ### Source
 Preset 1
-### Chinese
+### Chinese ***
 预设 1
 
 ### Source
 Preset 2
-### Chinese
+### Chinese ***
 预设 2
 
 ### Source
 Preset 3
-### Chinese
+### Chinese ***
 预设 3
 
 ### Source
 Preset 4
-### Chinese
+### Chinese ***
 预设 4
 
 ### Source
 Preset 5
-### Chinese
+### Chinese ***
 预设 5
 
 ### Source
 Preset 6
-### Chinese
+### Chinese ***
 预设 6
 
 ### Source
 sample-size
-### Chinese
-样本量
+### Chinese ***
+样本大小
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 show-ev?
-### Chinese
+### Chinese ***
 显示-ev？
 
 ### Source
 std-dev-means
-### Chinese
-标准差的期望
+### Chinese ***
+标准差均值
 
 ### Source
 std-dev-sums
-### Chinese
-标准差的和
+### Chinese ***
+标准差和
 

@@ -1,123 +1,124 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 Combination
-### Chinese
+### Chinese ***
 组合
 
 ### Source
 count
-### Chinese
-数量
+### Chinese ***
+数数
 
 ### Source
 Permutations
-### Chinese
+### Chinese ***
 排列
 
 ### Source
 successes per sample
-### Chinese
-每样本成功率
+### Chinese ***
+每个样本的成功率
 
 ### Source
 Successes-per-Sample Distributions
-### Chinese
-每样本成功率的分布
+### Chinese ***
+每个样本的成功率分布
 
 ## Widgets
 ### Source
 #Samples
-### Chinese
+### Chinese ***
 #样本
 
 ### Source
 + # Rolls
-### Chinese
-+ # 投骰子
+### Chinese ***
++ # 卷
 
 ### Source
 analysis-type
-### Chinese
+### Chinese ***
 分析类型
 
 ### Source
 bars?
-### Chinese
-条形图？
+### Chinese ***
+酒吧？
 
 ### Source
 Both
-### Chinese
-排列与组合
+### Chinese ***
+两个都
 
 ### Source
 Combination
-### Chinese
+### Chinese ***
 组合
 
 ### Source
 Combinations
-### Chinese
+### Chinese ***
 组合
 
 ### Source
 Combinations : Permutations
-### Chinese
-组合 : 排列
+### Chinese ***
+组合：排列
 
 ### Source
 Hide/Reveal
-### Chinese
+### Chinese ***
 隐藏/显示
 
 ### Source
 Instructions
-### Chinese
-引导信息
+### Chinese ***
+指示
 
 ### Source
 Mean-Combination
-### Chinese
+### Chinese ***
 均值组合
 
 ### Source
 Mean-Permutations
-### Chinese
-平均排列
+### Chinese ***
+均值排列
 
 ### Source
 Permutations
-### Chinese
+### Chinese ***
 排列
 
 ### Source
 Pick Values
-### Chinese
+### Chinese ***
 选择值
 
 ### Source
 Roll Dice
-### Chinese
+### Chinese ***
 掷骰子
 
 ### Source
 sample-size
-### Chinese
+### Chinese ***
 样本大小
 
 ### Source
 Setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 single-success?
-### Chinese
-成功时停止？
+### Chinese ***
+一次成功？
 
 ### Source
 total-samples
-### Chinese
+### Chinese ***
 总样本
 

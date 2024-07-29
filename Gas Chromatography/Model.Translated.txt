@@ -1,58 +1,59 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 Gas Output
-### Chinese
-过滤后的气体
+### Chinese ***
+产气量
 
 ### Source
 Greens
-### Chinese
-绿色数量
+### Chinese ***
+青菜
 
 ### Source
 Molecules
-### Chinese
-分子数量
+### Chinese ***
+分子
 
 ### Source
 Reds
-### Chinese
-红色数量
+### Chinese ***
+红人
 
 ### Source
 Time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 number-of-pores
-### Chinese
-空洞数量
+### Chinese ***
+孔隙数
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 stickiness
-### Chinese
-分子粘性
+### Chinese ***
+粘性
 
 ### Source
 thickness-of-medium
-### Chinese
+### Chinese ***
 介质厚度
 
 ### Source
 wall-effect?
-### Chinese
-两侧墙壁？
+### Chinese ***
+壁面效应？
 

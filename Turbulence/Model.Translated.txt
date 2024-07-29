@@ -1,32 +1,33 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 auto-continue?
-### Chinese
+### Chinese ***
 自动继续？
 
 ### Source
 coupling-strength
-### Chinese
+### Chinese ***
 耦合强度
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 initial-turbulence
-### Chinese
+### Chinese ***
 初始湍流
 
 ### Source
 roughness
-### Chinese
+### Chinese ***
 粗糙度
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

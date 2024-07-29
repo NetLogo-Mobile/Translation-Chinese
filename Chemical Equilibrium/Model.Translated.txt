@@ -1,78 +1,79 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 blues
-### Chinese
-蓝色的数量
+### Chinese ***
+布鲁斯
 
 ### Source
 greens
-### Chinese
-绿色的数量
+### Chinese ***
+青菜
 
 ### Source
 Molecule amounts
-### Chinese
-分子数量
+### Chinese ***
+分子量
 
 ### Source
 number
-### Chinese
-数量
+### Chinese ***
+数字
 
 ### Source
 pinks
-### Chinese
-粉色数量
+### Chinese ***
+粉红色
 
 ### Source
 ticks
-### Chinese
-时钟周期
+### Chinese ***
+周期
 
 ### Source
 yellows
-### Chinese
-黄色数量
+### Chinese ***
+黄色
 
 ## Widgets
 ### Source
 blue-molecules
-### Chinese
-蓝色分子数量
+### Chinese ***
+蓝色分子
 
 ### Source
 blues
-### Chinese
-蓝色数量
+### Chinese ***
+布鲁斯
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 greens
-### Chinese
-绿色数量
+### Chinese ***
+青菜
 
 ### Source
 pinks
-### Chinese
-粉色数量
+### Chinese ***
+粉红色
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 yellow-molecules
-### Chinese
-黄色分子数量
+### Chinese ***
+黄色分子
 
 ### Source
 yellows
-### Chinese
-黄色数量
+### Chinese ***
+黄色
 

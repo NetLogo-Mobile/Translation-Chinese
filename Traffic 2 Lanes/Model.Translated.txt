@@ -1,138 +1,139 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 1
-### Chinese
+### Chinese ***
 1
 
 ### Source
 2
-### Chinese
+### Chinese ***
 2
 
 ### Source
 average
-### Chinese
-平均
+### Chinese ***
+平均的
 
 ### Source
 Car Speeds
-### Chinese
-车速
+### Chinese ***
+汽车速度
 
 ### Source
 Cars
-### Chinese
+### Chinese ***
 汽车
 
 ### Source
 Cars Per Lane
-### Chinese
-每车道车数
+### Chinese ***
+每车道车辆数
 
 ### Source
 Driver Patience
-### Chinese
+### Chinese ***
 驾驶员耐心
 
 ### Source
 max
-### Chinese
-最高
+### Chinese ***
+最大限度
 
 ### Source
 min
-### Chinese
-最低
+### Chinese ***
+分钟
 
 ### Source
 Patience
-### Chinese
+### Chinese ***
 耐心
 
 ### Source
 selected car
-### Chinese
-选定车辆
+### Chinese ***
+選擇汽車
 
 ### Source
 selected-car
-### Chinese
+### Chinese ***
 选定车辆
 
 ### Source
 Speed
-### Chinese
+### Chinese ***
 速度
 
 ### Source
 Time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 acceleration
-### Chinese
-加速
+### Chinese ***
+加速度
 
 ### Source
 deceleration
-### Chinese
+### Chinese ***
 减速
 
 ### Source
 follow selected car
-### Chinese
+### Chinese ***
 跟随选定的汽车
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 go once
-### Chinese
-运行一次
+### Chinese ***
+去一次
 
 ### Source
 max-patience
-### Chinese
+### Chinese ***
 最大耐心
 
 ### Source
 mean speed
-### Chinese
+### Chinese ***
 平均速度
 
 ### Source
 number-of-cars
-### Chinese
-汽车数量
+### Chinese ***
+车辆数量
 
 ### Source
 reset perspective
-### Chinese
-重设视角
+### Chinese ***
+重置视角
 
 ### Source
 select car
-### Chinese
-选择一辆车
+### Chinese ***
+选择汽车
 
 ### Source
 selected car speed
-### Chinese
-所选车速
+### Chinese ***
+选定的汽车速度
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 watch selected car
-### Chinese
-观察选定车辆
+### Chinese ***
+观看所选汽车
 

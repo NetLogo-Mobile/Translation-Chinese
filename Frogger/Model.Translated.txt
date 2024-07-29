@@ -1,62 +1,63 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 DOWN
-### Chinese
+### Chinese ***
 向下
 
 ### Source
 Frog Jumps
-### Chinese
-青蛙跳跃次数
+### Chinese ***
+青蛙跳
 
 ### Source
 Frogs Left
-### Chinese
-剩余青蛙
+### Chinese ***
+青蛙左
 
 ### Source
 LEFT
-### Chinese
-向左
+### Chinese ***
+左边
 
 ### Source
 Level
-### Chinese
-目前难度
+### Chinese ***
+等级
 
 ### Source
 New Game
-### Chinese
+### Chinese ***
 新游戏
 
 ### Source
 RIGHT
-### Chinese
-向右
+### Chinese ***
+正确的
 
 ### Source
 start-level
-### Chinese
-开始难度
+### Chinese ***
+起始级别
 
 ### Source
 start-lives
-### Chinese
-开始有几条命
+### Chinese ***
+开始生活
 
 ### Source
 start-time
-### Chinese
-过关时间
+### Chinese ***
+开始时间
 
 ### Source
 Time Left
-### Chinese
+### Chinese ***
 剩余时间
 
 ### Source
 UP
-### Chinese
+### Chinese ***
 向上
 

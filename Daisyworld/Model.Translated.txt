@@ -1,103 +1,104 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 black
-### Chinese
-黑色
+### Chinese ***
+黑色的
 
 ### Source
 default
-### Chinese
+### Chinese ***
 默认
 
 ### Source
 Global Temperature
-### Chinese
-全局温度
+### Chinese ***
+全球气温
 
 ### Source
 Luminosity
-### Chinese
+### Chinese ***
 亮度
 
 ### Source
 Population
-### Chinese
-种群数量
+### Chinese ***
+人口
 
 ### Source
 white
-### Chinese
-白色
+### Chinese ***
+白色的
 
 ## Widgets
 ### Source
 albedo-of-blacks
-### Chinese
-黑色雏菊的反射率
+### Chinese ***
+黑色反照率
 
 ### Source
 albedo-of-surface
-### Chinese
-表面反射率
+### Chinese ***
+表面反照率
 
 ### Source
 albedo-of-whites
-### Chinese
-白色雏菊的反射率
+### Chinese ***
+白色反照率
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 paint daisies
-### Chinese
-开启绘画模式
+### Chinese ***
+画雏菊
 
 ### Source
 paint-daisies-as
-### Chinese
-笔刷模式
+### Chinese ***
+画雏菊
 
 ### Source
 remove all daisies
-### Chinese
+### Chinese ***
 删除所有雏菊
 
 ### Source
 scenario
-### Chinese
-情景模式
+### Chinese ***
+设想
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 show-daisies?
-### Chinese
-显示雏菊？
+### Chinese ***
+展示雏菊？
 
 ### Source
 show-temp-map?
-### Chinese
+### Chinese ***
 显示温度图？
 
 ### Source
 solar-luminosity
-### Chinese
-太阳亮度
+### Chinese ***
+太阳光度
 
 ### Source
 start-%-blacks
-### Chinese
-起始黑色雏菊比例
+### Chinese ***
+开始-%-黑色
 
 ### Source
 start-%-whites
-### Chinese
-起始白色雏菊比例
+### Chinese ***
+开始-%-白色
 

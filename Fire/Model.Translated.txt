@@ -1,22 +1,23 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Widgets
 ### Source
 density
-### Chinese
-森林密度
+### Chinese ***
+密度
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 percent burned
-### Chinese
-过火百分比
+### Chinese ***
+燃烧百分比
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

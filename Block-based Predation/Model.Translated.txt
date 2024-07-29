@@ -1,434 +1,430 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## NetTango
 ### Source
 all
-### Chinese
-所有
+### Chinese ***
+全部
 
 ### Source
 Angle?
-### Chinese
+### Chinese ***
 角度？
 
 ### Source
 black
-### Chinese
-黑色
+### Chinese ***
+黑色的
 
 ### Source
 blue
-### Chinese
-蓝色
+### Chinese ***
+蓝色的
 
 ### Source
 Brightness
-### Chinese
+### Chinese ***
 亮度
 
 ### Source
 brown
-### Chinese
-棕色
-
-### Excessive
-Efficiency
-### Chinese
-进食效率
+### Chinese ***
+棕色的
 
 ### Source
 Energy gains
-### Chinese
-能量收益
+### Chinese ***
+能量增益
 
 ### Source
 Every how many rounds?
-### Chinese
+### Chinese ***
 每几轮？
 
 ### Source
 fire
-### Chinese
-火焰
+### Chinese ***
+火
 
 ### Source
 grass
-### Chinese
-草地
+### Chinese ***
+草
 
 ### Source
 green
-### Chinese
-绿色
+### Chinese ***
+绿色的
 
 ### Source
 How large?
-### Chinese
+### Chinese ***
 多大？
 
 ### Source
 How many times?
-### Chinese
+### Chinese ***
 多少次？
 
 ### Source
 How many?
-### Chinese
+### Chinese ***
 多少？
 
 ### Source
 How much?
-### Chinese
+### Chinese ***
 多少？
 
 ### Source
 How possible?
-### Chinese
-多大概率？
+### Chinese ***
+这怎么可能呢？
 
 ### Source
 Only smaller?
-### Chinese
-只吃更小的？
+### Chinese ***
+只是更小吗？
 
 ### Source
 orange
-### Chinese
-橙色
+### Chinese ***
+橙子
 
 ### Source
 pink
-### Chinese
-粉色
+### Chinese ***
+粉色的
 
 ### Source
 Randomly?
-### Chinese
-随机进行？
+### Chinese ***
+随机吗？
 
 ### Source
 red
-### Chinese
-红色
+### Chinese ***
+红色的
 
 ### Source
 Scale with size
-### Chinese
-随大小增长
+### Chinese ***
+按尺寸缩放
 
 ### Source
 Scale with speed
-### Chinese
-随速度增长
+### Chinese ***
+快速扩展
 
 ### Source
 sheep
-### Chinese
+### Chinese ***
 羊
 
 ### Source
 soil
-### Chinese
+### Chinese ***
 土壤
 
 ### Source
 water
-### Chinese
-水域
+### Chinese ***
+水
 
 ### Source
 What kind?
-### Chinese
+### Chinese ***
 哪一种？
 
 ### Source
 Which color?
-### Chinese
+### Chinese ***
 哪种颜色？
 
 ### Source
 Which shape?
-### Chinese
-哪种图案？
+### Chinese ***
+哪种图形？
 
 ### Source
 white
-### Chinese
-白色
+### Chinese ***
+白色的
 
 ### Source
 wolf
-### Chinese
+### Chinese ***
 狼
 
 ### Source
 Wolf Sheep Predation
-### Chinese
-大灰狼和小绵羊
+### Chinese ***
+狼捕食羊
 
 ### Source
 wolves
-### Chinese
+### Chinese ***
 狼
 
 ### Source
 yellow
-### Chinese
-黄色
+### Chinese ***
+黄色的
 
 ### Source
  Add Energy
-### Chinese
- 提供能量
+### Chinese ***
+ 补充能量
 
 ### Source
  Become a
-### Chinese
+### Chinese ***
  成为
 
 ### Source
  Change Size
-### Chinese
- 改变大小
+### Chinese ***
+ 更改尺寸
 
 ### Source
  Change Speed
-### Chinese
+### Chinese ***
  改变速度
 
 ### Source
  Eat Grass
-### Chinese
+### Chinese ***
  吃草
 
 ### Source
  Eat Prey
-### Chinese
+### Chinese ***
  吃猎物
 
 ### Source
  If Energy <=
-### Chinese
- 如果能量小于
+### Chinese ***
+ 如果能量 &lt;=
 
 ### Source
  If Size <=
-### Chinese
- 如果尺寸小于
+### Chinese ***
+ 如果大小 &lt;=
 
 ### Source
  Move and Wiggle
-### Chinese
- 移动并摇摆
+### Chinese ***
+ 移动和摆动
 
 ### Source
  Reproduce
-### Chinese
- 进行繁殖
+### Chinese ***
+ 重现
 
 ### Source
  Set Color
-### Chinese
+### Chinese ***
  设置颜色
 
 ### Source
  Set Size
-### Chinese
- 设置尺寸
+### Chinese ***
+ 设置大小
 
 ### Source
  Spend Energy
-### Chinese
+### Chinese ***
  消耗能量
 
 ### Source
  Go 
-### Chinese
- 进行 
+### Chinese ***
+ 前往 
 
 ### Source
  Setup 
-### Chinese
+### Chinese ***
  设置 
 
 ### Source
  Ask Animals 
-### Chinese
- 命令动物 
+### Chinese ***
+ 询问动物 
 
 ### Source
  Ask Patches 
-### Chinese
- 命令格子 
+### Chinese ***
+ 询问补丁 
 
 ### Source
  Ask Sheep 
-### Chinese
- 命令羊 
+### Chinese ***
+ 问羊 
 
 ### Source
  Ask Wolves 
-### Chinese
- 命令狼 
+### Chinese ***
+ 问狼 
 
 ### Source
  Create Sheep 
-### Chinese
- 创造羊 
+### Chinese ***
+ 创建绵羊 
 
 ### Source
  Create Wolves 
-### Chinese
+### Chinese ***
  创造狼 
 
 ### Source
  Chance
-### Chinese
- 有概率进行
+### Chinese ***
+ 机会
 
 ### Source
  Repeat
-### Chinese
- 重复进行
+### Chinese ***
+ 重复
 
 ### Source
  Ask Neighbors 
-### Chinese
- 命令邻近格子 
+### Chinese ***
+ 询问邻居 
 
 ### Source
  Grow Grass
-### Chinese
- 让草生长
+### Chinese ***
+ 种草
 
 ### Source
  Set Terrain
-### Chinese
+### Chinese ***
  设置地形
 
 ### Source
  Summon Rain
-### Chinese
- 召唤阵雨
+### Chinese ***
+ 召唤雨
 
 ### Source
  Throw Thunder
-### Chinese
- 召唤闪电
+### Chinese ***
+ 投掷雷霆
 
 ### Source
  With Terrain
-### Chinese
- 如果地形为
+### Chinese ***
+ 有地形
 
 ## Plots
 ### Source
 grass / 4
-### Chinese
+### Chinese ***
 草 / 4
 
 ### Source
 pop.
-### Chinese
-人口
+### Chinese ***
+流行音乐。
 
 ### Source
 populations
-### Chinese
+### Chinese ***
 人口
 
 ### Source
 sheep
-### Chinese
+### Chinese ***
 羊
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ### Source
 wolves
-### Chinese
+### Chinese ***
 狼
 
 ## Widgets
 ### Source
 go
-### Chinese
-进行
+### Chinese ***
+去
 
 ### Source
 go once
-### Chinese
-进行一次
+### Chinese ***
+去一次
 
 ### Source
 grass / 4
-### Chinese
+### Chinese ***
 草 / 4
 
 ### Source
 set fire randomly
-### Chinese
-随机纵火
+### Chinese ***
+随意放火
 
 ### Source
 set-fire
-### Chinese
-纵火焚烧
+### Chinese ***
+放火
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 sheep
-### Chinese
+### Chinese ***
 羊
 
 ### Source
 show-energy?
-### Chinese
-显示能量？
+### Chinese ***
+展现能量？
 
 ### Source
 spawn-sheep
-### Chinese
-召唤羊群
+### Chinese ***
+产卵羊
 
 ### Source
 spawn-wolves
-### Chinese
-召唤狼群
+### Chinese ***
+产卵狼
 
 ### Source
 summon rain randomly
-### Chinese
-随机召唤阵雨
+### Chinese ***
+随机召唤雨
 
 ### Source
 summon-rain
-### Chinese
-召唤阵雨
+### Chinese ***
+召唤雨
 
 ### Source
 throw thunder randomly
-### Chinese
-随机召唤闪电
+### Chinese ***
+随意投掷雷霆
 
 ### Source
 throw-thunder
-### Chinese
-召唤闪电
+### Chinese ***
+投雷
 
 ### Source
 touch-behavior
-### Chinese
-双击时发生什么？
+### Chinese ***
+触摸行为
 
 ### Source
 wolves
-### Chinese
+### Chinese ***
 狼
 

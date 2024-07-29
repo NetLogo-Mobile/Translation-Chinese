@@ -152,11 +152,6 @@ Density
 ### Chinese
 密度
 
-### Excessive
-generations
-### Chinese
-遗传代数
-
 ### Source
 go
 ### Chinese

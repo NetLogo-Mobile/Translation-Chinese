@@ -1,138 +1,139 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 Average Energies
-### Chinese
+### Chinese ***
 平均能量
 
 ### Source
 Average Speeds
-### Chinese
+### Chinese ***
 平均速度
 
 ### Source
 cyan
-### Chinese
+### Chinese ***
 青色
 
 ### Source
 energy
-### Chinese
-能量
+### Chinese ***
+活力
 
 ### Source
 magenta
-### Chinese
-洋红
+### Chinese ***
+品红
 
 ### Source
 speed
-### Chinese
+### Chinese ***
 速度
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ## Widgets
 ### Source
 average energy cyan
-### Chinese
-青色粒子平均能量
+### Chinese ***
+平均能量青色
 
 ### Source
 average energy magenta
-### Chinese
-洋红粒子平均能量
+### Chinese ***
+平均能量洋红色
 
 ### Source
 average speed cyan
-### Chinese
-青色粒子平均速度
+### Chinese ***
+平均速度青色
 
 ### Source
 average speed magenta
-### Chinese
-洋红粒子平均能量
+### Chinese ***
+平均速度 洋红色
 
 ### Source
 box-size
-### Chinese
-盒子大小
+### Chinese ***
+盒子尺寸
 
 ### Source
 close
-### Chinese
-关闭隔板
+### Chinese ***
+关闭
 
 ### Source
 collide?
-### Chinese
+### Chinese ***
 碰撞？
 
 ### Source
 cyan-init-speed
-### Chinese
-青色粒子初始速度
+### Chinese ***
+青色初始速度
 
 ### Source
 cyan-mass
-### Chinese
-青色粒子质量
+### Chinese ***
+青色质量
 
 ### Source
 cyans in right chamber
-### Chinese
-右侧的青色数量
+### Chinese ***
+右腔中存在青色
 
 ### Source
 go/stop
-### Chinese
-运行
+### Chinese ***
+走/停
 
 ### Source
 magenta-init-speed
-### Chinese
-洋红粒子初始速度
+### Chinese ***
+洋红色初始速度
 
 ### Source
 magenta-mass
-### Chinese
-洋红粒子质量
+### Chinese ***
+洋红色块状
 
 ### Source
 magentas in left chamber
-### Chinese
-左侧的洋红数量
+### Chinese ***
+左腔中为洋红色
 
 ### Source
 max particle speed
-### Chinese
+### Chinese ***
 最大粒子速度
 
 ### Source
 num-cyans
-### Chinese
-青色粒子数量
+### Chinese ***
+青色数量
 
 ### Source
 num-magentas
-### Chinese
-洋红粒子数量
+### Chinese ***
+品红数量
 
 ### Source
 open
-### Chinese
-打开隔板
+### Chinese ***
+打开
 
 ### Source
 opening-size
-### Chinese
+### Chinese ***
 开口尺寸
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 

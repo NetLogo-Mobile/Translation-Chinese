@@ -1,68 +1,69 @@
-﻿## Language = Chinese
+﻿*** 1d9b324d51b0a5cdea13d2e026a86a1c
+## Language = Chinese
 ## Plots
 ### Source
 #
-### Chinese
-数量
+### Chinese ***
+#
 
 ### Source
 bodies
-### Chinese
-中部
+### Chinese ***
+身体
 
 ### Source
 heads
-### Chinese
-头部
+### Chinese ***
+头
 
 ### Source
 tails
-### Chinese
-尾部
+### Chinese ***
+尾巴
 
 ### Source
 time
-### Chinese
+### Chinese ***
 时间
 
 ### Source
 Turtle Count
-### Chinese
+### Chinese ***
 海龟数量
 
 ### Source
 unattached
-### Chinese
-尚未连接
+### Chinese ***
+未依附
 
 ## Widgets
 ### Source
 far-radius
-### Chinese
-寻找半径（外侧）
+### Chinese ***
+远半径
 
 ### Source
 go
-### Chinese
-运行
+### Chinese ***
+去
 
 ### Source
 near-radius
-### Chinese
-寻找半径（内侧）
+### Chinese ***
+近半径
 
 ### Source
 population
-### Chinese
-海龟数量
+### Chinese ***
+人口
 
 ### Source
 setup
-### Chinese
+### Chinese ***
 设置
 
 ### Source
 waver
-### Chinese
-随机摆动的幅度
+### Chinese ***
+动摇
 
