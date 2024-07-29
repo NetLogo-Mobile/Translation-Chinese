@@ -9,7 +9,7 @@
 
 [遗传算法](https://en.wikipedia.org/wiki/Genetic_algorithm#) 是计算机科学中用于生成优化和搜索问题解决方案的工具。它依靠受生物学启发的技术来“搜索”参数空间以获得“最佳解决方案”。关键在于使用像染色体这样的“遗传物质”来表示给定的问题。然后，该算法使用[选择](https://en.wikipedia.org/wiki/Genetic_algorithm#Selection)、[交叉](https://en.wikipedia.org/wiki/Genetic_algorithm#Genetic_operators)、和 [突变](https://en.wikipedia.org/wiki/Genetic_algorithm#Genetic_operators) 来“进化”解决方案。
 
-## 怎么这个模型是怎么运行的
+## 这个模型是怎么运行的
 
 ### 是什么让这些节奏演变？
 
@@ -43,7 +43,7 @@
 
 当用户单击任何一个 GO 按钮时，一个垂直的黄色条会在视图中移动并指示每只海龟在节奏中的位置。
 
-## 如何这个模型怎么用
+## 这个模型怎么用
 
 这个模型的整个想法是对参数进行试验，以建立一个“伟大”的节奏。什么是伟大的节奏完全取决于你。
 

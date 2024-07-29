@@ -403,7 +403,7 @@ Yes or no?
 ### Source
  Ask Nearby Turtles
 ### Chinese
- 让附近的海龟
+ 命令附近海龟
 
 ### Source
  Evaporate Signal
@@ -636,7 +636,7 @@ Great, let's begin! Choose a path and we'll start crafting your microworld. Reme
 选择很多——只要你想好一个方向，我们就可以开始创造袖珍世界了！以后你还有机会回来体验其他方向，只要在模块界面上选择“帮助”按钮就好了。接下来怎么办？
 
 ### Source
-Greetings, adventurer! Welcome to the Pocketworld Playground of Turtle Universe. As your AI companion, I am here to help you create your own miniature worlds.
+Greetings, adventurer! Welcome to the Pocketworld Playground of Turtle Universe. As your AI companion, I am here to help you create your own miniature worlds. Feel free to ask questions or begin our journey at once. The choice is yours!
 ### Chinese
 我们的冒险是：建立自己的袖珍世界！想象一个由你创建的世界，在那里你创造规则、打破规则……当你拥有了属于自己的世界，你将能在海龟实验室的其它袖珍世界中更好地探索。
 当然，我将始终在这里为你提供帮助。
@@ -801,12 +801,12 @@ Suddenly, a tiny world appears before you, humming like a cosmic clock. You gaze
 ### Source
 Sure thing! Use the <b>Ask Nearby Turtles</b> block to find and ask <color=green>turtles </color> to do tasks. Remember to set a distance range where we will try to find your turtles. Keep in mind that the block won't include the one who uses it.
 ### Chinese
-当然可以！使用<b>让附近的海龟</b>模块，就能让周围的<color=green>海龟 </color>执行其中的规则。请记住设置一个距离范围。注意：这个模块自动排除了调用它的海龟。
+当然可以！使用<b>命令附近海龟</b>模块，就能让周围的<color=green>海龟 </color>执行其中的规则。请记住设置一个距离范围。注意：这个模块自动排除了调用它的海龟。
 
 ### Source
 Sure! Use <b>Set Shape</b> block to find a proper shape for your <color=green>turtles </color>. And you can even do more than that! By using <b>With Shape</b> block, we can give different rules to <color=green>turtles </color> with different shapes. For example, you may ask wolves to eat sheep, but not vice versa!
 ### Chinese
-没问题！你可以用<b>“设置形状”</b>规则模块找到适合你的<color=green>海龟 </color> 形状。其实你还可以更进一步：使用<b>当海龟的形状为</b>规则模块，我们可以给不同形状的<color=green>海龟 </color> 设置不同的规则。例如，你可以让狼学会吃羊，但反之就说不通了！
+没问题！你可以用<b>设置形状</b>规则模块找到适合你的<color=green>海龟 </color> 形状。其实你还可以更进一步：使用<b>当海龟的形状为</b>规则模块，我们可以给不同形状的<color=green>海龟 </color> 设置不同的规则。例如，你可以让狼学会吃羊，但反之就说不通了！
 
 ### Source
 That's really awesome! Whatever idea you have, I'll do my best to help, even though my abilities are limited. Don't forget, there's always the "Help" button on the block interface to call me back. Are you ready to move forward?
@@ -894,6 +894,11 @@ Watch it closely, Curious One. What do you think this pattern originates from? C
 Welcome to an amazing adventure: creating your very own microworld! How thrilling! Picture a place designed by you, where you call the shots... Together, we'll explore countless microworlds in the Turtle Universe. And don't worry, I  'll be right by your side to help you.
 ### Chinese
 欢迎来到奇妙的冒险：选择很多——只要你想好一个方向，我们就可以开始创造袖珍世界了！以后你还有机会回来体验其他方向。你觉得呢？
+
+### Source
+Welcome to the Pocketworld Playground! You are now in the free exploration mode. If you need any help, please look for the "<b>Help</b>" button on the block coding screen. Enjoy!
+### Chinese
+欢迎来到秘密实验室！你现在处在“自由探索”模式。如果你需要任何帮助，只需要在编程模块界面找到“<b>代码</b>”按钮，就能找到我啦。
 
 ### Source
 Well done! Whenever your microworld is ready, we are ready to go at any moment!
@@ -1336,14 +1341,14 @@ Your current progress will lose (unless you choose this goal again)!
  当海龟的标签为
 
 ### Source
+  Ask Nearby Turtles
+### Chinese
+   命令附近海龟
+
+### Source
  Add Signal
 ### Chinese
  添加信号
-
-### Source
- Ask Nearby Turtles
-### Chinese
- 让附近的海龟
 
 ### Source
  Evaporate Signal
@@ -2134,6 +2139,11 @@ Your current progress will lose (unless you choose this goal again)!
  I think people needs to leave footprints. How to do that?
 ### Chinese
  我觉得人们需要留下足迹。怎么才能做到呢？
+
+### Source
+ Is there a tutorial or something for me?
+### Chinese
+ 有没有什么“教程”可以试试？
 
 ### Source
  Is there a way to find nearby turtles?

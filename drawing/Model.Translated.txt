@@ -21,20 +21,20 @@ setup
 ### Chinese ***
 录音并在加载时自动回放
 
-### Source ***
+### Source
 清除緩存
-### Chinese
-
+### Chinese ***
+清理库存
 
 ### Source
 清除缓存
 ### Chinese ***
 清理库存
 
-### Source ***
+### Source
 當前顏色 
-### Chinese
-
+### Chinese ***
+当前颜色 
 
 ### Source
 笔粗细 
@@ -51,20 +51,20 @@ setup
 ### Chinese ***
 笔尖长度 
 
-### Source ***
+### Source
 筆粗細 
-### Chinese
+### Chinese ***
+粗细 
 
-
-### Source ***
+### Source
 筆鋒旋轉靈敏度 
-### Chinese
+### Chinese ***
+笔锋旋转灵敏度 
 
-
-### Source ***
+### Source
 筆鋒長度 
-### Chinese
-
+### Chinese ***
+笔尖长度 
 
 ### Source
 精度 
@@ -76,15 +76,15 @@ setup
 ### Chinese ***
 自定义
 
-### Source ***
+### Source
 自定義
-### Chinese
+### Chinese ***
+自定义
 
-
-### Source ***
+### Source
 請不要調太高！除非你對你設備的性能很有自信！
-### Chinese
-
+### Chinese ***
+请不要调太高！除了你对你设备的性能力很有信心！
 
 ### Source
 请不要调太高！除非你对你设备的性能很有自信！
@@ -96,30 +96,30 @@ setup
 ### Chinese ***
 选择颜色 
 
-### Source ***
+### Source
 選擇顏色 
-### Chinese
+### Chinese ***
+选择颜色 
 
-
-### Source ***
+### Source
 重繪背景為選擇的顏色 
-### Chinese
-
+### Chinese ***
+重绘背景为选择的颜色 
 
 ### Source
 重绘背景为选择的颜色 
 ### Chinese ***
 重绘背景为选择的颜色 
 
-### Source ***
+### Source
 錄制并在加載時自動回放
-### Chinese
+### Chinese ***
+录音并在加载时自动回放
 
-
-### Source ***
+### Source
 鎖定畫筆 
-### Chinese
-
+### Chinese ***
+锁定画笔 
 
 ### Source
 锁定画笔 
