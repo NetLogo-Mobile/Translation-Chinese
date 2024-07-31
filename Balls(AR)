@@ -1,0 +1,25 @@
+## What is it?
+This model is a template for you to create a simple physics-based AR project.
+
+## How it works?
+The project involves the movement and interaction of several "balls" that can be controlled by the player in an AR environment.
+
+First, the setup-xr procedure sets up an augmented reality environment,
+which scans the room to detect real-world obstacles that will affect the
+movement of the balls.
+
+Then, in the setup procedure, the project creates a number of balls that
+are scattered randomly on the screen. One of these balls is designated a
+s the player's ball, which is colored red and located in the center of the screen. The go procedure simply advances the physics simulation. To make the result more accurate, we repeat for 10 times, each time advance the simulation by 0.001 seconds.
+
+The project has two optional procedures: follow-you, pull-toward-you. The follow-you function causes the player's ball to move towards the player's real-world position. The pull-toward-you procedure causes all other
+balls to be pulled towards the player's ball.
+
+## How to use it?
+Find a room or a plane that works for you. By default, the follow-you option is enabled, making the player's ball to move towards you. If you enables the pull-toward-you option, all balls will be pulled towards you.
+
+## How to cite ?
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below. 
+For the model itself: Chen, J. (2023). NetLogo Balls (AR) model. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL. 
+Please cite the NetLogo software as: Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL. 
+Copyright and license Copyright (C) 2023 John Chen. 
